@@ -303,7 +303,7 @@ export default function RhinoplastyPage() {
               <div className="sidebar-card">
                 <div className="sidebar-title">What&apos;s included</div>
                 {['Airport transfer','Hotel & accommodation','Interpreter at all appointments','Clinic liaison','GP documentation on request'].map(item => (
-                  <div key={item} style={{fontSize:'13px',color:'rgba(255,255,255,.75)',padding:'.5rem 0',borderBottom:'1px solid #f5f4f2',display:'flex',alignItems:'center',gap:'8px'}}>
+                  <div key={item} style={{fontSize:'13px',color:'#555',padding:'.5rem 0',borderBottom:'1px solid #f5f4f2',display:'flex',alignItems:'center',gap:'8px'}}>
                     <div style={{width:'6px',height:'6px',borderRadius:'50%',background:'#1D9E75',flexShrink:0}}></div>
                     {item}
                   </div>
