@@ -7,7 +7,7 @@ const procedures: Record<string, { headers: string[], rows: string[][] }> = {
   cosmetic: {
     headers: ['Procedure', 'UK private', 'Istanbul (OHT)', 'Saving'],
     rows: [
-      ['Rhinoplasty', '£7,000 – £12,000', 'from $4,000 (~£3,150)', '55–70%'],
+      ['Rhinoplasty', '£7,000 – £12,000', 'from £3,200', '55–70%'],
       ['Breast augmentation', '£8,000 – £11,000', 'from £6,000', '30–45%'],
       ['Breast reduction', '£8,000 – £10,000', 'from £6,000', '25–40%'],
       ['Liposuction', '£3,500 – £7,500', 'from £2,500', '30–65%'],
@@ -401,7 +401,7 @@ export default function Home() {
           </div>
           <div className="tx-grid">
             {[
-              {icon:'🩺',name:'Plastic & cosmetic surgery',items:['Rhinoplasty, facelift, brow lift','Breast augmentation, reduction, lift','Liposuction, tummy tuck, BBL','Ear, lip, eyelid surgery'],price:'Rhinoplasty from $4,000 · Breast from £6,000'},
+              {icon:'🩺',name:'Plastic & cosmetic surgery',items:['Rhinoplasty, facelift, brow lift','Breast augmentation, reduction, lift','Liposuction, tummy tuck, BBL','Ear, lip, eyelid surgery'],price:'Rhinoplasty from £3,200 · Breast from £6,000'},
               {icon:'🦷',name:'Dental',items:['Dental implants','Zirconium crowns & veneers','Smile design','Orthodontics & root canal'],price:'Implants from £350 each'},
               {icon:'👁️',name:'Ophthalmology',items:['LASIK & laser refractive surgery','Cataract & lens replacement','Eyelid & strabismus surgery'],price:'LASIK from £600 per eye'},
               {icon:'💊',name:'Urology & men\'s health',items:['Penile aesthetics / penoplasty','Penile prosthesis & implant','Erectile dysfunction (ED)','P-Shot, ESWT, SVF stem cell'],price:'Contact us for individual pricing'},
