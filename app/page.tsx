@@ -1,65 +1,591 @@
-import Image from "next/image";
+'use client'
+import { useEffect, useRef, useState } from 'react'
+
+const WA_URL = 'https://wa.me/447441904858?text=Hello%2C%20I%27d%20like%20to%20get%20a%20free%20quote'
+
+const procedures: Record<string, { headers: string[], rows: string[][] }> = {
+  cosmetic: {
+    headers: ['Procedure', 'UK private', 'Istanbul (OHT)', 'Saving'],
+    rows: [
+      ['Rhinoplasty', '£7,000 – £12,000', 'from $4,000 (~£3,150)', '55–70%'],
+      ['Breast augmentation', '£8,000 – £11,000', 'from £6,000', '30–45%'],
+      ['Breast reduction', '£8,000 – £10,000', 'from £6,000', '25–40%'],
+      ['Liposuction', '£3,500 – £7,500', 'from £2,500', '30–65%'],
+      ['Facelift', '£8,000 – £15,000', 'from £5,000', '40–65%'],
+      ['Tummy tuck', '£5,000 – £9,000', 'from £3,500', '30–60%'],
+    ]
+  },
+  dental: {
+    headers: ['Procedure', 'UK private', 'Istanbul (OHT)', 'Saving'],
+    rows: [
+      ['Dental implant (single)', '£2,000 – £2,800', 'from £350', '~80%'],
+      ['Zirconium crown', '£700 – £1,200', 'from £150', '~75%'],
+      ['Porcelain veneers (per tooth)', '£600 – £1,000', 'from £180', '~70%'],
+      ['Full-arch restoration', '£15,000 – £25,000', 'from £4,500', '~70%'],
+    ]
+  },
+  ortho: {
+    headers: ['Procedure', 'NHS wait / UK private', 'Istanbul (OHT)', 'Saving'],
+    rows: [
+      ['Knee replacement', '12–18 mo / £12,000–£16,000', 'from £3,500 · 2–3 wks', '70–75%'],
+      ['Hip replacement', '12–18 mo / £12,000–£16,000', 'from £4,000 · 2–3 wks', '65–75%'],
+      ['Lumbar disc surgery', '6–12 mo / £8,000–£12,000', 'from £4,000 · 2–3 wks', '50–65%'],
+    ]
+  },
+  ophth: {
+    headers: ['Procedure', 'UK private', 'Istanbul (OHT)', 'Saving'],
+    rows: [
+      ['LASIK (per eye)', '£1,500 – £2,500', 'from £600', '60–75%'],
+      ['Cataract surgery', '£2,000 – £3,500', 'from £800', '~65%'],
+      ['Premium lens replacement', '£3,000 – £5,000', 'from £1,200', '~65%'],
+    ]
+  },
+  neuro: {
+    headers: ['Procedure', 'UK private', 'Istanbul (OHT)', 'Saving'],
+    rows: [
+      ['Deep brain stimulation', '£40,000 – £60,000+', 'from $30,000 (~£23,700)', '40–60%'],
+      ['Lumbar disc herniation', '£8,000 – £15,000', 'from $5,000 (~£3,950)', '55–75%'],
+      ['Cervical disc herniation', '£10,000 – £18,000', 'from $6,000 (~£4,750)', '55–75%'],
+    ]
+  }
+}
 
 export default function Home() {
+  const [scrolled, setScrolled] = useState(false)
+  const [activeTab, setActiveTab] = useState('cosmetic')
+  const revealRefs = useRef<HTMLElement[]>([])
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 60)
+    window.addEventListener('scroll', onScroll, { passive: true })
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [])
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target) } }),
+      { threshold: 0.12 }
+    )
+    revealRefs.current.forEach(el => el && observer.observe(el))
+    setTimeout(() => {
+      revealRefs.current.forEach(el => {
+        if (el && el.getBoundingClientRect().top < window.innerHeight) el.classList.add('visible')
+      })
+    }, 50)
+    return () => observer.disconnect()
+  }, [])
+
+  const ref = (el: HTMLElement | null) => { if (el && !revealRefs.current.includes(el)) revealRefs.current.push(el) }
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <>
+      <style>{`
+        .reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
+        .reveal.visible{opacity:1;transform:none}
+        .d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}.d4{transition-delay:.4s}
+        *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+        html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased}
+        body{font-family:'Inter',sans-serif;color:#1a1a1a;background:#fff;overflow-x:hidden}
+        a{text-decoration:none;color:inherit}
+        .inner{max-width:1160px;margin:0 auto;padding:0 2.5rem}
+        nav{position:fixed;top:0;left:0;right:0;z-index:500;transition:background .3s,box-shadow .3s}
+        nav.scrolled{background:rgba(255,255,255,.96);backdrop-filter:blur(12px);box-shadow:0 1px 0 rgba(0,0,0,.08)}
+        .nav-inner{height:66px;display:flex;align-items:center;justify-content:space-between}
+        .logo{font-family:'DM Serif Display',serif;font-size:18px;color:#fff;transition:color .3s;letter-spacing:-.01em}
+        nav.scrolled .logo{color:#085041}
+        .nav-links{display:flex;gap:2rem;list-style:none;align-items:center}
+        .nav-links a{font-size:13px;color:rgba(255,255,255,.85);transition:color .2s}
+        nav.scrolled .nav-links a{color:#444}
+        .nav-links a:hover{color:#fff}
+        nav.scrolled .nav-links a:hover{color:#085041}
+        .btn-nav{border:1px solid rgba(255,255,255,.5);padding:8px 18px;border-radius:7px;font-size:13px;font-weight:500;color:#fff!important;transition:all .2s}
+        .btn-nav:hover{background:rgba(255,255,255,.15)!important}
+        nav.scrolled .btn-nav{border-color:#085041;color:#085041!important}
+        nav.scrolled .btn-nav:hover{background:#085041!important;color:#fff!important}
+        .hero{min-height:100vh;background:linear-gradient(135deg,#042e22 0%,#085041 45%,#0d6b55 100%);position:relative;display:flex;flex-direction:column;justify-content:center;overflow:hidden}
+        .hero::before{content:'';position:absolute;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(29,158,117,.25) 0%,transparent 70%);top:-100px;right:-150px;pointer-events:none}
+        .hero::after{content:'';position:absolute;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(225,245,238,.08) 0%,transparent 70%);bottom:-80px;left:-100px;pointer-events:none}
+        .hero-content{position:relative;z-index:2;padding:120px 0 80px}
+        .hero-grid{display:grid;grid-template-columns:1.1fr 0.9fr;gap:3.5rem;align-items:center}
+        .hero-tag{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);border-radius:100px;padding:6px 16px;font-size:12px;font-weight:500;color:rgba(255,255,255,.9);letter-spacing:.05em;text-transform:uppercase;margin-bottom:2rem}
+        .pulse{width:7px;height:7px;border-radius:50%;background:#4ade80;animation:pulse-dot 2s ease-in-out infinite;flex-shrink:0}
+        @keyframes pulse-dot{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.6;transform:scale(.8)}}
+        h1{font-family:'DM Serif Display',serif;font-size:clamp(42px,5.5vw,72px);line-height:1.08;letter-spacing:-.03em;color:#fff;margin-bottom:1rem;font-weight:400}
+        h1 em{font-style:italic;color:#6ee7b7}
+        .hero-sub{font-size:17px;color:rgba(255,255,255,.72);line-height:1.75;margin-bottom:2.5rem;font-weight:300;max-width:520px}
+        .hero-actions{display:flex;gap:14px;flex-wrap:wrap}
+        .btn-primary{background:#fff;color:#085041;border:none;padding:15px 28px;border-radius:10px;font-size:15px;font-weight:600;display:inline-flex;align-items:center;gap:9px;transition:transform .2s,box-shadow .2s;cursor:pointer;font-family:'Inter',sans-serif;box-shadow:0 4px 24px rgba(0,0,0,.15)}
+        .btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 32px rgba(0,0,0,.2)}
+        .btn-ghost{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.35);padding:15px 28px;border-radius:10px;font-size:15px;display:inline-flex;align-items:center;gap:9px;transition:all .2s;cursor:pointer;font-family:'Inter',sans-serif}
+        .btn-ghost:hover{background:rgba(255,255,255,.1)}
+        .hero-cards{display:flex;flex-direction:column;gap:12px}
+        .stat-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+        .stat{background:rgba(255,255,255,.1);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.15);border-radius:14px;padding:1.25rem 1.4rem}
+        .stat-n{font-family:'DM Serif Display',serif;font-size:34px;color:#fff;line-height:1;margin-bottom:5px}
+        .stat-n em{font-style:normal;font-size:18px;color:#6ee7b7}
+        .stat-l{font-size:12px;color:rgba(255,255,255,.65);font-weight:300}
+        .patient-card{background:rgba(255,255,255,.1);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.15);border-radius:14px;padding:1.1rem 1.25rem;display:flex;align-items:center;gap:14px}
+        .avatar{width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,#1D9E75,#085041);display:flex;align-items:center;justify-content:center;font-family:'DM Serif Display',serif;font-size:14px;color:#fff;flex-shrink:0}
+        .p-name{font-size:13px;color:#fff;font-weight:500;margin-bottom:3px}
+        .p-detail{font-size:11px;color:rgba(255,255,255,.6)}
+        .v-badge{margin-left:auto;background:rgba(110,231,183,.15);border:1px solid rgba(110,231,183,.3);border-radius:6px;padding:5px 10px;text-align:center;flex-shrink:0}
+        .v-badge-t{font-size:11px;color:#6ee7b7;font-weight:500}
+        .v-badge-s{font-size:10px;color:rgba(110,231,183,.7)}
+        .scroll-hint{position:absolute;bottom:2.5rem;left:50%;transform:translateX(-50%);z-index:2;display:flex;flex-direction:column;align-items:center;gap:8px;color:rgba(255,255,255,.5);font-size:11px;letter-spacing:.08em;text-transform:uppercase}
+        .scroll-arrow{width:20px;height:20px;border-right:1.5px solid rgba(255,255,255,.4);border-bottom:1.5px solid rgba(255,255,255,.4);transform:rotate(45deg);animation:bounce 1.8s ease-in-out infinite;margin-top:4px}
+        @keyframes bounce{0%,100%{transform:rotate(45deg) translateY(0)}50%{transform:rotate(45deg) translateY(5px)}}
+        .trust{background:#fff;border-bottom:1px solid #f0ede8;padding:.9rem 0}
+        .trust-inner{display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap}
+        .trust-label{font-size:11px;text-transform:uppercase;letter-spacing:.07em;color:#bbb;font-weight:500;flex-shrink:0}
+        .trust-sep{width:1px;height:18px;background:#eee;flex-shrink:0}
+        .trust-items{display:flex;gap:1.75rem;flex-wrap:wrap}
+        .ti{display:flex;align-items:center;gap:7px;font-size:12.5px;color:#555}
+        .ti-dot{width:7px;height:7px;border-radius:50%;background:#1D9E75;flex-shrink:0}
+        .sec{padding:5rem 0}
+        .sec.bg{background:#fafaf9}
+        .sec-border{border-top:1px solid #f0ede8;border-bottom:1px solid #f0ede8}
+        .kicker{font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#1D9E75;margin-bottom:1rem}
+        h2{font-family:'DM Serif Display',serif;font-size:clamp(28px,3.5vw,44px);font-weight:400;color:#1a1a1a;letter-spacing:-.02em;line-height:1.15;margin-bottom:1rem}
+        .sec-sub{font-size:16px;color:#666;line-height:1.7;font-weight:300;max-width:560px;margin-bottom:3rem}
+        .tl-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-bottom:2.5rem}
+        .tl-box{border-radius:16px;padding:2rem}
+        .tl-box.nhs{background:#fff;border:1px solid #f0ede8}
+        .tl-box.oht{background:linear-gradient(135deg,#042e22,#085041)}
+        .tl-head{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:1.5rem}
+        .tl-head.red{color:#dc2626}
+        .tl-head.green{color:#6ee7b7}
+        .tl-step{display:flex;gap:14px;align-items:flex-start;padding-bottom:1.25rem}
+        .tl-step:last-child{padding-bottom:0}
+        .tl-left{display:flex;flex-direction:column;align-items:center;flex-shrink:0}
+        .tl-circle{width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:600}
+        .tl-circle.red{background:#fee2e2;color:#dc2626}
+        .tl-circle.green{background:rgba(110,231,183,.2);color:#6ee7b7}
+        .tl-line{width:1px;flex:1;min-height:20px;margin-top:4px}
+        .tl-line.red{background:#fecaca}
+        .tl-line.green{background:rgba(110,231,183,.2)}
+        .tl-label{font-size:14px;font-weight:500;color:#1a1a1a;margin-bottom:2px}
+        .tl-box.oht .tl-label{color:#fff}
+        .tl-wait{font-size:12px;color:#dc2626;font-weight:500}
+        .tl-ok{font-size:12px;color:#6ee7b7;font-weight:500}
+        .tl-total{border-radius:10px;padding:.9rem 1.25rem;margin-top:1.5rem;font-size:14px;font-weight:600}
+        .tl-total.bad{background:#fee2e2;color:#dc2626}
+        .tl-total.good{background:rgba(110,231,183,.15);color:#6ee7b7;border:1px solid rgba(110,231,183,.2)}
+        .tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:1.5rem}
+        .tab{background:#f5f4f2;border:1px solid transparent;padding:9px 18px;border-radius:100px;font-size:13px;font-weight:500;cursor:pointer;font-family:'Inter',sans-serif;color:#555;transition:all .2s}
+        .tab.active,.tab:hover{background:#085041;color:#fff}
+        .table-wrap{background:#fff;border:1px solid #f0ede8;border-radius:16px;overflow:hidden}
+        table{width:100%;border-collapse:collapse}
+        th{font-size:11px;text-transform:uppercase;letter-spacing:.07em;color:#bbb;font-weight:500;padding:1rem 1.25rem;text-align:left;background:#fafaf9;border-bottom:1px solid #f0ede8}
+        td{padding:1rem 1.25rem;border-bottom:1px solid #fafaf9;font-size:14px;color:#1a1a1a}
+        tr:last-child td{border-bottom:none}
+        tr:hover td{background:#fafaf9}
+        .td-oht{color:#085041;font-weight:600}
+        .td-nhs{color:#aaa}
+        .saving{background:#e8faf3;color:#085041;font-weight:600;border-radius:20px;padding:4px 12px;font-size:12px;white-space:nowrap;display:inline-block}
+        .table-note{font-size:12px;color:#bbb;padding:1rem 1.25rem;border-top:1px solid #f5f4f2}
+        .neuro-warn{background:#fffbeb;border:1px solid #fde68a;border-radius:10px;padding:.85rem 1.1rem;margin-bottom:1rem;font-size:12.5px;color:#92400e;line-height:1.6}
+        .tx-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+        .tx-card{background:#fff;border:1px solid #f0ede8;border-radius:16px;padding:1.5rem;transition:transform .25s,box-shadow .25s,border-color .25s}
+        .tx-card:hover{transform:translateY(-4px);box-shadow:0 12px 40px rgba(0,0,0,.08);border-color:#d1f5e8}
+        .tx-card.neuro{border-left:3px solid #f59e0b}
+        .tx-icon{width:44px;height:44px;background:linear-gradient(135deg,#e8faf3,#c6f0de);border-radius:12px;display:flex;align-items:center;justify-content:center;margin-bottom:1rem;font-size:20px}
+        .tx-icon.neuro-icon{background:linear-gradient(135deg,#fef3e2,#fde68a)}
+        .tx-name{font-size:15px;font-weight:600;margin-bottom:.6rem;color:#1a1a1a}
+        .tx-list{list-style:none;padding:0;margin-bottom:.85rem}
+        .tx-list li{font-size:12.5px;color:#777;line-height:1.8;padding-left:12px;position:relative}
+        .tx-list li::before{content:'·';position:absolute;left:0;color:#1D9E75;font-weight:700}
+        .tx-price{font-size:12.5px;color:#085041;font-weight:600;padding-top:.85rem;border-top:1px solid #f5f4f2}
+        .neuro-badge{display:inline-block;font-size:10px;background:#fef3e2;color:#92400e;border:1px solid #fde68a;border-radius:4px;padding:2px 8px;margin-bottom:.6rem;font-weight:600}
+        .coord-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+        .coord-card{background:#fff;border:1px solid #f0ede8;border-radius:16px;padding:2rem 1.5rem;text-align:center;transition:transform .25s,box-shadow .25s}
+        .coord-card:hover{transform:translateY(-3px);box-shadow:0 8px 30px rgba(0,0,0,.06)}
+        .coord-icon{width:56px;height:56px;background:linear-gradient(135deg,#042e22,#085041);border-radius:14px;display:flex;align-items:center;justify-content:center;margin:0 auto 1.25rem;font-size:24px}
+        .coord-t{font-size:15px;font-weight:600;margin-bottom:.5rem}
+        .coord-d{font-size:13px;color:#777;line-height:1.65;font-weight:300}
+        .steps{display:grid;grid-template-columns:repeat(5,1fr);position:relative;margin-top:3rem}
+        .steps::before{content:'';position:absolute;top:22px;left:10%;right:10%;height:1px;background:linear-gradient(90deg,transparent,#c6f0de 20%,#c6f0de 80%,transparent)}
+        .step{text-align:center;padding:0 .75rem;position:relative;z-index:1}
+        .step-circle{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#085041,#1D9E75);display:flex;align-items:center;justify-content:center;margin:0 auto 1.25rem;font-size:15px;font-weight:600;color:#fff;box-shadow:0 4px 14px rgba(8,80,65,.3)}
+        .step-t{font-size:14px;font-weight:600;margin-bottom:.4rem}
+        .step-d{font-size:12px;color:#888;line-height:1.6}
+        .why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+        .why-card{background:#fff;border:1px solid #f0ede8;border-radius:16px;padding:2rem;transition:transform .25s,box-shadow .25s}
+        .why-card:hover{transform:translateY(-3px);box-shadow:0 8px 30px rgba(0,0,0,.06)}
+        .why-card.dark{background:linear-gradient(135deg,#042e22,#085041);border-color:transparent}
+        .why-icon{width:40px;height:40px;background:#f0faf5;border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:1.1rem;font-size:18px}
+        .why-card.dark .why-icon{background:rgba(255,255,255,.1)}
+        .why-t{font-size:15px;font-weight:600;margin-bottom:.5rem}
+        .why-card.dark .why-t{color:#fff}
+        .why-d{font-size:13px;color:#666;line-height:1.7;font-weight:300}
+        .why-card.dark .why-d{color:rgba(255,255,255,.65)}
+        .cta-box{background:linear-gradient(135deg,#042e22 0%,#085041 60%,#0d7a60 100%);border-radius:24px;padding:4rem;text-align:center;position:relative;overflow:hidden}
+        .cta-box h2{color:#fff;margin-bottom:1rem}
+        .cta-box p{font-size:16px;color:rgba(255,255,255,.65);font-weight:300;line-height:1.7;margin-bottom:2.5rem;max-width:500px;margin-left:auto;margin-right:auto}
+        .cta-actions{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+        .btn-cta-w{background:#fff;color:#085041;border:none;padding:15px 30px;border-radius:10px;font-size:15px;font-weight:600;display:inline-flex;align-items:center;gap:9px;cursor:pointer;font-family:'Inter',sans-serif;transition:transform .2s,box-shadow .2s}
+        .btn-cta-w:hover{transform:translateY(-2px);box-shadow:0 8px 30px rgba(0,0,0,.2)}
+        .btn-cta-o{background:transparent;color:rgba(255,255,255,.85);border:1px solid rgba(255,255,255,.3);padding:15px 30px;border-radius:10px;font-size:15px;display:inline-flex;align-items:center;gap:9px;cursor:pointer;font-family:'Inter',sans-serif;transition:all .2s}
+        .btn-cta-o:hover{background:rgba(255,255,255,.1);color:#fff}
+        .wa-pill{display:inline-flex;align-items:center;gap:10px;background:#1D9E75;color:#fff;border:none;border-radius:100px;padding:14px 24px;font-size:14px;font-weight:500;cursor:pointer;font-family:'Inter',sans-serif;transition:background .2s,transform .2s;margin-bottom:2rem}
+        .wa-pill:hover{background:#085041;transform:translateY(-1px)}
+        footer{background:#111;padding:3rem 0 2rem}
+        .footer-top{display:flex;justify-content:space-between;flex-wrap:wrap;gap:2rem;padding-bottom:2rem;border-bottom:1px solid #222;margin-bottom:1.5rem}
+        .footer-brand{font-size:12.5px;color:#666;line-height:1.7;max-width:320px}
+        .footer-brand-name{font-family:'DM Serif Display',serif;font-size:16px;color:#fff;margin-bottom:.75rem}
+        .footer-links{display:flex;gap:3rem;flex-wrap:wrap}
+        .footer-col h4{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:#555;font-weight:600;margin-bottom:1rem}
+        .footer-col a{display:block;font-size:13px;color:#555;margin-bottom:.5rem;transition:color .2s}
+        .footer-col a:hover{color:#6ee7b7}
+        .footer-legal{font-size:11.5px;color:#444;line-height:1.8}
+        .footer-legal em{color:#333;font-style:normal;font-size:11px}
+        .fbadges{display:flex;gap:8px;flex-wrap:wrap;margin-top:1rem}
+        .fbadge{display:flex;align-items:center;gap:5px;font-size:11px;color:#555;border:1px solid #222;border-radius:5px;padding:4px 10px}
+        .fbadge-dot{width:6px;height:6px;border-radius:50%;background:#1D9E75;flex-shrink:0}
+        @media(max-width:1024px){.tx-grid{grid-template-columns:repeat(2,1fr)}.why-grid{grid-template-columns:repeat(2,1fr)}.coord-grid{grid-template-columns:repeat(2,1fr)}.hero-grid{grid-template-columns:1fr}.hero-cards{display:none}}
+        @media(max-width:768px){.tl-grid{grid-template-columns:1fr}.steps{grid-template-columns:1fr;gap:1.25rem}.steps::before{display:none}.step{text-align:left;display:flex;align-items:flex-start;gap:14px}.step-circle{flex-shrink:0;margin:0}.cta-box{padding:2.5rem 1.5rem}.nav-links{display:none}h1{font-size:38px}}
+        @media(max-width:480px){.inner{padding:0 1.25rem}.tx-grid{grid-template-columns:1fr}.why-grid{grid-template-columns:1fr}.coord-grid{grid-template-columns:1fr}.cta-actions{flex-direction:column;align-items:center}}
+      `}</style>
+
+      {/* NAV */}
+      <nav className={scrolled ? 'scrolled' : ''}>
+        <div className="inner nav-inner">
+          <a href="#" className="logo">Ocean Health &amp; Travel</a>
+          <ul className="nav-links">
+            <li><a href="#compare">NHS vs OHT</a></li>
+            <li><a href="#services">Treatments</a></li>
+            <li><a href="#coordination">What we provide</a></li>
+            <li><a href="#how-it-works">How it works</a></li>
+            <li><a href={WA_URL} target="_blank" className="btn-nav">Free quote</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      {/* HERO */}
+      <section className="hero">
+        <div className="inner hero-content">
+          <div className="hero-grid">
+            <div>
+              <div className="hero-tag reveal" ref={ref}>
+                <span className="pulse"></span>
+                Istanbul &middot; UK-registered coordinator
+              </div>
+              <h1 className="reveal d1" ref={ref}>
+                Bypass NHS waitlists.<br />
+                <em>Accredited surgery</em><br />
+                in 2&ndash;3 weeks.
+              </h1>
+              <p className="hero-sub reveal d2" ref={ref}>
+                We connect UK and international patients with JCI-accredited Istanbul clinics. One coordinator handles everything — clinic liaison, airport transfer, hotel, interpreter, and GP documentation.
+              </p>
+              <div className="hero-actions reveal d3" ref={ref}>
+                <a href={WA_URL} target="_blank" className="btn-primary">Get a free quote</a>
+                <a href="#compare" className="btn-ghost">Compare NHS vs OHT ↓</a>
+              </div>
+            </div>
+            <div className="hero-cards reveal d2" ref={ref}>
+              <div className="stat-grid">
+                <div className="stat">
+                  <div className="stat-n">2&ndash;3<em> wk</em></div>
+                  <div className="stat-l">vs. 18+ months NHS wait</div>
+                </div>
+                <div className="stat">
+                  <div className="stat-n">48<em>h</em></div>
+                  <div className="stat-l">Quote turnaround</div>
+                </div>
+              </div>
+              <div className="patient-card">
+                <div className="avatar">SH</div>
+                <div>
+                  <div className="p-name">Sarah H. — Doncaster, UK</div>
+                  <div className="p-detail">Rhinoplasty · Memorial Hospital · 2025</div>
+                </div>
+                <div className="v-badge">
+                  <div className="v-badge-t">Verified</div>
+                  <div className="v-badge-s">patient</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="scroll-hint">
+          <span>Scroll</span>
+          <div className="scroll-arrow"></div>
+        </div>
+      </section>
+
+      {/* TRUST BAR */}
+      <div className="trust">
+        <div className="inner trust-inner">
+          <span className="trust-label">Credentials</span>
+          <div className="trust-sep"></div>
+          <div className="trust-items">
+            {['UK Companies House no. 16186647','ICO registered · UK GDPR','Memorial Hospitals Group partner','JCI-accredited facilities','Physician-led coordination','TÜRSAB member'].map(t => (
+              <div key={t} className="ti"><div className="ti-dot"></div>{t}</div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* NHS COMPARISON */}
+      <section className="sec bg sec-border" id="compare">
+        <div className="inner">
+          <div className="reveal" ref={ref}>
+            <div className="kicker">Why patients choose Turkey</div>
+            <h2>18 months vs. 2&ndash;3 weeks.</h2>
+            <p className="sec-sub">NHS waiting lists for elective procedures have reached historic highs. Ocean Health &amp; Travel provides coordinator-led access to the same quality of care — in a fraction of the time.</p>
+          </div>
+          <div className="tl-grid reveal" ref={ref}>
+            <div className="tl-box nhs">
+              <div className="tl-head red">NHS pathway</div>
+              {[['GP referral','Week 0'],['Outpatient consultation','6–8 month wait'],['Pre-operative assessment','Further delay'],['Surgery','12–18+ months from GP']].map(([label,wait],i,arr) => (
+                <div key={label} className="tl-step">
+                  <div className="tl-left">
+                    <div className="tl-circle red">{i+1}</div>
+                    {i<arr.length-1 && <div className="tl-line red"></div>}
+                  </div>
+                  <div><div className="tl-label">{label}</div><div className="tl-wait">{wait}</div></div>
+                </div>
+              ))}
+              <div className="tl-total bad">NHS total: 18+ months</div>
+            </div>
+            <div className="tl-box oht">
+              <div className="tl-head green">Ocean Health pathway</div>
+              {[['Contact us via WhatsApp','Day 0'],['Itemised quote & treatment plan','Within 48 hours'],['Hotel & transfer confirmed','Days 3–7'],['Surgery in Istanbul','2–3 weeks from first contact']].map(([label,ok],i,arr) => (
+                <div key={label} className="tl-step">
+                  <div className="tl-left">
+                    <div className="tl-circle green">{i+1}</div>
+                    {i<arr.length-1 && <div className="tl-line green"></div>}
+                  </div>
+                  <div><div className="tl-label">{label}</div><div className="tl-ok">{ok}</div></div>
+                </div>
+              ))}
+              <div className="tl-total good">Ocean Health total: 2–3 weeks</div>
+            </div>
+          </div>
+
+          <div className="reveal" ref={ref}>
+            <div className="tabs">
+              {[['cosmetic','Cosmetic surgery'],['dental','Dental'],['ortho','Orthopaedics'],['ophth','Ophthalmology'],['neuro','Neurosurgery']].map(([id,label]) => (
+                <button key={id} className={`tab${activeTab===id?' active':''}`} onClick={() => setActiveTab(id)}>{label}</button>
+              ))}
+            </div>
+            {activeTab === 'neuro' && (
+              <div className="neuro-warn"><strong>Important:</strong> Neurosurgical procedures require specialist referral and full clinical assessment. Ocean Health &amp; Travel does not provide medical advice. All clinical decisions rest with the treating neurosurgical team. Elective procedures only.</div>
+            )}
+            <div className="table-wrap">
+              <table>
+                <thead><tr>{procedures[activeTab].headers.map(h => <th key={h}>{h}</th>)}</tr></thead>
+                <tbody>
+                  {procedures[activeTab].rows.map(row => (
+                    <tr key={row[0]}>
+                      <td>{row[0]}</td>
+                      <td className="td-nhs">{row[1]}</td>
+                      <td className="td-oht">{row[2]}</td>
+                      <td><span className="saving">{row[3]}</span></td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+              <div className="table-note">Prices are indicative and subject to individual clinical assessment. Coordination fee quoted separately. Flights not included. Elective procedures only.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* SERVICES */}
+      <section className="sec" id="services">
+        <div className="inner">
+          <div className="reveal" ref={ref}>
+            <div className="kicker">What we coordinate</div>
+            <h2>Services we mediate</h2>
+          </div>
+          <div className="tx-grid">
+            {[
+              {icon:'🩺',name:'Plastic & cosmetic surgery',items:['Rhinoplasty, facelift, brow lift','Breast augmentation, reduction, lift','Liposuction, tummy tuck, BBL','Ear, lip, eyelid surgery'],price:'Rhinoplasty from $4,000 · Breast from £6,000'},
+              {icon:'🦷',name:'Dental',items:['Dental implants','Zirconium crowns & veneers','Smile design','Orthodontics & root canal'],price:'Implants from £350 each'},
+              {icon:'👁️',name:'Ophthalmology',items:['LASIK & laser refractive surgery','Cataract & lens replacement','Eyelid & strabismus surgery'],price:'LASIK from £600 per eye'},
+              {icon:'💊',name:'Urology & men\'s health',items:['Penile aesthetics / penoplasty','Penile prosthesis & implant','Erectile dysfunction (ED)','P-Shot, ESWT, SVF stem cell'],price:'Contact us for individual pricing'},
+              {icon:'💆',name:'Hair transplantation',items:['FUE & DHI techniques','PRP for hair restoration'],price:'Contact us for pricing'},
+              {icon:'✨',name:'Aesthetic medicine',items:['Botox & dermal fillers','Mesotherapy & Hydrafacial','Scarlet X skin tightening'],price:'From £180'},
+            ].map((s,i) => (
+              <div key={s.name} className={`tx-card reveal d${i%4+1}`} ref={ref}>
+                <div className="tx-icon">{s.icon}</div>
+                <div className="tx-name">{s.name}</div>
+                <ul className="tx-list">{s.items.map(item => <li key={item}>{item}</li>)}</ul>
+                <div className="tx-price">{s.price}</div>
+              </div>
+            ))}
+            <div className="tx-card neuro reveal" ref={ref}>
+              <div className="neuro-badge">Specialist referral required</div>
+              <div className="tx-icon neuro-icon">🧠</div>
+              <div className="tx-name">Neurosurgery</div>
+              <ul className="tx-list">
+                <li>Deep brain stimulation (Parkinson&apos;s)</li>
+                <li>Pituitary adenoma, meningioma</li>
+                <li>Glial tumours, acoustic neuroma</li>
+                <li>Lumbar & cervical disc herniation</li>
+              </ul>
+              <div className="tx-price">DBS from $30,000 · Referral required</div>
+            </div>
+            <div className="tx-card reveal" ref={ref} style={{borderStyle:'dashed',background:'#fafaf9'}}>
+              <div className="tx-icon">➕</div>
+              <div className="tx-name" style={{color:'#aaa'}}>Not listed?</div>
+              <ul className="tx-list" style={{color:'#bbb'}}>
+                <li>We coordinate across all specialties</li>
+                <li>Tell us and we&apos;ll find the right specialist</li>
+              </ul>
+              <div style={{marginTop:'.85rem'}}><a href={WA_URL} target="_blank" style={{fontSize:'13px',color:'#085041',fontWeight:600}}>Ask via WhatsApp →</a></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* COORDINATION */}
+      <section className="sec bg sec-border" id="coordination">
+        <div className="inner">
+          <div className="reveal" ref={ref}>
+            <div className="kicker">Included in every package</div>
+            <h2>What we provide</h2>
+            <p className="sec-sub">We are a coordinator, not a medical provider. Every package includes the following logistics services.</p>
+          </div>
+          <div className="coord-grid">
+            {[
+              {icon:'🚗',t:'Airport transfer',d:'Safe, pre-confirmed transfers between airport, hotel, and clinic.'},
+              {icon:'🏨',t:'Hotel & accommodation',d:'High-quality hotels close to your clinic, matched to your recovery needs.'},
+              {icon:'💬',t:'Interpretation',d:'Professional interpreter at every appointment — no communication gaps.'},
+              {icon:'📋',t:'GP documentation',d:'Discharge notes in English, forwarded to your GP on request.'},
+            ].map((c,i) => (
+              <div key={c.t} className={`coord-card reveal d${i+1}`} ref={ref}>
+                <div className="coord-icon">{c.icon}</div>
+                <div className="coord-t">{c.t}</div>
+                <div className="coord-d">{c.d}</div>
+              </div>
+            ))}
+          </div>
+          <p style={{fontSize:'12px',color:'#bbb',marginTop:'1.5rem',textAlign:'center'}}>
+            Ocean Health &amp; Travel is a coordinator, not a medical provider. All clinical decisions rest with your treating clinic. Flights not included. Client money protected via Trust Account. Elective procedures only — not suitable for emergencies.
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </section>
+
+      {/* JOURNEY */}
+      <section className="sec" id="how-it-works">
+        <div className="inner">
+          <div className="reveal" ref={ref} style={{textAlign:'center'}}>
+            <div className="kicker">The process</div>
+            <h2>From first message to home</h2>
+          </div>
+          <div className="steps">
+            {[
+              {n:'1',t:'Enquiry',d:'WhatsApp or email us your treatment and preferred dates'},
+              {n:'2',t:'Quote',d:'Itemised proposal — clinic, surgeon, hotel, transfers — within 48h'},
+              {n:'3',t:'Booking',d:'Clinic, hotel, and transfers confirmed; pre-op instructions sent'},
+              {n:'4',t:'Treatment',d:'Interpreter at every appointment; full clinic liaison'},
+              {n:'5',t:'GP docs',d:'Discharge notes in English forwarded to your GP on request'},
+            ].map((s,i) => (
+              <div key={s.t} className={`step reveal d${i+1}`} ref={ref}>
+                <div className="step-circle">{s.n}</div>
+                <div><div className="step-t">{s.t}</div><div className="step-d">{s.d}</div></div>
+              </div>
+            ))}
+          </div>
         </div>
-      </main>
-    </div>
-  );
+      </section>
+
+      {/* WHY US */}
+      <section className="sec bg" id="why-us">
+        <div className="inner">
+          <div className="reveal" ref={ref}>
+            <div className="kicker">Our difference</div>
+            <h2>Why patients choose us</h2>
+          </div>
+          <div className="why-grid">
+            {[
+              {icon:'🩺',t:'Physician-led coordination',d:'Your coordinator is a practising medical doctor. Clinical triage, pre-operative review, and documentation handled with medical accuracy — not by a travel agent.',dark:false},
+              {icon:'🏥',t:'JCI-accredited clinics only',d:'We work exclusively with internationally accredited hospitals. No referral fees from clinics — our only interest is placing you with the right specialist.',dark:false},
+              {icon:'💷',t:'Fixed, itemised pricing',d:'Your quote lists every cost before you travel. No surprises on arrival, no upselling at the clinic. What we quote is what you pay.',dark:true},
+              {icon:'📞',t:'One point of contact',d:'From first message to discharge, you deal with a single coordinator. No hand-offs, no repeated explanations.',dark:false},
+              {icon:'📄',t:'GP documentation',d:'Discharge summaries and clinical notes in English forwarded to your GP on request. Post-discharge decisions rest with your UK clinician.',dark:false},
+              {icon:'🛡️',t:'UK-registered, trust-protected',d:'Registered in England & Wales (no. 16186647). Client money protected via Trust Account. TÜRSAB member. ICO registered.',dark:false},
+            ].map((w,i) => (
+              <div key={w.t} className={`why-card${w.dark?' dark':''} reveal d${i%3+1}`} ref={ref}>
+                <div className="why-icon">{w.icon}</div>
+                <div className="why-t">{w.t}</div>
+                <div className="why-d">{w.d}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="sec">
+        <div className="inner">
+          <div style={{textAlign:'center',marginBottom:'1.5rem'}} className="reveal" ref={ref}>
+            <a href={WA_URL} target="_blank" className="wa-pill">
+              💬 Message us on WhatsApp — we reply within the hour
+            </a>
+          </div>
+          <div className="cta-box reveal" ref={ref}>
+            <h2>Ready to skip the NHS waitlist?</h2>
+            <p>Send us your treatment and preferred dates — full itemised quote within 48 hours, no obligation. Elective procedures only.</p>
+            <div className="cta-actions">
+              <a href={WA_URL} target="_blank" className="btn-cta-w">💬 Get a free quote</a>
+              <a href="mailto:info@oceanhealthtravel.com" className="btn-cta-o">✉️ Email us</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FOOTER */}
+      <footer>
+        <div className="inner">
+          <div className="footer-top">
+            <div className="footer-brand">
+              <div className="footer-brand-name">Ocean Health &amp; Travel</div>
+              <p>UK-registered medical tourism coordinator. Connecting international patients with JCI-accredited Istanbul clinics.</p>
+              <div className="fbadges">
+                {['UK GDPR / ICO','JCI partner','Trust Account','TÜRSAB','Companies House'].map(b => (
+                  <div key={b} className="fbadge"><div className="fbadge-dot"></div>{b}</div>
+                ))}
+              </div>
+            </div>
+            <div className="footer-links">
+              <div className="footer-col">
+                <h4>Treatments</h4>
+                <a href="#services">Cosmetic surgery</a>
+                <a href="#services">Dental</a>
+                <a href="#services">Ophthalmology</a>
+                <a href="#services">Neurosurgery</a>
+                <a href="#services">Urology</a>
+              </div>
+              <div className="footer-col">
+                <h4>Company</h4>
+                <a href="#">About us</a>
+                <a href="#how-it-works">How it works</a>
+                <a href="#">FAQ</a>
+                <a href="#">Blog</a>
+                <a href="mailto:info@oceanhealthtravel.com">Contact</a>
+              </div>
+              <div className="footer-col">
+                <h4>Legal</h4>
+                <a href="#">Privacy policy</a>
+                <a href="#">Complaints policy</a>
+                <a href="#">Cookie policy</a>
+                <a href="#">Brokerage agreement</a>
+              </div>
+            </div>
+          </div>
+          <div className="footer-legal">
+            © 2025 Ocean Health &amp; Travel Ltd · Registered in England &amp; Wales · Company no. 16186647 · ICO reg: [update at ico.org.uk/ESDWebPages/Search]<br />
+            London: 17 Green Lanes, N16 9BS · Fethiye: Karagözler Mah., Fevzi Çakmak Cad. No:11/A, Muğla ·{' '}
+            <a href="mailto:info@oceanhealthtravel.com" style={{color:'#555'}}>info@oceanhealthtravel.com</a> ·{' '}
+            <a href="tel:+447441904858" style={{color:'#555'}}>+44 7441 904858</a><br />
+            Flights not included · Client money protected via Trust Account · Coordinator, not a medical provider · Elective procedures only<br />
+            <em>Ocean Health &amp; Travel does not provide medical advice. All clinical decisions rest with your treating clinic. Post-discharge medical responsibility lies with your UK clinician. Not suitable for emergencies.</em>
+          </div>
+        </div>
+      </footer>
+    </>
+  )
 }
