@@ -115,8 +115,8 @@ export default function RhinoplastyPage() {
         .faq-a{padding:0 1.5rem 1.25rem;font-size:14px;color:#666;line-height:1.75;font-weight:300}
         .disclaimer{background:#fffbeb;border:1px solid #fde68a;border-radius:12px;padding:1.25rem 1.5rem;font-size:13px;color:#92400e;line-height:1.7;margin-top:2rem}
         .trust-row{display:flex;gap:1.5rem;flex-wrap:wrap;margin-top:1.5rem}
-        .trust-item{display:flex;align-items:center;gap:7px;font-size:12.5px;color:#555}
-        .trust-dot{width:7px;height:7px;border-radius:50%;background:#1D9E75;flex-shrink:0}
+        .trust-item{display:flex;align-items:center;gap:7px;font-size:12.5px;color:rgba(255,255,255,.8)}
+        .trust-dot{width:7px;height:7px;border-radius:50%;background:#6ee7b7;flex-shrink:0}
         footer{background:#111;padding:3rem 0 2rem;margin-top:0}
         .footer-legal{font-size:11.5px;color:#444;line-height:1.8}
         .footer-legal em{color:#333;font-style:normal;font-size:11px}
@@ -303,7 +303,7 @@ export default function RhinoplastyPage() {
               <div className="sidebar-card">
                 <div className="sidebar-title">What&apos;s included</div>
                 {['Airport transfer','Hotel & accommodation','Interpreter at all appointments','Clinic liaison','GP documentation on request'].map(item => (
-                  <div key={item} style={{fontSize:'13px',color:'#555',padding:'.5rem 0',borderBottom:'1px solid #f5f4f2',display:'flex',alignItems:'center',gap:'8px'}}>
+                  <div key={item} style={{fontSize:'13px',color:'rgba(255,255,255,.75)',padding:'.5rem 0',borderBottom:'1px solid #f5f4f2',display:'flex',alignItems:'center',gap:'8px'}}>
                     <div style={{width:'6px',height:'6px',borderRadius:'50%',background:'#1D9E75',flexShrink:0}}></div>
                     {item}
                   </div>
@@ -382,8 +382,8 @@ export default function RhinoplastyPage() {
           <div className="footer-legal">
             © 2025 Ocean Health &amp; Travel Ltd · Registered in England &amp; Wales · Company no. 16186647<br />
             London: 17 Green Lanes, N16 9BS · Fethiye: Karagözler Mah., Fevzi Çakmak Cad. No:11/A, Muğla ·{' '}
-            <a href="mailto:info@oceanhealthtravel.com" style={{color:'#555'}}>info@oceanhealthtravel.com</a> ·{' '}
-            <a href="tel:+447441904858" style={{color:'#555'}}>+44 7441 904858</a><br />
+            <a href="mailto:info@oceanhealthtravel.com" style={{color:'rgba(255,255,255,.75)'}}>info@oceanhealthtravel.com</a> ·{' '}
+            <a href="tel:+447441904858" style={{color:'rgba(255,255,255,.75)'}}>+44 7441 904858</a><br />
             Flights not included · Client money protected via Trust Account · Coordinator, not a medical provider · Elective procedures only<br />
             <em>Ocean Health &amp; Travel does not provide medical advice. All clinical decisions rest with your treating clinic. Not suitable for emergencies.</em>
           </div>
