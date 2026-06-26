@@ -173,8 +173,8 @@ export default function Home() {
         .tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:1.5rem}
         .tab{background:#f5f4f2;border:1px solid transparent;padding:9px 18px;border-radius:100px;font-size:13px;font-weight:500;cursor:pointer;font-family:'Inter',sans-serif;color:#555;transition:all .2s}
         .tab.active,.tab:hover{background:#085041;color:#fff}
-        .table-wrap{background:#fff;border:1px solid #f0ede8;border-radius:16px;overflow:hidden}
-        table{width:100%;border-collapse:collapse}
+        .table-wrap{background:#fff;border:1px solid #f0ede8;border-radius:16px;overflow:hidden;overflow-x:auto;-webkit-overflow-scrolling:touch}
+        table{width:100%;border-collapse:collapse;min-width:500px}
         th{font-size:11px;text-transform:uppercase;letter-spacing:.07em;color:#bbb;font-weight:500;padding:1rem 1.25rem;text-align:left;background:#fafaf9;border-bottom:1px solid #f0ede8}
         td{padding:1rem 1.25rem;border-bottom:1px solid #fafaf9;font-size:14px;color:#1a1a1a}
         tr:last-child td{border-bottom:none}
