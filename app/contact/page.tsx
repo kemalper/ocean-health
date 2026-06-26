@@ -18,7 +18,7 @@ export default function ContactPage() {
         .inner{max-width:1160px;margin:0 auto;padding:0 2.5rem}
         nav{background:rgba(255,255,255,.96);backdrop-filter:blur(12px);box-shadow:0 1px 0 rgba(0,0,0,.08);position:sticky;top:0;z-index:500}
         .nav-inner{height:66px;display:flex;align-items:center;justify-content:space-between}
-        .logo{font-family:'DM Serif Display',serif;font-size:18px;color:#085041;letter-spacing:-.01em}
+        .logo{display:flex;align-items:center}
         .nav-links{display:flex;gap:2rem;list-style:none;align-items:center}
         .nav-links a{font-size:13px;color:#444;transition:color .2s}
         .nav-links a:hover{color:#085041}
@@ -71,7 +71,7 @@ export default function ContactPage() {
 
       <nav>
         <div className="inner nav-inner">
-          <a href="/" className="logo">Ocean Health &amp; Travel</a>
+          <a href="/" className="logo"><img src="/logo.png" alt="Ocean Health &amp; Travel" style={{height:"44px",width:"auto",display:"block"}} /></a>
           <ul className="nav-links">
             <li><a href="/#compare">NHS vs OHT</a></li>
             <li><a href="/#services">Treatments</a></li>

@@ -91,8 +91,8 @@ export default function Home() {
         nav{position:fixed;top:0;left:0;right:0;z-index:500;transition:background .3s,box-shadow .3s}
         nav.scrolled{background:rgba(255,255,255,.96);backdrop-filter:blur(12px);box-shadow:0 1px 0 rgba(0,0,0,.08)}
         .nav-inner{height:66px;display:flex;align-items:center;justify-content:space-between}
-        .logo{font-family:'DM Serif Display',serif;font-size:18px;color:#fff;transition:color .3s;letter-spacing:-.01em}
-        nav.scrolled .logo{color:#085041}
+        .logo{display:flex;align-items:center}
+        
         .nav-links{display:flex;gap:2rem;list-style:none;align-items:center}
         .nav-links a{font-size:13px;color:rgba(255,255,255,.85);transition:color .2s}
         nav.scrolled .nav-links a{color:#444}
@@ -249,7 +249,7 @@ export default function Home() {
       {/* NAV */}
       <nav className={scrolled ? 'scrolled' : ''}>
         <div className="inner nav-inner">
-          <a href="#" className="logo">Ocean Health &amp; Travel</a>
+          <a href="/" className="logo"><img src="/logo.png" alt="Ocean Health &amp; Travel" style={{height:"44px",width:"auto",display:"block",filter:scrolled?"none":"brightness(0) invert(1)"}} /></a>
           <ul className="nav-links">
             <li><a href="#compare">NHS vs OHT</a></li>
             <li><a href="#services">Treatments</a></li>
@@ -562,18 +562,18 @@ export default function Home() {
               </div>
               <div className="footer-col">
                 <h4>Company</h4>
-                <a href="#">About us</a>
+                <a href="/about">About us</a>
                 <a href="#how-it-works">How it works</a>
-                <a href="#">FAQ</a>
-                <a href="#">Blog</a>
+                <a href="/faq">FAQ</a>
+                <a href="/blog">Blog</a>
                 <a href="mailto:info@oceanhealthtravel.com">Contact</a>
               </div>
               <div className="footer-col">
                 <h4>Legal</h4>
-                <a href="#">Privacy policy</a>
-                <a href="#">Complaints policy</a>
-                <a href="#">Cookie policy</a>
-                <a href="#">Brokerage agreement</a>
+                <a href="/privacy-policy">Privacy policy</a>
+                <a href="/complaints-policy">Complaints policy</a>
+                <a href="/cookie-policy">Cookie policy</a>
+                <a href="/brokerage-agreement">Brokerage agreement</a>
               </div>
             </div>
           </div>
