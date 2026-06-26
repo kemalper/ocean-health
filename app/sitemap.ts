@@ -14,6 +14,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'lasik-istanbul',
     'hair-transplant-istanbul',
     'knee-replacement-turkey',
+    'urology-istanbul',
+  ]
+
+  const legal = [
+    'privacy-policy',
+    'complaints-policy',
+    'cookie-policy',
+    'brokerage-agreement',
   ]
 
   return [
@@ -29,11 +37,29 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.7,
     },
+    {
+      url: `${baseUrl}/faq`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/contact`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.6,
+    },
     ...treatments.map(slug => ({
       url: `${baseUrl}/treatments/${slug}`,
       lastModified: new Date(),
       changeFrequency: 'monthly' as const,
       priority: 0.8,
+    })),
+    ...legal.map(slug => ({
+      url: `${baseUrl}/${slug}`,
+      lastModified: new Date(),
+      changeFrequency: 'yearly' as const,
+      priority: 0.3,
     })),
   ]
 }
