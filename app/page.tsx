@@ -404,7 +404,7 @@ export default function Home() {
               {icon:'🩺',name:'Plastic & cosmetic surgery',link:'/treatments/plastic-surgery-istanbul',items:['Rhinoplasty, facelift, brow lift','Breast augmentation, reduction, lift','Liposuction, tummy tuck, BBL','Ear, lip, eyelid surgery'],price:'Rhinoplasty from £3,200 · Breast from £6,000'},
               {icon:'🦷',name:'Dental',link:'/treatments/dental-istanbul',items:['Dental implants','Zirconium crowns & veneers','Smile design','Orthodontics & root canal'],price:'Implants from £350 each'},
               {icon:'👁️',name:'Ophthalmology',link:'/treatments/ophthalmology-istanbul',items:['LASIK & laser refractive surgery','Cataract & lens replacement','Eyelid & strabismus surgery'],price:'LASIK from £600 per eye'},
-              {icon:'💊',name:'Urology & men\'s health',link:null,items:['Penile aesthetics / penoplasty','Penile prosthesis & implant','Erectile dysfunction (ED)','P-Shot, ESWT, SVF stem cell'],price:'Contact us for individual pricing'},
+              {icon:'💊',name:'Urology & men\'s health',link:'/treatments/urology-istanbul',items:['Penile aesthetics / penoplasty','Penile prosthesis & implant','Erectile dysfunction (ED)','P-Shot, ESWT, SVF stem cell'],price:'Contact us for individual pricing'},
               {icon:'💆',name:'Hair transplantation',link:'/treatments/hair-transplant-istanbul',items:['FUE & DHI techniques','PRP for hair restoration'],price:'Contact us for pricing'},
               {icon:'✨',name:'Aesthetic medicine',link:null,items:['Botox & dermal fillers','Mesotherapy & Hydrafacial','Scarlet X skin tightening'],price:'From £180'},
             ].map((s,i) => (
