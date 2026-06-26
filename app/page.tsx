@@ -102,7 +102,7 @@ export default function Home() {
         .btn-nav:hover{background:rgba(255,255,255,.15)!important}
         nav.scrolled .btn-nav{border-color:#085041;color:#085041!important}
         nav.scrolled .btn-nav:hover{background:#085041!important;color:#fff!important}
-        .hero{min-height:100vh;background:linear-gradient(135deg,#042e22 0%,#085041 45%,#0d6b55 100%);position:relative;display:flex;flex-direction:column;justify-content:center;overflow:hidden}
+        .hero{min-height:100vh;background:linear-gradient(135deg,rgba(4,46,34,.92) 0%,rgba(8,80,65,.88) 45%,rgba(13,107,85,.85) 100%),url('https://images.pexels.com/photos/13349520/pexels-photo-13349520.jpeg?auto=compress&cs=tinysrgb&w=1920') center/cover no-repeat;position:relative;display:flex;flex-direction:column;justify-content:center;overflow:hidden}
         .hero::before{content:'';position:absolute;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(29,158,117,.25) 0%,transparent 70%);top:-100px;right:-150px;pointer-events:none}
         .hero::after{content:'';position:absolute;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(225,245,238,.08) 0%,transparent 70%);bottom:-80px;left:-100px;pointer-events:none}
         .hero-content{position:relative;z-index:2;padding:120px 0 80px}
