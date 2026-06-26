@@ -199,7 +199,7 @@ export default function Home() {
         .coord-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
         .coord-card{background:#fff;border:1px solid #f0ede8;border-radius:16px;padding:2rem 1.5rem;text-align:center;transition:transform .25s,box-shadow .25s}
         .coord-card:hover{transform:translateY(-3px);box-shadow:0 8px 30px rgba(0,0,0,.06)}
-        .coord-icon{width:56px;height:56px;background:linear-gradient(135deg,#042e22,#085041);border-radius:14px;display:flex;align-items:center;justify-content:center;margin:0 auto 1.25rem;font-size:24px}
+        .coord-icon{width:52px;height:52px;background:#E1F5EE;border-radius:12px;display:flex;align-items:center;justify-content:center;margin:0 auto 1.25rem;color:#085041}
         .coord-t{font-size:15px;font-weight:600;margin-bottom:.5rem}
         .coord-d{font-size:13px;color:#777;line-height:1.65;font-weight:300}
         .steps{display:grid;grid-template-columns:repeat(5,1fr);position:relative;margin-top:3rem}
@@ -401,7 +401,7 @@ export default function Home() {
           </div>
           <div className="tx-grid">
             {[
-              {icon:'🩺',name:'Plastic & cosmetic surgery',link:'/treatments/plastic-surgery-istanbul',img:'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=800&q=80',items:['Rhinoplasty, facelift, brow lift','Breast augmentation, reduction, lift','Liposuction, tummy tuck, BBL','Ear, lip, eyelid surgery'],price:'Rhinoplasty from £3,200 · Breast from £6,000'},
+              {icon:'🩺',name:'Plastic & cosmetic surgery',link:'/treatments/plastic-surgery-istanbul',img:'https://images.pexels.com/photos/8528647/pexels-photo-8528647.jpeg?auto=compress&cs=tinysrgb&w=800',items:['Rhinoplasty, facelift, brow lift','Breast augmentation, reduction, lift','Liposuction, tummy tuck, BBL','Ear, lip, eyelid surgery'],price:'Rhinoplasty from £3,200 · Breast from £6,000'},
               {icon:'🦷',name:'Dental',link:'/treatments/dental-istanbul',img:'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=800&q=80',items:['Dental implants','Zirconium crowns & veneers','Smile design','Orthodontics & root canal'],price:'Implants from £350 each'},
               {icon:'👁️',name:'Ophthalmology',link:'/treatments/ophthalmology-istanbul',img:'https://images.pexels.com/photos/18680821/pexels-photo-18680821.jpeg?auto=compress&cs=tinysrgb&w=800',items:['LASIK & laser refractive surgery','Cataract & lens replacement','Eyelid & strabismus surgery'],price:'LASIK from £600 per eye'},
               {icon:'💊',name:'Urology & men\'s health',link:'/treatments/urology-istanbul',img:'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80',items:['Penile aesthetics / penoplasty','Penile prosthesis & implant','Erectile dysfunction (ED)','P-Shot, ESWT, SVF stem cell'],price:'Contact us for individual pricing'},
@@ -454,10 +454,10 @@ export default function Home() {
           </div>
           <div className="coord-grid">
             {[
-              {icon:'🚗',t:'Airport transfer',d:'Safe, pre-confirmed transfers between airport, hotel, and clinic.'},
-              {icon:'🏨',t:'Hotel & accommodation',d:'High-quality hotels close to your clinic, matched to your recovery needs.'},
-              {icon:'💬',t:'Interpretation',d:'Professional interpreter at every appointment — no communication gaps.'},
-              {icon:'📋',t:'GP documentation',d:'Discharge notes in English, forwarded to your GP on request.'},
+              {icon:<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>,t:'Airport transfer',d:'Safe, pre-confirmed transfers between airport, hotel, and clinic.'},
+              {icon:<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg>,t:'Hotel & accommodation',d:'High-quality hotels close to your clinic, matched to your recovery needs.'},
+              {icon:<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>,t:'Interpretation',d:'Professional interpreter at every appointment — no communication gaps.'},
+              {icon:<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="2"/><path d="M9 12h6M9 16h4"/></svg>,t:'GP documentation',d:'Discharge notes in English, forwarded to your GP on request.'},
             ].map((c,i) => (
               <div key={c.t} className={`coord-card reveal d${i+1}`} ref={ref}>
                 <div className="coord-icon">{c.icon}</div>
@@ -505,12 +505,12 @@ export default function Home() {
           </div>
           <div className="why-grid">
             {[
-              {icon:'🩺',t:'Physician-led coordination',d:'Your coordinator is a practising medical doctor. Clinical triage, pre-operative review, and documentation handled with medical accuracy — not by a travel agent.',dark:false},
-              {icon:'🏥',t:'JCI-accredited clinics only',d:'We work exclusively with internationally accredited hospitals. No referral fees from clinics — our only interest is placing you with the right specialist.',dark:false},
-              {icon:'💷',t:'Fixed, itemised pricing',d:'Your quote lists every cost before you travel. No surprises on arrival, no upselling at the clinic. What we quote is what you pay.',dark:true},
-              {icon:'📞',t:'One point of contact',d:'From first message to discharge, you deal with a single coordinator. No hand-offs, no repeated explanations.',dark:false},
-              {icon:'📄',t:'GP documentation',d:'Discharge summaries and clinical notes in English forwarded to your GP on request. Post-discharge decisions rest with your UK clinician.',dark:false},
-              {icon:'🛡️',t:'UK-registered, trust-protected',d:'Registered in England & Wales (no. 16186647). Client money protected via Trust Account. TÜRSAB member. ICO registered.',dark:false},
+              {icon:<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M4.8 2.3A.3.3 0 1 0 5 2H4a2 2 0 0 0-2 2v5a6 6 0 0 0 6 6a6 6 0 0 0 6-6V4a2 2 0 0 0-2-2h-1"/><path d="M8 15v1a6 6 0 0 0 6 6a6 6 0 0 0 6-6v-4"/><circle cx="20" cy="10" r="2"/></svg>,t:'Physician-led coordination',d:'Your coordinator is a practising medical doctor. Clinical triage, pre-operative review, and documentation handled with medical accuracy — not by a travel agent.',dark:false},
+              {icon:<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9,22 9,12 15,12 15,22"/></svg>,t:'JCI-accredited clinics only',d:'We work exclusively with internationally accredited hospitals. No referral fees from clinics — our only interest is placing you with the right specialist.',dark:false},
+              {icon:<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>,t:'Fixed, itemised pricing',d:'Your quote lists every cost before you travel. No surprises on arrival, no upselling at the clinic. What we quote is what you pay.',dark:true},
+              {icon:<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>,t:'One point of contact',d:'From first message to discharge, you deal with a single coordinator. No hand-offs, no repeated explanations.',dark:false},
+              {icon:<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>,t:'GP documentation',d:'Discharge summaries and clinical notes in English forwarded to your GP on request. Post-discharge decisions rest with your UK clinician.',dark:false},
+              {icon:<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>,t:'UK-registered, trust-protected',d:'Registered in England & Wales (no. 16186647). Client money protected via Trust Account. TÜRSAB member. ICO registered.',dark:false},
             ].map((w,i) => (
               <div key={w.t} className={`why-card${w.dark?' dark':''} reveal d${i%3+1}`} ref={ref}>
                 <div className="why-icon">{w.icon}</div>
