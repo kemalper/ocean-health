@@ -401,21 +401,22 @@ export default function Home() {
           </div>
           <div className="tx-grid">
             {[
-              {icon:'🩺',name:'Plastic & cosmetic surgery',items:['Rhinoplasty, facelift, brow lift','Breast augmentation, reduction, lift','Liposuction, tummy tuck, BBL','Ear, lip, eyelid surgery'],price:'Rhinoplasty from £3,200 · Breast from £6,000'},
-              {icon:'🦷',name:'Dental',items:['Dental implants','Zirconium crowns & veneers','Smile design','Orthodontics & root canal'],price:'Implants from £350 each'},
-              {icon:'👁️',name:'Ophthalmology',items:['LASIK & laser refractive surgery','Cataract & lens replacement','Eyelid & strabismus surgery'],price:'LASIK from £600 per eye'},
-              {icon:'💊',name:'Urology & men\'s health',items:['Penile aesthetics / penoplasty','Penile prosthesis & implant','Erectile dysfunction (ED)','P-Shot, ESWT, SVF stem cell'],price:'Contact us for individual pricing'},
-              {icon:'💆',name:'Hair transplantation',items:['FUE & DHI techniques','PRP for hair restoration'],price:'Contact us for pricing'},
-              {icon:'✨',name:'Aesthetic medicine',items:['Botox & dermal fillers','Mesotherapy & Hydrafacial','Scarlet X skin tightening'],price:'From £180'},
+              {icon:'🩺',name:'Plastic & cosmetic surgery',link:'/treatments/plastic-surgery-istanbul',items:['Rhinoplasty, facelift, brow lift','Breast augmentation, reduction, lift','Liposuction, tummy tuck, BBL','Ear, lip, eyelid surgery'],price:'Rhinoplasty from £3,200 · Breast from £6,000'},
+              {icon:'🦷',name:'Dental',link:'/treatments/dental-implants-turkey',items:['Dental implants','Zirconium crowns & veneers','Smile design','Orthodontics & root canal'],price:'Implants from £350 each'},
+              {icon:'👁️',name:'Ophthalmology',link:'/treatments/lasik-istanbul',items:['LASIK & laser refractive surgery','Cataract & lens replacement','Eyelid & strabismus surgery'],price:'LASIK from £600 per eye'},
+              {icon:'💊',name:'Urology & men\'s health',link:null,items:['Penile aesthetics / penoplasty','Penile prosthesis & implant','Erectile dysfunction (ED)','P-Shot, ESWT, SVF stem cell'],price:'Contact us for individual pricing'},
+              {icon:'💆',name:'Hair transplantation',link:'/treatments/hair-transplant-istanbul',items:['FUE & DHI techniques','PRP for hair restoration'],price:'Contact us for pricing'},
+              {icon:'✨',name:'Aesthetic medicine',link:null,items:['Botox & dermal fillers','Mesotherapy & Hydrafacial','Scarlet X skin tightening'],price:'From £180'},
             ].map((s,i) => (
-              <div key={s.name} className={`tx-card reveal d${i%4+1}`} ref={ref}>
+              <div key={s.name} className={`tx-card reveal d${i%4+1}`} ref={ref} onClick={() => s.link && window.location.assign(s.link)} style={{cursor: s.link ? 'pointer' : 'default'}}>
                 <div className="tx-icon">{s.icon}</div>
                 <div className="tx-name">{s.name}</div>
                 <ul className="tx-list">{s.items.map(item => <li key={item}>{item}</li>)}</ul>
                 <div className="tx-price">{s.price}</div>
+                {s.link && <div style={{fontSize:'12px',color:'#085041',fontWeight:600,marginTop:'8px'}}>Learn more →</div>}
               </div>
             ))}
-            <div className="tx-card neuro reveal" ref={ref}>
+            <div className="tx-card neuro reveal" ref={ref} onClick={() => window.location.assign('/treatments/neurosurgery-istanbul')} style={{cursor:'pointer'}}>
               <div className="neuro-badge">Specialist referral required</div>
               <div className="tx-icon neuro-icon">🧠</div>
               <div className="tx-name">Neurosurgery</div>
@@ -425,7 +426,7 @@ export default function Home() {
                 <li>Glial tumours, acoustic neuroma</li>
                 <li>Lumbar & cervical disc herniation</li>
               </ul>
-              <div className="tx-price">DBS from $30,000 · Referral required</div>
+              <div className="tx-price">DBS from £23,700 · Referral required</div>n              <div style={{fontSize:'12px',color:'#e17055',fontWeight:600,marginTop:'8px'}}>Learn more →</div>
             </div>
             <div className="tx-card reveal" ref={ref} style={{borderStyle:'dashed',background:'#fafaf9'}}>
               <div className="tx-icon">➕</div>
