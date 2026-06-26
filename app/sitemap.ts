@@ -13,7 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'ophthalmology-istanbul',
     'lasik-istanbul',
     'hair-transplant-istanbul',
-    'knee-replacement-turkey',
+    'knee-replacement-turkey',n    'about',
   ]
 
   return [
@@ -24,7 +24,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     ...treatments.map(slug => ({
-      url: `${baseUrl}/treatments/${slug}`,
+      url: slug === 'about' ? `${baseUrl}/about` : `${baseUrl}/treatments/${slug}`,
       lastModified: new Date(),
       changeFrequency: 'monthly' as const,
       priority: 0.8,
