@@ -522,7 +522,47 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA */}
+      {/* STORIES */}
+      <section className="sec bg" id="stories">
+        <div className="inner">
+          <div className="reveal" ref={ref}>
+            <div className="kicker">Patient stories</div>
+            <h2>What our patients say</h2>
+          </div>
+          <div style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:'16px',marginTop:'2rem'}}>
+            <div style={{background:'#fff',border:'1px solid #f0ede8',borderRadius:'16px',padding:'1.75rem'}}>
+              <div style={{display:'flex',gap:'4px',marginBottom:'1rem'}}>
+                {[1,2,3,4,5].map(i => <svg key={i} width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="none"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>)}
+              </div>
+              <div style={{fontFamily:"'DM Serif Display',serif",fontSize:'16px',fontStyle:'italic',color:'#1a1a1a',lineHeight:1.7,marginBottom:'1.25rem',fontWeight:400}}>&ldquo;I had a urology treatment arranged by Ocean Health &amp; Travel and I am extremely satisfied with the entire process. From the initial consultation to the procedure and follow-up, everything was well organized and transparent. The doctors and nurses were experienced, attentive, and explained each step clearly. Logistics such as appointments, transportation, and hospital coordination were handled smoothly. I confidently recommend Ocean Health &amp; Travel to anyone seeking high-quality care.&rdquo;</div>
+              <div style={{display:'flex',alignItems:'center',gap:'10px'}}>
+                <div style={{width:'36px',height:'36px',borderRadius:'50%',background:'#E1F5EE',display:'flex',alignItems:'center',justifyContent:'center',fontFamily:"'DM Serif Display',serif",fontSize:'13px',color:'#085041',flexShrink:0}}>OG</div>
+                <div>
+                  <div style={{fontSize:'13px',fontWeight:500}}>Ozan G.</div>
+                  <div style={{fontSize:'12px',color:'#888'}}>Urology &middot; Istanbul &middot; Google Review ★★★★★</div>
+                </div>
+              </div>
+            </div>
+            <div style={{background:'#fff',border:'1px solid #f0ede8',borderRadius:'16px',padding:'1.75rem'}}>
+              <div style={{display:'flex',gap:'4px',marginBottom:'1rem'}}>
+                {[1,2,3,4,5].map(i => <svg key={i} width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="none"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>)}
+              </div>
+              <div style={{fontFamily:"'DM Serif Display',serif",fontSize:'16px',fontStyle:'italic',color:'#1a1a1a',lineHeight:1.7,marginBottom:'1.25rem',fontWeight:400}}>&ldquo;I had the best experience with Ocean Health. From the first port of call, consultation, procedure and follow up care was absolutely faultless. I was anxious and worried about having dental treatment abroad but I had absolutely nothing to worry about. Everything was taken care of and to the highest of standards. I have a constant smile on my face thanks to this wonderful company.&rdquo;</div>
+              <div style={{display:'flex',alignItems:'center',gap:'10px'}}>
+                <div style={{width:'36px',height:'36px',borderRadius:'50%',background:'#E1F5EE',display:'flex',alignItems:'center',justifyContent:'center',fontFamily:"'DM Serif Display',serif",fontSize:'13px',color:'#085041',flexShrink:0}}>SS</div>
+                <div>
+                  <div style={{fontSize:'13px',fontWeight:500}}>Savannah S.</div>
+                  <div style={{fontSize:'12px',color:'#888'}}>Dental (full crowns) &middot; Google Review ★★★★★</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style={{textAlign:'center',marginTop:'1.5rem'}}>
+            <a href="https://www.google.com/search?q=Ocean+Health+Travel+reviews" target="_blank" rel="noopener noreferrer" style={{fontSize:'13px',color:'#085041',fontWeight:500}}>Read all reviews on Google →</a>
+          </div>
+        </div>
+      </section>
+
       <section className="sec">
         <div className="inner">
           <div style={{textAlign:'center',marginBottom:'1.5rem'}} className="reveal" ref={ref}>
