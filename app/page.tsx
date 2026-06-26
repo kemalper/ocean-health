@@ -401,15 +401,17 @@ export default function Home() {
           </div>
           <div className="tx-grid">
             {[
-              {icon:'🩺',name:'Plastic & cosmetic surgery',link:'/treatments/plastic-surgery-istanbul',items:['Rhinoplasty, facelift, brow lift','Breast augmentation, reduction, lift','Liposuction, tummy tuck, BBL','Ear, lip, eyelid surgery'],price:'Rhinoplasty from £3,200 · Breast from £6,000'},
-              {icon:'🦷',name:'Dental',link:'/treatments/dental-istanbul',items:['Dental implants','Zirconium crowns & veneers','Smile design','Orthodontics & root canal'],price:'Implants from £350 each'},
-              {icon:'👁️',name:'Ophthalmology',link:'/treatments/ophthalmology-istanbul',items:['LASIK & laser refractive surgery','Cataract & lens replacement','Eyelid & strabismus surgery'],price:'LASIK from £600 per eye'},
-              {icon:'💊',name:'Urology & men\'s health',link:'/treatments/urology-istanbul',items:['Penile aesthetics / penoplasty','Penile prosthesis & implant','Erectile dysfunction (ED)','P-Shot, ESWT, SVF stem cell'],price:'Contact us for individual pricing'},
-              {icon:'💆',name:'Hair transplantation',link:'/treatments/hair-transplant-istanbul',items:['FUE & DHI techniques','PRP for hair restoration'],price:'Contact us for pricing'},
-              {icon:'✨',name:'Aesthetic medicine',link:null,items:['Botox & dermal fillers','Mesotherapy & Hydrafacial','Scarlet X skin tightening'],price:'From £180'},
+              {icon:'🩺',name:'Plastic & cosmetic surgery',link:'/treatments/plastic-surgery-istanbul',img:'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=800&q=80',items:['Rhinoplasty, facelift, brow lift','Breast augmentation, reduction, lift','Liposuction, tummy tuck, BBL','Ear, lip, eyelid surgery'],price:'Rhinoplasty from £3,200 · Breast from £6,000'},
+              {icon:'🦷',name:'Dental',link:'/treatments/dental-istanbul',img:'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=800&q=80',items:['Dental implants','Zirconium crowns & veneers','Smile design','Orthodontics & root canal'],price:'Implants from £350 each'},
+              {icon:'👁️',name:'Ophthalmology',link:'/treatments/ophthalmology-istanbul',img:'https://images.pexels.com/photos/18680821/pexels-photo-18680821.jpeg?auto=compress&cs=tinysrgb&w=800',items:['LASIK & laser refractive surgery','Cataract & lens replacement','Eyelid & strabismus surgery'],price:'LASIK from £600 per eye'},
+              {icon:'💊',name:'Urology & men\'s health',link:'/treatments/urology-istanbul',img:'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80',items:['Penile aesthetics / penoplasty','Penile prosthesis & implant','Erectile dysfunction (ED)','P-Shot, ESWT, SVF stem cell'],price:'Contact us for individual pricing'},
+              {icon:'💆',name:'Hair transplantation',link:'/treatments/hair-transplant-istanbul',img:'https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=80',items:['FUE & DHI techniques','PRP for hair restoration'],price:'Contact us for pricing'},
+              {icon:'✨',name:'Aesthetic medicine',link:null,img:'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=800&q=80',items:['Botox & dermal fillers','Mesotherapy & Hydrafacial','Scarlet X skin tightening'],price:'From £180'},
             ].map((s,i) => (
               <div key={s.name} className={`tx-card reveal d${i%4+1}`} ref={ref} onClick={() => s.link && window.location.assign(s.link)} style={{cursor: s.link ? 'pointer' : 'default'}}>
-                <div className="tx-icon">{s.icon}</div>
+                <div style={{height:'160px',borderRadius:'10px',overflow:'hidden',marginBottom:'1rem',background:'#f0ede8'}}>
+                  <img src={s.img} alt={s.name} style={{width:'100%',height:'100%',objectFit:'cover',display:'block'}} />
+                </div>
                 <div className="tx-name">{s.name}</div>
                 <ul className="tx-list">{s.items.map(item => <li key={item}>{item}</li>)}</ul>
                 <div className="tx-price">{s.price}</div>
@@ -417,6 +419,7 @@ export default function Home() {
               </div>
             ))}
             <div className="tx-card neuro reveal" ref={ref} onClick={() => window.location.assign('/treatments/neurosurgery-istanbul')} style={{cursor:'pointer'}}>
+              <div style={{height:"160px",borderRadius:"10px",overflow:"hidden",marginBottom:"1rem",background:"#f0ede8"}}><img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=800&q=80" alt="Neurosurgery" style={{width:"100%",height:"100%",objectFit:"cover",display:"block"}} /></div>
               <div className="neuro-badge">Specialist referral required</div>
               <div className="tx-icon neuro-icon">🧠</div>
               <div className="tx-name">Neurosurgery</div>
