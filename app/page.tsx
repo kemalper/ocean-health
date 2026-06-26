@@ -429,7 +429,8 @@ export default function Home() {
                 <li>Glial tumours, acoustic neuroma</li>
                 <li>Lumbar & cervical disc herniation</li>
               </ul>
-              <div className="tx-price">DBS from £23,700 · Referral required</div>n              <div style={{fontSize:'12px',color:'#e17055',fontWeight:600,marginTop:'8px'}}>Learn more →</div>
+              <div className="tx-price">DBS from £23,700 · Referral required</div>
+              <div style={{fontSize:'12px',color:'#e17055',fontWeight:600,marginTop:'8px'}}>Learn more →</div>
             </div>
             <div className="tx-card reveal" ref={ref} style={{borderStyle:'dashed',background:'#fafaf9'}}>
               <div className="tx-icon">➕</div>
