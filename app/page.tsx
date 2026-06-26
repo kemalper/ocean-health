@@ -294,10 +294,10 @@ export default function Home() {
                 </div>
               </div>
               <div className="patient-card">
-                <div className="avatar">SH</div>
+                <div className="avatar">SS</div>
                 <div>
-                  <div className="p-name">Sarah H. — Doncaster, UK</div>
-                  <div className="p-detail">Rhinoplasty · Memorial Hospital · 2025</div>
+                  <div className="p-name">Savannah S.</div>
+                  <div className="p-detail">Dental (full crowns) · Google Review ★★★★★</div>
                 </div>
                 <div className="v-badge">
                   <div className="v-badge-t">Verified</div>
