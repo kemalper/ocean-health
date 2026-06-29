@@ -93,7 +93,7 @@ export default function ContactPage() {
                   <div className="method-icon green">💬</div>
                   <div>
                     <div className="method-t">WhatsApp</div>
-                    <div className="method-d">Fastest response. Send your treatment enquiry, photos, or clinical documents directly.</div>
+                    <div className="method-d">Fastest response. Send your treatment enquiry, photos, or clinical documents directly. By sending medical information, you consent to its processing and transfer to selected healthcare providers in Turkey for quotation and treatment coordination purposes.</div>
                     <div className="method-val">+44 7441 904858</div>
                   </div>
                 </a>
@@ -198,7 +198,7 @@ export default function ContactPage() {
       <footer>
         <div className="inner">
           <div className="footer-legal">
-            © 2025 Ocean Health &amp; Travel Ltd · Registered in England &amp; Wales · Company no. 16186647<br />
+            © {new Date().getFullYear()} Ocean Health &amp; Travel Ltd · Registered in England &amp; Wales · Company no. 16186647<br />
             London: 17 Green Lanes, N16 9BS · Fethiye: Karagözler Mah., Fevzi Çakmak Cad. No:11/A, Muğla ·{' '}
             <a href="mailto:info@oceanhealthtravel.com" style={{color:'#555'}}>info@oceanhealthtravel.com</a> ·{' '}
             <a href="tel:+447441904858" style={{color:'#555'}}>+44 7441 904858</a><br />
