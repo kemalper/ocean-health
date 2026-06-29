@@ -60,6 +60,7 @@ export default function Nav({ transparent = false }: { transparent?: boolean }) 
             <li><a href="/about">About</a></li>
             <li><a href="/faq">FAQ</a></li>
             <li><a href="/contact">Contact</a></li>
+            <li><a href="/pre-operative-assessment" style={{color:"#1D9E75",fontWeight:600}}>Pre-op ✓</a></li>
             <li><a href={WA_URL} target="_blank" rel="noopener noreferrer" className="btn-nav">Free quote</a></li>
           </ul>
           <button className="hamburger" onClick={() => setOpen(true)} aria-label="Open menu">
@@ -76,6 +77,7 @@ export default function Nav({ transparent = false }: { transparent?: boolean }) 
         <a href="/about" onClick={() => setOpen(false)}>About</a>
         <a href="/faq" onClick={() => setOpen(false)}>FAQ</a>
         <a href="/contact" onClick={() => setOpen(false)}>Contact</a>
+        <a href="/pre-operative-assessment" onClick={() => setOpen(false)} style={{color:"#085041"}}>Pre-op Assessment</a>
         <a href={WA_URL} target="_blank" rel="noopener noreferrer" className="mobile-btn" onClick={() => setOpen(false)}>💬 Free quote</a>
       </div>
     </>
