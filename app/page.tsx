@@ -319,7 +319,7 @@ export default function Home() {
           <span className="trust-label">Credentials</span>
           <div className="trust-sep"></div>
           <div className="trust-items">
-            {['UK Companies House no. 16186647','ICO registered · UK GDPR','Memorial Hospitals Group partner','JCI-accredited facilities','Physician-led coordination','TÜRSAB member'].map(t => (
+            {['UK Companies House no. 16186647','ICO registered · UK GDPR','Access to JCI-accredited hospitals','JCI-accredited facilities','Physician-led coordination','TÜRSAB member'].map(t => (
               <div key={t} className="ti"><div className="ti-dot"></div>{t}</div>
             ))}
           </div>
@@ -506,8 +506,8 @@ export default function Home() {
           </div>
           <div className="why-grid">
             {[
-              {icon:<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M4.8 2.3A.3.3 0 1 0 5 2H4a2 2 0 0 0-2 2v5a6 6 0 0 0 6 6a6 6 0 0 0 6-6V4a2 2 0 0 0-2-2h-1"/><path d="M8 15v1a6 6 0 0 0 6 6a6 6 0 0 0 6-6v-4"/><circle cx="20" cy="10" r="2"/></svg>,t:'Physician-led coordination',d:'Your coordinator is a practising medical doctor. Clinical triage, pre-operative review, and documentation handled with medical accuracy — not by a travel agent.',dark:false},
-              {icon:<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9,22 9,12 15,12 15,22"/></svg>,t:'JCI-accredited clinics only',d:'We work exclusively with internationally accredited hospitals. No referral fees from clinics — our only interest is placing you with the right specialist.',dark:false},
+              {icon:<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M4.8 2.3A.3.3 0 1 0 5 2H4a2 2 0 0 0-2 2v5a6 6 0 0 0 6 6a6 6 0 0 0 6-6V4a2 2 0 0 0-2-2h-1"/><path d="M8 15v1a6 6 0 0 0 6 6a6 6 0 0 0 6-6v-4"/><circle cx="20" cy="10" r="2"/></svg>,t:'Physician-led coordination',d:'Led by a medical doctor and university professor of physiology. Clinical triage, pre-operative review, and documentation handled with medical accuracy — not by a travel agent.',dark:false},
+              {icon:<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9,22 9,12 15,12 15,22"/></svg>,t:'JCI-accredited clinics only',d:'We work exclusively with internationally accredited hospitals. Our coordination fee is paid by our partner clinics — patients pay no additional brokerage fee on top of their treatment cost.',dark:false},
               {icon:<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>,t:'Fixed, itemised pricing',d:'Your quote lists every cost before you travel. No surprises on arrival, no upselling at the clinic. What we quote is what you pay.',dark:true},
               {icon:<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>,t:'One point of contact',d:'From first message to discharge, you deal with a single coordinator. No hand-offs, no repeated explanations.',dark:false},
               {icon:<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>,t:'GP documentation',d:'Discharge summaries and clinical notes in English forwarded to your GP on request. Post-discharge decisions rest with your UK clinician.',dark:false},
@@ -590,7 +590,7 @@ export default function Home() {
               <div className="footer-brand-name">Ocean Health &amp; Travel</div>
               <p>UK-registered medical tourism coordinator. Connecting international patients with JCI-accredited Istanbul clinics.</p>
               <div className="fbadges">
-                {['UK GDPR / ICO','JCI partner','Trust Account','TÜRSAB','Companies House'].map(b => (
+                {['UK GDPR / ICO','JCI-accredited hospitals','Trust Account','TÜRSAB','Companies House'].map(b => (
                   <div key={b} className="fbadge"><div className="fbadge-dot"></div>{b}</div>
                 ))}
               </div>
@@ -622,7 +622,7 @@ export default function Home() {
             </div>
           </div>
           <div className="footer-legal">
-            © 2025 Ocean Health &amp; Travel Ltd · Registered in England &amp; Wales · Company no. 16186647 · ICO reg: [update at ico.org.uk/ESDWebPages/Search]<br />
+            © 2025 Ocean Health &amp; Travel Ltd · Registered in England &amp; Wales · Company no. 16186647 · ICO registered · UK GDPR compliant<br />
             London: 17 Green Lanes, N16 9BS · Fethiye: Karagözler Mah., Fevzi Çakmak Cad. No:11/A, Muğla ·{' '}
             <a href="mailto:info@oceanhealthtravel.com" style={{color:'#555'}}>info@oceanhealthtravel.com</a> ·{' '}
             <a href="tel:+447441904858" style={{color:'#555'}}>+44 7441 904858</a><br />
