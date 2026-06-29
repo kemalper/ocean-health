@@ -172,7 +172,7 @@ export default function AboutPage() {
               {t:'ICO registration · UK GDPR compliance',d:'Registered with the Information Commissioner\'s Office for lawful processing of patient data under UK GDPR.'},
               {t:'Client payments held in a designated client account',d:'Client payments are held in a designated client account, separate from operating funds, before and during your treatment.'},
               {t:'TÜRSAB authorisation',d:'Authorised to conduct International Health Tourism Intermediary Services under Turkish law. TÜRSAB member.'},
-              {t:'USHAS — International Health Tourism Authorisation Certificate',d:'Authorised under the Bye-Law on International Health Tourism and Tourist Health, pursuant to Decree Law No. 663.'},
+              {t:'USHAS — International Health Tourism Authorisation Certificate',d:'Authorised under the Bye-Law on International Health Tourism and Tourist Health, pursuant to Decree Law No. 663. Certificate no. AK-1451, issued 12 August 2025.'},
               {t:'JCI-accredited partner hospitals only',d:'We coordinate exclusively with Joint Commission International accredited hospitals in Istanbul, including Memorial Hospitals Group.'},
             ].map(c => (
               <div key={c.t} className="cred-item">
