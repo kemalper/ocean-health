@@ -238,14 +238,14 @@ export default function RhinoplastyPage() {
 
               <h3>Rhinoplasty cost in Istanbul vs. UK</h3>
               <p>
-                Rhinoplasty at UK private clinics typically costs between £7,000 and £12,000, depending on the surgeon, clinic, and complexity of the procedure. The same procedure at JCI-accredited hospitals in Istanbul starts from £3,200 — a saving of 55–70%. This price differential is driven by lower operating costs in Turkey, not by differences in surgical quality or hospital standards at accredited facilities.
+                Rhinoplasty at UK private clinics typically costs between £7,000 and £12,000, depending on the surgeon, clinic, and complexity of the procedure. The same procedure at JCI-accredited hospitals in Istanbul starts from £3,200 — a saving of up to 55%. This price differential is driven by lower operating costs in Turkey, not by differences in surgical quality or hospital standards at accredited facilities.
               </p>
 
               <h3>Why Istanbul for rhinoplasty?</h3>
               <ul>
                 <li>High volume of procedures — Istanbul surgeons perform significantly more rhinoplasties per year than most UK surgeons, building substantial case experience</li>
                 <li>JCI-accredited hospitals meeting international safety standards</li>
-                <li>55–70% lower cost vs. UK private clinics</li>
+                <li>up to 55% lower cost vs. UK private clinics</li>
                 <li>2–3 week timeline from first enquiry to surgery</li>
                 <li>English-speaking coordinators and interpreters throughout</li>
               </ul>

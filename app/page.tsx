@@ -7,12 +7,12 @@ const procedures: Record<string, { headers: string[], rows: string[][] }> = {
   cosmetic: {
     headers: ['Procedure', 'UK private', 'Istanbul (OHT)', 'Saving'],
     rows: [
-      ['Rhinoplasty', '£7,000 – £12,000', 'from £3,200', '55–70%'],
-      ['Breast augmentation', '£8,000 – £11,000', 'from £6,000', '30–45%'],
-      ['Breast reduction', '£8,000 – £10,000', 'from £6,000', '25–40%'],
-      ['Liposuction', '£3,500 – £7,500', 'from £2,500', '30–65%'],
-      ['Facelift', '£8,000 – £15,000', 'from £5,000', '40–65%'],
-      ['Tummy tuck', '£5,000 – £9,000', 'from £3,500', '30–60%'],
+      ['Rhinoplasty', '£4,000 – £7,000', 'from £3,200', 'up to 55%'],
+      ['Breast augmentation', '£5,000 – £8,000', 'from £5,500', 'up to 50%'],
+      ['Breast reduction (incl. implants)', '£8,000 – £10,000', 'from £6,300', 'up to 40%'],
+      ['Liposuction', '£3,000 – £8,500', 'from £2,500', 'up to 70%'],
+      ['Face & neck lift', '£7,000 – £12,000', 'from £5,000', 'up to 60%'],
+      ['Tummy tuck', '£5,000 – £10,000', 'from £3,500', 'up to 65%'],
     ]
   },
   dental: {
