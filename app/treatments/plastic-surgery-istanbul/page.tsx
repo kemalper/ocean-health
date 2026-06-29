@@ -347,7 +347,7 @@ export default function PlasticSurgeryPage() {
             <h2>Ready to find out what your procedure costs?</h2>
             <p>Tell us which procedure you&apos;re interested in and we&apos;ll have a full itemised quote within 48 hours — no obligation.</p>
             <div className="cta-btns">
-              <a href={WA_URL} target="_blank" className="btn-cta-w">💬 Get a free quote</a>
+              <a href="/pre-operative-assessment" style={{background:"transparent",color:"rgba(255,255,255,.8)",border:"1px solid rgba(255,255,255,.3)",padding:"14px 28px",borderRadius:"10px",fontSize:"15px",display:"inline-flex",alignItems:"center",gap:"8px",fontFamily:"Inter,sans-serif"}}>Pre-operative assessment →</a>n              <a href={WA_URL} target="_blank" className="btn-cta-w">💬 Get a free quote</a>
               <a href="mailto:info@oceanhealthtravel.com" className="btn-cta-o">✉️ Email us</a>
             </div>
           </div>

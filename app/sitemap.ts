@@ -55,6 +55,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly' as const,
       priority: 0.8,
     })),
+    {
+      url: \`${baseUrl}/pre-operative-assessment\`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly' as const,
+      priority: 0.7,
+    },
     ...legal.map(slug => ({
       url: `${baseUrl}/${slug}`,
       lastModified: new Date(),
