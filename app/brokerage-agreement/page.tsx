@@ -67,9 +67,9 @@ export default function BrokerageAgreement() {
 
         <h2>Fees and payment</h2>
         <ul>
-          <li>Our coordination fee is specified in your itemised quote and agreed before booking</li>
-          <li>Treatment costs are paid directly to the treating hospital or held in our Trust Account on their behalf</li>
-          <li>Client money is protected via Trust Account at all times</li>
+          <li>Ocean Health &amp; Travel does not charge a coordination fee to patients. Our commercial arrangements are with partner hospitals. All treatment costs are specified in your itemised quote and agreed before booking</li>
+          <li>Treatment costs are paid directly to the treating hospital or held in a designated client account on their behalf</li>
+          <li>Client payments are held in a designated client account, separate from operating funds</li>
           <li>All fees are confirmed in writing before any payment is taken</li>
           <li>Flights are not included in any package</li>
         </ul>
@@ -77,7 +77,7 @@ export default function BrokerageAgreement() {
         <h2>Cancellation and refunds</h2>
         <ul>
           <li>Cancellation terms are specified in your individual coordination agreement</li>
-          <li>Coordination fees may be non-refundable once booking has been confirmed with the hospital</li>
+          <li>Any non-refundable elements of your package are specified in your individual coordination agreement</li>
           <li>Treatment deposits paid to hospitals are subject to each hospital&apos;s own cancellation policy</li>
           <li>We will provide all reasonable assistance in the event of cancellation due to medical reasons</li>
         </ul>
@@ -100,7 +100,7 @@ export default function BrokerageAgreement() {
       <footer>
         <div className="inner">
           <div className="footer-legal">
-            © 2025 Ocean Health &amp; Travel Ltd · Company no. 16186647 ·{' '}
+            © {new Date().getFullYear()} Ocean Health &amp; Travel Ltd · Company no. 16186647 ·{' '}
             <a href="/privacy-policy">Privacy policy</a> ·{' '}
             <a href="/cookie-policy">Cookie policy</a> ·{' '}
             <a href="/complaints-policy">Complaints policy</a>
