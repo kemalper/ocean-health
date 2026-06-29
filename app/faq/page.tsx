@@ -39,15 +39,15 @@ const faqSections = [
       },
       {
         q: 'What is included in the price?',
-        a: 'Your itemised quote will specify exactly what is included. Typically: surgeon fee, anaesthesia, hospital stay, and standard post-operative care. Our coordination fee covers airport transfer, hotel, interpreter, and clinic liaison. Flights are never included.',
+        a: 'Your itemised quote will specify exactly what is included. Typically: surgeon fee, anaesthesia, hospital stay, and standard post-operative care. Airport transfer, hotel, interpreter, and clinic liaison are included in your package. No coordination fee is charged directly to patients. Flights are never included.',
       },
       {
         q: 'Are there any hidden charges?',
-        a: 'No. Our quotes are itemised and fixed before you travel. We do not add charges on arrival, and we do not receive referral commissions from clinics — our interests are aligned with yours.',
+        a: 'No. Our quotes are itemised and fixed before you travel. We do not add charges on arrival. Ocean Health &amp; Travel coordinates your care at no direct cost to you — our commercial arrangements are with partner hospitals, not with patients.',
       },
       {
         q: 'How do I pay?',
-        a: 'Payment terms are specified in your coordination agreement. Client money is protected via Trust Account before and during treatment. Full details are provided in our Medical Services Brokerage Agreement.',
+        a: 'Payment terms are specified in your coordination agreement. Client payments are held in a designated client account, separate from operating funds, before and during treatment. Full details are provided in our Medical Services Brokerage Agreement.',
       },
       {
         q: 'Are flights included?',
@@ -60,11 +60,11 @@ const faqSections = [
     faqs: [
       {
         q: 'Is medical treatment in Istanbul safe?',
-        a: 'Ocean Health & Travel coordinates exclusively with JCI (Joint Commission International) accredited hospitals in Istanbul. JCI is the international equivalent of CQC accreditation in the UK. All partner facilities meet international standards for surgical safety, infection control, and patient care.',
+        a: 'Ocean Health & Travel coordinates exclusively with JCI-accredited hospitals in Istanbul. JCI (Joint Commission International) is an internationally recognised hospital accreditation standard covering patient safety, quality systems, and clinical governance. All partner facilities meet these international standards.',
       },
       {
         q: 'Which hospitals do you work with?',
-        a: 'We work with JCI-accredited hospitals in Istanbul, including Memorial Hospitals Group. We do not receive referral fees from hospitals — our partner clinics are selected based on clinical standards, not commercial arrangements.',
+        a: 'We work with JCI-accredited hospitals in Istanbul, including Memorial Hospitals Group. Our partner hospitals are selected based on clinical standards and JCI accreditation. Our commercial arrangements with hospitals do not affect the independence of clinical decisions.',
       },
       {
         q: 'Are the surgeons qualified?',
@@ -89,7 +89,7 @@ const faqSections = [
       },
       {
         q: 'What happens after I return to the UK?',
-        a: 'Post-discharge documentation — including operative notes, discharge summary, and any laboratory results — is provided in English and forwarded to your UK GP on request. Post-discharge medical management is the responsibility of your UK clinician. Ocean Health & Travel does not provide post-operative medical care.',
+        a: 'Post-discharge documentation — including operative notes, discharge summary, and any laboratory results — is provided in English and forwarded to your UK GP on request. The treating hospital remains responsible for its clinical treatment and agreed post-operative follow-up. Patients should seek urgent local medical care if required after returning home. Ocean Health & Travel does not provide post-operative medical care.',
       },
       {
         q: 'Is Ocean Health & Travel a medical provider?',
@@ -106,7 +106,7 @@ const faqSections = [
       },
       {
         q: 'Do I need a visa to travel to Turkey?',
-        a: 'UK passport holders can obtain an e-Visa for Turkey online before travel (currently £20–£30). Most EU passport holders can enter Turkey visa-free or with a simple e-Visa. We recommend checking current requirements at the Turkish e-Visa website (evisa.gov.tr) before booking.',
+        a: 'British citizen passport holders can normally visit Turkey without a visa for up to 90 days in any 180-day period. Most EU passport holders can also enter visa-free. Patients should check the latest entry requirements on GOV.UK before travelling.',
       },
       {
         q: 'Can I bring a companion?',
@@ -123,7 +123,7 @@ const faqSections = [
     faqs: [
       {
         q: 'Is Ocean Health & Travel a UK registered company?',
-        a: 'Yes. Ocean Health & Travel Ltd is registered in England & Wales (Companies House no. 16186647). We are registered with the ICO for UK GDPR compliance, and client money is protected via Trust Account.',
+        a: 'Yes. Ocean Health & Travel Ltd is registered in England & Wales (Companies House no. 16186647). We are registered with the ICO for UK GDPR compliance, and client payments are held in a designated client account.',
       },
       {
         q: 'How long have you been operating?',
@@ -257,11 +257,11 @@ export default function FAQPage() {
       <footer>
         <div className="inner">
           <div className="footer-legal">
-            © 2025 Ocean Health &amp; Travel Ltd · Registered in England &amp; Wales · Company no. 16186647<br />
+            © {new Date().getFullYear()} Ocean Health &amp; Travel Ltd · Registered in England &amp; Wales · Company no. 16186647<br />
             London: 17 Green Lanes, N16 9BS · Fethiye: Karagözler Mah., Fevzi Çakmak Cad. No:11/A, Muğla ·{' '}
             <a href="mailto:info@oceanhealthtravel.com" style={{color:'#555'}}>info@oceanhealthtravel.com</a> ·{' '}
             <a href="tel:+447441904858" style={{color:'#555'}}>+44 7441 904858</a><br />
-            Flights not included · Client money protected via Trust Account · Coordinator, not a medical provider · Elective procedures only<br />
+            Flights not included · Client payments held in a designated client account · Coordinator, not a medical provider · Elective procedures only<br />
             <em>Ocean Health &amp; Travel does not provide medical advice. All clinical decisions rest with your treating clinic. Not suitable for emergencies.</em>
           </div>
         </div>
