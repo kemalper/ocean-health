@@ -102,7 +102,7 @@ export default function ComplaintsPolicy() {
       <footer>
         <div className="inner">
           <div className="footer-legal">
-            © 2025 Ocean Health &amp; Travel Ltd · Company no. 16186647 ·{' '}
+            © {new Date().getFullYear()} Ocean Health &amp; Travel Ltd · Company no. 16186647 ·{' '}
             <a href="/privacy-policy">Privacy policy</a> ·{' '}
             <a href="/cookie-policy">Cookie policy</a> ·{' '}
             <a href="/complaints-policy">Complaints policy</a>
