@@ -112,7 +112,7 @@ export default function AboutPage() {
                 We are a coordination service, not a medical provider. We do not employ surgeons or operate clinical facilities. Our role is to make the process of accessing high-quality elective medical care in Istanbul straightforward, transparent, and safe — handling every logistical step so that patients can focus on their treatment and recovery.
               </p>
               <p>
-                What distinguishes us is physician-led coordination. Your case is reviewed and managed by a practising medical doctor, not a travel agent. This means clinical documentation is handled accurately, pre-operative questions are answered with medical knowledge, and communication with hospital teams is precise.
+                What distinguishes us is physician-led coordination. Your case is overseen by a medically qualified university professor, ensuring clinical documentation is handled accurately, medical information is communicated clearly to the treating team, and hospital liaison is precise.
               </p>
             </div>
           </div>
@@ -146,7 +146,7 @@ export default function AboutPage() {
                   {icon:'🎯',t:'Transparency',d:'Fixed, itemised pricing before you commit. No hidden charges on arrival, no upselling at the clinic.'},
                   {icon:'🩺',t:'Medical accuracy',d:'Physician-led coordination means clinical documentation is handled correctly from the start.'},
                   {icon:'🤝',t:'Patient-first',d:'One coordinator, one case. You deal with the same person from first enquiry to discharge.'},
-                  {icon:'🛡️',t:'Accountability',d:'UK-registered, ICO compliant, client money protected via Trust Account. TÜRSAB authorised.'},
+                  {icon:'🛡️',t:'Accountability',d:'UK-registered, ICO compliant, client payments held in a designated client account. TÜRSAB authorised.'},
                 ].map(v => (
                   <div key={v.t} className="value-card">
                     <div className="value-icon">{v.icon}</div>
@@ -170,7 +170,7 @@ export default function AboutPage() {
             {[
               {t:'UK Companies House registration',d:'Ocean Health & Travel Ltd · Registered in England & Wales · Company no. 16186647'},
               {t:'ICO registration · UK GDPR compliance',d:'Registered with the Information Commissioner\'s Office for lawful processing of patient data under UK GDPR.'},
-              {t:'Client money protection via Trust Account',d:'Patient funds are held in a protected Trust Account. Your money is secure before and during your treatment.'},
+              {t:'Client payments held in a designated client account',d:'Client payments are held in a designated client account, separate from operating funds, before and during your treatment.'},
               {t:'TÜRSAB authorisation',d:'Authorised to conduct International Health Tourism Intermediary Services under Turkish law. TÜRSAB member.'},
               {t:'USHAS — International Health Tourism Authorisation Certificate',d:'Authorised under the Bye-Law on International Health Tourism and Tourist Health, pursuant to Decree Law No. 663.'},
               {t:'JCI-accredited partner hospitals only',d:'We coordinate exclusively with Joint Commission International accredited hospitals in Istanbul, including Memorial Hospitals Group.'},
@@ -187,7 +187,7 @@ export default function AboutPage() {
 
           <div className="disclaimer-box">
             <p>
-              <strong>Medical disclaimer:</strong> Ocean Health &amp; Travel is a medical tourism coordination service and does not replace independent medical advice. We do not provide clinical assessments, diagnoses, or treatment recommendations. All clinical decisions rest with the treating physician at our partner hospital. This service covers elective procedures only and is not suitable for emergency medical situations. Post-discharge medical responsibility lies with your UK clinician.
+              <strong>Medical disclaimer:</strong> Ocean Health &amp; Travel is a medical tourism coordination service and does not replace independent medical advice. We do not provide clinical assessments, diagnoses, or treatment recommendations. All clinical decisions rest with the treating physician at our partner hospital. This service covers elective procedures only and is not suitable for emergency medical situations. The treating hospital remains responsible for its clinical treatment and agreed post-operative follow-up. Patients should seek urgent local medical care if required after returning home.
             </p>
           </div>
         </div>
@@ -243,7 +243,7 @@ export default function AboutPage() {
       <footer>
         <div className="inner">
           <div className="footer-legal">
-            © 2025 Ocean Health &amp; Travel Ltd · Registered in England &amp; Wales · Company no. 16186647<br />
+            © {new Date().getFullYear()} Ocean Health &amp; Travel Ltd · Registered in England &amp; Wales · Company no. 16186647<br />
             London: 17 Green Lanes, N16 9BS · Fethiye: Karagözler Mah., Fevzi Çakmak Cad. No:11/A, Muğla ·{' '}
             <a href="mailto:info@oceanhealthtravel.com" style={{color:'#555'}}>info@oceanhealthtravel.com</a> ·{' '}
             <a href="tel:+447441904858" style={{color:'#555'}}>+44 7441 904858</a><br />
