@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Nav from '@/app/components/Nav'
 
 export const metadata: Metadata = {
   title: 'FAQ | Ocean Health & Travel — Medical Coordination Istanbul',
@@ -145,14 +146,9 @@ export default function FAQPage() {
         body{font-family:'Inter',sans-serif;color:#1a1a1a;background:#fff}
         a{text-decoration:none;color:inherit}
         .inner{max-width:1160px;margin:0 auto;padding:0 2.5rem}
-        nav{background:rgba(255,255,255,.96);backdrop-filter:blur(12px);box-shadow:0 1px 0 rgba(0,0,0,.08);position:sticky;top:0;z-index:500}
-        .nav-inner{height:66px;display:flex;align-items:center;justify-content:space-between}
-        .logo{display:flex;align-items:center}
-        .nav-links{display:flex;gap:2rem;list-style:none;align-items:center}
-        .nav-links a{font-size:13px;color:#444;transition:color .2s}
-        .nav-links a:hover{color:#085041}
-        .btn-nav{border:1px solid #085041;padding:8px 18px;border-radius:7px;font-size:13px;font-weight:500;color:#085041!important;transition:all .2s}
-        .btn-nav:hover{background:#085041;color:#fff!important}
+.nav-links a:hover{color:#085041}
+        .btn-
+.btn-nav:hover{background:#085041;color:#fff!important}
         .hero{background:linear-gradient(135deg,#042e22 0%,#085041 50%,#0d6b55 100%);padding:80px 0 60px;position:relative;overflow:hidden}
         .hero::before{content:'';position:absolute;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(29,158,117,.2) 0%,transparent 70%);top:-100px;right:-100px;pointer-events:none}
         .hero-inner{position:relative;z-index:1;max-width:640px}
@@ -162,8 +158,8 @@ export default function FAQPage() {
         .hero-sub{font-size:16px;color:rgba(255,255,255,.72);line-height:1.75;font-weight:300}
         .sec{padding:5rem 0}
         .faq-layout{display:grid;grid-template-columns:240px 1fr;gap:4rem;align-items:start}
-        .faq-nav{position:sticky;top:80px}
-        .faq-nav-title{font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#bbb;margin-bottom:1rem}
+        .faq-
+.faq-nav-title{font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#bbb;margin-bottom:1rem}
         .faq-nav-link{display:block;font-size:13px;color:#666;padding:.5rem 0;border-left:2px solid #f0ede8;padding-left:.75rem;margin-bottom:.25rem;transition:all .2s;cursor:pointer}
         .faq-nav-link:hover{color:#085041;border-left-color:#085041}
         .faq-section{margin-bottom:3.5rem}
@@ -187,7 +183,8 @@ export default function FAQPage() {
         footer{background:#111;padding:3rem 0 2rem}
         .footer-legal{font-size:11.5px;color:#444;line-height:1.8}
         .footer-legal em{color:#333;font-style:normal;font-size:11px}
-        @media(max-width:900px){.faq-layout{grid-template-columns:1fr}.faq-nav{display:none}}
+        @media(max-width:900px){.faq-layout{grid-template-columns:1fr}.faq-
+}
         @media(max-width:600px){.inner{padding:0 1.25rem}.hero{padding:60px 0 50px}}
       `}</style>
 
@@ -201,18 +198,7 @@ export default function FAQPage() {
         })))
       })}} />
 
-      <nav>
-        <div className="inner nav-inner">
-          <a href="/" className="logo"><img src="/logo.png" alt="Ocean Health &amp; Travel" style={{height:"44px",width:"auto",display:"block"}} /></a>
-          <ul className="nav-links">
-            <li><a href="/#compare">NHS vs OHT</a></li>
-            <li><a href="/#services">Treatments</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/contact">Contact</a></li>
-            <li><a href={WA_URL} target="_blank" className="btn-nav">Free quote</a></li>
-          </ul>
-        </div>
-      </nav>
+      <Nav />
 
       <section className="hero">
         <div className="inner">

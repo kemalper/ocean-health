@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Nav from '@/app/components/Nav'
 
 export const metadata: Metadata = {
   title: 'Contact Us | Ocean Health & Travel',
@@ -16,14 +17,9 @@ export default function ContactPage() {
         body{font-family:'Inter',sans-serif;color:#1a1a1a;background:#fff}
         a{text-decoration:none;color:inherit}
         .inner{max-width:1160px;margin:0 auto;padding:0 2.5rem}
-        nav{background:rgba(255,255,255,.96);backdrop-filter:blur(12px);box-shadow:0 1px 0 rgba(0,0,0,.08);position:sticky;top:0;z-index:500}
-        .nav-inner{height:66px;display:flex;align-items:center;justify-content:space-between}
-        .logo{display:flex;align-items:center}
-        .nav-links{display:flex;gap:2rem;list-style:none;align-items:center}
-        .nav-links a{font-size:13px;color:#444;transition:color .2s}
-        .nav-links a:hover{color:#085041}
-        .btn-nav{border:1px solid #085041;padding:8px 18px;border-radius:7px;font-size:13px;font-weight:500;color:#085041!important;transition:all .2s}
-        .btn-nav:hover{background:#085041;color:#fff!important}
+.nav-links a:hover{color:#085041}
+        .btn-
+.btn-nav:hover{background:#085041;color:#fff!important}
         .hero{background:linear-gradient(135deg,#042e22 0%,#085041 50%,#0d6b55 100%);padding:80px 0 60px;position:relative;overflow:hidden}
         .hero::before{content:'';position:absolute;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(29,158,117,.2) 0%,transparent 70%);top:-100px;right:-100px;pointer-events:none}
         .hero-inner{position:relative;z-index:1;max-width:640px}
@@ -69,17 +65,7 @@ export default function ContactPage() {
         @media(max-width:600px){.inner{padding:0 1.25rem}.hero{padding:60px 0 50px}.cta-btns{flex-direction:column;align-items:center}}
       `}</style>
 
-      <nav>
-        <div className="inner nav-inner">
-          <a href="/" className="logo"><img src="/logo.png" alt="Ocean Health &amp; Travel" style={{height:"44px",width:"auto",display:"block"}} /></a>
-          <ul className="nav-links">
-            <li><a href="/#compare">NHS vs OHT</a></li>
-            <li><a href="/#services">Treatments</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href={WA_URL} target="_blank" className="btn-nav">Free quote</a></li>
-          </ul>
-        </div>
-      </nav>
+      <Nav />
 
       <section className="hero">
         <div className="inner">

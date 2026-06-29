@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Nav from '@/app/components/Nav'
 
 export const metadata: Metadata = {
   title: 'Privacy Policy | Ocean Health & Travel',
@@ -14,14 +15,9 @@ export default function PrivacyPolicy() {
         body{font-family:'Inter',sans-serif;color:#1a1a1a;background:#fff}
         a{text-decoration:none;color:inherit}
         .inner{max-width:1160px;margin:0 auto;padding:0 2.5rem}
-        nav{background:rgba(255,255,255,.96);backdrop-filter:blur(12px);box-shadow:0 1px 0 rgba(0,0,0,.08);position:sticky;top:0;z-index:500}
-        .nav-inner{height:66px;display:flex;align-items:center;justify-content:space-between}
-        .logo{display:flex;align-items:center}
-        .nav-links{display:flex;gap:2rem;list-style:none;align-items:center}
-        .nav-links a{font-size:13px;color:#444;transition:color .2s}
-        .nav-links a:hover{color:#085041}
-        .btn-nav{border:1px solid #085041;padding:8px 18px;border-radius:7px;font-size:13px;font-weight:500;color:#085041!important;transition:all .2s}
-        .btn-nav:hover{background:#085041;color:#fff!important}
+.nav-links a:hover{color:#085041}
+        .btn-
+.btn-nav:hover{background:#085041;color:#fff!important}
         .hero{background:#fafaf9;border-bottom:1px solid #f0ede8;padding:60px 0 40px}
         .kicker{font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#1D9E75;margin-bottom:1rem}
         h1{font-family:'DM Serif Display',serif;font-size:clamp(28px,3.5vw,42px);line-height:1.15;letter-spacing:-.02em;color:#1a1a1a;margin-bottom:.75rem;font-weight:400}
@@ -39,19 +35,7 @@ export default function PrivacyPolicy() {
         @media(max-width:600px){.inner{padding:0 1.25rem}.content{padding:2.5rem 1.25rem}}
       `}</style>
 
-      <nav>
-        <div className="inner nav-inner">
-          <a href="/" className="logo">
-            <img src="/logo.png" alt="Ocean Health &amp; Travel" style={{height:'44px',width:'auto',display:'block'}} />
-          </a>
-          <ul className="nav-links">
-            <li><a href="/#services">Treatments</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/contact">Contact</a></li>
-            <li><a href="https://wa.me/447441904858" target="_blank" className="btn-nav">Free quote</a></li>
-          </ul>
-        </div>
-      </nav>
+      <Nav />
 
       <div className="hero">
         <div className="inner">

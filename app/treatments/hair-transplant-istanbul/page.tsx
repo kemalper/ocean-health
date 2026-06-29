@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Nav from '@/app/components/Nav'
 
 export const metadata: Metadata = {
   title: 'Hair Transplant in Istanbul | Ocean Health & Travel',
@@ -43,14 +44,9 @@ export default function HairTransplantPage() {
         body{font-family:'Inter',sans-serif;color:#1a1a1a;background:#fff}
         a{text-decoration:none;color:inherit}
         .inner{max-width:1160px;margin:0 auto;padding:0 2.5rem}
-        nav{background:rgba(255,255,255,.96);backdrop-filter:blur(12px);box-shadow:0 1px 0 rgba(0,0,0,.08);position:sticky;top:0;z-index:500}
-        .nav-inner{height:66px;display:flex;align-items:center;justify-content:space-between}
-        .logo{display:flex;align-items:center}
-        .nav-links{display:flex;gap:2rem;list-style:none;align-items:center}
-        .nav-links a{font-size:13px;color:#444;transition:color .2s}
-        .nav-links a:hover{color:#085041}
-        .btn-nav{border:1px solid #085041;padding:8px 18px;border-radius:7px;font-size:13px;font-weight:500;color:#085041!important;transition:all .2s}
-        .btn-nav:hover{background:#085041;color:#fff!important}
+.nav-links a:hover{color:#085041}
+        .btn-
+.btn-nav:hover{background:#085041;color:#fff!important}
         .hero{background:linear-gradient(135deg,#1a0a2e 0%,#2d1b69 50%,#4a1fa8 100%);padding:100px 0 80px;position:relative;overflow:hidden}
         .hero::before{content:'';position:absolute;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(139,92,246,.2) 0%,transparent 70%);top:-100px;right:-100px;pointer-events:none}
         .hero-grid{display:grid;grid-template-columns:1.2fr 0.8fr;gap:3rem;align-items:center;position:relative;z-index:1}
@@ -146,17 +142,7 @@ export default function HairTransplantPage() {
         }))
       })}} />
 
-      <nav>
-        <div className="inner nav-inner">
-          <a href="/" className="logo"><img src="/logo.png" alt="Ocean Health &amp; Travel" style={{height:"44px",width:"auto",display:"block"}} /></a>
-          <ul className="nav-links">
-            <li><a href="/#compare">NHS vs OHT</a></li>
-            <li><a href="/#services">Treatments</a></li>
-            <li><a href="/#how-it-works">How it works</a></li>
-            <li><a href={WA_URL} target="_blank" className="btn-nav">Free quote</a></li>
-          </ul>
-        </div>
-      </nav>
+      <Nav />
 
       <section className="hero">
         <div className="inner">
