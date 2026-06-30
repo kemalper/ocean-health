@@ -439,6 +439,7 @@ export default function Home() {
                 <li>Tell us and we&apos;ll find the right specialist</li>
               </ul>
               <div style={{marginTop:'.85rem'}}><a href={WA_URL} target="_blank" style={{fontSize:'13px',color:'#085041',fontWeight:600}}>Ask via WhatsApp →</a></div>
+              <div style={{marginTop:'.5rem'}}><a href="/treatments/urology-istanbul" style={{fontSize:'12px',color:'#aaa'}}>Urology &amp; men&apos;s health →</a></div>
             </div>
           </div>
         </div>
