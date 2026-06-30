@@ -397,14 +397,13 @@ export default function Home() {
         <div className="inner">
           <div className="reveal" ref={ref}>
             <div className="kicker">What we coordinate</div>
-            <h2>Services we mediate</h2>
+            <h2>Services we coordinate</h2>
           </div>
           <div className="tx-grid">
             {[
               {icon:'🩺',name:'Plastic & cosmetic surgery',link:'/treatments/plastic-surgery-istanbul',img:'https://images.pexels.com/photos/8528647/pexels-photo-8528647.jpeg?auto=compress&cs=tinysrgb&w=800',items:['Rhinoplasty, facelift, brow lift','Breast augmentation, reduction, lift','Liposuction, tummy tuck, BBL','Ear, lip, eyelid surgery'],price:'Rhinoplasty from £3,200 · Breast from £6,000'},
               {icon:'🦷',name:'Dental',link:'/treatments/dental-istanbul',img:'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=800&q=80',items:['Dental implants','Zirconium crowns & veneers','Smile design','Orthodontics & root canal'],price:'Implants from £350 each'},
               {icon:'👁️',name:'Ophthalmology',link:'/treatments/ophthalmology-istanbul',img:'https://images.pexels.com/photos/18680821/pexels-photo-18680821.jpeg?auto=compress&cs=tinysrgb&w=800',items:['LASIK & laser refractive surgery','Cataract & lens replacement','Eyelid & strabismus surgery'],price:'LASIK from £600 per eye'},
-              {icon:'💊',name:'Urology & men\'s health',link:'/treatments/urology-istanbul',img:'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80',items:['Penile aesthetics / penoplasty','Penile prosthesis & implant','Erectile dysfunction (ED)','P-Shot, ESWT, SVF stem cell'],price:'Contact us for individual pricing'},
               {icon:'💆',name:'Hair transplantation',link:'/treatments/hair-transplant-istanbul',img:'/hair-transplant.jpg',items:['FUE & DHI techniques','PRP for hair restoration'],price:'Contact us for pricing'},
               {icon:'✨',name:'Aesthetic medicine',link:null,img:'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=800&q=80',items:['Botox & dermal fillers','Mesotherapy & Hydrafacial','Scarlet X skin tightening'],price:'From £180'},
             ].map((s,i) => (
@@ -602,7 +601,7 @@ export default function Home() {
                 <a href="#services">Dental</a>
                 <a href="#services">Ophthalmology</a>
                 <a href="#services">Neurosurgery</a>
-                <a href="#services">Urology</a>
+                <a href="/treatments/urology-istanbul">Urology & men's health</a>
               </div>
               <div className="footer-col">
                 <h4>Company</h4>
