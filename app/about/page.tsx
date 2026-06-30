@@ -41,7 +41,7 @@ export default function AboutPage() {
         .stat-l{font-size:13px;color:#777;font-weight:300}
         .value-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;margin-top:2rem}
         .value-card{background:#fff;border:1px solid #f0ede8;border-radius:14px;padding:1.25rem}
-        .value-icon{font-size:22px;margin-bottom:.75rem}
+        .value-icon{width:40px;height:40px;background:#f0faf5;border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:.75rem;color:#085041}
         .value-t{font-size:14px;font-weight:600;margin-bottom:.4rem}
         .value-d{font-size:13px;color:#777;line-height:1.65;font-weight:300}
         .credential-list{display:flex;flex-direction:column;gap:.75rem;margin-top:1.5rem}
@@ -143,10 +143,10 @@ export default function AboutPage() {
               <h2>Our values</h2>
               <div className="value-grid">
                 {[
-                  {icon:'🎯',t:'Transparency',d:'Fixed, itemised pricing before you commit. No hidden charges on arrival, no upselling at the clinic.'},
-                  {icon:'🩺',t:'Medical accuracy',d:'Physician-led coordination means clinical documentation is handled correctly from the start.'},
-                  {icon:'🤝',t:'Patient-first',d:'One coordinator, one case. You deal with the same person from first enquiry to discharge.'},
-                  {icon:'🛡️',t:'Accountability',d:'UK-registered, ICO compliant, client payments held in a designated client account. TÜRSAB authorised.'},
+                  {icon:<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>,t:'Transparency',d:'Fixed, itemised pricing before you commit. No hidden charges on arrival, no upselling at the clinic.'},
+                  {icon:<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M4.8 2.3A.3.3 0 1 0 5 2H4a2 2 0 0 0-2 2v5a6 6 0 0 0 6 6a6 6 0 0 0 6-6V4a2 2 0 0 0-2-2h-1"/><path d="M8 15v1a6 6 0 0 0 6 6a6 6 0 0 0 6-6v-4"/><circle cx="20" cy="10" r="2"/></svg>,t:'Medical accuracy',d:'Physician-led coordination means clinical documentation is handled correctly from the start.'},
+                  {icon:<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>,t:'Patient-first',d:'One coordinator, one case. You deal with the same person from first enquiry to discharge.'},
+                  {icon:<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>,t:'Accountability',d:'UK-registered, ICO compliant, client payments held in a designated client account. TÜRSAB authorised.'},
                 ].map(v => (
                   <div key={v.t} className="value-card">
                     <div className="value-icon">{v.icon}</div>
