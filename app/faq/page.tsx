@@ -72,7 +72,7 @@ const faqSections = [
       },
       {
         q: 'What if something goes wrong?',
-        a: 'Your treating hospital has standard clinical governance and complaint procedures. Ocean Health & Travel has a formal Complaints Policy — available on our website — and will assist in coordinating communication with the hospital in the event of a concern. We are registered with the ICO and operate under UK consumer protection law.',
+        a: 'Your treating provider has standard clinical governance and complaint procedures. Ocean Health & Travel has a formal Complaints Policy — available on our website — and will assist in coordinating communication with the hospital in the event of a concern. We are registered with the ICO and operate under UK consumer protection law.',
       },
     ],
   },
@@ -89,7 +89,7 @@ const faqSections = [
       },
       {
         q: 'What happens after I return to the UK?',
-        a: 'Post-discharge documentation — including operative notes, discharge summary, and any laboratory results — is provided in English and forwarded to your UK GP on request. The treating hospital remains responsible for its clinical treatment and agreed post-operative follow-up. Patients should seek urgent local medical care if required after returning home. Ocean Health & Travel does not provide post-operative medical care.',
+        a: 'Post-discharge documentation — including operative notes, discharge summary, and any laboratory results — is provided in English and forwarded to your UK GP on request. The treating provider remains responsible for its clinical treatment and agreed post-operative follow-up. Patients should seek urgent local medical care if required after returning home. Ocean Health & Travel does not provide post-operative medical care.',
       },
       {
         q: 'Is Ocean Health & Travel a medical provider?',
@@ -262,7 +262,7 @@ export default function FAQPage() {
             <a href="mailto:info@oceanhealthtravel.com" style={{color:'#555'}}>info@oceanhealthtravel.com</a> ·{' '}
             <a href="tel:+447441904858" style={{color:'#555'}}>+44 7441 904858</a><br />
             Flights not included · Client payments held in a designated client account · Coordinator, not a medical provider · Elective procedures only<br />
-            <em>Ocean Health &amp; Travel does not provide medical advice. All clinical decisions rest with your treating clinic. Not suitable for emergencies.</em>
+            <em>Ocean Health &amp; Travel does not provide medical advice. All clinical decisions rest with your treating provider. Not suitable for emergencies.</em>
           </div>
         </div>
       </footer>

@@ -60,7 +60,7 @@ export default function BrokerageAgreement() {
         <ul>
           <li>Obtaining treatment quotes from partner hospitals on your behalf</li>
           <li>Arranging airport transfers, hotel accommodation, and interpretation services</li>
-          <li>Liaising between you and the treating hospital throughout your stay</li>
+          <li>Liaising between you and the treating provider throughout your stay</li>
           <li>Forwarding post-discharge documentation to your UK GP on request</li>
         </ul>
         <p>We do not provide medical advice, clinical assessments, or treatment. All clinical decisions rest with the treating physician at the partner hospital.</p>
@@ -68,7 +68,7 @@ export default function BrokerageAgreement() {
         <h2>Fees and payment</h2>
         <ul>
           <li>Ocean Health &amp; Travel does not charge a coordination fee to patients. Our commercial arrangements are with partner hospitals. All treatment costs are specified in your itemised quote and agreed before booking</li>
-          <li>Treatment costs are paid directly to the treating hospital or held in a designated client account on their behalf</li>
+          <li>Treatment costs are paid directly to the treating provider or held in a designated client account on their behalf</li>
           <li>Client payments are held in a designated client account, separate from operating funds</li>
           <li>All fees are confirmed in writing before any payment is taken</li>
           <li>Flights are not included in any package</li>
@@ -85,7 +85,7 @@ export default function BrokerageAgreement() {
         <h2>Limitation of liability</h2>
         <p>Ocean Health &amp; Travel&apos;s liability is limited to the coordination fee paid. We are not liable for:</p>
         <ul>
-          <li>Clinical outcomes, surgical complications, or medical negligence — these are the responsibility of the treating hospital</li>
+          <li>Clinical outcomes, surgical complications, or medical negligence — these are the responsibility of the treating provider</li>
           <li>Force majeure events including flight cancellations, natural disasters, or political events</li>
           <li>Losses arising from inaccurate information provided by the patient</li>
         </ul>

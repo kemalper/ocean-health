@@ -50,10 +50,10 @@ export default function ComplaintsPolicy() {
       <div className="content">
         <h2>Our commitment</h2>
         <p>Ocean Health &amp; Travel Ltd is committed to providing a high-quality coordination service. We take all complaints seriously and aim to resolve concerns promptly, fairly, and transparently.</p>
-        <p>This policy applies to complaints about Ocean Health &amp; Travel Ltd&apos;s coordination services. Complaints about clinical care should be directed to the treating hospital or clinic — we will assist in facilitating this communication where appropriate.</p>
+        <p>This policy applies to complaints about Ocean Health &amp; Travel Ltd&apos;s coordination services. Complaints about clinical care should be directed to the treating provider — we will assist in facilitating this communication where appropriate.</p>
 
         <div className="highlight">
-          <p><strong>Important:</strong> Ocean Health &amp; Travel is a medical tourism coordinator, not a medical provider. We are not responsible for clinical outcomes, surgical decisions, or post-operative complications. Clinical complaints must be directed to the treating hospital&apos;s patient relations team.</p>
+          <p><strong>Important:</strong> Ocean Health &amp; Travel is a medical tourism coordinator, not a medical provider. We are not responsible for clinical outcomes, surgical decisions, or post-operative complications. Clinical complaints must be directed to the treating provider&apos;s patient relations team.</p>
         </div>
 
         <h2>What you can complain about</h2>

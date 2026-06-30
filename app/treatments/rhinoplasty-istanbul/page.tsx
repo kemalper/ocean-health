@@ -371,7 +371,7 @@ export default function RhinoplastyPage() {
             <a href="mailto:info@oceanhealthtravel.com" style={{color:'rgba(255,255,255,.75)'}}>info@oceanhealthtravel.com</a> ·{' '}
             <a href="tel:+447441904858" style={{color:'rgba(255,255,255,.75)'}}>+44 7441 904858</a><br />
             Flights not included · Client payments held in a designated client account · Coordinator, not a medical provider · Elective procedures only<br />
-            <em>Ocean Health &amp; Travel does not provide medical advice. All clinical decisions rest with your treating clinic. Not suitable for emergencies.</em>
+            <em>Ocean Health &amp; Travel does not provide medical advice. All clinical decisions rest with your treating provider. Not suitable for emergencies.</em>
           </div>
         </div>
       </footer>

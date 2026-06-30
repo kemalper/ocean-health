@@ -187,7 +187,7 @@ export default function AboutPage() {
 
           <div className="disclaimer-box">
             <p>
-              <strong>Medical disclaimer:</strong> Ocean Health &amp; Travel is a medical tourism coordination service and does not replace independent medical advice. We do not provide clinical assessments, diagnoses, or treatment recommendations. All clinical decisions rest with the treating physician at our partner hospital. This service covers elective procedures only and is not suitable for emergency medical situations. The treating hospital remains responsible for its clinical treatment and agreed post-operative follow-up. Patients should seek urgent local medical care if required after returning home.
+              <strong>Medical disclaimer:</strong> Ocean Health &amp; Travel is a medical tourism coordination service and does not replace independent medical advice. We do not provide clinical assessments, diagnoses, or treatment recommendations. All clinical decisions rest with the treating physician at our partner hospital. This service covers elective procedures only and is not suitable for emergency medical situations. The treating provider remains responsible for its clinical treatment and agreed post-operative follow-up. Patients should seek urgent local medical care if required after returning home.
             </p>
           </div>
         </div>
@@ -248,7 +248,7 @@ export default function AboutPage() {
             <a href="mailto:info@oceanhealthtravel.com" style={{color:'#555'}}>info@oceanhealthtravel.com</a> ·{' '}
             <a href="tel:+447441904858" style={{color:'#555'}}>+44 7441 904858</a><br />
             Flights not included · Client money protected via Trust Account · Coordinator, not a medical provider · Elective procedures only<br />
-            <em>Ocean Health &amp; Travel does not provide medical advice. All clinical decisions rest with your treating clinic. Not suitable for emergencies.</em>
+            <em>Ocean Health &amp; Travel does not provide medical advice. All clinical decisions rest with your treating provider. Not suitable for emergencies.</em>
           </div>
         </div>
       </footer>

@@ -63,7 +63,7 @@ const procedures = [
 const faqs = [
   {
     q: 'Is urology treatment in Istanbul confidential?',
-    a: 'Yes. All patient information is handled in strict confidence under UK GDPR and our Privacy Policy. Your medical information is shared only with the treating clinical team and is not disclosed to any third party without your explicit consent. Our coordination team treats all urological enquiries with complete discretion.',
+    a: 'Yes. All patient information is handled in strict confidence under UK GDPR and our Privacy Policy. Your medical information is shared only with the treating provideral team and is not disclosed to any third party without your explicit consent. Our coordination team treats all urological enquiries with complete discretion.',
   },
   {
     q: 'Do I need a referral for urology treatment?',
@@ -209,7 +209,7 @@ export default function UrologyPage() {
             ))}
           </div>
           <div className="privacy-box">
-            <p>🔒 <strong>Confidentiality:</strong> All urological enquiries are handled with complete discretion. Your information is shared only with the treating clinical team and is never disclosed to third parties without your explicit consent. We are registered with the ICO and operate under UK GDPR.</p>
+            <p>🔒 <strong>Confidentiality:</strong> All urological enquiries are handled with complete discretion. Your information is shared only with the treating provideral team and is never disclosed to third parties without your explicit consent. We are registered with the ICO and operate under UK GDPR.</p>
           </div>
           <p style={{fontSize:'12px',color:'#bbb',marginTop:'1rem',lineHeight:1.6}}>
             Prices on request. Coordination fee quoted separately. Flights not included. Ocean Health &amp; Travel is a coordinator, not a medical provider. All clinical decisions rest with your treating urologist.

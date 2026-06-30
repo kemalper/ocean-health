@@ -251,7 +251,7 @@ export default function Home() {
         <div className="inner nav-inner">
           <a href="/" className="logo"><img src="/logo.png" alt="Ocean Health &amp; Travel" style={{height:"44px",width:"auto",display:"block",filter:scrolled?"none":"brightness(0) invert(1)"}} /></a>
           <ul className="nav-links">
-            <li><a href="#compare">Why Istanbul</a></li>
+            <li><a href="#compare">NHS vs OHT</a></li>
             <li><a href="#services">Treatments</a></li>
             <li><a href="#coordination">What we provide</a></li>
             <li><a href="#how-it-works">How it works</a></li>
@@ -270,16 +270,16 @@ export default function Home() {
                 Istanbul &middot; UK-registered coordinator
               </div>
               <h1 className="reveal d1" ref={ref}>
-                Private treatment<br />
-                <em>in Istanbul.</em><br />
-                In 2&ndash;3 weeks.
+                Bypass NHS waitlists.<br />
+                <em>Accredited surgery</em><br />
+                in 2&ndash;3 weeks.
               </h1>
               <p className="hero-sub reveal d2" ref={ref}>
                 We connect UK and international patients with JCI-accredited Istanbul clinics. One coordinator handles everything — clinic liaison, airport transfer, hotel, interpreter, and GP documentation.
               </p>
               <div className="hero-actions reveal d3" ref={ref}>
                 <a href={WA_URL} target="_blank" className="btn-primary">Get a free quote</a>
-                <a href="#compare" className="btn-ghost">Compare Why Istanbul ↓</a>
+                <a href="#compare" className="btn-ghost">Compare NHS vs OHT ↓</a>
               </div>
             </div>
             <div className="hero-cards reveal d2" ref={ref}>
@@ -332,7 +332,7 @@ export default function Home() {
           <div className="reveal" ref={ref}>
             <div className="kicker">Why patients choose Turkey</div>
             <h2>18 months vs. 2&ndash;3 weeks.</h2>
-            <p className="sec-sub">NHS waiting lists for elective procedures have reached historic highs. Ocean Health &amp; Travel provides coordinator-led access to the internationally accredited hospitals — in a fraction of the time, and at significantly lower cost.</p>
+            <p className="sec-sub">NHS waiting lists for elective procedures have reached historic highs. Ocean Health &amp; Travel provides coordinator-led access to the same quality of care — in a fraction of the time.</p>
           </div>
           <div className="tl-grid reveal" ref={ref}>
             <div className="tl-box nhs">
@@ -386,7 +386,7 @@ export default function Home() {
                   ))}
                 </tbody>
               </table>
-              <div className="table-note">Prices are indicative and subject to individual clinical assessment. No coordination fee is charged to patients — our commercial arrangements are with partner hospitals. Flights not included. Elective procedures only.</div>
+              <div className="table-note">Prices are indicative and subject to individual clinical assessment. Coordination fee quoted separately. Flights not included. Elective procedures only.</div>
             </div>
           </div>
         </div>
@@ -468,7 +468,7 @@ export default function Home() {
             ))}
           </div>
           <p style={{fontSize:'12px',color:'#bbb',marginTop:'1.5rem',textAlign:'center'}}>
-            Ocean Health &amp; Travel is a coordinator, not a medical provider. All clinical decisions rest with your treating provider. Flights not included. Client payments held in a designated client account. Elective procedures only — not suitable for emergencies.
+            Ocean Health &amp; Travel is a coordinator, not a medical provider. All clinical decisions rest with your treating clinic. Flights not included. Client money protected via Trust Account. Elective procedures only — not suitable for emergencies.
           </p>
         </div>
       </section>
@@ -506,12 +506,12 @@ export default function Home() {
           </div>
           <div className="why-grid">
             {[
-              {icon:<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M4.8 2.3A.3.3 0 1 0 5 2H4a2 2 0 0 0-2 2v5a6 6 0 0 0 6 6a6 6 0 0 0 6-6V4a2 2 0 0 0-2-2h-1"/><path d="M8 15v1a6 6 0 0 0 6 6a6 6 0 0 0 6-6v-4"/><circle cx="20" cy="10" r="2"/></svg>,t:'Physician-led coordination',d:'Led by a medical doctor and university professor of physiology. Medical documents are reviewed for accuracy, relevant information communicated clearly to the treating team. All clinical assessment and treatment decisions are made by the treating provider.',dark:false},
+              {icon:<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M4.8 2.3A.3.3 0 1 0 5 2H4a2 2 0 0 0-2 2v5a6 6 0 0 0 6 6a6 6 0 0 0 6-6V4a2 2 0 0 0-2-2h-1"/><path d="M8 15v1a6 6 0 0 0 6 6a6 6 0 0 0 6-6v-4"/><circle cx="20" cy="10" r="2"/></svg>,t:'Physician-led coordination',d:'Led by a medical doctor and university professor of physiology. Clinical triage, pre-operative review, and documentation handled with medical accuracy — not by a travel agent.',dark:false},
               {icon:<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9,22 9,12 15,12 15,22"/></svg>,t:'JCI-accredited clinics only',d:'We work exclusively with internationally accredited hospitals. Our coordination fee is paid by our partner clinics — patients pay no additional brokerage fee on top of their treatment cost.',dark:false},
               {icon:<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>,t:'Fixed, itemised pricing',d:'Your quote lists every cost before you travel. No surprises on arrival, no upselling at the clinic. What we quote is what you pay.',dark:true},
               {icon:<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>,t:'One point of contact',d:'From first message to discharge, you deal with a single coordinator. No hand-offs, no repeated explanations.',dark:false},
               {icon:<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>,t:'GP documentation',d:'Discharge summaries and clinical notes in English forwarded to your GP on request. Post-discharge decisions rest with your UK clinician.',dark:false},
-              {icon:<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>,t:'UK-registered, trust-protected',d:'Registered in England & Wales (no. 16186647). Client payments held in a designated client account. TÜRSAB member. ICO registered.',dark:false},
+              {icon:<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>,t:'UK-registered, trust-protected',d:'Registered in England & Wales (no. 16186647). Client money protected via Trust Account. TÜRSAB member. ICO registered.',dark:false},
             ].map((w,i) => (
               <div key={w.t} className={`why-card${w.dark?' dark':''} reveal d${i%3+1}`} ref={ref}>
                 <div className="why-icon">{w.icon}</div>
@@ -572,7 +572,7 @@ export default function Home() {
             </a>
           </div>
           <div className="cta-box reveal" ref={ref}>
-            <h2>Ready to get started?</h2>
+            <h2>Ready to skip the NHS waitlist?</h2>
             <p>Send us your treatment and preferred dates — full itemised quote within 48 hours, no obligation. Elective procedures only.</p>
             <div className="cta-actions">
               <a href={WA_URL} target="_blank" className="btn-cta-w">💬 Get a free quote</a>
@@ -622,12 +622,12 @@ export default function Home() {
             </div>
           </div>
           <div className="footer-legal">
-            © {new Date().getFullYear()} Ocean Health &amp; Travel Ltd · Registered in England &amp; Wales · Company no. 16186647 · ICO registered · UK GDPR compliant<br />
+            © 2025 Ocean Health &amp; Travel Ltd · Registered in England &amp; Wales · Company no. 16186647 · ICO registered · UK GDPR compliant<br />
             London: 17 Green Lanes, N16 9BS · Fethiye: Karagözler Mah., Fevzi Çakmak Cad. No:11/A, Muğla ·{' '}
             <a href="mailto:info@oceanhealthtravel.com" style={{color:'#555'}}>info@oceanhealthtravel.com</a> ·{' '}
             <a href="tel:+447441904858" style={{color:'#555'}}>+44 7441 904858</a><br />
-            Flights not included · Client payments held in a designated client account · Coordinator, not a medical provider · Elective procedures only<br />
-            <em>Ocean Health &amp; Travel does not provide medical advice. All clinical decisions rest with your treating provider. Patients should seek urgent local medical care if required after returning home. Not suitable for emergencies.</em>
+            Flights not included · Client money protected via Trust Account · Coordinator, not a medical provider · Elective procedures only<br />
+            <em>Ocean Health &amp; Travel does not provide medical advice. All clinical decisions rest with your treating clinic. Post-discharge medical responsibility lies with your UK clinician. Not suitable for emergencies.</em>
           </div>
         </div>
       </footer>
