@@ -32,6 +32,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${dmSerif.variable} ${inter.variable}`}>
+      <head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-92GMNGS0XF"></script>
+        <script dangerouslySetInnerHTML={{__html: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-92GMNGS0XF');
+        `}} />
+      </head>
       <body>{children}</body>
     </html>
   );
