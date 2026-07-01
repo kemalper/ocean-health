@@ -275,7 +275,7 @@ export default function Home() {
                 In 2&ndash;3 weeks.
               </h1>
               <p className="hero-sub reveal d2" ref={ref}>
-                We connect UK and international patients with JCI-accredited Istanbul clinics. One coordinator handles everything — clinic liaison, airport transfer, hotel, interpreter, and GP documentation.
+                Access JCI-accredited hospitals, specialist surgeons, and fully coordinated care — without the UK wait or UK private price. One coordinator handles everything from enquiry to discharge.
               </p>
               <div className="hero-actions reveal d3" ref={ref}>
                 <a href={WA_URL} target="_blank" className="btn-primary">Get a free quote</a>
@@ -511,7 +511,7 @@ export default function Home() {
               {icon:<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>,t:'Fixed, itemised pricing',d:'Your quote lists every cost before you travel. No surprises on arrival, no upselling at the clinic. What we quote is what you pay.',dark:true},
               {icon:<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>,t:'One point of contact',d:'From first message to discharge, you deal with a single coordinator. No hand-offs, no repeated explanations.',dark:false},
               {icon:<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>,t:'GP documentation',d:'Discharge summaries and clinical notes in English forwarded to your GP on request. The treating provider remains responsible for its clinical treatment and agreed post-operative follow-up.',dark:false},
-              {icon:<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>,t:'UK-registered, trust-protected',d:'Registered in England & Wales (no. 16186647). Client payments held in a designated client account. TÜRSAB member. ICO registered.',dark:false},
+              {icon:<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>,t:'UK-registered, financially transparent',d:'Registered in England & Wales (no. 16186647). Client payments held in a designated client account. TÜRSAB member. ICO registered.',dark:false},
             ].map((w,i) => (
               <div key={w.t} className={`why-card${w.dark?' dark':''} reveal d${i%3+1}`} ref={ref}>
                 <div className="why-icon">{w.icon}</div>
@@ -590,7 +590,7 @@ export default function Home() {
               <div className="footer-brand-name">Ocean Health &amp; Travel</div>
               <p>UK-registered medical tourism coordinator. Connecting international patients with JCI-accredited Istanbul clinics.</p>
               <div className="fbadges">
-                {['UK GDPR / ICO','JCI-accredited hospitals','Trust Account','TÜRSAB','Companies House'].map(b => (
+                {['UK GDPR / ICO','JCI-accredited hospitals','Designated client account','TÜRSAB','Companies House'].map(b => (
                   <div key={b} className="fbadge"><div className="fbadge-dot"></div>{b}</div>
                 ))}
               </div>
