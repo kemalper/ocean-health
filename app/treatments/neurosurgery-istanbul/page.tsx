@@ -118,55 +118,55 @@ export default function NeurosurgeryPage() {
 .nav-links a:hover{color:#085041}
         .btn-
 .btn-nav:hover{background:#085041;color:#fff!important}
-        .hero{background:linear-gradient(135deg,#1a1a2e 0%,#16213e 50%,#0f3460 100%);padding:100px 0 80px;position:relative;overflow:hidden}
+        .hero{background:linear-gradient(135deg,#0a1a13 0%,#0a2e22 50%,#0d3e2c 100%);padding:100px 0 80px;position:relative;overflow:hidden}
         .hero::before{content:'';position:absolute;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(99,102,241,.15) 0%,transparent 70%);top:-100px;right:-100px;pointer-events:none}
         .hero-inner{position:relative;z-index:1}
         .breadcrumb{font-size:12px;color:rgba(255,255,255,.5);margin-bottom:1.25rem}
         .breadcrumb a{color:rgba(255,255,255,.5)}
         .breadcrumb span{margin:0 6px}
-        .kicker{font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#a5b4fc;margin-bottom:1rem}
+        .kicker{font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#a5fcdc;margin-bottom:1rem}
         .warn-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(245,158,11,.15);border:1px solid rgba(245,158,11,.3);border-radius:100px;padding:6px 14px;font-size:12px;font-weight:500;color:#fcd34d;margin-bottom:1.25rem}
         h1{font-family:'DM Serif Display',serif;font-size:clamp(34px,4.5vw,56px);line-height:1.1;letter-spacing:-.025em;color:#fff;margin-bottom:1rem;font-weight:400;max-width:700px}
-        h1 em{font-style:italic;color:#a5b4fc}
+        h1 em{font-style:italic;color:#a5fcdc}
         .hero-sub{font-size:16px;color:rgba(255,255,255,.72);line-height:1.75;margin-bottom:1.5rem;font-weight:300;max-width:560px}
         .hero-warn{background:rgba(245,158,11,.1);border:1px solid rgba(245,158,11,.25);border-radius:10px;padding:1rem 1.25rem;font-size:13px;color:#fcd34d;line-height:1.65;margin-bottom:2rem;max-width:600px}
         .hero-actions{display:flex;gap:12px;flex-wrap:wrap}
-        .btn-primary{background:#fff;color:#1a1a2e;border:none;padding:14px 26px;border-radius:10px;font-size:15px;font-weight:600;display:inline-flex;align-items:center;gap:8px;transition:transform .2s,box-shadow .2s;cursor:pointer;font-family:'Inter',sans-serif;box-shadow:0 4px 20px rgba(0,0,0,.2)}
+        .btn-primary{background:#fff;color:#0a1a13;border:none;padding:14px 26px;border-radius:10px;font-size:15px;font-weight:600;display:inline-flex;align-items:center;gap:8px;transition:transform .2s,box-shadow .2s;cursor:pointer;font-family:'Inter',sans-serif;box-shadow:0 4px 20px rgba(0,0,0,.2)}
         .btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(0,0,0,.3)}
         .btn-ghost{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.35);padding:14px 26px;border-radius:10px;font-size:15px;display:inline-flex;align-items:center;gap:8px;transition:all .2s;cursor:pointer;font-family:'Inter',sans-serif}
         .btn-ghost:hover{background:rgba(255,255,255,.1)}
         .trust-row{display:flex;gap:1.5rem;flex-wrap:wrap;margin-top:1.5rem}
         .trust-item{display:flex;align-items:center;gap:7px;font-size:12.5px;color:rgba(255,255,255,.7)}
-        .trust-dot{width:7px;height:7px;border-radius:50%;background:#a5b4fc;flex-shrink:0}
+        .trust-dot{width:7px;height:7px;border-radius:50%;background:#a5fcdc;flex-shrink:0}
         .sec{padding:5rem 0}
         .sec.bg{background:#fafaf9}
         .sec.border{border-top:1px solid #f0ede8;border-bottom:1px solid #f0ede8}
         h2{font-family:'DM Serif Display',serif;font-size:clamp(26px,3vw,38px);font-weight:400;color:#1a1a1a;letter-spacing:-.02em;line-height:1.2;margin-bottom:1rem}
         .proc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:2rem}
         .proc-card{background:#fff;border:1px solid #f0ede8;border-radius:16px;padding:1.5rem;display:flex;flex-direction:column;transition:transform .25s,box-shadow .25s,border-color .25s}
-        .proc-card:hover{transform:translateY(-3px);box-shadow:0 10px 30px rgba(0,0,0,.08);border-color:#c7d2fe}
-        .proc-card.featured{border-color:#6366f1;background:#f5f3ff}
+        .proc-card:hover{transform:translateY(-3px);box-shadow:0 10px 30px rgba(0,0,0,.08);border-color:#c7feea}
+        .proc-card.featured{border-color:#0d6b55;background:#f3fffb}
         .proc-card.referral-card{border-left:3px solid #f59e0b}
         .ref-badge{display:inline-block;font-size:10px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;background:#fef3e2;color:#92400e;border:1px solid #fde68a;border-radius:4px;padding:2px 8px;margin-bottom:.6rem}
         .proc-name{font-size:15px;font-weight:600;color:#1a1a1a;margin-bottom:.4rem}
         .proc-desc{font-size:13px;color:#777;line-height:1.65;font-weight:300;margin-bottom:1rem;flex:1}
         .proc-footer{display:flex;justify-content:space-between;align-items:center;padding-top:.85rem;border-top:1px solid #f5f4f2;margin-top:auto}
-        .proc-price{font-size:14px;font-weight:600;color:#4f46e5}
+        .proc-price{font-size:14px;font-weight:600;color:#085041}
         .proc-uk{font-size:11px;color:#aaa;margin-top:2px}
-        .proc-saving{font-size:11px;background:#ede9fe;color:#4338ca;border-radius:20px;padding:3px 10px;font-weight:600}
-        .proc-link{font-size:12px;color:#4f46e5;font-weight:600;margin-top:.75rem;display:inline-flex;align-items:center;gap:4px}
+        .proc-saving{font-size:11px;background:#e9fef6;color:#08533f;border-radius:20px;padding:3px 10px;font-weight:600}
+        .proc-link{font-size:12px;color:#085041;font-weight:600;margin-top:.75rem;display:inline-flex;align-items:center;gap:4px}
         .faq-list{display:flex;flex-direction:column;border:1px solid #f0ede8;border-radius:16px;overflow:hidden;margin-top:2.5rem}
         .faq-item{border-bottom:1px solid #f0ede8}
         .faq-item:last-child{border-bottom:none}
         .faq-q{width:100%;text-align:left;padding:1.25rem 1.5rem;background:#fff;border:none;cursor:pointer;font-family:'Inter',sans-serif;font-size:15px;font-weight:500;color:#1a1a1a;display:flex;justify-content:space-between;align-items:center;gap:1rem;transition:background .2s}
         .faq-q:hover{background:#fafaf9}
         .faq-a{padding:0 1.5rem 1.25rem;font-size:14px;color:#666;line-height:1.75;font-weight:300}
-        .cta-box{background:linear-gradient(135deg,#1a1a2e,#16213e);border-radius:20px;padding:3rem;text-align:center}
+        .cta-box{background:linear-gradient(135deg,#0a1a13,#0a2e22);border-radius:20px;padding:3rem;text-align:center}
         .cta-box h2{color:#fff;margin-bottom:.75rem}
         .cta-box p{font-size:15px;color:rgba(255,255,255,.6);font-weight:300;line-height:1.7;margin-bottom:2rem;max-width:480px;margin-left:auto;margin-right:auto}
         .cta-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
-        .btn-cta-w{background:#a5b4fc;color:#1a1a2e;border:none;padding:14px 28px;border-radius:10px;font-size:15px;font-weight:600;display:inline-flex;align-items:center;gap:8px;cursor:pointer;font-family:'Inter',sans-serif;transition:all .2s}
-        .btn-cta-w:hover{background:#c7d2fe}
+        .btn-cta-w{background:#a5fcdc;color:#0a1a13;border:none;padding:14px 28px;border-radius:10px;font-size:15px;font-weight:600;display:inline-flex;align-items:center;gap:8px;cursor:pointer;font-family:'Inter',sans-serif;transition:all .2s}
+        .btn-cta-w:hover{background:#c7feea}
         .btn-cta-o{background:transparent;color:rgba(255,255,255,.7);border:1px solid rgba(255,255,255,.25);padding:14px 28px;border-radius:10px;font-size:15px;display:inline-flex;align-items:center;gap:8px;cursor:pointer;font-family:'Inter',sans-serif;transition:all .2s}
         .btn-cta-o:hover{background:rgba(255,255,255,.08);color:#fff}
         footer{background:#111;padding:3rem 0 2rem}
@@ -258,7 +258,7 @@ export default function NeurosurgeryPage() {
               <details key={f.q} className="faq-item">
                 <summary className="faq-q">
                   {f.q}
-                  <span style={{fontSize:'18px',color:'#6366f1',flexShrink:0}}>+</span>
+                  <span style={{fontSize:'18px',color:'#0d6b55',flexShrink:0}}>+</span>
                 </summary>
                 <div className="faq-a">{f.a}</div>
               </details>

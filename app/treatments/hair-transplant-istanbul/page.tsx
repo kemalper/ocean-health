@@ -47,18 +47,18 @@ export default function HairTransplantPage() {
 .nav-links a:hover{color:#085041}
         .btn-
 .btn-nav:hover{background:#085041;color:#fff!important}
-        .hero{background:linear-gradient(135deg,#1a0a2e 0%,#2d1b69 50%,#4a1fa8 100%);padding:100px 0 80px;position:relative;overflow:hidden}
+        .hero{background:linear-gradient(135deg,#0a1a13 0%,#0a2e22 50%,#063d2f 100%);padding:100px 0 80px;position:relative;overflow:hidden}
         .hero::before{content:'';position:absolute;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(139,92,246,.2) 0%,transparent 70%);top:-100px;right:-100px;pointer-events:none}
         .hero-grid{display:grid;grid-template-columns:1.2fr 0.8fr;gap:3rem;align-items:center;position:relative;z-index:1}
         .breadcrumb{font-size:12px;color:rgba(255,255,255,.5);margin-bottom:1.25rem}
         .breadcrumb a{color:rgba(255,255,255,.5)}
         .breadcrumb span{margin:0 6px}
-        .kicker{font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#c4b5fd;margin-bottom:1rem}
+        .kicker{font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#b5fde3;margin-bottom:1rem}
         h1{font-family:'DM Serif Display',serif;font-size:clamp(34px,4vw,54px);line-height:1.1;letter-spacing:-.025em;color:#fff;margin-bottom:1rem;font-weight:400}
-        h1 em{font-style:italic;color:#c4b5fd}
+        h1 em{font-style:italic;color:#b5fde3}
         .hero-sub{font-size:16px;color:rgba(255,255,255,.72);line-height:1.75;margin-bottom:2rem;font-weight:300;max-width:500px}
         .hero-actions{display:flex;gap:12px;flex-wrap:wrap}
-        .btn-primary{background:#fff;color:#2d1b69;border:none;padding:14px 26px;border-radius:10px;font-size:15px;font-weight:600;display:inline-flex;align-items:center;gap:8px;transition:transform .2s,box-shadow .2s;cursor:pointer;font-family:'Inter',sans-serif;box-shadow:0 4px 20px rgba(0,0,0,.2)}
+        .btn-primary{background:#fff;color:#0a2e22;border:none;padding:14px 26px;border-radius:10px;font-size:15px;font-weight:600;display:inline-flex;align-items:center;gap:8px;transition:transform .2s,box-shadow .2s;cursor:pointer;font-family:'Inter',sans-serif;box-shadow:0 4px 20px rgba(0,0,0,.2)}
         .btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(0,0,0,.3)}
         .btn-ghost{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.35);padding:14px 26px;border-radius:10px;font-size:15px;display:inline-flex;align-items:center;gap:8px;transition:all .2s;cursor:pointer;font-family:'Inter',sans-serif}
         .btn-ghost:hover{background:rgba(255,255,255,.1)}
@@ -67,10 +67,10 @@ export default function HairTransplantPage() {
         .price-row:last-child{border-bottom:none}
         .price-label{font-size:13px;color:rgba(255,255,255,.55)}
         .price-val{font-family:'DM Serif Display',serif;font-size:20px;color:#fff;font-weight:400}
-        .price-val.accent{color:#c4b5fd}
+        .price-val.accent{color:#b5fde3}
         .trust-row{display:flex;gap:1.5rem;flex-wrap:wrap;margin-top:1.5rem}
         .trust-item{display:flex;align-items:center;gap:7px;font-size:12.5px;color:rgba(255,255,255,.75)}
-        .trust-dot{width:7px;height:7px;border-radius:50%;background:#c4b5fd;flex-shrink:0}
+        .trust-dot{width:7px;height:7px;border-radius:50%;background:#b5fde3;flex-shrink:0}
         .sec{padding:5rem 0}
         .sec.bg{background:#fafaf9}
         .sec.border{border-top:1px solid #f0ede8;border-bottom:1px solid #f0ede8}
@@ -81,42 +81,42 @@ export default function HairTransplantPage() {
         .prose h3{margin-top:2rem;margin-bottom:.75rem}
         .prose ul{list-style:none;padding:0;margin-bottom:1.25rem}
         .prose ul li{font-size:15px;color:#444;line-height:1.8;padding-left:16px;position:relative;font-weight:300}
-        .prose ul li::before{content:'·';position:absolute;left:0;color:#7c3aed;font-weight:700;font-size:18px}
+        .prose ul li::before{content:'·';position:absolute;left:0;color:#085041;font-weight:700;font-size:18px}
         .technique-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1.5rem 0}
         .technique-card{background:#fafaf9;border:1px solid #f0ede8;border-radius:12px;padding:1.25rem}
         .technique-card h4{font-size:15px;font-weight:600;color:#1a1a1a;margin-bottom:.5rem}
         .technique-card p{font-size:13px;color:#666;line-height:1.65;font-weight:300;margin:0}
-        .technique-tag{display:inline-block;font-size:10px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;background:#ede9fe;color:#5b21b6;border-radius:4px;padding:2px 8px;margin-bottom:.75rem}
+        .technique-tag{display:inline-block;font-size:10px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;background:#e9fef6;color:#08533f;border-radius:4px;padding:2px 8px;margin-bottom:.75rem}
         .timeline-list{display:flex;flex-direction:column;gap:0;margin:1.5rem 0}
         .timeline-item{display:flex;gap:1rem;padding-bottom:1.25rem;position:relative}
         .timeline-item:last-child{padding-bottom:0}
         .tl-left{display:flex;flex-direction:column;align-items:center;flex-shrink:0}
-        .tl-dot{width:10px;height:10px;border-radius:50%;background:#7c3aed;flex-shrink:0;margin-top:5px}
-        .tl-line{width:1px;flex:1;background:#ede9fe;margin-top:4px}
+        .tl-dot{width:10px;height:10px;border-radius:50%;background:#085041;flex-shrink:0;margin-top:5px}
+        .tl-line{width:1px;flex:1;background:#e9fef6;margin-top:4px}
         .timeline-item:last-child .tl-line{display:none}
-        .tl-period{font-size:12px;font-weight:600;color:#7c3aed;margin-bottom:2px}
+        .tl-period{font-size:12px;font-weight:600;color:#085041;margin-bottom:2px}
         .tl-desc{font-size:14px;color:#444;line-height:1.6;font-weight:300}
-        .disclaimer{background:#f5f3ff;border:1px solid #ddd6fe;border-radius:12px;padding:1.25rem 1.5rem;font-size:13px;color:#4c1d95;line-height:1.75;margin-top:1.5rem}
+        .disclaimer{background:#f3fffb;border:1px solid #d6feef;border-radius:12px;padding:1.25rem 1.5rem;font-size:13px;color:#063d2f;line-height:1.75;margin-top:1.5rem}
         .sidebar{position:sticky;top:80px}
         .sidebar-card{background:#fff;border:1px solid #f0ede8;border-radius:16px;padding:1.75rem;margin-bottom:1rem}
-        .sidebar-card.dark{background:linear-gradient(135deg,#1a0a2e,#2d1b69);border-color:transparent}
+        .sidebar-card.dark{background:linear-gradient(135deg,#0a1a13,#0a2e22);border-color:transparent}
         .sidebar-title{font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:#bbb;margin-bottom:1.25rem}
         .sidebar-card.dark .sidebar-title{color:rgba(255,255,255,.45)}
         .sidebar-price-row{display:flex;justify-content:space-between;align-items:baseline;padding:.6rem 0;border-bottom:1px solid #f5f4f2}
         .sidebar-price-row:last-of-type{border-bottom:none}
         .sidebar-price-label{font-size:13px;color:#777}
-        .sidebar-price-val{font-size:15px;font-weight:600;color:#2d1b69}
+        .sidebar-price-val{font-size:15px;font-weight:600;color:#0a2e22}
         .btn-full{width:100%;padding:14px;border-radius:10px;font-size:15px;font-weight:600;display:flex;align-items:center;justify-content:center;gap:8px;cursor:pointer;font-family:'Inter',sans-serif;transition:all .2s;margin-top:1rem;border:none}
-        .btn-full.purple{background:#7c3aed;color:#fff}
-        .btn-full.purple:hover{background:#5b21b6}
+        .btn-full.purple{background:#085041;color:#fff}
+        .btn-full.purple:hover{background:#08533f}
         .btn-full.outline{background:rgba(255,255,255,.08);color:#fff;border:1px solid rgba(255,255,255,.2)}
         .check-item{display:flex;align-items:flex-start;gap:8px;padding:.5rem 0;border-bottom:1px solid #f5f4f2}
         .check-item:last-child{border-bottom:none}
-        .check-dot{width:6px;height:6px;border-radius:50%;background:#7c3aed;flex-shrink:0;margin-top:6px}
+        .check-dot{width:6px;height:6px;border-radius:50%;background:#085041;flex-shrink:0;margin-top:6px}
         .process-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:0;position:relative;margin-top:2.5rem}
-        .process-grid::before{content:'';position:absolute;top:22px;left:10%;right:10%;height:1px;background:linear-gradient(90deg,transparent,#ddd6fe 20%,#ddd6fe 80%,transparent)}
+        .process-grid::before{content:'';position:absolute;top:22px;left:10%;right:10%;height:1px;background:linear-gradient(90deg,transparent,#d6feef 20%,#d6feef 80%,transparent)}
         .proc-step{text-align:center;padding:0 .5rem;position:relative;z-index:1}
-        .proc-circle{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#1a0a2e,#7c3aed);display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;font-size:15px;font-weight:600;color:#fff;box-shadow:0 4px 14px rgba(124,58,237,.3)}
+        .proc-circle{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#0a1a13,#085041);display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;font-size:15px;font-weight:600;color:#fff;box-shadow:0 4px 14px rgba(124,58,237,.3)}
         .proc-t{font-size:13px;font-weight:600;margin-bottom:.3rem}
         .proc-d{font-size:11px;color:#888;line-height:1.5}
         .faq-list{display:flex;flex-direction:column;border:1px solid #f0ede8;border-radius:16px;overflow:hidden;margin-top:2.5rem}
@@ -362,7 +362,7 @@ export default function HairTransplantPage() {
               <details key={f.q} className="faq-item">
                 <summary className="faq-q">
                   {f.q}
-                  <span style={{fontSize:'18px',color:'#7c3aed',flexShrink:0}}>+</span>
+                  <span style={{fontSize:'18px',color:'#085041',flexShrink:0}}>+</span>
                 </summary>
                 <div className="faq-a">{f.a}</div>
               </details>
@@ -379,10 +379,10 @@ export default function HairTransplantPage() {
             Tell us about your hair loss pattern and goals. Full itemised quote within 48 hours — no obligation.
           </p>
           <div style={{display:'flex',gap:'14px',justifyContent:'center',flexWrap:'wrap'}}>
-            <a href={WA_URL} target="_blank" style={{background:'#7c3aed',color:'#fff',border:'none',padding:'15px 30px',borderRadius:'10px',fontSize:'15px',fontWeight:600,display:'inline-flex',alignItems:'center',gap:'9px',cursor:'pointer',fontFamily:'Inter,sans-serif'}}>
+            <a href={WA_URL} target="_blank" style={{background:'#085041',color:'#fff',border:'none',padding:'15px 30px',borderRadius:'10px',fontSize:'15px',fontWeight:600,display:'inline-flex',alignItems:'center',gap:'9px',cursor:'pointer',fontFamily:'Inter,sans-serif'}}>
               💬 Get a free quote
             </a>
-            <a href="mailto:info@oceanhealthtravel.com" style={{background:'transparent',color:'#7c3aed',border:'1px solid #7c3aed',padding:'15px 30px',borderRadius:'10px',fontSize:'15px',display:'inline-flex',alignItems:'center',gap:'9px',cursor:'pointer',fontFamily:'Inter,sans-serif'}}>
+            <a href="mailto:info@oceanhealthtravel.com" style={{background:'transparent',color:'#085041',border:'1px solid #085041',padding:'15px 30px',borderRadius:'10px',fontSize:'15px',display:'inline-flex',alignItems:'center',gap:'9px',cursor:'pointer',fontFamily:'Inter,sans-serif'}}>
               ✉️ Email us
             </a>
           </div>
