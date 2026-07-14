@@ -280,8 +280,8 @@ export default function DentalImplantsPage() {
                 <p style={{fontSize:'14px',color:'rgba(255,255,255,.65)',lineHeight:1.65,marginBottom:'1.25rem',fontWeight:300}}>
                   Tell us how many implants you need and any existing dental records. Full itemised quote within 48 hours.
                 </p>
-                <a href={WA_URL} target="_blank" className="btn-full blue">💬 WhatsApp us</a>
-                <a href="mailto:info@oceanhealthtravel.com" className="btn-full outline" style={{marginTop:'8px'}}>✉️ Email us</a>
+                <a href={WA_URL} target="_blank" className="btn-full blue">WhatsApp us</a>
+                <a href="mailto:info@oceanhealthtravel.com" className="btn-full outline" style={{marginTop:'8px'}}>Email us</a>
               </div>
 
               <div className="sidebar-card">

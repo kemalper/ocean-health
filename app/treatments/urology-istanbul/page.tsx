@@ -241,8 +241,8 @@ export default function UrologyPage() {
             <h2>Enquire confidentially</h2>
             <p>All enquiries are handled in strict confidence. WhatsApp is the most discreet option — messages are end-to-end encrypted.</p>
             <div className="cta-btns">
-              <a href={WA_URL} target="_blank" className="btn-cta-w">💬 WhatsApp (confidential)</a>
-              <a href="mailto:info@oceanhealthtravel.com" className="btn-cta-o">✉️ Email us</a>
+              <a href={WA_URL} target="_blank" className="btn-cta-w">WhatsApp (confidential)</a>
+              <a href="mailto:info@oceanhealthtravel.com" className="btn-cta-o">Email us</a>
             </div>
           </div>
         </div>

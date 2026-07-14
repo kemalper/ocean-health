@@ -273,8 +273,8 @@ export default function DentalIstanbulPage() {
             <h2>Ready to find out what your dental treatment costs?</h2>
             <p>Tell us what you need — implants, crowns, veneers, or a full smile makeover. Full itemised quote within 48 hours.</p>
             <div className="cta-btns">
-              <a href={WA_URL} target="_blank" className="btn-cta-w">💬 Get a free quote</a>
-              <a href="mailto:info@oceanhealthtravel.com" className="btn-cta-o">✉️ Email us</a>
+              <a href={WA_URL} target="_blank" className="btn-cta-w">Get a free quote</a>
+              <a href="mailto:info@oceanhealthtravel.com" className="btn-cta-o">Email us</a>
             </div>
           </div>
         </div>

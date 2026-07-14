@@ -245,8 +245,8 @@ export default function FAQPage() {
                 <h3>Still have questions?</h3>
                 <p>We reply within the hour on WhatsApp. Send us your question and we&apos;ll get straight back to you.</p>
                 <div className="cta-btns">
-                  <a href={WA_URL} target="_blank" rel="noopener noreferrer" className="btn-wa">💬 Ask on WhatsApp</a>
-                  <a href="mailto:info@oceanhealthtravel.com" className="btn-email">✉️ Email us</a>
+                  <a href={WA_URL} target="_blank" rel="noopener noreferrer" className="btn-wa">Ask on WhatsApp</a>
+                  <a href="mailto:info@oceanhealthtravel.com" className="btn-email">Email us</a>
                 </div>
               </div>
             </div>

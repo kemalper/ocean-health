@@ -278,8 +278,8 @@ export default function DBSPage() {
                 <p style={{fontSize:'14px',color:'rgba(255,255,255,.65)',lineHeight:1.65,marginBottom:'1.25rem',fontWeight:300}}>
                   Send your referral letter and clinical notes. Our physician coordinator will review and liaise with the neurosurgical team.
                 </p>
-                <a href={WA_URL} target="_blank" className="btn-full indigo">💬 WhatsApp us</a>
-                <a href="mailto:info@oceanhealthtravel.com" className="btn-full outline" style={{marginTop:'8px'}}>✉️ Email documents</a>
+                <a href={WA_URL} target="_blank" className="btn-full indigo">WhatsApp us</a>
+                <a href="mailto:info@oceanhealthtravel.com" className="btn-full outline" style={{marginTop:'8px'}}>Email documents</a>
               </div>
 
               <div className="sidebar-card warn">

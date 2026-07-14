@@ -233,8 +233,8 @@ export default function AboutPage() {
             <h2>Ready to find out more?</h2>
             <p>Contact us via WhatsApp or email. We reply within the hour during working hours.</p>
             <div className="cta-btns">
-              <a href={WA_URL} target="_blank" className="btn-cta-w">💬 WhatsApp us</a>
-              <a href="mailto:info@oceanhealthtravel.com" className="btn-cta-o">✉️ Email us</a>
+              <a href={WA_URL} target="_blank" className="btn-cta-w">WhatsApp us</a>
+              <a href="mailto:info@oceanhealthtravel.com" className="btn-cta-o">Email us</a>
             </div>
           </div>
         </div>

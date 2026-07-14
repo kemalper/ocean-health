@@ -78,7 +78,7 @@ export default function Nav({ transparent = false }: { transparent?: boolean }) 
         <a href="/faq" onClick={() => setOpen(false)}>FAQ</a>
         <a href="/contact" onClick={() => setOpen(false)}>Contact</a>
         <a href="/pre-operative-assessment" onClick={() => setOpen(false)} style={{color:"#085041"}}>Pre-assessment</a>
-        <a href={WA_URL} target="_blank" rel="noopener noreferrer" className="mobile-btn" onClick={() => setOpen(false)}>💬 Free quote</a>
+        <a href={WA_URL} target="_blank" rel="noopener noreferrer" className="mobile-btn" onClick={() => setOpen(false)}>Free quote</a>
       </div>
     </>
   )

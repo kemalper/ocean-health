@@ -188,8 +188,8 @@ export default function ContactPage() {
             <h2>Ready to get started?</h2>
             <p>Send us your treatment and preferred dates. Full itemised quote within 48 hours — no obligation.</p>
             <div className="cta-btns">
-              <a href={WA_URL} target="_blank" rel="noopener noreferrer" className="btn-wa">💬 WhatsApp us now</a>
-              <a href="mailto:info@oceanhealthtravel.com" className="btn-email">✉️ Send an email</a>
+              <a href={WA_URL} target="_blank" rel="noopener noreferrer" className="btn-wa">WhatsApp us now</a>
+              <a href="mailto:info@oceanhealthtravel.com" className="btn-email">Send an email</a>
             </div>
           </div>
         </div>

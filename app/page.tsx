@@ -401,11 +401,11 @@ export default function Home() {
           </div>
           <div className="tx-grid">
             {[
-              {icon:'🩺',name:'Plastic & cosmetic surgery',link:'/treatments/plastic-surgery-istanbul',img:'https://images.pexels.com/photos/8528647/pexels-photo-8528647.jpeg?auto=compress&cs=tinysrgb&w=800',items:['Rhinoplasty, facelift, brow lift','Breast augmentation, reduction, lift','Liposuction, tummy tuck, BBL','Ear, lip, eyelid surgery'],price:'Rhinoplasty from £3,200 · Breast from £6,000'},
-              {icon:'🦷',name:'Dental',link:'/treatments/dental-istanbul',img:'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=800&q=80',items:['Dental implants','Zirconium crowns & veneers','Smile design','Orthodontics & root canal'],price:'Implants from £350 each'},
-              {icon:'👁️',name:'Ophthalmology',link:'/treatments/ophthalmology-istanbul',img:'https://images.pexels.com/photos/18680821/pexels-photo-18680821.jpeg?auto=compress&cs=tinysrgb&w=800',items:['LASIK & laser refractive surgery','Cataract & lens replacement','Eyelid & strabismus surgery'],price:'LASIK from £600 per eye'},
-              {icon:'💆',name:'Hair transplantation',link:'/treatments/hair-transplant-istanbul',img:'/hair-transplant.jpg',items:['FUE & DHI techniques','PRP for hair restoration'],price:'Contact us for pricing'},
-              {icon:'✨',name:'Aesthetic medicine',link:null,img:'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=800&q=80',items:['Botox & dermal fillers','Mesotherapy & Hydrafacial','Scarlet X skin tightening'],price:'From £180'},
+              {name:'Plastic & cosmetic surgery',link:'/treatments/plastic-surgery-istanbul',img:'https://images.pexels.com/photos/8528647/pexels-photo-8528647.jpeg?auto=compress&cs=tinysrgb&w=800',items:['Rhinoplasty, facelift, brow lift','Breast augmentation, reduction, lift','Liposuction, tummy tuck, BBL','Ear, lip, eyelid surgery'],price:'Rhinoplasty from £3,200 · Breast from £6,000'},
+              {name:'Dental',link:'/treatments/dental-istanbul',img:'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=800&q=80',items:['Dental implants','Zirconium crowns & veneers','Smile design','Orthodontics & root canal'],price:'Implants from £350 each'},
+              {name:'Ophthalmology',link:'/treatments/ophthalmology-istanbul',img:'https://images.pexels.com/photos/18680821/pexels-photo-18680821.jpeg?auto=compress&cs=tinysrgb&w=800',items:['LASIK & laser refractive surgery','Cataract & lens replacement','Eyelid & strabismus surgery'],price:'LASIK from £600 per eye'},
+              {name:'Hair transplantation',link:'/treatments/hair-transplant-istanbul',img:'/hair-transplant.jpg',items:['FUE & DHI techniques','PRP for hair restoration'],price:'Contact us for pricing'},
+              {name:'Aesthetic medicine',link:null,img:'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=800&q=80',items:['Botox & dermal fillers','Mesotherapy & Hydrafacial','Scarlet X skin tightening'],price:'From £180'},
             ].map((s,i) => (
               <div key={s.name} className={`tx-card reveal d${i%4+1}`} ref={ref} onClick={() => s.link && window.location.assign(s.link)} style={{cursor: s.link ? 'pointer' : 'default'}}>
                 <div style={{height:'160px',borderRadius:'10px',overflow:'hidden',marginBottom:'1rem',background:'#f0ede8'}}>
@@ -575,8 +575,8 @@ export default function Home() {
             <h2>Ready to get started?</h2>
             <p>Send us your treatment and preferred dates — full itemised quote within 48 hours, no obligation. Elective procedures only.</p>
             <div className="cta-actions">
-              <a href={WA_URL} target="_blank" className="btn-cta-w">💬 Get a free quote</a>
-              <a href="mailto:info@oceanhealthtravel.com" className="btn-cta-o">✉️ Email us</a>
+              <a href={WA_URL} target="_blank" className="btn-cta-w">Get a free quote</a>
+              <a href="mailto:info@oceanhealthtravel.com" className="btn-cta-o">Email us</a>
             </div>
           </div>
         </div>

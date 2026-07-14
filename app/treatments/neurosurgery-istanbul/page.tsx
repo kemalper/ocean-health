@@ -273,8 +273,8 @@ export default function NeurosurgeryPage() {
             <h2>Ready to send your documents?</h2>
             <p>Send your referral letter and clinical notes. Our physician coordinator will review and respond within 48 hours.</p>
             <div className="cta-btns">
-              <a href={WA_URL} target="_blank" className="btn-cta-w">💬 WhatsApp us</a>
-              <a href="mailto:info@oceanhealthtravel.com" className="btn-cta-o">✉️ Email documents</a>
+              <a href={WA_URL} target="_blank" className="btn-cta-w">WhatsApp us</a>
+              <a href="mailto:info@oceanhealthtravel.com" className="btn-cta-o">Email documents</a>
             </div>
           </div>
         </div>

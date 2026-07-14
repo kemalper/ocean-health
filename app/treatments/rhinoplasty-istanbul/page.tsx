@@ -261,8 +261,8 @@ export default function RhinoplastyPage() {
                 <p style={{fontSize:'14px',color:'rgba(255,255,255,.65)',lineHeight:1.65,marginBottom:'1.25rem',fontWeight:300}}>
                   Tell us about your goals. We&apos;ll have a full itemised quote back within 48 hours — no obligation.
                 </p>
-                <a href={WA_URL} target="_blank" className="btn-full green">💬 WhatsApp us</a>
-                <a href="mailto:info@oceanhealthtravel.com" className="btn-full white" style={{marginTop:'8px',background:'rgba(255,255,255,.1)',color:'#fff',border:'1px solid rgba(255,255,255,.2)'}}>✉️ Email us</a>
+                <a href={WA_URL} target="_blank" className="btn-full green">WhatsApp us</a>
+                <a href="mailto:info@oceanhealthtravel.com" className="btn-full white" style={{marginTop:'8px',background:'rgba(255,255,255,.1)',color:'#fff',border:'1px solid rgba(255,255,255,.2)'}}>Email us</a>
               </div>
 
               <div className="sidebar-card">
