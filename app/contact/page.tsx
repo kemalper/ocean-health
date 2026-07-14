@@ -90,7 +90,7 @@ export default function ContactPage() {
 
               <div className="contact-method">
                 <a href={WA_URL} target="_blank" rel="noopener noreferrer">
-                  <div className="method-icon green">💬</div>
+                  <div className="method-icon green"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#085041" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
                   <div>
                     <div className="method-t">WhatsApp</div>
                     <div className="method-d">Fastest response. Send your treatment enquiry, photos, or clinical documents directly. By sending medical information, you consent to its processing and transfer to selected healthcare providers in Turkey for quotation and treatment coordination purposes.</div>
@@ -101,7 +101,7 @@ export default function ContactPage() {
 
               <div className="contact-method">
                 <a href="mailto:info@oceanhealthtravel.com">
-                  <div className="method-icon blue">✉️</div>
+                  <div className="method-icon blue"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1565c0" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg></div>
                   <div>
                     <div className="method-t">Email</div>
                     <div className="method-d">For formal enquiries, clinical documents, and referral letters. We respond within 24 hours.</div>
@@ -112,7 +112,7 @@ export default function ContactPage() {
 
               <div className="contact-method">
                 <a href="tel:+447441904858">
-                  <div className="method-icon dark">📞</div>
+                  <div className="method-icon dark"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2d3436" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></div>
                   <div>
                     <div className="method-t">Phone</div>
                     <div className="method-d">UK number. Available during working hours (GMT). For urgent enquiries only — WhatsApp preferred.</div>
@@ -163,10 +163,10 @@ export default function ContactPage() {
                   The more detail you provide, the faster we can get you an accurate quote.
                 </p>
                 {[
-                  {icon:'🩺',t:'Treatment',d:'Which procedure(s) you are considering'},
-                  {icon:'📅',t:'Preferred dates',d:'When you would like to travel to Istanbul'},
-                  {icon:'📋',t:'Medical records',d:'Any relevant clinical documents, X-rays, or referral letters'},
-                  {icon:'💷',t:'Budget',d:'Approximate budget helps us recommend the right package'},
+                  {icon:<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#085041" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>,t:'Treatment',d:'Which procedure(s) you are considering'},
+                  {icon:<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#085041" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>,t:'Preferred dates',d:'When you would like to travel to Istanbul'},
+                  {icon:<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#085041" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="2"/></svg>,t:'Medical records',d:'Any relevant clinical documents, X-rays, or referral letters'},
+                  {icon:<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#085041" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>,t:'Budget',d:'Approximate budget helps us recommend the right package'},
                 ].map(item => (
                   <div key={item.t} style={{display:'flex',alignItems:'flex-start',gap:'12px',padding:'.75rem 0',borderBottom:'1px solid #f5f4f2'}}>
                     <span style={{fontSize:'18px',flexShrink:0}}>{item.icon}</span>
