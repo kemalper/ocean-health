@@ -404,6 +404,7 @@ export default function Home() {
               {name:'Plastic & cosmetic surgery',link:'/treatments/plastic-surgery-istanbul',img:'/treatments/plastic-surgery.jpg',items:['Rhinoplasty, facelift, brow lift','Breast augmentation, reduction, lift','Liposuction, tummy tuck, BBL','Ear, lip, eyelid surgery'],price:'Rhinoplasty from £3,200 · Breast from £6,000'},
               {name:'Dental',link:'/treatments/dental-istanbul',img:'/treatments/dental.jpg',items:['Dental implants','Zirconium crowns & veneers','Smile design','Orthodontics & root canal'],price:'Implants from £350 each'},
               {name:'Ophthalmology',link:'/treatments/ophthalmology-istanbul',img:'/treatments/ophthalmology.jpg',items:['LASIK & laser refractive surgery','Cataract & lens replacement','Eyelid & strabismus surgery'],price:'LASIK from £600 per eye'},
+      {name:'Orthopaedics',link:'/treatments/knee-replacement-turkey',img:'/treatments/orthopaedics.jpg',items:['Total & partial knee replacement','Hip replacement','Sports & joint injuries','Ligament & cartilage repair'],price:'Knee replacement from £3,500'},
               {name:'Hair transplantation',link:'/treatments/hair-transplant-istanbul',img:'/hair-transplant.jpg',items:['FUE & DHI techniques','PRP for hair restoration'],price:'Contact us for pricing'},
               {name:'Aesthetic medicine',link:null,img:'/treatments/aesthetic.jpg',items:['Botox & dermal fillers','Mesotherapy & Hydrafacial','Scarlet X skin tightening'],price:'From £180'},
             ].map((s,i) => (
