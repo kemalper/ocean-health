@@ -47,18 +47,18 @@ export default function DentalImplantsPage() {
 .nav-links a:hover{color:#085041}
         .btn-
 .btn-nav:hover{background:#085041;color:#fff!important}
-        .hero{background:linear-gradient(135deg,#1e3a5f 0%,#1a5276 50%,#117a8b 100%);padding:100px 0 80px;position:relative;overflow:hidden}
+        .hero{background:linear-gradient(135deg,#0d3e2c 0%,#0d6b55 50%,#1d9e75 100%);padding:100px 0 80px;position:relative;overflow:hidden}
         .hero::before{content:'';position:absolute;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(52,152,219,.2) 0%,transparent 70%);top:-100px;right:-100px;pointer-events:none}
         .hero-grid{display:grid;grid-template-columns:1.2fr 0.8fr;gap:3rem;align-items:center;position:relative;z-index:1}
         .breadcrumb{font-size:12px;color:rgba(255,255,255,.5);margin-bottom:1.25rem}
         .breadcrumb a{color:rgba(255,255,255,.5)}
         .breadcrumb span{margin:0 6px}
-        .kicker{font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#7fb3d3;margin-bottom:1rem}
+        .kicker{font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#7fd3b4;margin-bottom:1rem}
         h1{font-family:'DM Serif Display',serif;font-size:clamp(34px,4vw,54px);line-height:1.1;letter-spacing:-.025em;color:#fff;margin-bottom:1rem;font-weight:400}
-        h1 em{font-style:italic;color:#aed6f1}
+        h1 em{font-style:italic;color:#aef1d8}
         .hero-sub{font-size:16px;color:rgba(255,255,255,.72);line-height:1.75;margin-bottom:2rem;font-weight:300;max-width:500px}
         .hero-actions{display:flex;gap:12px;flex-wrap:wrap}
-        .btn-primary{background:#fff;color:#1e3a5f;border:none;padding:14px 26px;border-radius:10px;font-size:15px;font-weight:600;display:inline-flex;align-items:center;gap:8px;transition:transform .2s,box-shadow .2s;cursor:pointer;font-family:'Inter',sans-serif;box-shadow:0 4px 20px rgba(0,0,0,.2)}
+        .btn-primary{background:#fff;color:#0d3e2c;border:none;padding:14px 26px;border-radius:10px;font-size:15px;font-weight:600;display:inline-flex;align-items:center;gap:8px;transition:transform .2s,box-shadow .2s;cursor:pointer;font-family:'Inter',sans-serif;box-shadow:0 4px 20px rgba(0,0,0,.2)}
         .btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(0,0,0,.3)}
         .btn-ghost{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.35);padding:14px 26px;border-radius:10px;font-size:15px;display:inline-flex;align-items:center;gap:8px;transition:all .2s;cursor:pointer;font-family:'Inter',sans-serif}
         .btn-ghost:hover{background:rgba(255,255,255,.1)}
@@ -67,10 +67,10 @@ export default function DentalImplantsPage() {
         .price-row:last-child{border-bottom:none}
         .price-label{font-size:13px;color:rgba(255,255,255,.55)}
         .price-val{font-family:'DM Serif Display',serif;font-size:22px;color:#fff;font-weight:400}
-        .price-val.accent{color:#aed6f1}
+        .price-val.accent{color:#aef1d8}
         .trust-row{display:flex;gap:1.5rem;flex-wrap:wrap;margin-top:1.5rem}
         .trust-item{display:flex;align-items:center;gap:7px;font-size:12.5px;color:rgba(255,255,255,.75)}
-        .trust-dot{width:7px;height:7px;border-radius:50%;background:#aed6f1;flex-shrink:0}
+        .trust-dot{width:7px;height:7px;border-radius:50%;background:#aef1d8;flex-shrink:0}
         .sec{padding:5rem 0}
         .sec.bg{background:#fafaf9}
         .sec.border{border-top:1px solid #f0ede8;border-bottom:1px solid #f0ede8}
@@ -81,36 +81,36 @@ export default function DentalImplantsPage() {
         .prose h3{margin-top:2rem;margin-bottom:.75rem}
         .prose ul{list-style:none;padding:0;margin-bottom:1.25rem}
         .prose ul li{font-size:15px;color:#444;line-height:1.8;padding-left:16px;position:relative;font-weight:300}
-        .prose ul li::before{content:'·';position:absolute;left:0;color:#1a5276;font-weight:700;font-size:18px}
+        .prose ul li::before{content:'·';position:absolute;left:0;color:#0d6b55;font-weight:700;font-size:18px}
         .treatment-table{width:100%;border-collapse:collapse;margin:1.5rem 0;border:1px solid #f0ede8;border-radius:12px;overflow:hidden}
         .treatment-table th{font-size:11px;text-transform:uppercase;letter-spacing:.07em;color:#bbb;font-weight:500;padding:.85rem 1rem;text-align:left;background:#fafaf9;border-bottom:1px solid #f0ede8}
         .treatment-table td{padding:.85rem 1rem;border-bottom:1px solid #fafaf9;font-size:14px;color:#1a1a1a}
         .treatment-table tr:last-child td{border-bottom:none}
-        .td-ist{color:#1a5276;font-weight:600}
+        .td-ist{color:#0d6b55;font-weight:600}
         .td-uk{color:#aaa}
-        .saving{background:#dbeafe;color:#1e3a5f;font-weight:600;border-radius:20px;padding:3px 10px;font-size:12px;white-space:nowrap;display:inline-block}
-        .disclaimer{background:#f0f9ff;border:1px solid #bae6fd;border-radius:12px;padding:1.25rem 1.5rem;font-size:13px;color:#0c4a6e;line-height:1.75;margin-top:1.5rem}
+        .saving{background:#dbfef1;color:#0d3e2c;font-weight:600;border-radius:20px;padding:3px 10px;font-size:12px;white-space:nowrap;display:inline-block}
+        .disclaimer{background:#f0fffa;border:1px solid #bafde4;border-radius:12px;padding:1.25rem 1.5rem;font-size:13px;color:#0c6e4a;line-height:1.75;margin-top:1.5rem}
         .sidebar{position:sticky;top:80px}
         .sidebar-card{background:#fff;border:1px solid #f0ede8;border-radius:16px;padding:1.75rem;margin-bottom:1rem}
-        .sidebar-card.dark{background:linear-gradient(135deg,#1e3a5f,#117a8b);border-color:transparent}
+        .sidebar-card.dark{background:linear-gradient(135deg,#0d3e2c,#1d9e75);border-color:transparent}
         .sidebar-title{font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:#bbb;margin-bottom:1.25rem}
         .sidebar-card.dark .sidebar-title{color:rgba(255,255,255,.45)}
         .sidebar-price-row{display:flex;justify-content:space-between;align-items:baseline;padding:.6rem 0;border-bottom:1px solid #f5f4f2}
         .sidebar-price-row:last-of-type{border-bottom:none}
         .sidebar-price-label{font-size:13px;color:#777}
-        .sidebar-price-val{font-size:15px;font-weight:600;color:#1e3a5f}
+        .sidebar-price-val{font-size:15px;font-weight:600;color:#0d3e2c}
         .sidebar-price-val.uk{color:#aaa;font-weight:400}
         .btn-full{width:100%;padding:14px;border-radius:10px;font-size:15px;font-weight:600;display:flex;align-items:center;justify-content:center;gap:8px;cursor:pointer;font-family:'Inter',sans-serif;transition:all .2s;margin-top:1rem;border:none}
-        .btn-full.blue{background:#1a5276;color:#fff}
-        .btn-full.blue:hover{background:#1e3a5f}
+        .btn-full.blue{background:#0d6b55;color:#fff}
+        .btn-full.blue:hover{background:#0d3e2c}
         .btn-full.outline{background:rgba(255,255,255,.08);color:#fff;border:1px solid rgba(255,255,255,.2)}
         .check-item{display:flex;align-items:flex-start;gap:8px;font-size:13px;color:#555;padding:.5rem 0;border-bottom:1px solid #f5f4f2}
         .check-item:last-child{border-bottom:none}
-        .check-dot{width:6px;height:6px;border-radius:50%;background:#1a5276;flex-shrink:0;margin-top:6px}
+        .check-dot{width:6px;height:6px;border-radius:50%;background:#0d6b55;flex-shrink:0;margin-top:6px}
         .process-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:0;position:relative;margin-top:2.5rem}
-        .process-grid::before{content:'';position:absolute;top:22px;left:10%;right:10%;height:1px;background:linear-gradient(90deg,transparent,#bae6fd 20%,#bae6fd 80%,transparent)}
+        .process-grid::before{content:'';position:absolute;top:22px;left:10%;right:10%;height:1px;background:linear-gradient(90deg,transparent,#bafde4 20%,#bafde4 80%,transparent)}
         .proc-step{text-align:center;padding:0 .5rem;position:relative;z-index:1}
-        .proc-circle{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#1e3a5f,#1a5276);display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;font-size:15px;font-weight:600;color:#fff;box-shadow:0 4px 14px rgba(26,82,118,.3)}
+        .proc-circle{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#0d3e2c,#0d6b55);display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;font-size:15px;font-weight:600;color:#fff;box-shadow:0 4px 14px rgba(26,82,118,.3)}
         .proc-t{font-size:13px;font-weight:600;margin-bottom:.3rem}
         .proc-d{font-size:11px;color:#888;line-height:1.5}
         .faq-list{display:flex;flex-direction:column;border:1px solid #f0ede8;border-radius:16px;overflow:hidden;margin-top:2.5rem}
@@ -357,7 +357,7 @@ export default function DentalImplantsPage() {
               <details key={f.q} className="faq-item">
                 <summary className="faq-q">
                   {f.q}
-                  <span style={{fontSize:'18px',color:'#1a5276',flexShrink:0}}>+</span>
+                  <span style={{fontSize:'18px',color:'#0d6b55',flexShrink:0}}>+</span>
                 </summary>
                 <div className="faq-a">{f.a}</div>
               </details>
@@ -375,10 +375,10 @@ export default function DentalImplantsPage() {
             Tell us how many implants you need. Full itemised quote within 48 hours — no obligation.
           </p>
           <div style={{display:'flex',gap:'14px',justifyContent:'center',flexWrap:'wrap'}}>
-            <a href={WA_URL} target="_blank" style={{background:'#1a5276',color:'#fff',border:'none',padding:'15px 30px',borderRadius:'10px',fontSize:'15px',fontWeight:600,display:'inline-flex',alignItems:'center',gap:'9px',cursor:'pointer',fontFamily:'Inter,sans-serif'}}>
+            <a href={WA_URL} target="_blank" style={{background:'#0d6b55',color:'#fff',border:'none',padding:'15px 30px',borderRadius:'10px',fontSize:'15px',fontWeight:600,display:'inline-flex',alignItems:'center',gap:'9px',cursor:'pointer',fontFamily:'Inter,sans-serif'}}>
               💬 Get a free quote
             </a>
-            <a href="mailto:info@oceanhealthtravel.com" style={{background:'transparent',color:'#1a5276',border:'1px solid #1a5276',padding:'15px 30px',borderRadius:'10px',fontSize:'15px',display:'inline-flex',alignItems:'center',gap:'9px',cursor:'pointer',fontFamily:'Inter,sans-serif'}}>
+            <a href="mailto:info@oceanhealthtravel.com" style={{background:'transparent',color:'#0d6b55',border:'1px solid #0d6b55',padding:'15px 30px',borderRadius:'10px',fontSize:'15px',display:'inline-flex',alignItems:'center',gap:'9px',cursor:'pointer',fontFamily:'Inter,sans-serif'}}>
               ✉️ Email us
             </a>
           </div>
