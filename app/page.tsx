@@ -420,7 +420,6 @@ export default function Home() {
             <div className="tx-card neuro reveal" ref={ref} onClick={() => window.location.assign('/treatments/neurosurgery-istanbul')} style={{cursor:'pointer'}}>
               <div style={{height:"160px",borderRadius:"10px",overflow:"hidden",marginBottom:"1rem",background:"#f0ede8"}}><img src="/treatments/neurosurgery.jpg" alt="Neurosurgery" style={{width:"100%",height:"100%",objectFit:"cover",display:"block"}} /></div>
               <div className="neuro-badge">Specialist referral required</div>
-              <div className="tx-icon neuro-icon">🧠</div>
               <div className="tx-name">Neurosurgery</div>
               <ul className="tx-list">
                 <li>Deep brain stimulation (Parkinson&apos;s)</li>
@@ -432,7 +431,7 @@ export default function Home() {
               <div style={{fontSize:'12px',color:'#e17055',fontWeight:600,marginTop:'8px'}}>Learn more →</div>
             </div>
             <div className="tx-card reveal" ref={ref} style={{borderStyle:'dashed',background:'#fafaf9'}}>
-              <div className="tx-icon">➕</div>
+              <div className="tx-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#085041" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
               <div className="tx-name" style={{color:'#aaa'}}>Not listed?</div>
               <ul className="tx-list" style={{color:'#bbb'}}>
                 <li>We coordinate across all specialties</li>
@@ -568,7 +567,7 @@ export default function Home() {
         <div className="inner">
           <div style={{textAlign:'center',marginBottom:'1.5rem'}} className="reveal" ref={ref}>
             <a href={WA_URL} target="_blank" className="wa-pill">
-              💬 Message us on WhatsApp — we reply within the hour
+              Message us on WhatsApp — we reply within the hour
             </a>
           </div>
           <div className="cta-box reveal" ref={ref}>
