@@ -102,7 +102,7 @@ export default function Home() {
         .btn-nav:hover{background:rgba(255,255,255,.15)!important}
         nav.scrolled .btn-nav{border-color:#085041;color:#085041!important}
         nav.scrolled .btn-nav:hover{background:#085041!important;color:#fff!important}
-        .hero{min-height:100vh;background:linear-gradient(135deg,rgba(4,46,34,.92) 0%,rgba(8,80,65,.88) 45%,rgba(13,107,85,.85) 100%),url('https://images.pexels.com/photos/13349520/pexels-photo-13349520.jpeg?auto=compress&cs=tinysrgb&w=1920') center/cover no-repeat;position:relative;display:flex;flex-direction:column;justify-content:center;overflow:hidden}
+        .hero{min-height:100vh;background:linear-gradient(135deg,rgba(4,46,34,.92) 0%,rgba(8,80,65,.88) 45%,rgba(13,107,85,.85) 100%),url('/hero.jpg') center/cover no-repeat;position:relative;display:flex;flex-direction:column;justify-content:center;overflow:hidden}
         .hero::before{content:'';position:absolute;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(29,158,117,.25) 0%,transparent 70%);top:-100px;right:-150px;pointer-events:none}
         .hero::after{content:'';position:absolute;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(225,245,238,.08) 0%,transparent 70%);bottom:-80px;left:-100px;pointer-events:none}
         .hero-content{position:relative;z-index:2;padding:120px 0 80px}
@@ -401,11 +401,11 @@ export default function Home() {
           </div>
           <div className="tx-grid">
             {[
-              {name:'Plastic & cosmetic surgery',link:'/treatments/plastic-surgery-istanbul',img:'https://images.pexels.com/photos/8528647/pexels-photo-8528647.jpeg?auto=compress&cs=tinysrgb&w=800',items:['Rhinoplasty, facelift, brow lift','Breast augmentation, reduction, lift','Liposuction, tummy tuck, BBL','Ear, lip, eyelid surgery'],price:'Rhinoplasty from £3,200 · Breast from £6,000'},
-              {name:'Dental',link:'/treatments/dental-istanbul',img:'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=800&q=80',items:['Dental implants','Zirconium crowns & veneers','Smile design','Orthodontics & root canal'],price:'Implants from £350 each'},
-              {name:'Ophthalmology',link:'/treatments/ophthalmology-istanbul',img:'https://images.pexels.com/photos/18680821/pexels-photo-18680821.jpeg?auto=compress&cs=tinysrgb&w=800',items:['LASIK & laser refractive surgery','Cataract & lens replacement','Eyelid & strabismus surgery'],price:'LASIK from £600 per eye'},
+              {name:'Plastic & cosmetic surgery',link:'/treatments/plastic-surgery-istanbul',img:'/treatments/plastic-surgery.jpg',items:['Rhinoplasty, facelift, brow lift','Breast augmentation, reduction, lift','Liposuction, tummy tuck, BBL','Ear, lip, eyelid surgery'],price:'Rhinoplasty from £3,200 · Breast from £6,000'},
+              {name:'Dental',link:'/treatments/dental-istanbul',img:'/treatments/dental.jpg',items:['Dental implants','Zirconium crowns & veneers','Smile design','Orthodontics & root canal'],price:'Implants from £350 each'},
+              {name:'Ophthalmology',link:'/treatments/ophthalmology-istanbul',img:'/treatments/ophthalmology.jpg',items:['LASIK & laser refractive surgery','Cataract & lens replacement','Eyelid & strabismus surgery'],price:'LASIK from £600 per eye'},
               {name:'Hair transplantation',link:'/treatments/hair-transplant-istanbul',img:'/hair-transplant.jpg',items:['FUE & DHI techniques','PRP for hair restoration'],price:'Contact us for pricing'},
-              {name:'Aesthetic medicine',link:null,img:'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=800&q=80',items:['Botox & dermal fillers','Mesotherapy & Hydrafacial','Scarlet X skin tightening'],price:'From £180'},
+              {name:'Aesthetic medicine',link:null,img:'/treatments/aesthetic.jpg',items:['Botox & dermal fillers','Mesotherapy & Hydrafacial','Scarlet X skin tightening'],price:'From £180'},
             ].map((s,i) => (
               <div key={s.name} className={`tx-card reveal d${i%4+1}`} ref={ref} onClick={() => s.link && window.location.assign(s.link)} style={{cursor: s.link ? 'pointer' : 'default'}}>
                 <div style={{height:'160px',borderRadius:'10px',overflow:'hidden',marginBottom:'1rem',background:'#f0ede8'}}>
@@ -418,7 +418,7 @@ export default function Home() {
               </div>
             ))}
             <div className="tx-card neuro reveal" ref={ref} onClick={() => window.location.assign('/treatments/neurosurgery-istanbul')} style={{cursor:'pointer'}}>
-              <div style={{height:"160px",borderRadius:"10px",overflow:"hidden",marginBottom:"1rem",background:"#f0ede8"}}><img src="https://images.pexels.com/photos/4226139/pexels-photo-4226139.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Neurosurgery" style={{width:"100%",height:"100%",objectFit:"cover",display:"block"}} /></div>
+              <div style={{height:"160px",borderRadius:"10px",overflow:"hidden",marginBottom:"1rem",background:"#f0ede8"}}><img src="/treatments/neurosurgery.jpg" alt="Neurosurgery" style={{width:"100%",height:"100%",objectFit:"cover",display:"block"}} /></div>
               <div className="neuro-badge">Specialist referral required</div>
               <div className="tx-icon neuro-icon">🧠</div>
               <div className="tx-name">Neurosurgery</div>
