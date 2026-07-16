@@ -406,7 +406,7 @@ export default function Home() {
               {name:'Ophthalmology',link:'/treatments/ophthalmology-istanbul',img:'/treatments/ophthalmology.jpg',items:['LASIK & laser refractive surgery','Cataract & lens replacement','Eyelid & strabismus surgery'],price:'LASIK from £600 per eye'},
       {name:'Orthopaedics',link:'/treatments/knee-replacement-turkey',img:'/treatments/orthopaedics.jpg',items:['Total & partial knee replacement','Hip replacement','Sports & joint injuries','Ligament & cartilage repair'],price:'Knee replacement from £3,500'},
               {name:'Hair transplantation',link:'/treatments/hair-transplant-istanbul',img:'/hair-transplant.jpg',items:['FUE & DHI techniques','PRP for hair restoration'],price:'Contact us for pricing'},
-              {name:'Aesthetic medicine',link:null,img:'/treatments/aesthetic.jpg',items:['Botox & dermal fillers','Mesotherapy & Hydrafacial','Scarlet X skin tightening'],price:'From £180'},
+              {name:'Aesthetic medicine',link:WA_URL,img:'/treatments/aesthetic.jpg',items:['Botox & dermal fillers','Mesotherapy & Hydrafacial','Scarlet X skin tightening'],price:'From £180',cta:'Ask via WhatsApp'},
             ].map((s,i) => (
               <div key={s.name} className={`tx-card reveal d${i%4+1}`} ref={ref} onClick={() => s.link && window.location.assign(s.link)} style={{cursor: s.link ? 'pointer' : 'default'}}>
                 <div style={{height:'160px',borderRadius:'10px',overflow:'hidden',marginBottom:'1rem',background:'#f0ede8'}}>
@@ -415,7 +415,7 @@ export default function Home() {
                 <div className="tx-name">{s.name}</div>
                 <ul className="tx-list">{s.items.map(item => <li key={item}>{item}</li>)}</ul>
                 <div className="tx-price">{s.price}</div>
-                {s.link && <div style={{fontSize:'12px',color:'#085041',fontWeight:600,marginTop:'8px'}}>Learn more →</div>}
+                {s.link && <div style={{fontSize:'12px',color:'#085041',fontWeight:600,marginTop:'8px'}}>{s.cta || 'Learn more'} →</div>}
               </div>
             ))}
             <div className="tx-card neuro reveal" ref={ref} onClick={() => window.location.assign('/treatments/neurosurgery-istanbul')} style={{cursor:'pointer'}}>
