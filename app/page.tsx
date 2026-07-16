@@ -400,13 +400,12 @@ export default function Home() {
             <h2>Services we coordinate</h2>
           </div>
           <div className="tx-grid">
+            <div style={{gridColumn:'1 / -1',display:'flex',alignItems:'center',gap:'10px',margin:'0 0 4px'}}><span style={{fontSize:'11px',fontWeight:700,letterSpacing:'.08em',textTransform:'uppercase',color:'#1D9E75',whiteSpace:'nowrap'}}>Long NHS waiting lists</span><span style={{flex:1,height:'1px',background:'#e5e7eb'}}></span></div>
             {[
               {name:'Plastic & cosmetic surgery',link:'/treatments/plastic-surgery-istanbul',img:'/treatments/plastic-surgery.jpg',items:['Rhinoplasty, facelift, brow lift','Breast augmentation, reduction, lift','Liposuction, tummy tuck, BBL','Ear, lip, eyelid surgery'],price:'Rhinoplasty from £3,200 · Breast from £6,000'},
               {name:'Dental',link:'/treatments/dental-istanbul',img:'/treatments/dental.jpg',items:['Dental implants','Zirconium crowns & veneers','Smile design','Orthodontics & root canal'],price:'Implants from £350 each'},
               {name:'Ophthalmology',link:'/treatments/ophthalmology-istanbul',img:'/treatments/ophthalmology.jpg',items:['LASIK & laser refractive surgery','Cataract & lens replacement','Eyelid & strabismus surgery'],price:'LASIK from £600 per eye'},
-      {name:'Orthopaedics',link:'/treatments/knee-replacement-turkey',img:'/treatments/orthopaedics.jpg',items:['Total & partial knee replacement','Hip replacement','Sports & joint injuries','Ligament & cartilage repair'],price:'Knee replacement from £3,500'},
-              {name:'Hair transplantation',link:'/treatments/hair-transplant-istanbul',img:'/hair-transplant.jpg',items:['FUE & DHI techniques','PRP for hair restoration'],price:'Contact us for pricing'},
-              {name:'Aesthetic medicine',link:WA_URL,img:'/treatments/aesthetic.jpg',items:['Botox & dermal fillers','Mesotherapy & Hydrafacial','Scarlet X skin tightening'],price:'From £180',cta:'Ask via WhatsApp'},
+              {name:'Orthopaedics',link:'/treatments/knee-replacement-turkey',img:'/treatments/orthopaedics.jpg',items:['Total & partial knee replacement','Hip replacement','Sports & joint injuries','Ligament & cartilage repair'],price:'Knee replacement from £3,500'},
             ].map((s,i) => (
               <div key={s.name} className={`tx-card reveal d${i%4+1}`} ref={ref} onClick={() => s.link && window.location.assign(s.link)} style={{cursor: s.link ? 'pointer' : 'default'}}>
                 <div style={{height:'160px',borderRadius:'10px',overflow:'hidden',marginBottom:'1rem',background:'#f0ede8'}}>
@@ -431,6 +430,21 @@ export default function Home() {
               <div className="tx-price">DBS from £23,700 · Referral required</div>
               <div style={{fontSize:'12px',color:'#e17055',fontWeight:600,marginTop:'8px'}}>Learn more →</div>
             </div>
+            <div style={{gridColumn:'1 / -1',display:'flex',alignItems:'center',gap:'10px',margin:'2rem 0 4px'}}><span style={{fontSize:'11px',fontWeight:700,letterSpacing:'.08em',textTransform:'uppercase',color:'#1D9E75',whiteSpace:'nowrap'}}>Private & aesthetic · no NHS wait</span><span style={{flex:1,height:'1px',background:'#e5e7eb'}}></span></div>
+            {[
+              {name:'Hair transplantation',link:'/treatments/hair-transplant-istanbul',img:'/hair-transplant.jpg',items:['FUE & DHI techniques','PRP for hair restoration'],price:'Contact us for pricing'},
+              {name:'Aesthetic medicine',link:WA_URL,img:'/treatments/aesthetic.jpg',items:['Botox & dermal fillers','Mesotherapy & Hydrafacial','Scarlet X skin tightening'],price:'From £180',cta:'Ask via WhatsApp'},
+            ].map((s,i) => (
+              <div key={s.name} className={`tx-card reveal d${i%4+1}`} ref={ref} onClick={() => s.link && window.location.assign(s.link)} style={{cursor: s.link ? 'pointer' : 'default'}}>
+                <div style={{height:'160px',borderRadius:'10px',overflow:'hidden',marginBottom:'1rem',background:'#f0ede8'}}>
+                  <img src={s.img} alt={s.name} style={{width:'100%',height:'100%',objectFit:'cover',display:'block'}} />
+                </div>
+                <div className="tx-name">{s.name}</div>
+                <ul className="tx-list">{s.items.map(item => <li key={item}>{item}</li>)}</ul>
+                <div className="tx-price">{s.price}</div>
+                {s.link && <div style={{fontSize:'12px',color:'#085041',fontWeight:600,marginTop:'8px'}}>{s.cta || 'Learn more'} →</div>}
+              </div>
+            ))}
             <div className="tx-card reveal" ref={ref} style={{borderStyle:'dashed',background:'#fafaf9'}}>
               <div className="tx-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#085041" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
               <div className="tx-name" style={{color:'#aaa'}}>Not listed?</div>
