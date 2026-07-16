@@ -297,7 +297,7 @@ export default function Home() {
                 <div className="avatar">SS</div>
                 <div>
                   <div className="p-name">Savannah S.</div>
-                  <div className="p-detail">Dental (full crowns) · Google Review ★★★★★</div>
+                  <div className="p-detail" style={{display:'flex',alignItems:'center',gap:'5px',flexWrap:'wrap'}}><span>Dental (full crowns) · Google Review</span><span style={{display:'flex',gap:'1px'}}>{[1,2,3,4,5].map(i => <svg key={i} width="10" height="10" viewBox="0 0 24 24" fill="#f59e0b" stroke="none"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>)}</span></div>
                 </div>
                 <div className="v-badge">
                   <div className="v-badge-t">Verified</div>
@@ -540,7 +540,7 @@ export default function Home() {
                 <div style={{width:'36px',height:'36px',borderRadius:'50%',background:'#E1F5EE',display:'flex',alignItems:'center',justifyContent:'center',fontFamily:"'DM Serif Display',serif",fontSize:'13px',color:'#085041',flexShrink:0}}>OG</div>
                 <div>
                   <div style={{fontSize:'13px',fontWeight:500}}>Ozan G.</div>
-                  <div style={{fontSize:'12px',color:'#888'}}>Urology &middot; Istanbul &middot; Google Review ★★★★★</div>
+                  <div style={{fontSize:'12px',color:'#888'}}>Urology &middot; Istanbul &middot; Google Review</div>
                 </div>
               </div>
             </div>
@@ -553,7 +553,7 @@ export default function Home() {
                 <div style={{width:'36px',height:'36px',borderRadius:'50%',background:'#E1F5EE',display:'flex',alignItems:'center',justifyContent:'center',fontFamily:"'DM Serif Display',serif",fontSize:'13px',color:'#085041',flexShrink:0}}>SS</div>
                 <div>
                   <div style={{fontSize:'13px',fontWeight:500}}>Savannah S.</div>
-                  <div style={{fontSize:'12px',color:'#888'}}>Dental (full crowns) &middot; Google Review ★★★★★</div>
+                  <div style={{fontSize:'12px',color:'#888'}}>Dental (full crowns) &middot; Google Review</div>
                 </div>
               </div>
             </div>
