@@ -319,7 +319,7 @@ export default function Home() {
           <span className="trust-label">Credentials</span>
           <div className="trust-sep"></div>
           <div className="trust-items">
-            {['UK Companies House no. 16186647','ICO registered · UK GDPR','Access to JCI-accredited hospitals','JCI-accredited facilities','Physician-led coordination','TÜRSAB member'].map(t => (
+            {['UK Companies House no. 16186647','ICO registered · UK GDPR','JCI-accredited hospitals'].map(t => (
               <div key={t} className="ti"><div className="ti-dot"></div>{t}</div>
             ))}
           </div>
