@@ -590,7 +590,7 @@ export default function Home() {
               <div className="footer-brand-name">Ocean Health &amp; Travel</div>
               <p>UK-registered medical tourism coordinator. Connecting international patients with JCI-accredited Istanbul clinics.</p>
               <div className="fbadges">
-                {['UK GDPR / ICO','JCI-accredited hospitals','Designated client account','TÜRSAB','Companies House'].map(b => (
+                {['JCI-accredited hospitals','UK GDPR / ICO','Companies House'].map(b => (
                   <div key={b} className="fbadge"><div className="fbadge-dot"></div>{b}</div>
                 ))}
               </div>
