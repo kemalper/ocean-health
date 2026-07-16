@@ -402,10 +402,10 @@ export default function Home() {
           <div className="tx-grid">
             <div style={{gridColumn:'1 / -1',display:'flex',alignItems:'center',gap:'10px',margin:'0 0 4px'}}><span style={{fontSize:'11px',fontWeight:700,letterSpacing:'.08em',textTransform:'uppercase',color:'#1D9E75',whiteSpace:'nowrap'}}>Long NHS waiting lists</span><span style={{flex:1,height:'1px',background:'#e5e7eb'}}></span></div>
             {[
-              {name:'Plastic & cosmetic surgery',link:'/treatments/plastic-surgery-istanbul',img:'/treatments/plastic-surgery.jpg',items:['Rhinoplasty, facelift, brow lift','Breast augmentation, reduction, lift','Liposuction, tummy tuck, BBL','Ear, lip, eyelid surgery'],price:'Rhinoplasty from £3,200 · Breast from £6,000'},
-              {name:'Dental',link:'/treatments/dental-istanbul',img:'/treatments/dental.jpg',items:['Dental implants','Zirconium crowns & veneers','Smile design','Orthodontics & root canal'],price:'Implants from £350 each'},
-              {name:'Ophthalmology',link:'/treatments/ophthalmology-istanbul',img:'/treatments/ophthalmology.jpg',items:['LASIK & laser refractive surgery','Cataract & lens replacement','Eyelid & strabismus surgery'],price:'LASIK from £600 per eye'},
-              {name:'Orthopaedics',link:'/treatments/knee-replacement-turkey',img:'/treatments/orthopaedics.jpg',items:['Total & partial knee replacement','Hip replacement','Sports & joint injuries','Ligament & cartilage repair'],price:'Knee replacement from £3,500'},
+              {name:'Plastic & cosmetic surgery',link:'/treatments/plastic-surgery-istanbul',img:'/treatments/plastic-surgery.jpg',items:['Rhinoplasty, facelift, brow lift','Breast augmentation, reduction, lift','Liposuction, tummy tuck, BBL','Ear, lip, eyelid surgery'],price:'Rhinoplasty from £3,200 · Breast from £6,000',cta:''},
+              {name:'Dental',link:'/treatments/dental-istanbul',img:'/treatments/dental.jpg',items:['Dental implants','Zirconium crowns & veneers','Smile design','Orthodontics & root canal'],price:'Implants from £350 each',cta:''},
+              {name:'Ophthalmology',link:'/treatments/ophthalmology-istanbul',img:'/treatments/ophthalmology.jpg',items:['LASIK & laser refractive surgery','Cataract & lens replacement','Eyelid & strabismus surgery'],price:'LASIK from £600 per eye',cta:''},
+              {name:'Orthopaedics',link:'/treatments/knee-replacement-turkey',img:'/treatments/orthopaedics.jpg',items:['Total & partial knee replacement','Hip replacement','Sports & joint injuries','Ligament & cartilage repair'],price:'Knee replacement from £3,500',cta:''},
             ].map((s,i) => (
               <div key={s.name} className={`tx-card reveal d${i%4+1}`} ref={ref} onClick={() => s.link && window.location.assign(s.link)} style={{cursor: s.link ? 'pointer' : 'default'}}>
                 <div style={{height:'160px',borderRadius:'10px',overflow:'hidden',marginBottom:'1rem',background:'#f0ede8'}}>
@@ -432,7 +432,7 @@ export default function Home() {
             </div>
             <div style={{gridColumn:'1 / -1',display:'flex',alignItems:'center',gap:'10px',margin:'2rem 0 4px'}}><span style={{fontSize:'11px',fontWeight:700,letterSpacing:'.08em',textTransform:'uppercase',color:'#1D9E75',whiteSpace:'nowrap'}}>Private & aesthetic · no NHS wait</span><span style={{flex:1,height:'1px',background:'#e5e7eb'}}></span></div>
             {[
-              {name:'Hair transplantation',link:'/treatments/hair-transplant-istanbul',img:'/hair-transplant.jpg',items:['FUE & DHI techniques','PRP for hair restoration'],price:'Contact us for pricing'},
+              {name:'Hair transplantation',link:'/treatments/hair-transplant-istanbul',img:'/hair-transplant.jpg',items:['FUE & DHI techniques','PRP for hair restoration'],price:'Contact us for pricing',cta:''},
               {name:'Aesthetic medicine',link:WA_URL,img:'/treatments/aesthetic.jpg',items:['Botox & dermal fillers','Mesotherapy & Hydrafacial','Scarlet X skin tightening'],price:'From £180',cta:'Ask via WhatsApp'},
             ].map((s,i) => (
               <div key={s.name} className={`tx-card reveal d${i%4+1}`} ref={ref} onClick={() => s.link && window.location.assign(s.link)} style={{cursor: s.link ? 'pointer' : 'default'}}>
