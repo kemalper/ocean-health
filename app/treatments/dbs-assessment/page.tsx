@@ -4,10 +4,23 @@ import { headers } from 'next/headers'
 import Nav from '@/app/components/Nav'
 import DbsForm from './DbsForm'
 
-export const metadata: Metadata = {
-  title: 'DBS Pre-Assessment | Free | Ocean Health & Travel',
-  description: 'Free pre-assessment for deep brain stimulation (DBS) in Istanbul. Complete the form and have your case reviewed by the neurosurgical team. Reply typically within 48 hours.',
-  robots: { index: true, follow: true },
+export async function generateMetadata(): Promise<Metadata> {
+  const host = (await headers()).get('host') || ''
+  const isSurgiCheck = host.includes('surgicheck.net')
+
+  if (isSurgiCheck) {
+    return {
+      title: 'DBS Pre-Assessment | SurgiCheck',
+      description: 'DBS pre-assessment patient intake form. Complete this form so your case can be reviewed ahead of your consultation.',
+      robots: { index: false, follow: false },
+      icons: { icon: '/surgicheck-favicon.ico' },
+    }
+  }
+  return {
+    title: 'DBS Pre-Assessment | Free | Ocean Health & Travel',
+    description: 'Free pre-assessment for deep brain stimulation (DBS) in Istanbul. Complete the form and have your case reviewed by the neurosurgical team. Reply typically within 48 hours.',
+    robots: { index: true, follow: true },
+  }
 }
 
 export default async function DbsAssessmentPage() {
