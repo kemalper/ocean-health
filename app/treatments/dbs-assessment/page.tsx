@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Suspense } from 'react'
+import { headers } from 'next/headers'
 import Nav from '@/app/components/Nav'
 import DbsForm from './DbsForm'
 
@@ -9,7 +10,10 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true },
 }
 
-export default function DbsAssessmentPage() {
+export default async function DbsAssessmentPage() {
+  const host = (await headers()).get('host') || ''
+  const isSurgiCheck = host.includes('surgicheck.net')
+  const brand: 'oht' | 'surgicheck' = isSurgiCheck ? 'surgicheck' : 'oht'
   return (
     <>
       <style>{`
@@ -94,6 +98,9 @@ export default function DbsAssessmentPage() {
         .lang-toggle{position:absolute;top:-46px;right:1.25rem;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.35);color:#fff;padding:6px 14px;border-radius:100px;font-size:12px;font-weight:600;font-family:'Inter',sans-serif;cursor:pointer;letter-spacing:.05em;transition:background .15s;z-index:3}
         .lang-toggle:hover{background:rgba(255,255,255,.25)}
 
+        .sc-header{background:#fff;border-bottom:1px solid #eee;padding:0}
+        .sc-header-inner{max-width:1160px;margin:0 auto;padding:0 2.5rem;height:66px;display:flex;align-items:center}
+
         footer{background:#111;padding:3rem 0 2rem}
         .footer-legal{font-size:11.5px;color:#444;line-height:1.8}
         .footer-legal em{color:#333;font-style:normal;font-size:11px}
@@ -105,10 +112,19 @@ export default function DbsAssessmentPage() {
           .card{padding:1.4rem 1.15rem}
           .p-label{display:none}
           .form-wrap{padding:0 .85rem 4rem}
+          .sc-header-inner{padding:0 1.25rem}
         }
       `}</style>
 
-      <Nav />
+      {isSurgiCheck ? (
+        <header className="sc-header">
+          <div className="sc-header-inner">
+            <img src="/surgicheck-logo.png" alt="SurgiCheck" style={{height:'32px',width:'auto',display:'block'}} />
+          </div>
+        </header>
+      ) : (
+        <Nav />
+      )}
 
       <section className="hero">
         <div className="inner hero-inner">
@@ -117,27 +133,40 @@ export default function DbsAssessmentPage() {
           <h1>DBS Pre-Assessment</h1>
           <p className="hero-sub">
             Complete this form to have your case reviewed by the neurosurgical team at a JCI-accredited Istanbul hospital.
-            Ocean Health &amp; Travel coordinates and forwards your information — all clinical decisions rest with the treating physicians.
+            Your information is coordinated and forwarded for specialist review — all clinical decisions rest with the treating physicians.
           </p>
         </div>
       </section>
 
       <Suspense fallback={<div className="form-wrap"><div className="card" style={{minHeight:'320px'}} /></div>}>
-        <DbsForm />
+        <DbsForm brand={brand} />
       </Suspense>
 
-      <footer>
-        <div className="inner">
-          <div className="footer-legal">
-            © {new Date().getFullYear()} Ocean Health &amp; Travel Ltd · Registered in England &amp; Wales · Company no. 16186647<br />
-            London: 17 Green Lanes, N16 9BS · Fethiye: Karagözler Mah., Fevzi Çakmak Cad. No:11/A, Muğla ·{' '}
-            <a href="mailto:info@oceanhealthtravel.com" style={{color:'#555'}}>info@oceanhealthtravel.com</a> ·{' '}
-            <a href="tel:+447441904858" style={{color:'#555'}}>+44 7441 904858</a><br />
-            Flights not included · Client payments held in a designated client account · Coordinator, not a medical provider · Elective procedures only<br />
-            <em>Ocean Health &amp; Travel does not provide medical advice. This form is not a medical consultation. All clinical decisions rest with the treating neurosurgical team. Not suitable for emergencies.</em>
+      {isSurgiCheck ? (
+        <footer>
+          <div className="inner">
+            <div className="footer-legal">
+              © {new Date().getFullYear()} SurgiCheck ·{' '}
+              <a href="https://www.surgicheck.net/privacy-en.html" target="_blank" rel="noopener" style={{color:'#555'}}>Privacy Notice</a> ·{' '}
+              surgicheck.net<br />
+              <em>SurgiCheck is a Clinical Decision Support System. It does not diagnose, prescribe, or make surgical decisions. This form is not a medical consultation. All clinical responsibility remains with the treating clinician. Not suitable for emergencies.</em>
+            </div>
           </div>
-        </div>
-      </footer>
+        </footer>
+      ) : (
+        <footer>
+          <div className="inner">
+            <div className="footer-legal">
+              © {new Date().getFullYear()} Ocean Health &amp; Travel Ltd · Registered in England &amp; Wales · Company no. 16186647<br />
+              London: 17 Green Lanes, N16 9BS · Fethiye: Karagözler Mah., Fevzi Çakmak Cad. No:11/A, Muğla ·{' '}
+              <a href="mailto:info@oceanhealthtravel.com" style={{color:'#555'}}>info@oceanhealthtravel.com</a> ·{' '}
+              <a href="tel:+447441904858" style={{color:'#555'}}>+44 7441 904858</a><br />
+              Flights not included · Client payments held in a designated client account · Coordinator, not a medical provider · Elective procedures only<br />
+              <em>Ocean Health &amp; Travel does not provide medical advice. This form is not a medical consultation. All clinical decisions rest with the treating neurosurgical team. Not suitable for emergencies.</em>
+            </div>
+          </div>
+        </footer>
+      )}
     </>
   )
 }
