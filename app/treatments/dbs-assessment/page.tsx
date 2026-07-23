@@ -129,13 +129,23 @@ export default async function DbsAssessmentPage() {
 
       <section className="hero">
         <div className="inner hero-inner">
-          <div className="free-badge">Free · No coordination fee</div>
+          {isSurgiCheck ? (
+            <div className="free-badge">Patient intake form</div>
+          ) : (
+            <div className="free-badge">Free · No coordination fee</div>
+          )}
           <div className="kicker">Neurosurgery · Istanbul</div>
           <h1>DBS Pre-Assessment</h1>
-          <p className="hero-sub">
-            Complete this form to have your case reviewed by the neurosurgical team at a JCI-accredited Istanbul hospital.
-            Your information is coordinated and forwarded for specialist review — all clinical decisions rest with the treating physicians.
-          </p>
+          {isSurgiCheck ? (
+            <p className="hero-sub">
+              Please complete this form as fully as possible. Your answers help assess whether DBS surgery may be appropriate for you. This can be completed by the patient or a family member.
+            </p>
+          ) : (
+            <p className="hero-sub">
+              Complete this form to have your case reviewed by the neurosurgical team at a JCI-accredited Istanbul hospital.
+              Your information is coordinated and forwarded for specialist review — all clinical decisions rest with the treating physicians.
+            </p>
+          )}
         </div>
       </section>
 

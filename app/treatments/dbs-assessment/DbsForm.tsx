@@ -74,7 +74,7 @@ const T = {
     uploadDrop: 'Drag files here or tap to choose',
     fileTooBig: (n: string) => `"${n}" exceeds the 15MB limit. Compress it or upload a smaller file.`,
     fileBadType: (n: string) => `"${n}" is not a supported type. Upload PDF or image files.`,
-    consent: 'I consent to {{BRAND}} processing the health information provided in this form for the purpose of forwarding it to the partner neurosurgical team for review, as described in the',
+    consent: 'I consent to {{BRAND}} processing the health information provided in this form for the purpose of forwarding it to {{TEAM}} for review, as described in the',
     consentLink: 'Privacy Policy',
     consentEnd: '. I understand this form does not constitute a medical consultation.',
     submitErr: 'Submission failed. Please check your connection and try again.',
@@ -136,7 +136,7 @@ const T = {
     uploadDrop: 'Dosyaları buraya sürükleyin veya seçmek için dokunun',
     fileTooBig: (n: string) => `"${n}" 15MB sınırını aşıyor. Sıkıştırın veya daha küçük bir dosya yükleyin.`,
     fileBadType: (n: string) => `"${n}" desteklenmeyen bir tür. PDF veya görsel dosyası yükleyin.`,
-    consent: "Bu formda verdiğim sağlık bilgilerinin, inceleme amacıyla partner beyin cerrahisi ekibine iletilmesi için {{BRAND}} tarafından işlenmesine, ",
+    consent: "Bu formda verdiğim sağlık bilgilerinin, inceleme amacıyla {{TEAM}} iletilmesi için {{BRAND}} tarafından işlenmesine, ",
     consentLink: 'Gizlilik Politikası',
     consentEnd: "'nda açıklandığı şekilde açık rıza veriyorum. Bu formun tıbbi bir muayene yerine geçmediğini anlıyorum.",
     submitErr: 'Gönderim başarısız oldu. Bağlantınızı kontrol edip tekrar deneyin.',
@@ -474,7 +474,11 @@ export default function DbsForm({ brand = 'oht' }: { brand?: 'oht' | 'surgicheck
             <div className={'consent' + err('consentGiven')}>
               <label className="consent-label">
                 <input type="checkbox" checked={form.consentGiven} onChange={e => set('consentGiven', e.target.checked)} />
-                <span>{t.consent.replace('{{BRAND}}', brand === 'surgicheck' ? 'SurgiCheck' : 'Ocean Health & Travel')} <a href={brand === 'surgicheck' ? 'https://www.surgicheck.net/privacy-en.html' : '/privacy-policy'} target="_blank">{t.consentLink}</a>{t.consentEnd}</span>
+                <span>{t.consent
+                  .replace('{{BRAND}}', brand === 'surgicheck' ? 'SurgiCheck' : 'Ocean Health & Travel')
+                  .replace('{{TEAM}}', brand === 'surgicheck'
+                    ? (lang === 'tr' ? 'tedavi eden beyin cerrahisi ekibine' : 'the treating neurosurgical team')
+                    : (lang === 'tr' ? 'partner beyin cerrahisi ekibine' : 'the partner neurosurgical team'))} <a href={brand === 'surgicheck' ? 'https://www.surgicheck.net/privacy-en.html' : '/privacy-policy'} target="_blank">{t.consentLink}</a>{t.consentEnd}</span>
               </label>
               {errors.consentGiven && <div className="field-msg">{t.required}</div>}
             </div>
