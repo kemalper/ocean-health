@@ -161,8 +161,8 @@ export default function DBSPage() {
                 <strong>Important:</strong> DBS is a complex elective neurosurgical procedure. A referral letter from a neurologist or movement disorder specialist is required before coordination can begin. Ocean Health &amp; Travel does not provide medical assessments or clinical opinions.
               </div>
               <div className="hero-actions">
-                <a href={WA_URL} target="_blank" className="btn-primary">Send your referral documents</a>
-                <a href="#faq" className="btn-ghost">Read FAQs ↓</a>
+                <a href="/treatments/dbs-assessment" className="btn-primary">Start free pre-assessment</a>
+                <a href={WA_URL} target="_blank" className="btn-ghost">Send referral via WhatsApp</a>
               </div>
               <div className="trust-row">
                 {['Specialist referral required','JCI-accredited hospitals','Physician-led coordination','GP & neurologist documentation'].map(t => (

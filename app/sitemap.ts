@@ -8,6 +8,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'rhinoplasty-istanbul',
     'neurosurgery-istanbul',
     'deep-brain-stimulation-turkey',
+    'dbs-assessment',
     'dental-istanbul',
     'dental-implants-turkey',
     'ophthalmology-istanbul',

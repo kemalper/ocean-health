@@ -427,7 +427,7 @@ export default function Home() {
                 <li>Glial tumours, acoustic neuroma</li>
                 <li>Lumbar & cervical disc herniation</li>
               </ul>
-              <div className="tx-price">DBS from £23,700 · Referral required</div>
+              <div className="tx-price">DBS from £23,700 · Free pre-assessment</div>
               <div style={{fontSize:'12px',color:'#e17055',fontWeight:600,marginTop:'8px'}}>Learn more →</div>
             </div>
             <div style={{gridColumn:'1 / -1',display:'flex',alignItems:'center',gap:'10px',margin:'2rem 0 4px'}}><span style={{fontSize:'11px',fontWeight:700,letterSpacing:'.08em',textTransform:'uppercase',color:'#1D9E75',whiteSpace:'nowrap'}}>Private & aesthetic · no NHS wait</span><span style={{flex:1,height:'1px',background:'#e5e7eb'}}></span></div>
