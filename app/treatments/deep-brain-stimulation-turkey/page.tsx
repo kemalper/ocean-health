@@ -3,7 +3,7 @@ import Nav from '@/app/components/Nav'
 
 export const metadata: Metadata = {
   title: 'Deep Brain Stimulation in Turkey | From £23,700 | Ocean Health & Travel',
-  description: 'Deep brain stimulation (DBS) for Parkinson\'s disease in Istanbul from £23,700 — vs. £40,000–£60,000+ at UK private centres. JCI-accredited neurosurgical teams, physician-led coordination. Specialist referral required.',
+  description: 'Deep brain stimulation (DBS) for Parkinson\'s disease in Istanbul from £23,700 — vs. £40,000–£60,000+ at UK private centres. JCI-accredited neurosurgical teams, physician-led coordination. Free pre-assessment — no referral needed to start.',
 }
 
 const WA_URL = 'https://wa.me/447441904858?text=Hello%2C%20I%27d%20like%20to%20enquire%20about%20deep%20brain%20stimulation%20in%20Turkey'
@@ -15,7 +15,7 @@ const faqs = [
   },
   {
     q: 'Is a referral required for DBS surgery in Istanbul?',
-    a: 'Yes. Deep brain stimulation is a complex neurosurgical procedure requiring specialist referral and full clinical assessment before coordination can begin. You will need to provide a referral letter from a neurologist or movement disorder specialist, along with recent imaging and clinical notes. Ocean Health & Travel does not provide medical assessments or referrals.'
+    a: 'Not upfront. You can start with our free pre-assessment form, which collects the patient\'s diagnosis history, medication, symptoms, and any existing imaging or clinical letters. The neurosurgical team reviews every submission; if additional specialist documentation is needed before proceeding, our coordinator will let you know. Ocean Health & Travel does not provide medical assessments or referrals itself — all clinical decisions rest with the treating neurosurgical team.'
   },
   {
     q: 'Which conditions is DBS used for?',
@@ -27,7 +27,7 @@ const faqs = [
   },
   {
     q: 'What documentation do I need to provide?',
-    a: 'To initiate the coordination process, we require: a referral letter from your neurologist or movement disorder specialist; recent MRI brain imaging; a summary of your current medication and symptom history; and details of any previous neurosurgical procedures. Our physician coordinator will review your documentation and liaise with the neurosurgical team.'
+    a: 'Start with our free pre-assessment form — it covers diagnosis history, current medication, and symptoms, with an option to upload any documents you already have (referral letter, MRI, previous surgical history). You don\'t need all of this in hand to begin. Our physician coordinator reviews your submission and will let you know if the neurosurgical team needs anything further.'
   },
   {
     q: 'What coordination services are included?',
@@ -149,23 +149,20 @@ export default function DBSPage() {
                 <a href="/#services">Treatments</a><span>›</span>
                 Deep Brain Stimulation Turkey
               </div>
-              <div className="warning-badge">
-                ⚠️ Specialist neurological referral required
-              </div>
               <div className="kicker">Neurosurgery · Istanbul</div>
               <h1>Deep Brain Stimulation<br />in Turkey.<br /><em>From £23,700.</em></h1>
               <p className="hero-sub">
                 JCI-accredited neurosurgical teams in Istanbul. Physician-led coordination including full clinical liaison, medical interpretation, and post-operative documentation.
               </p>
               <div className="hero-warn">
-                <strong>Important:</strong> DBS is a complex elective neurosurgical procedure. A referral letter from a neurologist or movement disorder specialist is required before coordination can begin. Ocean Health &amp; Travel does not provide medical assessments or clinical opinions.
+                <strong>Important:</strong> DBS is a complex elective neurosurgical procedure. Complete the free pre-assessment below to have your case reviewed by our specialist neurosurgical team. Ocean Health &amp; Travel does not provide medical assessments or clinical opinions — all clinical decisions rest with the treating neurosurgical team.
               </div>
               <div className="hero-actions">
                 <a href="/treatments/dbs-assessment" className="btn-primary">Start free pre-assessment</a>
-                <a href={WA_URL} target="_blank" className="btn-ghost">Send referral via WhatsApp</a>
+                <a href={WA_URL} target="_blank" className="btn-ghost">Contact us on WhatsApp</a>
               </div>
               <div className="trust-row">
-                {['Specialist referral required','JCI-accredited hospitals','Physician-led coordination','GP & neurologist documentation'].map(t => (
+                {['Free pre-assessment','JCI-accredited hospitals','Physician-led coordination','Reviewed by specialist team'].map(t => (
                   <div key={t} className="trust-item"><div className="trust-dot"></div>{t}</div>
                 ))}
               </div>
@@ -221,7 +218,7 @@ export default function DBSPage() {
               </p>
 
               <div className="clinical-warning">
-                <strong>Referral requirement:</strong> Deep brain stimulation requires a referral letter from a neurologist or movement disorder specialist, along with recent MRI imaging and a full clinical summary. We cannot begin coordination without this documentation. If you do not yet have a referral, please consult your GP or neurologist first.
+                <strong>Getting started:</strong> You don&apos;t need a referral letter in hand to begin — complete our <a href="/treatments/dbs-assessment" style={{color:'inherit',textDecoration:'underline'}}>free pre-assessment form</a> with your diagnosis history, current medication, and any existing imaging or clinical notes. Our neurosurgical team reviews every case; if further specialist documentation is needed, we&apos;ll guide you on next steps.
               </div>
 
               <h3>How does DBS work?</h3>
@@ -258,9 +255,9 @@ export default function DBSPage() {
                 Deep brain stimulation at UK private neurosurgical centres typically costs between £40,000 and £60,000+, depending on the device manufacturer, surgical complexity, and length of inpatient stay. The same procedure at JCI-accredited hospitals in Istanbul starts from £23,700 — a saving of 40–60%. Device costs (Medtronic, Abbott, Boston Scientific) are a significant component of total cost and vary by patient.
               </p>
 
-              <h3>Documentation required</h3>
+              <h3>Documentation that helps (not required to start)</h3>
               <ul>
-                <li>Referral letter from neurologist or movement disorder specialist</li>
+                <li>Referral letter from neurologist or movement disorder specialist (if you have one)</li>
                 <li>Recent MRI brain (within 12 months)</li>
                 <li>Current medication list and symptom history</li>
                 <li>Details of any previous neurosurgical procedures</li>
@@ -274,19 +271,19 @@ export default function DBSPage() {
 
             <div className="sidebar">
               <div className="sidebar-card dark">
-                <div className="sidebar-title">Send your documents</div>
+                <div className="sidebar-title">Start your pre-assessment</div>
                 <p style={{fontSize:'14px',color:'rgba(255,255,255,.65)',lineHeight:1.65,marginBottom:'1.25rem',fontWeight:300}}>
-                  Send your referral letter and clinical notes. Our physician coordinator will review and liaise with the neurosurgical team.
+                  Free, no referral required upfront. Our neurosurgical team reviews your case and responds within 48 hours.
                 </p>
-                <a href={WA_URL} target="_blank" className="btn-full indigo">WhatsApp us</a>
-                <a href="mailto:info@oceanhealthtravel.com" className="btn-full outline" style={{marginTop:'8px'}}>Email documents</a>
+                <a href="/treatments/dbs-assessment" className="btn-full indigo">Start free pre-assessment</a>
+                <a href={WA_URL} target="_blank" className="btn-full outline" style={{marginTop:'8px'}}>WhatsApp us instead</a>
               </div>
 
               <div className="sidebar-card warn">
-                <div className="sidebar-title">Before you contact us</div>
+                <div className="sidebar-title">Helpful to have ready</div>
                 <div className="checklist">
                   {[
-                    'Referral letter from neurologist',
+                    'Referral letter from neurologist (if available)',
                     'Recent MRI brain imaging',
                     'Current medication list',
                     'Symptom history summary',
@@ -340,10 +337,10 @@ export default function DBSPage() {
       <section className="sec bg border" id="process">
         <div className="inner">
           <div className="kicker">The process</div>
-          <h2>From referral to surgery</h2>
+          <h2>From pre-assessment to surgery</h2>
           <div className="process-grid">
             {[
-              {n:'1',t:'Send documents',d:'Referral letter, MRI, and clinical notes via WhatsApp or email'},
+              {n:'1',t:'Free pre-assessment',d:'Complete our online form with diagnosis history, medication, and any imaging you have'},
               {n:'2',t:'Clinical review',d:'Our physician coordinator liaises with the neurosurgical team'},
               {n:'3',t:'Quote & booking',d:'Itemised proposal and surgery date confirmed'},
               {n:'4',t:'Surgery',d:'Two-stage procedure at JCI-accredited hospital'},
@@ -382,16 +379,16 @@ export default function DBSPage() {
       <section className="sec bg">
         <div className="inner" style={{textAlign:'center'}}>
           <div className="kicker">Get started</div>
-          <h2>Ready to send your referral documents?</h2>
+          <h2>Ready to get started?</h2>
           <p style={{fontSize:'16px',color:'#666',lineHeight:1.7,fontWeight:300,maxWidth:'520px',margin:'0 auto 2rem'}}>
-            Send your neurologist&apos;s referral letter and clinical notes. Our physician coordinator will review and come back to you within 48 hours.
+            Complete the free pre-assessment — no referral required upfront. Our neurosurgical team will review your case and come back to you within 48 hours.
           </p>
           <div style={{display:'flex',gap:'14px',justifyContent:'center',flexWrap:'wrap'}}>
-            <a href={WA_URL} target="_blank" style={{background:'#085041',color:'#fff',border:'none',padding:'15px 30px',borderRadius:'10px',fontSize:'15px',fontWeight:600,display:'inline-flex',alignItems:'center',gap:'9px',cursor:'pointer',fontFamily:'Inter,sans-serif'}}>
-              💬 WhatsApp us
+            <a href="/treatments/dbs-assessment" style={{background:'#085041',color:'#fff',border:'none',padding:'15px 30px',borderRadius:'10px',fontSize:'15px',fontWeight:600,display:'inline-flex',alignItems:'center',gap:'9px',cursor:'pointer',fontFamily:'Inter,sans-serif'}}>
+              Start free pre-assessment
             </a>
-            <a href="mailto:info@oceanhealthtravel.com" style={{background:'transparent',color:'#085041',border:'1px solid #085041',padding:'15px 30px',borderRadius:'10px',fontSize:'15px',display:'inline-flex',alignItems:'center',gap:'9px',cursor:'pointer',fontFamily:'Inter,sans-serif'}}>
-              ✉️ Email documents
+            <a href={WA_URL} target="_blank" style={{background:'transparent',color:'#085041',border:'1px solid #085041',padding:'15px 30px',borderRadius:'10px',fontSize:'15px',display:'inline-flex',alignItems:'center',gap:'9px',cursor:'pointer',fontFamily:'Inter,sans-serif'}}>
+              💬 WhatsApp us
             </a>
           </div>
         </div>
@@ -406,7 +403,7 @@ export default function DBSPage() {
             <a href="mailto:info@oceanhealthtravel.com" style={{color:'#555'}}>info@oceanhealthtravel.com</a> ·{' '}
             <a href="tel:+447441904858" style={{color:'#555'}}>+44 7441 904858</a><br />
             Flights not included · Client payments held in a designated client account · Coordinator, not a medical provider · Elective procedures only<br />
-            <em>Ocean Health &amp; Travel does not provide medical advice. All clinical decisions rest with your treating provider. Not suitable for emergencies. DBS requires specialist neurological referral.</em>
+            <em>Ocean Health &amp; Travel does not provide medical advice. All clinical decisions rest with your treating provider. Not suitable for emergencies. All DBS cases are reviewed by the specialist neurosurgical team before proceeding.</em>
           </div>
         </div>
       </footer>

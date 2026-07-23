@@ -370,7 +370,7 @@ export default function Home() {
               ))}
             </div>
             {activeTab === 'neuro' && (
-              <div className="neuro-warn"><strong>Important:</strong> Neurosurgical procedures require specialist referral and full clinical assessment. Ocean Health &amp; Travel does not provide medical advice. All clinical decisions rest with the treating neurosurgical team. Elective procedures only.</div>
+              <div className="neuro-warn"><strong>Important:</strong> Most neurosurgical procedures require specialist referral and full clinical assessment (DBS offers a free pre-assessment with no referral needed to start). Ocean Health &amp; Travel does not provide medical advice. All clinical decisions rest with the treating neurosurgical team. Elective procedures only.</div>
             )}
             <div className="table-wrap">
               <table>
@@ -419,7 +419,6 @@ export default function Home() {
             ))}
             <div className="tx-card neuro reveal" ref={ref} onClick={() => window.location.assign('/treatments/neurosurgery-istanbul')} style={{cursor:'pointer'}}>
               <div style={{height:"160px",borderRadius:"10px",overflow:"hidden",marginBottom:"1rem",background:"#f0ede8"}}><img src="/treatments/neurosurgery.jpg" alt="Neurosurgery" style={{width:"100%",height:"100%",objectFit:"cover",display:"block"}} /></div>
-              <div className="neuro-badge">Specialist referral required</div>
               <div className="tx-name">Neurosurgery</div>
               <ul className="tx-list">
                 <li>Deep brain stimulation (Parkinson&apos;s)</li>

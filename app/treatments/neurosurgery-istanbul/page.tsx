@@ -15,8 +15,8 @@ const procedures = [
     price: 'from £23,700',
     uk: '£40,000 – £60,000+',
     saving: '40–60%',
-    desc: 'For Parkinson\'s disease, essential tremor, and dystonia. Two-stage procedure requiring specialist neurological referral.',
-    referral: true,
+    desc: 'For Parkinson\'s disease, essential tremor, and dystonia. Two-stage procedure. Free pre-assessment available — no prior referral needed to start.',
+    referral: false,
   },
   {
     name: 'Lumbar Disc Herniation',
