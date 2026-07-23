@@ -99,7 +99,7 @@ export default async function DbsAssessmentPage() {
         .lang-toggle:hover{background:rgba(255,255,255,.25)}
 
         .sc-header{background:#fff;border-bottom:1px solid #eee;padding:0}
-        .sc-header-inner{max-width:1160px;margin:0 auto;padding:0 2.5rem;height:66px;display:flex;align-items:center}
+        .sc-header-inner{max-width:1160px;margin:0 auto;padding:0 2.5rem;height:78px;display:flex;align-items:center}
 
         footer{background:#111;padding:3rem 0 2rem}
         .footer-legal{font-size:11.5px;color:#444;line-height:1.8}
@@ -112,14 +112,15 @@ export default async function DbsAssessmentPage() {
           .card{padding:1.4rem 1.15rem}
           .p-label{display:none}
           .form-wrap{padding:0 .85rem 4rem}
-          .sc-header-inner{padding:0 1.25rem}
+          .sc-header-inner{padding:0 1.25rem;height:64px}
+          .sc-header-inner img{height:40px!important}
         }
       `}</style>
 
       {isSurgiCheck ? (
         <header className="sc-header">
           <div className="sc-header-inner">
-            <img src="/surgicheck-logo.png" alt="SurgiCheck" style={{height:'32px',width:'auto',display:'block'}} />
+            <img src="/surgicheck-logo.png" alt="SurgiCheck" style={{height:'52px',width:'auto',display:'block'}} />
           </div>
         </header>
       ) : (
