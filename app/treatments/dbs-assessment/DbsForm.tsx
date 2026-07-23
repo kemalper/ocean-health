@@ -276,6 +276,23 @@ export default function DbsForm() {
         documents: paths,
         createdAt: serverTimestamp(),
       })
+
+      // 3) email notification — separate write, must not affect success screen if it fails
+      try {
+        const recipientEmail = sourceChannel === 'mustafa'
+          ? 'drmustafasakar@gmail.com'
+          : 'kemalper@gmail.com'
+        await addDoc(collection(db, 'mail'), {
+          to: recipientEmail,
+          message: {
+            subject: `Yeni DBS başvurusu — Ref: ${caseRef}`,
+            text: `Yeni bir DBS ön değerlendirme formu dolduruldu.\n\nReferans: ${caseRef}\nKaynak: ${sourceChannel}\n\nDetaylar için Firebase panelinden incelenebilir.`,
+          },
+        })
+      } catch (mailErr) {
+        console.error('mail notification failed', mailErr)
+      }
+
       setDoneRef(caseRef)
       topRef.current?.scrollIntoView({ behavior: 'auto', block: 'start' })
     } catch {
