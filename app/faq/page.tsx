@@ -47,7 +47,7 @@ const faqSections = [
       },
       {
         q: 'How do I pay?',
-        a: 'Payment terms are specified in your coordination agreement. Client payments are held in a designated client account, separate from operating funds, before and during treatment. Full details are provided in our Medical Services Brokerage Agreement.',
+        a: 'Payment terms are specified in your coordination agreement. No coordination fee is charged to patients; our commercial arrangements are with partner hospitals. Full details are provided in our Medical Services Brokerage Agreement.',
       },
       {
         q: 'Are flights included?',
@@ -123,7 +123,7 @@ const faqSections = [
     faqs: [
       {
         q: 'Is Ocean Health & Travel a UK registered company?',
-        a: 'Yes. Ocean Health & Travel Ltd is registered in England & Wales (Companies House no. 16186647). We are registered with the ICO for UK GDPR compliance, and client payments are held in a designated client account.',
+        a: 'Yes. Ocean Health & Travel Ltd is registered in England & Wales (Companies House no. 16186647). We are registered with the ICO for UK GDPR compliance.',
       },
       {
         q: 'How long have you been operating?',
@@ -261,7 +261,7 @@ export default function FAQPage() {
             London: 17 Green Lanes, N16 9BS · Fethiye: Karagözler Mah., Fevzi Çakmak Cad. No:11/A, Muğla ·{' '}
             <a href="mailto:info@oceanhealthtravel.com" style={{color:'#555'}}>info@oceanhealthtravel.com</a> ·{' '}
             <a href="tel:+447441904858" style={{color:'#555'}}>+44 7441 904858</a><br />
-            Flights not included · Client payments held in a designated client account · Coordinator, not a medical provider · Elective procedures only<br />
+            Flights not included · No coordination fee charged to patients · Coordinator, not a medical provider · Elective procedures only<br />
             <em>Ocean Health &amp; Travel does not provide medical advice. All clinical decisions rest with your treating provider. Not suitable for emergencies.</em>
           </div>
         </div>

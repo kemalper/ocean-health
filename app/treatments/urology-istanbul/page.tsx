@@ -176,7 +176,7 @@ export default function UrologyPage() {
             <div className="kicker">Urology &amp; men&apos;s health · Istanbul</div>
             <h1>Urology &amp; Men&apos;s Health<br />in Istanbul.<br /><em>Discreet. Expert. Coordinated.</em></h1>
             <p className="hero-sub">
-              Physician-led coordination for urological procedures at JCI-accredited clinics in Istanbul. All enquiries are handled with complete confidentiality.
+              Dedicated coordination for urological procedures at JCI-accredited clinics in Istanbul. All enquiries are handled with complete confidentiality.
             </p>
             <div className="hero-actions">
               <a href={WA_URL} target="_blank" className="btn-primary">Enquire confidentially</a>
@@ -255,7 +255,7 @@ export default function UrologyPage() {
             London: 17 Green Lanes, N16 9BS · Fethiye: Karagözler Mah., Fevzi Çakmak Cad. No:11/A, Muğla ·{' '}
             <a href="mailto:info@oceanhealthtravel.com" style={{color:'#555'}}>info@oceanhealthtravel.com</a> ·{' '}
             <a href="tel:+447441904858" style={{color:'#555'}}>+44 7441 904858</a><br />
-            Flights not included · Client payments held in a designated client account · Coordinator, not a medical provider · Elective procedures only<br />
+            Flights not included · No coordination fee charged to patients · Coordinator, not a medical provider · Elective procedures only<br />
             <em>Ocean Health &amp; Travel does not provide medical advice. All clinical decisions rest with your treating urologist. Not suitable for emergencies.</em>
           </div>
         </div>

@@ -3,7 +3,7 @@ import Nav from '@/app/components/Nav'
 
 export const metadata: Metadata = {
   title: 'LASIK Eye Surgery in Istanbul | From £600 per eye | Ocean Health & Travel',
-  description: 'LASIK laser eye surgery in Istanbul from £600 per eye — vs. £1,500–£2,500 at UK private clinics. JCI-accredited ophthalmology centres, physician-led coordination. Free quote in 48 hours.',
+  description: 'LASIK laser eye surgery in Istanbul from £600 per eye — vs. £1,500–£2,500 at UK private clinics. JCI-accredited ophthalmology centres, dedicated coordination. Free quote in 48 hours.',
 }
 
 const WA_URL = 'https://wa.me/447441904858?text=Hello%2C%20I%27d%20like%20to%20enquire%20about%20LASIK%20eye%20surgery%20in%20Istanbul'
@@ -156,7 +156,7 @@ export default function LasikPage() {
               <div className="kicker">Ophthalmology · Istanbul</div>
               <h1>LASIK Eye Surgery<br />in Istanbul.<br /><em>From £600 per eye.</em></h1>
               <p className="hero-sub">
-                Advanced laser platforms. JCI-accredited ophthalmology centres. Physician-led coordination from pre-operative assessment through procedure and post-operative documentation.
+                Advanced laser platforms. JCI-accredited ophthalmology centres. Dedicated coordination from pre-operative assessment through procedure and post-operative documentation.
               </p>
               <div className="hero-actions">
                 <a href={WA_URL} target="_blank" className="btn-primary">Get a free quote</a>
@@ -401,7 +401,7 @@ export default function LasikPage() {
             London: 17 Green Lanes, N16 9BS · Fethiye: Karagözler Mah., Fevzi Çakmak Cad. No:11/A, Muğla ·{' '}
             <a href="mailto:info@oceanhealthtravel.com" style={{color:'#555'}}>info@oceanhealthtravel.com</a> ·{' '}
             <a href="tel:+447441904858" style={{color:'#555'}}>+44 7441 904858</a><br />
-            Flights not included · Client payments held in a designated client account · Coordinator, not a medical provider · Elective procedures only<br />
+            Flights not included · No coordination fee charged to patients · Coordinator, not a medical provider · Elective procedures only<br />
             <em>Ocean Health &amp; Travel does not provide medical advice. All clinical decisions rest with your treating ophthalmologist. Not suitable for emergencies.</em>
           </div>
         </div>

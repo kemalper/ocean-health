@@ -189,7 +189,7 @@ export default function OphthalmologyPage() {
           <div className="kicker">Ophthalmology · Istanbul</div>
           <h1>Eye Surgery<br />in Istanbul.<br /><em>60–75% lower than UK.</em></h1>
           <p className="hero-sub">
-            LASIK, cataract, lens replacement, and more. Advanced laser platforms at JCI-accredited ophthalmology centres. Physician-led coordination throughout.
+            LASIK, cataract, lens replacement, and more. Advanced laser platforms at JCI-accredited ophthalmology centres. Dedicated coordination throughout.
           </p>
           <div className="hero-stats">
             <div className="hero-stat">
@@ -284,7 +284,7 @@ export default function OphthalmologyPage() {
             London: 17 Green Lanes, N16 9BS · Fethiye: Karagözler Mah., Fevzi Çakmak Cad. No:11/A, Muğla ·{' '}
             <a href="mailto:info@oceanhealthtravel.com" style={{color:'#555'}}>info@oceanhealthtravel.com</a> ·{' '}
             <a href="tel:+447441904858" style={{color:'#555'}}>+44 7441 904858</a><br />
-            Flights not included · Client payments held in a designated client account · Coordinator, not a medical provider · Elective procedures only<br />
+            Flights not included · No coordination fee charged to patients · Coordinator, not a medical provider · Elective procedures only<br />
             <em>Ocean Health &amp; Travel does not provide medical advice. All clinical decisions rest with your treating ophthalmologist. Not suitable for emergencies.</em>
           </div>
         </div>

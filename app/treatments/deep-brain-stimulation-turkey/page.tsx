@@ -3,7 +3,7 @@ import Nav from '@/app/components/Nav'
 
 export const metadata: Metadata = {
   title: 'Deep Brain Stimulation in Turkey | From £23,700 | Ocean Health & Travel',
-  description: 'Deep brain stimulation (DBS) for Parkinson\'s disease in Istanbul from £23,700 — vs. £40,000–£60,000+ at UK private centres. JCI-accredited neurosurgical teams, physician-led coordination. Free pre-assessment — no referral needed to start.',
+  description: 'Deep brain stimulation (DBS) for Parkinson\'s disease in Istanbul from £23,700 — vs. £40,000–£60,000+ at UK private centres. JCI-accredited neurosurgical teams, dedicated coordination. Free pre-assessment — no referral needed to start.',
 }
 
 const WA_URL = 'https://wa.me/447441904858?text=Hello%2C%20I%27d%20like%20to%20enquire%20about%20deep%20brain%20stimulation%20in%20Turkey'
@@ -152,7 +152,7 @@ export default function DBSPage() {
               <div className="kicker">Neurosurgery · Istanbul</div>
               <h1>Deep Brain Stimulation<br />in Turkey.<br /><em>From £23,700.</em></h1>
               <p className="hero-sub">
-                JCI-accredited neurosurgical teams in Istanbul. Physician-led coordination including full clinical liaison, medical interpretation, and post-operative documentation.
+                JCI-accredited neurosurgical teams in Istanbul. Dedicated coordination including full clinical liaison, medical interpretation, and post-operative documentation.
               </p>
               <div className="hero-warn">
                 <strong>Important:</strong> DBS is a complex elective neurosurgical procedure. Complete the free pre-assessment below to have your case reviewed by our specialist neurosurgical team. Ocean Health &amp; Travel does not provide medical assessments or clinical opinions — all clinical decisions rest with the treating neurosurgical team.
@@ -162,7 +162,7 @@ export default function DBSPage() {
                 <a href={WA_URL} target="_blank" className="btn-ghost">Contact us on WhatsApp</a>
               </div>
               <div className="trust-row">
-                {['Free pre-assessment','JCI-accredited hospitals','Physician-led coordination','Reviewed by specialist team'].map(t => (
+                {['Free pre-assessment','JCI-accredited hospitals','Dedicated coordination','Reviewed by specialist team'].map(t => (
                   <div key={t} className="trust-item"><div className="trust-dot"></div>{t}</div>
                 ))}
               </div>
@@ -402,7 +402,7 @@ export default function DBSPage() {
             London: 17 Green Lanes, N16 9BS · Fethiye: Karagözler Mah., Fevzi Çakmak Cad. No:11/A, Muğla ·{' '}
             <a href="mailto:info@oceanhealthtravel.com" style={{color:'#555'}}>info@oceanhealthtravel.com</a> ·{' '}
             <a href="tel:+447441904858" style={{color:'#555'}}>+44 7441 904858</a><br />
-            Flights not included · Client payments held in a designated client account · Coordinator, not a medical provider · Elective procedures only<br />
+            Flights not included · No coordination fee charged to patients · Coordinator, not a medical provider · Elective procedures only<br />
             <em>Ocean Health &amp; Travel does not provide medical advice. All clinical decisions rest with your treating provider. Not suitable for emergencies. All DBS cases are reviewed by the specialist neurosurgical team before proceeding.</em>
           </div>
         </div>

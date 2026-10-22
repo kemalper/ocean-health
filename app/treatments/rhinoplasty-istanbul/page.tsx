@@ -3,7 +3,7 @@ import Nav from '@/app/components/Nav'
 
 export const metadata: Metadata = {
   title: 'Rhinoplasty in Istanbul | From £3,200 | Ocean Health & Travel',
-  description: 'Rhinoplasty (nose surgery) in Istanbul from £3,200 — vs. £7,000–£12,000 at UK private clinics. JCI-accredited surgeons, physician-led coordination, 2–3 week timeline. Free quote in 48 hours.',
+  description: 'Rhinoplasty (nose surgery) in Istanbul from £3,200 — vs. £7,000–£12,000 at UK private clinics. JCI-accredited surgeons, dedicated coordination, 2–3 week timeline. Free quote in 48 hours.',
 }
 
 const WA_URL = 'https://wa.me/447441904858?text=Hello%2C%20I%27d%20like%20to%20enquire%20about%20rhinoplasty%20in%20Istanbul'
@@ -157,14 +157,14 @@ export default function RhinoplastyPage() {
               <div className="kicker">Plastic surgery · Istanbul</div>
               <h1>Rhinoplasty in Istanbul.<br /><em>From £3,200.</em></h1>
               <p className="hero-sub">
-                Board-certified surgeons. JCI-accredited hospitals. Physician-led coordination from first enquiry through discharge and GP documentation. Surgery in 2–3 weeks.
+                Board-certified surgeons. JCI-accredited hospitals. Dedicated coordination from first enquiry through discharge and GP documentation. Surgery in 2–3 weeks.
               </p>
               <div className="hero-actions">
                 <a href={WA_URL} target="_blank" className="btn-primary">Get a free quote</a>
                 <a href="#faq" className="btn-ghost">Read FAQs ↓</a>
               </div>
               <div className="trust-row">
-                {['JCI-accredited hospitals','Physician-led coordination','Fixed, itemised pricing','GP documentation included'].map(t => (
+                {['JCI-accredited hospitals','Dedicated coordination','Fixed, itemised pricing','GP documentation included'].map(t => (
                   <div key={t} className="trust-item"><div className="trust-dot"></div>{t}</div>
                 ))}
               </div>
@@ -370,7 +370,7 @@ export default function RhinoplastyPage() {
             London: 17 Green Lanes, N16 9BS · Fethiye: Karagözler Mah., Fevzi Çakmak Cad. No:11/A, Muğla ·{' '}
             <a href="mailto:info@oceanhealthtravel.com" style={{color:'rgba(255,255,255,.75)'}}>info@oceanhealthtravel.com</a> ·{' '}
             <a href="tel:+447441904858" style={{color:'rgba(255,255,255,.75)'}}>+44 7441 904858</a><br />
-            Flights not included · Client payments held in a designated client account · Coordinator, not a medical provider · Elective procedures only<br />
+            Flights not included · No coordination fee charged to patients · Coordinator, not a medical provider · Elective procedures only<br />
             <em>Ocean Health &amp; Travel does not provide medical advice. All clinical decisions rest with your treating provider. Not suitable for emergencies.</em>
           </div>
         </div>

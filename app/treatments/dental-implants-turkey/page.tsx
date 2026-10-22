@@ -3,7 +3,7 @@ import Nav from '@/app/components/Nav'
 
 export const metadata: Metadata = {
   title: 'Dental Implants in Turkey | From £350 | Ocean Health & Travel',
-  description: 'Dental implants in Istanbul from £350 per implant — vs. £2,000–£2,800 at UK private clinics. JCI-accredited dental clinics, physician-led coordination, 2–3 week timeline. Free quote in 48 hours.',
+  description: 'Dental implants in Istanbul from £350 per implant — vs. £2,000–£2,800 at UK private clinics. JCI-accredited dental clinics, dedicated coordination, 2–3 week timeline. Free quote in 48 hours.',
 }
 
 const WA_URL = 'https://wa.me/447441904858?text=Hello%2C%20I%27d%20like%20to%20enquire%20about%20dental%20implants%20in%20Turkey'
@@ -152,7 +152,7 @@ export default function DentalImplantsPage() {
               <div className="kicker">Dental · Istanbul</div>
               <h1>Dental Implants<br />in Turkey.<br /><em>From £350.</em></h1>
               <p className="hero-sub">
-                CE-marked implant systems. JCI-accredited dental clinics. Physician-led coordination from first enquiry through treatment and discharge documentation.
+                CE-marked implant systems. JCI-accredited dental clinics. Dedicated coordination from first enquiry through treatment and discharge documentation.
               </p>
               <div className="hero-actions">
                 <a href={WA_URL} target="_blank" className="btn-primary">Get a free quote</a>
@@ -393,7 +393,7 @@ export default function DentalImplantsPage() {
             London: 17 Green Lanes, N16 9BS · Fethiye: Karagözler Mah., Fevzi Çakmak Cad. No:11/A, Muğla ·{' '}
             <a href="mailto:info@oceanhealthtravel.com" style={{color:'#555'}}>info@oceanhealthtravel.com</a> ·{' '}
             <a href="tel:+447441904858" style={{color:'#555'}}>+44 7441 904858</a><br />
-            Flights not included · Client payments held in a designated client account · Coordinator, not a dental provider · Elective procedures only<br />
+            Flights not included · No coordination fee charged to patients · Coordinator, not a dental provider · Elective procedures only<br />
             <em>Ocean Health &amp; Travel does not provide dental or medical advice. All clinical decisions rest with your treating dentist. Not suitable for emergencies.</em>
           </div>
         </div>

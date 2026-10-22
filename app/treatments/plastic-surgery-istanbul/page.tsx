@@ -3,7 +3,7 @@ import Nav from '@/app/components/Nav'
 
 export const metadata: Metadata = {
   title: 'Plastic Surgery in Istanbul | Ocean Health & Travel',
-  description: 'Plastic and cosmetic surgery in Istanbul — rhinoplasty from £3,200, breast surgery from £6,000, liposuction from £2,500. JCI-accredited surgeons, physician-led coordination. Free quote in 48 hours.',
+  description: 'Plastic and cosmetic surgery in Istanbul — rhinoplasty from £3,200, breast surgery from £6,000, liposuction from £2,500. JCI-accredited surgeons, dedicated coordination. Free quote in 48 hours.',
 }
 
 const WA_URL = 'https://wa.me/447441904858?text=Hello%2C%20I%27d%20like%20to%20enquire%20about%20plastic%20surgery%20in%20Istanbul'
@@ -262,7 +262,7 @@ export default function PlasticSurgeryPage() {
           <div className="kicker">Plastic &amp; cosmetic surgery · Istanbul</div>
           <h1>Plastic Surgery in Istanbul.<br /><em>30–70% lower than UK private.</em></h1>
           <p className="hero-sub">
-            Board-certified plastic surgeons. JCI-accredited hospitals. Physician-led coordination from first enquiry through discharge and GP documentation.
+            Board-certified plastic surgeons. JCI-accredited hospitals. Dedicated coordination from first enquiry through discharge and GP documentation.
           </p>
           <div className="hero-stats">
             <div className="hero-stat">
@@ -361,7 +361,7 @@ export default function PlasticSurgeryPage() {
             London: 17 Green Lanes, N16 9BS · Fethiye: Karagözler Mah., Fevzi Çakmak Cad. No:11/A, Muğla ·{' '}
             <a href="mailto:info@oceanhealthtravel.com" style={{color:'#555'}}>info@oceanhealthtravel.com</a> ·{' '}
             <a href="tel:+447441904858" style={{color:'#555'}}>+44 7441 904858</a><br />
-            Flights not included · Client payments held in a designated client account · Coordinator, not a medical provider · Elective procedures only<br />
+            Flights not included · No coordination fee charged to patients · Coordinator, not a medical provider · Elective procedures only<br />
             <em>Ocean Health &amp; Travel does not provide medical advice. All clinical decisions rest with your treating surgeon. Not suitable for emergencies.</em>
           </div>
         </div>

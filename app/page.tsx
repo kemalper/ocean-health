@@ -8,7 +8,7 @@ const procedures: Record<string, { headers: string[], rows: string[][] }> = {
     headers: ['Procedure', 'UK private', 'Istanbul (OHT)', 'Saving'],
     rows: [
       ['Rhinoplasty', '£4,000 – £7,000', 'from £3,200', 'up to 55%'],
-      ['Breast augmentation', '£5,000 – £8,000', 'from £5,500', 'up to 50%'],
+      ['Breast augmentation', '£5,000 – £8,000', 'from £6,000', 'up to 25%'],
       ['Breast reduction (incl. implants)', '£8,000 – £10,000', 'from £6,300', 'up to 40%'],
       ['Liposuction', '£3,000 – £8,500', 'from £2,500', 'up to 70%'],
       ['Face & neck lift', '£7,000 – £12,000', 'from £5,000', 'up to 60%'],
@@ -432,7 +432,7 @@ export default function Home() {
             <div style={{gridColumn:'1 / -1',display:'flex',alignItems:'center',gap:'10px',margin:'2rem 0 4px'}}><span style={{fontSize:'11px',fontWeight:700,letterSpacing:'.08em',textTransform:'uppercase',color:'#1D9E75',whiteSpace:'nowrap'}}>Private & aesthetic · no NHS wait</span><span style={{flex:1,height:'1px',background:'#e5e7eb'}}></span></div>
             {[
               {name:'Hair transplantation',link:'/treatments/hair-transplant-istanbul',img:'/hair-transplant.jpg',items:['FUE & DHI techniques','PRP for hair restoration'],price:'Contact us for pricing',cta:''},
-              {name:'Aesthetic medicine',link:WA_URL,img:'/treatments/aesthetic.jpg',items:['Botox & dermal fillers','Mesotherapy & Hydrafacial','Scarlet X skin tightening'],price:'From £180',cta:'Ask via WhatsApp'},
+              {name:'Aesthetic medicine',link:WA_URL,img:'/treatments/aesthetic.jpg',items:['Mesotherapy & Hydrafacial','Scarlet X skin tightening'],price:'From £180',cta:'Ask via WhatsApp'},
             ].map((s,i) => (
               <div key={s.name} className={`tx-card reveal d${i%4+1}`} ref={ref} onClick={() => s.link && window.location.assign(s.link)} style={{cursor: s.link ? 'pointer' : 'default'}}>
                 <div style={{height:'160px',borderRadius:'10px',overflow:'hidden',marginBottom:'1rem',background:'#f0ede8'}}>
@@ -481,7 +481,7 @@ export default function Home() {
             ))}
           </div>
           <p style={{fontSize:'12px',color:'#bbb',marginTop:'1.5rem',textAlign:'center'}}>
-            Ocean Health &amp; Travel is a coordinator, not a medical provider. All clinical decisions rest with your treating provider. Flights not included. Client payments held in a designated client account. Elective procedures only — not suitable for emergencies.
+            Ocean Health &amp; Travel is a coordinator, not a medical provider. All clinical decisions rest with your treating provider. Flights not included. No coordination fee is charged to patients. Elective procedures only — not suitable for emergencies.
           </p>
         </div>
       </section>
@@ -519,12 +519,12 @@ export default function Home() {
           </div>
           <div className="why-grid">
             {[
-              {icon:<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M4.8 2.3A.3.3 0 1 0 5 2H4a2 2 0 0 0-2 2v5a6 6 0 0 0 6 6a6 6 0 0 0 6-6V4a2 2 0 0 0-2-2h-1"/><path d="M8 15v1a6 6 0 0 0 6 6a6 6 0 0 0 6-6v-4"/><circle cx="20" cy="10" r="2"/></svg>,t:'Physician-led coordination',d:'Led by a medically qualified university professor. Medical documents are reviewed for accuracy, relevant information is communicated clearly to the treating team, and hospital requests are followed up promptly. All clinical assessment and treatment decisions are made by the treating provider.',dark:false},
+              {icon:<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M4.8 2.3A.3.3 0 1 0 5 2H4a2 2 0 0 0-2 2v5a6 6 0 0 0 6 6a6 6 0 0 0 6-6V4a2 2 0 0 0-2-2h-1"/><path d="M8 15v1a6 6 0 0 0 6 6a6 6 0 0 0 6-6v-4"/><circle cx="20" cy="10" r="2"/></svg>,t:'Dedicated coordination',d:'One accountable coordinator collates your medical documents, communicates relevant information clearly to the treating team, and follows up hospital requests promptly. All clinical assessment and treatment decisions are made by the treating provider.',dark:false},
               {icon:<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9,22 9,12 15,12 15,22"/></svg>,t:'JCI-accredited hospitals only',d:'We work exclusively with internationally accredited hospitals. Ocean Health & Travel coordinates your care at no direct cost to you — our commercial arrangements are with partner hospitals and do not affect the clinical independence of the treating institution.',dark:false},
               {icon:<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>,t:'Fixed, itemised pricing',d:'Your quote lists every cost before you travel. No surprises on arrival, no upselling at the clinic. What we quote is what you pay.',dark:true},
               {icon:<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>,t:'One point of contact',d:'From first message to discharge, you deal with a single coordinator. No hand-offs, no repeated explanations.',dark:false},
               {icon:<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>,t:'GP documentation',d:'Discharge summaries and clinical notes in English forwarded to your GP on request. The treating provider remains responsible for its clinical treatment and agreed post-operative follow-up.',dark:false},
-              {icon:<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>,t:'UK-registered, financially transparent',d:'Registered in England & Wales (no. 16186647). Client payments held in a designated client account. TÜRSAB member. ICO registered.',dark:false},
+              {icon:<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>,t:'UK-registered, financially transparent',d:'Registered in England & Wales (no. 16186647). No coordination fee charged to patients. TÜRSAB member. ICO registered.',dark:false},
             ].map((w,i) => (
               <div key={w.t} className={`why-card${w.dark?' dark':''} reveal d${i%3+1}`} ref={ref}>
                 <div className="why-icon">{w.icon}</div>
@@ -639,7 +639,7 @@ export default function Home() {
             London: 17 Green Lanes, N16 9BS · Fethiye: Karagözler Mah., Fevzi Çakmak Cad. No:11/A, Muğla ·{' '}
             <a href="mailto:info@oceanhealthtravel.com" style={{color:'#555'}}>info@oceanhealthtravel.com</a> ·{' '}
             <a href="tel:+447441904858" style={{color:'#555'}}>+44 7441 904858</a><br />
-            Flights not included · Client payments held in a designated client account · Coordinator, not a medical provider · Elective procedures only<br />
+            Flights not included · No coordination fee charged to patients · Coordinator, not a medical provider · Elective procedures only<br />
             <em>Ocean Health &amp; Travel does not provide medical advice. All clinical decisions rest with your treating provider. Patients should seek urgent local medical care if required after returning home. Not suitable for emergencies.</em>
           </div>
         </div>

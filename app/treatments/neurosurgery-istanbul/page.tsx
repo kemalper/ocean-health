@@ -199,7 +199,7 @@ export default function NeurosurgeryPage() {
           <div className="kicker">Neurosurgery · Istanbul</div>
           <h1>Neurosurgery<br />in Istanbul.<br /><em>JCI-accredited teams.</em></h1>
           <p className="hero-sub">
-            Physician-led coordination for neurosurgical procedures in Istanbul. We liaise between you, your UK specialist, and the neurosurgical team — handling documentation, logistics, and interpretation throughout.
+            Dedicated coordination for neurosurgical procedures in Istanbul. We liaise between you, your UK specialist, and the neurosurgical team — handling documentation, logistics, and interpretation throughout.
           </p>
           <div className="hero-warn">
             <strong>Important:</strong> Most neurosurgical procedures require a referral letter from a neurologist or relevant specialist before coordination can begin. Ocean Health &amp; Travel does not provide neurological assessments or medical opinions. All clinical decisions rest with your treating neurosurgical team.
@@ -209,7 +209,7 @@ export default function NeurosurgeryPage() {
             <a href="#procedures" className="btn-ghost">View procedures ↓</a>
           </div>
           <div className="trust-row">
-            {['Specialist referral required','JCI-accredited hospitals','Physician-led coordination','Full documentation to UK team'].map(t => (
+            {['Specialist referral required','JCI-accredited hospitals','Dedicated coordination','Full documentation to UK team'].map(t => (
               <div key={t} className="trust-item"><div className="trust-dot"></div>{t}</div>
             ))}
           </div>
@@ -287,7 +287,7 @@ export default function NeurosurgeryPage() {
             London: 17 Green Lanes, N16 9BS · Fethiye: Karagözler Mah., Fevzi Çakmak Cad. No:11/A, Muğla ·{' '}
             <a href="mailto:info@oceanhealthtravel.com" style={{color:'#555'}}>info@oceanhealthtravel.com</a> ·{' '}
             <a href="tel:+447441904858" style={{color:'#555'}}>+44 7441 904858</a><br />
-            Flights not included · Client payments held in a designated client account · Coordinator, not a medical provider · Elective procedures only<br />
+            Flights not included · No coordination fee charged to patients · Coordinator, not a medical provider · Elective procedures only<br />
             <em>Ocean Health &amp; Travel does not provide medical advice. All clinical decisions rest with your treating neurosurgical team. Not suitable for emergencies.</em>
           </div>
         </div>

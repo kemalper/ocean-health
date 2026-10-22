@@ -3,7 +3,7 @@ import Nav from '@/app/components/Nav'
 
 export const metadata: Metadata = {
   title: 'Hair Transplant in Istanbul | Ocean Health & Travel',
-  description: 'Hair transplant in Istanbul — FUE and DHI techniques at JCI-accredited clinics. Physician-led coordination, fixed pricing, 2–3 day procedure. Free quote in 48 hours.',
+  description: 'Hair transplant in Istanbul — FUE and DHI techniques at JCI-accredited clinics. Dedicated coordination, fixed pricing, 2–3 day procedure. Free quote in 48 hours.',
 }
 
 const WA_URL = 'https://wa.me/447441904858?text=Hello%2C%20I%27d%20like%20to%20enquire%20about%20hair%20transplant%20in%20Istanbul'
@@ -156,7 +156,7 @@ export default function HairTransplantPage() {
               <div className="kicker">Hair restoration · Istanbul</div>
               <h1>Hair Transplant<br />in Istanbul.<br /><em>FUE &amp; DHI.</em></h1>
               <p className="hero-sub">
-                Experienced trichological surgeons. JCI-accredited clinics. Physician-led coordination from first enquiry through procedure and post-operative documentation.
+                Experienced trichological surgeons. JCI-accredited clinics. Dedicated coordination from first enquiry through procedure and post-operative documentation.
               </p>
               <div className="hero-actions">
                 <a href={WA_URL} target="_blank" className="btn-primary">Get a free quote</a>
@@ -396,7 +396,7 @@ export default function HairTransplantPage() {
             London: 17 Green Lanes, N16 9BS · Fethiye: Karagözler Mah., Fevzi Çakmak Cad. No:11/A, Muğla ·{' '}
             <a href="mailto:info@oceanhealthtravel.com" style={{color:'#555'}}>info@oceanhealthtravel.com</a> ·{' '}
             <a href="tel:+447441904858" style={{color:'#555'}}>+44 7441 904858</a><br />
-            Flights not included · Client payments held in a designated client account · Coordinator, not a medical provider · Elective procedures only<br />
+            Flights not included · No coordination fee charged to patients · Coordinator, not a medical provider · Elective procedures only<br />
             <em>Ocean Health &amp; Travel does not provide medical advice. All clinical decisions rest with your treating surgeon. Not suitable for emergencies.</em>
           </div>
         </div>

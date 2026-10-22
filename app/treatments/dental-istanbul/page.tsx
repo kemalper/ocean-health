@@ -189,7 +189,7 @@ export default function DentalIstanbulPage() {
           <div className="kicker">Dental treatment · Istanbul</div>
           <h1>Dental Treatment<br />in Istanbul.<br /><em>Up to 80% lower than UK.</em></h1>
           <p className="hero-sub">
-            CE-marked implants, zirconium crowns, veneers, smile design and more. JCI-accredited dental clinics. Physician-led coordination from first enquiry through treatment.
+            CE-marked implants, zirconium crowns, veneers, smile design and more. JCI-accredited dental clinics. Dedicated coordination from first enquiry through treatment.
           </p>
           <div className="hero-stats">
             <div className="hero-stat">
@@ -287,7 +287,7 @@ export default function DentalIstanbulPage() {
             London: 17 Green Lanes, N16 9BS · Fethiye: Karagözler Mah., Fevzi Çakmak Cad. No:11/A, Muğla ·{' '}
             <a href="mailto:info@oceanhealthtravel.com" style={{color:'#555'}}>info@oceanhealthtravel.com</a> ·{' '}
             <a href="tel:+447441904858" style={{color:'#555'}}>+44 7441 904858</a><br />
-            Flights not included · Client payments held in a designated client account · Coordinator, not a dental provider · Elective procedures only<br />
+            Flights not included · No coordination fee charged to patients · Coordinator, not a dental provider · Elective procedures only<br />
             <em>Ocean Health &amp; Travel does not provide dental or medical advice. All clinical decisions rest with your treating dentist. Not suitable for emergencies.</em>
           </div>
         </div>

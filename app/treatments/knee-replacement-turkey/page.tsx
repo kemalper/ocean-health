@@ -3,7 +3,7 @@ import Nav from '@/app/components/Nav'
 
 export const metadata: Metadata = {
   title: 'Knee Replacement in Turkey | From £3,500 | Ocean Health & Travel',
-  description: 'Knee replacement surgery in Istanbul from £3,500 — vs. £12,000–£16,000 at UK private clinics and 12–18 month NHS wait. JCI-accredited orthopaedic teams, physician-led coordination. Free quote in 48 hours.',
+  description: 'Knee replacement surgery in Istanbul from £3,500 — vs. £12,000–£16,000 at UK private clinics and 12–18 month NHS wait. JCI-accredited orthopaedic teams, dedicated coordination. Free quote in 48 hours.',
 }
 
 const WA_URL = 'https://wa.me/447441904858?text=Hello%2C%20I%27d%20like%20to%20enquire%20about%20knee%20replacement%20in%20Turkey'
@@ -387,7 +387,7 @@ export default function KneeReplacementPage() {
             London: 17 Green Lanes, N16 9BS · Fethiye: Karagözler Mah., Fevzi Çakmak Cad. No:11/A, Muğla ·{' '}
             <a href="mailto:info@oceanhealthtravel.com" style={{color:'#555'}}>info@oceanhealthtravel.com</a> ·{' '}
             <a href="tel:+447441904858" style={{color:'#555'}}>+44 7441 904858</a><br />
-            Flights not included · Client payments held in a designated client account · Coordinator, not a medical provider · Elective procedures only<br />
+            Flights not included · No coordination fee charged to patients · Coordinator, not a medical provider · Elective procedures only<br />
             <em>Ocean Health &amp; Travel does not provide medical advice. All clinical decisions rest with your treating surgeon. Not suitable for emergencies.</em>
           </div>
         </div>

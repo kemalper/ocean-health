@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   keywords: "medical tourism Istanbul, Turkey surgery, rhinoplasty Istanbul, dental implants Turkey, knee replacement Turkey, LASIK Istanbul, JCI accredited hospital Istanbul",
   openGraph: {
     title: "Ocean Health & Travel | UK Medical Tourism Coordinator",
-    description: "JCI-accredited hospitals in Istanbul. 30–70% lower than UK private rates. Physician-led coordination.",
+    description: "JCI-accredited hospitals in Istanbul. 30–70% lower than UK private rates. Dedicated coordination.",
     type: "website",
     locale: "en_GB",
   },

@@ -3,7 +3,7 @@ import Nav from '@/app/components/Nav'
 
 export const metadata: Metadata = {
   title: 'About Us | Ocean Health & Travel — UK-Registered Medical Coordinator',
-  description: 'Ocean Health & Travel is a UK-registered medical tourism coordinator connecting international patients with JCI-accredited Istanbul clinics. Physician-led, 15 years of experience in health tourism.',
+  description: 'Ocean Health & Travel is a UK-registered medical tourism coordinator connecting international patients with JCI-accredited Istanbul clinics. 15 years of experience in health tourism.',
 }
 
 const WA_URL = 'https://wa.me/447441904858?text=Hello%2C%20I%27d%20like%20to%20find%20out%20more%20about%20Ocean%20Health%20%26%20Travel'
@@ -74,7 +74,7 @@ export default function AboutPage() {
             <div className="kicker">About Ocean Health &amp; Travel</div>
             <h1>Medical coordination<br />you can <em>trust.</em></h1>
             <p className="hero-sub">
-              We connect international patients with JCI-accredited hospitals and specialist physicians in Istanbul — combining 15 years of health tourism experience with physician-led, UK-registered coordination.
+              We connect international patients with JCI-accredited hospitals and specialist physicians in Istanbul — combining 15 years of health tourism experience with dedicated, UK-registered coordination.
             </p>
           </div>
         </div>
@@ -112,7 +112,7 @@ export default function AboutPage() {
                 We are a coordination service, not a medical provider. We do not employ surgeons or operate clinical facilities. Our role is to make the process of accessing high-quality elective medical care in Istanbul straightforward, transparent, and safe — handling every logistical step so that patients can focus on their treatment and recovery.
               </p>
               <p>
-                What distinguishes us is physician-led coordination. Your case is overseen by a medically qualified university professor, ensuring clinical documentation is handled accurately, medical information is communicated clearly to the treating team, and hospital liaison is precise.
+                What distinguishes us is a single accountable coordinator. Your case is handled end to end by one coordinator, ensuring documentation is collated completely, relevant information is communicated clearly to the treating team, and hospital liaison is precise.
               </p>
             </div>
           </div>
@@ -144,9 +144,9 @@ export default function AboutPage() {
               <div className="value-grid">
                 {[
                   {icon:<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>,t:'Transparency',d:'Fixed, itemised pricing before you commit. No hidden charges on arrival, no upselling at the clinic.'},
-                  {icon:<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M4.8 2.3A.3.3 0 1 0 5 2H4a2 2 0 0 0-2 2v5a6 6 0 0 0 6 6a6 6 0 0 0 6-6V4a2 2 0 0 0-2-2h-1"/><path d="M8 15v1a6 6 0 0 0 6 6a6 6 0 0 0 6-6v-4"/><circle cx="20" cy="10" r="2"/></svg>,t:'Medical accuracy',d:'Physician-led coordination means clinical documentation is handled correctly from the start.'},
+                  {icon:<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M4.8 2.3A.3.3 0 1 0 5 2H4a2 2 0 0 0-2 2v5a6 6 0 0 0 6 6a6 6 0 0 0 6-6V4a2 2 0 0 0-2-2h-1"/><path d="M8 15v1a6 6 0 0 0 6 6a6 6 0 0 0 6-6v-4"/><circle cx="20" cy="10" r="2"/></svg>,t:'Documentation accuracy',d:'Dedicated coordination means your documentation is handled correctly from the start.'},
                   {icon:<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>,t:'Patient-first',d:'One coordinator, one case. You deal with the same person from first enquiry to discharge.'},
-                  {icon:<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>,t:'Accountability',d:'UK-registered, ICO compliant, client payments held in a designated client account. TÜRSAB authorised.'},
+                  {icon:<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>,t:'Accountability',d:'UK-registered, ICO compliant, no coordination fee charged to patients. TÜRSAB authorised.'},
                 ].map(v => (
                   <div key={v.t} className="value-card">
                     <div className="value-icon">{v.icon}</div>
@@ -170,7 +170,7 @@ export default function AboutPage() {
             {[
               {t:'UK Companies House registration',d:'Ocean Health & Travel Ltd · Registered in England & Wales · Company no. 16186647'},
               {t:'ICO registration · UK GDPR compliance',d:'Registered with the Information Commissioner\'s Office for lawful processing of patient data under UK GDPR.'},
-              {t:'Client payments held in a designated client account',d:'Client payments are held in a designated client account, separate from operating funds, before and during your treatment.'},
+              {t:'No coordination fee charged to patients',d:'Our commercial arrangements are with partner hospitals and do not affect the clinical independence of the treating institution.'},
               {t:'TÜRSAB authorisation',d:'Authorised to conduct International Health Tourism Intermediary Services under Turkish law. TÜRSAB member.'},
               {t:'USHAS — International Health Tourism Authorisation Certificate',d:'Authorised under the Bye-Law on International Health Tourism and Tourist Health, pursuant to Decree Law No. 663. Certificate no. AK-1451, issued 12 August 2025.'},
               {t:'JCI-accredited partner hospitals only',d:'We coordinate exclusively with Joint Commission International accredited hospitals in Istanbul, including Memorial Hospitals Group.'},
