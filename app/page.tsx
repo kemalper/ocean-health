@@ -1,5 +1,6 @@
 'use client'
 import { useEffect, useRef, useState } from 'react'
+import { UK_PRICES } from '@/app/lib/ukPrices'
 
 const WA_URL = 'https://wa.me/447441904858?text=Hello%2C%20I%27d%20like%20to%20get%20a%20free%20quote'
 
@@ -7,10 +8,10 @@ const procedures: Record<string, { headers: string[], rows: string[][] }> = {
   cosmetic: {
     headers: ['Procedure', 'UK private', 'Istanbul (OHT)', 'Saving'],
     rows: [
-      ['Rhinoplasty', '£4,000 – £7,000', 'from £3,200', 'up to 55%'],
-      ['Breast augmentation', '£5,000 – £8,000', 'from £6,000', 'up to 25%'],
+      ['Rhinoplasty', UK_PRICES.rhinoplasty.typical, 'from £3,200', '~45–65%'],
+      ['Breast augmentation', UK_PRICES.breastAugmentation.typical, 'from £6,000', 'Comparable'],
       ['Breast reduction (incl. implants)', '£8,000 – £10,000', 'from £6,300', 'up to 40%'],
-      ['Liposuction', '£3,000 – £8,500', 'from £2,500', 'up to 70%'],
+      ['Liposuction', UK_PRICES.liposuction.range, 'from £2,500', 'Varies'],
       ['Face & neck lift', '£7,000 – £12,000', 'from £5,000', 'up to 60%'],
       ['Tummy tuck', '£5,000 – £10,000', 'from £3,500', 'up to 65%'],
     ]
@@ -392,7 +393,7 @@ export default function Home() {
                   ))}
                 </tbody>
               </table>
-              <div className="table-note">UK figures are indicative ranges based on published prices from UK private providers; Istanbul figures are starting prices subject to individual clinical assessment. &ldquo;Up to&rdquo; savings compare our starting price with the top of the UK range. No coordination fee is charged to patients. We are paid by partner hospitals, which may influence which hospitals we work with; your itemised quote names the hospital and surgeon before you commit. Flights not included. Elective procedures only.</div>
+              <div className="table-note">UK figures are indicative ranges based on published prices from UK private providers; Istanbul figures are starting prices subject to individual clinical assessment. Percentages compare our starting price with the UK range shown; &ldquo;up to&rdquo; figures use the top of that range, and &ldquo;Comparable&rdquo; or &ldquo;Varies&rdquo; means a like-for-like saving cannot be shown. No coordination fee is charged to patients. We are paid by partner hospitals, which may influence which hospitals we work with; your itemised quote names the hospital and surgeon before you commit. Flights not included. Elective procedures only.</div>
             </div>
           </div>
         </div>

@@ -1,10 +1,11 @@
 import type { Metadata } from 'next'
 import Nav from '@/app/components/Nav'
+import { UK_PRICES } from '@/app/lib/ukPrices'
 
 export const metadata: Metadata = {
   alternates: { canonical: '/treatments/rhinoplasty-istanbul' },
   title: 'Rhinoplasty in Istanbul | From £3,200 | Ocean Health & Travel',
-  description: 'Rhinoplasty (nose surgery) in Istanbul from £3,200 — vs. £7,000–£12,000 at UK private clinics. JCI-accredited surgeons, dedicated coordination, 2–3 week timeline. Free quote in 48 hours.',
+  description: `Rhinoplasty (nose surgery) in Istanbul from £3,200 — vs. typically ${UK_PRICES.rhinoplasty.compact} at UK private clinics. JCI-accredited surgeons, dedicated coordination, 2–3 week timeline. Free quote in 48 hours.`,
 }
 
 const WA_URL = 'https://wa.me/447441904858?text=Hello%2C%20I%27d%20like%20to%20enquire%20about%20rhinoplasty%20in%20Istanbul'
@@ -12,7 +13,7 @@ const WA_URL = 'https://wa.me/447441904858?text=Hello%2C%20I%27d%20like%20to%20e
 const faqs = [
   {
     q: 'How much does rhinoplasty cost in Istanbul?',
-    a: 'Rhinoplasty in Istanbul through Ocean Health & Travel starts from £3,200, compared to £7,000–£12,000 at UK private clinics. The price includes surgeon fee, anaesthesia, hospital stay, and standard post-operative care. Airport transfer, hotel, and interpreter are coordinated separately.'
+    a: `Rhinoplasty in Istanbul through Ocean Health & Travel starts from £3,200, compared to typically ${UK_PRICES.rhinoplasty.compact} at UK private clinics. The price includes surgeon fee, anaesthesia, hospital stay, and standard post-operative care. Airport transfer, hotel, and interpreter are coordinated separately.`
   },
   {
     q: 'How long does rhinoplasty take to arrange through Ocean Health & Travel?',
@@ -182,7 +183,7 @@ export default function RhinoplastyPage() {
               <div className="price-row">
                 <div>
                   <div className="price-label">UK private clinic</div>
-                  <div className="price-val" style={{color:'rgba(255,255,255,.4)',fontSize:'18px'}}>£7,000 – £12,000</div>
+                  <div className="price-val" style={{color:'rgba(255,255,255,.4)',fontSize:'18px'}}>{UK_PRICES.rhinoplasty.typical}</div>
                 </div>
               </div>
               <div className="price-row">
@@ -239,7 +240,7 @@ export default function RhinoplastyPage() {
 
               <h3>Rhinoplasty cost in Istanbul vs. UK</h3>
               <p>
-                Rhinoplasty at UK private clinics typically costs between £7,000 and £12,000, depending on the surgeon, clinic, and complexity of the procedure. The same procedure at JCI-accredited hospitals in Istanbul starts from £3,200. The price difference is largely driven by lower operating costs in Turkey.
+                Rhinoplasty at UK private clinics typically costs between £6,000 and £10,000 (published prices range from £4,000 to £15,000), depending on the surgeon, clinic, and complexity of the procedure. The same procedure at JCI-accredited hospitals in Istanbul starts from £3,200. The price difference is largely driven by lower operating costs in Turkey.
               </p>
 
               <h3>Why Istanbul for rhinoplasty?</h3>
@@ -274,7 +275,7 @@ export default function RhinoplastyPage() {
                 </div>
                 <div className="sidebar-price-row">
                   <span className="sidebar-price-label">UK private</span>
-                  <span className="sidebar-price-val uk">£7,000 – £12,000</span>
+                  <span className="sidebar-price-val uk">{UK_PRICES.rhinoplasty.typical}</span>
                 </div>
                 <div className="sidebar-price-row">
                   <span className="sidebar-price-label">Typical saving</span>

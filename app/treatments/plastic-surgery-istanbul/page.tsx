@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Nav from '@/app/components/Nav'
+import { UK_PRICES } from '@/app/lib/ukPrices'
 
 export const metadata: Metadata = {
   alternates: { canonical: '/treatments/plastic-surgery-istanbul' },
@@ -14,8 +15,8 @@ const procedures = [
     name: 'Rhinoplasty (Nose Surgery)',
     slug: '/treatments/rhinoplasty-istanbul',
     price: 'from £3,200',
-    uk: '£7,000 – £12,000',
-    saving: '55–70%',
+    uk: UK_PRICES.rhinoplasty.typical,
+    saving: '~45–65%',
     desc: 'Reshaping of the nose for aesthetic or functional purposes. Primary, revision, and septoplasty procedures available.',
     stay: '7–10 days',
   },
@@ -23,8 +24,8 @@ const procedures = [
     name: 'Breast Augmentation',
     slug: null,
     price: 'from £6,000',
-    uk: '£5,000 – £8,000',
-    saving: 'up to 50%',
+    uk: UK_PRICES.breastAugmentation.typical,
+    saving: 'Comparable',
     desc: 'Implant-based breast enlargement. Round or anatomical implants, submuscular or subglandular placement.',
     stay: '5–7 days',
   },
@@ -50,8 +51,8 @@ const procedures = [
     name: 'Liposuction',
     slug: null,
     price: 'from £2,500',
-    uk: '£3,500 – £7,500',
-    saving: '30–65%',
+    uk: UK_PRICES.liposuction.range,
+    saving: 'Varies',
     desc: 'Fat removal from abdomen, flanks, thighs, arms, chin and other areas.',
     stay: '5–7 days',
   },
@@ -150,7 +151,7 @@ const procedures = [
 const faqs = [
   {
     q: 'How much does plastic surgery cost in Istanbul?',
-    a: 'Plastic surgery in Istanbul is typically lower in price than at UK private clinics. Rhinoplasty starts from £3,200 (vs. £7,000–£12,000 in the UK), breast augmentation from £6,000 (vs. £8,000–£11,000), and liposuction from £2,500 (vs. £3,500–£7,500). All prices are indicative — exact quotes depend on the specific procedure, complexity, and your individual anatomy.'
+    a: `Plastic surgery in Istanbul is often lower in price than at UK private clinics, but not for every procedure. Rhinoplasty starts from £3,200 (UK typically ${UK_PRICES.rhinoplasty.compact}), breast augmentation from £6,000 (UK typically ${UK_PRICES.breastAugmentation.compact}, so comparable), and liposuction from £2,500 (UK ${UK_PRICES.liposuction.compact}). All prices are indicative — exact quotes depend on the specific procedure, complexity, and your individual anatomy.`
   },
   {
     q: 'How long do I need to stay in Istanbul?',
