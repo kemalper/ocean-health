@@ -229,7 +229,7 @@ export default function DentalImplantsPage() {
                     ['Single dental implant','£1,500 – £3,500','from £350','~75–90%'],
                     ['Zirconium crown','£700 – £1,200','from £150','~75%'],
                     ['Porcelain veneer (per tooth)','£600 – £1,000','from £180','~70%'],
-                    ['Full arch (All-on-4)','£15,000 – £25,000','from £4,500','~70%'],
+                    ['Full arch (All-on-4), per arch','£9,500 – £20,000','from £4,500','~55–75%'],
                     ['Smile design','£3,000 – £8,000','from £1,200','~65%'],
                   ].map(row => (
                     <tr key={row[0]}>

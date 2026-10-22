@@ -49,8 +49,8 @@ const procedures = [
     name: 'Full-Arch Restoration (All-on-4 / All-on-6)',
     slug: null,
     price: 'from £4,500',
-    uk: '£15,000 – £25,000',
-    saving: '~70%',
+    uk: '£9,500 – £20,000 per arch',
+    saving: '~55–75%',
     desc: 'Full arch dental implant-supported fixed bridge for patients with significant tooth loss. All-on-4 or All-on-6 configuration.',
   },
   {

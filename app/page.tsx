@@ -12,7 +12,7 @@ const procedures: Record<string, { headers: string[], rows: string[][] }> = {
     rows: [
       ['Rhinoplasty', UK_PRICES.rhinoplasty.typical, 'from £3,200', '~45–65%'],
       ['Breast augmentation', UK_PRICES.breastAugmentation.typical, 'from £6,000', 'Comparable'],
-      ['Breast reduction (incl. implants)', '£8,000 – £10,000', 'from £6,300', 'up to 40%'],
+      ['Breast reduction (incl. implants)', '£8,000 – £10,000', 'from £6,300', '~20–35%'],
       ['Liposuction', UK_PRICES.liposuction.range, 'from £2,500', 'Varies'],
       ['Mini facelift', UK_PRICES.facelift.range, 'from £5,000', '~15–40%'],
       ['Tummy tuck', '£5,000 – £10,000', 'from £3,500', 'up to 65%'],
@@ -24,15 +24,15 @@ const procedures: Record<string, { headers: string[], rows: string[][] }> = {
       ['Dental implant (single)', '£1,500 – £3,500', 'from £350', '~75–90%'],
       ['Zirconium crown', '£700 – £1,200', 'from £150', '~75%'],
       ['Porcelain veneers (per tooth)', '£600 – £1,000', 'from £180', '~70%'],
-      ['Full-arch restoration', '£15,000 – £25,000', 'from £4,500', '~70%'],
+      ['Full-arch restoration (per arch)', '£9,500 – £20,000', 'from £4,500', '~55–75%'],
     ]
   },
   ortho: {
-    headers: ['Procedure', 'NHS wait / UK private', 'Istanbul (OHT)', 'Saving'],
+    headers: ['Procedure', 'UK private', 'Istanbul (OHT)', 'Saving'],
     rows: [
       ['Knee replacement', '£10,000 – £17,000', 'from £3,500 · 2–3 wks', '~65–80%'],
-      ['Hip replacement', '12–18 mo / £12,000–£16,000', 'from £4,000 · 2–3 wks', '65–75%'],
-      ['Lumbar disc surgery', '6–12 mo / £8,000–£12,000', 'from £4,000 · 2–3 wks', '50–65%'],
+      ['Hip replacement', '£12,000 – £16,000', 'from £4,000 · 2–3 wks', '65–75%'],
+      ['Lumbar disc surgery', '£8,000 – £12,000', 'from £4,000 · 2–3 wks', '50–65%'],
     ]
   },
   ophth: {
