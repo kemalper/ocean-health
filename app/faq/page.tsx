@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Nav from '@/app/components/Nav'
+import TreatmentTheme from '@/app/components/TreatmentTheme'
 
 export const metadata: Metadata = {
   alternates: { canonical: '/faq' },
@@ -140,7 +141,8 @@ const faqSections = [
 
 export default function FAQPage() {
   return (
-    <>
+    <div className="tp">
+      <TreatmentTheme />
       <style>{`
         *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
         html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased}
@@ -267,6 +269,6 @@ export default function FAQPage() {
           </div>
         </div>
       </footer>
-    </>
+    </div>
   )
 }
