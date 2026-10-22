@@ -249,7 +249,6 @@ export default function RhinoplastyPage() {
 
               <h3>Why Istanbul for rhinoplasty?</h3>
               <ul>
-                <li>High volume of procedures — Istanbul surgeons perform significantly more rhinoplasties per year than most UK surgeons, building substantial case experience</li>
                 <li>JCI-accredited hospitals meeting international safety standards</li>
                 <li>Typically lower cost than UK private clinics</li>
                 <li>2–3 week timeline from first enquiry to surgery</li>
