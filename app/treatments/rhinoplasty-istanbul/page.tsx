@@ -20,7 +20,7 @@ const faqs = [
   },
   {
     q: 'Which hospitals perform rhinoplasty in Istanbul?',
-    a: 'We work exclusively with JCI (Joint Commission International) accredited hospitals in Istanbul, including Memorial Hospitals Group. All partner facilities meet international standards for surgical safety and patient care.'
+    a: 'We work exclusively with JCI (Joint Commission International) accredited hospitals in Istanbul. Your itemised quote names the hospital and surgeon before you commit, and you can verify the hospital accreditation on the JCI website.'
   },
   {
     q: 'Is rhinoplasty in Turkey safe?',
@@ -209,7 +209,7 @@ export default function RhinoplastyPage() {
             <div className="prose">
               <h2>Rhinoplasty in Istanbul — what to expect</h2>
               <p>
-                Rhinoplasty, commonly known as a nose job, is one of the most commonly performed plastic surgery procedures worldwide. Istanbul has become a leading destination for rhinoplasty, combining highly experienced surgeons, internationally accredited hospitals, and significantly lower costs compared to UK private clinics.
+                Rhinoplasty, commonly known as a nose job, is one of the most commonly performed plastic surgery procedures worldwide. Istanbul is an established destination for rhinoplasty, with internationally accredited hospitals and lower costs than UK private clinics.
               </p>
               <p>
                 Ocean Health &amp; Travel coordinates rhinoplasty procedures at JCI-accredited hospitals in Istanbul. We are a medical coordination service — not a medical provider. All clinical decisions rest with your treating surgeon and the hospital team.

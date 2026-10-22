@@ -392,7 +392,7 @@ export default function Home() {
                   ))}
                 </tbody>
               </table>
-              <div className="table-note">Prices are indicative and subject to individual clinical assessment. No coordination fee is charged to patients — our commercial arrangements are with partner hospitals. Flights not included. Elective procedures only.</div>
+              <div className="table-note">UK figures are indicative ranges based on published prices from UK private providers; Istanbul figures are starting prices subject to individual clinical assessment. &ldquo;Up to&rdquo; savings compare our starting price with the top of the UK range. No coordination fee is charged to patients. We are paid by partner hospitals, which may influence which hospitals we work with; your itemised quote names the hospital and surgeon before you commit. Flights not included. Elective procedures only.</div>
             </div>
           </div>
         </div>

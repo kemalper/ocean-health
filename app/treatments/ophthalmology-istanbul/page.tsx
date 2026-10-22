@@ -188,7 +188,7 @@ export default function OphthalmologyPage() {
             Eye Surgery Istanbul
           </div>
           <div className="kicker">Ophthalmology · Istanbul</div>
-          <h1>Eye Surgery<br />in Istanbul.<br /><em>60–75% lower than UK.</em></h1>
+          <h1>Eye Surgery<br />in Istanbul.<br /><em>Itemised quotes before you travel.</em></h1>
           <p className="hero-sub">
             LASIK, cataract, lens replacement, and more. Advanced laser platforms at JCI-accredited ophthalmology centres. Dedicated coordination throughout.
           </p>

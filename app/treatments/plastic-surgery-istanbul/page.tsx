@@ -261,7 +261,7 @@ export default function PlasticSurgeryPage() {
             Plastic Surgery Istanbul
           </div>
           <div className="kicker">Plastic &amp; cosmetic surgery · Istanbul</div>
-          <h1>Plastic Surgery in Istanbul.<br /><em>30–70% lower than UK private.</em></h1>
+          <h1>Plastic Surgery in Istanbul.<br /><em>Itemised quotes before you travel.</em></h1>
           <p className="hero-sub">
             Board-certified plastic surgeons. JCI-accredited hospitals. Dedicated coordination from first enquiry through discharge and GP documentation.
           </p>

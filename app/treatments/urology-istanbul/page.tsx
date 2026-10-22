@@ -175,7 +175,7 @@ export default function UrologyPage() {
             </div>
             <div className="privacy-badge">🔒 All enquiries handled in strict confidence</div>
             <div className="kicker">Urology &amp; men&apos;s health · Istanbul</div>
-            <h1>Urology &amp; Men&apos;s Health<br />in Istanbul.<br /><em>Discreet. Expert. Coordinated.</em></h1>
+            <h1>Urology &amp; Men&apos;s Health<br />in Istanbul.<br /><em>Discreet. Private. Coordinated.</em></h1>
             <p className="hero-sub">
               Dedicated coordination for urological procedures at JCI-accredited clinics in Istanbul. All enquiries are handled with complete confidentiality.
             </p>

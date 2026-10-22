@@ -96,7 +96,7 @@ export default function AboutPage() {
                 </div>
                 <div className="stat-card">
                   <div className="stat-n">48h</div>
-                  <div className="stat-l">Quote turnaround, guaranteed</div>
+                  <div className="stat-l">Target quote turnaround</div>
                 </div>
                 <div className="stat-card">
                   <div className="stat-n">UK</div>
@@ -126,10 +126,10 @@ export default function AboutPage() {
             <div className="prose">
               <h2>Our mission</h2>
               <p>
-                Our mission is to make world-class elective healthcare accessible to everyone — not just those who can afford UK private rates or who are willing to wait 12–18 months on an NHS waiting list.
+                Our mission is to make high-quality elective healthcare accessible to everyone — not just those who can afford UK private rates or who are willing to wait 12–18 months on an NHS waiting list.
               </p>
               <p>
-                Turkey has invested significantly in its healthcare infrastructure. Istanbul&apos;s internationally accredited hospitals offer the same surgical standards, implant systems, and laser platforms as leading UK private clinics — at a fraction of the cost. The difference is not in quality but in cost structure: lower operating costs in Turkey translate directly to lower patient fees, not lower standards.
+                Turkey has invested significantly in its healthcare infrastructure. Lower operating costs in Turkey are the main reason prices are lower than at UK private clinics. We do not claim that care is identical: your quote names the hospital and surgeon, and we encourage you to check their accreditation and credentials before you commit.
               </p>
               <p>
                 Our role is to bridge the gap — ensuring that patients arrive in Istanbul with the right documentation, meet the right surgeon, and return home with complete clinical records. We handle everything in between.
@@ -171,10 +171,10 @@ export default function AboutPage() {
             {[
               {t:'UK Companies House registration',d:'Ocean Health & Travel Ltd · Registered in England & Wales · Company no. 16186647'},
               {t:'ICO registration · UK GDPR compliance',d:'Registered with the Information Commissioner\'s Office for lawful processing of patient data under UK GDPR.'},
-              {t:'No coordination fee charged to patients',d:'Our commercial arrangements are with partner hospitals and do not affect the clinical independence of the treating institution.'},
+              {t:'No coordination fee charged to patients',d:'We are paid by our partner hospitals, not by patients. This may influence which hospitals we work with. Your itemised quote names the hospital and surgeon before you commit. Our arrangements do not affect the clinical independence of the treating institution.'},
               {t:'TÜRSAB authorisation',d:'Authorised to conduct International Health Tourism Intermediary Services under Turkish law. TÜRSAB member.'},
               {t:'USHAS — International Health Tourism Authorisation Certificate',d:'Authorised under the Bye-Law on International Health Tourism and Tourist Health, pursuant to Decree Law No. 663. Certificate no. AK-1451, issued 12 August 2025.'},
-              {t:'JCI-accredited partner hospitals only',d:'We coordinate exclusively with Joint Commission International accredited hospitals in Istanbul, including Memorial Hospitals Group.'},
+              {t:'JCI-accredited partner hospitals only',d:'We coordinate exclusively with Joint Commission International accredited hospitals in Istanbul.'},
             ].map(c => (
               <div key={c.t} className="cred-item">
                 <div className="cred-dot"></div>
@@ -232,7 +232,7 @@ export default function AboutPage() {
         <div className="inner">
           <div className="cta-box">
             <h2>Ready to find out more?</h2>
-            <p>Contact us via WhatsApp or email. We reply within the hour during working hours.</p>
+            <p>Contact us via WhatsApp or email. We reply during working hours.</p>
             <div className="cta-btns">
               <a href={WA_URL} target="_blank" className="btn-cta-w">WhatsApp us</a>
               <a href="mailto:info@oceanhealthtravel.com" className="btn-cta-o">Email us</a>

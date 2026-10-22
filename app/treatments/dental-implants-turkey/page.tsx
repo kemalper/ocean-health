@@ -209,7 +209,7 @@ export default function DentalImplantsPage() {
             <div className="prose">
               <h2>Dental implants in Turkey — what to expect</h2>
               <p>
-                Dental implants are titanium posts surgically placed into the jawbone to act as artificial tooth roots, onto which crowns, bridges, or dentures are attached. Istanbul has become one of the world&apos;s leading destinations for dental implant treatment, combining highly experienced prosthodontists, modern facilities, and costs up to 80% lower than UK private dental clinics.
+                Dental implants are titanium posts surgically placed into the jawbone to act as artificial tooth roots, onto which crowns, bridges, or dentures are attached. Istanbul is an established destination for dental implant treatment, with modern facilities and costs typically lower than UK private dental clinics.
               </p>
               <p>
                 Ocean Health &amp; Travel coordinates dental implant treatment at JCI-accredited and internationally certified dental clinics in Istanbul. We are a coordination service — not a dental provider. All clinical decisions rest with your treating dentist.
@@ -262,7 +262,7 @@ export default function DentalImplantsPage() {
 
               <h3>Why Istanbul for dental implants?</h3>
               <ul>
-                <li>80% lower cost vs. UK private dental clinics</li>
+                <li>Typically lower cost vs. UK private dental clinics</li>
                 <li>High-volume, experienced prosthodontists and oral surgeons</li>
                 <li>CE-marked implant systems from internationally recognised manufacturers</li>
                 <li>JCI-accredited and internationally certified dental facilities</li>

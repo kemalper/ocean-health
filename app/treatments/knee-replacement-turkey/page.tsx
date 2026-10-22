@@ -211,7 +211,7 @@ export default function KneeReplacementPage() {
             <div className="prose">
               <h2>Knee replacement in Turkey — what to expect</h2>
               <p>
-                Knee replacement (total knee arthroplasty) is one of the most commonly performed orthopaedic procedures worldwide, offering significant pain relief and improved mobility for patients with severe knee arthritis or joint degeneration. Istanbul has become a leading destination for orthopaedic surgery, combining internationally trained surgeons, JCI-accredited hospitals, and costs 70–75% lower than UK private centres.
+                Knee replacement (total knee arthroplasty) is one of the most commonly performed orthopaedic procedures worldwide, offering significant pain relief and improved mobility for patients with severe knee arthritis or joint degeneration. Istanbul is an established destination for orthopaedic surgery, with JCI-accredited hospitals and costs typically lower than UK private centres.
               </p>
               <p>
                 Ocean Health &amp; Travel coordinates knee replacement surgery at JCI-accredited orthopaedic centres in Istanbul. We are a coordination service — not a medical provider. All clinical decisions rest with your treating orthopaedic surgeon.

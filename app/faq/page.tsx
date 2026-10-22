@@ -48,7 +48,7 @@ const faqSections = [
       },
       {
         q: 'How do I pay?',
-        a: 'Payment terms are specified in your coordination agreement. No coordination fee is charged to patients; our commercial arrangements are with partner hospitals. Full details are provided in our Medical Services Brokerage Agreement.',
+        a: 'Payment terms are specified in your coordination agreement. No coordination fee is charged to patients. We are paid by partner hospitals, which may influence which hospitals we work with. Full details are provided in our Medical Services Brokerage Agreement.',
       },
       {
         q: 'Are flights included?',
@@ -65,7 +65,7 @@ const faqSections = [
       },
       {
         q: 'Which hospitals do you work with?',
-        a: 'We work with JCI-accredited hospitals in Istanbul, including Memorial Hospitals Group. Our partner hospitals are selected based on clinical standards and JCI accreditation. Our commercial arrangements with hospitals do not affect the independence of clinical decisions.',
+        a: 'We work with JCI-accredited hospitals in Istanbul. Your itemised quote names the hospital and surgeon before you commit, and you can verify accreditation on the JCI website. Our partner hospitals are selected based on clinical standards and JCI accreditation. Our commercial arrangements with hospitals do not affect the independence of clinical decisions.',
       },
       {
         q: 'Are the surgeons qualified?',
@@ -244,7 +244,7 @@ export default function FAQPage() {
 
               <div className="cta-strip">
                 <h3>Still have questions?</h3>
-                <p>We reply within the hour on WhatsApp. Send us your question and we&apos;ll get straight back to you.</p>
+                <p>We reply on WhatsApp during working hours. Send us your question and we&apos;ll get straight back to you.</p>
                 <div className="cta-btns">
                   <a href={WA_URL} target="_blank" rel="noopener noreferrer" className="btn-wa">Ask on WhatsApp</a>
                   <a href="mailto:info@oceanhealthtravel.com" className="btn-email">Email us</a>

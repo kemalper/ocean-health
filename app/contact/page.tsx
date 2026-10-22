@@ -72,7 +72,7 @@ export default function ContactPage() {
         <div className="inner">
           <div className="hero-inner">
             <div className="kicker">Get in touch</div>
-            <h1>We reply within<br /><em>the hour.</em></h1>
+            <h1>We reply during<br /><em>working hours.</em></h1>
             <p className="hero-sub">
               WhatsApp is the fastest way to reach us. Send your treatment enquiry, clinical documents, or any questions — we respond promptly during working hours.
             </p>

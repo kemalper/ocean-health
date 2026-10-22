@@ -212,7 +212,7 @@ export default function HairTransplantPage() {
             <div className="prose">
               <h2>Hair transplant in Istanbul — what to expect</h2>
               <p>
-                Istanbul has established itself as one of the world&apos;s leading destinations for hair transplant surgery, with highly experienced surgeons, modern facilities, and a streamlined patient experience. Ocean Health &amp; Travel coordinates hair transplant procedures at JCI-accredited clinics with experienced trichological surgical teams.
+                Istanbul is an established destination for hair transplant surgery, with modern facilities and a streamlined patient experience. Ocean Health &amp; Travel coordinates hair transplant procedures at JCI-accredited clinics with experienced trichological surgical teams.
               </p>
               <p>
                 We are a coordination service — not a medical provider. All clinical decisions, including technique selection, graft count, and post-operative management, rest with your treating surgeon.

@@ -17,11 +17,11 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.oceanhealthtravel.com"),
   alternates: { canonical: "/" },
   title: "Ocean Health & Travel | UK Medical Tourism Coordinator",
-  description: "UK-registered medical tourism coordinator connecting international patients with JCI-accredited Istanbul clinics. Rhinoplasty, dental implants, knee replacement, LASIK and more — 30–70% lower than UK private rates.",
+  description: "UK-registered medical tourism coordinator connecting international patients with JCI-accredited Istanbul clinics. Rhinoplasty, dental implants, knee replacement, LASIK and more, with itemised quotes before you travel.",
   keywords: "medical tourism Istanbul, Turkey surgery, rhinoplasty Istanbul, dental implants Turkey, knee replacement Turkey, LASIK Istanbul, JCI accredited hospital Istanbul",
   openGraph: {
     title: "Ocean Health & Travel | UK Medical Tourism Coordinator",
-    description: "JCI-accredited hospitals in Istanbul. 30–70% lower than UK private rates. Dedicated coordination.",
+    description: "JCI-accredited hospitals in Istanbul. Itemised quotes before you travel. Dedicated coordination.",
     type: "website",
     locale: "en_GB",
     siteName: "Ocean Health & Travel",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Ocean Health & Travel | UK Medical Tourism Coordinator",
-    description: "JCI-accredited hospitals in Istanbul. 30–70% lower than UK private rates. Dedicated coordination.",
+    description: "JCI-accredited hospitals in Istanbul. Itemised quotes before you travel. Dedicated coordination.",
     images: ["/og-image.jpg"],
   },
 };
@@ -41,7 +41,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${dmSerif.variable} ${inter.variable}`}>
+    <html lang="en-GB" className={`${dmSerif.variable} ${inter.variable}`}>
       <head>
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-92GMNGS0XF"></script>
         <script dangerouslySetInnerHTML={{__html: `

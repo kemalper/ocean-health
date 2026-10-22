@@ -164,7 +164,7 @@ export default function LasikPage() {
                 <a href="#procedures" className="btn-ghost">LASIK vs SMILE ↓</a>
               </div>
               <div className="trust-row">
-                {['JCI-accredited clinics','Advanced laser platforms','3–5 day Istanbul stay','60–75% lower than UK'].map(t => (
+                {['JCI-accredited clinics','Advanced laser platforms','3–5 day Istanbul stay','Itemised quote before travel'].map(t => (
                   <div key={t} className="trust-item"><div className="trust-dot"></div>{t}</div>
                 ))}
               </div>
@@ -212,7 +212,7 @@ export default function LasikPage() {
             <div className="prose">
               <h2>LASIK eye surgery in Istanbul — what to expect</h2>
               <p>
-                LASIK (Laser-Assisted In Situ Keratomileusis) is the world&apos;s most commonly performed elective surgical procedure, offering permanent correction of myopia (short-sightedness), hyperopia (long-sightedness), and astigmatism. Istanbul&apos;s ophthalmology centres offer the same advanced laser platforms used in UK clinics, at 60–75% lower cost.
+                LASIK (Laser-Assisted In Situ Keratomileusis) is the world&apos;s most commonly performed elective surgical procedure, offering permanent correction of myopia (short-sightedness), hyperopia (long-sightedness), and astigmatism. Istanbul&apos;s ophthalmology centres use modern laser platforms, typically at lower cost than UK private clinics.
               </p>
               <p>
                 Ocean Health &amp; Travel coordinates LASIK and related laser eye procedures at JCI-accredited ophthalmology centres in Istanbul. We are a coordination service — not a medical provider. All clinical decisions, including suitability assessment and procedure selection, rest with your treating ophthalmologist.
@@ -275,7 +275,7 @@ export default function LasikPage() {
 
               <h3>Why Istanbul for laser eye surgery?</h3>
               <ul>
-                <li>60–75% lower cost than UK private clinics</li>
+                <li>Typically lower cost than UK private clinics</li>
                 <li>Same advanced laser platforms (Zeiss, Alcon, Schwind) as UK centres</li>
                 <li>High-volume, experienced ophthalmological teams</li>
                 <li>JCI-accredited facilities</li>

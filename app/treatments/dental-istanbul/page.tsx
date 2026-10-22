@@ -188,7 +188,7 @@ export default function DentalIstanbulPage() {
             Dental Istanbul
           </div>
           <div className="kicker">Dental treatment · Istanbul</div>
-          <h1>Dental Treatment<br />in Istanbul.<br /><em>Up to 80% lower than UK.</em></h1>
+          <h1>Dental Treatment<br />in Istanbul.<br /><em>Itemised quotes before you travel.</em></h1>
           <p className="hero-sub">
             CE-marked implants, zirconium crowns, veneers, smile design and more. JCI-accredited dental clinics. Dedicated coordination from first enquiry through treatment.
           </p>
