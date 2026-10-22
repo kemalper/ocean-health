@@ -265,7 +265,7 @@ export default function Home() {
             </div>
           </div>
           <div className="hero-media">
-            <Image src="/hero.jpg" alt="The Bosphorus Bridge and Istanbul skyline" fill priority sizes="(max-width:900px) 100vw, 520px" style={{objectFit:'cover'}} />
+            <Image src="/hero-reception.jpg" alt="Hospital reception and waiting area" fill priority sizes="(max-width:900px) 100vw, 520px" style={{objectFit:'cover'}} />
             <div className="hero-note">
               <b>Itemised quote within 48 hours</b>
               Names the hospital and surgeon before you commit to anything.
