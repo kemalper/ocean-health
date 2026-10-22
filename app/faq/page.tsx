@@ -76,6 +76,10 @@ const faqSections = [
         q: 'What if something goes wrong?',
         a: 'Your treating provider has standard clinical governance and complaint procedures. Ocean Health & Travel has a formal Complaints Policy — available on our website — and will assist in coordinating communication with the hospital in the event of a concern. We are registered with the ICO and operate under UK consumer protection law.',
       },
+      {
+        q: 'Do I need travel insurance for treatment abroad?',
+        a: 'Standard travel policies often exclude planned treatment and its complications, so check your cover and its exclusions before you travel. If you would like, we can introduce you to an FCA-authorised insurance provider offering medical-travel cover. We may receive a commission if you take out a policy. You are free to choose any provider, there is no obligation, and we do not give insurance advice.',
+      },
     ],
   },
   {
