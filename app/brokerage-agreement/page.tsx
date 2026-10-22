@@ -43,7 +43,7 @@ export default function BrokerageAgreement() {
         <div className="inner">
           <div className="kicker">Legal</div>
           <h1>Medical Services Brokerage Agreement</h1>
-          <div className="updated">Last updated: June 2025</div>
+          <div className="updated">Last updated: October 2026</div>
         </div>
       </div>
 
@@ -67,10 +67,10 @@ export default function BrokerageAgreement() {
 
         <h2>Fees and payment</h2>
         <ul>
-          <li>Ocean Health &amp; Travel does not charge a coordination fee to patients. Our commercial arrangements are with partner hospitals. All treatment costs are specified in your itemised quote and agreed before booking</li>
-          <li>Treatment costs are paid directly to the treating provider or held in a designated client account on their behalf</li>
-          <li>Client payments are held in a designated client account, separate from operating funds</li>
-          <li>All fees are confirmed in writing before any payment is taken</li>
+          <li>Ocean Health &amp; Travel does not charge a coordination fee to patients. Our commercial arrangements are with partner hospitals</li>
+          <li>All costs, including the accommodation and transfers included in your package, are set out in your itemised quote and agreed before booking</li>
+          <li>Payment is made directly to the treating hospital, or to the provider it nominates, under that hospital&apos;s own terms. Ocean Health &amp; Travel does not receive, hold or handle patient payments</li>
+          <li>Deposits, payment schedules and refund terms are set by the hospital and confirmed in writing in your quote before any payment is made</li>
           <li>Flights are not included in any package</li>
         </ul>
 
@@ -83,7 +83,7 @@ export default function BrokerageAgreement() {
         </ul>
 
         <h2>Limitation of liability</h2>
-        <p>Ocean Health &amp; Travel&apos;s liability is limited to the coordination fee paid. We are not liable for:</p>
+        <p>Nothing in this agreement excludes or limits any liability that cannot be excluded or limited by law, including liability for fraud or for death or personal injury caused by our negligence. Our role is limited to coordination. Subject to that, we are not liable for:</p>
         <ul>
           <li>Clinical outcomes, surgical complications, or medical negligence — these are the responsibility of the treating provider</li>
           <li>Force majeure events including flight cancellations, natural disasters, or political events</li>
