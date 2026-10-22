@@ -74,15 +74,15 @@ const ORG_JSON_LD = {
 }
 
 
-const FEATURED = [
+const FEATURED: { name: string; link: string; img: string; items: string; price: string; tag?: string }[] = [
   { name: 'Plastic & cosmetic surgery', link: '/treatments/plastic-surgery-istanbul', img: '/treatments/plastic-surgery.jpg', items: 'Rhinoplasty, facelift, breast surgery, liposuction, tummy tuck, BBL, eyelid and ear surgery', price: 'Rhinoplasty from £3,200 · Breast from £6,000' },
-  { name: 'Dental', link: '/treatments/dental-istanbul', img: '/treatments/dental.jpg', items: 'Implants, zirconium crowns and veneers, smile design, orthodontics, root canal', price: 'Implants from £350 each' },
+  { name: 'Neurosurgery', link: '/treatments/neurosurgery-istanbul', img: '/treatments/neurosurgery.jpg', items: 'Deep brain stimulation, pituitary and glial tumours, acoustic neuroma, disc herniation', price: 'DBS from £23,700 · Free pre-assessment', tag: 'Specialist assessment' },
 ]
 
 const ROWS: { name: string; link: string; img: string; summary: string; price: string; tag?: string; external?: boolean }[] = [
   { name: 'Ophthalmology', link: '/treatments/ophthalmology-istanbul', img: '/treatments/ophthalmology.jpg', summary: 'LASIK and laser refractive surgery, cataract and lens replacement, eyelid surgery', price: 'LASIK from £600 per eye' },
   { name: 'Orthopaedics', link: '/treatments/knee-replacement-turkey', img: '/treatments/orthopaedics.jpg', summary: 'Knee and hip replacement, sports injuries, ligament and cartilage repair', price: 'Knee replacement from £3,500' },
-  { name: 'Neurosurgery', link: '/treatments/neurosurgery-istanbul', img: '/treatments/neurosurgery.jpg', summary: 'Deep brain stimulation, tumour surgery, disc herniation', price: 'DBS from £23,700', tag: 'Specialist assessment' },
+  { name: 'Dental', link: '/treatments/dental-istanbul', img: '/treatments/dental.jpg', summary: 'Implants, zirconium crowns and veneers, smile design, orthodontics, root canal', price: 'Implants from £350 each' },
   { name: 'Hair transplantation', link: '/treatments/hair-transplant-istanbul', img: '/hair-transplant.jpg', summary: 'FUE and DHI techniques, PRP for hair restoration', price: 'Contact us for pricing' },
   { name: 'Aesthetic medicine', link: WA_URL, img: '/treatments/aesthetic.jpg', summary: 'Mesotherapy, Hydrafacial, Scarlet X skin tightening', price: 'From £180', external: true },
 ]
@@ -344,7 +344,7 @@ export default function Home() {
               <a key={s.name} href={s.link} className={`feat reveal d${i+1}`} ref={ref}>
                 <div className="feat-img"><Image src={s.img} alt={s.name} fill sizes="(max-width:900px) 100vw, 560px" style={{objectFit:'cover'}} /></div>
                 <div className="feat-body">
-                  <h3>{s.name}</h3>
+                  <h3>{s.name}{s.tag && <span className="row-tag">{s.tag}</span>}</h3>
                   <div className="feat-items">{s.items}</div>
                   <div className="feat-price">{s.price} →</div>
                 </div>
