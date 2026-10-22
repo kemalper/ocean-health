@@ -24,8 +24,8 @@ export default function Nav({ transparent = false }: { transparent?: boolean }) 
         .nav-logo{display:flex;align-items:center}
         .nav-logo img{height:64px!important;width:auto}
         @media(max-width:900px){.nav-inner{height:66px}.nav-logo img{height:44px!important}}
-        .nav-links{display:flex;gap:2rem;list-style:none;align-items:center}
-        .nav-links a{font-size:13px;transition:color .2s;text-decoration:none}
+        .nav-links{display:flex;gap:2.25rem;list-style:none;align-items:center}
+        .nav-links a{font-size:14px;transition:color .2s;text-decoration:none}
         .nav.scrolled .nav-links a{color:#3A4852}
         .nav:not(.scrolled) .nav-links a{color:rgba(255,255,255,.85)}
         .nav-links a:hover{color:#085041}
@@ -33,6 +33,8 @@ export default function Nav({ transparent = false }: { transparent?: boolean }) 
         .btn-nav{border:1px solid #085041;padding:8px 18px;border-radius:7px;font-size:13px;font-weight:500;transition:all .2s;text-decoration:none}
         .nav.scrolled .btn-nav{border-color:#085041;color:#085041}
         .nav:not(.scrolled) .btn-nav{border-color:rgba(255,255,255,.5);color:#fff}
+        .nav.scrolled .nav-links a.btn-nav{background:#0B6B55;border-color:#0B6B55;color:#fff;padding:11px 22px;border-radius:10px;font-size:14px;font-weight:600}
+        .nav.scrolled .nav-links a.btn-nav:hover{background:#08503F!important;border-color:#08503F}
         .btn-nav:hover{background:#085041!important;color:#fff!important}
         .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:8px;background:none;border:none}
         .hamburger span{display:block;width:22px;height:2px;border-radius:2px;transition:all .3s}

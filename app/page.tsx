@@ -146,19 +146,19 @@ export default function Home() {
         .home .btn-link{color:var(--ink);font-size:15px;font-weight:500;border-bottom:1px solid var(--ink);padding-bottom:2px}
         .btn-link:hover{color:var(--green);border-color:var(--green)}
         .hero{padding:56px 0 64px}
-        .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:4.5rem;align-items:start}
-        .hero-text{padding-top:2.5rem}
+        .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:4.5rem;align-items:center}
+        .hero-text{padding-top:0}
         .hero h1{font-size:clamp(32px,3.5vw,46px);line-height:1.04;letter-spacing:-.025em;margin-bottom:1.5rem}
         .hero h1 em{font-style:italic;color:var(--green)}
         .hero-sub{font-size:18px;line-height:1.65;color:var(--muted);max-width:530px;margin-bottom:2.25rem}
         .hero-actions{display:flex;gap:1.75rem;align-items:center;flex-wrap:wrap}
-        .hero-media{position:relative;border-radius:22px;overflow:hidden;aspect-ratio:5/6;background:var(--band)}
+        .hero-media{position:relative;border-radius:22px;overflow:hidden;aspect-ratio:20/21;background:var(--band)}
         .hero-fine{margin-top:1.25rem;font-size:13px;color:var(--muted)}
         .hero-note{position:absolute;left:16px;right:16px;bottom:16px;background:rgba(250,248,244,.95);backdrop-filter:blur(8px);border-radius:14px;padding:14px 18px;font-size:13px;line-height:1.55;color:var(--ink)}
         .hero-note b{display:block;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--green);margin-bottom:3px}
         .trust{border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-        .home .trust-inner{display:flex;gap:.75rem 2.25rem;flex-wrap:wrap;padding-top:1.15rem;padding-bottom:1.15rem}
-        .ti{display:flex;align-items:center;gap:9px;font-size:13px;color:var(--muted)}
+        .home .trust-inner{display:flex;justify-content:space-between;gap:1rem 2rem;flex-wrap:wrap;padding-top:1.6rem;padding-bottom:1.6rem}
+        .ti{display:flex;align-items:center;gap:10px;font-size:15px;font-weight:500;color:var(--ink)}
         .ti i{width:6px;height:6px;border-radius:50%;background:var(--green);flex-shrink:0}
         .sec{padding:6.5rem 0;scroll-margin-top:92px}
         .home h2{font-size:clamp(30px,3.6vw,46px);line-height:1.1;letter-spacing:-.02em;margin-bottom:1rem}
@@ -267,7 +267,7 @@ export default function Home() {
             <p className="hero-fine">Itemised quote within 48 hours. Hospital and surgeon named before you commit.</p>
           </div>
           <div className="hero-media">
-            <Image src="/hero-welcome.jpg" alt="Hospital reception and waiting area" fill priority sizes="(max-width:900px) 100vw, 520px" style={{objectFit:'cover'}} />
+            <Image src="/hero-welcome.jpg" alt="Hospital reception and waiting area" fill priority sizes="(max-width:900px) 100vw, 520px" style={{objectFit:'cover',objectPosition:'50% 85%',transform:'scale(1.12)',transformOrigin:'50% 85%'}} />
           </div>
         </div>
       </section>
