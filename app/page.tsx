@@ -141,13 +141,13 @@ export default function Home() {
         @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
         .eyebrow{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--green);font-weight:600;margin-bottom:1.1rem}
         .btn{display:inline-flex;align-items:center;gap:8px;padding:15px 26px;border-radius:10px;font-size:15px;font-weight:600;transition:background .2s,transform .2s;font-family:'Inter',sans-serif;cursor:pointer;border:none}
-        .btn-primary{background:var(--green);color:#fff}
+        .home .btn-primary{background:var(--green);color:#fff}
         .btn-primary:hover{background:var(--green-d);transform:translateY(-1px)}
-        .btn-link{color:var(--ink);font-size:15px;font-weight:500;border-bottom:1px solid var(--ink);padding-bottom:2px}
+        .home .btn-link{color:var(--ink);font-size:15px;font-weight:500;border-bottom:1px solid var(--ink);padding-bottom:2px}
         .btn-link:hover{color:var(--green);border-color:var(--green)}
-        .hero{padding:56px 0 56px}
+        .hero{padding:56px 0 64px}
         .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:4.5rem;align-items:center}
-        .hero h1{font-size:clamp(38px,5vw,64px);line-height:1.04;letter-spacing:-.025em;margin-bottom:1.5rem}
+        .hero h1{font-size:clamp(36px,4.3vw,54px);line-height:1.04;letter-spacing:-.025em;margin-bottom:1.5rem}
         .hero h1 em{font-style:italic;color:var(--green)}
         .hero-sub{font-size:18px;line-height:1.65;color:var(--muted);max-width:530px;margin-bottom:2.25rem}
         .hero-actions{display:flex;gap:1.75rem;align-items:center;flex-wrap:wrap}
@@ -155,7 +155,7 @@ export default function Home() {
         .hero-note{position:absolute;left:16px;right:16px;bottom:16px;background:rgba(250,248,244,.95);backdrop-filter:blur(8px);border-radius:14px;padding:14px 18px;font-size:13px;line-height:1.55;color:var(--ink)}
         .hero-note b{display:block;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--green);margin-bottom:3px}
         .trust{border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-        .trust-inner{display:flex;gap:.75rem 2.25rem;flex-wrap:wrap;padding-top:1.1rem;padding-bottom:1.1rem}
+        .home .trust-inner{display:flex;gap:.75rem 2.25rem;flex-wrap:wrap;padding-top:1.15rem;padding-bottom:1.15rem}
         .ti{display:flex;align-items:center;gap:9px;font-size:13px;color:var(--muted)}
         .ti i{width:6px;height:6px;border-radius:50%;background:var(--green);flex-shrink:0}
         .sec{padding:6.5rem 0}
@@ -218,10 +218,10 @@ export default function Home() {
         .cta-box h2{color:#fff;font-size:clamp(30px,3.6vw,46px);margin-bottom:1rem}
         .cta-box p{font-size:16px;color:rgba(255,255,255,.7);line-height:1.7;margin:0 auto 2.25rem;max-width:520px}
         .cta-actions{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
-        .btn-cta-w{background:#fff;color:var(--ink);padding:15px 28px;border-radius:10px;font-size:15px;font-weight:600;display:inline-flex}
-        .btn-cta-o{border:1px solid rgba(255,255,255,.35);color:#fff;padding:15px 28px;border-radius:10px;font-size:15px;display:inline-flex}
+        .home .btn-cta-w{background:#fff;color:var(--ink);padding:15px 28px;border-radius:10px;font-size:15px;font-weight:600;display:inline-flex}
+        .home .btn-cta-o{border:1px solid rgba(255,255,255,.35);color:#fff;padding:15px 28px;border-radius:10px;font-size:15px;display:inline-flex}
         .btn-cta-o:hover{background:rgba(255,255,255,.08)}
-        .wa-pill{display:inline-flex;align-items:center;gap:10px;background:var(--green);color:#fff;border-radius:100px;padding:14px 24px;font-size:14px;font-weight:500;margin-bottom:2rem}
+        .home .wa-pill{display:inline-flex;align-items:center;gap:10px;background:var(--green);color:#fff;border-radius:100px;padding:14px 24px;font-size:14px;font-weight:500;margin-bottom:2rem}
         .wa-pill:hover{background:var(--green-d)}
         .home footer{background:var(--ink);padding:3.5rem 0 2rem}
         .footer-top{display:flex;justify-content:space-between;flex-wrap:wrap;gap:2rem;padding-bottom:2rem;border-bottom:1px solid rgba(255,255,255,.12);margin-bottom:1.5rem}
