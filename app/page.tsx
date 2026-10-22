@@ -492,11 +492,17 @@ export default function Home() {
             <div className="footer-links">
               <div className="footer-col">
                 <h4>Treatments</h4>
-                <a href="#services">Cosmetic surgery</a>
-                <a href="#services">Dental</a>
-                <a href="#services">Ophthalmology</a>
-                <a href="#services">Neurosurgery</a>
-                <a href="/treatments/urology-istanbul">Urology & men's health</a>
+                <a href="/treatments/plastic-surgery-istanbul">Plastic &amp; cosmetic surgery</a>
+                <a href="/treatments/rhinoplasty-istanbul">Rhinoplasty</a>
+                <a href="/treatments/dental-istanbul">Dental</a>
+                <a href="/treatments/dental-implants-turkey">Dental implants</a>
+                <a href="/treatments/ophthalmology-istanbul">Ophthalmology</a>
+                <a href="/treatments/lasik-istanbul">LASIK</a>
+                <a href="/treatments/knee-replacement-turkey">Knee replacement</a>
+                <a href="/treatments/neurosurgery-istanbul">Neurosurgery</a>
+                <a href="/treatments/deep-brain-stimulation-turkey">Deep brain stimulation</a>
+                <a href="/treatments/hair-transplant-istanbul">Hair transplantation</a>
+                <a href="/treatments/urology-istanbul">Urology &amp; men&apos;s health</a>
               </div>
               <div className="footer-col">
                 <h4>Company</h4>
