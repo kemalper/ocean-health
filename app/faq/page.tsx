@@ -36,7 +36,7 @@ const faqSections = [
     faqs: [
       {
         q: 'How much cheaper is treatment in Istanbul than the UK?',
-        a: 'Savings vary by procedure. Dental implants are typically 80% lower than UK private rates. Rhinoplasty 55–70% lower. Knee replacement 70–75% lower. LASIK 60–75% lower. Deep brain stimulation 40–60% lower. All prices are indicative — exact quotes depend on your specific case.',
+        a: 'Differences vary by procedure and by the UK provider you compare with, so we list every cost in your quote and you can compare like for like. Indicative starting prices: dental implants from £350 each, rhinoplasty from £3,200, knee replacement from £3,500, LASIK from £600 per eye, deep brain stimulation from £23,700. All prices are indicative — exact quotes depend on your specific case.',
       },
       {
         q: 'What is included in the price?',

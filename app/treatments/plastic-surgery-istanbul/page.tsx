@@ -150,7 +150,7 @@ const procedures = [
 const faqs = [
   {
     q: 'How much does plastic surgery cost in Istanbul?',
-    a: 'Plastic surgery in Istanbul is typically 30–70% lower than UK private clinics. Rhinoplasty starts from £3,200 (vs. £7,000–£12,000 in the UK), breast augmentation from £6,000 (vs. £8,000–£11,000), and liposuction from £2,500 (vs. £3,500–£7,500). All prices are indicative — exact quotes depend on the specific procedure, complexity, and your individual anatomy.'
+    a: 'Plastic surgery in Istanbul is typically lower in price than at UK private clinics. Rhinoplasty starts from £3,200 (vs. £7,000–£12,000 in the UK), breast augmentation from £6,000 (vs. £8,000–£11,000), and liposuction from £2,500 (vs. £3,500–£7,500). All prices are indicative — exact quotes depend on the specific procedure, complexity, and your individual anatomy.'
   },
   {
     q: 'How long do I need to stay in Istanbul?',
