@@ -5,6 +5,7 @@ export default function TreatmentTheme() {
   return (
     <style>{`
       .tp{--bg:#FAF8F4;--band:#F2EEE5;--ink:#12202B;--muted:#5B6770;--line:#E6E0D4;--green:#0B6B55;--green-d:#08503F;--soft:#E3F0EA;background:var(--bg);color:var(--ink);min-height:100vh}
+      .tp .inner{max-width:1280px!important}
       .tp .hero{background:var(--bg)!important;padding:72px 0 64px!important;border-bottom:1px solid var(--line)}
       .tp .hero::before,.tp .hero::after{display:none!important}
       .tp .breadcrumb,.tp .breadcrumb a{color:var(--muted)!important}
