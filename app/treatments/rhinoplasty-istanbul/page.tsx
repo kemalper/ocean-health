@@ -13,7 +13,7 @@ const WA_URL = 'https://wa.me/447441904858?text=Hello%2C%20I%27d%20like%20to%20e
 const faqs = [
   {
     q: 'How much does rhinoplasty cost in Istanbul?',
-    a: `Rhinoplasty in Istanbul through Ocean Health & Travel starts from £3,200, compared to typically ${UK_PRICES.rhinoplasty.compact} at UK private clinics. The price includes surgeon fee, anaesthesia, hospital stay, and standard post-operative care. Airport transfer, hotel, and interpreter are coordinated separately.`
+    a: `Rhinoplasty in Istanbul through Ocean Health & Travel starts from £3,200, compared to typically ${UK_PRICES.rhinoplasty.compact} at UK private clinics. The price includes surgeon fee, anaesthesia, hospital stay, and standard post-operative care. Airport transfer, hotel, and interpreter are included in every package.`
   },
   {
     q: 'How long does rhinoplasty take to arrange through Ocean Health & Travel?',

@@ -12,7 +12,7 @@ const WA_URL = 'https://wa.me/447441904858?text=Hello%2C%20I%27d%20like%20to%20e
 const faqs = [
   {
     q: 'How much does knee replacement cost in Turkey?',
-    a: 'Knee replacement surgery in Istanbul starts from £3,500, compared to £12,000–£16,000 at UK private orthopaedic centres. The price includes surgeon fee, anaesthesia, implant, hospital stay, and standard post-operative care. Airport transfer, hotel, and interpreter are coordinated separately. An itemised quote is provided within 48 hours of receiving your clinical documentation.'
+    a: 'Knee replacement surgery in Istanbul starts from £3,500, compared to £12,000–£16,000 at UK private orthopaedic centres. The price includes surgeon fee, anaesthesia, implant, hospital stay, and standard post-operative care. Airport transfer, hotel, and interpreter are included in every package. An itemised quote is provided within 48 hours of receiving your clinical documentation.'
   },
   {
     q: 'How long is the NHS waiting list for knee replacement?',

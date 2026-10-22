@@ -12,7 +12,7 @@ const procedures: Record<string, { headers: string[], rows: string[][] }> = {
       ['Breast augmentation', UK_PRICES.breastAugmentation.typical, 'from £6,000', 'Comparable'],
       ['Breast reduction (incl. implants)', '£8,000 – £10,000', 'from £6,300', 'up to 40%'],
       ['Liposuction', UK_PRICES.liposuction.range, 'from £2,500', 'Varies'],
-      ['Face & neck lift', '£7,000 – £12,000', 'from £5,000', 'up to 60%'],
+      ['Facelift', UK_PRICES.facelift.range, 'from £5,000', '~30–55%'],
       ['Tummy tuck', '£5,000 – £10,000', 'from £3,500', 'up to 65%'],
     ]
   },
