@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Nav from '@/app/components/Nav'
+import TreatmentTheme from '@/app/components/TreatmentTheme'
 
 export const metadata: Metadata = {
   alternates: { canonical: '/treatments/lasik-istanbul' },
@@ -38,7 +39,8 @@ const faqs = [
 
 export default function LasikPage() {
   return (
-    <>
+    <div className="tp">
+      <TreatmentTheme />
       <style>{`
         *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
         html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased}
@@ -262,7 +264,7 @@ export default function LasikPage() {
                   ))}
                 </tbody>
               </table>
-              <p style={{fontSize:'12px',color:'#bbb',marginTop:'-.5rem',marginBottom:'1.5rem'}}>Prices per eye. Coordination fee quoted separately. Flights not included.</p>
+              <p style={{fontSize:'12px',color:'#bbb',marginTop:'-.5rem',marginBottom:'1.5rem'}}>Prices per eye. No coordination fee is charged to patients. Flights not included.</p>
 
               <h3>Recovery timeline</h3>
               <ul>
@@ -319,7 +321,7 @@ export default function LasikPage() {
                   <span className="sidebar-price-label">Istanbul stay</span>
                   <span className="sidebar-price-val">3–5 days</span>
                 </div>
-                <p style={{fontSize:'11px',color:'#bbb',marginTop:'1rem',lineHeight:1.6}}>Prices per eye. Coordination fee quoted separately. Flights not included.</p>
+                <p style={{fontSize:'11px',color:'#bbb',marginTop:'1rem',lineHeight:1.6}}>Prices per eye. No coordination fee is charged to patients. Flights not included.</p>
               </div>
 
               <div className="sidebar-card">
@@ -386,10 +388,10 @@ export default function LasikPage() {
           </p>
           <div style={{display:'flex',gap:'14px',justifyContent:'center',flexWrap:'wrap'}}>
             <a href={WA_URL} target="_blank" style={{background:'#085041',color:'#fff',border:'none',padding:'15px 30px',borderRadius:'10px',fontSize:'15px',fontWeight:600,display:'inline-flex',alignItems:'center',gap:'9px',cursor:'pointer',fontFamily:'Inter,sans-serif'}}>
-              💬 Get a free quote
+              Get a free quote
             </a>
             <a href="mailto:info@oceanhealthtravel.com" style={{background:'transparent',color:'#085041',border:'1px solid #085041',padding:'15px 30px',borderRadius:'10px',fontSize:'15px',display:'inline-flex',alignItems:'center',gap:'9px',cursor:'pointer',fontFamily:'Inter,sans-serif'}}>
-              ✉️ Email us
+              Email us
             </a>
           </div>
         </div>
@@ -407,6 +409,6 @@ export default function LasikPage() {
           </div>
         </div>
       </footer>
-    </>
+    </div>
   )
 }

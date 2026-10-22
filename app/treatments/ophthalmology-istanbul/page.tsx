@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Nav from '@/app/components/Nav'
+import TreatmentTheme from '@/app/components/TreatmentTheme'
 
 export const metadata: Metadata = {
   alternates: { canonical: '/treatments/ophthalmology-istanbul' },
@@ -101,7 +102,8 @@ const faqs = [
 
 export default function OphthalmologyPage() {
   return (
-    <>
+    <div className="tp">
+      <TreatmentTheme />
       <style>{`
         *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
         html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased}
@@ -242,7 +244,7 @@ export default function OphthalmologyPage() {
             ))}
           </div>
           <p style={{fontSize:'12px',color:'#bbb',marginTop:'1.5rem',lineHeight:1.6}}>
-            Prices per eye where applicable. Coordination fee quoted separately. Flights not included. Ocean Health &amp; Travel is a coordinator, not a medical provider.
+            Prices per eye where applicable. No coordination fee is charged to patients. Flights not included. Ocean Health &amp; Travel is a coordinator, not a medical provider.
           </p>
         </div>
       </section>
@@ -290,6 +292,6 @@ export default function OphthalmologyPage() {
           </div>
         </div>
       </footer>
-    </>
+    </div>
   )
 }

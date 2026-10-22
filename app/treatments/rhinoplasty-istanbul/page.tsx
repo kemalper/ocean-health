@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Nav from '@/app/components/Nav'
+import TreatmentTheme from '@/app/components/TreatmentTheme'
 import { UK_PRICES } from '@/app/lib/ukPrices'
 
 export const metadata: Metadata = {
@@ -39,7 +40,8 @@ const faqs = [
 
 export default function RhinoplastyPage() {
   return (
-    <>
+    <div className="tp">
+      <TreatmentTheme />
       <style>{`
         *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
         html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased}
@@ -189,7 +191,7 @@ export default function RhinoplastyPage() {
               <div className="price-row">
                 <div>
                   <div className="price-label">Typical saving</div>
-                  <div className="price-val green">55 – 70%</div>
+                  <div className="price-val green">~45–65%</div>
                 </div>
               </div>
               <div className="price-row">
@@ -279,13 +281,13 @@ export default function RhinoplastyPage() {
                 </div>
                 <div className="sidebar-price-row">
                   <span className="sidebar-price-label">Typical saving</span>
-                  <span className="sidebar-price-val">55 – 70%</span>
+                  <span className="sidebar-price-val">~45–65%</span>
                 </div>
                 <div className="sidebar-price-row">
                   <span className="sidebar-price-label">Timeline</span>
                   <span className="sidebar-price-val">2–3 weeks</span>
                 </div>
-                <p style={{fontSize:'11px',color:'#bbb',marginTop:'1rem',lineHeight:1.6}}>Prices indicative. Coordination fee quoted separately. Flights not included.</p>
+                <p style={{fontSize:'11px',color:'#bbb',marginTop:'1rem',lineHeight:1.6}}>Prices indicative. No coordination fee is charged to patients. Flights not included.</p>
               </div>
 
               <div className="sidebar-card">
@@ -355,10 +357,10 @@ export default function RhinoplastyPage() {
           </p>
           <div style={{display:'flex',gap:'14px',justifyContent:'center',flexWrap:'wrap'}}>
             <a href={WA_URL} target="_blank" style={{background:'#085041',color:'#fff',border:'none',padding:'15px 30px',borderRadius:'10px',fontSize:'15px',fontWeight:600,display:'inline-flex',alignItems:'center',gap:'9px',cursor:'pointer',fontFamily:'Inter,sans-serif'}}>
-              💬 Get a free quote
+              Get a free quote
             </a>
             <a href="mailto:info@oceanhealthtravel.com" style={{background:'transparent',color:'#085041',border:'1px solid #085041',padding:'15px 30px',borderRadius:'10px',fontSize:'15px',display:'inline-flex',alignItems:'center',gap:'9px',cursor:'pointer',fontFamily:'Inter,sans-serif'}}>
-              ✉️ Email us
+              Email us
             </a>
           </div>
         </div>
@@ -377,6 +379,6 @@ export default function RhinoplastyPage() {
           </div>
         </div>
       </footer>
-    </>
+    </div>
   )
 }

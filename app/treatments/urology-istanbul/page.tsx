@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Nav from '@/app/components/Nav'
+import TreatmentTheme from '@/app/components/TreatmentTheme'
 
 export const metadata: Metadata = {
   alternates: { canonical: '/treatments/urology-istanbul' },
@@ -90,7 +91,8 @@ const faqs = [
 
 export default function UrologyPage() {
   return (
-    <>
+    <div className="tp">
+      <TreatmentTheme />
       <style>{`
         *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
         html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased}
@@ -213,7 +215,7 @@ export default function UrologyPage() {
             <p>🔒 <strong>Confidentiality:</strong> All urological enquiries are handled with complete discretion. Your information is shared only with the treating provideral team and is never disclosed to third parties without your explicit consent. We are registered with the ICO and operate under UK GDPR.</p>
           </div>
           <p style={{fontSize:'12px',color:'#bbb',marginTop:'1rem',lineHeight:1.6}}>
-            Prices on request. Coordination fee quoted separately. Flights not included. Ocean Health &amp; Travel is a coordinator, not a medical provider. All clinical decisions rest with your treating urologist.
+            Prices on request. No coordination fee is charged to patients. Flights not included. Ocean Health &amp; Travel is a coordinator, not a medical provider. All clinical decisions rest with your treating urologist.
           </p>
         </div>
       </section>
@@ -261,6 +263,6 @@ export default function UrologyPage() {
           </div>
         </div>
       </footer>
-    </>
+    </div>
   )
 }

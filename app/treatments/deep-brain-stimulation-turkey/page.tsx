@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Nav from '@/app/components/Nav'
+import TreatmentTheme from '@/app/components/TreatmentTheme'
 
 export const metadata: Metadata = {
   alternates: { canonical: '/treatments/deep-brain-stimulation-turkey' },
@@ -38,7 +39,8 @@ const faqs = [
 
 export default function DBSPage() {
   return (
-    <>
+    <div className="tp">
+      <TreatmentTheme />
       <style>{`
         *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
         html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased}
@@ -316,7 +318,7 @@ export default function DBSPage() {
                   <span className="sidebar-price-label">Hospital stay</span>
                   <span className="sidebar-price-val">5–10 days</span>
                 </div>
-                <p style={{fontSize:'11px',color:'#bbb',marginTop:'1rem',lineHeight:1.6}}>Prices indicative. Device cost varies by manufacturer. Coordination fee quoted separately. Flights not included.</p>
+                <p style={{fontSize:'11px',color:'#bbb',marginTop:'1rem',lineHeight:1.6}}>Prices indicative. Device cost varies by manufacturer. No coordination fee is charged to patients. Flights not included.</p>
               </div>
 
               <div className="sidebar-card">
@@ -389,7 +391,7 @@ export default function DBSPage() {
               Start free pre-assessment
             </a>
             <a href={WA_URL} target="_blank" style={{background:'transparent',color:'#085041',border:'1px solid #085041',padding:'15px 30px',borderRadius:'10px',fontSize:'15px',display:'inline-flex',alignItems:'center',gap:'9px',cursor:'pointer',fontFamily:'Inter,sans-serif'}}>
-              💬 WhatsApp us
+              WhatsApp us
             </a>
           </div>
         </div>
@@ -408,6 +410,6 @@ export default function DBSPage() {
           </div>
         </div>
       </footer>
-    </>
+    </div>
   )
 }
