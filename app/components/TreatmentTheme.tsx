@@ -47,6 +47,7 @@ export default function TreatmentTheme() {
       .tp .btn-full.green,.tp .btn-full.blue{background:var(--green)!important;color:#fff!important}
       .tp .btn-full.green:hover,.tp .btn-full.blue:hover{background:var(--green-d)!important}
       .tp .btn-full.white,.tp .btn-full.outline{border:1px solid var(--line)!important;color:var(--green-d)!important}
+      .tp .sidebar-card.dark .btn-full.white,.tp .sidebar-card.dark .btn-full.outline{background:transparent!important;color:#fff!important;border:1px solid rgba(255,255,255,.4)!important}
       .tp .process-grid::before{background:var(--line)!important}
       .tp .proc-circle,.tp .step-circle{background:var(--green)!important;box-shadow:none!important}
       .tp .proc-t{color:var(--ink)!important}
