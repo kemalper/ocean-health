@@ -1,5 +1,7 @@
 'use client'
 import { useEffect, useRef, useState } from 'react'
+import Image from 'next/image'
+import Nav from '@/app/components/Nav'
 import { UK_PRICES } from '@/app/lib/ukPrices'
 
 const WA_URL = 'https://wa.me/447441904858?text=Hello%2C%20I%27d%20like%20to%20get%20a%20free%20quote'
@@ -71,16 +73,40 @@ const ORG_JSON_LD = {
   identifier: { '@type': 'PropertyValue', propertyID: 'Companies House (England & Wales)', value: '16186647' },
 }
 
+
+const FEATURED = [
+  { name: 'Plastic & cosmetic surgery', link: '/treatments/plastic-surgery-istanbul', img: '/treatments/plastic-surgery.jpg', items: 'Rhinoplasty, facelift, breast surgery, liposuction, tummy tuck, BBL, eyelid and ear surgery', price: 'Rhinoplasty from £3,200 · Breast from £6,000' },
+  { name: 'Dental', link: '/treatments/dental-istanbul', img: '/treatments/dental.jpg', items: 'Implants, zirconium crowns and veneers, smile design, orthodontics, root canal', price: 'Implants from £350 each' },
+]
+
+const ROWS: { name: string; link: string; img: string; summary: string; price: string; tag?: string; external?: boolean }[] = [
+  { name: 'Ophthalmology', link: '/treatments/ophthalmology-istanbul', img: '/treatments/ophthalmology.jpg', summary: 'LASIK and laser refractive surgery, cataract and lens replacement, eyelid surgery', price: 'LASIK from £600 per eye' },
+  { name: 'Orthopaedics', link: '/treatments/knee-replacement-turkey', img: '/treatments/orthopaedics.jpg', summary: 'Knee and hip replacement, sports injuries, ligament and cartilage repair', price: 'Knee replacement from £3,500' },
+  { name: 'Neurosurgery', link: '/treatments/neurosurgery-istanbul', img: '/treatments/neurosurgery.jpg', summary: 'Deep brain stimulation, tumour surgery, disc herniation', price: 'DBS from £23,700', tag: 'Specialist assessment' },
+  { name: 'Hair transplantation', link: '/treatments/hair-transplant-istanbul', img: '/hair-transplant.jpg', summary: 'FUE and DHI techniques, PRP for hair restoration', price: 'Contact us for pricing' },
+  { name: 'Aesthetic medicine', link: WA_URL, img: '/treatments/aesthetic.jpg', summary: 'Mesotherapy, Hydrafacial, Scarlet X skin tightening', price: 'From £180', external: true },
+]
+
+const ICON = { width: 22, height: 22, viewBox: '0 0 24 24', fill: 'none', stroke: 'currentColor', strokeWidth: 1.5, strokeLinecap: 'round', strokeLinejoin: 'round' } as const
+
+const COORD = [
+  { icon: <svg {...ICON}><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>, t: 'Airport transfer', d: 'Pre-confirmed transfers between airport, hotel and hospital.' },
+  { icon: <svg {...ICON}><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg>, t: 'Hotel & accommodation', d: 'Hotels close to your hospital, matched to your recovery needs.' },
+  { icon: <svg {...ICON}><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>, t: 'Interpretation', d: 'A professional interpreter at every appointment.' },
+  { icon: <svg {...ICON}><path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="2"/><path d="M9 12h6M9 16h4"/></svg>, t: 'GP documentation', d: 'Discharge notes in English, forwarded to your GP on request.' },
+]
+
+const STEPS = [
+  { t: 'Enquiry', d: 'Send us your treatment and preferred dates by WhatsApp or email.', when: 'Day 0' },
+  { t: 'Itemised quote', d: 'Hospital, surgeon, hotel and transfers set out line by line.', when: 'Within 48 hours' },
+  { t: 'Booking', d: 'Hospital, hotel and transfers confirmed; pre-operative instructions sent.', when: 'After you accept' },
+  { t: 'Treatment', d: 'An interpreter at every appointment and full liaison with the hospital.', when: 'In Istanbul' },
+  { t: 'GP documents', d: 'Discharge notes in English forwarded to your GP.', when: 'On request' },
+]
+
 export default function Home() {
-  const [scrolled, setScrolled] = useState(false)
   const [activeTab, setActiveTab] = useState('cosmetic')
   const revealRefs = useRef<HTMLElement[]>([])
-
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 60)
-    window.addEventListener('scroll', onScroll, { passive: true })
-    return () => window.removeEventListener('scroll', onScroll)
-  }, [])
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -99,222 +125,146 @@ export default function Home() {
   const ref = (el: HTMLElement | null) => { if (el && !revealRefs.current.includes(el)) revealRefs.current.push(el) }
 
   return (
-    <>
+    <div className="home">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(ORG_JSON_LD).replace(/</g, '\\u003c') }}
       />
       <style>{`
-        .reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
+        .home{--bg:#FAF8F4;--band:#F2EEE5;--ink:#12202B;--muted:#5B6770;--line:#E6E0D4;--green:#0B6B55;--green-d:#08503F;--soft:#E3F0EA;background:var(--bg);color:var(--ink);font-family:'Inter',sans-serif;-webkit-font-smoothing:antialiased}
+        .home *,.home *::before,.home *::after{box-sizing:border-box}
+        .home a{text-decoration:none;color:inherit}
+        .home .inner{max-width:1160px;margin:0 auto;padding:0 2.5rem}
+        .home .serif,.home h1,.home h2,.home h3{font-family:'DM Serif Display',serif;font-weight:400;color:var(--ink)}
+        .reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
         .reveal.visible{opacity:1;transform:none}
-        .d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}.d4{transition-delay:.4s}
-        *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-        html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased}
-        body{font-family:'Inter',sans-serif;color:#1a1a1a;background:#fff;overflow-x:hidden}
-        a{text-decoration:none;color:inherit}
-        .inner{max-width:1160px;margin:0 auto;padding:0 2.5rem}
-        nav{position:fixed;top:0;left:0;right:0;z-index:500;transition:background .3s,box-shadow .3s}
-        nav.scrolled{background:rgba(255,255,255,.96);backdrop-filter:blur(12px);box-shadow:0 1px 0 rgba(0,0,0,.08)}
-        .nav-inner{height:66px;display:flex;align-items:center;justify-content:space-between}
-        .logo{display:flex;align-items:center}
-        
-        .nav-links{display:flex;gap:2rem;list-style:none;align-items:center}
-        .nav-links a{font-size:13px;color:rgba(255,255,255,.85);transition:color .2s}
-        nav.scrolled .nav-links a{color:#444}
-        .nav-links a:hover{color:#fff}
-        nav.scrolled .nav-links a:hover{color:#085041}
-        .btn-nav{border:1px solid rgba(255,255,255,.5);padding:8px 18px;border-radius:7px;font-size:13px;font-weight:500;color:#fff!important;transition:all .2s}
-        .btn-nav:hover{background:rgba(255,255,255,.15)!important}
-        nav.scrolled .btn-nav{border-color:#085041;color:#085041!important}
-        nav.scrolled .btn-nav:hover{background:#085041!important;color:#fff!important}
-        .hero{min-height:100vh;background:linear-gradient(135deg,rgba(4,46,34,.92) 0%,rgba(8,80,65,.88) 45%,rgba(13,107,85,.85) 100%),url('/hero.jpg') center/cover no-repeat;position:relative;display:flex;flex-direction:column;justify-content:center;overflow:hidden}
-        .hero::before{content:'';position:absolute;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(29,158,117,.25) 0%,transparent 70%);top:-100px;right:-150px;pointer-events:none}
-        .hero::after{content:'';position:absolute;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(225,245,238,.08) 0%,transparent 70%);bottom:-80px;left:-100px;pointer-events:none}
-        .hero-content{position:relative;z-index:2;padding-top:120px;padding-bottom:80px;width:100%}
-        .hero-grid{display:grid;grid-template-columns:1fr;gap:2.5rem;align-items:start}
-        .hero-grid h1{font-size:clamp(34px,4.6vw,58px)}
-        .hero-tag{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);border-radius:100px;padding:6px 16px;font-size:12px;font-weight:500;color:rgba(255,255,255,.9);letter-spacing:.05em;text-transform:uppercase;margin-bottom:2rem}
-        .pulse{width:7px;height:7px;border-radius:50%;background:#4ade80;animation:pulse-dot 2s ease-in-out infinite;flex-shrink:0}
-        @keyframes pulse-dot{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.6;transform:scale(.8)}}
-        h1{font-family:'DM Serif Display',serif;font-size:clamp(42px,5.5vw,72px);line-height:1.08;letter-spacing:-.03em;color:#fff;margin-bottom:1rem;font-weight:400}
-        h1 em{font-style:italic;color:#6ee7b7}
-        .hero-sub{font-size:17px;color:rgba(255,255,255,.72);line-height:1.75;margin-bottom:2.5rem;font-weight:300;max-width:520px}
-        .hero-actions{display:flex;gap:14px;flex-wrap:wrap}
-        .btn-primary{background:#fff;color:#085041;border:none;padding:15px 28px;border-radius:10px;font-size:15px;font-weight:600;display:inline-flex;align-items:center;gap:9px;transition:transform .2s,box-shadow .2s;cursor:pointer;font-family:'Inter',sans-serif;box-shadow:0 4px 24px rgba(0,0,0,.15)}
-        .btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 32px rgba(0,0,0,.2)}
-        .btn-ghost{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.35);padding:15px 28px;border-radius:10px;font-size:15px;display:inline-flex;align-items:center;gap:9px;transition:all .2s;cursor:pointer;font-family:'Inter',sans-serif}
-        .btn-ghost:hover{background:rgba(255,255,255,.1)}
-        .hero-cards{display:flex;flex-direction:column;gap:12px;max-width:440px}
-        .stat-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-        .stat{background:rgba(255,255,255,.1);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.15);border-radius:14px;padding:1.25rem 1.4rem}
-        .stat-n{font-family:'DM Serif Display',serif;font-size:34px;color:#fff;line-height:1;margin-bottom:5px}
-        .stat-n em{font-style:normal;font-size:18px;color:#6ee7b7}
-        .stat-l{font-size:12px;color:rgba(255,255,255,.65);font-weight:300}
-        .patient-card{background:rgba(255,255,255,.1);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.15);border-radius:14px;padding:1.1rem 1.25rem;display:flex;align-items:center;gap:14px}
-        .avatar{width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,#1D9E75,#085041);display:flex;align-items:center;justify-content:center;font-family:'DM Serif Display',serif;font-size:14px;color:#fff;flex-shrink:0}
-        .p-name{font-size:13px;color:#fff;font-weight:500;margin-bottom:3px}
-        .p-detail{font-size:11px;color:rgba(255,255,255,.6)}
-        .v-badge{margin-left:auto;background:rgba(110,231,183,.15);border:1px solid rgba(110,231,183,.3);border-radius:6px;padding:5px 10px;text-align:center;flex-shrink:0}
-        .v-badge-t{font-size:11px;color:#6ee7b7;font-weight:500}
-        .v-badge-s{font-size:10px;color:rgba(110,231,183,.7)}
-        .scroll-hint{position:absolute;bottom:2.5rem;left:50%;transform:translateX(-50%);z-index:2;display:flex;flex-direction:column;align-items:center;gap:8px;color:rgba(255,255,255,.5);font-size:11px;letter-spacing:.08em;text-transform:uppercase}
-        .scroll-arrow{width:20px;height:20px;border-right:1.5px solid rgba(255,255,255,.4);border-bottom:1.5px solid rgba(255,255,255,.4);transform:rotate(45deg);animation:bounce 1.8s ease-in-out infinite;margin-top:4px}
-        @keyframes bounce{0%,100%{transform:rotate(45deg) translateY(0)}50%{transform:rotate(45deg) translateY(5px)}}
-        .trust{background:#fff;border-bottom:1px solid #f0ede8;padding:.9rem 0}
-        .trust-inner{display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap}
-        .trust-label{font-size:11px;text-transform:uppercase;letter-spacing:.07em;color:#bbb;font-weight:500;flex-shrink:0}
-        .trust-sep{width:1px;height:18px;background:#eee;flex-shrink:0}
-        .trust-items{display:flex;gap:1.75rem;flex-wrap:wrap}
-        .ti{display:flex;align-items:center;gap:7px;font-size:12.5px;color:#555}
-        .ti-dot{width:7px;height:7px;border-radius:50%;background:#1D9E75;flex-shrink:0}
-        .sec{padding:7rem 0}
-        .sec.bg{background:#fafaf9}
-        .sec-border{border-top:1px solid #f0ede8;border-bottom:1px solid #f0ede8}
-        .kicker{font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#1D9E75;margin-bottom:1rem}
-        h2{font-family:'DM Serif Display',serif;font-size:clamp(28px,3.5vw,44px);font-weight:400;color:#1a1a1a;letter-spacing:-.02em;line-height:1.15;margin-bottom:1rem}
-        .sec-sub{font-size:16px;color:#666;line-height:1.7;font-weight:300;max-width:560px;margin-bottom:3rem}
-        .tl-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-bottom:2.5rem}
-        .tl-box{border-radius:16px;padding:2rem}
-        .tl-box.nhs{background:#fff;border:1px solid #f0ede8}
-        .tl-box.oht{background:linear-gradient(135deg,#042e22,#085041)}
-        .tl-head{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:1.5rem}
-        .tl-head.red{color:#dc2626}
-        .tl-head.green{color:#6ee7b7}
-        .tl-step{display:flex;gap:14px;align-items:flex-start;padding-bottom:1.25rem}
-        .tl-step:last-child{padding-bottom:0}
-        .tl-left{display:flex;flex-direction:column;align-items:center;flex-shrink:0}
-        .tl-circle{width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:600}
-        .tl-circle.red{background:#fee2e2;color:#dc2626}
-        .tl-circle.green{background:rgba(110,231,183,.2);color:#6ee7b7}
-        .tl-line{width:1px;flex:1;min-height:20px;margin-top:4px}
-        .tl-line.red{background:#fecaca}
-        .tl-line.green{background:rgba(110,231,183,.2)}
-        .tl-label{font-size:14px;font-weight:500;color:#1a1a1a;margin-bottom:2px}
-        .tl-box.oht .tl-label{color:#fff}
-        .tl-wait{font-size:12px;color:#dc2626;font-weight:500}
-        .tl-ok{font-size:12px;color:#6ee7b7;font-weight:500}
-        .tl-total{border-radius:10px;padding:.9rem 1.25rem;margin-top:1.5rem;font-size:14px;font-weight:600}
-        .tl-total.bad{background:#fee2e2;color:#dc2626}
-        .tl-total.good{background:rgba(110,231,183,.15);color:#6ee7b7;border:1px solid rgba(110,231,183,.2)}
-        .tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:1.5rem}
-        .tab{background:#f5f4f2;border:1px solid transparent;padding:9px 18px;border-radius:100px;font-size:13px;font-weight:500;cursor:pointer;font-family:'Inter',sans-serif;color:#555;transition:all .2s}
-        .tab.active,.tab:hover{background:#085041;color:#fff}
-        .table-wrap{background:#fff;border:1px solid #f0ede8;border-radius:16px;overflow:hidden;overflow-x:auto;-webkit-overflow-scrolling:touch}
-        table{width:100%;border-collapse:collapse;min-width:500px}
-        th{font-size:11px;text-transform:uppercase;letter-spacing:.07em;color:#bbb;font-weight:500;padding:1rem 1.25rem;text-align:left;background:#fafaf9;border-bottom:1px solid #f0ede8}
-        td{padding:1rem 1.25rem;border-bottom:1px solid #fafaf9;font-size:14px;color:#1a1a1a}
-        tr:last-child td{border-bottom:none}
-        tr:hover td{background:#fafaf9}
-        .td-oht{color:#085041;font-weight:600}
-        .td-nhs{color:#aaa}
-        .saving{background:#e8faf3;color:#085041;font-weight:600;border-radius:20px;padding:4px 12px;font-size:12px;white-space:nowrap;display:inline-block}
-        .table-note{font-size:12px;color:#bbb;padding:1rem 1.25rem;border-top:1px solid #f5f4f2}
-        .neuro-warn{background:#fffbeb;border:1px solid #fde68a;border-radius:10px;padding:.85rem 1.1rem;margin-bottom:1rem;font-size:12.5px;color:#92400e;line-height:1.6}
-        .tx-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
-        .tx-card{background:#fff;border:1px solid #f0ede8;border-radius:16px;padding:1.5rem;transition:transform .25s,box-shadow .25s,border-color .25s}
-        .tx-card:hover{transform:translateY(-4px);box-shadow:0 12px 40px rgba(0,0,0,.08);border-color:#d1f5e8}
-        .tx-card.neuro{border-left:3px solid #f59e0b}
-        .tx-icon{width:44px;height:44px;background:linear-gradient(135deg,#e8faf3,#c6f0de);border-radius:12px;display:flex;align-items:center;justify-content:center;margin-bottom:1rem;font-size:20px}
-        .tx-icon.neuro-icon{background:linear-gradient(135deg,#fef3e2,#fde68a)}
-        .tx-name{font-size:15px;font-weight:600;margin-bottom:.6rem;color:#1a1a1a}
-        .tx-list{list-style:none;padding:0;margin-bottom:.85rem}
-        .tx-list li{font-size:12.5px;color:#777;line-height:1.8;padding-left:12px;position:relative}
-        .tx-list li::before{content:'·';position:absolute;left:0;color:#1D9E75;font-weight:700}
-        .tx-price{font-size:12.5px;color:#085041;font-weight:600;padding-top:.85rem;border-top:1px solid #f5f4f2}
-        .neuro-badge{display:inline-block;font-size:10px;background:#fef3e2;color:#92400e;border:1px solid #fde68a;border-radius:4px;padding:2px 8px;margin-bottom:.6rem;font-weight:600}
-        .coord-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
-        .coord-card{background:#fff;border:1px solid #f0ede8;border-radius:16px;padding:2rem 1.5rem;text-align:center;transition:transform .25s,box-shadow .25s}
-        .coord-card:hover{transform:translateY(-3px);box-shadow:0 8px 30px rgba(0,0,0,.06)}
-        .coord-icon{width:52px;height:52px;background:#E1F5EE;border-radius:12px;display:flex;align-items:center;justify-content:center;margin:0 auto 1.25rem;color:#085041}
-        .coord-t{font-size:15px;font-weight:600;margin-bottom:.5rem}
-        .coord-d{font-size:13px;color:#777;line-height:1.65;font-weight:300}
-        .steps{display:grid;grid-template-columns:repeat(5,1fr);position:relative;margin-top:3rem}
-        .steps::before{content:'';position:absolute;top:22px;left:10%;right:10%;height:1px;background:linear-gradient(90deg,transparent,#c6f0de 20%,#c6f0de 80%,transparent)}
-        .step{text-align:center;padding:0 .75rem;position:relative;z-index:1}
-        .step-circle{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#085041,#1D9E75);display:flex;align-items:center;justify-content:center;margin:0 auto 1.25rem;font-size:15px;font-weight:600;color:#fff;box-shadow:0 4px 14px rgba(8,80,65,.3)}
-        .step-t{font-size:14px;font-weight:600;margin-bottom:.4rem}
-        .step-d{font-size:12px;color:#888;line-height:1.6}
-        .why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-        .why-card{background:#fff;border:1px solid #f0ede8;border-radius:16px;padding:2rem;transition:transform .25s,box-shadow .25s}
-        .why-card:hover{transform:translateY(-3px);box-shadow:0 8px 30px rgba(0,0,0,.06)}
-        .why-card.dark{background:linear-gradient(135deg,#042e22,#085041);border-color:transparent}
-        .why-icon{width:40px;height:40px;background:#f0faf5;border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:1.1rem;font-size:18px}
-        .why-card.dark .why-icon{background:rgba(255,255,255,.1)}
-        .why-t{font-size:15px;font-weight:600;margin-bottom:.5rem}
-        .why-card.dark .why-t{color:#fff}
-        .why-d{font-size:13px;color:#666;line-height:1.7;font-weight:300}
-        .why-card.dark .why-d{color:rgba(255,255,255,.65)}
-        .cta-box{background:linear-gradient(135deg,#042e22 0%,#085041 60%,#0d7a60 100%);border-radius:24px;padding:4rem;text-align:center;position:relative;overflow:hidden}
-        .cta-box h2{color:#fff;margin-bottom:1rem}
-        .cta-box p{font-size:16px;color:rgba(255,255,255,.65);font-weight:300;line-height:1.7;margin-bottom:2.5rem;max-width:500px;margin-left:auto;margin-right:auto}
+        @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+        .eyebrow{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--green);font-weight:600;margin-bottom:1.1rem}
+        .btn{display:inline-flex;align-items:center;gap:8px;padding:15px 26px;border-radius:10px;font-size:15px;font-weight:600;transition:background .2s,transform .2s;font-family:'Inter',sans-serif;cursor:pointer;border:none}
+        .btn-primary{background:var(--green);color:#fff}
+        .btn-primary:hover{background:var(--green-d);transform:translateY(-1px)}
+        .btn-link{color:var(--ink);font-size:15px;font-weight:500;border-bottom:1px solid var(--ink);padding-bottom:2px}
+        .btn-link:hover{color:var(--green);border-color:var(--green)}
+        .hero{padding:56px 0 56px}
+        .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:4.5rem;align-items:center}
+        .hero h1{font-size:clamp(38px,5vw,64px);line-height:1.04;letter-spacing:-.025em;margin-bottom:1.5rem}
+        .hero h1 em{font-style:italic;color:var(--green)}
+        .hero-sub{font-size:18px;line-height:1.65;color:var(--muted);max-width:530px;margin-bottom:2.25rem}
+        .hero-actions{display:flex;gap:1.75rem;align-items:center;flex-wrap:wrap}
+        .hero-media{position:relative;border-radius:22px;overflow:hidden;aspect-ratio:4/5;background:var(--band)}
+        .hero-note{position:absolute;left:16px;right:16px;bottom:16px;background:rgba(250,248,244,.95);backdrop-filter:blur(8px);border-radius:14px;padding:14px 18px;font-size:13px;line-height:1.55;color:var(--ink)}
+        .hero-note b{display:block;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--green);margin-bottom:3px}
+        .trust{border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+        .trust-inner{display:flex;gap:.75rem 2.25rem;flex-wrap:wrap;padding-top:1.1rem;padding-bottom:1.1rem}
+        .ti{display:flex;align-items:center;gap:9px;font-size:13px;color:var(--muted)}
+        .ti i{width:6px;height:6px;border-radius:50%;background:var(--green);flex-shrink:0}
+        .sec{padding:6.5rem 0}
+        .sec.band{background:var(--band)}
+        .sec-head{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:end;margin-bottom:2.75rem}
+        .sec-head h2{font-size:clamp(30px,3.6vw,46px);line-height:1.1;letter-spacing:-.02em}
+        .sec-sub{font-size:16px;line-height:1.7;color:var(--muted)}
+        .tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:1.25rem}
+        .tab{background:transparent;border:1px solid var(--line);padding:9px 18px;border-radius:100px;font-size:13px;font-weight:500;cursor:pointer;font-family:'Inter',sans-serif;color:var(--muted);transition:all .2s}
+        .tab:hover{border-color:var(--green);color:var(--green)}
+        .tab.active{background:var(--ink);border-color:var(--ink);color:#fff}
+        .table-wrap{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden}
+        .home table{width:100%;border-collapse:collapse}
+        .home th{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:600;padding:1rem 1.4rem;text-align:left;border-bottom:1px solid var(--line)}
+        .home td{padding:1.05rem 1.4rem;border-bottom:1px solid #F1EDE4;font-size:14.5px}
+        .home tr:last-child td{border-bottom:none}
+        .home td:first-child{font-weight:500}
+        .td-uk{color:var(--muted)}
+        .td-oht{color:var(--green-d);font-weight:600}
+        .saving{background:var(--soft);color:var(--green-d);font-weight:600;border-radius:20px;padding:4px 12px;font-size:12px;white-space:nowrap;display:inline-block}
+        .table-foot{padding:1rem 1.4rem;border-top:1px solid var(--line);font-size:12.5px;color:var(--muted);line-height:1.65}
+        .table-foot summary{cursor:pointer;color:var(--green-d);font-weight:500;margin-top:.4rem}
+        .table-foot p{margin-top:.6rem}
+        .neuro-warn{background:#FFF8E6;border:1px solid #F2DDA4;border-radius:10px;padding:.85rem 1.1rem;margin-bottom:1rem;font-size:13px;color:#7A5410;line-height:1.6}
+        .feat-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-bottom:2rem}
+        .feat{display:block;background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;transition:transform .25s,box-shadow .25s}
+        .feat:hover{transform:translateY(-3px);box-shadow:0 14px 40px rgba(18,32,43,.08)}
+        .feat-img{position:relative;aspect-ratio:16/9;background:var(--band)}
+        .feat-body{padding:1.5rem 1.6rem 1.7rem}
+        .feat h3{font-size:26px;letter-spacing:-.01em;margin-bottom:.5rem}
+        .feat-items{font-size:14px;color:var(--muted);line-height:1.65;margin-bottom:1rem}
+        .feat-price{font-size:13.5px;font-weight:600;color:var(--green-d)}
+        .row-list{border-top:1px solid var(--line)}
+        .row{display:grid;grid-template-columns:72px 1fr auto 24px;gap:1.25rem;align-items:center;padding:1.1rem .25rem;border-bottom:1px solid var(--line);transition:background .2s}
+        .row:hover{background:rgba(255,255,255,.6)}
+        .row-img{position:relative;width:72px;height:56px;border-radius:10px;overflow:hidden;background:var(--band)}
+        .row-name{font-family:'DM Serif Display',serif;font-size:20px}
+        .row-sum{font-size:13.5px;color:var(--muted);margin-top:2px}
+        .row-tag{display:inline-block;font-size:11px;background:#FFF8E6;color:#7A5410;border-radius:4px;padding:2px 8px;margin-left:8px;font-family:'Inter',sans-serif;vertical-align:middle}
+        .row-price{font-size:13.5px;font-weight:600;color:var(--green-d);text-align:right}
+        .row-arrow{color:var(--muted)}
+        .also{font-size:14px;color:var(--muted);margin-top:1.5rem;line-height:1.7}
+        .also a{color:var(--green-d);font-weight:500;border-bottom:1px solid currentColor}
+        .coord-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2rem}
+        .coord-icon{width:48px;height:48px;border-radius:12px;background:#fff;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;color:var(--green);margin-bottom:1.1rem}
+        .coord-t{font-family:'DM Serif Display',serif;font-size:20px;margin-bottom:.5rem}
+        .coord-d{font-size:14px;color:var(--muted);line-height:1.65}
+        .fine{font-size:12.5px;color:var(--muted);margin-top:2.5rem;line-height:1.7;max-width:760px}
+        .how-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:5rem;align-items:start}
+        .how-side{position:sticky;top:96px}
+        .how-side h2{font-size:clamp(30px,3.6vw,46px);line-height:1.1;letter-spacing:-.02em;margin-bottom:1rem}
+        .step{display:grid;grid-template-columns:56px 1fr auto;gap:1rem;padding:1.5rem 0;border-bottom:1px solid var(--line);align-items:start}
+        .step:first-child{border-top:1px solid var(--line)}
+        .step-n{font-family:'DM Serif Display',serif;font-size:34px;color:var(--green);line-height:1}
+        .step-t{font-size:17px;font-weight:600;margin-bottom:.3rem}
+        .step-d{font-size:14px;color:var(--muted);line-height:1.65}
+        .step-when{font-size:12px;font-weight:600;color:var(--green-d);background:var(--soft);border-radius:20px;padding:4px 12px;white-space:nowrap}
+        .rev-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-top:2rem}
+        .cta-box{background:var(--ink);border-radius:24px;padding:4.5rem 3rem;text-align:center}
+        .cta-box h2{color:#fff;font-size:clamp(30px,3.6vw,46px);margin-bottom:1rem}
+        .cta-box p{font-size:16px;color:rgba(255,255,255,.7);line-height:1.7;margin:0 auto 2.25rem;max-width:520px}
         .cta-actions{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
-        .btn-cta-w{background:#fff;color:#085041;border:none;padding:15px 30px;border-radius:10px;font-size:15px;font-weight:600;display:inline-flex;align-items:center;gap:9px;cursor:pointer;font-family:'Inter',sans-serif;transition:transform .2s,box-shadow .2s}
-        .btn-cta-w:hover{transform:translateY(-2px);box-shadow:0 8px 30px rgba(0,0,0,.2)}
-        .btn-cta-o{background:transparent;color:rgba(255,255,255,.85);border:1px solid rgba(255,255,255,.3);padding:15px 30px;border-radius:10px;font-size:15px;display:inline-flex;align-items:center;gap:9px;cursor:pointer;font-family:'Inter',sans-serif;transition:all .2s}
-        .btn-cta-o:hover{background:rgba(255,255,255,.1);color:#fff}
-        .wa-pill{display:inline-flex;align-items:center;gap:10px;background:#1D9E75;color:#fff;border:none;border-radius:100px;padding:14px 24px;font-size:14px;font-weight:500;cursor:pointer;font-family:'Inter',sans-serif;transition:background .2s,transform .2s;margin-bottom:2rem}
-        .wa-pill:hover{background:#085041;transform:translateY(-1px)}
-        footer{background:#111;padding:3rem 0 2rem}
-        .footer-top{display:flex;justify-content:space-between;flex-wrap:wrap;gap:2rem;padding-bottom:2rem;border-bottom:1px solid #222;margin-bottom:1.5rem}
-        .footer-brand{font-size:12.5px;color:#666;line-height:1.7;max-width:320px}
-        .footer-brand-name{font-family:'DM Serif Display',serif;font-size:16px;color:#fff;margin-bottom:.75rem}
-        .footer-links{display:flex;gap:3rem;flex-wrap:wrap}
-        .footer-col h4{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:#555;font-weight:600;margin-bottom:1rem}
-        .footer-col a{display:block;font-size:13px;color:#555;margin-bottom:.5rem;transition:color .2s}
-        .footer-col a:hover{color:#6ee7b7}
-        .footer-legal{font-size:11.5px;color:#444;line-height:1.8}
-        .footer-legal em{color:#333;font-style:normal;font-size:11px}
+        .btn-cta-w{background:#fff;color:var(--ink);padding:15px 28px;border-radius:10px;font-size:15px;font-weight:600;display:inline-flex}
+        .btn-cta-o{border:1px solid rgba(255,255,255,.35);color:#fff;padding:15px 28px;border-radius:10px;font-size:15px;display:inline-flex}
+        .btn-cta-o:hover{background:rgba(255,255,255,.08)}
+        .wa-pill{display:inline-flex;align-items:center;gap:10px;background:var(--green);color:#fff;border-radius:100px;padding:14px 24px;font-size:14px;font-weight:500;margin-bottom:2rem}
+        .wa-pill:hover{background:var(--green-d)}
+        .home footer{background:var(--ink);padding:3.5rem 0 2rem}
+        .footer-top{display:flex;justify-content:space-between;flex-wrap:wrap;gap:2rem;padding-bottom:2rem;border-bottom:1px solid rgba(255,255,255,.12);margin-bottom:1.5rem}
+        .footer-brand{font-size:13px;color:rgba(255,255,255,.6);line-height:1.7;max-width:330px}
+        .footer-brand-name{font-family:'DM Serif Display',serif;font-size:20px;color:#fff;margin-bottom:.75rem}
+        .footer-links{display:flex;gap:3.5rem;flex-wrap:wrap}
+        .footer-col h4{font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:rgba(255,255,255,.45);font-weight:600;margin-bottom:1rem}
+        .footer-col a{display:block;font-size:13.5px;color:rgba(255,255,255,.75);margin-bottom:.55rem}
+        .footer-col a:hover{color:#fff}
+        .footer-legal{font-size:12px;color:rgba(255,255,255,.5);line-height:1.8}
+        .footer-legal a{color:rgba(255,255,255,.7)}
+        .footer-legal em{font-style:normal;color:rgba(255,255,255,.4)}
         .fbadges{display:flex;gap:8px;flex-wrap:wrap;margin-top:1rem}
-        .fbadge{display:flex;align-items:center;gap:5px;font-size:11px;color:#555;border:1px solid #222;border-radius:5px;padding:4px 10px}
-        .fbadge-dot{width:6px;height:6px;border-radius:50%;background:#1D9E75;flex-shrink:0}
-        @media(max-width:1024px){.tx-grid{grid-template-columns:repeat(2,1fr)}.why-grid{grid-template-columns:repeat(2,1fr)}.coord-grid{grid-template-columns:repeat(2,1fr)}.hero-grid{grid-template-columns:1fr}.hero-cards{display:none}}
-        @media(max-width:768px){.sec{padding:5rem 0}.tl-grid{grid-template-columns:1fr}.steps{grid-template-columns:1fr;gap:1.25rem}.steps::before{display:none}.step{text-align:left;display:flex;align-items:flex-start;gap:14px}.step-circle{flex-shrink:0;margin:0}.cta-box{padding:2.5rem 1.5rem}.nav-links{display:none}h1{font-size:38px}}
-        @media(max-width:480px){.inner{padding:0 1.25rem}.tx-grid{grid-template-columns:1fr}.why-grid{grid-template-columns:1fr}.coord-grid{grid-template-columns:1fr}.cta-actions{flex-direction:column;align-items:center}}
+        .fbadge{display:flex;align-items:center;gap:6px;font-size:11px;color:rgba(255,255,255,.65);border:1px solid rgba(255,255,255,.18);border-radius:5px;padding:4px 10px}
+        .fbadge-dot{width:6px;height:6px;border-radius:50%;background:#5CC9A4}
+        @media(max-width:1024px){.coord-grid{grid-template-columns:repeat(2,1fr)}.how-grid{grid-template-columns:1fr;gap:2.5rem}.how-side{position:static}}
+        @media(max-width:900px){.hero-grid{grid-template-columns:1fr;gap:2.5rem}.hero-media{aspect-ratio:16/11}.sec-head{grid-template-columns:1fr;gap:1rem}.feat-grid{grid-template-columns:1fr}.rev-grid{grid-template-columns:1fr}}
+        @media(max-width:768px){.sec{padding:4.5rem 0}.row{grid-template-columns:64px 1fr 20px}.row-price{display:none}.step{grid-template-columns:44px 1fr}.step-when{grid-column:2;justify-self:start}.cta-box{padding:3rem 1.5rem}}
+        @media(max-width:640px){.home thead{display:none}.home table{min-width:0}.home tr{display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;padding:1rem 1.1rem;border-bottom:1px solid #F1EDE4}.home tr:last-child{border-bottom:none}.home td{padding:0;border:0}.home td:first-child{grid-column:1/-1;font-family:'DM Serif Display',serif;font-size:18px;font-weight:400}.home td[data-l]::before{content:attr(data-l);display:block;font-size:10.5px;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);margin-bottom:2px}}
+        @media(max-width:480px){.home .inner{padding:0 1.25rem}.coord-grid{grid-template-columns:1fr}.hero{padding-top:36px}}
       `}</style>
 
-      {/* NAV */}
-      <nav className={scrolled ? 'scrolled' : ''}>
-        <div className="inner nav-inner">
-          <a href="/" className="logo"><img src="/logo.png" alt="Ocean Health &amp; Travel" style={{height:"44px",width:"auto",display:"block",filter:scrolled?"none":"brightness(0) invert(1)"}} /></a>
-          <ul className="nav-links">
-            <li><a href="#compare">Why Istanbul</a></li>
-            <li><a href="#services">Treatments</a></li>
-            <li><a href="#coordination">What we provide</a></li>
-            <li><a href="#how-it-works">How it works</a></li>
-            <li><a href={WA_URL} target="_blank" className="btn-nav">Free quote</a></li>
-          </ul>
-        </div>
-      </nav>
+      <Nav />
 
       {/* HERO */}
       <section className="hero">
-        <div className="inner hero-content">
-          <div className="hero-grid">
-            <div>
-              <h1 className="reveal d1" ref={ref}>
-                Private treatment in Istanbul,<br />
-                arranged by one coordinator.
-              </h1>
-              <p className="hero-sub reveal d2" ref={ref}>
-                We arrange private treatment at JCI-accredited hospitals in Istanbul: itemised quotes, hotel and transfers, an interpreter at your appointments, and discharge notes for your GP. Hospitals pay us; you pay no coordination fee.
-              </p>
-              <div className="hero-actions reveal d3" ref={ref}>
-                <a href={WA_URL} target="_blank" className="btn-primary">Get a free quote</a>
-                <a href="#compare" className="btn-ghost">See how it compares ↓</a>
-              </div>
+        <div className="inner hero-grid">
+          <div>
+            <div className="eyebrow">UK-registered coordinator · Istanbul</div>
+            <h1>Private treatment in Istanbul, <em>arranged by one coordinator.</em></h1>
+            <p className="hero-sub">
+              We arrange private treatment at JCI-accredited hospitals in Istanbul: itemised quotes, hotel and transfers, an interpreter at your appointments, and discharge notes for your GP. Hospitals pay us; you pay no coordination fee.
+            </p>
+            <div className="hero-actions">
+              <a href={WA_URL} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Get a free quote</a>
+              <a href="#compare" className="btn-link">See how prices compare</a>
             </div>
-            <div className="hero-cards reveal d2" ref={ref}>
-              <div className="patient-card">
-                <div className="avatar">SS</div>
-                <div>
-                  <div className="p-name">Savannah S.</div>
-                  <div className="p-detail" style={{display:'flex',alignItems:'center',gap:'5px',flexWrap:'wrap'}}><span>Dental (full crowns) · Google Review</span><span style={{display:'flex',gap:'1px'}}>{[1,2,3,4,5].map(i => <svg key={i} width="10" height="10" viewBox="0 0 24 24" fill="#f59e0b" stroke="none"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>)}</span></div>
-                </div>
-                <div className="v-badge">
-                  <div className="v-badge-t">Verified</div>
-                  <div className="v-badge-s">patient</div>
-                </div>
-              </div>
+          </div>
+          <div className="hero-media">
+            <Image src="/hero.jpg" alt="The Bosphorus Bridge and Istanbul skyline" fill priority sizes="(max-width:900px) 100vw, 520px" style={{objectFit:'cover'}} />
+            <div className="hero-note">
+              <b>Itemised quote within 48 hours</b>
+              Names the hospital and surgeon before you commit to anything.
             </div>
           </div>
         </div>
@@ -323,51 +273,21 @@ export default function Home() {
       {/* TRUST BAR */}
       <div className="trust">
         <div className="inner trust-inner">
-          <span className="trust-label">Credentials</span>
-          <div className="trust-sep"></div>
-          <div className="trust-items">
-            {['UK Companies House no. 16186647','ICO registered · UK GDPR','JCI-accredited hospitals'].map(t => (
-              <div key={t} className="ti"><div className="ti-dot"></div>{t}</div>
-            ))}
-          </div>
+          {['UK Companies House no. 16186647','ICO registered · UK GDPR','JCI-accredited hospitals','No coordination fee to patients'].map(t => (
+            <div key={t} className="ti"><i></i>{t}</div>
+          ))}
         </div>
       </div>
 
-      {/* NHS COMPARISON */}
-      <section className="sec bg sec-border" id="compare">
+      {/* PRICE COMPARISON */}
+      <section className="sec" id="compare">
         <div className="inner">
-          <div className="reveal" ref={ref}>
-            <div className="kicker">Why patients choose Turkey</div>
-            <h2>18 months vs. 2&ndash;3 weeks.</h2>
-            <p className="sec-sub">NHS waiting lists for elective procedures have reached historic highs. Ocean Health &amp; Travel provides coordinator-led access to the internationally accredited hospitals — in a fraction of the time, and at significantly lower cost.</p>
-          </div>
-          <div className="tl-grid reveal" ref={ref}>
-            <div className="tl-box nhs">
-              <div className="tl-head red">NHS pathway</div>
-              {[['GP referral','Week 0'],['Outpatient consultation','6–8 month wait'],['Pre-operative assessment','Further delay'],['Surgery','12–18+ months from GP']].map(([label,wait],i,arr) => (
-                <div key={label} className="tl-step">
-                  <div className="tl-left">
-                    <div className="tl-circle red">{i+1}</div>
-                    {i<arr.length-1 && <div className="tl-line red"></div>}
-                  </div>
-                  <div><div className="tl-label">{label}</div><div className="tl-wait">{wait}</div></div>
-                </div>
-              ))}
-              <div className="tl-total bad">NHS total: 18+ months</div>
+          <div className="sec-head reveal" ref={ref}>
+            <div>
+              <div className="eyebrow">Prices</div>
+              <h2>Compare before you decide.</h2>
             </div>
-            <div className="tl-box oht">
-              <div className="tl-head green">Ocean Health pathway</div>
-              {[['Contact us via WhatsApp','Day 0'],['Itemised quote & treatment plan','Within 48 hours'],['Hotel & transfer confirmed','Days 3–7'],['Surgery in Istanbul','2–3 weeks from first contact']].map(([label,ok],i,arr) => (
-                <div key={label} className="tl-step">
-                  <div className="tl-left">
-                    <div className="tl-circle green">{i+1}</div>
-                    {i<arr.length-1 && <div className="tl-line green"></div>}
-                  </div>
-                  <div><div className="tl-label">{label}</div><div className="tl-ok">{ok}</div></div>
-                </div>
-              ))}
-              <div className="tl-total good">Ocean Health total: 2–3 weeks</div>
-            </div>
+            <p className="sec-sub">Indicative UK private ranges set against our Istanbul starting prices. Every quote is itemised, so you can check it line by line against a UK provider.</p>
           </div>
 
           <div className="reveal" ref={ref}>
@@ -386,131 +306,107 @@ export default function Home() {
                   {procedures[activeTab].rows.map(row => (
                     <tr key={row[0]}>
                       <td>{row[0]}</td>
-                      <td className="td-nhs">{row[1]}</td>
-                      <td className="td-oht">{row[2]}</td>
-                      <td><span className="saving">{row[3]}</span></td>
+                      <td className="td-uk" data-l={procedures[activeTab].headers[1]}>{row[1]}</td>
+                      <td className="td-oht" data-l={procedures[activeTab].headers[2]}>{row[2]}</td>
+                      <td data-l={procedures[activeTab].headers[3]}><span className="saving">{row[3]}</span></td>
                     </tr>
                   ))}
                 </tbody>
               </table>
-              <div className="table-note">UK figures are indicative ranges based on published prices from UK private providers; Istanbul figures are starting prices subject to individual clinical assessment. Percentages compare our starting price with the UK range shown; &ldquo;up to&rdquo; figures use the top of that range, and &ldquo;Comparable&rdquo; or &ldquo;Varies&rdquo; means a like-for-like saving cannot be shown. No coordination fee is charged to patients. We are paid by partner hospitals, which may influence which hospitals we work with; your itemised quote names the hospital and surgeon before you commit. Flights not included. Elective procedures only.</div>
+              <div className="table-foot">
+                UK figures are indicative ranges from published UK private provider prices. Istanbul figures are starting prices subject to clinical assessment. We are paid by partner hospitals, which may influence which hospitals we work with.
+                <details>
+                  <summary>How we calculate these figures</summary>
+                  <p>UK figures are indicative ranges based on published prices from UK private providers; Istanbul figures are starting prices subject to individual clinical assessment. Percentages compare our starting price with the UK range shown; &ldquo;up to&rdquo; figures use the top of that range, and &ldquo;Comparable&rdquo; or &ldquo;Varies&rdquo; means a like-for-like saving cannot be shown.</p>
+                </details>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* SERVICES */}
-      <section className="sec" id="services">
+      <section className="sec band" id="services">
         <div className="inner">
-          <div className="reveal" ref={ref}>
-            <div className="kicker">What we coordinate</div>
-            <h2>Services we coordinate</h2>
-          </div>
-          <div className="tx-grid">
-            <div style={{gridColumn:'1 / -1',display:'flex',alignItems:'center',gap:'10px',margin:'0 0 4px'}}><span style={{fontSize:'11px',fontWeight:700,letterSpacing:'.08em',textTransform:'uppercase',color:'#1D9E75',whiteSpace:'nowrap'}}>Long NHS waiting lists</span><span style={{flex:1,height:'1px',background:'#e5e7eb'}}></span></div>
-            {[
-              {name:'Plastic & cosmetic surgery',link:'/treatments/plastic-surgery-istanbul',img:'/treatments/plastic-surgery.jpg',items:['Rhinoplasty, facelift, brow lift','Breast augmentation, reduction, lift','Liposuction, tummy tuck, BBL','Ear, lip, eyelid surgery'],price:'Rhinoplasty from £3,200 · Breast from £6,000',cta:''},
-              {name:'Dental',link:'/treatments/dental-istanbul',img:'/treatments/dental.jpg',items:['Dental implants','Zirconium crowns & veneers','Smile design','Orthodontics & root canal'],price:'Implants from £350 each',cta:''},
-              {name:'Ophthalmology',link:'/treatments/ophthalmology-istanbul',img:'/treatments/ophthalmology.jpg',items:['LASIK & laser refractive surgery','Cataract & lens replacement','Eyelid & strabismus surgery'],price:'LASIK from £600 per eye',cta:''},
-              {name:'Orthopaedics',link:'/treatments/knee-replacement-turkey',img:'/treatments/orthopaedics.jpg',items:['Total & partial knee replacement','Hip replacement','Sports & joint injuries','Ligament & cartilage repair'],price:'Knee replacement from £3,500',cta:''},
-            ].map((s,i) => (
-              <div key={s.name} className={`tx-card reveal d${i%4+1}`} ref={ref} onClick={() => s.link && window.location.assign(s.link)} style={{cursor: s.link ? 'pointer' : 'default'}}>
-                <div style={{height:'160px',borderRadius:'10px',overflow:'hidden',marginBottom:'1rem',background:'#f0ede8'}}>
-                  <img src={s.img} alt={s.name} style={{width:'100%',height:'100%',objectFit:'cover',display:'block'}} />
-                </div>
-                <div className="tx-name">{s.name}</div>
-                <ul className="tx-list">{s.items.map(item => <li key={item}>{item}</li>)}</ul>
-                <div className="tx-price">{s.price}</div>
-                {s.link && <div style={{fontSize:'12px',color:'#085041',fontWeight:600,marginTop:'8px'}}>{s.cta || 'Learn more'} →</div>}
-              </div>
-            ))}
-            <div className="tx-card neuro reveal" ref={ref} onClick={() => window.location.assign('/treatments/neurosurgery-istanbul')} style={{cursor:'pointer'}}>
-              <div style={{height:"160px",borderRadius:"10px",overflow:"hidden",marginBottom:"1rem",background:"#f0ede8"}}><img src="/treatments/neurosurgery.jpg" alt="Neurosurgery" style={{width:"100%",height:"100%",objectFit:"cover",display:"block"}} /></div>
-              <div className="tx-name">Neurosurgery</div>
-              <ul className="tx-list">
-                <li>Deep brain stimulation (Parkinson&apos;s)</li>
-                <li>Pituitary adenoma, meningioma</li>
-                <li>Glial tumours, acoustic neuroma</li>
-                <li>Lumbar & cervical disc herniation</li>
-              </ul>
-              <div className="tx-price">DBS from £23,700 · Free pre-assessment</div>
-              <div style={{fontSize:'12px',color:'#e17055',fontWeight:600,marginTop:'8px'}}>Learn more →</div>
+          <div className="sec-head reveal" ref={ref}>
+            <div>
+              <div className="eyebrow">Treatments</div>
+              <h2>What we coordinate.</h2>
             </div>
-            <div style={{gridColumn:'1 / -1',display:'flex',alignItems:'center',gap:'10px',margin:'2rem 0 4px'}}><span style={{fontSize:'11px',fontWeight:700,letterSpacing:'.08em',textTransform:'uppercase',color:'#1D9E75',whiteSpace:'nowrap'}}>Private & aesthetic · no NHS wait</span><span style={{flex:1,height:'1px',background:'#e5e7eb'}}></span></div>
-            {[
-              {name:'Hair transplantation',link:'/treatments/hair-transplant-istanbul',img:'/hair-transplant.jpg',items:['FUE & DHI techniques','PRP for hair restoration'],price:'Contact us for pricing',cta:''},
-              {name:'Aesthetic medicine',link:WA_URL,img:'/treatments/aesthetic.jpg',items:['Mesotherapy & Hydrafacial','Scarlet X skin tightening'],price:'From £180',cta:'Ask via WhatsApp'},
-            ].map((s,i) => (
-              <div key={s.name} className={`tx-card reveal d${i%4+1}`} ref={ref} onClick={() => s.link && window.location.assign(s.link)} style={{cursor: s.link ? 'pointer' : 'default'}}>
-                <div style={{height:'160px',borderRadius:'10px',overflow:'hidden',marginBottom:'1rem',background:'#f0ede8'}}>
-                  <img src={s.img} alt={s.name} style={{width:'100%',height:'100%',objectFit:'cover',display:'block'}} />
-                </div>
-                <div className="tx-name">{s.name}</div>
-                <ul className="tx-list">{s.items.map(item => <li key={item}>{item}</li>)}</ul>
-                <div className="tx-price">{s.price}</div>
-                {s.link && <div style={{fontSize:'12px',color:'#085041',fontWeight:600,marginTop:'8px'}}>{s.cta || 'Learn more'} →</div>}
-              </div>
-            ))}
-            <div className="tx-card reveal" ref={ref} style={{borderStyle:'dashed',background:'#fafaf9'}}>
-              <div className="tx-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#085041" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
-              <div className="tx-name" style={{color:'#aaa'}}>Not listed?</div>
-              <ul className="tx-list" style={{color:'#bbb'}}>
-                <li>We coordinate across all specialties</li>
-                <li>Tell us and we&apos;ll find the right specialist</li>
-              </ul>
-              <div style={{marginTop:'.85rem'}}><a href={WA_URL} target="_blank" style={{fontSize:'13px',color:'#085041',fontWeight:600}}>Ask via WhatsApp →</a></div>
-              <div style={{marginTop:'.5rem'}}><a href="/treatments/urology-istanbul" style={{fontSize:'12px',color:'#aaa'}}>Urology &amp; men&apos;s health →</a></div>
-            </div>
+            <p className="sec-sub">Elective treatment across the specialties below. Each page sets out what is typically involved, what the price covers and how a quote works.</p>
           </div>
+
+          <div className="feat-grid">
+            {FEATURED.map((s,i) => (
+              <a key={s.name} href={s.link} className={`feat reveal d${i+1}`} ref={ref}>
+                <div className="feat-img"><Image src={s.img} alt={s.name} fill sizes="(max-width:900px) 100vw, 560px" style={{objectFit:'cover'}} /></div>
+                <div className="feat-body">
+                  <h3>{s.name}</h3>
+                  <div className="feat-items">{s.items}</div>
+                  <div className="feat-price">{s.price} →</div>
+                </div>
+              </a>
+            ))}
+          </div>
+
+          <div className="row-list reveal" ref={ref}>
+            {ROWS.map(r => (
+              <a key={r.name} href={r.link} className="row" {...(r.external ? {target:'_blank', rel:'noopener noreferrer'} : {})}>
+                <div className="row-img"><Image src={r.img} alt={r.name} fill sizes="72px" style={{objectFit:'cover'}} /></div>
+                <div>
+                  <div className="row-name">{r.name}{r.tag && <span className="row-tag">{r.tag}</span>}</div>
+                  <div className="row-sum">{r.summary}</div>
+                </div>
+                <div className="row-price">{r.price}</div>
+                <div className="row-arrow" aria-hidden="true">→</div>
+              </a>
+            ))}
+          </div>
+          <p className="also">
+            Also: <a href="/treatments/urology-istanbul">urology &amp; men&apos;s health</a>. Treatment not listed? We coordinate across specialties &mdash; <a href={WA_URL} target="_blank" rel="noopener noreferrer">ask us on WhatsApp</a>.
+          </p>
         </div>
       </section>
 
-      {/* COORDINATION */}
-      <section className="sec bg sec-border" id="coordination">
+      {/* WHAT IS INCLUDED */}
+      <section className="sec" id="coordination">
         <div className="inner">
-          <div className="reveal" ref={ref}>
-            <div className="kicker">Included in every package</div>
-            <h2>What is included</h2>
-            <p className="sec-sub">We are a coordinator, not a medical provider. Every package includes the following logistics services.</p>
+          <div className="sec-head reveal" ref={ref}>
+            <div>
+              <div className="eyebrow">Included in every package</div>
+              <h2>What is included.</h2>
+            </div>
+            <p className="sec-sub">We are a coordinator, not a medical provider. Every package includes the following logistics.</p>
           </div>
           <div className="coord-grid">
-            {[
-              {icon:<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>,t:'Airport transfer',d:'Safe, pre-confirmed transfers between airport, hotel, and clinic.'},
-              {icon:<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg>,t:'Hotel & accommodation',d:'High-quality hotels close to your clinic, matched to your recovery needs.'},
-              {icon:<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>,t:'Interpretation',d:'Professional interpreter at every appointment — no communication gaps.'},
-              {icon:<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="2"/><path d="M9 12h6M9 16h4"/></svg>,t:'GP documentation',d:'Discharge notes in English, forwarded to your GP on request.'},
-            ].map((c,i) => (
-              <div key={c.t} className={`coord-card reveal d${i+1}`} ref={ref}>
+            {COORD.map((c,i) => (
+              <div key={c.t} className={`reveal d${i+1}`} ref={ref}>
                 <div className="coord-icon">{c.icon}</div>
                 <div className="coord-t">{c.t}</div>
                 <div className="coord-d">{c.d}</div>
               </div>
             ))}
           </div>
-          <p style={{fontSize:'12px',color:'#bbb',marginTop:'1.5rem',textAlign:'center'}}>
-            Ocean Health &amp; Travel is a coordinator, not a medical provider. All clinical decisions rest with your treating provider. Flights not included. No coordination fee is charged to patients. Elective procedures only — not suitable for emergencies.
+          <p className="fine">
+            Ocean Health &amp; Travel is a coordinator, not a medical provider. All clinical decisions rest with your treating provider. Flights not included. No coordination fee is charged to patients. Elective procedures only &mdash; not suitable for emergencies.
           </p>
         </div>
       </section>
 
-      {/* JOURNEY */}
-      <section className="sec" id="how-it-works">
-        <div className="inner">
-          <div className="reveal" ref={ref} style={{textAlign:'center'}}>
-            <div className="kicker">The process</div>
-            <h2>How it works</h2>
+      {/* HOW IT WORKS */}
+      <section className="sec band" id="how-it-works">
+        <div className="inner how-grid">
+          <div className="how-side reveal" ref={ref}>
+            <div className="eyebrow">The process</div>
+            <h2>How it works.</h2>
+            <p className="sec-sub">From your first message to discharge notes for your GP, one coordinator handles the logistics.</p>
           </div>
-          <div className="steps">
-            {[
-              {n:'1',t:'Enquiry',d:'WhatsApp or email us your treatment and preferred dates'},
-              {n:'2',t:'Quote',d:'Itemised proposal — clinic, surgeon, hotel, transfers — within 48h'},
-              {n:'3',t:'Booking',d:'Clinic, hotel, and transfers confirmed; pre-op instructions sent'},
-              {n:'4',t:'Treatment',d:'Interpreter at every appointment; full clinic liaison'},
-              {n:'5',t:'GP docs',d:'Discharge notes in English forwarded to your GP on request'},
-            ].map((s,i) => (
-              <div key={s.t} className={`step reveal d${i+1}`} ref={ref}>
-                <div className="step-circle">{s.n}</div>
+          <div>
+            {STEPS.map((s,i) => (
+              <div key={s.t} className="step reveal" ref={ref}>
+                <div className="step-n">{i+1}</div>
                 <div><div className="step-t">{s.t}</div><div className="step-d">{s.d}</div></div>
+                <div className="step-when">{s.when}</div>
               </div>
             ))}
           </div>
@@ -518,13 +414,13 @@ export default function Home() {
       </section>
 
       {/* STORIES */}
-      <section className="sec bg" id="stories">
+      <section className="sec band" id="stories">
         <div className="inner">
           <div className="reveal" ref={ref}>
             <div className="kicker">Patient stories</div>
             <h2>Patient reviews</h2>
           </div>
-          <div style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:'16px',marginTop:'2rem'}}>
+          <div className="rev-grid">
             <div style={{background:'#fff',border:'1px solid #f0ede8',borderRadius:'16px',padding:'1.75rem'}}>
               <div style={{display:'flex',gap:'4px',marginBottom:'1rem'}}>
                 {[1,2,3,4,5].map(i => <svg key={i} width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="none"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>)}
@@ -603,7 +499,6 @@ export default function Home() {
                 <a href="/about">About us</a>
                 <a href="#how-it-works">How it works</a>
                 <a href="/faq">FAQ</a>
-                <a href="/blog">Blog</a>
                 <a href="mailto:info@oceanhealthtravel.com">Contact</a>
               </div>
               <div className="footer-col">
@@ -618,13 +513,13 @@ export default function Home() {
           <div className="footer-legal">
             © {new Date().getFullYear()} Ocean Health &amp; Travel Ltd · Registered in England &amp; Wales · Company no. 16186647 · ICO registered · UK GDPR compliant<br />
             London: 17 Green Lanes, N16 9BS · Fethiye: Karagözler Mah., Fevzi Çakmak Cad. No:11/A, Muğla ·{' '}
-            <a href="mailto:info@oceanhealthtravel.com" style={{color:'#555'}}>info@oceanhealthtravel.com</a> ·{' '}
-            <a href="tel:+447441904858" style={{color:'#555'}}>+44 7441 904858</a><br />
+            <a href="mailto:info@oceanhealthtravel.com">info@oceanhealthtravel.com</a> ·{' '}
+            <a href="tel:+447441904858">+44 7441 904858</a><br />
             Flights not included · No coordination fee charged to patients · Coordinator, not a medical provider · Elective procedures only<br />
             <em>Ocean Health &amp; Travel does not provide medical advice. All clinical decisions rest with your treating provider. Patients should seek urgent local medical care if required after returning home. Not suitable for emergencies.</em>
           </div>
         </div>
       </footer>
-    </>
+    </div>
   )
 }
