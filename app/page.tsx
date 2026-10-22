@@ -146,8 +146,9 @@ export default function Home() {
         .home .btn-link{color:var(--ink);font-size:15px;font-weight:500;border-bottom:1px solid var(--ink);padding-bottom:2px}
         .btn-link:hover{color:var(--green);border-color:var(--green)}
         .hero{padding:56px 0 64px}
-        .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:4.5rem;align-items:center}
-        .hero h1{font-size:clamp(36px,4.3vw,54px);line-height:1.04;letter-spacing:-.025em;margin-bottom:1.5rem}
+        .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:4.5rem;align-items:start}
+        .hero-text{padding-top:2.5rem}
+        .hero h1{font-size:clamp(34px,4vw,52px);line-height:1.04;letter-spacing:-.025em;margin-bottom:1.5rem}
         .hero h1 em{font-style:italic;color:var(--green)}
         .hero-sub{font-size:18px;line-height:1.65;color:var(--muted);max-width:530px;margin-bottom:2.25rem}
         .hero-actions{display:flex;gap:1.75rem;align-items:center;flex-wrap:wrap}
@@ -241,7 +242,7 @@ export default function Home() {
         .fbadge{display:flex;align-items:center;gap:6px;font-size:11px;color:rgba(255,255,255,.65);border:1px solid rgba(255,255,255,.18);border-radius:5px;padding:4px 10px}
         .fbadge-dot{width:6px;height:6px;border-radius:50%;background:#5CC9A4}
         @media(max-width:1024px){.coord-grid{grid-template-columns:repeat(2,1fr)}.how-grid{grid-template-columns:1fr;gap:2.5rem}.how-side{position:static}}
-        @media(max-width:900px){.hero-grid{grid-template-columns:1fr;gap:2.5rem}.hero-media{aspect-ratio:16/11}.sec-head{grid-template-columns:1fr;gap:1rem}.feat-grid{grid-template-columns:1fr}.rev-grid{grid-template-columns:1fr}}
+        @media(max-width:900px){.hero-text{padding-top:0}.hero h1 br{display:none}.hero-grid{grid-template-columns:1fr;gap:2.5rem}.hero-media{aspect-ratio:16/11}.sec-head{grid-template-columns:1fr;gap:1rem}.feat-grid{grid-template-columns:1fr}.rev-grid{grid-template-columns:1fr}}
         @media(max-width:768px){.sec{padding:4.5rem 0}.row{grid-template-columns:64px 1fr 20px}.row-price{display:none}.step{grid-template-columns:44px 1fr}.step-when{grid-column:2;justify-self:start}.cta-box{padding:3rem 1.5rem}}
         @media(max-width:640px){.home thead{display:none}.home table{min-width:0}.home tr{display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;padding:1rem 1.1rem;border-bottom:1px solid #F1EDE4}.home tr:last-child{border-bottom:none}.home td{padding:0;border:0}.home td:first-child{grid-column:1/-1;font-family:'DM Serif Display',serif;font-size:18px;font-weight:400}.home td[data-l]::before{content:attr(data-l);display:block;font-size:10.5px;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);margin-bottom:2px}}
         @media(max-width:480px){.home .inner{padding:0 1.25rem}.coord-grid{grid-template-columns:1fr}.hero{padding-top:36px}}
@@ -252,9 +253,9 @@ export default function Home() {
       {/* HERO */}
       <section className="hero">
         <div className="inner hero-grid">
-          <div>
+          <div className="hero-text">
             <div className="eyebrow">UK-registered coordinator · Istanbul</div>
-            <h1>Private treatment in Istanbul, <em>arranged by one coordinator.</em></h1>
+            <h1>Private treatment in Istanbul,<br /><em>arranged by one coordinator.</em></h1>
             <p className="hero-sub">
               We arrange private treatment at JCI-accredited hospitals in Istanbul: itemised quotes, hotel and transfers, an interpreter at your appointments, and discharge notes for your GP. Hospitals pay us; you pay no coordination fee.
             </p>
