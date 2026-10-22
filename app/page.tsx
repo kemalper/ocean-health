@@ -75,7 +75,7 @@ const ORG_JSON_LD = {
 
 
 const FEATURED: { name: string; link: string; img: string; items: string; price: string; tag?: string }[] = [
-  { name: 'Plastic & cosmetic surgery', link: '/treatments/plastic-surgery-istanbul', img: '/treatments/plastic-surgery.jpg', items: 'Rhinoplasty, facelift, breast surgery, liposuction, tummy tuck, BBL, eyelid and ear surgery', price: 'Rhinoplasty from £3,200 · Breast from £6,000' },
+  { name: 'Plastic & cosmetic surgery', link: '/treatments/plastic-surgery-istanbul', img: '/treatments/consultation.jpg', items: 'Rhinoplasty, facelift, breast surgery, liposuction, tummy tuck, BBL, eyelid and ear surgery', price: 'Rhinoplasty from £3,200 · Breast from £6,000' },
   { name: 'Neurosurgery', link: '/treatments/neurosurgery-istanbul', img: '/treatments/neurosurgery.jpg', items: 'Deep brain stimulation, pituitary and glial tumours, acoustic neuroma, disc herniation', price: 'DBS from £23,700 · Free pre-assessment', tag: 'Specialist assessment' },
 ]
 
