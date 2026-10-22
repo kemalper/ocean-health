@@ -148,12 +148,12 @@ export default function Home() {
         .hero{padding:56px 0 64px}
         .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:4.5rem;align-items:center}
         .hero-text{padding-top:0}
-        .hero h1{font-size:clamp(32px,3.5vw,46px);line-height:1.04;letter-spacing:-.025em;margin-bottom:1.5rem}
+        .hero h1{text-wrap:balance;font-size:clamp(32px,3.5vw,46px);line-height:1.04;letter-spacing:-.025em;margin-bottom:1.5rem}
         .hero h1 em{font-style:italic;color:var(--green)}
         .hero-sub{font-size:18px;line-height:1.65;color:var(--muted);max-width:530px;margin-bottom:2.25rem}
         .hero-actions{display:flex;gap:1.75rem;align-items:center;flex-wrap:wrap}
-        .hero-media{position:relative;border-radius:22px;overflow:hidden;aspect-ratio:20/21;background:var(--band)}
-        .hero-fine{margin-top:1.25rem;font-size:13px;color:var(--muted)}
+        .hero-media{position:relative;border-radius:12px;overflow:hidden;aspect-ratio:1/1;background:var(--band)}
+        .hero-fine{margin-top:1.25rem;font-size:13px;line-height:1.6;color:var(--muted)}
         .hero-note{position:absolute;left:16px;right:16px;bottom:16px;background:rgba(250,248,244,.95);backdrop-filter:blur(8px);border-radius:14px;padding:14px 18px;font-size:13px;line-height:1.55;color:var(--ink)}
         .hero-note b{display:block;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--green);margin-bottom:3px}
         .trust{border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
@@ -256,7 +256,7 @@ export default function Home() {
         <div className="inner hero-grid">
           <div className="hero-text">
             <div className="eyebrow">UK-registered coordinator · Istanbul</div>
-            <h1>Private treatment in Istanbul,<br /><em>arranged by<br />one coordinator.</em></h1>
+            <h1>Private treatment in Istanbul, <em>arranged by one coordinator.</em></h1>
             <p className="hero-sub">
               Itemised quotes, hotel, transfers and an interpreter at JCI‑accredited hospitals. Hospitals pay us; you pay no coordination fee.
             </p>
@@ -264,7 +264,7 @@ export default function Home() {
               <a href={WA_URL} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Get a free quote</a>
               <a href="#compare" className="btn-link">See how prices compare</a>
             </div>
-            <p className="hero-fine">Itemised quote within 48 hours. Hospital and surgeon named before you commit.</p>
+            <p className="hero-fine">Itemised quote within 48 hours.<br />Hospital and surgeon named before you commit.</p>
           </div>
           <div className="hero-media">
             <Image src="/hero-welcome.jpg" alt="Hospital reception and waiting area" fill priority sizes="(max-width:900px) 100vw, 520px" style={{objectFit:'cover',objectPosition:'50% 85%',transform:'scale(1.12)',transformOrigin:'50% 85%'}} />
