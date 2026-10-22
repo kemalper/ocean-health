@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Nav from '@/app/components/Nav'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/contact' },
   title: 'Contact Us | Ocean Health & Travel',
   description: 'Get in touch with Ocean Health & Travel. WhatsApp, email, or send us a message. Free quote within 48 hours.',
 }

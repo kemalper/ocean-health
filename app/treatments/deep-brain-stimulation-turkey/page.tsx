@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Nav from '@/app/components/Nav'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/treatments/deep-brain-stimulation-turkey' },
   title: 'Deep Brain Stimulation in Turkey | From £23,700 | Ocean Health & Travel',
   description: 'Deep brain stimulation (DBS) for Parkinson\'s disease in Istanbul from £23,700 — vs. £40,000–£60,000+ at UK private centres. JCI-accredited neurosurgical teams, dedicated coordination. Free pre-assessment — no referral needed to start.',
 }

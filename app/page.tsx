@@ -50,6 +50,26 @@ const procedures: Record<string, { headers: string[], rows: string[][] }> = {
   }
 }
 
+const ORG_JSON_LD = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'Ocean Health & Travel',
+  legalName: 'Ocean Health & Travel Ltd',
+  url: 'https://www.oceanhealthtravel.com',
+  logo: 'https://www.oceanhealthtravel.com/logo.png',
+  description: 'UK-registered medical tourism coordinator connecting international patients with JCI-accredited Istanbul clinics. A coordinator, not a medical provider.',
+  email: 'info@oceanhealthtravel.com',
+  telephone: '+44 7441 904858',
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: '17 Green Lanes',
+    addressLocality: 'London',
+    postalCode: 'N16 9BS',
+    addressCountry: 'GB',
+  },
+  identifier: { '@type': 'PropertyValue', propertyID: 'Companies House (England & Wales)', value: '16186647' },
+}
+
 export default function Home() {
   const [scrolled, setScrolled] = useState(false)
   const [activeTab, setActiveTab] = useState('cosmetic')
@@ -79,6 +99,10 @@ export default function Home() {
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(ORG_JSON_LD).replace(/</g, '\\u003c') }}
+      />
       <style>{`
         .reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
         .reveal.visible{opacity:1;transform:none}

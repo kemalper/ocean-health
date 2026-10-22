@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Nav from '@/app/components/Nav'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/about' },
   title: 'About Us | Ocean Health & Travel — UK-Registered Medical Coordinator',
   description: 'Ocean Health & Travel is a UK-registered medical tourism coordinator connecting international patients with JCI-accredited Istanbul clinics. 15 years of experience in health tourism.',
 }

@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Nav from '@/app/components/Nav'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/treatments/knee-replacement-turkey' },
   title: 'Knee Replacement in Turkey | From £3,500 | Ocean Health & Travel',
   description: 'Knee replacement surgery in Istanbul from £3,500 — vs. £12,000–£16,000 at UK private clinics and 12–18 month NHS wait. JCI-accredited orthopaedic teams, dedicated coordination. Free quote in 48 hours.',
 }

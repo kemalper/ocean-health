@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Nav from '@/app/components/Nav'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/treatments/neurosurgery-istanbul' },
   title: 'Neurosurgery in Istanbul | Ocean Health & Travel',
   description: 'Neurosurgery coordination in Istanbul — deep brain stimulation, disc herniation, brain tumours. JCI-accredited neurosurgical teams. Specialist referral required. Free assessment within 48 hours.',
 }

@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Nav from '@/app/components/Nav'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/treatments/rhinoplasty-istanbul' },
   title: 'Rhinoplasty in Istanbul | From £3,200 | Ocean Health & Travel',
   description: 'Rhinoplasty (nose surgery) in Istanbul from £3,200 — vs. £7,000–£12,000 at UK private clinics. JCI-accredited surgeons, dedicated coordination, 2–3 week timeline. Free quote in 48 hours.',
 }

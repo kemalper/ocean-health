@@ -14,12 +14,17 @@ export async function generateMetadata(): Promise<Metadata> {
       description: 'DBS pre-assessment patient intake form. Complete this form so your case can be reviewed ahead of your consultation.',
       robots: { index: false, follow: false },
       icons: { icon: '/surgicheck-favicon.ico' },
+      metadataBase: new URL('https://dbs.surgicheck.net'),
+      alternates: { canonical: '/' },
+      openGraph: { title: 'DBS Pre-Assessment | SurgiCheck', siteName: 'SurgiCheck', images: ['/surgicheck-logo.png'] },
+      twitter: { card: 'summary', title: 'DBS Pre-Assessment | SurgiCheck', images: ['/surgicheck-logo.png'] },
     }
   }
   return {
     title: 'DBS Pre-Assessment | Free | Ocean Health & Travel',
     description: 'Free pre-assessment for deep brain stimulation (DBS) in Istanbul. Complete the form and have your case reviewed by the neurosurgical team. Reply typically within 48 hours.',
     robots: { index: true, follow: true },
+    alternates: { canonical: '/treatments/dbs-assessment' },
   }
 }
 

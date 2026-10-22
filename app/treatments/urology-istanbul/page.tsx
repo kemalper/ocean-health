@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Nav from '@/app/components/Nav'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/treatments/urology-istanbul' },
   title: 'Urology & Men\'s Health in Istanbul | Ocean Health & Travel',
   description: 'Urology and men\'s health treatment coordination in Istanbul. Penile aesthetics, erectile dysfunction, P-Shot, ESWT, SVF stem cell therapy. JCI-accredited clinics. Free quote in 48 hours.',
 }

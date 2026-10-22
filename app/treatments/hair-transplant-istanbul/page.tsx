@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Nav from '@/app/components/Nav'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/treatments/hair-transplant-istanbul' },
   title: 'Hair Transplant in Istanbul | Ocean Health & Travel',
   description: 'Hair transplant in Istanbul — FUE and DHI techniques at JCI-accredited clinics. Dedicated coordination, fixed pricing, 2–3 day procedure. Free quote in 48 hours.',
 }

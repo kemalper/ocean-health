@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Nav from '@/app/components/Nav'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/complaints-policy' },
   title: 'Complaints Policy | Ocean Health & Travel',
   description: 'Ocean Health & Travel complaints policy. How to raise a concern or complaint about our coordination services.',
 }

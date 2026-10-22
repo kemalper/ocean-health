@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Nav from '@/app/components/Nav'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/brokerage-agreement' },
   title: 'Medical Services Brokerage Agreement | Ocean Health & Travel',
   description: 'Summary of the Ocean Health & Travel Medical Services Brokerage Agreement — terms of coordination service.',
 }

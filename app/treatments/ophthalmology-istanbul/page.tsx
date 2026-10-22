@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Nav from '@/app/components/Nav'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/treatments/ophthalmology-istanbul' },
   title: 'Eye Surgery in Istanbul | Ocean Health & Travel',
   description: 'LASIK from £600 per eye, cataract surgery from £800, premium lens replacement from £1,200. JCI-accredited ophthalmology centres in Istanbul. Free quote in 48 hours.',
 }

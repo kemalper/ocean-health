@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Nav from '@/app/components/Nav'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/pre-operative-assessment' },
   title: 'Pre-Operative Risk Assessment | Ocean Health & Travel',
   description: 'Complete your structured pre-operative risk assessment before plastic surgery in Istanbul. Powered by SurgiCheck — Montgomery-aligned risk screening and informed consent.',
 }

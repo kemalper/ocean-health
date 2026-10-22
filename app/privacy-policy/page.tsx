@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Nav from '@/app/components/Nav'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/privacy-policy' },
   title: 'Privacy Policy | Ocean Health & Travel',
   description: 'Ocean Health & Travel privacy policy. How we collect, use, and protect your personal data under UK GDPR.',
 }

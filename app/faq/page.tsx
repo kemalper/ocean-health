@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Nav from '@/app/components/Nav'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/faq' },
   title: 'FAQ | Ocean Health & Travel — Medical Coordination Istanbul',
   description: 'Frequently asked questions about medical treatment coordination in Istanbul. Costs, timelines, safety, what is included, and how to get started.',
 }

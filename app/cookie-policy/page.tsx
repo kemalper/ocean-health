@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Nav from '@/app/components/Nav'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/cookie-policy' },
   title: 'Cookie Policy | Ocean Health & Travel',
   description: 'Ocean Health & Travel cookie policy. How we use cookies on our website.',
 }

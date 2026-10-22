@@ -14,6 +14,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.oceanhealthtravel.com"),
+  alternates: { canonical: "/" },
   title: "Ocean Health & Travel | UK Medical Tourism Coordinator",
   description: "UK-registered medical tourism coordinator connecting international patients with JCI-accredited Istanbul clinics. Rhinoplasty, dental implants, knee replacement, LASIK and more — 30–70% lower than UK private rates.",
   keywords: "medical tourism Istanbul, Turkey surgery, rhinoplasty Istanbul, dental implants Turkey, knee replacement Turkey, LASIK Istanbul, JCI accredited hospital Istanbul",
@@ -22,6 +24,14 @@ export const metadata: Metadata = {
     description: "JCI-accredited hospitals in Istanbul. 30–70% lower than UK private rates. Dedicated coordination.",
     type: "website",
     locale: "en_GB",
+    siteName: "Ocean Health & Travel",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Ocean Health & Travel — private treatment in Istanbul" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Ocean Health & Travel | UK Medical Tourism Coordinator",
+    description: "JCI-accredited hospitals in Istanbul. 30–70% lower than UK private rates. Dedicated coordination.",
+    images: ["/og-image.jpg"],
   },
 };
 

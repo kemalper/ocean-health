@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Nav from '@/app/components/Nav'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/treatments/dental-implants-turkey' },
   title: 'Dental Implants in Turkey | From £350 | Ocean Health & Travel',
   description: 'Dental implants in Istanbul from £350 per implant — vs. £2,000–£2,800 at UK private clinics. JCI-accredited dental clinics, dedicated coordination, 2–3 week timeline. Free quote in 48 hours.',
 }
