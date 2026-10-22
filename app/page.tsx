@@ -289,34 +289,19 @@ export default function Home() {
         <div className="inner hero-content">
           <div className="hero-grid">
             <div>
-              <div className="hero-tag reveal" ref={ref}>
-                <span className="pulse"></span>
-                Istanbul &middot; UK-registered coordinator
-              </div>
               <h1 className="reveal d1" ref={ref}>
-                Private treatment<br />
-                <em>in Istanbul.</em><br />
-                In 2&ndash;3 weeks.
+                Private treatment in Istanbul,<br />
+                arranged by one coordinator.
               </h1>
               <p className="hero-sub reveal d2" ref={ref}>
-                Access JCI-accredited hospitals, specialist surgeons, and fully coordinated care — without the UK wait or UK private price. One coordinator handles everything from enquiry to discharge.
+                We arrange private treatment at JCI-accredited hospitals in Istanbul: itemised quotes, hotel and transfers, an interpreter at your appointments, and discharge notes for your GP. Hospitals pay us; you pay no coordination fee.
               </p>
               <div className="hero-actions reveal d3" ref={ref}>
                 <a href={WA_URL} target="_blank" className="btn-primary">Get a free quote</a>
-                <a href="#compare" className="btn-ghost">Compare Why Istanbul ↓</a>
+                <a href="#compare" className="btn-ghost">See how it compares ↓</a>
               </div>
             </div>
             <div className="hero-cards reveal d2" ref={ref}>
-              <div className="stat-grid">
-                <div className="stat">
-                  <div className="stat-n">2&ndash;3<em> wk</em></div>
-                  <div className="stat-l">vs. 18+ months NHS wait</div>
-                </div>
-                <div className="stat">
-                  <div className="stat-n">48<em>h</em></div>
-                  <div className="stat-l">Quote turnaround</div>
-                </div>
-              </div>
               <div className="patient-card">
                 <div className="avatar">SS</div>
                 <div>
@@ -330,10 +315,6 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
-        <div className="scroll-hint">
-          <span>Scroll</span>
-          <div className="scroll-arrow"></div>
         </div>
       </section>
 
@@ -487,7 +468,7 @@ export default function Home() {
         <div className="inner">
           <div className="reveal" ref={ref}>
             <div className="kicker">Included in every package</div>
-            <h2>What we provide</h2>
+            <h2>What is included</h2>
             <p className="sec-sub">We are a coordinator, not a medical provider. Every package includes the following logistics services.</p>
           </div>
           <div className="coord-grid">
@@ -515,7 +496,7 @@ export default function Home() {
         <div className="inner">
           <div className="reveal" ref={ref} style={{textAlign:'center'}}>
             <div className="kicker">The process</div>
-            <h2>From first message to home</h2>
+            <h2>How it works</h2>
           </div>
           <div className="steps">
             {[
@@ -534,38 +515,12 @@ export default function Home() {
         </div>
       </section>
 
-      {/* WHY US */}
-      <section className="sec bg" id="why-us">
-        <div className="inner">
-          <div className="reveal" ref={ref}>
-            <div className="kicker">Our difference</div>
-            <h2>Why patients choose us</h2>
-          </div>
-          <div className="why-grid">
-            {[
-              {icon:<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M4.8 2.3A.3.3 0 1 0 5 2H4a2 2 0 0 0-2 2v5a6 6 0 0 0 6 6a6 6 0 0 0 6-6V4a2 2 0 0 0-2-2h-1"/><path d="M8 15v1a6 6 0 0 0 6 6a6 6 0 0 0 6-6v-4"/><circle cx="20" cy="10" r="2"/></svg>,t:'Dedicated coordination',d:'One accountable coordinator collates your medical documents, communicates relevant information clearly to the treating team, and follows up hospital requests promptly. All clinical assessment and treatment decisions are made by the treating provider.',dark:false},
-              {icon:<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9,22 9,12 15,12 15,22"/></svg>,t:'JCI-accredited hospitals only',d:'We work exclusively with internationally accredited hospitals. Ocean Health & Travel coordinates your care at no direct cost to you — our commercial arrangements are with partner hospitals and do not affect the clinical independence of the treating institution.',dark:false},
-              {icon:<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>,t:'Fixed, itemised pricing',d:'Your quote lists every cost before you travel. No surprises on arrival, no upselling at the clinic. What we quote is what you pay.',dark:true},
-              {icon:<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>,t:'One point of contact',d:'From first message to discharge, you deal with a single coordinator. No hand-offs, no repeated explanations.',dark:false},
-              {icon:<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>,t:'GP documentation',d:'Discharge summaries and clinical notes in English forwarded to your GP on request. The treating provider remains responsible for its clinical treatment and agreed post-operative follow-up.',dark:false},
-              {icon:<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>,t:'UK-registered, financially transparent',d:'Registered in England & Wales (no. 16186647). No coordination fee charged to patients. TÜRSAB member. ICO registered.',dark:false},
-            ].map((w,i) => (
-              <div key={w.t} className={`why-card${w.dark?' dark':''} reveal d${i%3+1}`} ref={ref}>
-                <div className="why-icon">{w.icon}</div>
-                <div className="why-t">{w.t}</div>
-                <div className="why-d">{w.d}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* STORIES */}
       <section className="sec bg" id="stories">
         <div className="inner">
           <div className="reveal" ref={ref}>
             <div className="kicker">Patient stories</div>
-            <h2>What our patients say</h2>
+            <h2>Patient reviews</h2>
           </div>
           <div style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:'16px',marginTop:'2rem'}}>
             <div style={{background:'#fff',border:'1px solid #f0ede8',borderRadius:'16px',padding:'1.75rem'}}>
@@ -605,12 +560,12 @@ export default function Home() {
         <div className="inner">
           <div style={{textAlign:'center',marginBottom:'1.5rem'}} className="reveal" ref={ref}>
             <a href={WA_URL} target="_blank" className="wa-pill">
-              Message us on WhatsApp — we reply within the hour
+              Message us on WhatsApp
             </a>
           </div>
           <div className="cta-box reveal" ref={ref}>
-            <h2>Ready to get started?</h2>
-            <p>Send us your treatment and preferred dates — full itemised quote within 48 hours, no obligation. Elective procedures only.</p>
+            <h2>Tell us what you need</h2>
+            <p>Send us your treatment and preferred dates. You will receive an itemised quote within 48 hours, with no obligation. Elective procedures only.</p>
             <div className="cta-actions">
               <a href={WA_URL} target="_blank" className="btn-cta-w">Get a free quote</a>
               <a href="mailto:info@oceanhealthtravel.com" className="btn-cta-o">Email us</a>
