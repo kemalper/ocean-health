@@ -130,7 +130,8 @@ export default function Home() {
         .hero::before{content:'';position:absolute;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(29,158,117,.25) 0%,transparent 70%);top:-100px;right:-150px;pointer-events:none}
         .hero::after{content:'';position:absolute;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(225,245,238,.08) 0%,transparent 70%);bottom:-80px;left:-100px;pointer-events:none}
         .hero-content{position:relative;z-index:2;padding:120px 0 80px}
-        .hero-grid{display:grid;grid-template-columns:1.1fr 0.9fr;gap:3.5rem;align-items:center}
+        .hero-grid{display:grid;grid-template-columns:1fr;gap:2.5rem;align-items:start}
+        .hero-grid h1{font-size:clamp(34px,4.6vw,58px)}
         .hero-tag{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);border-radius:100px;padding:6px 16px;font-size:12px;font-weight:500;color:rgba(255,255,255,.9);letter-spacing:.05em;text-transform:uppercase;margin-bottom:2rem}
         .pulse{width:7px;height:7px;border-radius:50%;background:#4ade80;animation:pulse-dot 2s ease-in-out infinite;flex-shrink:0}
         @keyframes pulse-dot{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.6;transform:scale(.8)}}
@@ -142,7 +143,7 @@ export default function Home() {
         .btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 32px rgba(0,0,0,.2)}
         .btn-ghost{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.35);padding:15px 28px;border-radius:10px;font-size:15px;display:inline-flex;align-items:center;gap:9px;transition:all .2s;cursor:pointer;font-family:'Inter',sans-serif}
         .btn-ghost:hover{background:rgba(255,255,255,.1)}
-        .hero-cards{display:flex;flex-direction:column;gap:12px}
+        .hero-cards{display:flex;flex-direction:column;gap:12px;max-width:440px}
         .stat-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
         .stat{background:rgba(255,255,255,.1);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.15);border-radius:14px;padding:1.25rem 1.4rem}
         .stat-n{font-family:'DM Serif Display',serif;font-size:34px;color:#fff;line-height:1;margin-bottom:5px}
