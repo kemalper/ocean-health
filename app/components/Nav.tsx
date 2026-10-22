@@ -20,8 +20,10 @@ export default function Nav({ transparent = false }: { transparent?: boolean }) 
         .nav{position:${transparent ? 'fixed' : 'sticky'};top:0;left:0;right:0;z-index:500;transition:background .3s,box-shadow .3s}
         .nav.scrolled{background:rgba(250,248,244,.94);backdrop-filter:blur(12px);box-shadow:0 1px 0 #E6E0D4}
         .nav:not(.scrolled){background:transparent}
-        .nav-inner{max-width:1280px;margin:0 auto;padding:0 2.5rem;height:66px;display:flex;align-items:center;justify-content:space-between}
+        .nav-inner{max-width:1280px;margin:0 auto;padding:0 2.5rem;height:84px;display:flex;align-items:center;justify-content:space-between}
         .nav-logo{display:flex;align-items:center}
+        .nav-logo img{height:64px!important;width:auto}
+        @media(max-width:900px){.nav-inner{height:66px}.nav-logo img{height:44px!important}}
         .nav-links{display:flex;gap:2rem;list-style:none;align-items:center}
         .nav-links a{font-size:13px;transition:color .2s;text-decoration:none}
         .nav.scrolled .nav-links a{color:#3A4852}

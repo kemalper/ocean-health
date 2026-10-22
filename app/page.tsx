@@ -159,7 +159,7 @@ export default function Home() {
         .home .trust-inner{display:flex;gap:.75rem 2.25rem;flex-wrap:wrap;padding-top:1.15rem;padding-bottom:1.15rem}
         .ti{display:flex;align-items:center;gap:9px;font-size:13px;color:var(--muted)}
         .ti i{width:6px;height:6px;border-radius:50%;background:var(--green);flex-shrink:0}
-        .sec{padding:6.5rem 0;scroll-margin-top:72px}
+        .sec{padding:6.5rem 0;scroll-margin-top:92px}
         .home h2{font-size:clamp(30px,3.6vw,46px);line-height:1.1;letter-spacing:-.02em;margin-bottom:1rem}
         .home .sec-head h2{margin-bottom:0}
         .home .kicker{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--green);font-weight:600;margin-bottom:1.1rem}
