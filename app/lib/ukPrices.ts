@@ -19,12 +19,12 @@ export const UK_PRICES = {
     typical: '£3,000 – £8,500',
     compact: '£3,000–£8,500',
   },
-  // Standard / full (SMAS) facelift. Other UK types seen: mini/MACS £6,000–£8,500; face and neck lift £10,000–£15,000+; deep plane £13,000–£30,000+.
+  // Mini / MACS facelift (matches the OHT "from £5,000" offer). Other UK types seen: standard SMAS £7,295–£12,000; face and neck lift £10,000–£15,000+; deep plane £13,000–£30,000+.
   // Sources (22 Oct 2026): berkshiregrovehospital.co.uk/articles/how-much-does-a-facelift-cost-in-the-uk, cckat.com/blog/how-much-does-a-facelift-cost-uk,
   // nhs.uk cosmetic facelift page, cadoganclinic.com facelift-cost, bellavou.co.uk facelift cost, noranugent.co.uk deep plane cost.
   facelift: {
-    range: '£7,295 – £12,000',
-    typical: '£7,295 – £12,000',
-    compact: '£7,295–£12,000',
+    range: '£6,000 – £8,500',
+    typical: '£6,000 – £8,500',
+    compact: '£6,000–£8,500',
   },
 } as const

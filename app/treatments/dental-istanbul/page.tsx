@@ -14,8 +14,8 @@ const procedures = [
     name: 'Dental Implants',
     slug: '/treatments/dental-implants-turkey',
     price: 'from £350',
-    uk: '£2,000 – £2,800',
-    saving: '~80%',
+    uk: '£1,500 – £3,500',
+    saving: '~75–90%',
     desc: 'Single or multiple tooth replacement using titanium implants. CE-marked systems from Straumann, Nobel Biocare, Osstem.',
   },
   {
@@ -79,7 +79,7 @@ const procedures = [
 const faqs = [
   {
     q: 'How much does dental treatment cost in Istanbul?',
-    a: 'Dental treatment in Istanbul is typically lower in price than at UK private dental clinics. Single implants start from £350 (vs. £2,000–£2,800 in the UK), zirconium crowns from £150 (vs. £700–£1,200), and porcelain veneers from £180 per tooth (vs. £600–£1,000). Full-arch restorations start from £4,500 (vs. £15,000–£25,000). All prices are indicative — exact quotes depend on the number of teeth and complexity of treatment.'
+    a: 'Dental treatment in Istanbul is typically lower in price than at UK private dental clinics. Single implants start from £350 (vs. £1,500–£3,500 in the UK), zirconium crowns from £150 (vs. £700–£1,200), and porcelain veneers from £180 per tooth (vs. £600–£1,000). Full-arch restorations start from £4,500 (vs. £9,500–£20,000 per arch). All prices are indicative — exact quotes depend on the number of teeth and complexity of treatment.'
   },
   {
     q: 'How long do I need to stay in Istanbul for dental treatment?',
@@ -198,7 +198,7 @@ export default function DentalIstanbulPage() {
               <div className="hero-stat-l">single implant from</div>
             </div>
             <div className="hero-stat">
-              <div className="hero-stat-n">~80%</div>
+              <div className="hero-stat-n">~75–90%</div>
               <div className="hero-stat-l">lower than UK private</div>
             </div>
             <div className="hero-stat">

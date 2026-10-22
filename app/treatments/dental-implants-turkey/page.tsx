@@ -4,7 +4,7 @@ import Nav from '@/app/components/Nav'
 export const metadata: Metadata = {
   alternates: { canonical: '/treatments/dental-implants-turkey' },
   title: 'Dental Implants in Turkey | From £350 | Ocean Health & Travel',
-  description: 'Dental implants in Istanbul from £350 per implant — vs. £2,000–£2,800 at UK private clinics. JCI-accredited dental clinics, dedicated coordination, 2–3 week timeline. Free quote in 48 hours.',
+  description: 'Dental implants in Istanbul from £350 per implant — vs. £1,500–£3,500 at UK private clinics. JCI-accredited dental clinics, dedicated coordination, 2–3 week timeline. Free quote in 48 hours.',
 }
 
 const WA_URL = 'https://wa.me/447441904858?text=Hello%2C%20I%27d%20like%20to%20enquire%20about%20dental%20implants%20in%20Turkey'
@@ -12,7 +12,7 @@ const WA_URL = 'https://wa.me/447441904858?text=Hello%2C%20I%27d%20like%20to%20e
 const faqs = [
   {
     q: 'How much do dental implants cost in Turkey?',
-    a: 'Single dental implants in Istanbul start from £350, compared to £2,000–£2,800 at UK private dental clinics — a saving of approximately 80%. Full-arch restorations (All-on-4 or All-on-6) start from £4,500. Exact pricing depends on the number of implants, bone grafting requirements, and the type of restoration chosen.'
+    a: 'Single dental implants in Istanbul start from £350, compared to £1,500–£3,500 at UK private dental clinics — a saving of approximately 75–90%. Full-arch restorations (All-on-4 or All-on-6) start from £4,500. Exact pricing depends on the number of implants, bone grafting requirements, and the type of restoration chosen.'
   },
   {
     q: 'How long does the dental implant process take?',
@@ -176,7 +176,7 @@ export default function DentalImplantsPage() {
               <div className="price-row">
                 <div>
                   <div className="price-label">Single implant (UK private)</div>
-                  <div className="price-val" style={{color:'rgba(255,255,255,.35)',fontSize:'17px'}}>£2,000 – £2,800</div>
+                  <div className="price-val" style={{color:'rgba(255,255,255,.35)',fontSize:'17px'}}>£1,500 – £3,500</div>
                 </div>
               </div>
               <div className="price-row">
@@ -188,7 +188,7 @@ export default function DentalImplantsPage() {
               <div className="price-row">
                 <div>
                   <div className="price-label">Typical saving</div>
-                  <div className="price-val accent">~80%</div>
+                  <div className="price-val accent">~75–90%</div>
                 </div>
               </div>
               <div className="price-row">
@@ -222,7 +222,7 @@ export default function DentalImplantsPage() {
                 </thead>
                 <tbody>
                   {[
-                    ['Single dental implant','£2,000 – £2,800','from £350','~80%'],
+                    ['Single dental implant','£1,500 – £3,500','from £350','~75–90%'],
                     ['Zirconium crown','£700 – £1,200','from £150','~75%'],
                     ['Porcelain veneer (per tooth)','£600 – £1,000','from £180','~70%'],
                     ['Full arch (All-on-4)','£15,000 – £25,000','from £4,500','~70%'],
@@ -293,7 +293,7 @@ export default function DentalImplantsPage() {
                 </div>
                 <div className="sidebar-price-row">
                   <span className="sidebar-price-label">Single implant (UK)</span>
-                  <span className="sidebar-price-val uk">£2,000 – £2,800</span>
+                  <span className="sidebar-price-val uk">£1,500 – £3,500</span>
                 </div>
                 <div className="sidebar-price-row">
                   <span className="sidebar-price-label">Full arch All-on-4</span>
@@ -301,7 +301,7 @@ export default function DentalImplantsPage() {
                 </div>
                 <div className="sidebar-price-row">
                   <span className="sidebar-price-label">Typical saving</span>
-                  <span className="sidebar-price-val">~80%</span>
+                  <span className="sidebar-price-val">~75–90%</span>
                 </div>
                 <div className="sidebar-price-row">
                   <span className="sidebar-price-label">Timeline</span>

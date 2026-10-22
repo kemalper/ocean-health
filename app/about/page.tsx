@@ -126,7 +126,7 @@ export default function AboutPage() {
             <div className="prose">
               <h2>Our mission</h2>
               <p>
-                Our mission is to make high-quality elective healthcare accessible to everyone — not just those who can afford UK private rates or who are willing to wait 12–18 months on an NHS waiting list.
+                Our mission is to make high-quality elective healthcare accessible to everyone — not just those who can afford UK private rates or who are willing to wait for NHS treatment.
               </p>
               <p>
                 Turkey has invested significantly in its healthcare infrastructure. Lower operating costs in Turkey are the main reason prices are lower than at UK private clinics. We do not claim that care is identical: your quote names the hospital and surgeon, and we encourage you to check their accreditation and credentials before you commit.

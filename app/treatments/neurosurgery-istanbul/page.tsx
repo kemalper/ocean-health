@@ -14,8 +14,8 @@ const procedures = [
     name: 'Deep Brain Stimulation (DBS)',
     slug: '/treatments/deep-brain-stimulation-turkey',
     price: 'from £23,700',
-    uk: '£40,000 – £60,000+',
-    saving: '40–60%',
+    uk: '£30,000+',
+    saving: 'from ~20%',
     desc: 'For Parkinson\'s disease, essential tremor, and dystonia. Two-stage procedure. Free pre-assessment available — no prior referral needed to start.',
     referral: false,
   },
@@ -91,7 +91,7 @@ const faqs = [
   },
   {
     q: 'How much does neurosurgery cost in Istanbul?',
-    a: 'Costs vary significantly by procedure. Deep brain stimulation starts from £23,700 (vs. £40,000–£60,000+ in the UK). Disc surgery starts from £4,000–£4,750 (vs. £8,000–£18,000). Complex brain tumour surgery is quoted individually based on clinical documentation. All quotes are itemised and provided within 48 hours of receiving your medical records.'
+    a: 'Costs vary significantly by procedure. Deep brain stimulation starts from £23,700 (vs. about £30,000+ in the UK). Disc surgery starts from £4,000–£4,750 (vs. £8,000–£18,000). Complex brain tumour surgery is quoted individually based on clinical documentation. All quotes are itemised and provided within 48 hours of receiving your medical records.'
   },
   {
     q: 'What documentation do I need to provide?',

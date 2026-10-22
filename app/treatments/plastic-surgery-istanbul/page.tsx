@@ -66,12 +66,12 @@ const procedures = [
     stay: '7–10 days',
   },
   {
-    name: 'Facelift (Rhytidectomy)',
+    name: 'Mini facelift',
     slug: null,
     price: 'from £5,000',
     uk: UK_PRICES.facelift.range,
-    saving: '~30–55%',
-    desc: 'Surgical rejuvenation of the face and neck. Full, mini, or SMAS facelift techniques.',
+    saving: '~15–40%',
+    desc: 'Lower-face and jowl rejuvenation using a limited-incision technique. Full facelift and face and neck lift are quoted individually.',
     stay: '7–10 days',
   },
   {

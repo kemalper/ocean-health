@@ -12,14 +12,14 @@ const procedures: Record<string, { headers: string[], rows: string[][] }> = {
       ['Breast augmentation', UK_PRICES.breastAugmentation.typical, 'from £6,000', 'Comparable'],
       ['Breast reduction (incl. implants)', '£8,000 – £10,000', 'from £6,300', 'up to 40%'],
       ['Liposuction', UK_PRICES.liposuction.range, 'from £2,500', 'Varies'],
-      ['Facelift', UK_PRICES.facelift.range, 'from £5,000', '~30–55%'],
+      ['Mini facelift', UK_PRICES.facelift.range, 'from £5,000', '~15–40%'],
       ['Tummy tuck', '£5,000 – £10,000', 'from £3,500', 'up to 65%'],
     ]
   },
   dental: {
     headers: ['Procedure', 'UK private', 'Istanbul (OHT)', 'Saving'],
     rows: [
-      ['Dental implant (single)', '£2,000 – £2,800', 'from £350', '~80%'],
+      ['Dental implant (single)', '£1,500 – £3,500', 'from £350', '~75–90%'],
       ['Zirconium crown', '£700 – £1,200', 'from £150', '~75%'],
       ['Porcelain veneers (per tooth)', '£600 – £1,000', 'from £180', '~70%'],
       ['Full-arch restoration', '£15,000 – £25,000', 'from £4,500', '~70%'],
@@ -28,7 +28,7 @@ const procedures: Record<string, { headers: string[], rows: string[][] }> = {
   ortho: {
     headers: ['Procedure', 'NHS wait / UK private', 'Istanbul (OHT)', 'Saving'],
     rows: [
-      ['Knee replacement', '12–18 mo / £12,000–£16,000', 'from £3,500 · 2–3 wks', '70–75%'],
+      ['Knee replacement', '£10,000 – £17,000', 'from £3,500 · 2–3 wks', '~65–80%'],
       ['Hip replacement', '12–18 mo / £12,000–£16,000', 'from £4,000 · 2–3 wks', '65–75%'],
       ['Lumbar disc surgery', '6–12 mo / £8,000–£12,000', 'from £4,000 · 2–3 wks', '50–65%'],
     ]
@@ -44,7 +44,7 @@ const procedures: Record<string, { headers: string[], rows: string[][] }> = {
   neuro: {
     headers: ['Procedure', 'UK private', 'Istanbul (OHT)', 'Saving'],
     rows: [
-      ['Deep brain stimulation', '£40,000 – £60,000+', 'from $30,000 (~£23,700)', '40–60%'],
+      ['Deep brain stimulation', '£30,000+', 'from $30,000 (~£23,700)', 'from ~20%'],
       ['Lumbar disc herniation', '£8,000 – £15,000', 'from $5,000 (~£3,950)', '55–75%'],
       ['Cervical disc herniation', '£10,000 – £18,000', 'from $6,000 (~£4,750)', '55–75%'],
     ]

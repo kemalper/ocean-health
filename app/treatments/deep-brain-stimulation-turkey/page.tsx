@@ -4,7 +4,7 @@ import Nav from '@/app/components/Nav'
 export const metadata: Metadata = {
   alternates: { canonical: '/treatments/deep-brain-stimulation-turkey' },
   title: 'Deep Brain Stimulation in Turkey | From £23,700 | Ocean Health & Travel',
-  description: 'Deep brain stimulation (DBS) for Parkinson\'s disease in Istanbul from £23,700 — vs. £40,000–£60,000+ at UK private centres. JCI-accredited neurosurgical teams, dedicated coordination. Free pre-assessment — no referral needed to start.',
+  description: 'Deep brain stimulation (DBS) for Parkinson\'s disease in Istanbul from £23,700 — vs. from about £30,000 at UK private centres. JCI-accredited neurosurgical teams, dedicated coordination. Free pre-assessment — no referral needed to start.',
 }
 
 const WA_URL = 'https://wa.me/447441904858?text=Hello%2C%20I%27d%20like%20to%20enquire%20about%20deep%20brain%20stimulation%20in%20Turkey'
@@ -12,7 +12,7 @@ const WA_URL = 'https://wa.me/447441904858?text=Hello%2C%20I%27d%20like%20to%20e
 const faqs = [
   {
     q: 'How much does deep brain stimulation cost in Turkey?',
-    a: 'Deep brain stimulation (DBS) in Istanbul starts from £23,700, compared to £40,000–£60,000+ at UK private neurosurgical centres. Exact pricing depends on the specific device used, surgical complexity, and length of hospital stay. A detailed itemised quote is provided following review of your clinical documentation.'
+    a: 'Deep brain stimulation (DBS) in Istanbul starts from £23,700, compared to about £30,000 or more at UK private neurosurgical centres. Exact pricing depends on the specific device used, surgical complexity, and length of hospital stay. A detailed itemised quote is provided following review of your clinical documentation.'
   },
   {
     q: 'Is a referral required for DBS surgery in Istanbul?',
@@ -179,13 +179,13 @@ export default function DBSPage() {
               <div className="price-row">
                 <div>
                   <div className="price-label">UK private centre</div>
-                  <div className="price-val" style={{color:'rgba(255,255,255,.35)',fontSize:'17px'}}>£40,000 – £60,000+</div>
+                  <div className="price-val" style={{color:'rgba(255,255,255,.35)',fontSize:'17px'}}>£30,000+</div>
                 </div>
               </div>
               <div className="price-row">
                 <div>
                   <div className="price-label">Typical saving</div>
-                  <div className="price-val accent">40 – 60%</div>
+                  <div className="price-val accent">from ~20%</div>
                 </div>
               </div>
               <div className="price-row">
@@ -253,7 +253,7 @@ export default function DBSPage() {
 
               <h3>DBS cost in Turkey vs. UK</h3>
               <p>
-                Deep brain stimulation at UK private neurosurgical centres typically costs between £40,000 and £60,000+, depending on the device manufacturer, surgical complexity, and length of inpatient stay. The same procedure at JCI-accredited hospitals in Istanbul starts from £23,700 — a saving of 40–60%. Device costs (Medtronic, Abbott, Boston Scientific) are a significant component of total cost and vary by patient.
+                Deep brain stimulation at UK private neurosurgical centres typically starts at around £30,000, depending on the device manufacturer, surgical complexity, and length of inpatient stay. The same procedure at JCI-accredited hospitals in Istanbul starts from £23,700 — a saving of roughly 20% or more depending on the device and case. Device costs (Medtronic, Abbott, Boston Scientific) are a significant component of total cost and vary by patient.
               </p>
 
               <h3>Documentation that helps (not required to start)</h3>
@@ -306,11 +306,11 @@ export default function DBSPage() {
                 </div>
                 <div className="sidebar-price-row">
                   <span className="sidebar-price-label">UK private</span>
-                  <span className="sidebar-price-val uk">£40,000 – £60,000+</span>
+                  <span className="sidebar-price-val uk">£30,000+</span>
                 </div>
                 <div className="sidebar-price-row">
                   <span className="sidebar-price-label">Typical saving</span>
-                  <span className="sidebar-price-val">40 – 60%</span>
+                  <span className="sidebar-price-val">from ~20%</span>
                 </div>
                 <div className="sidebar-price-row">
                   <span className="sidebar-price-label">Hospital stay</span>

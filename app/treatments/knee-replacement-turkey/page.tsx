@@ -4,7 +4,7 @@ import Nav from '@/app/components/Nav'
 export const metadata: Metadata = {
   alternates: { canonical: '/treatments/knee-replacement-turkey' },
   title: 'Knee Replacement in Turkey | From £3,500 | Ocean Health & Travel',
-  description: 'Knee replacement surgery in Istanbul from £3,500 — vs. £12,000–£16,000 at UK private clinics and 12–18 month NHS wait. JCI-accredited orthopaedic teams, dedicated coordination. Free quote in 48 hours.',
+  description: 'Knee replacement surgery in Istanbul from £3,500 — vs. £10,000–£17,000 at UK private clinics. JCI-accredited orthopaedic teams, dedicated coordination. Free quote in 48 hours.',
 }
 
 const WA_URL = 'https://wa.me/447441904858?text=Hello%2C%20I%27d%20like%20to%20enquire%20about%20knee%20replacement%20in%20Turkey'
@@ -12,11 +12,11 @@ const WA_URL = 'https://wa.me/447441904858?text=Hello%2C%20I%27d%20like%20to%20e
 const faqs = [
   {
     q: 'How much does knee replacement cost in Turkey?',
-    a: 'Knee replacement surgery in Istanbul starts from £3,500, compared to £12,000–£16,000 at UK private orthopaedic centres. The price includes surgeon fee, anaesthesia, implant, hospital stay, and standard post-operative care. Airport transfer, hotel, and interpreter are included in every package. An itemised quote is provided within 48 hours of receiving your clinical documentation.'
+    a: 'Knee replacement surgery in Istanbul starts from £3,500, compared to £10,000–£17,000 at UK private orthopaedic centres. The price includes surgeon fee, anaesthesia, implant, hospital stay, and standard post-operative care. Airport transfer, hotel, and interpreter are included in every package. An itemised quote is provided within 48 hours of receiving your clinical documentation.'
   },
   {
     q: 'How long is the NHS waiting list for knee replacement?',
-    a: 'NHS waiting times for knee replacement surgery have reached 12–18 months in many areas of England, with some patients waiting longer. Through Ocean Health & Travel, surgery can typically be arranged within 2–3 weeks of first contact.'
+    a: 'Average NHS waits for knee replacement are around 28 weeks, though they vary by trust. Through Ocean Health & Travel, surgery can typically be arranged within 2–3 weeks of first contact.'
   },
   {
     q: 'What type of knee implant is used?',
@@ -153,7 +153,7 @@ export default function KneeReplacementPage() {
               <div className="kicker">Orthopaedics · Istanbul</div>
               <h1>Knee Replacement<br />in Turkey.<br /><em>From £3,500.</em></h1>
               <p className="hero-sub">
-                CE-marked implants. JCI-accredited orthopaedic teams. Surgery in 2–3 weeks — not 12–18 months on the NHS waiting list.
+                CE-marked implants. JCI-accredited orthopaedic teams. Surgery typically within 2–3 weeks, against an average NHS wait of around 28 weeks.
               </p>
               <div className="nhs-callout">
                 <strong>NHS waiting time:</strong> 12–18+ months for knee replacement in many areas of England. Through Ocean Health &amp; Travel, surgery can typically be arranged within 2–3 weeks.
@@ -225,7 +225,7 @@ export default function KneeReplacementPage() {
                   </thead>
                   <tbody>
                     <tr><td>Waiting time</td><td className="td-nhs">12–18+ months</td><td className="td-nhs">2–4 weeks</td><td className="td-oht">2–3 weeks</td></tr>
-                    <tr><td>Cost</td><td className="td-nhs">Free (long wait)</td><td className="td-nhs">£12,000–£16,000</td><td className="td-oht">from £3,500</td></tr>
+                    <tr><td>Cost</td><td className="td-nhs">Free (long wait)</td><td className="td-nhs">£10,000–£17,000</td><td className="td-oht">from £3,500</td></tr>
                     <tr><td>Implant standard</td><td className="td-nhs">CE-marked</td><td className="td-nhs">CE-marked</td><td className="td-oht">CE-marked</td></tr>
                     <tr><td>Hospital accreditation</td><td className="td-nhs">CQC</td><td className="td-nhs">CQC</td><td className="td-oht">JCI</td></tr>
                     <tr><td>Interpreter</td><td className="td-nhs">—</td><td className="td-nhs">—</td><td className="td-oht">Included</td></tr>
