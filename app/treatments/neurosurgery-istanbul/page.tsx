@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Nav from '@/app/components/Nav'
 import TreatmentTheme from '@/app/components/TreatmentTheme'
 import RelatedTreatments from '@/app/components/RelatedTreatments'
+import UKPatientInfo from '@/app/components/UKPatientInfo'
 
 export const metadata: Metadata = {
   alternates: { canonical: '/treatments/neurosurgery-istanbul' },
@@ -284,6 +285,7 @@ export default function NeurosurgeryPage() {
         </div>
       </section>
 
+      <UKPatientInfo current="neurosurgery-istanbul" />
       <RelatedTreatments current="neurosurgery-istanbul" />
       <footer>
         <div className="inner">

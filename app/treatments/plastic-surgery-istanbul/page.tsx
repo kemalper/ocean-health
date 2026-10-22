@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Nav from '@/app/components/Nav'
 import TreatmentTheme from '@/app/components/TreatmentTheme'
 import RelatedTreatments from '@/app/components/RelatedTreatments'
+import UKPatientInfo from '@/app/components/UKPatientInfo'
 import { UK_PRICES } from '@/app/lib/ukPrices'
 
 export const metadata: Metadata = {
@@ -359,6 +360,7 @@ export default function PlasticSurgeryPage() {
         </div>
       </section>
 
+      <UKPatientInfo current="plastic-surgery-istanbul" />
       <RelatedTreatments current="plastic-surgery-istanbul" />
       <footer>
         <div className="inner">
