@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Nav from '@/app/components/Nav'
 import TreatmentTheme from '@/app/components/TreatmentTheme'
+import RelatedTreatments from '@/app/components/RelatedTreatments'
 
 export const metadata: Metadata = {
   alternates: { canonical: '/treatments/lasik-istanbul' },
@@ -397,6 +398,7 @@ export default function LasikPage() {
         </div>
       </section>
 
+      <RelatedTreatments current="lasik-istanbul" />
       <footer>
         <div className="inner">
           <div className="footer-legal">

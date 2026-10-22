@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Nav from '@/app/components/Nav'
 import TreatmentTheme from '@/app/components/TreatmentTheme'
+import RelatedTreatments from '@/app/components/RelatedTreatments'
 
 export const metadata: Metadata = {
   alternates: { canonical: '/treatments/deep-brain-stimulation-turkey' },
@@ -398,6 +399,7 @@ export default function DBSPage() {
       </section>
 
       {/* FOOTER */}
+      <RelatedTreatments current="deep-brain-stimulation-turkey" />
       <footer>
         <div className="inner">
           <div className="footer-legal">
