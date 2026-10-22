@@ -267,7 +267,7 @@ export default function Home() {
             <p className="hero-fine">Itemised quote within 48 hours.<br />Hospital and surgeon named before you commit.</p>
           </div>
           <div className="hero-media">
-            <Image src="/hero-welcome.jpg" alt="Hospital reception and waiting area" fill priority sizes="(max-width:900px) 100vw, 520px" style={{objectFit:'cover',objectPosition:'50% 85%',transform:'scale(1.12)',transformOrigin:'50% 85%'}} />
+            <Image src="/hero-welcome.jpg" alt="Hospital reception and waiting area" fill priority sizes="(max-width:900px) 100vw, 520px" style={{objectFit:'cover',objectPosition:'50% 100%',transform:'scale(1.15)',transformOrigin:'50% 100%'}} />
           </div>
         </div>
       </section>
