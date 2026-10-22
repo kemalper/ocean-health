@@ -158,7 +158,10 @@ export default function Home() {
         .home .trust-inner{display:flex;gap:.75rem 2.25rem;flex-wrap:wrap;padding-top:1.15rem;padding-bottom:1.15rem}
         .ti{display:flex;align-items:center;gap:9px;font-size:13px;color:var(--muted)}
         .ti i{width:6px;height:6px;border-radius:50%;background:var(--green);flex-shrink:0}
-        .sec{padding:6.5rem 0}
+        .sec{padding:6.5rem 0;scroll-margin-top:72px}
+        .home h2{font-size:clamp(30px,3.6vw,46px);line-height:1.1;letter-spacing:-.02em;margin-bottom:1rem}
+        .home .sec-head h2{margin-bottom:0}
+        .home .kicker{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--green);font-weight:600;margin-bottom:1.1rem}
         .sec.band{background:var(--band)}
         .sec-head{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:end;margin-bottom:2.75rem}
         .sec-head h2{font-size:clamp(30px,3.6vw,46px);line-height:1.1;letter-spacing:-.02em}
@@ -425,7 +428,7 @@ export default function Home() {
               <div style={{display:'flex',gap:'4px',marginBottom:'1rem'}}>
                 {[1,2,3,4,5].map(i => <svg key={i} width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="none"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>)}
               </div>
-              <div style={{fontFamily:"'DM Serif Display',serif",fontSize:'16px',fontStyle:'italic',color:'#1a1a1a',lineHeight:1.7,marginBottom:'1.25rem',fontWeight:400}}>&ldquo;I had a urology treatment arranged by Ocean Health &amp; Travel and I am extremely satisfied with the entire process. From the initial consultation to the procedure and follow-up, everything was well organized and transparent. The doctors and nurses were experienced, attentive, and explained each step clearly. Logistics such as appointments, transportation, and hospital coordination were handled smoothly. I confidently recommend Ocean Health &amp; Travel to anyone seeking high-quality care.&rdquo;</div>
+              <div style={{fontFamily:"'Inter',sans-serif",fontSize:'15px',fontStyle:'normal',color:'#1a1a1a',lineHeight:1.7,marginBottom:'1.25rem',fontWeight:400}}>&ldquo;I had a urology treatment arranged by Ocean Health &amp; Travel and I am extremely satisfied with the entire process. From the initial consultation to the procedure and follow-up, everything was well organized and transparent. The doctors and nurses were experienced, attentive, and explained each step clearly. Logistics such as appointments, transportation, and hospital coordination were handled smoothly. I confidently recommend Ocean Health &amp; Travel to anyone seeking high-quality care.&rdquo;</div>
               <div style={{display:'flex',alignItems:'center',gap:'10px'}}>
                 <div style={{width:'36px',height:'36px',borderRadius:'50%',background:'#E1F5EE',display:'flex',alignItems:'center',justifyContent:'center',fontFamily:"'DM Serif Display',serif",fontSize:'13px',color:'#085041',flexShrink:0}}>OG</div>
                 <div>
@@ -438,7 +441,7 @@ export default function Home() {
               <div style={{display:'flex',gap:'4px',marginBottom:'1rem'}}>
                 {[1,2,3,4,5].map(i => <svg key={i} width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="none"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>)}
               </div>
-              <div style={{fontFamily:"'DM Serif Display',serif",fontSize:'16px',fontStyle:'italic',color:'#1a1a1a',lineHeight:1.7,marginBottom:'1.25rem',fontWeight:400}}>&ldquo;I had the best experience with Ocean Health. From the first port of call, consultation, procedure and follow up care was absolutely faultless. I was anxious and worried about having dental treatment abroad but I had absolutely nothing to worry about. Everything was taken care of and to the highest of standards. I have a constant smile on my face thanks to this wonderful company.&rdquo;</div>
+              <div style={{fontFamily:"'Inter',sans-serif",fontSize:'15px',fontStyle:'normal',color:'#1a1a1a',lineHeight:1.7,marginBottom:'1.25rem',fontWeight:400}}>&ldquo;I had the best experience with Ocean Health. From the first port of call, consultation, procedure and follow up care was absolutely faultless. I was anxious and worried about having dental treatment abroad but I had absolutely nothing to worry about. Everything was taken care of and to the highest of standards. I have a constant smile on my face thanks to this wonderful company.&rdquo;</div>
               <div style={{display:'flex',alignItems:'center',gap:'10px'}}>
                 <div style={{width:'36px',height:'36px',borderRadius:'50%',background:'#E1F5EE',display:'flex',alignItems:'center',justifyContent:'center',fontFamily:"'DM Serif Display',serif",fontSize:'13px',color:'#085041',flexShrink:0}}>SS</div>
                 <div>
