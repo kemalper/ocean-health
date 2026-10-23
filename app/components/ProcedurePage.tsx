@@ -15,10 +15,30 @@ const INCLUDED = [
 export default function ProcedurePage({ p }: { p: Procedure }) {
   const cat = p.category ?? PLASTIC
   const wa = `https://wa.me/447441904858?text=${encodeURIComponent(`Hello, I'd like to enquire about ${p.name.toLowerCase()} in Istanbul`)}`
+  const SITE = 'https://www.oceanhealthtravel.com'
   const jsonLd = {
     '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: p.faqs.map(f => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
+    '@graph': [
+      {
+        '@type': 'FAQPage',
+        mainEntity: p.faqs.map(f => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
+      },
+      {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE}/` },
+          { '@type': 'ListItem', position: 2, name: cat.label, item: `${SITE}${cat.href}` },
+          { '@type': 'ListItem', position: 3, name: p.name, item: `${SITE}/treatments/${p.slug}` },
+        ],
+      },
+      {
+        '@type': 'MedicalWebPage',
+        name: p.metaTitle,
+        url: `${SITE}/treatments/${p.slug}`,
+        description: p.metaDescription,
+        about: { '@type': 'MedicalProcedure', name: p.name },
+      },
+    ],
   }
   return (
     <div className="pp">

@@ -10,12 +10,13 @@ const procedures: Record<string, { headers: string[], rows: string[][] }> = {
   cosmetic: {
     headers: ['Procedure', 'UK private', 'Istanbul (OHT)', 'Saving'],
     rows: [
-      ['Rhinoplasty', UK_PRICES.rhinoplasty.typical, 'from £3,200', '~45–65%'],
-      ['Breast augmentation', UK_PRICES.breastAugmentation.typical, 'from £6,000', 'Comparable'],
-      ['Breast reduction (incl. implants)', '£8,000 – £10,000', 'from £6,300', '~20–35%'],
-      ['Liposuction', UK_PRICES.liposuction.range, 'from £2,500', 'Varies'],
-      ['Mini facelift', UK_PRICES.facelift.range, 'from £5,000', '~15–40%'],
-      ['Tummy tuck', '£7,200 – £10,050', 'from £3,500', '~50–65%'],
+      ['Rhinoplasty', UK_PRICES.rhinoplasty.typical, 'from £3,200', '~45–65%', '/treatments/rhinoplasty-istanbul'],
+      ['Breast augmentation', UK_PRICES.breastAugmentation.typical, 'from £6,000', 'Comparable', '/treatments/breast-augmentation-istanbul'],
+      ['Breast reduction', '£8,000 – £10,000', 'from £6,300', '~20–35%', '/treatments/breast-reduction-istanbul'],
+      ['Liposuction', UK_PRICES.liposuction.range, 'from £2,500', 'Varies', '/treatments/liposuction-istanbul'],
+      ['Mini facelift', UK_PRICES.facelift.range, 'from £5,000', '~15–40%', '/treatments/mini-facelift-istanbul'],
+      ['Tummy tuck', '£7,200 – £10,050', 'from £3,500', '~50–65%', '/treatments/tummy-tuck-istanbul'],
+      ['360° tummy tuck (package)', 'No published guide price', '£7,300 – £8,200', '—', '/treatments/tummy-tuck-istanbul'],
     ]
   },
   dental: {
@@ -31,7 +32,7 @@ const procedures: Record<string, { headers: string[], rows: string[][] }> = {
     headers: ['Procedure', 'UK private', 'Istanbul (OHT)', 'Saving'],
     rows: [
       ['Knee replacement', '£10,000 – £17,000', 'from £3,500 · 2–3 wks', '~65–80%'],
-      ['Lumbar disc surgery', 'from ~£11,000', 'from £4,000 · 2–3 wks', '~65%'],
+      ['Lumbar disc surgery', 'from ~£11,000', 'from £4,000 · 2–3 wks', '~65%', '/treatments/lumbar-disc-istanbul'],
     ]
   },
   ophth: {
@@ -179,6 +180,8 @@ export default function Home() {
         .home td{padding:1.05rem 1.4rem;border-bottom:1px solid #F1EDE4;font-size:14.5px}
         .home tr:last-child td{border-bottom:none}
         .home td:first-child{font-weight:500}
+        .row-link{color:inherit;border-bottom:1px solid var(--line);text-decoration:none}
+        .row-link:hover{color:var(--green);border-color:var(--green)}
         .td-uk{color:var(--muted)}
         .td-oht{color:var(--green-d);font-weight:600}
         .saving{background:var(--soft);color:var(--green-d);font-weight:600;border-radius:20px;padding:4px 12px;font-size:12px;white-space:nowrap;display:inline-block}
@@ -308,7 +311,7 @@ export default function Home() {
                 <tbody>
                   {procedures[activeTab].rows.map(row => (
                     <tr key={row[0]}>
-                      <td>{row[0]}</td>
+                      <td>{row[4] ? <a href={row[4]} className="row-link">{row[0]}</a> : row[0]}</td>
                       <td className="td-uk" data-l={procedures[activeTab].headers[1]}>{row[1]}</td>
                       <td className="td-oht" data-l={procedures[activeTab].headers[2]}>{row[2]}</td>
                       <td data-l={procedures[activeTab].headers[3]}><span className="saving">{row[3]}</span></td>
@@ -493,6 +496,14 @@ export default function Home() {
                 <h4>Treatments</h4>
                 <a href="/treatments/plastic-surgery-istanbul">Plastic &amp; cosmetic surgery</a>
                 <a href="/treatments/rhinoplasty-istanbul">Rhinoplasty</a>
+                <a href="/treatments/breast-augmentation-istanbul">Breast augmentation</a>
+                <a href="/treatments/liposuction-istanbul">Liposuction</a>
+                <a href="/treatments/tummy-tuck-istanbul">Tummy tuck</a>
+                <a href="/treatments/bbl-istanbul">Brazilian butt lift</a>
+                <a href="/treatments/mini-facelift-istanbul">Mini facelift</a>
+                <a href="/treatments/blepharoplasty-istanbul">Eyelid surgery</a>
+                <a href="/treatments/lumbar-disc-istanbul">Lumbar disc surgery</a>
+                <a href="/treatments/cervical-disc-istanbul">Cervical disc surgery</a>
                 <a href="/treatments/dental-istanbul">Dental</a>
                 <a href="/treatments/dental-implants-turkey">Dental implants</a>
                 <a href="/treatments/ophthalmology-istanbul">Ophthalmology</a>

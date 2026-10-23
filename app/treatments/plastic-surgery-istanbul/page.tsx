@@ -65,7 +65,7 @@ const procedures = [
     price: 'from £3,500',
     uk: '£7,200 – £10,050',
     saving: '~50–65%',
-    desc: 'Removal of excess skin and fat from the abdomen with muscle tightening. Full or mini abdominoplasty.',
+    desc: 'Removal of excess skin and fat from the abdomen with muscle tightening. Mini, full or 360° (£7,300–£8,200 package).',
     stay: '7–10 days',
   },
   {

@@ -24,3 +24,7 @@ Savings = OHT "from" price vs the UK range. Update this file whenever a UK figur
 
 No source found yet (UK comparison and saving removed from the site): smile design, cervical disc, thigh lift, labioplasty, hip replacement.
 Open caveat: orthodontics saving compares OHT "from £1,500" with Invisalign pricing; confirm the OHT product type.
+
+
+## OHT-supplied prices (not UK comparisons)
+- 360° tummy tuck: £7,300–£8,200 complete package, supplied by the owner on 23 Oct 2026. No published UK price found, so no UK comparison or saving is shown.
