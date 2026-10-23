@@ -35,7 +35,7 @@ const faqs = [
   },
   {
     q: 'What documentation do I need to provide?',
-    a: 'To provide an accurate quote, we ask for recent knee X-rays (weight-bearing AP and lateral views), a GP or orthopaedic surgeon referral letter if available, and a summary of your symptoms, medication, and relevant medical history. Our physician coordinator will review your documentation and liaise with the orthopaedic team.'
+    a: 'To provide an accurate quote, we ask for recent knee X-rays (weight-bearing AP and lateral views), a GP or orthopaedic surgeon referral letter if available, and a summary of your symptoms, medication, and relevant medical history. Our coordination team will review your documentation and liaise with the orthopaedic team.'
   },
 ]
 

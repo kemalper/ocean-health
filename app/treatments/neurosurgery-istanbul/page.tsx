@@ -7,7 +7,7 @@ import UKPatientInfo from '@/app/components/UKPatientInfo'
 export const metadata: Metadata = {
   alternates: { canonical: '/treatments/neurosurgery-istanbul' },
   title: 'Neurosurgery in Istanbul | Ocean Health & Travel',
-  description: 'Neurosurgery coordination in Istanbul — deep brain stimulation, disc herniation, brain tumours. JCI-accredited neurosurgical teams. Specialist referral required. Free assessment within 48 hours.',
+  description: 'Neurosurgery coordination in Istanbul — deep brain stimulation, disc herniation, brain tumours. JCI-accredited neurosurgical teams. Imaging and records reviewed by the treating neurosurgeon. Free assessment within 48 hours.',
 }
 
 const WA_URL = 'https://wa.me/447441904858?text=Hello%2C%20I%27d%20like%20to%20enquire%20about%20neurosurgery%20in%20Istanbul'
@@ -90,7 +90,7 @@ const procedures = [
 const faqs = [
   {
     q: 'Do I need a referral for neurosurgery in Istanbul?',
-    a: 'For most neurosurgical procedures, a referral letter from a neurologist, neurosurgeon, or relevant specialist is required before coordination can begin. For spinal procedures (disc herniation), a GP referral or orthopaedic/neurology letter is helpful but not always mandatory. For complex brain surgery (DBS, tumour resection), full specialist documentation is essential. Ocean Health & Travel does not provide neurological assessments or medical opinions.'
+    a: 'You do not need a formal referral letter to start. We ask for your existing records instead: recent MRI or other imaging, clinical letters and reports, a current medication list and any previous surgery. The treating neurosurgeon in Istanbul reviews them and decides whether you are a suitable candidate for surgery. A letter from your neurologist or GP is helpful if you have one, and we encourage you to keep your UK clinicians informed. For complex brain surgery (DBS, tumour resection), full imaging and specialist reports are essential. Ocean Health & Travel does not provide neurological assessments or medical opinions.'
   },
   {
     q: 'How much does neurosurgery cost in Istanbul?',
@@ -98,7 +98,7 @@ const faqs = [
   },
   {
     q: 'What documentation do I need to provide?',
-    a: 'For spinal procedures: recent MRI spine, clinical summary, and current symptoms. For brain surgery and DBS: specialist referral letter, recent MRI brain, full clinical summary, current medication list, and any previous surgical history. Our physician coordinator will review your documentation and liaise with the neurosurgical team before providing a quote.'
+    a: 'For spinal procedures: recent MRI spine, clinical summary, and current symptoms. For brain surgery and DBS: recent MRI brain, specialist reports and clinical letters if you have them, a full clinical summary, current medication list, and any previous surgical history. Our coordination team passes your documents to the neurosurgical team, who review them before a quote is given.'
   },
   {
     q: 'How long will I need to stay in Istanbul?',
@@ -200,21 +200,21 @@ export default function NeurosurgeryPage() {
             <a href="/#services">Treatments</a><span>›</span>
             Neurosurgery Istanbul
           </div>
-          <div className="warn-badge">⚠️ Most procedures require specialist referral</div>
+          <div className="warn-badge">⚠️ Imaging and clinical records required</div>
           <div className="kicker">Neurosurgery · Istanbul</div>
           <h1>Neurosurgery<br />in Istanbul.<br /><em>JCI-accredited teams.</em></h1>
           <p className="hero-sub">
             Dedicated coordination for neurosurgical procedures in Istanbul. We liaise between you, your UK specialist, and the neurosurgical team — handling documentation, logistics, and interpretation throughout.
           </p>
           <div className="hero-warn">
-            <strong>Important:</strong> Most neurosurgical procedures require a referral letter from a neurologist or relevant specialist before coordination can begin. Ocean Health &amp; Travel does not provide neurological assessments or medical opinions. All clinical decisions rest with your treating neurosurgical team.
+            <strong>Important:</strong> No formal referral letter is needed to start. Send your MRI or other imaging and clinical reports; the treating neurosurgeon reviews them and decides whether surgery is suitable for you. Ocean Health &amp; Travel does not provide neurological assessments or medical opinions. All clinical decisions rest with your treating neurosurgical team.
           </div>
           <div className="hero-actions">
             <a href={WA_URL} target="_blank" className="btn-primary">Send your documents</a>
             <a href="#procedures" className="btn-ghost">View procedures ↓</a>
           </div>
           <div className="trust-row">
-            {['Specialist referral required','JCI-accredited hospitals','Dedicated coordination','Full documentation to UK team'].map(t => (
+            {['Reviewed by the neurosurgeon','JCI-accredited hospitals','Dedicated coordination','Full documentation to UK team'].map(t => (
               <div key={t} className="trust-item"><div className="trust-dot"></div>{t}</div>
             ))}
           </div>
@@ -226,12 +226,12 @@ export default function NeurosurgeryPage() {
           <div className="kicker">Procedures coordinated</div>
           <h2>Neurosurgery in Istanbul</h2>
           <p style={{fontSize:'15px',color:'#666',lineHeight:1.7,fontWeight:300,maxWidth:'600px',marginBottom:'0'}}>
-            Procedures marked ⚠️ require specialist referral documentation before coordination can begin.
+            Procedures marked ⚠️ need full imaging and specialist reports before the neurosurgical team can assess suitability.
           </p>
           <div className="proc-grid">
             {procedures.map(p => (
               <div key={p.name} className={`proc-card${p.slug ? ' featured' : ''}${p.referral ? ' referral-card' : ''}`}>
-                {p.referral && <div className="ref-badge">⚠️ Referral required</div>}
+                {p.referral && <div className="ref-badge">⚠️ Full records required</div>}
                 <div className="proc-name">{p.name}</div>
                 <div className="proc-desc">{p.desc}</div>
                 <div className="proc-footer">
@@ -276,7 +276,7 @@ export default function NeurosurgeryPage() {
         <div className="inner">
           <div className="cta-box">
             <h2>Ready to send your documents?</h2>
-            <p>Send your referral letter and clinical notes. Our physician coordinator will review and respond within 48 hours.</p>
+            <p>Send your imaging and clinical notes. Our coordination team will review and respond within 48 hours.</p>
             <div className="cta-btns">
               <a href={WA_URL} target="_blank" className="btn-cta-w">WhatsApp us</a>
               <a href="mailto:info@oceanhealthtravel.com" className="btn-cta-o">Email documents</a>

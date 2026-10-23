@@ -111,7 +111,7 @@ export default function PreOpAssessmentPage() {
                   {
                     icon: <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg>,
                     t: 'Results in under 3 minutes',
-                    d: 'The structured patient form takes under 3 minutes to complete. Your results are reviewed by our physician coordinator before your consultation.'
+                    d: 'The structured patient form takes under 3 minutes to complete. Your results are reviewed by our coordination team before your consultation.'
                   },
                 ].map(f => (
                   <div key={f.t} className="feature-item">
@@ -135,7 +135,7 @@ export default function PreOpAssessmentPage() {
                   SurgiCheck is a perioperative risk governance platform developed by a physician and university professor of physiology. It provides structured pre-operative screening, Montgomery-aligned informed consent, and post-operative follow-up in a single auditable platform.
                 </p>
                 <p style={{fontSize:'14px',color:'#666',lineHeight:1.75,fontWeight:300,marginBottom:'1.5rem'}}>
-                  The assessment is free for Ocean Health &amp; Travel patients. Your results are shared with our physician coordinator and, with your consent, forwarded to your treating surgeon in Istanbul.
+                  The assessment is free for Ocean Health &amp; Travel patients. Your results are shared with our coordination team and, with your consent, forwarded to your treating surgeon in Istanbul.
                 </p>
                 <a href="https://surgicheck.net/patient.html?lang=en" target="_blank" rel="noopener noreferrer" style={{display:'inline-flex',alignItems:'center',gap:'8px',background:'#085041',color:'#fff',padding:'13px 24px',borderRadius:'10px',fontSize:'14px',fontWeight:600,fontFamily:'Inter,sans-serif',transition:'all .2s'}}>
                   Start assessment &rarr;
@@ -148,7 +148,7 @@ export default function PreOpAssessmentPage() {
               <div style={{background:'#fafaf9',border:'1px solid #f0ede8',borderRadius:'16px',padding:'1.75rem',marginTop:'1rem'}}>
                 <div style={{fontSize:'13px',fontWeight:600,textTransform:'uppercase',letterSpacing:'.07em',color:'#bbb',marginBottom:'1rem'}}>Have questions first?</div>
                 <p style={{fontSize:'14px',color:'#666',lineHeight:1.7,fontWeight:300,marginBottom:'1.25rem'}}>
-                  Our physician coordinator is happy to discuss your medical history before you complete the assessment.
+                  Our coordination team is happy to discuss your medical history before you complete the assessment.
                 </p>
                 <a href={WA_URL} target="_blank" rel="noopener noreferrer" style={{display:'inline-flex',alignItems:'center',gap:'8px',background:'transparent',color:'#085041',border:'1px solid #085041',padding:'11px 20px',borderRadius:'9px',fontSize:'13px',fontWeight:500,fontFamily:'Inter,sans-serif'}}>
                   💬 Ask via WhatsApp
@@ -163,7 +163,7 @@ export default function PreOpAssessmentPage() {
         <div className="inner">
           <div className="cta-card">
             <h2>Ready to start your assessment?</h2>
-            <p>Free for all Ocean Health &amp; Travel patients. Takes under 3 minutes. Results reviewed by our physician coordinator before your consultation.</p>
+            <p>Free for all Ocean Health &amp; Travel patients. Takes under 3 minutes. Results reviewed by our coordination team before your consultation.</p>
             <a href="https://surgicheck.net/patient.html?lang=en" target="_blank" rel="noopener noreferrer" className="btn-start">
               Start pre-operative assessment &rarr;
             </a>

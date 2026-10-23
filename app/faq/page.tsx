@@ -24,7 +24,7 @@ const faqSections = [
       },
       {
         q: 'Do I need a referral from my GP?',
-        a: 'For most cosmetic, dental, and ophthalmological procedures, no GP referral is required. For complex procedures such as neurosurgery, orthopaedics, or deep brain stimulation, a specialist referral letter is required before coordination can begin.',
+        a: 'For most cosmetic, dental, and ophthalmological procedures, no GP referral is required. For complex procedures such as neurosurgery, orthopaedics, or deep brain stimulation, we ask for your imaging and clinical reports instead. The treating specialist reviews them and decides whether surgery is suitable. A letter from your GP or specialist is helpful if you have one.',
       },
       {
         q: 'What information should I include in my first message?',

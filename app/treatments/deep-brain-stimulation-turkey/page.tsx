@@ -31,7 +31,7 @@ const faqs = [
   },
   {
     q: 'What documentation do I need to provide?',
-    a: 'Start with our free pre-assessment form — it covers diagnosis history, current medication, and symptoms, with an option to upload any documents you already have (referral letter, MRI, previous surgical history). You don\'t need all of this in hand to begin. Our physician coordinator reviews your submission and will let you know if the neurosurgical team needs anything further.'
+    a: 'Start with our free pre-assessment form — it covers diagnosis history, current medication, and symptoms, with an option to upload any documents you already have (referral letter, MRI, previous surgical history). You don\'t need all of this in hand to begin. Our coordination team reviews your submission and will let you know if the neurosurgical team needs anything further.'
   },
   {
     q: 'What coordination services are included?',
@@ -346,7 +346,7 @@ export default function DBSPage() {
           <div className="process-grid">
             {[
               {n:'1',t:'Free pre-assessment',d:'Complete our online form with diagnosis history, medication, and any imaging you have'},
-              {n:'2',t:'Clinical review',d:'Our physician coordinator liaises with the neurosurgical team'},
+              {n:'2',t:'Clinical review',d:'Our coordination team liaises with the neurosurgical team'},
               {n:'3',t:'Quote & booking',d:'Itemised proposal and surgery date confirmed'},
               {n:'4',t:'Surgery',d:'Two-stage procedure at JCI-accredited hospital'},
               {n:'5',t:'Documentation',d:'Operative notes sent to your UK neurologist and GP'},

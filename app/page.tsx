@@ -300,7 +300,7 @@ export default function Home() {
               ))}
             </div>
             {activeTab === 'neuro' && (
-              <div className="neuro-warn"><strong>Important:</strong> Most neurosurgical procedures require specialist referral and full clinical assessment (DBS offers a free pre-assessment with no referral needed to start). Ocean Health &amp; Travel does not provide medical advice. All clinical decisions rest with the treating neurosurgical team. Elective procedures only.</div>
+              <div className="neuro-warn"><strong>Important:</strong> Neurosurgical procedures need imaging and clinical reports, which the treating neurosurgeon reviews to decide suitability. No formal referral letter is needed to start, and DBS offers a free pre-assessment. Ocean Health &amp; Travel does not provide medical advice. All clinical decisions rest with the treating neurosurgical team. Elective procedures only.</div>
             )}
             <div className="table-wrap">
               <table>
