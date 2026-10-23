@@ -34,8 +34,8 @@ const procedures = [
   },
   {
     name: 'Breast Reduction',
-    slug: null,
-    price: 'from £6,300 (incl. implants)',
+    slug: '/treatments/breast-reduction-istanbul',
+    price: 'from £6,300',
     uk: '£8,000 – £10,000',
     saving: '~20–35%',
     desc: 'Reduction of breast volume and lift. Often combined with nipple repositioning.',
@@ -43,7 +43,7 @@ const procedures = [
   },
   {
     name: 'Mastopexy (Breast Lift)',
-    slug: null,
+    slug: '/treatments/mastopexy-istanbul',
     price: 'from £5,000',
     uk: 'from £8,600',
     saving: '~40%',
@@ -88,7 +88,7 @@ const procedures = [
   },
   {
     name: 'Brow Lift',
-    slug: null,
+    slug: '/treatments/brow-lift-istanbul',
     price: 'from £2,500',
     uk: '£5,495 – £7,395',
     saving: '~55–65%',
@@ -106,7 +106,7 @@ const procedures = [
   },
   {
     name: 'Otoplasty (Ear Surgery)',
-    slug: null,
+    slug: '/treatments/otoplasty-istanbul',
     price: 'from £1,500',
     uk: '£2,995 – £4,695',
     saving: '~50–65%',
@@ -115,7 +115,7 @@ const procedures = [
   },
   {
     name: 'Arm Lift (Brachioplasty)',
-    slug: null,
+    slug: '/treatments/arm-lift-istanbul',
     price: 'from £2,500',
     uk: '£4,895 – £7,295',
     saving: '~50–65%',
@@ -124,7 +124,7 @@ const procedures = [
   },
   {
     name: 'Thigh Lift',
-    slug: null,
+    slug: '/treatments/thigh-lift-istanbul',
     price: 'from £3,000',
     uk: null,
     saving: null,
@@ -133,7 +133,7 @@ const procedures = [
   },
   {
     name: 'Labioplasty',
-    slug: null,
+    slug: '/treatments/labioplasty-istanbul',
     price: 'from £1,800',
     uk: null,
     saving: null,

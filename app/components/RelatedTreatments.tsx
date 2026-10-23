@@ -18,6 +18,13 @@ const ALL: Record<string, { title: string; desc: string }> = {
   'bbl-istanbul': { title: 'Brazilian butt lift', desc: 'Fat transfer to the buttocks' },
   'mini-facelift-istanbul': { title: 'Mini facelift', desc: 'Lower-face and jowl rejuvenation' },
   'blepharoplasty-istanbul': { title: 'Eyelid surgery', desc: 'Upper and lower eyelid correction' },
+  'breast-reduction-istanbul': { title: 'Breast reduction', desc: 'Reduction and lift' },
+  'mastopexy-istanbul': { title: 'Breast lift', desc: 'Mastopexy, with or without implants' },
+  'brow-lift-istanbul': { title: 'Brow lift', desc: 'Forehead and brow lifting' },
+  'otoplasty-istanbul': { title: 'Ear surgery', desc: 'Otoplasty for prominent ears' },
+  'arm-lift-istanbul': { title: 'Arm lift', desc: 'Brachioplasty for loose upper-arm skin' },
+  'thigh-lift-istanbul': { title: 'Thigh lift', desc: 'Removal of loose thigh skin' },
+  'labioplasty-istanbul': { title: 'Labiaplasty', desc: 'Labia minora reshaping' },
 }
 
 const RELATED: Record<string, string[]> = {
