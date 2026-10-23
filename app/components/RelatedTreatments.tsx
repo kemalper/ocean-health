@@ -25,6 +25,8 @@ const ALL: Record<string, { title: string; desc: string }> = {
   'arm-lift-istanbul': { title: 'Arm lift', desc: 'Brachioplasty for loose upper-arm skin' },
   'thigh-lift-istanbul': { title: 'Thigh lift', desc: 'Removal of loose thigh skin' },
   'labioplasty-istanbul': { title: 'Labiaplasty', desc: 'Labia minora reshaping' },
+  'lumbar-disc-istanbul': { title: 'Lumbar disc surgery', desc: 'Decompression for sciatica' },
+  'cervical-disc-istanbul': { title: 'Cervical disc surgery', desc: 'ACDF or disc replacement' },
 }
 
 const RELATED: Record<string, string[]> = {
@@ -36,7 +38,7 @@ const RELATED: Record<string, string[]> = {
   'knee-replacement-turkey': ['neurosurgery-istanbul', 'dental-implants-turkey', 'ophthalmology-istanbul'],
   'lasik-istanbul': ['ophthalmology-istanbul', 'dental-istanbul', 'rhinoplasty-istanbul'],
   'ophthalmology-istanbul': ['lasik-istanbul', 'knee-replacement-turkey', 'dental-istanbul'],
-  'neurosurgery-istanbul': ['deep-brain-stimulation-turkey', 'knee-replacement-turkey', 'urology-istanbul'],
+  'neurosurgery-istanbul': ['lumbar-disc-istanbul', 'cervical-disc-istanbul', 'deep-brain-stimulation-turkey'],
   'deep-brain-stimulation-turkey': ['neurosurgery-istanbul', 'knee-replacement-turkey', 'ophthalmology-istanbul'],
   'urology-istanbul': ['plastic-surgery-istanbul', 'neurosurgery-istanbul', 'hair-transplant-istanbul'],
 }

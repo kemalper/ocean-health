@@ -24,7 +24,7 @@ const procedures = [
   },
   {
     name: 'Lumbar Disc Herniation',
-    slug: null,
+    slug: '/treatments/lumbar-disc-istanbul',
     price: 'from £4,000',
     uk: 'from ~£11,000',
     saving: '~65%',
@@ -33,7 +33,7 @@ const procedures = [
   },
   {
     name: 'Cervical Disc Herniation',
-    slug: null,
+    slug: '/treatments/cervical-disc-istanbul',
     price: 'from £4,750',
     uk: null,
     saving: null,
@@ -148,7 +148,7 @@ export default function NeurosurgeryPage() {
         .sec.border{border-top:1px solid #f0ede8;border-bottom:1px solid #f0ede8}
         h2{font-family:'DM Serif Display',serif;font-size:clamp(26px,3vw,38px);font-weight:400;color:#1a1a1a;letter-spacing:-.02em;line-height:1.2;margin-bottom:1rem}
         .proc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:2rem}
-        .proc-card{background:#fff;border:1px solid #f0ede8;border-radius:16px;padding:1.5rem;display:flex;flex-direction:column;transition:transform .25s,box-shadow .25s,border-color .25s}
+        .proc-card{background:#fff;border:1px solid #f0ede8;border-radius:16px;padding:1.5rem;display:flex;flex-direction:column;position:relative;transition:transform .25s,box-shadow .25s,border-color .25s}
         .proc-card:hover{transform:translateY(-3px);box-shadow:0 10px 30px rgba(0,0,0,.08);border-color:#c7feea}
         .proc-card.featured{border-color:#0d6b55;background:#f3fffb}
         .proc-card.referral-card{border-left:3px solid #f59e0b}
@@ -159,6 +159,7 @@ export default function NeurosurgeryPage() {
         .proc-price{font-size:14px;font-weight:600;color:#085041}
         .proc-uk{font-size:11px;color:#aaa;margin-top:2px}
         .proc-saving{font-size:11px;background:#e9fef6;color:#08533f;border-radius:20px;padding:3px 10px;font-weight:600}
+        .proc-card .proc-link::after{content:'';position:absolute;inset:0;border-radius:16px}
         .proc-link{font-size:12px;color:#085041;font-weight:600;margin-top:.75rem;display:inline-flex;align-items:center;gap:4px}
         .faq-list{display:flex;flex-direction:column;border:1px solid #f0ede8;border-radius:16px;overflow:hidden;margin-top:2.5rem}
         .faq-item{border-bottom:1px solid #f0ede8}

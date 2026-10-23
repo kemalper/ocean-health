@@ -2,7 +2,7 @@ import Link from 'next/link'
 import Nav from '@/app/components/Nav'
 import UKPatientInfo from '@/app/components/UKPatientInfo'
 import RelatedTreatments from '@/app/components/RelatedTreatments'
-import type { Procedure } from '@/app/lib/procedures'
+import { PLASTIC, type Procedure } from '@/app/lib/procedures'
 
 const INCLUDED = [
   'Airport transfers in Istanbul',
@@ -13,6 +13,7 @@ const INCLUDED = [
 ]
 
 export default function ProcedurePage({ p }: { p: Procedure }) {
+  const cat = p.category ?? PLASTIC
   const wa = `https://wa.me/447441904858?text=${encodeURIComponent(`Hello, I'd like to enquire about ${p.name.toLowerCase()} in Istanbul`)}`
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -90,11 +91,11 @@ export default function ProcedurePage({ p }: { p: Procedure }) {
       <header className="hero">
         <div className="in">
           <div className="crumb">
-            <Link href="/">Home</Link> › <Link href="/treatments/plastic-surgery-istanbul">Plastic surgery</Link> › {p.name}
+            <Link href="/">Home</Link> › <Link href={cat.href}>{cat.label}</Link> › {p.name}
           </div>
           <div className="hero-grid">
             <div>
-              <div className="kick">Plastic surgery · Istanbul</div>
+              <div className="kick">{cat.kicker}</div>
               <h1>{p.h1} <em>{p.h1em}</em></h1>
               <p className="sub">{p.sub}</p>
               <div className="actions">

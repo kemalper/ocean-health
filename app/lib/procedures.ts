@@ -3,8 +3,14 @@
 // UK prices must trace to docs/uk-price-sources.md.
 import { UK_PRICES } from '@/app/lib/ukPrices'
 
+export type Category = { label: string; href: string; kicker: string }
+
+export const PLASTIC: Category = { label: 'Plastic surgery', href: '/treatments/plastic-surgery-istanbul', kicker: 'Plastic surgery · Istanbul' }
+export const NEURO: Category = { label: 'Neurosurgery', href: '/treatments/neurosurgery-istanbul', kicker: 'Neurosurgery · Istanbul' }
+
 export type Procedure = {
   slug: string
+  category?: Category
   name: string
   h1: string
   h1em: string
@@ -637,6 +643,97 @@ export const PROCEDURES: Procedure[] = [
     ],
     flying: 'Patients typically fly home 3–5 days after surgery, subject to surgeon clearance. Wear loose clothing and ask your surgeon about sitting comfortably on the flight.',
     related: ['plastic-surgery-istanbul', 'mastopexy-istanbul', 'blepharoplasty-istanbul'],
+  },
+  {
+    slug: 'lumbar-disc-istanbul',
+    category: NEURO,
+    name: 'Lumbar disc surgery',
+    h1: 'Lumbar disc surgery in Istanbul.',
+    h1em: 'From £4,000.',
+    metaTitle: 'Lumbar Disc Surgery (Microdiscectomy) in Istanbul | From £4,000 | Ocean Health & Travel',
+    metaDescription: 'Lumbar disc herniation surgery in Istanbul from £4,000 — UK private from about £11,000. JCI-accredited hospitals, your MRI reviewed by the treating neurosurgeon, itemised quote within 48 hours.',
+    sub: 'Decompression for lumbar disc herniation at JCI-accredited hospitals. Send your MRI and the treating neurosurgeon decides whether surgery is suitable.',
+    price: { istanbul: 'from £4,000', uk: 'from ~£11,000', saving: '~65%', stay: '5–7 days' },
+    overview: [
+      'A herniated lumbar disc can press on a nerve root and cause sciatica: leg pain, numbness or weakness, often worse than the back pain. Microdiscectomy removes the part of the disc pressing on the nerve through a small incision, usually with an operating microscope. Some surgeons use an endoscopic technique through an even smaller access.',
+      'Most disc herniations improve without surgery, so surgery is normally considered when symptoms persist despite non-surgical treatment such as physiotherapy, medication or injections, or when there is progressive weakness. Whether you are a suitable candidate is a clinical decision for the treating neurosurgeon after reviewing your MRI and history.',
+      'No formal referral letter is needed to start. We ask for your MRI and clinical records, pass them to the neurosurgical team and come back with their view and an itemised quote. One UK private hospital publishes about £11,005 for lumbar discectomy, which is the comparison we show.',
+    ],
+    suitability: [
+      'An MRI-confirmed lumbar disc herniation that matches your leg symptoms',
+      'Persistent symptoms despite non-surgical treatment, or progressive nerve weakness, as judged by the neurosurgeon',
+      'No signs of cauda equina syndrome, which is an emergency (see below)',
+      'Good general health to undergo general anaesthesia',
+    ],
+    steps: [
+      { t: 'Send your records', d: 'Share your MRI images and report, clinical letters and medication list. No formal referral letter is needed to start.' },
+      { t: 'Neurosurgeon review', d: 'The treating neurosurgeon reviews your records and decides whether surgery is suitable. You receive an itemised quote within 48 hours of complete records.' },
+      { t: 'Surgery in Istanbul', d: 'Surgery is under general anaesthesia. Many patients are walking the same or next day, and your surgeon sets the plan.' },
+      { t: 'Recovery and follow-up', d: 'You recover in Istanbul, attend post-operative checks and receive English-language operative notes and a discharge summary, sent to your UK GP on request.' },
+    ],
+    risks: [
+      'Persistent or recurrent leg or back pain, including recurrence of the herniation at the same level, which may need further surgery',
+      'Numbness, tingling or weakness that does not fully recover, and rarely worsening nerve injury',
+      'Tear of the membrane around the nerves (dural tear) with spinal fluid leak',
+      'Infection and bleeding, including bleeding around the nerves',
+      'Risks of general anaesthesia and of blood clots, including after flying',
+      'Cauda equina syndrome is a surgical emergency. If you develop new numbness between the legs, loss of bladder or bowel control, or rapidly worsening leg weakness, go to the nearest emergency department immediately, in the UK or abroad',
+    ],
+    faqs: [
+      { q: 'How much does lumbar disc surgery cost in Istanbul compared with the UK?', a: 'Lumbar disc surgery in Istanbul starts from £4,000. One UK private hospital publishes about £11,005 for a lumbar discectomy (collected October 2026), a saving of roughly 65%. This is a single published source, so use it as a guide. The price depends on the technique and the hospital stay, and your itemised quote states exactly what is included.' },
+      { q: 'Do I need a referral?', a: 'No formal referral letter is needed to start. We ask for your MRI and existing clinical records instead. The treating neurosurgeon reviews them and decides whether surgery is suitable. A letter from your GP or specialist is helpful if you have one.' },
+      { q: 'Will I definitely need surgery?', a: 'Not necessarily. Many herniated discs improve with non-surgical treatment. Surgery is usually considered when symptoms persist or nerve weakness progresses. The neurosurgeon will give you their view after reviewing your MRI.' },
+      { q: 'How long is recovery and when can I fly home?', a: 'Most patients stay in Istanbul for 5–7 days, subject to surgeon clearance. Sitting for long periods is uncomfortable after disc surgery, so ask about flight timing, seat choice and moving regularly during the journey. Your surgeon will advise on activity, lifting and return to work.' },
+      { q: 'What if I have a problem after I return?', a: 'Seek emergency care straight away for new numbness between the legs, loss of bladder or bowel control, or rapidly worsening leg weakness. For other concerns the treating hospital remains responsible for agreed follow-up and we help coordinate communication with them. We do not provide post-operative medical care. Ask before you commit whether revision surgery is covered and on what terms, and get the answer in writing.' },
+    ],
+    flying: 'Patients typically fly home 5–7 days after surgery, subject to surgeon clearance. Ask about seat choice, standing and walking regularly, and avoiding heavy lifting of your luggage.',
+    related: ['neurosurgery-istanbul', 'cervical-disc-istanbul', 'deep-brain-stimulation-turkey'],
+  },
+  {
+    slug: 'cervical-disc-istanbul',
+    category: NEURO,
+    name: 'Cervical disc surgery',
+    h1: 'Cervical disc surgery in Istanbul.',
+    h1em: 'From £4,750.',
+    metaTitle: 'Cervical Disc Surgery (ACDF) in Istanbul | From £4,750 | Ocean Health & Travel',
+    metaDescription: 'Cervical disc surgery (ACDF or disc replacement) in Istanbul from £4,750. JCI-accredited hospitals, your MRI reviewed by the treating neurosurgeon, itemised quote within 48 hours.',
+    sub: 'Surgery for cervical disc herniation at JCI-accredited hospitals. Send your MRI and the treating neurosurgeon decides whether surgery is suitable.',
+    price: { istanbul: 'from £4,750', uk: 'No published guide price', saving: 'Not compared', stay: '5–7 days' },
+    overview: [
+      'A herniated or degenerated disc in the neck can press on a nerve root, causing arm pain, numbness or weakness, or on the spinal cord itself. Anterior cervical discectomy and fusion (ACDF) removes the disc through a small incision at the front of the neck and joins the vertebrae. In selected patients the surgeon may use a disc replacement instead, which aims to preserve movement.',
+      'Whether surgery is needed, and which type, is a clinical decision for the treating neurosurgeon after reviewing your MRI and examination. Many patients with arm pain improve without surgery. Signs of spinal cord compression need prompt specialist assessment.',
+      'No formal referral letter is needed to start. We ask for your MRI and clinical records, pass them to the neurosurgical team and come back with their view and an itemised quote. We have not found a reliable published UK price, so we do not show a UK comparison.',
+    ],
+    suitability: [
+      'An MRI-confirmed cervical disc problem that matches your arm or neck symptoms',
+      'Persistent symptoms despite non-surgical treatment, or progressive weakness or cord compression, as judged by the neurosurgeon',
+      'Good general health to undergo general anaesthesia',
+      'Non-smokers, or patients prepared to stop, because smoking impairs fusion',
+    ],
+    steps: [
+      { t: 'Send your records', d: 'Share your MRI images and report, clinical letters and medication list. No formal referral letter is needed to start.' },
+      { t: 'Neurosurgeon review', d: 'The treating neurosurgeon reviews your records, decides whether surgery is suitable and advises on fusion or disc replacement. You receive an itemised quote within 48 hours of complete records.' },
+      { t: 'Surgery in Istanbul', d: 'Surgery is under general anaesthesia through a small incision at the front of the neck. You may wear a collar afterwards if your surgeon advises.' },
+      { t: 'Recovery and follow-up', d: 'You recover in Istanbul, attend post-operative checks and receive English-language operative notes and a discharge summary, sent to your UK GP on request.' },
+    ],
+    risks: [
+      'Hoarseness or difficulty swallowing after surgery, usually temporary but occasionally lasting',
+      'Persistent or recurrent arm or neck pain, and numbness or weakness that does not fully recover',
+      'Failure of the bones to fuse, or problems with the implant, which can need further surgery',
+      'Wear at the discs next to a fused level over the years (adjacent segment disease)',
+      'Bleeding or swelling in the neck, which is rare but can compromise the airway',
+      'Tear of the membrane around the spinal cord with fluid leak, infection, and very rarely injury to the spinal cord or nerves',
+      'Risks of general anaesthesia and of blood clots, including after flying',
+    ],
+    faqs: [
+      { q: 'How much does cervical disc surgery cost in Istanbul?', a: 'Cervical disc surgery in Istanbul starts from £4,750. We have not found a reliable published UK price, so we do not show a UK comparison. The price depends on the technique (fusion or disc replacement), the number of levels and the hospital stay. Your itemised quote states exactly what is included.' },
+      { q: 'Do I need a referral?', a: 'No formal referral letter is needed to start. We ask for your MRI and existing clinical records instead. The treating neurosurgeon reviews them and decides whether surgery is suitable. A letter from your GP or specialist is helpful if you have one.' },
+      { q: 'What is the difference between fusion and disc replacement?', a: 'Fusion joins the two vertebrae after the disc is removed. Disc replacement uses an artificial disc to keep movement at that level. Only some patients are suitable for replacement. The neurosurgeon will advise after reviewing your MRI.' },
+      { q: 'How long is recovery and when can I fly home?', a: 'Most patients stay in Istanbul for 5–7 days, subject to surgeon clearance. You may have a sore throat or difficulty swallowing for a few days. Ask about neck support, lifting luggage and moving regularly on the flight.' },
+      { q: 'What if I have a problem after I return?', a: 'Seek emergency care straight away for difficulty breathing, rapidly increasing neck swelling or new weakness in the arms or legs. For other concerns the treating hospital remains responsible for agreed follow-up and we help coordinate communication with them. We do not provide post-operative medical care. Ask before you commit whether revision surgery is covered and on what terms, and get the answer in writing.' },
+    ],
+    flying: 'Patients typically fly home 5–7 days after surgery, subject to surgeon clearance. Ask about neck support, lifting luggage and moving regularly on the flight.',
+    related: ['neurosurgery-istanbul', 'lumbar-disc-istanbul', 'deep-brain-stimulation-turkey'],
   },
 ]
 
