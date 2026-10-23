@@ -12,6 +12,7 @@ const ALL: Record<string, { title: string; desc: string }> = {
   'neurosurgery-istanbul': { title: 'Neurosurgery', desc: 'Spine, tumour and functional neurosurgery' },
   'deep-brain-stimulation-turkey': { title: 'Deep brain stimulation', desc: "For Parkinson's disease" },
   'urology-istanbul': { title: "Urology & men's health", desc: 'Specialist urological care' },
+  'breast-augmentation-istanbul': { title: 'Breast augmentation', desc: 'Implant-based breast enlargement' },
 }
 
 const RELATED: Record<string, string[]> = {
@@ -28,8 +29,8 @@ const RELATED: Record<string, string[]> = {
   'urology-istanbul': ['plastic-surgery-istanbul', 'neurosurgery-istanbul', 'hair-transplant-istanbul'],
 }
 
-export default function RelatedTreatments({ current }: { current: string }) {
-  const slugs = RELATED[current] ?? []
+export default function RelatedTreatments({ current, related }: { current: string; related?: string[] }) {
+  const slugs = (related ?? RELATED[current] ?? []).filter(s => ALL[s])
   if (!slugs.length) return null
   return (
     <section className="rt">

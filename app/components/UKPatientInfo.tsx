@@ -11,8 +11,8 @@ const FLYING: Record<string, string> = {
 }
 const FLYING_DEFAULT = 'Timing depends on the procedure and your recovery. Your surgical team confirms when it is safe to fly before you book your return.'
 
-export default function UKPatientInfo({ current }: { current: string }) {
-  const flying = FLYING[current] ?? FLYING_DEFAULT
+export default function UKPatientInfo({ current, flying: flyingText }: { current: string; flying?: string }) {
+  const flying = flyingText ?? FLYING[current] ?? FLYING_DEFAULT
   return (
     <section className="ukp">
       <style>{`

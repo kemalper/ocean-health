@@ -25,7 +25,7 @@ const procedures = [
   },
   {
     name: 'Breast Augmentation',
-    slug: null,
+    slug: '/treatments/breast-augmentation-istanbul',
     price: 'from £6,000',
     uk: UK_PRICES.breastAugmentation.typical,
     saving: 'Comparable',

@@ -1,8 +1,9 @@
 import { MetadataRoute } from 'next'
 import { headers } from 'next/headers'
+import { PROCEDURE_SLUGS } from '@/app/lib/procedures'
 
 // Update when page content changes materially. A constant (not new Date()) so lastmod stays trustworthy.
-const LAST_MODIFIED = new Date('2026-10-22')
+const LAST_MODIFIED = new Date('2026-10-23')
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const host = (await headers()).get('host') ?? ''
@@ -22,6 +23,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     'hair-transplant-istanbul',
     'knee-replacement-turkey',
     'urology-istanbul',
+    ...PROCEDURE_SLUGS,
   ]
 
   const legal = [
