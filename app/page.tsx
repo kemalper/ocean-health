@@ -31,8 +31,7 @@ const procedures: Record<string, { headers: string[], rows: string[][] }> = {
   ortho: {
     headers: ['Procedure', 'UK private', 'Istanbul (OHT)', 'Saving'],
     rows: [
-      ['Knee replacement', '£10,000 – £17,000', 'from £3,500 · 2–3 wks', '~65–80%'],
-      ['Lumbar disc surgery', 'from ~£11,000', 'from £4,000 · 2–3 wks', '~65%', '/treatments/lumbar-disc-istanbul'],
+      ['Knee replacement', '£10,000 – £17,000', 'from £3,500 · 2–3 wks', '~65–80%', '/treatments/knee-replacement-turkey'],
     ]
   },
   ophth: {
@@ -46,8 +45,9 @@ const procedures: Record<string, { headers: string[], rows: string[][] }> = {
   neuro: {
     headers: ['Procedure', 'UK private', 'Istanbul (OHT)', 'Saving'],
     rows: [
-      ['Deep brain stimulation', '£30,000+', 'from $30,000 (~£23,700)', 'from ~20%'],
-      ['Lumbar disc herniation', 'from ~£11,000', 'from $5,000 (~£3,950)', '~65%'],
+      ['Deep brain stimulation', '£30,000+', 'from $30,000 (~£23,700)', 'from ~20%', '/treatments/deep-brain-stimulation-turkey'],
+      ['Lumbar disc surgery', 'from ~£11,000', 'from £4,000', '~65%', '/treatments/lumbar-disc-istanbul'],
+      ['Cervical disc surgery', 'No published guide price', 'from £4,750', 'Not compared', '/treatments/cervical-disc-istanbul'],
     ]
   }
 }
