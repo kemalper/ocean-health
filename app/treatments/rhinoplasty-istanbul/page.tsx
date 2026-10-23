@@ -25,7 +25,7 @@ const faqs = [
   },
   {
     q: 'Which hospitals perform rhinoplasty in Istanbul?',
-    a: 'We work exclusively with JCI (Joint Commission International) accredited hospitals in Istanbul. Your itemised quote names the hospital and surgeon before you commit, and you can verify the hospital accreditation on the JCI website.'
+    a: 'We work exclusively with JCI (Joint Commission International) accredited hospitals in Istanbul. The hospital and surgeon are confirmed in writing before you pay for treatment, and you can then verify the hospital accreditation on the JCI website.'
   },
   {
     q: 'Is rhinoplasty in Turkey safe?',

@@ -212,7 +212,7 @@ export default function ProcedurePage({ p }: { p: Procedure }) {
         <div className="in">
           <div className="cta">
             <h2>Ready to find out what {p.name.toLowerCase()} costs for you?</h2>
-            <p>Tell us what you are considering. Itemised quote within 48 hours, naming the hospital and surgeon.</p>
+            <p>Tell us what you are considering. Itemised quote within 48 hours. Hospital and surgeon confirmed in writing before you pay.</p>
             <a href={wa} target="_blank" rel="noopener noreferrer" className="btn">Get a free quote</a>
           </div>
         </div>

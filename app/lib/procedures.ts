@@ -48,7 +48,7 @@ export const PROCEDURES: Procedure[] = [
     },
     overview: [
       'Breast augmentation increases breast volume and can improve shape and symmetry. Most procedures use silicone gel or saline implants, placed through an incision under the breast fold, around the areola or in the armpit, and positioned behind the breast tissue or under the chest muscle. Fat transfer is a separate option for a more modest increase in volume.',
-      'The surgeon agrees implant type, size, profile and placement with you after assessing your chest wall, breast tissue and skin quality. Your itemised quote names the hospital and surgeon and lists what is and is not included before you commit to anything.',
+      'The surgeon agrees implant type, size, profile and placement with you after assessing your chest wall, breast tissue and skin quality. Your itemised quote lists what is and is not included, and the hospital and surgeon are confirmed in writing before you pay for treatment.',
       'For breast augmentation the cost in Istanbul is broadly in line with UK private prices. Patients who travel usually do so for access to a surgeon and hospital they have checked, and for an all-in coordinated package, not for a large price difference.',
     ],
     suitability: [
@@ -58,7 +58,7 @@ export const PROCEDURES: Procedure[] = [
       'Non-smokers, or patients prepared to stop before and after surgery as advised',
     ],
     steps: [
-      { t: 'Enquiry and quote', d: 'Tell us what you want. You receive an itemised quote within 48 hours that names the hospital and surgeon.' },
+      { t: 'Enquiry and quote', d: 'Tell us what you want. You receive an itemised quote within 48 hours with a clear list of what is and is not included. The hospital and surgeon are confirmed in writing before you pay for treatment.' },
       { t: 'Remote assessment', d: 'You complete a medical questionnaire and share photographs. Your surgeon reviews them and confirms whether the procedure is suitable before you book travel.' },
       { t: 'Surgery in Istanbul', d: 'Surgery usually takes one to two hours under general anaesthesia. Your surgeon confirms implant details and agrees them with you in writing.' },
       { t: 'Recovery and follow-up', d: 'You recover in Istanbul, attend your post-operative checks and receive English-language operative notes and a discharge summary, forwarded to your UK GP on request.' },
@@ -123,7 +123,7 @@ export const PROCEDURES: Procedure[] = [
       'Non-smokers, or patients prepared to stop before and after surgery as advised',
     ],
     steps: [
-      { t: 'Enquiry and quote', d: 'Tell us which areas concern you. You receive an itemised quote within 48 hours that names the hospital and surgeon.' },
+      { t: 'Enquiry and quote', d: 'Tell us which areas concern you. You receive an itemised quote within 48 hours with a clear list of what is and is not included. The hospital and surgeon are confirmed in writing before you pay for treatment.' },
       { t: 'Remote assessment', d: 'You complete a medical questionnaire and share photographs. Your surgeon confirms suitability and the areas that can be treated safely in one session.' },
       { t: 'Surgery in Istanbul', d: 'Surgery is usually under general anaesthesia and the time depends on the number of areas. You wear a compression garment afterwards.' },
       { t: 'Recovery and follow-up', d: 'You recover in Istanbul, attend post-operative checks and receive English-language operative notes and a discharge summary, sent to your UK GP on request.' },
@@ -171,7 +171,7 @@ export const PROCEDURES: Procedure[] = [
       'Non-smokers, or patients prepared to stop well before and after surgery as advised',
     ],
     steps: [
-      { t: 'Enquiry and quote', d: 'Tell us what you want to change. You receive an itemised quote within 48 hours that names the hospital and surgeon.' },
+      { t: 'Enquiry and quote', d: 'Tell us what you want to change. You receive an itemised quote within 48 hours with a clear list of what is and is not included. The hospital and surgeon are confirmed in writing before you pay for treatment.' },
       { t: 'Remote assessment', d: 'You complete a medical questionnaire and share photographs. Your surgeon confirms the type of abdominoplasty and whether it is suitable.' },
       { t: 'Surgery in Istanbul', d: 'Surgery is under general anaesthesia and usually takes a few hours. You wake with a compression garment and may have surgical drains for a short time.' },
       { t: 'Recovery and follow-up', d: 'You recover in Istanbul, attend post-operative checks and receive English-language operative notes and a discharge summary, sent to your UK GP on request.' },
@@ -219,7 +219,7 @@ export const PROCEDURES: Procedure[] = [
       'Non-smokers, or patients prepared to stop before and after surgery as advised',
     ],
     steps: [
-      { t: 'Enquiry and quote', d: 'Tell us what you are hoping for. You receive an itemised quote within 48 hours that names the hospital and surgeon.' },
+      { t: 'Enquiry and quote', d: 'Tell us what you are hoping for. You receive an itemised quote within 48 hours with a clear list of what is and is not included. The hospital and surgeon are confirmed in writing before you pay for treatment.' },
       { t: 'Remote assessment', d: 'You complete a medical questionnaire and share photographs. Your surgeon confirms suitability and the technique. Ask them to confirm in writing where the fat will be placed.' },
       { t: 'Surgery in Istanbul', d: 'Surgery is under general anaesthesia, with liposuction first and fat transfer second. You wear a compression garment afterwards.' },
       { t: 'Recovery and follow-up', d: 'You recover in Istanbul, avoid sitting or lying directly on the buttocks as instructed, attend post-operative checks and receive English-language notes for your GP.' },
@@ -266,7 +266,7 @@ export const PROCEDURES: Procedure[] = [
       'Non-smokers, or patients prepared to stop well before and after surgery as advised',
     ],
     steps: [
-      { t: 'Enquiry and quote', d: 'Tell us what you want to change. You receive an itemised quote within 48 hours that names the hospital and surgeon.' },
+      { t: 'Enquiry and quote', d: 'Tell us what you want to change. You receive an itemised quote within 48 hours with a clear list of what is and is not included. The hospital and surgeon are confirmed in writing before you pay for treatment.' },
       { t: 'Remote assessment', d: 'You complete a medical questionnaire and share photographs. Your surgeon confirms whether a mini lift is the right operation.' },
       { t: 'Surgery in Istanbul', d: 'Surgery is under general anaesthesia or sedation with local anaesthesia, as your surgeon advises, and usually takes a few hours.' },
       { t: 'Recovery and follow-up', d: 'You recover in Istanbul, attend post-operative checks and receive English-language operative notes and a discharge summary, sent to your UK GP on request.' },
@@ -312,7 +312,7 @@ export const PROCEDURES: Procedure[] = [
       'Non-smokers, or patients prepared to stop before and after surgery as advised',
     ],
     steps: [
-      { t: 'Enquiry and quote', d: 'Tell us which lids concern you. You receive an itemised quote within 48 hours that names the hospital and surgeon.' },
+      { t: 'Enquiry and quote', d: 'Tell us which lids concern you. You receive an itemised quote within 48 hours with a clear list of what is and is not included. The hospital and surgeon are confirmed in writing before you pay for treatment.' },
       { t: 'Remote assessment', d: 'You complete a medical questionnaire, including any eye conditions, and share photographs. Your surgeon confirms the plan.' },
       { t: 'Surgery in Istanbul', d: 'Surgery is under local anaesthesia with sedation or general anaesthesia, as your surgeon advises, and usually takes one to two hours.' },
       { t: 'Recovery and follow-up', d: 'You attend post-operative checks, have sutures removed as planned and receive English-language operative notes for your UK GP.' },
@@ -358,7 +358,7 @@ export const PROCEDURES: Procedure[] = [
       'Non-smokers, or patients prepared to stop well before and after surgery as advised',
     ],
     steps: [
-      { t: 'Enquiry and quote', d: 'Tell us what you are hoping for. You receive an itemised quote within 48 hours that names the hospital and surgeon.' },
+      { t: 'Enquiry and quote', d: 'Tell us what you are hoping for. You receive an itemised quote within 48 hours with a clear list of what is and is not included. The hospital and surgeon are confirmed in writing before you pay for treatment.' },
       { t: 'Remote assessment', d: 'You complete a medical questionnaire and share photographs. Your surgeon discusses the plan. Ask about the expected size and scars.' },
       { t: 'Surgery in Istanbul', d: 'Surgery is under general anaesthesia and usually takes a few hours. You wear a support bra afterwards and may have drains for a short time.' },
       { t: 'Recovery and follow-up', d: 'You recover in Istanbul, attend post-operative checks and receive English-language operative notes and a discharge summary, sent to your UK GP on request.' },
@@ -403,7 +403,7 @@ export const PROCEDURES: Procedure[] = [
       'Non-smokers, or patients prepared to stop well before and after surgery as advised',
     ],
     steps: [
-      { t: 'Enquiry and quote', d: 'Tell us what you want to change. You receive an itemised quote within 48 hours that names the hospital and surgeon.' },
+      { t: 'Enquiry and quote', d: 'Tell us what you want to change. You receive an itemised quote within 48 hours with a clear list of what is and is not included. The hospital and surgeon are confirmed in writing before you pay for treatment.' },
       { t: 'Remote assessment', d: 'You complete a medical questionnaire and share photographs. Your surgeon recommends a lift alone or with an implant.' },
       { t: 'Surgery in Istanbul', d: 'Surgery is under general anaesthesia and usually takes two to three hours. You wear a support bra afterwards.' },
       { t: 'Recovery and follow-up', d: 'You recover in Istanbul, attend post-operative checks and receive English-language operative notes and a discharge summary, sent to your UK GP on request. If implants are used, keep the manufacturer, model, size and batch details.' },
@@ -448,7 +448,7 @@ export const PROCEDURES: Procedure[] = [
       'Non-smokers, or patients prepared to stop before and after surgery as advised',
     ],
     steps: [
-      { t: 'Enquiry and quote', d: 'Tell us what you want to change. You receive an itemised quote within 48 hours that names the hospital and surgeon.' },
+      { t: 'Enquiry and quote', d: 'Tell us what you want to change. You receive an itemised quote within 48 hours with a clear list of what is and is not included. The hospital and surgeon are confirmed in writing before you pay for treatment.' },
       { t: 'Remote assessment', d: 'You complete a medical questionnaire and share photographs. Your surgeon recommends a brow lift, eyelid surgery or both.' },
       { t: 'Surgery in Istanbul', d: 'Surgery is under general anaesthesia or sedation with local anaesthesia, as your surgeon advises.' },
       { t: 'Recovery and follow-up', d: 'You recover in Istanbul, attend post-operative checks and receive English-language operative notes and a discharge summary, sent to your UK GP on request.' },
@@ -493,7 +493,7 @@ export const PROCEDURES: Procedure[] = [
       'No active ear infection or skin problem behind the ear',
     ],
     steps: [
-      { t: 'Enquiry and quote', d: 'Tell us what you want to change. You receive an itemised quote within 48 hours that names the hospital and surgeon.' },
+      { t: 'Enquiry and quote', d: 'Tell us what you want to change. You receive an itemised quote within 48 hours with a clear list of what is and is not included. The hospital and surgeon are confirmed in writing before you pay for treatment.' },
       { t: 'Remote assessment', d: 'You complete a medical questionnaire and share photographs of both ears. Your surgeon confirms the approach.' },
       { t: 'Surgery in Istanbul', d: 'Surgery is under local anaesthesia with or without sedation, or general anaesthesia, as your surgeon advises, and usually takes one to two hours.' },
       { t: 'Recovery and follow-up', d: 'You wear a head bandage at first, attend post-operative checks and receive English-language operative notes for your UK GP.' },
@@ -537,7 +537,7 @@ export const PROCEDURES: Procedure[] = [
       'Non-smokers, or patients prepared to stop well before and after surgery as advised',
     ],
     steps: [
-      { t: 'Enquiry and quote', d: 'Tell us what you want to change. You receive an itemised quote within 48 hours that names the hospital and surgeon.' },
+      { t: 'Enquiry and quote', d: 'Tell us what you want to change. You receive an itemised quote within 48 hours with a clear list of what is and is not included. The hospital and surgeon are confirmed in writing before you pay for treatment.' },
       { t: 'Remote assessment', d: 'You complete a medical questionnaire and share photographs. Your surgeon recommends a lift, liposuction or both.' },
       { t: 'Surgery in Istanbul', d: 'Surgery is under general anaesthesia. You wear compression sleeves afterwards.' },
       { t: 'Recovery and follow-up', d: 'You recover in Istanbul, attend post-operative checks and receive English-language operative notes and a discharge summary, sent to your UK GP on request.' },
@@ -582,7 +582,7 @@ export const PROCEDURES: Procedure[] = [
       'Non-smokers, or patients prepared to stop well before and after surgery as advised',
     ],
     steps: [
-      { t: 'Enquiry and quote', d: 'Tell us what you want to change. You receive an itemised quote within 48 hours that names the hospital and surgeon.' },
+      { t: 'Enquiry and quote', d: 'Tell us what you want to change. You receive an itemised quote within 48 hours with a clear list of what is and is not included. The hospital and surgeon are confirmed in writing before you pay for treatment.' },
       { t: 'Remote assessment', d: 'You complete a medical questionnaire and share photographs. Your surgeon recommends the type of lift and whether to add liposuction.' },
       { t: 'Surgery in Istanbul', d: 'Surgery is under general anaesthesia. You wear a compression garment afterwards.' },
       { t: 'Recovery and follow-up', d: 'You recover in Istanbul, attend post-operative checks and receive English-language operative notes and a discharge summary, sent to your UK GP on request.' },
@@ -627,7 +627,7 @@ export const PROCEDURES: Procedure[] = [
       'No active infection or skin condition in the area',
     ],
     steps: [
-      { t: 'Enquiry and quote', d: 'Contact us in confidence. You receive an itemised quote within 48 hours that names the hospital and surgeon.' },
+      { t: 'Enquiry and quote', d: 'Contact us in confidence. You receive an itemised quote within 48 hours with a clear list of what is and is not included. The hospital and surgeon are confirmed in writing before you pay for treatment.' },
       { t: 'Remote assessment', d: 'You complete a medical questionnaire. Your surgeon may assess with photographs or a video consultation, as they advise, and confirms the plan.' },
       { t: 'Surgery in Istanbul', d: 'Surgery is under local anaesthesia with sedation or general anaesthesia, as your surgeon advises, and usually takes about an hour.' },
       { t: 'Recovery and follow-up', d: 'You recover in Istanbul, attend post-operative checks and receive English-language operative notes for your UK GP.' },

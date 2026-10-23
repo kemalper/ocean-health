@@ -274,7 +274,7 @@ export default function Home() {
             <ul className="hero-fine">
               <li>Itemised quote within 48 hours</li>
               <li>Surgery usually within 2 weeks of confirming</li>
-              <li>Hospital and surgeon named before you commit</li>
+              <li>Surgeon credentials confirmed in writing before you pay</li>
             </ul>
           </div>
           <div className="hero-media">

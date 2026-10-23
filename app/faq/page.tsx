@@ -66,7 +66,7 @@ const faqSections = [
       },
       {
         q: 'Which hospitals do you work with?',
-        a: 'We work with JCI-accredited hospitals in Istanbul. Your itemised quote names the hospital and surgeon before you commit, and you can verify accreditation on the JCI website. Our partner hospitals are selected based on clinical standards and JCI accreditation. Our commercial arrangements with hospitals do not affect the independence of clinical decisions.',
+        a: 'We work with JCI-accredited hospitals in Istanbul. The hospital and surgeon are confirmed in writing before you pay for treatment, and you can then verify accreditation on the JCI website. Our partner hospitals are selected based on clinical standards and JCI accreditation. Our commercial arrangements with hospitals do not affect the independence of clinical decisions.',
       },
       {
         q: 'Are the surgeons qualified?',
