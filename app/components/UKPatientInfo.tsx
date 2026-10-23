@@ -41,7 +41,7 @@ export default function UKPatientInfo({ current, flying: flyingText }: { current
           </div>
           <div className="ukp-card">
             <h3>Payment and cancellation</h3>
-            <p>We charge patients no coordination fee; partner hospitals pay us. Deposits, payment schedules and refund terms are set by the hospital and confirmed in writing in your quote before you pay anything. Cancellation terms are in your coordination agreement — see the <Link href="/brokerage-agreement">brokerage agreement</Link>.</p>
+            <p>You pay no coordination fee. We are paid by the hospital you are treated at, and we tell you this upfront. Deposits, payment schedules and refund terms are set by the hospital and confirmed in writing in your quote before you pay anything. Cancellation terms are in your coordination agreement — see the <Link href="/brokerage-agreement">brokerage agreement</Link>.</p>
           </div>
           <div className="ukp-card">
             <h3>Travel insurance</h3>

@@ -263,7 +263,7 @@ export default function Home() {
             <div className="eyebrow">UK-registered coordinator · Istanbul</div>
             <h1>Private treatment in Istanbul, <em>arranged by one coordinator.</em></h1>
             <p className="hero-sub">
-              Itemised quotes, hotel, transfers and an interpreter at JCI‑accredited hospitals. Hospitals pay us; you pay no coordination fee.
+              Itemised quotes, hotel, transfers and an interpreter at JCI‑accredited hospitals. You pay no coordination fee: we are paid by the hospital, and we tell you so upfront.
             </p>
             <div className="hero-actions">
               <a href={WA_URL} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Get a free quote</a>
@@ -280,7 +280,7 @@ export default function Home() {
       {/* TRUST BAR */}
       <div className="trust">
         <div className="inner trust-inner">
-          {[['UK-registered','Company no. 16186647'],['ICO registered','UK GDPR'],['JCI-accredited','Partner hospitals'],['No coordination fee','Hospitals pay us, not you']].map(([t, d]) => (
+          {[['UK-registered','Company no. 16186647'],['ICO registered','UK GDPR'],['JCI-accredited','Partner hospitals'],['No coordination fee','Paid by the hospital, not you']].map(([t, d]) => (
             <div key={t} className="ti"><b>{t}</b><span>{d}</span></div>
           ))}
         </div>
