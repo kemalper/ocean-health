@@ -82,6 +82,11 @@ export default function ProcedurePage({ p }: { p: Procedure }) {
         .pp .how-img{width:100%;max-width:900px;height:auto;max-height:360px;object-fit:cover;object-position:50% 40%;border-radius:16px;display:block;margin:1.25rem 0 .5rem}
         .pp .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:1.5rem}
         .pp .step{background:#fff;border:1px solid var(--line);border-radius:14px;padding:1.25rem 1.35rem}
+        .pp .tl{list-style:none;margin:.75rem 0 0;padding:0;border-left:2px solid var(--green)}
+        .pp .tl li{padding:.15rem 0 .9rem 1.25rem;margin:0;font-size:15px}
+        .pp .tl li::before{display:none}
+        .pp .tl b{display:block;font-weight:600}
+        .pp .tl span{color:var(--muted);font-size:14.5px}
         .pp .step small{font-size:12px;color:var(--green);font-weight:600;letter-spacing:.08em}
         .pp .step p{font-size:14.5px;color:var(--muted);margin:.4rem 0 0}
         .pp details{border-bottom:1px solid var(--line);padding:1rem 0}
@@ -130,6 +135,7 @@ export default function ProcedurePage({ p }: { p: Procedure }) {
               <div className="row"><span>Istanbul (OHT)</span><b className="g">{p.price.istanbul}</b></div>
               <div className="row"><span>UK private (typical)</span><b>{p.price.uk}</b></div>
               <div className="row"><span>Compared with UK</span><b>{p.price.saving}</b></div>
+              <div className="row"><span>Surgery date</span><b>Usually within 2 weeks of confirming</b></div>
               <div className="row"><span>Stay in Istanbul</span><b>{p.price.stay}</b></div>
               <div className="fine">Prices indicative. No coordination fee is charged to patients. Flights not included. UK figures are published guide prices, October 2026.</div>
             </div>
@@ -166,6 +172,14 @@ export default function ProcedurePage({ p }: { p: Procedure }) {
               </div>
             ))}
           </div>
+          <h3 style={{ marginTop: '2.25rem' }}>Your timeline</h3>
+          <ol className="tl">
+            <li><b>Within 48 hours</b><span>Itemised quote, once we have your complete records or photographs.</span></li>
+            <li><b>Usually within 2 weeks of confirming</b><span>Your surgery date, subject to the surgeon and hospital availability.</span></li>
+            <li><b>Arrival</b><span>Airport transfer, hotel, and your meeting with the surgeon before the procedure.</span></li>
+            <li><b>{p.price.stay === 'Depends on treatment' ? 'In Istanbul' : p.price.stay}</b><span>The procedure and post-operative checks. The surgeon confirms when you are fit to fly.</span></li>
+            <li><b>At home</b><span>Follow your surgeon&apos;s guidance on activity, work and exercise. English-language documents go to your GP on request.</span></li>
+          </ol>
         </div>
       </section>
 

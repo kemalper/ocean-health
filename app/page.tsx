@@ -99,7 +99,7 @@ const STEPS = [
   { t: 'Enquiry', d: 'Send us your treatment and preferred dates by WhatsApp or email.', when: 'Day 0' },
   { t: 'Itemised quote', d: 'Hospital, surgeon, hotel and transfers set out line by line.', when: 'Within 48 hours' },
   { t: 'Booking', d: 'Hospital, hotel and transfers confirmed; pre-operative instructions sent.', when: 'After you accept' },
-  { t: 'Treatment', d: 'An interpreter at every appointment and full liaison with the hospital.', when: 'In Istanbul' },
+  { t: 'Treatment', d: 'An interpreter at every appointment and full liaison with the hospital.', when: 'Usually within 2 weeks of booking' },
   { t: 'GP documents', d: 'Discharge notes in English forwarded to your GP.', when: 'On request' },
 ]
 
@@ -269,7 +269,7 @@ export default function Home() {
               <a href={WA_URL} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Get a free quote</a>
               <a href="#compare" className="btn-link">See how prices compare</a>
             </div>
-            <p className="hero-fine">Itemised quote within 48 hours.<br />Hospital and surgeon named before you commit.</p>
+            <p className="hero-fine">Itemised quote within 48 hours. Surgery usually within 2 weeks of confirming.<br />Hospital and surgeon named before you commit.</p>
           </div>
           <div className="hero-media">
             <Image src="/hero-welcome.jpg" alt="Hospital reception and waiting area" fill priority sizes="(max-width:900px) 100vw, 520px" style={{objectFit:'cover',objectPosition:'50% 100%',transform:'scale(1.15)',transformOrigin:'50% 100%'}} />
