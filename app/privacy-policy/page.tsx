@@ -44,7 +44,7 @@ export default function PrivacyPolicy() {
         <div className="inner">
           <div className="kicker">Legal</div>
           <h1>Privacy Policy</h1>
-          <div className="updated">Last updated: June 2025</div>
+          <div className="updated">Last updated: October 2026</div>
         </div>
       </div>
 
@@ -55,7 +55,7 @@ export default function PrivacyPolicy() {
         <h2>What data we collect</h2>
         <ul>
           <li>Contact details: name, email address, phone number</li>
-          <li>Medical information: treatment goals, clinical documents, X-rays, referral letters, medical history — provided voluntarily by you for the purpose of obtaining a coordination quote</li>
+          <li>Medical information: treatment goals, clinical documents, X-rays, referral letters, medical history — provided voluntarily by you for the purpose of obtaining a coordination quote, including through our online review forms, where you may also upload photographs and medical reports</li>
           <li>Communication records: WhatsApp messages, emails, and other correspondence</li>
           <li>Technical data: IP address, browser type, pages visited (via website analytics)</li>
         </ul>
@@ -84,6 +84,7 @@ export default function PrivacyPolicy() {
           <li>Partner hospitals and clinics in Istanbul — to obtain treatment quotes and arrange your care</li>
           <li>Hotel and transfer providers — to arrange your accommodation and transportation</li>
           <li>Professional interpreters — to facilitate clinical appointments</li>
+          <li>Google Cloud (Firebase) — our service provider for storing the information and files you submit through our online forms. It acts as our data processor and may only process your data on our instructions</li>
           <li>Your UK GP — post-discharge documentation, on your request only</li>
           <li>We do not sell your data to third parties</li>
         </ul>
@@ -91,8 +92,10 @@ export default function PrivacyPolicy() {
         <h2>International transfers</h2>
         <p>Your data will be transferred to Turkey for the purpose of arranging your medical treatment. Turkey is not currently recognised by the UK as providing an adequate level of data protection. We implement appropriate safeguards — including contractual protections — when transferring data to Turkish partner organisations.</p>
 
+        <p>Information and files you submit through our online forms are stored with Google Cloud (Firebase). Google may process data outside the UK, including in countries without a UK adequacy decision. We rely on contractual safeguards for these transfers. Access to submitted forms and files is restricted to our team and the clinicians who assess your case.</p>
+
         <h2>How long we keep your data</h2>
-        <p>We retain your personal data for 7 years following the completion of your coordination, in line with standard business record-keeping requirements. Medical records provided by you are retained for the duration of your coordination and deleted thereafter unless you request otherwise.</p>
+        <p>We retain your personal data for 7 years following the completion of your coordination, in line with standard business record-keeping requirements. Medical records provided by you are retained for the duration of your coordination and deleted thereafter unless you request otherwise. If you submit an online form or records but do not go ahead with a coordination, we delete your medical information, photographs and uploaded files within 12 months of submission. You can ask us to delete them sooner at any time by emailing info@oceanhealthtravel.com.</p>
 
         <h2>Your rights</h2>
         <p>Under UK GDPR, you have the right to:</p>
