@@ -290,7 +290,7 @@ export default function OphthalmologyPage() {
         <div className="inner">
           <div className="footer-legal">
             © {new Date().getFullYear()} Ocean Health &amp; Travel Ltd · Registered in England &amp; Wales · Company no. 16186647<br />
-            London: 17 Green Lanes, N16 9BS · Fethiye: Karagözler Mah., Fevzi Çakmak Cad. No:11/A, Muğla ·{' '}
+            London: 17 Green Lanes, N16 9BS ·{' '}
             <a href="mailto:info@oceanhealthtravel.com" style={{color:'#555'}}>info@oceanhealthtravel.com</a> ·{' '}
             <a href="tel:+447441904858" style={{color:'#555'}}>+44 7441 904858</a><br />
             Flights not included · No coordination fee charged to patients · Coordinator, not a medical provider · Elective procedures only<br />

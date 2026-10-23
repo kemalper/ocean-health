@@ -149,7 +149,7 @@ export default function ContactPage() {
                   </div>
                 </div>
                 <div className="office-card">
-                  <div className="office-tag">Turkey office</div>
+                  <div className="office-tag">Turkey operations office</div>
                   <div className="office-city">Fethiye, Muğla</div>
                   <div className="office-addr">
                     Karagözler Mah.<br />
@@ -157,6 +157,7 @@ export default function ContactPage() {
                     No:11/A<br />
                     Fethiye, Muğla, Turkey
                   </div>
+                  <div style={{fontSize:'12.5px',color:'#888',lineHeight:1.6,marginTop:'.6rem'}}>Operations and administration. Patients are treated at partner hospitals in Istanbul.</div>
                 </div>
               </div>
 

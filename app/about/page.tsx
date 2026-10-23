@@ -214,7 +214,7 @@ export default function AboutPage() {
               </a>
             </div>
             <div style={{background:'#fff',border:'1px solid #f0ede8',borderRadius:'16px',padding:'1.5rem'}}>
-              <div style={{fontSize:'12px',fontWeight:600,letterSpacing:'.08em',textTransform:'uppercase',color:'#1D9E75',marginBottom:'.75rem'}}>Turkey office</div>
+              <div style={{fontSize:'12px',fontWeight:600,letterSpacing:'.08em',textTransform:'uppercase',color:'#1D9E75',marginBottom:'.75rem'}}>Turkey operations office</div>
               <div style={{fontSize:'15px',fontWeight:500,marginBottom:'.5rem'}}>Fethiye, Muğla</div>
               <div style={{fontSize:'14px',color:'#666',lineHeight:1.7,fontWeight:300}}>
                 Karagözler Mah.<br />
@@ -222,6 +222,7 @@ export default function AboutPage() {
                 Fethiye, Muğla<br />
                 Turkey
               </div>
+              <div style={{fontSize:'12.5px',color:'#888',lineHeight:1.6,marginTop:'.75rem'}}>Operations and administration. Patients are treated at partner hospitals in Istanbul.</div>
               <a href="mailto:info@oceanhealthtravel.com" style={{display:'inline-flex',alignItems:'center',gap:'6px',fontSize:'13px',color:'#085041',fontWeight:500,marginTop:'1rem'}}>
                 info@oceanhealthtravel.com
               </a>

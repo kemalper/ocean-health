@@ -225,7 +225,7 @@ export default function ProcedurePage({ p }: { p: Procedure }) {
         <div className="in">
           <div className="legal">
             © {new Date().getFullYear()} Ocean Health &amp; Travel Ltd · Registered in England &amp; Wales · Company no. 16186647<br />
-            London: 17 Green Lanes, N16 9BS · Fethiye: Karagözler Mah., Fevzi Çakmak Cad. No:11/A, Muğla ·{' '}
+            London: 17 Green Lanes, N16 9BS ·{' '}
             <a href="mailto:info@oceanhealthtravel.com">info@oceanhealthtravel.com</a> · <a href="tel:+447441904858">+44 7441 904858</a><br />
             Flights not included · No coordination fee charged to patients · Coordinator, not a medical provider · Elective procedures only<br />
             <em>Ocean Health &amp; Travel does not provide medical advice. All clinical decisions rest with your treating provider. Not suitable for emergencies.</em>
