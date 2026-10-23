@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import Nav from '@/app/components/Nav'
 import UKPatientInfo from '@/app/components/UKPatientInfo'
 import RelatedTreatments from '@/app/components/RelatedTreatments'
@@ -78,6 +79,7 @@ export default function ProcedurePage({ p }: { p: Procedure }) {
         .pp ul{margin:0;padding:0;list-style:none}
         .pp li{position:relative;padding-left:20px;margin-bottom:.6rem;font-size:15.5px}
         .pp li::before{content:'';position:absolute;left:0;top:.65em;width:6px;height:6px;border-radius:50%;background:var(--green)}
+        .pp .how-img{width:100%;max-width:900px;height:auto;max-height:360px;object-fit:cover;object-position:50% 40%;border-radius:16px;display:block;margin:1.25rem 0 .5rem}
         .pp .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:1.5rem}
         .pp .step{background:#fff;border:1px solid var(--line);border-radius:14px;padding:1.25rem 1.35rem}
         .pp .step small{font-size:12px;color:var(--green);font-weight:600;letter-spacing:.08em}
@@ -154,6 +156,7 @@ export default function ProcedurePage({ p }: { p: Procedure }) {
       <section className="sec alt">
         <div className="in">
           <h2>How it works</h2>
+          {cat.photo && <Image src={cat.photo.src} alt={cat.photo.alt} width={1536} height={1024} className="how-img" sizes="(max-width:900px) 100vw, 900px" />}
           <div className="steps">
             {p.steps.map((s, i) => (
               <div className="step" key={s.t}>

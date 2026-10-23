@@ -3,11 +3,14 @@
 // UK prices must trace to docs/uk-price-sources.md.
 import { UK_PRICES } from '@/app/lib/ukPrices'
 
-export type Category = { label: string; href: string; kicker: string }
+export type Photo = { src: string; alt: string }
+export type Category = { label: string; href: string; kicker: string; photo?: Photo }
+const CONSULT: Photo = { src: '/photos/consultation-doctor.webp', alt: 'Illustrative image: a doctor reviewing a treatment plan with a patient' }
+const NEURO_PHOTO: Photo = { src: '/photos/neuro-consultation.webp', alt: 'Illustrative image: a neurosurgeon discussing scan results with a patient' }
 
-export const PLASTIC: Category = { label: 'Plastic surgery', href: '/treatments/plastic-surgery-istanbul', kicker: 'Plastic surgery · Istanbul' }
-export const AESTHETIC: Category = { label: 'Treatments', href: '/#services', kicker: 'Aesthetic medicine · Istanbul' }
-export const NEURO: Category = { label: 'Neurosurgery', href: '/treatments/neurosurgery-istanbul', kicker: 'Neurosurgery · Istanbul' }
+export const PLASTIC: Category = { label: 'Plastic surgery', href: '/treatments/plastic-surgery-istanbul', kicker: 'Plastic surgery · Istanbul', photo: CONSULT }
+export const AESTHETIC: Category = { label: 'Treatments', href: '/#services', kicker: 'Aesthetic medicine · Istanbul', photo: CONSULT }
+export const NEURO: Category = { label: 'Neurosurgery', href: '/treatments/neurosurgery-istanbul', kicker: 'Neurosurgery · Istanbul', photo: NEURO_PHOTO }
 
 export type Procedure = {
   slug: string

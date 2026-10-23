@@ -274,6 +274,19 @@ export default function NeurosurgeryPage() {
       </section>
 
       <section className="sec">
+        <div className="inner" style={{display:'grid',gridTemplateColumns:'repeat(auto-fit,minmax(300px,1fr))',gap:'2.5rem',alignItems:'center'}}>
+          <div>
+            <div className="kicker">How your records are reviewed</div>
+            <h2>The neurosurgeon decides, not us.</h2>
+            <p style={{fontSize:'15px',color:'#555',lineHeight:1.8,fontWeight:300,margin:'1rem 0'}}>
+              You send your MRI or other imaging and clinical reports. Our coordination team passes them to the treating neurosurgeon, who reviews them and decides whether surgery is suitable. You receive their view and an itemised quote within 48 hours of complete records.
+            </p>
+          </div>
+          <img src="/photos/neuro-consultation.webp" alt="Illustrative image: a neurosurgeon discussing scan results with a patient" loading="lazy" width={1536} height={1024} style={{width:'100%',height:'auto',borderRadius:'14px',display:'block'}} />
+        </div>
+      </section>
+
+      <section className="sec">
         <div className="inner">
           <div className="cta-box">
             <h2>Ready to send your documents?</h2>

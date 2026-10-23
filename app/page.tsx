@@ -216,6 +216,7 @@ export default function Home() {
         .how-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:5rem;align-items:start}
         .how-side{position:sticky;top:96px}
         .how-side h2{font-size:clamp(30px,3.6vw,46px);line-height:1.1;letter-spacing:-.02em;margin-bottom:1rem}
+        .how-photo{width:100%;height:auto;border-radius:14px;margin-top:1.75rem;display:block}
         .step{display:grid;grid-template-columns:56px 1fr auto;gap:1rem;padding:1.5rem 0;border-bottom:1px solid var(--line);align-items:start}
         .step:first-child{border-top:1px solid var(--line)}
         .step-n{font-family:'DM Serif Display',serif;font-size:34px;color:var(--green);line-height:1}
@@ -406,6 +407,7 @@ export default function Home() {
             <div className="eyebrow">The process</div>
             <h2>How it works.</h2>
             <p className="sec-sub">From your first message to discharge notes for your GP, one coordinator handles the logistics.</p>
+            <Image src="/photos/coordination.webp" alt="Illustrative image: a coordinator welcoming a patient at a hospital reception" width={1536} height={1024} className="how-photo" sizes="(max-width:900px) 100vw, 40vw" />
           </div>
           <div>
             {STEPS.map((s,i) => (
