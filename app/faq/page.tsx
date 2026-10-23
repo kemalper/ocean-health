@@ -133,7 +133,7 @@ const faqSections = [
       },
       {
         q: 'How long have you been operating?',
-        a: 'Ocean Health & Travel is the UK-registered brand of Ocean Travel, which has 15 years of experience in international health tourism coordination in Turkey.',
+        a: 'Ocean Health & Travel Ltd is a UK-registered medical tourism coordinator. In Turkey we work through our licensed travel agency, Ocean Turizm Seyahat Acentası, which has 15 years of experience in the tourism sector.',
       },
       {
         q: 'Are you regulated?',

@@ -109,7 +109,7 @@ export default function AboutPage() {
             <div className="prose">
               <h2>Who we are</h2>
               <p>
-                Ocean Health &amp; Travel is the UK-registered medical tourism coordination brand of Ocean Travel, operating under TÜRSAB authorisation in Turkey. We connect international patients — primarily from the United Kingdom and Europe — with distinguished hospitals and specialist physicians in Istanbul.
+                Ocean Health &amp; Travel Ltd is a UK-registered medical tourism coordinator (Companies House no. 16186647). In Turkey, our operations are carried out through our licensed Turkish travel agency, Ocean Turizm Seyahat Acentası, which holds TÜRSAB authorisation. We connect international patients — primarily from the United Kingdom and Europe — with distinguished hospitals and specialist physicians in Istanbul.
               </p>
               <p>
                 We are a coordination service, not a medical provider. We do not employ surgeons or operate clinical facilities. Our role is to make the process of accessing high-quality elective medical care in Istanbul straightforward, transparent, and safe — handling every logistical step so that patients can focus on their treatment and recovery.
