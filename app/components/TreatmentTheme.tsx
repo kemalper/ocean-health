@@ -64,6 +64,8 @@ export default function TreatmentTheme() {
       .tp .check-dot{background:var(--green)!important}
       .tp .cta-box,.tp .cta-card{background:var(--ink)!important;border-radius:22px}
       .tp .cta-strip{background:#fff!important;border:1px solid var(--line)!important}
+      .tp .disclaimer{background:var(--band)!important;border:1px solid var(--line)!important;color:var(--muted)!important;border-radius:14px!important;font-size:14px!important}
+      .tp .disclaimer strong{color:var(--ink)!important;margin-right:.3em}
       .tp .btn-wa{background:var(--green)!important;color:#fff!important}
       .tp .btn-wa:hover{background:var(--green-d)!important}
       .tp footer{background:var(--ink)!important}
