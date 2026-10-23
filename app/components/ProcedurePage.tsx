@@ -214,6 +214,9 @@ export default function ProcedurePage({ p }: { p: Procedure }) {
             <h2>Ready to find out what {p.name.toLowerCase()} costs for you?</h2>
             <p>Tell us what you are considering. Itemised quote within 48 hours. Hospital and surgeon confirmed in writing before you pay.</p>
             <a href={wa} target="_blank" rel="noopener noreferrer" className="btn">Get a free quote</a>
+            <p style={{ marginTop: '1.25rem', marginBottom: 0, color: 'rgba(255,255,255,.7)', fontSize: 14 }}>
+              Prefer to send photos or records? <Link href={`/records-review?procedure=${p.slug}`} style={{ color: '#fff', borderBottom: '1px solid rgba(255,255,255,.6)' }}>Send your details for review</Link>
+            </p>
           </div>
         </div>
       </section>
