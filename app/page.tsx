@@ -182,6 +182,21 @@ export default function Home() {
         .home td{padding:1.05rem 1.4rem;border-bottom:1px solid #F1EDE4;font-size:14.5px}
         .home tr:last-child td{border-bottom:none}
         .home td:first-child{font-weight:500}
+        @media(min-width:641px){
+          .home thead th{background:var(--band)}
+          .home td:first-child{font-family:'DM Serif Display',serif;font-size:18px;font-weight:400;letter-spacing:-.01em}
+          .home td:nth-child(3),.home th:nth-child(3){background:rgba(227,240,234,.55)}
+          .home th:nth-child(3){color:var(--green-d)}
+          .home td.td-oht{font-size:16px}
+          .home td.td-uk{font-size:14px}
+          .home tbody tr{transition:background .15s}
+          .home tbody tr:hover td{background:rgba(242,238,229,.55)}
+          .home tbody tr:hover td:nth-child(3){background:rgba(227,240,234,.95)}
+          .home .row-link{border-bottom-color:transparent}
+          .home .row-link::after{content:' →';color:var(--green);opacity:0;transition:opacity .15s}
+          .home tr:hover .row-link{border-bottom-color:var(--green);color:var(--green)}
+          .home tr:hover .row-link::after{opacity:1}
+        }
         .row-link{color:inherit;border-bottom:1px solid var(--line);text-decoration:none}
         .row-link:hover{color:var(--green);border-color:var(--green)}
         .td-uk{color:var(--muted)}
