@@ -37,7 +37,7 @@ export default function UKPatientInfo({ current, flying: flyingText }: { current
           </div>
           <div className="ukp-card">
             <h3>After you return</h3>
-            <p>Operative notes, the discharge summary and any results are provided in English and forwarded to your UK GP on request. The treating hospital remains responsible for agreed follow-up. If you need urgent care at home, seek local medical help straight away. We can help coordinate communication with the hospital, but we do not provide post-operative medical care.</p>
+            <p>Operative notes, the discharge summary and any results are provided in English and forwarded to your UK GP on request. The treating hospital remains responsible for agreed follow-up. If you need urgent care at home, seek local medical help straight away. We can help coordinate communication with the hospital, but we do not provide post-operative medical care. Read <Link href="/if-something-goes-wrong">what to do if something goes wrong</Link>.</p>
           </div>
           <div className="ukp-card">
             <h3>Payment and cancellation</h3>

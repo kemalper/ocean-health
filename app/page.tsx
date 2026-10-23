@@ -527,6 +527,8 @@ export default function Home() {
                 <a href="/about">About us</a>
                 <a href="#how-it-works">How it works</a>
                 <a href="/faq">FAQ</a>
+                <a href="/patient-charter">Patient charter</a>
+                <a href="/if-something-goes-wrong">If something goes wrong</a>
                 <a href="mailto:info@oceanhealthtravel.com">Contact</a>
               </div>
               <div className="footer-col">

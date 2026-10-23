@@ -70,6 +70,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: 'monthly' as const,
       priority: 0.7,
     },
+    ...['patient-charter', 'if-something-goes-wrong'].map(slug => ({
+      url: `${baseUrl}/${slug}`,
+      lastModified: LAST_MODIFIED,
+      changeFrequency: 'monthly' as const,
+      priority: 0.6,
+    })),
     ...legal.map(slug => ({
       url: `${baseUrl}/${slug}`,
       lastModified: LAST_MODIFIED,
