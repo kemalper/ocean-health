@@ -157,9 +157,11 @@ export default function Home() {
         .hero-note{position:absolute;left:16px;right:16px;bottom:16px;background:rgba(250,248,244,.95);backdrop-filter:blur(8px);border-radius:14px;padding:14px 18px;font-size:13px;line-height:1.55;color:var(--ink)}
         .hero-note b{display:block;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--green);margin-bottom:3px}
         .trust{border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-        .home .trust-inner{display:flex;justify-content:space-between;gap:1rem 2rem;flex-wrap:wrap;padding-top:1.6rem;padding-bottom:1.6rem}
-        .ti{display:flex;align-items:center;gap:10px;font-size:15px;font-weight:500;color:var(--ink)}
-        .ti i{width:6px;height:6px;border-radius:50%;background:var(--green);flex-shrink:0}
+        .home .trust-inner{display:grid;grid-template-columns:repeat(4,1fr);gap:1.25rem 2rem;padding-top:1.6rem;padding-bottom:1.6rem}
+        .ti{display:flex;flex-direction:column;gap:2px;padding-left:14px;border-left:2px solid var(--green)}
+        .ti b{font-size:15px;font-weight:600;color:var(--ink);line-height:1.3}
+        .ti span{font-size:13px;color:var(--muted);line-height:1.4}
+        @media(max-width:900px){.home .trust-inner{grid-template-columns:repeat(2,1fr);gap:1.1rem 1.25rem;padding-top:1.35rem;padding-bottom:1.35rem}.ti{padding-left:12px}.ti b{font-size:14px}.ti span{font-size:12.5px}}
         .sec{padding:6.5rem 0;scroll-margin-top:92px}
         .home h2{font-size:clamp(30px,3.6vw,46px);line-height:1.1;letter-spacing:-.02em;margin-bottom:1rem}
         .home .sec-head h2{margin-bottom:0}
@@ -275,8 +277,8 @@ export default function Home() {
       {/* TRUST BAR */}
       <div className="trust">
         <div className="inner trust-inner">
-          {['UK Companies House no. 16186647','ICO registered · UK GDPR','JCI-accredited hospitals','No coordination fee to patients'].map(t => (
-            <div key={t} className="ti"><i></i>{t}</div>
+          {[['UK-registered','Companies House no. 16186647'],['ICO registered','UK GDPR'],['JCI-accredited','Partner hospitals'],['No coordination fee','Hospitals pay us, not you']].map(([t, d]) => (
+            <div key={t} className="ti"><b>{t}</b><span>{d}</span></div>
           ))}
         </div>
       </div>
