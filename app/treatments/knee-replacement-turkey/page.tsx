@@ -19,8 +19,8 @@ const faqs = [
     a: 'Knee replacement surgery in Istanbul starts from £3,500, compared to £10,000–£17,000 at UK private orthopaedic centres. The price includes surgeon fee, anaesthesia, implant, hospital stay, and standard post-operative care. Airport transfer, hotel, and interpreter are included in every package. An itemised quote is provided within 48 hours of receiving your clinical documentation.'
   },
   {
-    q: 'How long is the NHS waiting list for knee replacement?',
-    a: 'Average NHS waits for knee replacement are around 28 weeks, though they vary by trust. Through Ocean Health & Travel, surgery can typically be arranged within 2–3 weeks of first contact.'
+    q: 'How quickly can I have knee replacement surgery?',
+    a: 'Once you have confirmed your booking, surgery can usually be scheduled within 2 weeks, subject to the surgeon and hospital availability. From first contact, most patients are treated within 2–3 weeks, once the surgeon has reviewed your X-rays and records.'
   },
   {
     q: 'What type of knee implant is used?',
@@ -158,10 +158,10 @@ export default function KneeReplacementPage() {
               <div className="kicker">Orthopaedics · Istanbul</div>
               <h1>Knee Replacement<br />in Turkey.<br /><em>From £3,500.</em></h1>
               <p className="hero-sub">
-                CE-marked implants. JCI-accredited orthopaedic teams. Surgery typically within 2–3 weeks, against an average NHS wait of around 28 weeks.
+                CE-marked implants. JCI-accredited orthopaedic teams. Surgery usually within 2 weeks of confirming your booking.
               </p>
               <div className="nhs-callout">
-                <strong>NHS waiting time:</strong> 12–18+ months for knee replacement in many areas of England. Through Ocean Health &amp; Travel, surgery can typically be arranged within 2–3 weeks.
+                <strong>Timeline:</strong> Once you confirm, surgery can usually be scheduled within 2 weeks, subject to surgeon and hospital availability.
               </div>
               <div className="hero-actions">
                 <a href={WA_URL} target="_blank" className="btn-primary">Get a free quote</a>
@@ -185,12 +185,6 @@ export default function KneeReplacementPage() {
                 <div>
                   <div className="price-label">UK private clinic</div>
                   <div className="price-val" style={{color:'rgba(255,255,255,.35)',fontSize:'17px'}}>£10,000 – £17,000</div>
-                </div>
-              </div>
-              <div className="price-row">
-                <div>
-                  <div className="price-label">NHS wait</div>
-                  <div className="price-val" style={{color:'#fca5a5',fontSize:'17px'}}>12 – 18+ months</div>
                 </div>
               </div>
               <div className="price-row">
@@ -222,18 +216,17 @@ export default function KneeReplacementPage() {
                 Ocean Health &amp; Travel coordinates knee replacement surgery at JCI-accredited orthopaedic centres in Istanbul. We are a coordination service — not a medical provider. All clinical decisions rest with your treating orthopaedic surgeon.
               </p>
 
-              <h3>NHS vs. Istanbul — a direct comparison</h3>
+              <h3>UK private vs. Istanbul</h3>
               <div className="compare-box">
                 <table className="compare-table">
                   <thead>
-                    <tr><th></th><th>NHS</th><th>UK private</th><th>Istanbul (OHT)</th></tr>
+                    <tr><th></th><th>UK private</th><th>Istanbul (OHT)</th></tr>
                   </thead>
                   <tbody>
-                    <tr><td>Waiting time</td><td className="td-nhs">12–18+ months</td><td className="td-nhs">2–4 weeks</td><td className="td-oht">2–3 weeks</td></tr>
-                    <tr><td>Cost</td><td className="td-nhs">Free (long wait)</td><td className="td-nhs">£10,000–£17,000</td><td className="td-oht">from £3,500</td></tr>
-                    <tr><td>Implant standard</td><td className="td-nhs">CE-marked</td><td className="td-nhs">CE-marked</td><td className="td-oht">CE-marked</td></tr>
-                    <tr><td>Hospital accreditation</td><td className="td-nhs">CQC</td><td className="td-nhs">CQC</td><td className="td-oht">JCI</td></tr>
-                    <tr><td>Interpreter</td><td className="td-nhs">—</td><td className="td-nhs">—</td><td className="td-oht">Included</td></tr>
+                    <tr><td>Cost</td><td className="td-nhs">£10,000–£17,000</td><td className="td-oht">from £3,500</td></tr>
+                    <tr><td>Implant standard</td><td className="td-nhs">CE-marked</td><td className="td-oht">CE-marked</td></tr>
+                    <tr><td>Hospital accreditation</td><td className="td-nhs">CQC</td><td className="td-oht">JCI</td></tr>
+                    <tr><td>Interpreter</td><td className="td-nhs">—</td><td className="td-oht">Included</td></tr>
                   </tbody>
                 </table>
               </div>
@@ -303,12 +296,8 @@ export default function KneeReplacementPage() {
                   <span className="sidebar-price-val">~65–80%</span>
                 </div>
                 <div className="sidebar-price-row">
-                  <span className="sidebar-price-label">NHS wait</span>
-                  <span className="sidebar-price-val" style={{color:'#dc2626'}}>12–18+ months</span>
-                </div>
-                <div className="sidebar-price-row">
-                  <span className="sidebar-price-label">OHT timeline</span>
-                  <span className="sidebar-price-val">2–3 weeks</span>
+                  <span className="sidebar-price-label">Surgery date</span>
+                  <span className="sidebar-price-val">Usually within 2 weeks</span>
                 </div>
                 <p style={{fontSize:'11px',color:'#bbb',marginTop:'1rem',lineHeight:1.6}}>Prices indicative. No coordination fee is charged to patients. Flights not included.</p>
               </div>

@@ -270,7 +270,7 @@ export default function DentalImplantsPage() {
                 <li>High-volume, experienced prosthodontists and oral surgeons</li>
                 <li>CE-marked implant systems from internationally recognised manufacturers</li>
                 <li>JCI-accredited and internationally certified dental facilities</li>
-                <li>7–10 day treatment timeline — no 6-month NHS waiting list</li>
+                <li>7–10 day treatment timeline in Istanbul</li>
                 <li>English-speaking coordinators and interpreters throughout</li>
               </ul>
 

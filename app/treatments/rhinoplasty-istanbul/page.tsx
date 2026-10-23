@@ -21,7 +21,7 @@ const faqs = [
   },
   {
     q: 'How long does rhinoplasty take to arrange through Ocean Health & Travel?',
-    a: 'Most patients receive a full itemised quote within 48 hours of first contact. Surgery can typically be arranged within 2–3 weeks — compared to months-long waiting lists at UK private clinics.'
+    a: 'Most patients receive a full itemised quote within 48 hours of first contact. Once you confirm your booking, surgery can usually be scheduled within 2 weeks, subject to the surgeon and hospital availability.'
   },
   {
     q: 'Which hospitals perform rhinoplasty in Istanbul?',
