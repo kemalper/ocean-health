@@ -83,7 +83,7 @@ const ROWS: { name: string; link: string; img: string; summary: string; price: s
   { name: 'Orthopaedics', link: '/treatments/knee-replacement-turkey', img: '/treatments/orthopaedics.jpg', summary: 'Knee and hip replacement, sports injuries, ligament and cartilage repair', price: 'Knee replacement from £3,500' },
   { name: 'Dental', link: '/treatments/dental-istanbul', img: '/treatments/dental.jpg', summary: 'Implants, zirconium crowns and veneers, smile design, orthodontics, root canal', price: 'Implants from £350 each' },
   { name: 'Hair transplantation', link: '/treatments/hair-transplant-istanbul', img: '/hair-transplant.jpg', summary: 'FUE and DHI techniques, PRP for hair restoration', price: 'Contact us for pricing' },
-  { name: 'Aesthetic medicine', link: WA_URL, img: '/treatments/aesthetic.jpg', summary: 'Mesotherapy, Hydrafacial, Scarlet X skin tightening', price: 'From £180', external: true },
+  { name: 'Aesthetic medicine', link: '/treatments/aesthetic-medicine-istanbul', img: '/treatments/aesthetic.jpg', summary: 'Mesotherapy, Hydrafacial, Scarlet X skin tightening', price: 'From £180' },
 ]
 
 const ICON = { width: 22, height: 22, viewBox: '0 0 24 24', fill: 'none', stroke: 'currentColor', strokeWidth: 1.5, strokeLinecap: 'round', strokeLinejoin: 'round' } as const

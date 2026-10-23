@@ -6,6 +6,7 @@ import { UK_PRICES } from '@/app/lib/ukPrices'
 export type Category = { label: string; href: string; kicker: string }
 
 export const PLASTIC: Category = { label: 'Plastic surgery', href: '/treatments/plastic-surgery-istanbul', kicker: 'Plastic surgery · Istanbul' }
+export const AESTHETIC: Category = { label: 'Treatments', href: '/#services', kicker: 'Aesthetic medicine · Istanbul' }
 export const NEURO: Category = { label: 'Neurosurgery', href: '/treatments/neurosurgery-istanbul', kicker: 'Neurosurgery · Istanbul' }
 
 export type Procedure = {
@@ -736,6 +737,51 @@ export const PROCEDURES: Procedure[] = [
     ],
     flying: 'Patients typically fly home 5–7 days after surgery, subject to surgeon clearance. Ask about neck support, lifting luggage and moving regularly on the flight.',
     related: ['neurosurgery-istanbul', 'lumbar-disc-istanbul', 'deep-brain-stimulation-turkey'],
+  },
+  {
+    slug: 'aesthetic-medicine-istanbul',
+    category: AESTHETIC,
+    name: 'Aesthetic medicine',
+    h1: 'Aesthetic medicine in Istanbul.',
+    h1em: 'From £180.',
+    metaTitle: 'Aesthetic Medicine in Istanbul | Mesotherapy, Hydrafacial, Scarlet X | From £180',
+    metaDescription: 'Non-surgical skin treatments in Istanbul from £180: mesotherapy, Hydrafacial and Scarlet X skin tightening. Easy to add to a visit, itemised quote within 48 hours.',
+    sub: 'Non-surgical skin treatments that fit into a short stay or sit alongside another procedure, with an itemised quote before you travel.',
+    price: { istanbul: 'from £180', uk: 'Not compared', saving: '—', stay: 'Depends on treatment' },
+    overview: [
+      'Aesthetic medicine covers non-surgical skin treatments with little or no time off. We coordinate three: mesotherapy, Hydrafacial and Scarlet X. They can be booked on their own during a short visit or added to another procedure, and your itemised quote states the treatments, the number of sessions and what is included.',
+      'Hydrafacial is a non-invasive facial that cleanses, exfoliates and extracts impurities with a vacuum-assisted device, then infuses hydrating serums. Most people return to normal activity straight away, and redness is usually brief.',
+      'Mesotherapy uses a series of very small injections or microneedling of the skin with nutrient or hydrating solutions, usually to improve skin quality. Evidence for results varies between products and people, and your practitioner will explain what is realistic. Scarlet X uses fractional radiofrequency with microneedles to stimulate the skin, and is used for skin tightening, texture and some scars. It involves a few days of redness and sensitivity.',
+    ],
+    suitability: [
+      'Adults looking for a gradual improvement in skin quality, texture or firmness rather than a surgical change',
+      'Healthy skin in the treatment area, with no active infection, cold sores or open wounds',
+      'Realistic expectations: results vary and may need more than one session',
+      'Please tell the practitioner about pregnancy or breastfeeding, a recent course of isotretinoin, a tendency to keloid scarring, implanted devices and any medicines or skin conditions',
+    ],
+    steps: [
+      { t: 'Enquiry and quote', d: 'Tell us which treatment interests you and send a photo of the area. You receive an itemised quote within 48 hours.' },
+      { t: 'Suitability check', d: 'You complete a short health questionnaire. The treating practitioner at the partner clinic confirms what is suitable for you.' },
+      { t: 'Treatment in Istanbul', d: 'Treatments take under an hour or so each and are done at the clinic. Timing can be fitted around another procedure or your travel plans.' },
+      { t: 'Aftercare', d: 'You receive written aftercare instructions, including sun protection and what to avoid in the first days.' },
+    ],
+    risks: [
+      'Redness, swelling, tenderness and dryness, usually settling within hours to a few days',
+      'Bruising or tiny pinpoint bleeding from injections or microneedling',
+      'Skin infection, cold sore reactivation or allergic reaction to a product, which are uncommon',
+      'Changes in skin pigmentation, more likely in darker skin tones and with sun exposure after treatment',
+      'Scarring, which is rare',
+      'Results that are modest or uneven, or that fade and may need maintenance sessions',
+    ],
+    faqs: [
+      { q: 'How much do aesthetic medicine treatments cost in Istanbul?', a: 'Treatments start from £180. The price depends on the treatment, the area and the number of sessions, and your itemised quote states exactly what is included. We do not show a UK comparison for these treatments because prices vary widely between clinics.' },
+      { q: 'Can I add these to another procedure?', a: 'Often yes, for example alongside a facelift or eyelid surgery. The surgeon or practitioner advises on timing, because some skin treatments are best done before or after surgery.' },
+      { q: 'Is there downtime?', a: 'Hydrafacial usually has none. Mesotherapy and Scarlet X can leave redness, swelling and sensitivity for a few days. Your practitioner will explain what to expect for the treatment you choose.' },
+      { q: 'Do you offer Botox or fillers?', a: 'No. We coordinate the three treatments listed on this page.' },
+      { q: 'What if I have a reaction after I return?', a: 'Seek local medical care first if you need urgent help, for example for spreading redness, severe pain or signs of infection. The treating clinic remains responsible for agreed follow-up and we help coordinate communication with them. We do not provide medical care.' },
+    ],
+    flying: 'These treatments rarely restrict flying, but your practitioner will advise. Protect treated skin from sun and avoid heavy make-up on the day of travel.',
+    related: ['plastic-surgery-istanbul', 'mini-facelift-istanbul', 'blepharoplasty-istanbul'],
   },
 ]
 
