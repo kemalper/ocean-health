@@ -215,7 +215,9 @@ export default function PlasticSurgeryPage() {
         h2{font-family:'DM Serif Display',serif;font-size:clamp(26px,3vw,38px);font-weight:400;color:#1a1a1a;letter-spacing:-.02em;line-height:1.2;margin-bottom:1rem}
         h3{font-family:'DM Serif Display',serif;font-size:20px;font-weight:400;color:#1a1a1a;letter-spacing:-.01em;margin-bottom:.5rem}
         .proc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:2rem}
-        .proc-card{background:#fff;border:1px solid #f0ede8;border-radius:16px;padding:1.5rem;transition:transform .25s,box-shadow .25s,border-color .25s;display:flex;flex-direction:column}
+        .proc-card{background:#fff;border:1px solid #f0ede8;border-radius:16px;padding:1.5rem;transition:transform .25s,box-shadow .25s,border-color .25s;display:flex;position:relative;flex-direction:column}
+        .proc-card .proc-link::after{content:'';position:absolute;inset:0;border-radius:16px}
+        .proc-card:has(.proc-link:focus-visible){outline:2px solid #0B6B55;outline-offset:2px}
         .proc-card:hover{transform:translateY(-3px);box-shadow:0 10px 30px rgba(0,0,0,.08);border-color:#d1f5e8}
         .proc-card.featured{border-color:#1D9E75;background:#f0faf5}
         .proc-name{font-size:15px;font-weight:600;color:#1a1a1a;margin-bottom:.4rem}
