@@ -25,7 +25,7 @@ const ALL: Record<string, { title: string; desc: string }> = {
   'arm-lift-istanbul': { title: 'Arm lift', desc: 'Brachioplasty for loose upper-arm skin' },
   'thigh-lift-istanbul': { title: 'Thigh lift', desc: 'Removal of loose thigh skin' },
   'labioplasty-istanbul': { title: 'Labiaplasty', desc: 'Labia minora reshaping' },
-  'aesthetic-medicine-istanbul': { title: 'Aesthetic medicine', desc: 'Mesotherapy, PRP, microneedling, peels' },
+  'aesthetic-medicine-istanbul': { title: 'Aesthetic medicine', desc: 'Hydrafacial, mesotherapy, Scarlet X' },
   'lumbar-disc-istanbul': { title: 'Lumbar disc surgery', desc: 'Decompression for sciatica' },
   'cervical-disc-istanbul': { title: 'Cervical disc surgery', desc: 'ACDF or disc replacement' },
 }
