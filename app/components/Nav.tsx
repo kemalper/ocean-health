@@ -18,7 +18,7 @@ export default function Nav({ transparent = false }: { transparent?: boolean }) 
     <>
       <style>{`
         .nav{position:${transparent ? 'fixed' : 'sticky'};top:0;left:0;right:0;z-index:500;transition:background .3s,box-shadow .3s}
-        .nav.scrolled{background:rgba(250,248,244,.94);backdrop-filter:blur(12px);box-shadow:0 1px 0 #E6E0D4}
+        .nav.scrolled{background:rgba(250,248,244,.98);backdrop-filter:blur(12px);box-shadow:0 1px 0 #E6E0D4}
         .nav:not(.scrolled){background:transparent}
         .nav-inner{max-width:1280px;margin:0 auto;padding:0 2.5rem;height:84px;display:flex;align-items:center;justify-content:space-between}
         .nav-logo{display:flex;align-items:center}
