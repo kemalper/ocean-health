@@ -7,7 +7,7 @@ import UKPatientInfo from '@/app/components/UKPatientInfo'
 export const metadata: Metadata = {
   alternates: { canonical: '/treatments/lasik-istanbul' },
   title: 'LASIK Eye Surgery in Istanbul | From £600 per eye | Ocean Health & Travel',
-  description: 'LASIK laser eye surgery in Istanbul from £600 per eye — vs. £1,500–£2,500 at UK private clinics. JCI-accredited ophthalmology centres, dedicated coordination. Free quote in 48 hours.',
+  description: 'LASIK laser eye surgery in Istanbul from £600 per eye — vs. £995–£2,395 per eye at UK private clinics. JCI-accredited ophthalmology centres, dedicated coordination. Free quote in 48 hours.',
 }
 
 const WA_URL = 'https://wa.me/447441904858?text=Hello%2C%20I%27d%20like%20to%20enquire%20about%20LASIK%20eye%20surgery%20in%20Istanbul'
@@ -15,7 +15,7 @@ const WA_URL = 'https://wa.me/447441904858?text=Hello%2C%20I%27d%20like%20to%20e
 const faqs = [
   {
     q: 'How much does LASIK cost in Istanbul?',
-    a: 'LASIK laser eye surgery in Istanbul starts from £600 per eye, compared to £1,500–£2,500 per eye at UK private clinics — a saving of 60–75%. The exact price depends on your prescription, the laser platform used, and whether additional procedures such as wavefront-guided or topography-guided LASIK are recommended. A full itemised quote is provided within 48 hours of receiving your pre-operative assessment results.'
+    a: 'LASIK laser eye surgery in Istanbul starts from £600 per eye, compared to £995–£2,395 per eye at UK private clinics — a saving of roughly 40–75%. The exact price depends on your prescription, the laser platform used, and whether additional procedures such as wavefront-guided or topography-guided LASIK are recommended. A full itemised quote is provided within 48 hours of receiving your pre-operative assessment results.'
   },
   {
     q: 'Am I suitable for LASIK?',
@@ -184,7 +184,7 @@ export default function LasikPage() {
               <div className="price-row">
                 <div>
                   <div className="price-label">UK private clinic</div>
-                  <div className="price-val" style={{color:'rgba(255,255,255,.35)',fontSize:'17px'}}>£1,500 – £2,500 per eye</div>
+                  <div className="price-val" style={{color:'rgba(255,255,255,.35)',fontSize:'17px'}}>£995 – £2,395 per eye</div>
                 </div>
               </div>
               <div className="price-row">
@@ -251,9 +251,9 @@ export default function LasikPage() {
                 </thead>
                 <tbody>
                   {[
-                    ['LASIK','£1,500 – £2,500','from £600','60–75%'],
-                    ['LASEK / PRK','£1,200 – £2,000','from £500','60–75%'],
-                    ['SMILE','£2,000 – £3,000','from £800','60–70%'],
+                    ['LASIK','£995 – £2,395','from £600','~40–75%'],
+                    ['LASEK / PRK','£995 – £1,800','from £500','~50–70%'],
+                    ['SMILE','£1,500 – £2,950','from £800','~45–70%'],
                     ['Cataract surgery','£2,000 – £3,500','from £800','~65%'],
                     ['Premium lens replacement','£3,000 – £5,000','from £1,200','~65%'],
                   ].map(row => (
@@ -309,7 +309,7 @@ export default function LasikPage() {
                 </div>
                 <div className="sidebar-price-row">
                   <span className="sidebar-price-label">LASIK (UK private)</span>
-                  <span className="sidebar-price-val uk">£1,500 – £2,500</span>
+                  <span className="sidebar-price-val uk">£995 – £2,395</span>
                 </div>
                 <div className="sidebar-price-row">
                   <span className="sidebar-price-label">SMILE (Istanbul)</span>

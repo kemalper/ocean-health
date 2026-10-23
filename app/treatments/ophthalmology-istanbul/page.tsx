@@ -17,24 +17,24 @@ const procedures = [
     name: 'LASIK Laser Eye Surgery',
     slug: '/treatments/lasik-istanbul',
     price: 'from £600 per eye',
-    uk: '£1,500 – £2,500',
-    saving: '60–75%',
+    uk: '£995 – £2,395',
+    saving: '~40–75%',
     desc: 'Laser correction of myopia, hyperopia, and astigmatism. Fast recovery — improved vision within 24 hours.',
   },
   {
     name: 'LASEK / PRK',
     slug: '/treatments/lasik-istanbul',
     price: 'from £500 per eye',
-    uk: '£1,200 – £2,000',
-    saving: '60–75%',
+    uk: '£995 – £1,800',
+    saving: '~50–70%',
     desc: 'Flapless laser correction. Slower recovery than LASIK but suitable for thin corneas or contact sports.',
   },
   {
     name: 'SMILE',
     slug: '/treatments/lasik-istanbul',
     price: 'from £800 per eye',
-    uk: '£2,000 – £3,000',
-    saving: '60–70%',
+    uk: '£1,500 – £2,950',
+    saving: '~45–70%',
     desc: 'Small incision lenticule extraction. Minimal dry eye risk, suitable for high myopia. Newer flapless technique.',
   },
   {
@@ -57,8 +57,8 @@ const procedures = [
     name: 'Eyelid Surgery (Blepharoplasty)',
     slug: null,
     price: 'from £1,800',
-    uk: '£3,000 – £5,000',
-    saving: '40–65%',
+    uk: 'from £4,995',
+    saving: '~60%',
     desc: 'Upper and/or lower eyelid correction for hooded lids, excess skin, or under-eye bags.',
   },
   {
@@ -82,7 +82,7 @@ const procedures = [
 const faqs = [
   {
     q: 'How much does LASIK cost in Istanbul?',
-    a: 'LASIK laser eye surgery in Istanbul starts from £600 per eye, compared to £1,500–£2,500 per eye at UK private clinics — a saving of 60–75%. SMILE starts from £800 per eye, and LASEK/PRK from £500 per eye. Exact pricing depends on your prescription and the laser platform used.'
+    a: 'LASIK laser eye surgery in Istanbul starts from £600 per eye, compared to £995–£2,395 per eye at UK private clinics — a saving of roughly 40–75%. SMILE starts from £800 per eye, and LASEK/PRK from £500 per eye. Exact pricing depends on your prescription and the laser platform used.'
   },
   {
     q: 'How much does cataract surgery cost in Istanbul?',
@@ -202,7 +202,7 @@ export default function OphthalmologyPage() {
               <div className="hero-stat-l">LASIK from, per eye</div>
             </div>
             <div className="hero-stat">
-              <div className="hero-stat-n">60–75%</div>
+              <div className="hero-stat-n">40–75%</div>
               <div className="hero-stat-l">lower than UK private</div>
             </div>
             <div className="hero-stat">
@@ -234,7 +234,7 @@ export default function OphthalmologyPage() {
                 <div className="proc-footer">
                   <div>
                     <div className="proc-price">{p.price}</div>
-                    <div className="proc-uk">UK: {p.uk}</div>
+                    {p.uk && <div className="proc-uk">UK: {p.uk}</div>}
                   </div>
                   {p.saving && <span className="proc-saving">{p.saving}</span>}
                 </div>

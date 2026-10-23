@@ -26,8 +26,8 @@ const procedures = [
     name: 'Lumbar Disc Herniation',
     slug: null,
     price: 'from £4,000',
-    uk: '£8,000 – £15,000',
-    saving: '55–75%',
+    uk: 'from ~£11,000',
+    saving: '~65%',
     desc: 'Surgical decompression for lumbar disc herniation causing sciatica or nerve root compression. Microdiscectomy or endoscopic techniques.',
     referral: false,
   },
@@ -35,8 +35,8 @@ const procedures = [
     name: 'Cervical Disc Herniation',
     slug: null,
     price: 'from £4,750',
-    uk: '£10,000 – £18,000',
-    saving: '55–75%',
+    uk: null,
+    saving: null,
     desc: 'Anterior cervical discectomy and fusion (ACDF) or disc replacement for cervical disc disease causing arm pain or weakness.',
     referral: false,
   },
@@ -237,7 +237,7 @@ export default function NeurosurgeryPage() {
                 <div className="proc-footer">
                   <div>
                     <div className="proc-price">{p.price}</div>
-                    <div className="proc-uk">UK: {p.uk}</div>
+                    {p.uk && <div className="proc-uk">UK: {p.uk}</div>}
                   </div>
                   {p.saving && <span className="proc-saving">{p.saving}</span>}
                 </div>

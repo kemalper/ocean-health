@@ -15,15 +15,15 @@ const procedures: Record<string, { headers: string[], rows: string[][] }> = {
       ['Breast reduction (incl. implants)', '£8,000 – £10,000', 'from £6,300', '~20–35%'],
       ['Liposuction', UK_PRICES.liposuction.range, 'from £2,500', 'Varies'],
       ['Mini facelift', UK_PRICES.facelift.range, 'from £5,000', '~15–40%'],
-      ['Tummy tuck', '£5,000 – £10,000', 'from £3,500', 'up to 65%'],
+      ['Tummy tuck', '£7,200 – £10,050', 'from £3,500', '~50–65%'],
     ]
   },
   dental: {
     headers: ['Procedure', 'UK private', 'Istanbul (OHT)', 'Saving'],
     rows: [
       ['Dental implant (single)', '£1,500 – £3,500', 'from £350', '~75–90%'],
-      ['Zirconium crown', '£700 – £1,200', 'from £150', '~75%'],
-      ['Porcelain veneers (per tooth)', '£600 – £1,000', 'from £180', '~70%'],
+      ['Zirconium crown', '£350 – £1,100', 'from £150', '~55–85%'],
+      ['Porcelain veneers (per tooth)', '£450 – £850', 'from £180', '~60–80%'],
       ['Full-arch restoration (per arch)', '£9,500 – £20,000', 'from £4,500', '~55–75%'],
     ]
   },
@@ -31,14 +31,13 @@ const procedures: Record<string, { headers: string[], rows: string[][] }> = {
     headers: ['Procedure', 'UK private', 'Istanbul (OHT)', 'Saving'],
     rows: [
       ['Knee replacement', '£10,000 – £17,000', 'from £3,500 · 2–3 wks', '~65–80%'],
-      ['Hip replacement', '£12,000 – £16,000', 'from £4,000 · 2–3 wks', '65–75%'],
-      ['Lumbar disc surgery', '£8,000 – £12,000', 'from £4,000 · 2–3 wks', '50–65%'],
+      ['Lumbar disc surgery', 'from ~£11,000', 'from £4,000 · 2–3 wks', '~65%'],
     ]
   },
   ophth: {
     headers: ['Procedure', 'UK private', 'Istanbul (OHT)', 'Saving'],
     rows: [
-      ['LASIK (per eye)', '£1,500 – £2,500', 'from £600', '60–75%'],
+      ['LASIK (per eye)', '£995 – £2,395', 'from £600', '~40–75%'],
       ['Cataract surgery', '£2,000 – £3,500', 'from £800', '~65%'],
       ['Premium lens replacement', '£3,000 – £5,000', 'from £1,200', '~65%'],
     ]
@@ -47,8 +46,7 @@ const procedures: Record<string, { headers: string[], rows: string[][] }> = {
     headers: ['Procedure', 'UK private', 'Istanbul (OHT)', 'Saving'],
     rows: [
       ['Deep brain stimulation', '£30,000+', 'from $30,000 (~£23,700)', 'from ~20%'],
-      ['Lumbar disc herniation', '£8,000 – £15,000', 'from $5,000 (~£3,950)', '55–75%'],
-      ['Cervical disc herniation', '£10,000 – £18,000', 'from $6,000 (~£4,750)', '55–75%'],
+      ['Lumbar disc herniation', 'from ~£11,000', 'from $5,000 (~£3,950)', '~65%'],
     ]
   }
 }

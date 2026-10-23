@@ -45,8 +45,8 @@ const procedures = [
     name: 'Mastopexy (Breast Lift)',
     slug: null,
     price: 'from £5,000',
-    uk: '£7,000 – £9,000',
-    saving: '30–45%',
+    uk: 'from £8,600',
+    saving: '~40%',
     desc: 'Lifting and reshaping of the breast without implants. Can be combined with augmentation.',
     stay: '5–7 days',
   },
@@ -63,8 +63,8 @@ const procedures = [
     name: 'Tummy Tuck (Abdominoplasty)',
     slug: null,
     price: 'from £3,500',
-    uk: '£5,000 – £9,000',
-    saving: '30–60%',
+    uk: '£7,200 – £10,050',
+    saving: '~50–65%',
     desc: 'Removal of excess skin and fat from the abdomen with muscle tightening. Full or mini abdominoplasty.',
     stay: '7–10 days',
   },
@@ -81,8 +81,8 @@ const procedures = [
     name: 'BBL (Brazilian Butt Lift)',
     slug: null,
     price: 'from £4,000',
-    uk: '£7,000 – £12,000',
-    saving: '40–65%',
+    uk: 'from £11,995',
+    saving: '~65%',
     desc: 'Fat transfer to the buttocks for volume and shape enhancement. Combines liposuction and fat grafting.',
     stay: '7–10 days',
   },
@@ -90,8 +90,8 @@ const procedures = [
     name: 'Brow Lift',
     slug: null,
     price: 'from £2,500',
-    uk: '£4,000 – £7,000',
-    saving: '40–65%',
+    uk: '£5,495 – £7,395',
+    saving: '~55–65%',
     desc: 'Lifting of the forehead and brow for a more youthful, refreshed appearance.',
     stay: '5–7 days',
   },
@@ -99,8 +99,8 @@ const procedures = [
     name: 'Eyelid Surgery (Blepharoplasty)',
     slug: null,
     price: 'from £1,800',
-    uk: '£3,000 – £5,000',
-    saving: '40–65%',
+    uk: 'from £4,995',
+    saving: '~60%',
     desc: 'Upper and/or lower eyelid correction for hooded lids, bags, or excess skin.',
     stay: '3–5 days',
   },
@@ -108,8 +108,8 @@ const procedures = [
     name: 'Otoplasty (Ear Surgery)',
     slug: null,
     price: 'from £1,500',
-    uk: '£2,500 – £4,500',
-    saving: '40–65%',
+    uk: '£2,995 – £4,695',
+    saving: '~50–65%',
     desc: 'Correction of prominent or asymmetrical ears. Suitable for adults and children over 5.',
     stay: '3–5 days',
   },
@@ -117,8 +117,8 @@ const procedures = [
     name: 'Arm Lift (Brachioplasty)',
     slug: null,
     price: 'from £2,500',
-    uk: '£4,000 – £6,500',
-    saving: '40–60%',
+    uk: '£4,895 – £7,295',
+    saving: '~50–65%',
     desc: 'Removal of excess skin from the upper arms following weight loss or ageing.',
     stay: '5–7 days',
   },
@@ -126,8 +126,8 @@ const procedures = [
     name: 'Thigh Lift',
     slug: null,
     price: 'from £3,000',
-    uk: '£5,000 – £8,000',
-    saving: '40–60%',
+    uk: null,
+    saving: null,
     desc: 'Removal of excess skin from the inner or outer thighs. Often combined with liposuction.',
     stay: '5–7 days',
   },
@@ -135,8 +135,8 @@ const procedures = [
     name: 'Labioplasty',
     slug: null,
     price: 'from £1,800',
-    uk: '£2,500 – £4,500',
-    saving: '~30–60%',
+    uk: null,
+    saving: null,
     desc: 'Reduction or reshaping of the labia minora for aesthetic or functional reasons.',
     stay: '3–5 days',
   },
@@ -276,7 +276,7 @@ export default function PlasticSurgeryPage() {
               <div className="hero-stat-l">procedures coordinated</div>
             </div>
             <div className="hero-stat">
-              <div className="hero-stat-n">30–70%</div>
+              <div className="hero-stat-n">15–70%</div>
               <div className="hero-stat-l">lower than UK private</div>
             </div>
             <div className="hero-stat">
@@ -312,7 +312,7 @@ export default function PlasticSurgeryPage() {
                 <div className="proc-footer">
                   <div>
                     <div className="proc-price">{p.price}</div>
-                    <div style={{fontSize:'11px',color:'#aaa',marginTop:'2px'}}>UK: {p.uk}</div>
+                    {p.uk && <div style={{fontSize:'11px',color:'#aaa',marginTop:'2px'}}>UK: {p.uk}</div>}
                   </div>
                   {p.saving && <span className="proc-saving">{p.saving} saving</span>}
                 </div>

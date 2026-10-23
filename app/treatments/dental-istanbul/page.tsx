@@ -25,24 +25,24 @@ const procedures = [
     name: 'Zirconium Crowns',
     slug: null,
     price: 'from £150',
-    uk: '£700 – £1,200',
-    saving: '~75%',
+    uk: '£350 – £1,100',
+    saving: '~55–85%',
     desc: 'Metal-free zirconium crowns for natural aesthetics and durability. Suitable for front and back teeth.',
   },
   {
     name: 'Porcelain Veneers',
     slug: null,
     price: 'from £180 per tooth',
-    uk: '£600 – £1,000',
-    saving: '~70%',
+    uk: '£450 – £850',
+    saving: '~60–80%',
     desc: 'Thin porcelain shells bonded to the front surface of teeth to improve colour, shape, and size.',
   },
   {
     name: 'Smile Design',
     slug: null,
     price: 'from £1,200',
-    uk: '£3,000 – £8,000',
-    saving: '~65%',
+    uk: null,
+    saving: null,
     desc: 'Comprehensive aesthetic treatment combining veneers, crowns, whitening, and contouring for a full smile makeover.',
   },
   {
@@ -57,24 +57,24 @@ const procedures = [
     name: 'Orthodontics',
     slug: null,
     price: 'from £1,500',
-    uk: '£2,500 – £5,500',
-    saving: '~50%',
+    uk: '£2,500 – £7,000',
+    saving: '~40–75%',
     desc: 'Fixed braces or clear aligner treatment for teeth straightening. Duration depends on complexity of case.',
   },
   {
     name: 'Root Canal Treatment',
     slug: null,
     price: 'from £100',
-    uk: '£500 – £1,000',
-    saving: '~80%',
+    uk: '£400 – £950',
+    saving: '~75–90%',
     desc: 'Endodontic treatment to save infected or damaged teeth. Single or multi-visit depending on case complexity.',
   },
   {
     name: 'Teeth Whitening',
     slug: null,
     price: 'from £80',
-    uk: '£300 – £700',
-    saving: '~75%',
+    uk: '£400 – £1,000',
+    saving: '~80–90%',
     desc: 'Professional in-clinic whitening for immediate results. Often combined with other cosmetic treatments.',
   },
 ]
@@ -82,7 +82,7 @@ const procedures = [
 const faqs = [
   {
     q: 'How much does dental treatment cost in Istanbul?',
-    a: 'Dental treatment in Istanbul is typically lower in price than at UK private dental clinics. Single implants start from £350 (vs. £1,500–£3,500 in the UK), zirconium crowns from £150 (vs. £700–£1,200), and porcelain veneers from £180 per tooth (vs. £600–£1,000). Full-arch restorations start from £4,500 (vs. £9,500–£20,000 per arch). All prices are indicative — exact quotes depend on the number of teeth and complexity of treatment.'
+    a: 'Dental treatment in Istanbul is typically lower in price than at UK private dental clinics. Single implants start from £350 (vs. £1,500–£3,500 in the UK), zirconium crowns from £150 (vs. £350–£1,100), and porcelain veneers from £180 per tooth (vs. £450–£850). Full-arch restorations start from £4,500 (vs. £9,500–£20,000 per arch). All prices are indicative — exact quotes depend on the number of teeth and complexity of treatment.'
   },
   {
     q: 'How long do I need to stay in Istanbul for dental treatment?',
@@ -237,7 +237,7 @@ export default function DentalIstanbulPage() {
                 <div className="proc-footer">
                   <div>
                     <div className="proc-price">{p.price}</div>
-                    <div className="proc-uk">UK: {p.uk}</div>
+                    {p.uk && <div className="proc-uk">UK: {p.uk}</div>}
                   </div>
                   {p.saving && <span className="proc-saving">{p.saving}</span>}
                 </div>
