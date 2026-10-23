@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { DM_Serif_Display, Inter } from "next/font/google";
 import "./globals.css";
+import FloatingWhatsApp from "@/app/components/FloatingWhatsApp";
 
 const dmSerif = DM_Serif_Display({
   variable: "--font-dm-serif",
@@ -51,7 +52,7 @@ export default function RootLayout({
           gtag('config', 'G-92GMNGS0XF');
         `}} />
       </head>
-      <body>{children}</body>
+      <body>{children}<FloatingWhatsApp /></body>
     </html>
   );
 }
