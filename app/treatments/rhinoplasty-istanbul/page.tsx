@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Nav from '@/app/components/Nav'
 import TreatmentTheme from '@/app/components/TreatmentTheme'
 import RelatedTreatments from '@/app/components/RelatedTreatments'
+import YourTimeline from '@/app/components/YourTimeline'
 import UKPatientInfo from '@/app/components/UKPatientInfo'
 import { UK_PRICES } from '@/app/lib/ukPrices'
 
@@ -368,6 +369,7 @@ export default function RhinoplastyPage() {
       </section>
 
       {/* FOOTER */}
+      <YourTimeline stay="7–10 days" />
       <UKPatientInfo current="rhinoplasty-istanbul" />
       <RelatedTreatments current="rhinoplasty-istanbul" />
       <footer>

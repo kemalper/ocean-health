@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Nav from '@/app/components/Nav'
 import TreatmentTheme from '@/app/components/TreatmentTheme'
 import RelatedTreatments from '@/app/components/RelatedTreatments'
+import YourTimeline from '@/app/components/YourTimeline'
 import UKPatientInfo from '@/app/components/UKPatientInfo'
 
 export const metadata: Metadata = {
@@ -299,6 +300,7 @@ export default function NeurosurgeryPage() {
         </div>
       </section>
 
+      <YourTimeline stay="Depends on procedure" note="Your treatment date, usually within 2 weeks of confirming once the neurosurgeon has reviewed your records and decided that surgery is suitable." />
       <UKPatientInfo current="neurosurgery-istanbul" />
       <RelatedTreatments current="neurosurgery-istanbul" />
       <footer>

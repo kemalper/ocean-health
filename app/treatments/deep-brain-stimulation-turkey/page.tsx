@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Nav from '@/app/components/Nav'
 import TreatmentTheme from '@/app/components/TreatmentTheme'
 import RelatedTreatments from '@/app/components/RelatedTreatments'
+import YourTimeline from '@/app/components/YourTimeline'
 import UKPatientInfo from '@/app/components/UKPatientInfo'
 
 export const metadata: Metadata = {
@@ -400,6 +401,7 @@ export default function DBSPage() {
       </section>
 
       {/* FOOTER */}
+      <YourTimeline stay="Typically 2–3 weeks" note="Your treatment date, usually within 2 weeks of confirming once the neurosurgical team has reviewed your records and decided that surgery is suitable." />
       <UKPatientInfo current="deep-brain-stimulation-turkey" />
       <RelatedTreatments current="deep-brain-stimulation-turkey" />
       <footer>

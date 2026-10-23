@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Nav from '@/app/components/Nav'
 import TreatmentTheme from '@/app/components/TreatmentTheme'
 import RelatedTreatments from '@/app/components/RelatedTreatments'
+import YourTimeline from '@/app/components/YourTimeline'
 import UKPatientInfo from '@/app/components/UKPatientInfo'
 
 export const metadata: Metadata = {
@@ -399,6 +400,7 @@ export default function LasikPage() {
         </div>
       </section>
 
+      <YourTimeline stay="3–5 days" />
       <UKPatientInfo current="lasik-istanbul" />
       <RelatedTreatments current="lasik-istanbul" />
       <footer>

@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Nav from '@/app/components/Nav'
 import TreatmentTheme from '@/app/components/TreatmentTheme'
 import RelatedTreatments from '@/app/components/RelatedTreatments'
+import YourTimeline from '@/app/components/YourTimeline'
 import UKPatientInfo from '@/app/components/UKPatientInfo'
 
 export const metadata: Metadata = {
@@ -253,6 +254,7 @@ export default function UrologyPage() {
         </div>
       </section>
 
+      <YourTimeline stay="Depends on procedure" />
       <UKPatientInfo current="urology-istanbul" />
       <RelatedTreatments current="urology-istanbul" />
       <footer>
