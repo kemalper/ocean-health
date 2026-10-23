@@ -263,7 +263,7 @@ export default function Home() {
             <div className="eyebrow">UK-registered coordinator · Istanbul</div>
             <h1>Private treatment in Istanbul, <em>arranged by one coordinator.</em></h1>
             <p className="hero-sub">
-              Itemised quotes, hotel, transfers and an interpreter at JCI‑accredited hospitals. You pay no coordination fee: we are paid by the hospital, and we tell you so upfront.
+              Itemised quotes, hotel, transfers and an interpreter at JCI‑accredited hospitals, with one coordinator from enquiry to discharge.
             </p>
             <div className="hero-actions">
               <a href={WA_URL} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Get a free quote</a>
