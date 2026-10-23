@@ -13,6 +13,11 @@ const ALL: Record<string, { title: string; desc: string }> = {
   'deep-brain-stimulation-turkey': { title: 'Deep brain stimulation', desc: "For Parkinson's disease" },
   'urology-istanbul': { title: "Urology & men's health", desc: 'Specialist urological care' },
   'breast-augmentation-istanbul': { title: 'Breast augmentation', desc: 'Implant-based breast enlargement' },
+  'liposuction-istanbul': { title: 'Liposuction', desc: 'Targeted fat removal' },
+  'tummy-tuck-istanbul': { title: 'Tummy tuck', desc: 'Abdominoplasty, mini to extended' },
+  'bbl-istanbul': { title: 'Brazilian butt lift', desc: 'Fat transfer to the buttocks' },
+  'mini-facelift-istanbul': { title: 'Mini facelift', desc: 'Lower-face and jowl rejuvenation' },
+  'blepharoplasty-istanbul': { title: 'Eyelid surgery', desc: 'Upper and lower eyelid correction' },
 }
 
 const RELATED: Record<string, string[]> = {

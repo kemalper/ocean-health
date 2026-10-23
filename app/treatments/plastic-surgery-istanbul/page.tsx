@@ -52,7 +52,7 @@ const procedures = [
   },
   {
     name: 'Liposuction',
-    slug: null,
+    slug: '/treatments/liposuction-istanbul',
     price: 'from £2,500',
     uk: UK_PRICES.liposuction.range,
     saving: 'Varies',
@@ -61,7 +61,7 @@ const procedures = [
   },
   {
     name: 'Tummy Tuck (Abdominoplasty)',
-    slug: null,
+    slug: '/treatments/tummy-tuck-istanbul',
     price: 'from £3,500',
     uk: '£7,200 – £10,050',
     saving: '~50–65%',
@@ -70,7 +70,7 @@ const procedures = [
   },
   {
     name: 'Mini facelift',
-    slug: null,
+    slug: '/treatments/mini-facelift-istanbul',
     price: 'from £5,000',
     uk: UK_PRICES.facelift.range,
     saving: '~15–40%',
@@ -79,7 +79,7 @@ const procedures = [
   },
   {
     name: 'BBL (Brazilian Butt Lift)',
-    slug: null,
+    slug: '/treatments/bbl-istanbul',
     price: 'from £4,000',
     uk: 'from £11,995',
     saving: '~65%',
@@ -97,7 +97,7 @@ const procedures = [
   },
   {
     name: 'Eyelid Surgery (Blepharoplasty)',
-    slug: null,
+    slug: '/treatments/blepharoplasty-istanbul',
     price: 'from £1,800',
     uk: 'from £4,995',
     saving: '~60%',
