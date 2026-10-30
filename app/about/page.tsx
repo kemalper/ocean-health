@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import type { Metadata } from 'next'
 import Nav from '@/app/components/Nav'
 import TreatmentTheme from '@/app/components/TreatmentTheme'
@@ -37,6 +38,8 @@ export default function AboutPage() {
         h3{font-family:'DM Serif Display',serif;font-size:20px;font-weight:400;color:#1a1a1a;letter-spacing:-.01em;margin-bottom:.75rem}
         .prose p{font-size:15px;color:#444;line-height:1.85;margin-bottom:1.25rem;font-weight:300}
         .prose h3{margin-top:2.5rem;margin-bottom:.75rem}
+        .about-photo{position:relative;margin:0;border-radius:14px;overflow:hidden;aspect-ratio:4/3;background:#F2EEE5}
+        .about-photo figcaption{position:absolute;left:12px;bottom:10px;font-size:11px;letter-spacing:.04em;color:#fff;background:rgba(18,32,43,.55);padding:3px 9px;border-radius:99px}
         .two-col{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start}
         .stat-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:2rem}
         .stat-card{background:#fff;border:1px solid #f0ede8;border-radius:16px;padding:1.5rem}
@@ -105,6 +108,10 @@ export default function AboutPage() {
                   <div className="stat-l">Registered · Companies House no. 16186647</div>
                 </div>
               </div>
+              <figure className="about-photo">
+                <Image src="/hero-welcome.jpg" alt="Illustrative image: hospital reception and waiting area" fill sizes="(max-width:900px) 100vw, 520px" style={{ objectFit: 'cover', objectPosition: '50% 80%' }} />
+                <figcaption>Illustrative image</figcaption>
+              </figure>
             </div>
             <div className="prose">
               <h2>Who we are</h2>

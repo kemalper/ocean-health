@@ -2,6 +2,7 @@
 import { useEffect, useRef, useState } from 'react'
 import Image from 'next/image'
 import Nav from '@/app/components/Nav'
+import HeroProcess from '@/app/components/HeroProcess'
 import { UK_PRICES } from '@/app/lib/ukPrices'
 
 const WA_URL = 'https://wa.me/447441904858?text=Hello%2C%20I%27d%20like%20to%20get%20a%20free%20quote'
@@ -292,9 +293,7 @@ export default function Home() {
               <li>Surgeon credentials confirmed in writing before you pay</li>
             </ul>
           </div>
-          <div className="hero-media">
-            <Image src="/hero-welcome.jpg" alt="Hospital reception and waiting area" fill priority sizes="(max-width:900px) 100vw, 520px" style={{objectFit:'cover',objectPosition:'50% 100%',transform:'scale(1.15)',transformOrigin:'50% 100%'}} />
-          </div>
+          <HeroProcess />
         </div>
       </section>
 
