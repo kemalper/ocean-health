@@ -9,7 +9,7 @@ import Footer from '@/app/components/Footer'
 export const metadata: Metadata = {
   alternates: { canonical: '/treatments/neurosurgery-istanbul' },
   title: 'Neurosurgery in Istanbul | Ocean Health & Travel',
-  description: 'Neurosurgery coordination in Istanbul — deep brain stimulation, disc herniation, brain tumours. JCI-accredited neurosurgical teams. Imaging and records reviewed by the treating neurosurgeon. Free assessment within 48 hours.',
+  description: 'Neurosurgery coordination in Istanbul — deep brain stimulation, disc herniation, brain tumours. JCI-accredited neurosurgical teams. Imaging and records reviewed by the treating neurosurgeon. We aim to respond within 48 hours.',
 }
 
 const WA_URL = 'https://wa.me/447441904858?text=Hello%2C%20I%27d%20like%20to%20enquire%20about%20neurosurgery%20in%20Istanbul'
@@ -291,7 +291,7 @@ export default function NeurosurgeryPage() {
         </div>
       </section>
 
-      <YourTimeline stay="Depends on procedure" note="Your treatment date, usually within 2 weeks of confirming once the neurosurgeon has reviewed your records and decided that surgery is suitable." />
+      <YourTimeline stay="Depends on procedure" note="Your treatment date, agreed once the neurosurgeon has reviewed your records and decided that surgery is suitable." />
       <UKPatientInfo current="neurosurgery-istanbul" />
       <RelatedTreatments current="neurosurgery-istanbul" />
       <Footer />

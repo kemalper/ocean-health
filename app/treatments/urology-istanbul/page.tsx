@@ -9,7 +9,7 @@ import Footer from '@/app/components/Footer'
 export const metadata: Metadata = {
   alternates: { canonical: '/treatments/urology-istanbul' },
   title: 'Urology & Men\'s Health in Istanbul | Ocean Health & Travel',
-  description: 'Urology and men\'s health treatment coordination in Istanbul. Penile aesthetics, erectile dysfunction, P-Shot, ESWT, SVF stem cell therapy. Licensed partner clinics. Free quote in 48 hours.',
+  description: 'Urology and men\'s health treatment coordination in Istanbul. Penile aesthetics, erectile dysfunction, P-Shot, ESWT, SVF stem cell therapy. Licensed partner clinics. We aim to send an itemised quote within 48 hours.',
 }
 
 const WA_URL = 'https://wa.me/447441904858?text=Hello%2C%20I%27d%20like%20to%20enquire%20about%20urology%20treatment%20in%20Istanbul'

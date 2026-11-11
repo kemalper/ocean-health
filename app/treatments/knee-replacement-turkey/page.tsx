@@ -9,7 +9,7 @@ import Footer from '@/app/components/Footer'
 export const metadata: Metadata = {
   alternates: { canonical: '/treatments/knee-replacement-turkey' },
   title: 'Knee Replacement in Turkey | From £3,500 | Ocean Health & Travel',
-  description: 'Knee replacement surgery in Istanbul from £3,500 — vs. £10,000–£17,000 at UK private clinics. JCI-accredited orthopaedic teams, dedicated coordination. Free quote in 48 hours.',
+  description: 'Knee replacement surgery in Istanbul from £3,500 — vs. £10,000–£17,000 at UK private clinics. JCI-accredited orthopaedic teams, dedicated coordination. We aim to send an itemised quote within 48 hours.',
 }
 
 const WA_URL = 'https://wa.me/447441904858?text=Hello%2C%20I%27d%20like%20to%20enquire%20about%20knee%20replacement%20in%20Turkey'
@@ -21,7 +21,7 @@ const faqs = [
   },
   {
     q: 'How quickly can I have knee replacement surgery?',
-    a: 'Once you have confirmed your booking, surgery can usually be scheduled within 2 weeks, subject to the surgeon and hospital availability. From first contact, most patients are treated within 2–3 weeks, once the surgeon has reviewed your X-rays and records.'
+    a: 'Surgery dates depend on the surgeon and hospital availability and are agreed once the surgeon has reviewed your X-rays and records. Timelines vary by patient and provider.'
   },
   {
     q: 'What type of knee implant is used?',
@@ -158,17 +158,17 @@ export default function KneeReplacementPage() {
               <div className="kicker">Orthopaedics · Istanbul</div>
               <h1>Knee Replacement<br />in Turkey.<br /><em>From £3,500.</em></h1>
               <p className="hero-sub">
-                CE-marked implants. JCI-accredited orthopaedic teams. Surgery usually within 2 weeks of confirming your booking.
+                CE-marked implants. JCI-accredited orthopaedic teams. Timelines vary by provider.
               </p>
               <div className="nhs-callout">
-                <strong>Timeline:</strong> Once you confirm, surgery can usually be scheduled within 2 weeks, subject to surgeon and hospital availability.
+                <strong>Timeline:</strong> Surgery dates depend on surgeon and hospital availability and are agreed once your records have been reviewed.
               </div>
               <div className="hero-actions">
                 <a href={WA_URL} target="_blank" className="btn-primary">Get a free quote</a>
                 <a href="#faq" className="btn-ghost">Read FAQs ↓</a>
               </div>
               <div className="trust-row">
-                {['CE-marked implants','JCI-accredited hospitals','2–3 week timeline','GP documentation included'].map(t => (
+                {['CE-marked implants','JCI-accredited hospitals','Timelines vary by provider','GP documentation included'].map(t => (
                   <div key={t} className="trust-item"><div className="trust-dot"></div>{t}</div>
                 ))}
               </div>
@@ -287,7 +287,7 @@ export default function KneeReplacementPage() {
                 </div>
                 <div className="sidebar-price-row">
                   <span className="sidebar-price-label">Surgery date</span>
-                  <span className="sidebar-price-val">Usually within 2 weeks</span>
+                  <span className="sidebar-price-val">Varies by provider</span>
                 </div>
                 <p style={{fontSize:'11px',color:'#bbb',marginTop:'1rem',lineHeight:1.6}}>Prices indicative. No coordination fee is charged to patients. Flights not included.</p>
               </div>
@@ -310,7 +310,7 @@ export default function KneeReplacementPage() {
       <section className="sec bg border" id="process">
         <div className="inner">
           <div className="kicker">The process</div>
-          <h2>From enquiry to surgery in 2–3 weeks</h2>
+          <h2>From enquiry to surgery</h2>
           <div className="process-grid">
             {[
               {n:'1',t:'Enquiry',d:'Share X-rays and medical history via WhatsApp or email'},

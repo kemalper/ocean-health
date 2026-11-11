@@ -9,7 +9,7 @@ import Footer from '@/app/components/Footer'
 export const metadata: Metadata = {
   alternates: { canonical: '/treatments/lasik-istanbul' },
   title: 'LASIK Eye Surgery in Istanbul | From £600 per eye | Ocean Health & Travel',
-  description: 'LASIK laser eye surgery in Istanbul from £600 per eye — vs. £995–£2,395 per eye at UK private clinics. Licensed ophthalmology centres, dedicated coordination. Free quote in 48 hours.',
+  description: 'LASIK laser eye surgery in Istanbul from £600 per eye — vs. £995–£2,395 per eye at UK private clinics. Licensed ophthalmology centres, dedicated coordination. We aim to send an itemised quote within 48 hours.',
 }
 
 const WA_URL = 'https://wa.me/447441904858?text=Hello%2C%20I%27d%20like%20to%20enquire%20about%20LASIK%20eye%20surgery%20in%20Istanbul'

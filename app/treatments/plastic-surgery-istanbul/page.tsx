@@ -10,7 +10,7 @@ import Footer from '@/app/components/Footer'
 export const metadata: Metadata = {
   alternates: { canonical: '/treatments/plastic-surgery-istanbul' },
   title: 'Plastic Surgery in Istanbul | Ocean Health & Travel',
-  description: 'Plastic and cosmetic surgery in Istanbul — rhinoplasty from £3,200, breast surgery from £6,000, liposuction from £2,500. JCI-accredited surgeons, dedicated coordination. Free quote in 48 hours.',
+  description: 'Plastic and cosmetic surgery in Istanbul — rhinoplasty from £3,200, breast surgery from £6,000, liposuction from £2,500. JCI-accredited surgeons, dedicated coordination. We aim to send an itemised quote within 48 hours.',
 }
 
 const WA_URL = 'https://wa.me/447441904858?text=Hello%2C%20I%27d%20like%20to%20enquire%20about%20plastic%20surgery%20in%20Istanbul'

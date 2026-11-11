@@ -21,7 +21,7 @@ const faqSections = [
       },
       {
         q: 'How quickly can I have surgery?',
-        a: 'Once you have confirmed your booking, surgery can usually be scheduled within 2 weeks, subject to the surgeon and hospital availability. From first contact, most patients have surgery within 2–3 weeks, which covers the quote (we aim to provide this within 48 hours of complete records), booking and travel arrangements. Some complex procedures (e.g. neurosurgery) may require additional pre-operative assessment time, because the neurosurgeon first reviews your imaging and records.',
+        a: 'Surgery dates depend on the surgeon and hospital availability. The time from first contact to treatment covers the quote (we aim to provide this within 48 hours of complete records), booking and travel arrangements, and varies by treatment and provider. Some complex procedures (e.g. neurosurgery) may require additional pre-operative assessment time, because the neurosurgeon first reviews your imaging and records.',
       },
       {
         q: 'Do I need a referral from my GP?',

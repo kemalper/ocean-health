@@ -9,7 +9,7 @@ import Footer from '@/app/components/Footer'
 export const metadata: Metadata = {
   alternates: { canonical: '/treatments/hair-transplant-istanbul' },
   title: 'Hair Transplant in Istanbul | Ocean Health & Travel',
-  description: 'Hair transplant in Istanbul — FUE and DHI techniques at licensed partner clinics. Dedicated coordination, fixed pricing, 2–3 day procedure. Free quote in 48 hours.',
+  description: 'Hair transplant in Istanbul — FUE and DHI techniques at licensed partner clinics. Dedicated coordination. We aim to send an itemised quote within 48 hours.',
 }
 
 const WA_URL = 'https://wa.me/447441904858?text=Hello%2C%20I%27d%20like%20to%20enquire%20about%20hair%20transplant%20in%20Istanbul'
