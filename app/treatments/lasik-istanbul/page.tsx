@@ -9,7 +9,7 @@ import Footer from '@/app/components/Footer'
 export const metadata: Metadata = {
   alternates: { canonical: '/treatments/lasik-istanbul' },
   title: 'LASIK Eye Surgery in Istanbul | From £600 per eye | Ocean Health & Travel',
-  description: 'LASIK laser eye surgery in Istanbul from £600 per eye — vs. £995–£2,395 per eye at UK private clinics. Licensed ophthalmology centres, dedicated coordination. We aim to send an itemised quote within 48 hours.',
+  description: 'LASIK laser eye surgery in Istanbul from £600 per eye — vs. £995–£2,395 per eye at UK private clinics. Licensed ophthalmology centres, dedicated coordination. We aim to send a package quote within 48 hours.',
 }
 
 const WA_URL = 'https://wa.me/447441904858?text=Hello%2C%20I%27d%20like%20to%20enquire%20about%20LASIK%20eye%20surgery%20in%20Istanbul'
@@ -17,7 +17,7 @@ const WA_URL = 'https://wa.me/447441904858?text=Hello%2C%20I%27d%20like%20to%20e
 const faqs = [
   {
     q: 'How much does LASIK cost in Istanbul?',
-    a: 'LASIK laser eye surgery in Istanbul starts from £600 per eye, compared to £995–£2,395 per eye at UK private clinics. The exact price depends on your prescription, the laser platform used, and whether additional procedures such as wavefront-guided or topography-guided LASIK are recommended. We aim to send a full itemised quote within 48 hours of receiving your pre-operative assessment results.'
+    a: 'LASIK laser eye surgery in Istanbul starts from £600 per eye, compared to £995–£2,395 per eye at UK private clinics. The exact price depends on your prescription, the laser platform used, and whether additional procedures such as wavefront-guided or topography-guided LASIK are recommended. We aim to send a full package quote within 48 hours of receiving your pre-operative assessment results.'
   },
   {
     q: 'Am I suitable for LASIK?',
@@ -169,7 +169,7 @@ export default function LasikPage() {
                 <a href="#procedures" className="btn-ghost">LASIK vs SMILE ↓</a>
               </div>
               <div className="trust-row">
-                {['Licensed partner clinics','Advanced laser platforms','3–5 day Istanbul stay','Itemised quote before travel'].map(t => (
+                {['Licensed partner clinics','Advanced laser platforms','3–5 day Istanbul stay','Package quote before travel'].map(t => (
                   <div key={t} className="trust-item"><div className="trust-dot"></div>{t}</div>
                 ))}
               </div>
@@ -334,7 +334,7 @@ export default function LasikPage() {
           <div className="process-grid">
             {[
               {n:'1',t:'Enquiry',d:'Tell us your prescription and contact us via WhatsApp'},
-              {n:'2',t:'Quote',d:'We aim to send a full itemised proposal within 48 hours'},
+              {n:'2',t:'Quote',d:'We aim to send a full package proposal within 48 hours'},
               {n:'3',t:'Assessment',d:'Pre-operative corneal mapping at partner clinic'},
               {n:'4',t:'Procedure',d:'LASIK, SMILE, or LASEK — interpreter present'},
               {n:'5',t:'Home',d:'Post-op check, documentation provided, fly home'},
@@ -372,7 +372,7 @@ export default function LasikPage() {
           <div className="kicker">Get started</div>
           <h2>Ready to find out if LASIK is right for you?</h2>
           <p style={{fontSize:'16px',color:'#666',lineHeight:1.7,fontWeight:300,maxWidth:'500px',margin:'0 auto 2rem'}}>
-            Tell us your prescription. We aim to send a full itemised quote within 48 hours — no obligation.
+            Tell us your prescription. We aim to send a full package quote within 48 hours — no obligation.
           </p>
           <div style={{display:'flex',gap:'14px',justifyContent:'center',flexWrap:'wrap'}}>
             <a href={WA_URL} target="_blank" style={{background:'#0559F0',color:'#fff',border:'none',padding:'15px 30px',borderRadius:'10px',fontSize:'15px',fontWeight:600,display:'inline-flex',alignItems:'center',gap:'9px',cursor:'pointer',fontFamily:'Inter,sans-serif'}}>

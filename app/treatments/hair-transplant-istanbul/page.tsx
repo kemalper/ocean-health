@@ -9,7 +9,7 @@ import Footer from '@/app/components/Footer'
 export const metadata: Metadata = {
   alternates: { canonical: '/treatments/hair-transplant-istanbul' },
   title: 'Hair Transplant in Istanbul | Ocean Health & Travel',
-  description: 'Hair transplant in Istanbul — FUE and DHI techniques at licensed partner clinics. Dedicated coordination. We aim to send an itemised quote within 48 hours.',
+  description: 'Hair transplant in Istanbul — FUE and DHI techniques at licensed partner clinics. Dedicated coordination. We aim to send a package quote within 48 hours.',
 }
 
 const WA_URL = 'https://wa.me/447441904858?text=Hello%2C%20I%27d%20like%20to%20enquire%20about%20hair%20transplant%20in%20Istanbul'
@@ -17,7 +17,7 @@ const WA_URL = 'https://wa.me/447441904858?text=Hello%2C%20I%27d%20like%20to%20e
 const faqs = [
   {
     q: 'How much does a hair transplant cost in Istanbul?',
-    a: 'Hair transplant costs in Istanbul vary depending on the technique (FUE or DHI), the number of grafts required, and the clinic. Most patients require between 2,000 and 4,000 grafts. Contact us for a personalised quote based on your specific needs — we aim to send full itemised pricing within 48 hours.'
+    a: 'Hair transplant costs in Istanbul vary depending on the technique (FUE or DHI), the number of grafts required, and the clinic. Most patients require between 2,000 and 4,000 grafts. Contact us for a personalised quote based on your specific needs — we aim to send a full package quote within 48 hours.'
   },
   {
     q: 'What is the difference between FUE and DHI?',
@@ -170,7 +170,7 @@ export default function HairTransplantPage() {
                 <a href="#techniques" className="btn-ghost">FUE vs DHI ↓</a>
               </div>
               <div className="trust-row">
-                {['Licensed partner clinics','FUE & DHI techniques','Fixed, itemised pricing','3–5 day Istanbul stay'].map(t => (
+                {['Licensed partner clinics','FUE & DHI techniques','Clear package pricing','3–5 day Istanbul stay'].map(t => (
                   <div key={t} className="trust-item"><div className="trust-dot"></div>{t}</div>
                 ))}
               </div>
@@ -278,7 +278,7 @@ export default function HairTransplantPage() {
               <ul>
                 <li>High-volume, experienced surgeons performing thousands of procedures annually</li>
                 <li>Licensed partner clinics</li>
-                <li>Itemised quotes provided before you travel</li>
+                <li>Package quotes provided before you travel</li>
                 <li>Typical Istanbul stay of 3–5 days</li>
                 <li>English-speaking coordinators and interpreters throughout</li>
               </ul>
@@ -292,7 +292,7 @@ export default function HairTransplantPage() {
               <div className="sidebar-card dark">
                 <div className="sidebar-title">Get a free quote</div>
                 <p style={{fontSize:'14px',color:'rgba(255,255,255,.65)',lineHeight:1.65,marginBottom:'1.25rem',fontWeight:300}}>
-                  Tell us about your hair loss pattern and goals. We aim to send a full itemised quote within 48 hours.
+                  Tell us about your hair loss pattern and goals. We aim to send a full package quote within 48 hours.
                 </p>
                 <a href={WA_URL} target="_blank" className="btn-full purple">WhatsApp us</a>
                 <a href="mailto:info@oceanhealthtravel.com" className="btn-full outline" style={{marginTop:'8px'}}>Email us</a>
@@ -345,7 +345,7 @@ export default function HairTransplantPage() {
           <div className="process-grid">
             {[
               {n:'1',t:'Enquiry',d:'Tell us about your hair loss and goals'},
-              {n:'2',t:'Quote',d:'We aim to send an itemised proposal within 48 hours'},
+              {n:'2',t:'Quote',d:'We aim to send a package proposal within 48 hours'},
               {n:'3',t:'Booking',d:'Clinic, hotel, and transfers confirmed'},
               {n:'4',t:'Procedure',d:'FUE or DHI with interpreter present'},
               {n:'5',t:'Aftercare',d:'Post-procedure docs provided in English'},
@@ -383,7 +383,7 @@ export default function HairTransplantPage() {
           <div className="kicker">Get started</div>
           <h2>Ready to find out more?</h2>
           <p style={{fontSize:'16px',color:'#666',lineHeight:1.7,fontWeight:300,maxWidth:'500px',margin:'0 auto 2rem'}}>
-            Tell us about your hair loss pattern and goals. We aim to send a full itemised quote within 48 hours — no obligation.
+            Tell us about your hair loss pattern and goals. We aim to send a full package quote within 48 hours — no obligation.
           </p>
           <div style={{display:'flex',gap:'14px',justifyContent:'center',flexWrap:'wrap'}}>
             <a href={WA_URL} target="_blank" style={{background:'#0559F0',color:'#fff',border:'none',padding:'15px 30px',borderRadius:'10px',fontSize:'15px',fontWeight:600,display:'inline-flex',alignItems:'center',gap:'9px',cursor:'pointer',fontFamily:'Inter,sans-serif'}}>

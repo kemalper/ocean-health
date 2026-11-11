@@ -9,7 +9,7 @@ import Footer from '@/app/components/Footer'
 export const metadata: Metadata = {
   alternates: { canonical: '/treatments/dental-istanbul' },
   title: 'Dental Treatment in Istanbul | Ocean Health & Travel',
-  description: 'Dental implants from £350, zirconium crowns from £150, veneers from £180, smile design from £1,200. Licensed dental clinics in Istanbul. We aim to send an itemised quote within 48 hours.',
+  description: 'Dental implants from £350, zirconium crowns from £150, veneers from £180, smile design from £1,200. Licensed dental clinics in Istanbul. We aim to send a package quote within 48 hours.',
 }
 
 const WA_URL = 'https://wa.me/447441904858?text=Hello%2C%20I%27d%20like%20to%20enquire%20about%20dental%20treatment%20in%20Istanbul'
@@ -84,11 +84,11 @@ const faqs = [
   },
   {
     q: 'Can I combine multiple dental treatments in one visit?',
-    a: 'Yes, and this is very common. Many patients combine implants with crowns, veneers, whitening, and smile design in a single trip. We coordinate comprehensive treatment plans — send us your goals and any existing dental records and we will provide a full itemised quote covering all planned work.'
+    a: 'Yes, and this is very common. Many patients combine implants with crowns, veneers, whitening, and smile design in a single trip. We coordinate comprehensive treatment plans — send us your goals and any existing dental records and we will provide a full package quote covering all planned work.'
   },
   {
     q: 'Which implant brands are used?',
-    a: 'Our partner clinics use CE-marked implant systems from internationally recognised manufacturers including Straumann, Nobel Biocare, Osstem, and MegaGen. The specific system recommended depends on your bone density and treatment plan. All brands and models are specified in your itemised quote.'
+    a: 'Our partner clinics use CE-marked implant systems from internationally recognised manufacturers including Straumann, Nobel Biocare, Osstem, and MegaGen. The specific system recommended depends on your bone density and treatment plan. All brands and models are specified in your package quote.'
   },
   {
     q: 'Do I need to bring any dental records?',
@@ -185,7 +185,7 @@ export default function DentalIstanbulPage() {
             Dental Istanbul
           </div>
           <div className="kicker">Dental treatment · Istanbul</div>
-          <h1>Dental Treatment<br />in Istanbul.<br /><em>Itemised quotes before you travel.</em></h1>
+          <h1>Dental Treatment<br />in Istanbul.<br /><em>Package quotes before you travel.</em></h1>
           <p className="hero-sub">
             CE-marked implants, zirconium crowns, veneers, smile design and more. Licensed dental clinics. Dedicated coordination from first enquiry through treatment.
           </p>
@@ -208,7 +208,7 @@ export default function DentalIstanbulPage() {
             <a href="#procedures" className="btn-ghost">View all treatments ↓</a>
           </div>
           <div className="trust-row">
-            {['Licensed partner clinics','CE-marked implant systems','Fixed, itemised pricing','7–10 day treatment timeline'].map(t => (
+            {['Licensed partner clinics','CE-marked implant systems','Clear package pricing','7–10 day treatment timeline'].map(t => (
               <div key={t} className="trust-item"><div className="trust-dot"></div>{t}</div>
             ))}
           </div>
@@ -268,7 +268,7 @@ export default function DentalIstanbulPage() {
         <div className="inner">
           <div className="cta-box">
             <h2>Ready to find out what your dental treatment costs?</h2>
-            <p>Tell us what you need — implants, crowns, veneers, or a full smile makeover. We aim to send a full itemised quote within 48 hours.</p>
+            <p>Tell us what you need — implants, crowns, veneers, or a full smile makeover. We aim to send a full package quote within 48 hours.</p>
             <div className="cta-btns">
               <a href={WA_URL} target="_blank" className="btn-cta-w">Get a free quote</a>
               <a href="mailto:info@oceanhealthtravel.com" className="btn-cta-o">Email us</a>

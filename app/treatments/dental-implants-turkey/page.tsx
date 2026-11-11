@@ -9,7 +9,7 @@ import Footer from '@/app/components/Footer'
 export const metadata: Metadata = {
   alternates: { canonical: '/treatments/dental-implants-turkey' },
   title: 'Dental Implants in Turkey | From £350 | Ocean Health & Travel',
-  description: 'Dental implants in Istanbul from £350 per implant — vs. £1,500–£3,500 at UK private clinics. Licensed dental clinics, dedicated coordination. We aim to send an itemised quote within 48 hours.',
+  description: 'Dental implants in Istanbul from £350 per implant — vs. £1,500–£3,500 at UK private clinics. Licensed dental clinics, dedicated coordination. We aim to send a package quote within 48 hours.',
 }
 
 const WA_URL = 'https://wa.me/447441904858?text=Hello%2C%20I%27d%20like%20to%20enquire%20about%20dental%20implants%20in%20Turkey'
@@ -29,7 +29,7 @@ const faqs = [
   },
   {
     q: 'Which implant brands are used?',
-    a: 'Our partner clinics use established implant systems including Straumann, Nobel Biocare, Osstem, and MegaGen. The specific implant system recommended will depend on your bone density, anatomy, and the treating dentist\'s assessment. Brand and model will be specified in your itemised quote.'
+    a: 'Our partner clinics use established implant systems including Straumann, Nobel Biocare, Osstem, and MegaGen. The specific implant system recommended will depend on your bone density, anatomy, and the treating dentist\'s assessment. Brand and model will be specified in your package quote.'
   },
   {
     q: 'What is included in the coordination package?',
@@ -37,7 +37,7 @@ const faqs = [
   },
   {
     q: 'Can I get zirconium crowns and veneers at the same time?',
-    a: 'Yes. Many patients combine dental implants with zirconium crowns, porcelain veneers, or full smile design during the same visit to Istanbul, maximising the value of a single trip. We can coordinate combined treatment plans — contact us with your dental goals and we will provide a full itemised quote.'
+    a: 'Yes. Many patients combine dental implants with zirconium crowns, porcelain veneers, or full smile design during the same visit to Istanbul, maximising the value of a single trip. We can coordinate combined treatment plans — contact us with your dental goals and we will provide a full package quote.'
   },
 ]
 
@@ -165,7 +165,7 @@ export default function DentalImplantsPage() {
                 <a href="#faq" className="btn-ghost">Read FAQs ↓</a>
               </div>
               <div className="trust-row">
-                {['Licensed partner clinics','CE-marked implant systems','Fixed, itemised pricing','GP documentation included'].map(t => (
+                {['Licensed partner clinics','CE-marked implant systems','Clear package pricing','GP documentation included'].map(t => (
                   <div key={t} className="trust-item"><div className="trust-dot"></div>{t}</div>
                 ))}
               </div>
@@ -249,12 +249,12 @@ export default function DentalImplantsPage() {
 
               <h3>Implant systems used</h3>
               <p>
-                Our partner clinics use CE-marked implant systems from established international manufacturers including Straumann, Nobel Biocare, Osstem, and MegaGen. The specific system recommended will depend on your bone density, anatomy, and treatment plan. All implant brands and models are specified in your itemised quote before any commitment is made.
+                Our partner clinics use CE-marked implant systems from established international manufacturers including Straumann, Nobel Biocare, Osstem, and MegaGen. The specific system recommended will depend on your bone density, anatomy, and treatment plan. All implant brands and models are specified in your package quote before any commitment is made.
               </p>
 
               <h3>Combining treatments in one visit</h3>
               <p>
-                Many patients maximise the value of their trip to Istanbul by combining dental implants with additional treatments such as zirconium crowns, porcelain veneers, smile design, or orthodontic work. We can coordinate comprehensive dental treatment plans — contact us with your goals and we will provide a full itemised quote covering all planned work.
+                Many patients maximise the value of their trip to Istanbul by combining dental implants with additional treatments such as zirconium crowns, porcelain veneers, smile design, or orthodontic work. We can coordinate comprehensive dental treatment plans — contact us with your goals and we will provide a full package quote covering all planned work.
               </p>
 
               <h3>Why Istanbul for dental implants?</h3>
@@ -276,7 +276,7 @@ export default function DentalImplantsPage() {
               <div className="sidebar-card dark">
                 <div className="sidebar-title">Get a free quote</div>
                 <p style={{fontSize:'14px',color:'rgba(255,255,255,.65)',lineHeight:1.65,marginBottom:'1.25rem',fontWeight:300}}>
-                  Tell us how many implants you need and any existing dental records. We aim to send a full itemised quote within 48 hours.
+                  Tell us how many implants you need and any existing dental records. We aim to send a full package quote within 48 hours.
                 </p>
                 <a href={WA_URL} target="_blank" className="btn-full blue">WhatsApp us</a>
                 <a href="mailto:info@oceanhealthtravel.com" className="btn-full outline" style={{marginTop:'8px'}}>Email us</a>
@@ -326,7 +326,7 @@ export default function DentalImplantsPage() {
           <div className="process-grid">
             {[
               {n:'1',t:'Enquiry',d:'Tell us how many implants you need and share any X-rays'},
-              {n:'2',t:'Quote',d:'We aim to send a full itemised proposal within 48 hours'},
+              {n:'2',t:'Quote',d:'We aim to send a full package proposal within 48 hours'},
               {n:'3',t:'Booking',d:'Clinic, hotel, and transfers confirmed'},
               {n:'4',t:'Treatment',d:'Implant placement with interpreter present'},
               {n:'5',t:'Records',d:'Dental documentation provided in English'},
@@ -366,7 +366,7 @@ export default function DentalImplantsPage() {
           <div className="kicker">Get started</div>
           <h2>Ready to find out what dental implants cost?</h2>
           <p style={{fontSize:'16px',color:'#666',lineHeight:1.7,fontWeight:300,maxWidth:'500px',margin:'0 auto 2rem'}}>
-            Tell us how many implants you need. We aim to send a full itemised quote within 48 hours — no obligation.
+            Tell us how many implants you need. We aim to send a full package quote within 48 hours — no obligation.
           </p>
           <div style={{display:'flex',gap:'14px',justifyContent:'center',flexWrap:'wrap'}}>
             <a href={WA_URL} target="_blank" style={{background:'#0438A6',color:'#fff',border:'none',padding:'15px 30px',borderRadius:'10px',fontSize:'15px',fontWeight:600,display:'inline-flex',alignItems:'center',gap:'9px',cursor:'pointer',fontFamily:'Inter,sans-serif'}}>

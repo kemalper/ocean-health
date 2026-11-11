@@ -5,7 +5,7 @@ import RecordsForm from './RecordsForm'
 
 export const metadata: Metadata = {
   title: 'Send Your Details for Review | Ocean Health & Travel',
-  description: 'Send your details, photos and medical records for review and an itemised quote from our partner hospitals in Istanbul.',
+  description: 'Send your details, photos and medical records for review and a package quote from our partner hospitals in Istanbul.',
   alternates: { canonical: '/records-review' },
   robots: { index: false, follow: true },
 }
@@ -20,7 +20,7 @@ export default function Page() {
           Send your details for review.
         </h1>
         <p style={{ color: '#475569', fontSize: 17, maxWidth: 680, margin: '0 0 2rem' }}>
-          Tell us what you are considering and upload any photos or records you have. We pass them to the treating team and come back with their view and an itemised quote. This takes about three minutes and is not a medical consultation.
+          Tell us what you are considering and upload any photos or records you have. We pass them to the treating team and come back with their view and a package quote. This takes about three minutes and is not a medical consultation.
         </p>
         <Suspense fallback={null}>
           <RecordsForm />

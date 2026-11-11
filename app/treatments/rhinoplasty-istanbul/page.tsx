@@ -10,7 +10,7 @@ import Footer from '@/app/components/Footer'
 export const metadata: Metadata = {
   alternates: { canonical: '/treatments/rhinoplasty-istanbul' },
   title: 'Rhinoplasty in Istanbul | From £3,200 | Ocean Health & Travel',
-  description: `Rhinoplasty (nose surgery) in Istanbul from £3,200 — vs. typically ${UK_PRICES.rhinoplasty.compact} at UK private clinics. JCI-accredited surgeons, dedicated coordination. We aim to send an itemised quote within 48 hours.`,
+  description: `Rhinoplasty (nose surgery) in Istanbul from £3,200 — vs. typically ${UK_PRICES.rhinoplasty.compact} at UK private clinics. JCI-accredited surgeons, dedicated coordination. We aim to send a package quote within 48 hours.`,
 }
 
 const WA_URL = 'https://wa.me/447441904858?text=Hello%2C%20I%27d%20like%20to%20enquire%20about%20rhinoplasty%20in%20Istanbul'
@@ -22,7 +22,7 @@ const faqs = [
   },
   {
     q: 'How long does rhinoplasty take to arrange through Ocean Health & Travel?',
-    a: 'We aim to send a full itemised quote within 48 hours of first contact. Surgery dates depend on the surgeon and hospital availability.'
+    a: 'We aim to send a full package quote within 48 hours of first contact. Surgery dates depend on the surgeon and hospital availability.'
   },
   {
     q: 'Which hospitals perform rhinoplasty in Istanbul?',
@@ -38,7 +38,7 @@ const faqs = [
   },
   {
     q: 'How do I get started?',
-    a: 'Contact us via WhatsApp or email with your goals and any relevant medical history. We aim to send a full itemised quote within 48 hours — no obligation.'
+    a: 'Contact us via WhatsApp or email with your goals and any relevant medical history. We aim to send a full package quote within 48 hours — no obligation.'
   },
 ]
 
@@ -171,7 +171,7 @@ export default function RhinoplastyPage() {
                 <a href="#faq" className="btn-ghost">Read FAQs ↓</a>
               </div>
               <div className="trust-row">
-                {['JCI-accredited hospitals','Dedicated coordination','Fixed, itemised pricing','GP documentation included'].map(t => (
+                {['JCI-accredited hospitals','Dedicated coordination','Clear package pricing','GP documentation included'].map(t => (
                   <div key={t} className="trust-item"><div className="trust-dot"></div>{t}</div>
                 ))}
               </div>
@@ -259,7 +259,7 @@ export default function RhinoplastyPage() {
               <div className="sidebar-card dark">
                 <div className="sidebar-title">Get a free quote</div>
                 <p style={{fontSize:'14px',color:'rgba(255,255,255,.65)',lineHeight:1.65,marginBottom:'1.25rem',fontWeight:300}}>
-                  Tell us about your goals. We aim to send a full itemised quote within 48 hours — no obligation.
+                  Tell us about your goals. We aim to send a full package quote within 48 hours — no obligation.
                 </p>
                 <a href={WA_URL} target="_blank" className="btn-full green">WhatsApp us</a>
                 <a href="mailto:info@oceanhealthtravel.com" className="btn-full white" style={{marginTop:'8px',background:'rgba(255,255,255,.1)',color:'#fff',border:'1px solid rgba(255,255,255,.2)'}}>Email us</a>
@@ -305,7 +305,7 @@ export default function RhinoplastyPage() {
           <div className="process-grid">
             {[
               {n:'1',t:'Enquiry',d:'WhatsApp or email us your goals and preferred dates'},
-              {n:'2',t:'Quote',d:'We aim to send a full itemised proposal within 48 hours'},
+              {n:'2',t:'Quote',d:'We aim to send a full package proposal within 48 hours'},
               {n:'3',t:'Booking',d:'Clinic, hotel, and transfers confirmed'},
               {n:'4',t:'Surgery',d:'Interpreter at every appointment'},
               {n:'5',t:'Home',d:'GP documentation forwarded on request'},
@@ -345,7 +345,7 @@ export default function RhinoplastyPage() {
           <div className="kicker">Get started</div>
           <h2>Ready to find out what rhinoplasty costs?</h2>
           <p style={{fontSize:'16px',color:'#666',lineHeight:1.7,fontWeight:300,maxWidth:'500px',margin:'0 auto 2rem'}}>
-            Send us your goals and preferred dates. We aim to send a full itemised quote within 48 hours — no obligation.
+            Send us your goals and preferred dates. We aim to send a full package quote within 48 hours — no obligation.
           </p>
           <div style={{display:'flex',gap:'14px',justifyContent:'center',flexWrap:'wrap'}}>
             <a href={WA_URL} target="_blank" style={{background:'#0559F0',color:'#fff',border:'none',padding:'15px 30px',borderRadius:'10px',fontSize:'15px',fontWeight:600,display:'inline-flex',alignItems:'center',gap:'9px',cursor:'pointer',fontFamily:'Inter,sans-serif'}}>

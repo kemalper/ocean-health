@@ -10,7 +10,7 @@ import Footer from '@/app/components/Footer'
 export const metadata: Metadata = {
   alternates: { canonical: '/treatments/plastic-surgery-istanbul' },
   title: 'Plastic Surgery in Istanbul | Ocean Health & Travel',
-  description: 'Plastic and cosmetic surgery in Istanbul — rhinoplasty from £3,200, breast surgery from £6,000, liposuction from £2,500. JCI-accredited surgeons, dedicated coordination. We aim to send an itemised quote within 48 hours.',
+  description: 'Plastic and cosmetic surgery in Istanbul — rhinoplasty from £3,200, breast surgery from £6,000, liposuction from £2,500. JCI-accredited surgeons, dedicated coordination. We aim to send a package quote within 48 hours.',
 }
 
 const WA_URL = 'https://wa.me/447441904858?text=Hello%2C%20I%27d%20like%20to%20enquire%20about%20plastic%20surgery%20in%20Istanbul'
@@ -254,7 +254,7 @@ export default function PlasticSurgeryPage() {
             Plastic Surgery Istanbul
           </div>
           <div className="kicker">Plastic &amp; cosmetic surgery · Istanbul</div>
-          <h1>Plastic Surgery in Istanbul.<br /><em>Itemised quotes before you travel.</em></h1>
+          <h1>Plastic Surgery in Istanbul.<br /><em>Package quotes before you travel.</em></h1>
           <p className="hero-sub">
             Board-certified plastic surgeons. JCI-accredited hospitals. Dedicated coordination from first enquiry through discharge and GP documentation.
           </p>
@@ -277,7 +277,7 @@ export default function PlasticSurgeryPage() {
             <a href="#procedures" className="btn-ghost">View all procedures ↓</a>
           </div>
           <div className="trust-row">
-            {['JCI-accredited hospitals','Board-certified surgeons','Fixed, itemised pricing','GP documentation included'].map(t => (
+            {['JCI-accredited hospitals','Board-certified surgeons','Clear package pricing','GP documentation included'].map(t => (
               <div key={t} className="trust-item"><div className="trust-dot"></div>{t}</div>
             ))}
           </div>
@@ -338,7 +338,7 @@ export default function PlasticSurgeryPage() {
         <div className="inner">
           <div className="cta-box">
             <h2>Ready to find out what your procedure costs?</h2>
-            <p>Tell us which procedure you&apos;re interested in and we aim to send a full itemised quote within 48 hours — no obligation.</p>
+            <p>Tell us which procedure you&apos;re interested in and we aim to send a full package quote within 48 hours — no obligation.</p>
             <div className="cta-btns">
               <a href="/pre-operative-assessment" style={{background:"transparent",color:"rgba(255,255,255,.8)",border:"1px solid rgba(255,255,255,.3)",padding:"14px 28px",borderRadius:"10px",fontSize:"15px",display:"inline-flex",alignItems:"center",gap:"8px",fontFamily:"Inter,sans-serif"}}>Pre-operative assessment →</a>n              <a href={WA_URL} target="_blank" className="btn-cta-w">Get a free quote</a>
               <a href="mailto:info@oceanhealthtravel.com" className="btn-cta-o">Email us</a>

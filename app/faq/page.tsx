@@ -17,7 +17,7 @@ const faqSections = [
     faqs: [
       {
         q: 'How do I get a quote?',
-        a: 'Contact us via WhatsApp (+44 7441 904858) or email (info@oceanhealthtravel.com) with your treatment, preferred dates, and any relevant medical information. We aim to provide a full itemised quote within 48 hours of receiving your clinical information — no obligation.',
+        a: 'Contact us via WhatsApp (+44 7441 904858) or email (info@oceanhealthtravel.com) with your treatment, preferred dates, and any relevant medical information. We aim to provide your package quote within 48 hours of receiving your clinical information — no obligation.',
       },
       {
         q: 'How quickly can I have surgery?',
@@ -38,15 +38,15 @@ const faqSections = [
     faqs: [
       {
         q: 'How much cheaper is treatment in Istanbul than the UK?',
-        a: 'Prices vary by procedure and by provider. Indicative "from" prices, alongside typical UK private ranges, are shown on our homepage. They are confirmed by the treating provider after clinical assessment, and your itemised quote depends on your specific case.',
+        a: 'Prices vary by procedure and by provider. Indicative "from" prices, alongside typical UK private ranges, are shown on our homepage. They are confirmed by the treating provider after clinical assessment, and your package quote depends on your specific case.',
       },
       {
         q: 'What is included in the price?',
-        a: 'Your itemised quote will specify exactly what is included. Typically: surgeon fee, anaesthesia, hospital stay, and standard post-operative care. Airport transfer, hotel, interpreter, and clinic liaison are included in your package. No coordination fee is charged directly to patients. Flights are never included.',
+        a: 'Your package quote states exactly what is included, and a breakdown is available on request. Typically: surgeon fee, anaesthesia, hospital stay, and standard post-operative care. Airport transfer, hotel, interpreter, and clinic liaison are included in your package. No coordination fee is charged directly to patients. Flights are never included.',
       },
       {
         q: 'Are there any hidden charges?',
-        a: 'No. Our quotes are itemised and fixed before you travel. We do not add charges on arrival. Ocean Health & Travel coordinates your care at no direct cost to you — our commercial arrangements are with partner hospitals, not with patients.',
+        a: 'Your package quote states what is included, so you know what to expect before you book. It is adjusted if you add extra nights or change your flight timing, and a travel companion\'s costs are quoted separately; these are agreed with you before you book. A breakdown is available on request. Ocean Health & Travel coordinates your care at no direct cost to you — our commercial arrangements are with partner hospitals, not with patients.',
       },
       {
         q: 'How do I pay?',

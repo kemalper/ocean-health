@@ -9,7 +9,7 @@ import Footer from '@/app/components/Footer'
 export const metadata: Metadata = {
   alternates: { canonical: '/treatments/knee-replacement-turkey' },
   title: 'Knee Replacement in Turkey | From £3,500 | Ocean Health & Travel',
-  description: 'Knee replacement surgery in Istanbul from £3,500 — vs. £10,000–£17,000 at UK private clinics. JCI-accredited orthopaedic teams, dedicated coordination. We aim to send an itemised quote within 48 hours.',
+  description: 'Knee replacement surgery in Istanbul from £3,500 — vs. £10,000–£17,000 at UK private clinics. JCI-accredited orthopaedic teams, dedicated coordination. We aim to send a package quote within 48 hours.',
 }
 
 const WA_URL = 'https://wa.me/447441904858?text=Hello%2C%20I%27d%20like%20to%20enquire%20about%20knee%20replacement%20in%20Turkey'
@@ -17,7 +17,7 @@ const WA_URL = 'https://wa.me/447441904858?text=Hello%2C%20I%27d%20like%20to%20e
 const faqs = [
   {
     q: 'How much does knee replacement cost in Turkey?',
-    a: 'Knee replacement surgery in Istanbul starts from £3,500, compared to £10,000–£17,000 at UK private orthopaedic centres. The price includes surgeon fee, anaesthesia, implant, hospital stay, and standard post-operative care. Airport transfer, hotel, and interpreter are included in every package. We aim to send an itemised quote within 48 hours of receiving your clinical documentation.'
+    a: 'Knee replacement surgery in Istanbul starts from £3,500, compared to £10,000–£17,000 at UK private orthopaedic centres. The price includes surgeon fee, anaesthesia, implant, hospital stay, and standard post-operative care. Airport transfer, hotel, and interpreter are included in every package. We aim to send a package quote within 48 hours of receiving your clinical documentation.'
   },
   {
     q: 'How quickly can I have knee replacement surgery?',
@@ -25,7 +25,7 @@ const faqs = [
   },
   {
     q: 'What type of knee implant is used?',
-    a: 'Our partner orthopaedic teams use CE-marked knee implant systems from internationally recognised manufacturers including Zimmer Biomet, Smith & Nephew, Stryker, and DePuy Synthes. The specific implant recommended will depend on your anatomy, activity level, and degree of joint degeneration. Implant brand and model will be specified in your itemised quote.'
+    a: 'Our partner orthopaedic teams use CE-marked knee implant systems from internationally recognised manufacturers including Zimmer Biomet, Smith & Nephew, Stryker, and DePuy Synthes. The specific implant recommended will depend on your anatomy, activity level, and degree of joint degeneration. Implant brand and model will be specified in your package quote.'
   },
   {
     q: 'How long will I need to stay in Istanbul?',
@@ -249,7 +249,7 @@ export default function KneeReplacementPage() {
 
               <h3>Implants used</h3>
               <p>
-                Our partner orthopaedic centres use CE-marked knee implant systems from internationally recognised manufacturers. The specific implant recommended will depend on your anatomy, weight, activity level, and the degree of joint degeneration. All implant details are specified in your itemised quote before any commitment is made.
+                Our partner orthopaedic centres use CE-marked knee implant systems from internationally recognised manufacturers. The specific implant recommended will depend on your anatomy, weight, activity level, and the degree of joint degeneration. All implant details are specified in your package quote before any commitment is made.
               </p>
 
               <h3>Documentation helpful for your quote</h3>
@@ -269,7 +269,7 @@ export default function KneeReplacementPage() {
               <div className="sidebar-card dark">
                 <div className="sidebar-title">Get a free quote</div>
                 <p style={{fontSize:'14px',color:'rgba(255,255,255,.65)',lineHeight:1.65,marginBottom:'1.25rem',fontWeight:300}}>
-                  Share your X-rays and medical history. We aim to send a full itemised quote within 48 hours — no obligation.
+                  Share your X-rays and medical history. We aim to send a full package quote within 48 hours — no obligation.
                 </p>
                 <a href={WA_URL} target="_blank" className="btn-full amber">WhatsApp us</a>
                 <a href="mailto:info@oceanhealthtravel.com" className="btn-full outline" style={{marginTop:'8px'}}>Email us</a>
@@ -314,7 +314,7 @@ export default function KneeReplacementPage() {
           <div className="process-grid">
             {[
               {n:'1',t:'Enquiry',d:'Share X-rays and medical history via WhatsApp or email'},
-              {n:'2',t:'Quote',d:'We aim to send an itemised proposal within 48 hours'},
+              {n:'2',t:'Quote',d:'We aim to send a package proposal within 48 hours'},
               {n:'3',t:'Booking',d:'Hospital, hotel, and transfers confirmed'},
               {n:'4',t:'Surgery',d:'Knee replacement with interpreter present'},
               {n:'5',t:'GP docs',d:'Clinical notes forwarded to your UK GP'},
@@ -352,7 +352,7 @@ export default function KneeReplacementPage() {
           <div className="kicker">Get started</div>
           <h2>Ready to stop waiting?</h2>
           <p style={{fontSize:'16px',color:'#666',lineHeight:1.7,fontWeight:300,maxWidth:'500px',margin:'0 auto 2rem'}}>
-            Share your X-rays and we aim to send a full itemised quote within 48 hours. Waiting times vary.
+            Share your X-rays and we aim to send a full package quote within 48 hours. Waiting times vary.
           </p>
           <div style={{display:'flex',gap:'14px',justifyContent:'center',flexWrap:'wrap'}}>
             <a href={WA_URL} target="_blank" style={{background:'#2d3436',color:'#8FD8FF',border:'none',padding:'15px 30px',borderRadius:'10px',fontSize:'15px',fontWeight:600,display:'inline-flex',alignItems:'center',gap:'9px',cursor:'pointer',fontFamily:'Inter,sans-serif'}}>

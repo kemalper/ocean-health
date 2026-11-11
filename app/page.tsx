@@ -100,7 +100,7 @@ const COORD = [
 
 const STEPS = [
   { t: 'Enquiry', d: 'Send us your treatment and preferred dates by WhatsApp or email.', when: 'Day 0' },
-  { t: 'Itemised quote', d: 'Hospital, surgeon, hotel and transfers set out line by line.', when: 'We aim for 48 hours' },
+  { t: 'Package quote', d: 'Hospital, surgeon, hotel and transfers in one package price, adjusted for you.', when: 'We aim for 48 hours' },
   { t: 'Booking', d: 'Hospital, hotel and transfers confirmed; pre-operative instructions sent.', when: 'After you accept' },
   { t: 'Treatment', d: 'An interpreter at every appointment and full liaison with the hospital.', when: 'Varies by treatment and provider' },
   { t: 'GP documents', d: 'Discharge notes in English forwarded to your GP.', when: 'On request' },
@@ -284,14 +284,14 @@ export default function Home() {
             <div className="eyebrow">UK-registered coordinator · Istanbul</div>
             <h1>Private treatment in Istanbul, <em>arranged by one coordinator.</em></h1>
             <p className="hero-sub">
-              Itemised quotes, hotel, transfers and an interpreter at licensed partner hospitals, with one coordinator from enquiry to discharge.
+              One clear package price: your treatment, stay, transfers and an interpreter at licensed partner hospitals, tailored to your dates and travel companions.
             </p>
             <div className="hero-actions">
               <a href={WA_URL} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Get a free quote</a>
               <a href="#compare" className="btn-link">See how prices compare</a>
             </div>
             <ul className="hero-fine">
-              <li>We aim to send an itemised quote within 48 hours</li>
+              <li>We aim to send your package quote within 48 hours</li>
               <li>Timelines vary by treatment and provider</li>
               <li>Surgeon credentials confirmed in writing before you pay</li>
             </ul>
@@ -317,7 +317,7 @@ export default function Home() {
               <div className="eyebrow">Prices</div>
               <h2>Compare before you decide.</h2>
             </div>
-            <p className="sec-sub">Indicative UK private ranges set against our Istanbul starting prices. Every quote is itemised, so you can check it line by line against a UK provider.</p>
+            <p className="sec-sub">Indicative UK private ranges set against our Istanbul starting prices. Your package quote states what is included, and a breakdown is available on request.</p>
           </div>
 
           <div className="reveal" ref={ref}>
@@ -346,7 +346,7 @@ export default function Home() {
                 UK figures are indicative ranges from published UK private provider prices. Istanbul figures are starting prices subject to clinical assessment. We are paid by partner hospitals, which may influence which hospitals we work with.
                 <details>
                   <summary>How we calculate these figures</summary>
-                  <p>UK figures are indicative ranges based on published prices from UK private providers; Istanbul figures are starting prices subject to individual clinical assessment. Prices are indicative and should be checked against an itemised quote. Timelines vary by treatment and provider.</p>
+                  <p>UK figures are indicative ranges based on published prices from UK private providers; Istanbul figures are starting prices subject to individual clinical assessment. Prices are indicative and should be checked against your package quote. Timelines vary by treatment and provider.</p>
                 </details>
               </div>
             </div>
@@ -485,7 +485,7 @@ export default function Home() {
           </div>
           <div className="cta-box reveal" ref={ref}>
             <h2>Tell us what you need</h2>
-            <p>Send us your treatment and preferred dates. You will receive an itemised quote, typically within 48 hours, with no obligation. Planned (non-emergency) treatment only.</p>
+            <p>Send us your treatment and preferred dates. We aim to send your package quote within 48 hours, with no obligation. Planned (non-emergency) treatment only.</p>
             <div className="cta-actions">
               <a href={WA_URL} target="_blank" className="btn-cta-w">Get a free quote</a>
               <a href="mailto:info@oceanhealthtravel.com" className="btn-cta-o">Email us</a>

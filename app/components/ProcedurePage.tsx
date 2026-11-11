@@ -154,7 +154,7 @@ export default function ProcedurePage({ p }: { p: Procedure }) {
           <div className="card">
             <div className="card-t">Included in every package</div>
             <ul>{INCLUDED.map(t => <li key={t}>{t}</li>)}</ul>
-            <div className="fine">Flights are not included. The surgeon and hospital fees are listed in your itemised quote. {p.jci ? 'Treatment is performed at JCI-accredited partner hospitals.' : 'Treatment is delivered by licensed partner providers.'}</div>
+            <div className="fine">Flights are not included. Your package quote states what is included, and a breakdown is available on request. {p.jci ? 'Treatment is performed at JCI-accredited partner hospitals.' : 'Treatment is delivered by licensed partner providers.'}</div>
           </div>
         </div>
       </section>
@@ -174,7 +174,7 @@ export default function ProcedurePage({ p }: { p: Procedure }) {
           </div>
           <h3 style={{ marginTop: '2.25rem' }}>Your timeline</h3>
           <ol className="tl">
-            <li><b>Typically within 48 hours</b><span>We aim to send an itemised quote once we have your complete records or photographs.</span></li>
+            <li><b>Typically within 48 hours</b><span>We aim to send your package quote once we have your complete records or photographs.</span></li>
             <li><b>Surgery date</b><span>Agreed with you once your records are reviewed, subject to the surgeon and hospital availability.</span></li>
             <li><b>Arrival</b><span>Airport transfer, hotel, and your meeting with the surgeon before the procedure.</span></li>
             <li><b>{p.price.stay === 'Depends on treatment' ? 'In Istanbul' : p.price.stay}</b><span>The procedure and post-operative checks. The surgeon confirms when you are fit to fly.</span></li>
@@ -212,7 +212,7 @@ export default function ProcedurePage({ p }: { p: Procedure }) {
         <div className="in">
           <div className="cta">
             <h2>Ready to find out what {p.name.toLowerCase()} costs for you?</h2>
-            <p>Tell us what you are considering. We aim to send an itemised quote within about 48 hours. Hospital and surgeon confirmed in writing before you pay.</p>
+            <p>Tell us what you are considering. We aim to send your package quote within about 48 hours. Hospital and surgeon confirmed in writing before you pay.</p>
             <a href={wa} target="_blank" rel="noopener noreferrer" className="btn">Get a free quote</a>
             <p style={{ marginTop: '1.25rem', marginBottom: 0, color: 'rgba(255,255,255,.7)', fontSize: 14 }}>
               Prefer to send photos or records? <Link href={`/records-review?procedure=${p.slug}`} style={{ color: '#fff', borderBottom: '1px solid rgba(255,255,255,.6)' }}>Send your details for review</Link>

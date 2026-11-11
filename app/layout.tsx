@@ -20,11 +20,11 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.oceanhealthtravel.com"),
   alternates: { canonical: "/" },
   title: "Ocean Health & Travel | UK Medical Tourism Coordinator",
-  description: "UK-registered medical tourism coordinator connecting international patients with licensed partner providers in Istanbul. Rhinoplasty, dental implants, knee replacement, LASIK and more, with itemised quotes before you travel.",
+  description: "UK-registered medical tourism coordinator connecting international patients with licensed partner providers in Istanbul. Rhinoplasty, dental implants, knee replacement, LASIK and more, with package quotes that state what is included.",
   keywords: "medical tourism Istanbul, Turkey surgery, rhinoplasty Istanbul, dental implants Turkey, knee replacement Turkey, LASIK Istanbul, licensed partner hospital Istanbul",
   openGraph: {
     title: "Ocean Health & Travel | UK Medical Tourism Coordinator",
-    description: "Licensed partner hospitals in Istanbul. Itemised quotes before you travel. Dedicated coordination.",
+    description: "Licensed partner hospitals in Istanbul. Package quotes that state what is included. Dedicated coordination.",
     type: "website",
     locale: "en_GB",
     siteName: "Ocean Health & Travel",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Ocean Health & Travel | UK Medical Tourism Coordinator",
-    description: "Licensed partner hospitals in Istanbul. Itemised quotes before you travel. Dedicated coordination.",
+    description: "Licensed partner hospitals in Istanbul. Package quotes that state what is included. Dedicated coordination.",
     images: ["/og-image.jpg"],
   },
 };
