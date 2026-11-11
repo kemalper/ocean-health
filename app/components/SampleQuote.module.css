@@ -1,0 +1,13 @@
+.card{background:#fff;border:1px solid var(--oht-line);border-radius:14px;padding:1.5rem 1.5rem 1.25rem;box-shadow:0 18px 40px -28px rgba(5,89,240,.45);font-family:var(--font-inter),system-ui,sans-serif;color:var(--oht-ink)}
+.top{display:flex;align-items:flex-start;justify-content:space-between;gap:.75rem;flex-wrap:wrap;margin-bottom:.35rem}
+.card .title{font-family:var(--font-dm-serif),Georgia,serif;font-size:26px;line-height:1.15;letter-spacing:-.01em;color:var(--oht-navy);margin:0;font-weight:400}
+.tag{font-size:11.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:#0438A6;background:var(--oht-tint-2);border-radius:100px;padding:.3rem .75rem;max-width:100%}
+.sub{font-size:13.5px;color:var(--oht-muted);margin:0 0 1rem}
+.list{margin:0;padding:0}
+.row{display:grid;grid-template-columns:1fr auto;gap:.15rem 1rem;align-items:baseline;padding:.8rem 0;border-top:1px dashed var(--oht-line)}
+.row dt{font-size:15px;font-weight:600;color:var(--oht-navy)}
+.row dd{margin:0}
+.row .note{grid-column:1;font-size:13px;color:var(--oht-muted)}
+.row .val{grid-column:2;grid-row:1;font-size:15px;font-weight:600;color:var(--oht-muted);white-space:nowrap}
+.fine{border-top:1px solid var(--oht-line);margin-top:.25rem;padding-top:.9rem;display:grid;gap:.4rem;font-size:13px;line-height:1.5;color:var(--oht-muted)}
+.fine strong{color:var(--oht-ink);font-weight:600}
