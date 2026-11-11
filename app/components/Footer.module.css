@@ -1,17 +1,24 @@
-.footer{background:var(--oht-navy);color:#D6E2F7;padding:2.5rem 0 2rem;font-family:var(--font-inter),system-ui,sans-serif;line-height:1.6}
-.inner{max-width:1160px;margin:0 auto;padding:0 1.25rem}
+/* Footer is shared across pages that define their own p / a / h2 / footer rules
+   (.home, .pp, .tp ...). Selectors below are intentionally more specific, and the
+   properties those rules touch are !important, so the footer looks the same everywhere. */
+.footer.footer{background:var(--oht-navy)!important;color:#D6E2F7;padding:2.5rem 0 2rem!important;font-family:var(--font-inter),system-ui,sans-serif;line-height:1.6}
+.inner{max-width:1280px;margin:0 auto;padding:0 1.25rem}
 .top{display:grid;gap:2rem;padding-bottom:1.75rem;border-bottom:1px solid rgba(255,255,255,.18);margin-bottom:1.5rem}
-.name{font-family:var(--font-dm-serif),Georgia,serif;font-size:20px;color:#fff;margin-bottom:.6rem}
-.brand p{font-size:14px;max-width:360px}
-.cols{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem}
-.cols h2{font-family:var(--font-inter),sans-serif;font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:#fff;margin:0 0 .8rem;font-weight:600;line-height:1.4}
-.cols a{display:block;font-size:14px;color:#D6E2F7;padding:.3rem 0;text-decoration:none}
-.cols a:hover{color:#fff;text-decoration:underline}
-.cols a:focus-visible,.legal a:focus-visible{outline:3px solid #fff;outline-offset:2px;border-radius:4px}
-.legal{font-size:12.5px;line-height:1.8;color:#D6E2F7}
-.legal a{color:#fff;text-decoration:underline}
+.footer .brand p.name{font-family:var(--font-dm-serif),Georgia,serif!important;font-size:22px!important;line-height:1.2!important;color:#fff!important;margin:0 0 .6rem!important}
+.footer .brand p{font-size:14px!important;max-width:360px;margin:0!important;color:#D6E2F7!important;line-height:1.6!important}
+.cols{display:grid;grid-template-columns:repeat(2,1fr);gap:1.75rem 1.5rem}
+.treat{grid-column:1/-1}
+.tlist{columns:2;column-gap:2rem}
+.tlist a{break-inside:avoid}
+.footer .cols h2{font-family:var(--font-inter),sans-serif!important;font-size:12px!important;text-transform:uppercase!important;letter-spacing:.08em!important;color:#fff!important;margin:0 0 .8rem!important;font-weight:600!important;line-height:1.4!important}
+.footer .cols a{display:block;font-size:14px;color:#D6E2F7!important;padding:.3rem 0;text-decoration:none}
+.footer .cols a:hover{color:#fff!important;text-decoration:underline}
+.footer .cols a:focus-visible,.footer .legal a:focus-visible{outline:3px solid #fff;outline-offset:2px;border-radius:4px}
+.footer .legal{font-size:12.5px!important;line-height:1.8!important;color:#D6E2F7!important;margin:0!important}
+.footer .legal a{color:#fff!important;text-decoration:underline}
 @media(min-width:768px){
-  .inner{padding:0 2rem}
-  .top{grid-template-columns:1fr 2fr}
-  .cols{grid-template-columns:repeat(3,1fr)}
+  .inner{padding:0 2.5rem}
+  .top{grid-template-columns:1fr 2.4fr}
+  .cols{grid-template-columns:2fr 1fr 1fr}
+  .treat{grid-column:auto}
 }

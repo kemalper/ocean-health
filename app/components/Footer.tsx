@@ -34,9 +34,11 @@ export default function Footer({ note }: { note?: string }) {
             <p>UK-registered medical tourism coordinator. We are an intermediary, not a healthcare provider: all treatment is delivered by licensed partner providers in Istanbul.</p>
           </div>
           <div className={styles.cols}>
-            <nav aria-label="Treatments">
+            <nav aria-label="Treatments" className={styles.treat}>
               <h2>Treatments</h2>
-              {treatments.map(([href, label]) => <Link key={href} href={href}>{label}</Link>)}
+              <div className={styles.tlist}>
+                {treatments.map(([href, label]) => <Link key={href} href={href}>{label}</Link>)}
+              </div>
             </nav>
             <nav aria-label="Company">
               <h2>Company</h2>
