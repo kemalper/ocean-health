@@ -17,7 +17,7 @@ const WA_URL = 'https://wa.me/447441904858?text=Hello%2C%20I%27d%20like%20to%20e
 const faqs = [
   {
     q: 'How much does deep brain stimulation cost in Turkey?',
-    a: 'Deep brain stimulation (DBS) in Istanbul starts from £23,700, compared to about £30,000 or more at UK private neurosurgical centres. Exact pricing depends on the specific device used, surgical complexity, and length of hospital stay. A detailed itemised quote is provided following review of your clinical documentation.'
+    a: 'Deep brain stimulation (DBS) in Istanbul starts from £23,700, compared to about £30,000 or more at UK private neurosurgical centres. Exact pricing depends on the specific device used, surgical complexity, and length of hospital stay. A detailed package quote is provided following review of your clinical documentation.'
   },
   {
     q: 'Is a referral required for DBS surgery in Istanbul?',
@@ -339,7 +339,7 @@ export default function DBSPage() {
             {[
               {n:'1',t:'Free pre-assessment',d:'Complete our online form with diagnosis history, medication, and any imaging you have'},
               {n:'2',t:'Clinical review',d:'Our coordination team liaises with the neurosurgical team'},
-              {n:'3',t:'Quote & booking',d:'Itemised proposal and surgery date confirmed'},
+              {n:'3',t:'Quote & booking',d:'Package proposal and surgery date confirmed'},
               {n:'4',t:'Surgery',d:'Two-stage procedure at JCI-accredited hospital'},
               {n:'5',t:'Documentation',d:'Operative notes sent to your UK neurologist and GP'},
             ].map(s => (

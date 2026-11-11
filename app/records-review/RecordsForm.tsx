@@ -177,7 +177,7 @@ export default function RecordsForm() {
         <div className="done">
           <h2>Thank you. Your details have been received.</h2>
           {doneRef !== 'DONE' && <p>Your reference is <b>{doneRef}</b>. Keep it if you contact us.</p>}
-          <p>We pass your information to the treating team and come back to you with their view and an itemised quote. For neurosurgery the treating neurosurgeon reviews your imaging first. This is not a medical consultation, and in an emergency you should use emergency services.</p>
+          <p>We pass your information to the treating team and come back to you with their view and a package quote. For neurosurgery the treating neurosurgeon reviews your imaging first. This is not a medical consultation, and in an emergency you should use emergency services.</p>
           <a className="btn" href={wa} target="_blank" rel="noopener noreferrer">Message us on WhatsApp</a>
         </div>
       </div>

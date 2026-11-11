@@ -88,7 +88,7 @@ const faqs = [
   },
   {
     q: 'How much does neurosurgery cost in Istanbul?',
-    a: 'Costs vary significantly by procedure. Deep brain stimulation starts from £23,700 (vs. about £30,000+ in the UK). Disc surgery starts from £4,000–£4,750 (vs. £8,000–£18,000). Complex brain tumour surgery is quoted individually based on clinical documentation. We aim to send an itemised quote within 48 hours of receiving your medical records.'
+    a: 'Costs vary significantly by procedure. Deep brain stimulation starts from £23,700 (vs. about £30,000+ in the UK). Disc surgery starts from £4,000–£4,750 (vs. £8,000–£18,000). Complex brain tumour surgery is quoted individually based on clinical documentation. We aim to send a package quote within 48 hours of receiving your medical records.'
   },
   {
     q: 'What documentation do I need to provide?',
@@ -271,7 +271,7 @@ export default function NeurosurgeryPage() {
             <div className="kicker">How your records are reviewed</div>
             <h2>The neurosurgeon decides, not us.</h2>
             <p style={{fontSize:'15px',color:'#555',lineHeight:1.8,fontWeight:300,margin:'1rem 0'}}>
-              You send your MRI or other imaging and clinical reports. Our coordination team passes them to the treating neurosurgeon, who reviews them and decides whether surgery is suitable. You receive their view, and we aim to send an itemised quote within 48 hours of complete records.
+              You send your MRI or other imaging and clinical reports. Our coordination team passes them to the treating neurosurgeon, who reviews them and decides whether surgery is suitable. You receive their view, and we aim to send a package quote within 48 hours of complete records.
             </p>
           </div>
           <img src="/photos/neuro-consultation.webp" alt="Illustrative image: a neurosurgeon discussing scan results with a patient" loading="lazy" width={1536} height={1024} style={{width:'100%',height:'auto',borderRadius:'14px',display:'block'}} />

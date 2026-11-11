@@ -81,12 +81,12 @@ export default function HeroProcess() {
         {/* 3 quote */}
         <div className={`scene${cur === 2 ? ' on' : ''}`}><svg viewBox="0 0 400 240" fill="none">
           <g className="a" style={sd('.1s')}><rect x="80" y="20" width="240" height="200" rx="14" fill="#fff" stroke="#DCE6F5" />
-            <text className="t" x="102" y="52" fontSize="15" fontWeight="700" fill="#14213D">Itemised quote</text>
+            <text className="t" x="102" y="52" fontSize="15" fontWeight="700" fill="#14213D">Package quote</text>
             <rect x="248" y="34" width="52" height="24" rx="12" fill="#E6EFFE" /><text className="t" x="274" y="50" textAnchor="middle" fontSize="12" fontWeight="700" fill="#0438A6">Quote</text></g>
           <g className="a" style={sd('.7s')}><text className="t" x="102" y="94" fontSize="13" fill="#14213D">Surgeon and hospital</text><path className="tick" d="M280 90 L286 96 L298 82" stroke={G} strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" style={sd('.9s')} /></g>
           <g className="a" style={sd('1.3s')}><text className="t" x="102" y="126" fontSize="13" fill="#14213D">Hotel and transfers</text><path className="tick" d="M280 122 L286 128 L298 114" stroke={G} strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" style={sd('1.5s')} /></g>
           <g className="a" style={sd('1.9s')}><text className="t" x="102" y="158" fontSize="13" fill="#14213D">Interpreter</text><path className="tick" d="M280 154 L286 160 L298 146" stroke={G} strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" style={sd('2.1s')} /></g>
-          <g className="a" style={sd('2.6s')}><line x1="102" y1="176" x2="298" y2="176" stroke="#DCE6F5" /><text className="t" x="102" y="203" fontSize="13" fontWeight="600" fill="#0438A6">Fixed before you travel</text></g>
+          <g className="a" style={sd('2.6s')}><line x1="102" y1="176" x2="298" y2="176" stroke="#DCE6F5" /><text className="t" x="102" y="203" fontSize="13" fontWeight="600" fill="#0438A6">Breakdown on request</text></g>
         </svg></div>
 
         {/* 4 travel */}

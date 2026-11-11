@@ -40,7 +40,7 @@ export const PROCEDURES: Procedure[] = [
     h1: 'Breast augmentation in Istanbul.',
     h1em: 'From £6,000.',
     metaTitle: 'Breast Augmentation in Istanbul | From £6,000 | Ocean Health & Travel',
-    metaDescription: `Breast augmentation in Istanbul from £6,000 — UK private typically ${UK_PRICES.breastAugmentation.compact}. Board-certified surgeons at JCI-accredited hospitals, hotel, transfers and interpreter included, and we aim to send an itemised quote within 48 hours.`,
+    metaDescription: `Breast augmentation in Istanbul from £6,000 — UK private typically ${UK_PRICES.breastAugmentation.compact}. Board-certified surgeons at JCI-accredited hospitals, hotel, transfers and interpreter included, and we aim to send a package quote within 48 hours.`,
     sub: 'Implant-based breast enlargement at JCI-accredited hospitals, coordinated from first enquiry to discharge notes for your GP.',
     price: {
       istanbul: 'from £6,000',
@@ -49,7 +49,7 @@ export const PROCEDURES: Procedure[] = [
     },
     overview: [
       'Breast augmentation increases breast volume and can improve shape and symmetry. Most procedures use silicone gel or saline implants, placed through an incision under the breast fold, around the areola or in the armpit, and positioned behind the breast tissue or under the chest muscle. Fat transfer is a separate option for a more modest increase in volume.',
-      'The surgeon agrees implant type, size, profile and placement with you after assessing your chest wall, breast tissue and skin quality. Your itemised quote lists what is and is not included, and the hospital and surgeon are confirmed in writing before you pay for treatment.',
+      'The surgeon agrees implant type, size, profile and placement with you after assessing your chest wall, breast tissue and skin quality. Your package quote states what is included, and a breakdown is available on request. The hospital and surgeon are confirmed in writing before you pay for treatment.',
       'For breast augmentation the cost in Istanbul is broadly in line with UK private prices. Patients who travel usually do so for access to a surgeon and hospital they have checked, and for an all-in coordinated package, not for a large price difference.',
     ],
     suitability: [
@@ -59,7 +59,7 @@ export const PROCEDURES: Procedure[] = [
       'Non-smokers, or patients prepared to stop before and after surgery as advised',
     ],
     steps: [
-      { t: 'Enquiry and quote', d: 'Tell us what you want. We aim to send you an itemised quote within about 48 hours of your enquiry, with a clear list of what is and is not included. The hospital and surgeon are confirmed in writing before you pay for treatment.' },
+      { t: 'Enquiry and quote', d: 'Tell us what you want. We aim to send you a package quote within about 48 hours of your enquiry, with a clear list of what is and is not included. The hospital and surgeon are confirmed in writing before you pay for treatment.' },
       { t: 'Remote assessment', d: 'You complete a medical questionnaire and share photographs. Your surgeon reviews them and confirms whether the procedure is suitable before you book travel.' },
       { t: 'Surgery in Istanbul', d: 'Surgery usually takes one to two hours under general anaesthesia. Your surgeon confirms implant details and agrees them with you in writing.' },
       { t: 'Recovery and follow-up', d: 'You recover in Istanbul, attend your post-operative checks and receive English-language operative notes and a discharge summary, forwarded to your UK GP on request.' },
@@ -77,7 +77,7 @@ export const PROCEDURES: Procedure[] = [
     faqs: [
       {
         q: 'How much does breast augmentation cost in Istanbul compared with the UK?',
-        a: 'Breast augmentation in Istanbul starts from £6,000. UK private clinics typically charge £5,500–£7,000 (published guide prices, collected October 2026). The cost is broadly comparable, so the case for travelling rests on the surgeon, the hospital and the coordinated package rather than on price alone. Your itemised quote states what is included, so you can compare it line by line with a UK quote.',
+        a: 'Breast augmentation in Istanbul starts from £6,000. UK private clinics typically charge £5,500–£7,000 (published guide prices, collected October 2026). The cost is broadly comparable, so the case for travelling rests on the surgeon, the hospital and the coordinated package rather than on price alone. Your package quote states what is included, and a breakdown is available on request, so you can compare it with a UK quote.',
       },
       {
         q: 'Which implants are used?',
@@ -110,13 +110,13 @@ export const PROCEDURES: Procedure[] = [
     h1: 'Liposuction in Istanbul.',
     h1em: 'From £2,500.',
     metaTitle: 'Liposuction in Istanbul | From £2,500 | Ocean Health & Travel',
-    metaDescription: `Liposuction in Istanbul from £2,500 — UK private typically ${UK_PRICES.liposuction.compact}, depending on areas treated. Board-certified surgeons at JCI-accredited hospitals. We aim to send an itemised quote within 48 hours.`,
-    sub: 'Targeted fat removal at JCI-accredited hospitals, with an itemised quote that shows exactly which areas are treated.',
+    metaDescription: `Liposuction in Istanbul from £2,500 — UK private typically ${UK_PRICES.liposuction.compact}, depending on areas treated. Board-certified surgeons at JCI-accredited hospitals. We aim to send a package quote within 48 hours.`,
+    sub: 'Targeted fat removal at JCI-accredited hospitals, with a package quote that states which areas are treated.',
     price: { istanbul: 'from £2,500', uk: UK_PRICES.liposuction.range, stay: '5–7 days' },
     overview: [
       'Liposuction removes localised fat deposits that do not respond to diet and exercise, most often from the abdomen, flanks, thighs, upper arms, chin and back. The surgeon passes thin suction cannulas through small incisions and shapes the area as fat is removed. Some surgeons add energy-assisted techniques, which your surgeon will explain if they are part of your plan.',
       'Liposuction is a body-contouring procedure, not a treatment for obesity or a way to lose weight. The result depends on how elastic your skin is and on how much fat is removed. Where there is significant loose skin, a tummy tuck or other skin-removing procedure may suit better, and your surgeon will say so after reviewing your photographs.',
-      'UK private prices depend heavily on how many areas are treated, so we show the Istanbul price as a starting point and list each area separately in your itemised quote. That lets you compare like for like with a UK quote.',
+      'UK private prices depend heavily on how many areas are treated, so we show the Istanbul price as a starting point and a breakdown by area is available on request. That lets you compare like for like with a UK quote.',
     ],
     suitability: [
       'Adults with localised fat deposits who are close to a stable, healthy weight',
@@ -125,7 +125,7 @@ export const PROCEDURES: Procedure[] = [
       'Non-smokers, or patients prepared to stop before and after surgery as advised',
     ],
     steps: [
-      { t: 'Enquiry and quote', d: 'Tell us which areas concern you. We aim to send you an itemised quote within about 48 hours of your enquiry, with a clear list of what is and is not included. The hospital and surgeon are confirmed in writing before you pay for treatment.' },
+      { t: 'Enquiry and quote', d: 'Tell us which areas concern you. We aim to send you a package quote within about 48 hours of your enquiry, with a clear list of what is and is not included. The hospital and surgeon are confirmed in writing before you pay for treatment.' },
       { t: 'Remote assessment', d: 'You complete a medical questionnaire and share photographs. Your surgeon confirms suitability and the areas that can be treated safely in one session.' },
       { t: 'Surgery in Istanbul', d: 'Surgery is usually under general anaesthesia and the time depends on the number of areas. You wear a compression garment afterwards.' },
       { t: 'Recovery and follow-up', d: 'You recover in Istanbul, attend post-operative checks and receive English-language operative notes and a discharge summary, sent to your UK GP on request.' },
@@ -141,7 +141,7 @@ export const PROCEDURES: Procedure[] = [
       'Risks of general anaesthesia and of blood clots, including after flying',
     ],
     faqs: [
-      { q: 'How much does liposuction cost in Istanbul compared with the UK?', a: 'Liposuction in Istanbul starts from £2,500. UK private clinics typically charge £3,000–£8,500, depending on how many areas are treated (published guide prices, collected October 2026). Because the price changes with each area, your itemised quote lists them separately and the difference you see depends on what you need.' },
+      { q: 'How much does liposuction cost in Istanbul compared with the UK?', a: 'Liposuction in Istanbul starts from £2,500. UK private clinics typically charge £3,000–£8,500, depending on how many areas are treated (published guide prices, collected October 2026). Because the price changes with each area, your package quote states the areas included, a breakdown is available on request, and the difference you see depends on what you need.' },
       { q: 'Is liposuction a weight-loss treatment?', a: 'No. It reshapes areas of stubborn fat and works best close to your stable weight. Surgeons also limit how much fat they remove in one session for safety, so it cannot substitute for weight loss.' },
       { q: 'Will the fat come back?', a: 'Fat cells removed from the treated area do not regrow there. Remaining fat cells can still enlarge if you gain weight, which can change your shape, including in untreated areas.' },
       { q: 'What about loose skin?', a: 'Skin tightens variably after liposuction. If your skin is already loose, your surgeon may advise a procedure that removes skin instead of, or with, liposuction. This is one of the main things your remote assessment is for.' },
@@ -158,14 +158,14 @@ export const PROCEDURES: Procedure[] = [
     h1: 'Tummy tuck in Istanbul.',
     h1em: 'From £3,500.',
     metaTitle: 'Tummy Tuck (Abdominoplasty) in Istanbul | From £3,500 | Ocean Health & Travel',
-    metaDescription: 'Tummy tuck in Istanbul from £3,500 — UK private £7,200–£10,050 for mini to extended abdominoplasty. Board-certified surgeons at JCI-accredited hospitals. We aim to send an itemised quote within 48 hours.',
+    metaDescription: 'Tummy tuck in Istanbul from £3,500 — UK private £7,200–£10,050 for mini to extended abdominoplasty. Board-certified surgeons at JCI-accredited hospitals. We aim to send a package quote within 48 hours.',
     sub: 'Abdominoplasty at JCI-accredited hospitals, with the type of tummy tuck and the price of each stage set out in your quote.',
     price: { istanbul: 'from £3,500', uk: '£7,200 – £10,050', stay: '7–10 days' },
     overview: [
       'A tummy tuck (abdominoplasty) removes excess skin and fat from the lower abdomen and can tighten the abdominal wall muscles, which often separate after pregnancy or large weight loss. A full abdominoplasty also repositions the navel. A mini abdominoplasty treats only the area below the navel, and an extended version continues around the flanks.',
       'Which type suits you depends on where the loose skin is, how much there is and whether the muscles need repair. Your surgeon reviews your photographs and medical history before you book travel. Liposuction is sometimes combined with it, and that changes the plan and the price.',
       'UK private clinics publish starting prices of about £7,200 for a mini, £9,200 for a full and £10,050 for an extended abdominoplasty. Your Istanbul quote states the type of procedure and what is included so you can compare directly.',
-      'A 360° (circumferential) tummy tuck continues the treatment around the sides and back. It is quoted as a complete package of £7,300–£8,200, and your itemised quote confirms exactly what is included. We have not found a reliable published UK price for it, so we do not show a UK comparison.',
+      'A 360° (circumferential) tummy tuck continues the treatment around the sides and back. It is quoted as a complete package of £7,300–£8,200, and your package quote confirms exactly what is included. We have not found a reliable published UK price for it, so we do not show a UK comparison.',
     ],
     suitability: [
       'Adults with loose abdominal skin or separated muscles after pregnancy or weight loss',
@@ -174,7 +174,7 @@ export const PROCEDURES: Procedure[] = [
       'Non-smokers, or patients prepared to stop well before and after surgery as advised',
     ],
     steps: [
-      { t: 'Enquiry and quote', d: 'Tell us what you want to change. We aim to send you an itemised quote within about 48 hours of your enquiry, with a clear list of what is and is not included. The hospital and surgeon are confirmed in writing before you pay for treatment.' },
+      { t: 'Enquiry and quote', d: 'Tell us what you want to change. We aim to send you a package quote within about 48 hours of your enquiry, with a clear list of what is and is not included. The hospital and surgeon are confirmed in writing before you pay for treatment.' },
       { t: 'Remote assessment', d: 'You complete a medical questionnaire and share photographs. Your surgeon confirms the type of abdominoplasty and whether it is suitable.' },
       { t: 'Surgery in Istanbul', d: 'Surgery is under general anaesthesia and usually takes a few hours. You wake with a compression garment and may have surgical drains for a short time.' },
       { t: 'Recovery and follow-up', d: 'You recover in Istanbul, attend post-operative checks and receive English-language operative notes and a discharge summary, sent to your UK GP on request.' },
@@ -190,8 +190,8 @@ export const PROCEDURES: Procedure[] = [
       'Tightness that limits standing fully upright for the first days',
     ],
     faqs: [
-      { q: 'How much does a tummy tuck cost in Istanbul compared with the UK?', a: 'A tummy tuck in Istanbul starts from £3,500. UK private clinics publish starting prices of about £7,200 for a mini, £9,200 for a full and £10,050 for an extended abdominoplasty (collected October 2026). Your itemised quote names the type so you can compare like for like.' },
-      { q: 'What is a 360° tummy tuck and what does it cost?', a: 'A 360° (circumferential) tummy tuck treats the abdomen and continues around the flanks and lower back. It is quoted as a complete package of £7,300–£8,200. We have not found a reliable published UK price, so we do not show a UK comparison. Your surgeon recommends this operation only if your photographs show loose skin and tissue around the waist, and your itemised quote states what is included.' },
+      { q: 'How much does a tummy tuck cost in Istanbul compared with the UK?', a: 'A tummy tuck in Istanbul starts from £3,500. UK private clinics publish starting prices of about £7,200 for a mini, £9,200 for a full and £10,050 for an extended abdominoplasty (collected October 2026). Your package quote names the type so you can compare like for like.' },
+      { q: 'What is a 360° tummy tuck and what does it cost?', a: 'A 360° (circumferential) tummy tuck treats the abdomen and continues around the flanks and lower back. It is quoted as a complete package of £7,300–£8,200. We have not found a reliable published UK price, so we do not show a UK comparison. Your surgeon recommends this operation only if your photographs show loose skin and tissue around the waist, and your package quote states what is included.' },
       { q: 'What is the difference between mini, full and extended?', a: 'A mini treats only the area below the navel. A full treats the whole abdomen and repositions the navel. An extended also continues around the sides. Your surgeon recommends one after reviewing your photographs, and the price changes with the type.' },
       { q: 'Can I have a tummy tuck if I plan another pregnancy?', a: 'Most surgeons advise waiting until you have finished having children, because pregnancy can undo the muscle repair and stretch the skin again. Your surgeon will discuss this with you.' },
       { q: 'How long is recovery and when can I fly home?', a: 'Most patients stay in Istanbul for 7–10 days, subject to surgeon clearance. You wear a compression garment for several weeks, walk gently from the first days and avoid strenuous exercise and heavy lifting as advised. Blood-clot prevention matters, including compression stockings and regular movement on the flight.' },
@@ -208,7 +208,7 @@ export const PROCEDURES: Procedure[] = [
     h1: 'Brazilian butt lift in Istanbul.',
     h1em: 'From £4,000.',
     metaTitle: 'Brazilian Butt Lift (BBL) in Istanbul | From £4,000 | Ocean Health & Travel',
-    metaDescription: 'Brazilian butt lift in Istanbul from £4,000 — UK private from £11,995. Safety-first guidance, board-certified surgeons at JCI-accredited hospitals. We aim to send an itemised quote within 48 hours.',
+    metaDescription: 'Brazilian butt lift in Istanbul from £4,000 — UK private from £11,995. Safety-first guidance, board-certified surgeons at JCI-accredited hospitals. We aim to send a package quote within 48 hours.',
     sub: 'Fat transfer to the buttocks at JCI-accredited hospitals. This procedure carries higher risk than most cosmetic surgery, so we set out what to ask before you book.',
     price: { istanbul: 'from £4,000', uk: 'from £11,995', stay: '7–10 days' },
     overview: [
@@ -223,7 +223,7 @@ export const PROCEDURES: Procedure[] = [
       'Non-smokers, or patients prepared to stop before and after surgery as advised',
     ],
     steps: [
-      { t: 'Enquiry and quote', d: 'Tell us what you are hoping for. We aim to send you an itemised quote within about 48 hours of your enquiry, with a clear list of what is and is not included. The hospital and surgeon are confirmed in writing before you pay for treatment.' },
+      { t: 'Enquiry and quote', d: 'Tell us what you are hoping for. We aim to send you a package quote within about 48 hours of your enquiry, with a clear list of what is and is not included. The hospital and surgeon are confirmed in writing before you pay for treatment.' },
       { t: 'Remote assessment', d: 'You complete a medical questionnaire and share photographs. Your surgeon confirms suitability and the technique. Ask them to confirm in writing where the fat will be placed.' },
       { t: 'Surgery in Istanbul', d: 'Surgery is under general anaesthesia, with liposuction first and fat transfer second. You wear a compression garment afterwards.' },
       { t: 'Recovery and follow-up', d: 'You recover in Istanbul, avoid sitting or lying directly on the buttocks as instructed, attend post-operative checks and receive English-language notes for your GP.' },
@@ -239,7 +239,7 @@ export const PROCEDURES: Procedure[] = [
       'Risks of general anaesthesia',
     ],
     faqs: [
-      { q: 'How much does a BBL cost in Istanbul compared with the UK?', a: 'A BBL in Istanbul starts from £4,000. One UK private clinic that publishes a price lists it from £11,995 (collected October 2026). This is a single published source, so use it as a guide rather than a market average. Your itemised quote states the donor areas and what is included.' },
+      { q: 'How much does a BBL cost in Istanbul compared with the UK?', a: 'A BBL in Istanbul starts from £4,000. One UK private clinic that publishes a price lists it from £11,995 (collected October 2026). This is a single published source, so use it as a guide rather than a market average. Your package quote states the donor areas and what is included.' },
       { q: 'Is a BBL safe?', a: 'All procedures carry risks; these are discussed by the treating provider. A BBL carries more risk than most cosmetic procedures, mainly because of the risk of fat embolism if fat is placed in or below muscle. Surgeons reduce the risk by placing fat only in the layer under the skin. Ask your surgeon to confirm how they do this, in writing, and ask about their experience with the procedure. Do not choose a BBL on price alone.' },
       { q: 'How long do the results last?', a: 'A proportion of the transferred fat does not survive, so volume reduces over the first months. The fat that remains is long lasting, but your weight and body shape can still change the result. Your surgeon will explain what to expect.' },
       { q: 'How long is recovery and when can I fly home?', a: 'Most patients stay in Istanbul for 7–10 days, subject to surgeon clearance. You wear a compression garment, avoid sitting or lying directly on the buttocks for the time your surgeon specifies, and avoid strenuous exercise. Flying requires blood-clot precautions: ask about compression stockings and moving regularly.' },
@@ -256,7 +256,7 @@ export const PROCEDURES: Procedure[] = [
     h1: 'Mini facelift in Istanbul.',
     h1em: 'From £5,000.',
     metaTitle: 'Mini Facelift in Istanbul | From £5,000 | Ocean Health & Travel',
-    metaDescription: `Mini facelift in Istanbul from £5,000 — UK private typically ${UK_PRICES.facelift.compact}. Board-certified surgeons at JCI-accredited hospitals. We aim to send an itemised quote within 48 hours.`,
+    metaDescription: `Mini facelift in Istanbul from £5,000 — UK private typically ${UK_PRICES.facelift.compact}. Board-certified surgeons at JCI-accredited hospitals. We aim to send a package quote within 48 hours.`,
     sub: 'Lower-face and jowl rejuvenation at JCI-accredited hospitals. A full facelift or a face and neck lift is quoted individually.',
     price: { istanbul: 'from £5,000', uk: UK_PRICES.facelift.range, stay: '7–10 days' },
     overview: [
@@ -271,7 +271,7 @@ export const PROCEDURES: Procedure[] = [
       'Non-smokers, or patients prepared to stop well before and after surgery as advised',
     ],
     steps: [
-      { t: 'Enquiry and quote', d: 'Tell us what you want to change. We aim to send you an itemised quote within about 48 hours of your enquiry, with a clear list of what is and is not included. The hospital and surgeon are confirmed in writing before you pay for treatment.' },
+      { t: 'Enquiry and quote', d: 'Tell us what you want to change. We aim to send you a package quote within about 48 hours of your enquiry, with a clear list of what is and is not included. The hospital and surgeon are confirmed in writing before you pay for treatment.' },
       { t: 'Remote assessment', d: 'You complete a medical questionnaire and share photographs. Your surgeon confirms whether a mini lift is the right operation.' },
       { t: 'Surgery in Istanbul', d: 'Surgery is under general anaesthesia or sedation with local anaesthesia, as your surgeon advises, and usually takes a few hours.' },
       { t: 'Recovery and follow-up', d: 'You recover in Istanbul, attend post-operative checks and receive English-language operative notes and a discharge summary, sent to your UK GP on request.' },
@@ -303,8 +303,8 @@ export const PROCEDURES: Procedure[] = [
     h1: 'Eyelid surgery in Istanbul.',
     h1em: 'From £1,800.',
     metaTitle: 'Eyelid Surgery (Blepharoplasty) in Istanbul | From £1,800 | Ocean Health & Travel',
-    metaDescription: 'Eyelid surgery (blepharoplasty) in Istanbul from £1,800 — UK private from £4,995 for upper lids. Board-certified surgeons at JCI-accredited hospitals. We aim to send an itemised quote within 48 hours.',
-    sub: 'Upper and lower eyelid correction at JCI-accredited hospitals, with a short stay and an itemised quote.',
+    metaDescription: 'Eyelid surgery (blepharoplasty) in Istanbul from £1,800 — UK private from £4,995 for upper lids. Board-certified surgeons at JCI-accredited hospitals. We aim to send a package quote within 48 hours.',
+    sub: 'Upper and lower eyelid correction at JCI-accredited hospitals, with a short stay and a package quote.',
     price: { istanbul: 'from £1,800', uk: 'from £4,995 (upper lids)', stay: '3–5 days' },
     overview: [
       'Blepharoplasty removes or repositions excess skin, and sometimes fat, from the upper eyelids, the lower eyelids or both. Upper lid surgery treats hooded or heavy lids. Lower lid surgery treats bags and loose skin. Some patients have a functional reason as well, such as lids that interfere with vision.',
@@ -318,7 +318,7 @@ export const PROCEDURES: Procedure[] = [
       'Non-smokers, or patients prepared to stop before and after surgery as advised',
     ],
     steps: [
-      { t: 'Enquiry and quote', d: 'Tell us which lids concern you. We aim to send you an itemised quote within about 48 hours of your enquiry, with a clear list of what is and is not included. The hospital and surgeon are confirmed in writing before you pay for treatment.' },
+      { t: 'Enquiry and quote', d: 'Tell us which lids concern you. We aim to send you a package quote within about 48 hours of your enquiry, with a clear list of what is and is not included. The hospital and surgeon are confirmed in writing before you pay for treatment.' },
       { t: 'Remote assessment', d: 'You complete a medical questionnaire, including any eye conditions, and share photographs. Your surgeon confirms the plan.' },
       { t: 'Surgery in Istanbul', d: 'Surgery is under local anaesthesia with sedation or general anaesthesia, as your surgeon advises, and usually takes one to two hours.' },
       { t: 'Recovery and follow-up', d: 'You attend post-operative checks, have sutures removed as planned and receive English-language operative notes for your UK GP.' },
@@ -334,7 +334,7 @@ export const PROCEDURES: Procedure[] = [
       'Risks of anaesthesia',
     ],
     faqs: [
-      { q: 'How much does eyelid surgery cost in Istanbul compared with the UK?', a: 'Eyelid surgery in Istanbul starts from £1,800. UK private clinics publish about £4,995 for both upper lids, about £5,995 for both lower lids and about £9,395 for upper and lower together (collected October 2026). Your itemised quote states which lids are priced.' },
+      { q: 'How much does eyelid surgery cost in Istanbul compared with the UK?', a: 'Eyelid surgery in Istanbul starts from £1,800. UK private clinics publish about £4,995 for both upper lids, about £5,995 for both lower lids and about £9,395 for upper and lower together (collected October 2026). Your package quote states which lids are priced.' },
       { q: 'Do I need upper lids, lower lids or both?', a: 'Your surgeon decides after reviewing your photographs. Upper lids treat hooded or heavy lids, lower lids treat bags and loose skin, and many patients benefit from a combination. A low brow may need a brow lift instead of, or as well as, eyelid surgery.' },
       { q: 'How long is recovery and when can I fly home?', a: 'Most patients stay in Istanbul for 3–5 days, subject to surgeon clearance, for post-operative checks. Bruising and swelling usually take one to two weeks to settle. You avoid contact lenses, make-up and strenuous exercise for the period your surgeon specifies. Use lubricating drops as advised.' },
       { q: 'What if I have an eye problem after I return?', a: 'Seek urgent local medical care for a sudden change in vision, severe pain or rapid swelling around the eye. For other concerns the treating hospital remains responsible for agreed follow-up and we help coordinate communication with them. We do not provide post-operative medical care.' },
@@ -350,8 +350,8 @@ export const PROCEDURES: Procedure[] = [
     h1: 'Breast reduction in Istanbul.',
     h1em: 'From £6,300.',
     metaTitle: 'Breast Reduction in Istanbul | From £6,300 | Ocean Health & Travel',
-    metaDescription: 'Breast reduction in Istanbul from £6,300 — UK private £8,000–£10,000. Board-certified surgeons at JCI-accredited hospitals. We aim to send an itemised quote within 48 hours.',
-    sub: 'Breast reduction at JCI-accredited hospitals, with the technique and what is included set out in your itemised quote.',
+    metaDescription: 'Breast reduction in Istanbul from £6,300 — UK private £8,000–£10,000. Board-certified surgeons at JCI-accredited hospitals. We aim to send a package quote within 48 hours.',
+    sub: 'Breast reduction at JCI-accredited hospitals, with the technique and what is included set out in your package quote.',
     price: { istanbul: 'from £6,300', uk: '£8,000 – £10,000', stay: '5–7 days' },
     overview: [
       'Breast reduction (reduction mammoplasty) removes breast tissue, fat and skin and reshapes and lifts the remaining breast, usually repositioning the nipple. Many patients have it for physical reasons such as back, neck or shoulder pain, bra-strap grooving or difficulty exercising, and others for appearance.',
@@ -365,7 +365,7 @@ export const PROCEDURES: Procedure[] = [
       'Non-smokers, or patients prepared to stop well before and after surgery as advised',
     ],
     steps: [
-      { t: 'Enquiry and quote', d: 'Tell us what you are hoping for. We aim to send you an itemised quote within about 48 hours of your enquiry, with a clear list of what is and is not included. The hospital and surgeon are confirmed in writing before you pay for treatment.' },
+      { t: 'Enquiry and quote', d: 'Tell us what you are hoping for. We aim to send you a package quote within about 48 hours of your enquiry, with a clear list of what is and is not included. The hospital and surgeon are confirmed in writing before you pay for treatment.' },
       { t: 'Remote assessment', d: 'You complete a medical questionnaire and share photographs. Your surgeon discusses the plan. Ask about the expected size and scars.' },
       { t: 'Surgery in Istanbul', d: 'Surgery is under general anaesthesia and usually takes a few hours. You wear a support bra afterwards and may have drains for a short time.' },
       { t: 'Recovery and follow-up', d: 'You recover in Istanbul, attend post-operative checks and receive English-language operative notes and a discharge summary, sent to your UK GP on request.' },
@@ -380,7 +380,7 @@ export const PROCEDURES: Procedure[] = [
       'Risks of general anaesthesia and of blood clots, including after flying',
     ],
     faqs: [
-      { q: 'How much does breast reduction cost in Istanbul compared with the UK?', a: 'Breast reduction in Istanbul starts from £6,300. UK private clinics publish about £8,000–£10,000 (collected October 2026). Your itemised quote states what is included.' },
+      { q: 'How much does breast reduction cost in Istanbul compared with the UK?', a: 'Breast reduction in Istanbul starts from £6,300. UK private clinics publish about £8,000–£10,000 (collected October 2026). Your package quote states what is included.' },
       { q: 'Will I be able to breastfeed afterwards?', a: 'Some patients can and some cannot, depending on the technique and how much tissue is removed. Raise this with your surgeon at the assessment if future breastfeeding matters to you.' },
       { q: 'Will it be covered by insurance?', a: 'UK insurers sometimes cover reduction for medical reasons, but only with their own pre-authorisation and usually only for treatment in the UK. Check with your insurer before you travel; do not assume cover abroad.' },
       { q: 'How long is recovery and when can I fly home?', a: 'Most patients stay in Istanbul for 5–7 days, subject to surgeon clearance. You wear a support bra for several weeks and avoid heavy lifting and strenuous exercise as advised. Moving regularly on the flight reduces clot risk.' },
@@ -396,8 +396,8 @@ export const PROCEDURES: Procedure[] = [
     h1: 'Breast lift in Istanbul.',
     h1em: 'From £5,000.',
     metaTitle: 'Breast Lift (Mastopexy) in Istanbul | From £5,000 | Ocean Health & Travel',
-    metaDescription: 'Breast lift (mastopexy) in Istanbul from £5,000 — UK private from £8,600. Board-certified surgeons at JCI-accredited hospitals. We aim to send an itemised quote within 48 hours.',
-    sub: 'Breast lift at JCI-accredited hospitals, alone or combined with implants, with a clear itemised quote.',
+    metaDescription: 'Breast lift (mastopexy) in Istanbul from £5,000 — UK private from £8,600. Board-certified surgeons at JCI-accredited hospitals. We aim to send a package quote within 48 hours.',
+    sub: 'Breast lift at JCI-accredited hospitals, alone or combined with implants, with a clear package quote.',
     price: { istanbul: 'from £5,000', uk: 'from £8,600', stay: '5–7 days' },
     overview: [
       'A breast lift (mastopexy) raises and reshapes breasts that have lost firmness, usually after pregnancy, breastfeeding or weight loss. The surgeon removes excess skin, tightens the tissue and repositions the nipple higher on the breast.',
@@ -411,7 +411,7 @@ export const PROCEDURES: Procedure[] = [
       'Non-smokers, or patients prepared to stop well before and after surgery as advised',
     ],
     steps: [
-      { t: 'Enquiry and quote', d: 'Tell us what you want to change. We aim to send you an itemised quote within about 48 hours of your enquiry, with a clear list of what is and is not included. The hospital and surgeon are confirmed in writing before you pay for treatment.' },
+      { t: 'Enquiry and quote', d: 'Tell us what you want to change. We aim to send you a package quote within about 48 hours of your enquiry, with a clear list of what is and is not included. The hospital and surgeon are confirmed in writing before you pay for treatment.' },
       { t: 'Remote assessment', d: 'You complete a medical questionnaire and share photographs. Your surgeon recommends a lift alone or with an implant.' },
       { t: 'Surgery in Istanbul', d: 'Surgery is under general anaesthesia and usually takes two to three hours. You wear a support bra afterwards.' },
       { t: 'Recovery and follow-up', d: 'You recover in Istanbul, attend post-operative checks and receive English-language operative notes and a discharge summary, sent to your UK GP on request. If implants are used, keep the manufacturer, model, size and batch details.' },
@@ -442,7 +442,7 @@ export const PROCEDURES: Procedure[] = [
     h1: 'Brow lift in Istanbul.',
     h1em: 'From £2,500.',
     metaTitle: 'Brow Lift in Istanbul | From £2,500 | Ocean Health & Travel',
-    metaDescription: 'Brow lift in Istanbul from £2,500 — UK private £5,495–£7,395. Board-certified surgeons at JCI-accredited hospitals. We aim to send an itemised quote within 48 hours.',
+    metaDescription: 'Brow lift in Istanbul from £2,500 — UK private £5,495–£7,395. Board-certified surgeons at JCI-accredited hospitals. We aim to send a package quote within 48 hours.',
     sub: 'Forehead and brow lifting at JCI-accredited hospitals, alone or alongside eyelid surgery.',
     price: { istanbul: 'from £2,500', uk: '£5,495 – £7,395', stay: '5–7 days' },
     overview: [
@@ -457,7 +457,7 @@ export const PROCEDURES: Procedure[] = [
       'Non-smokers, or patients prepared to stop before and after surgery as advised',
     ],
     steps: [
-      { t: 'Enquiry and quote', d: 'Tell us what you want to change. We aim to send you an itemised quote within about 48 hours of your enquiry, with a clear list of what is and is not included. The hospital and surgeon are confirmed in writing before you pay for treatment.' },
+      { t: 'Enquiry and quote', d: 'Tell us what you want to change. We aim to send you a package quote within about 48 hours of your enquiry, with a clear list of what is and is not included. The hospital and surgeon are confirmed in writing before you pay for treatment.' },
       { t: 'Remote assessment', d: 'You complete a medical questionnaire and share photographs. Your surgeon recommends a brow lift, eyelid surgery or both.' },
       { t: 'Surgery in Istanbul', d: 'Surgery is under general anaesthesia or sedation with local anaesthesia, as your surgeon advises.' },
       { t: 'Recovery and follow-up', d: 'You recover in Istanbul, attend post-operative checks and receive English-language operative notes and a discharge summary, sent to your UK GP on request.' },
@@ -472,7 +472,7 @@ export const PROCEDURES: Procedure[] = [
       'Risks of anaesthesia and of blood clots, including after flying',
     ],
     faqs: [
-      { q: 'How much does a brow lift cost in Istanbul compared with the UK?', a: 'A brow lift in Istanbul starts from £2,500. One UK private provider lists £5,495–£7,395 (collected October 2026). Your itemised quote states the technique and what is included.' },
+      { q: 'How much does a brow lift cost in Istanbul compared with the UK?', a: 'A brow lift in Istanbul starts from £2,500. One UK private provider lists £5,495–£7,395 (collected October 2026). Your package quote states the technique and what is included.' },
       { q: 'Do I need a brow lift or eyelid surgery?', a: 'It depends on where the excess skin and the heaviness sit. A low brow can make the upper lid look heavy, in which case eyelid surgery alone may not give the change you want. Your surgeon decides after reviewing your photographs.' },
       { q: 'How long do the results last?', a: 'The brow can drift down again as the face ages. Results vary with the technique, your skin and your age. Your surgeon will give you an honest view.' },
       { q: 'How long is recovery and when can I fly home?', a: 'Most patients stay in Istanbul for 5–7 days, subject to surgeon clearance. Bruising and swelling usually take one to two weeks to settle. Follow your surgeon\'s instructions on positioning and activity, and move regularly on the flight.' },
@@ -488,7 +488,7 @@ export const PROCEDURES: Procedure[] = [
     h1: 'Ear surgery in Istanbul.',
     h1em: 'From £1,500.',
     metaTitle: 'Ear Surgery (Otoplasty) in Istanbul | From £1,500 | Ocean Health & Travel',
-    metaDescription: 'Ear surgery (otoplasty) in Istanbul from £1,500 — UK private £2,995–£4,695. Board-certified surgeons at JCI-accredited hospitals. We aim to send an itemised quote within 48 hours.',
+    metaDescription: 'Ear surgery (otoplasty) in Istanbul from £1,500 — UK private £2,995–£4,695. Board-certified surgeons at JCI-accredited hospitals. We aim to send a package quote within 48 hours.',
     sub: 'Correction of prominent or asymmetrical ears at JCI-accredited hospitals, with a short stay.',
     price: { istanbul: 'from £1,500', uk: '£2,995 – £4,695', stay: '3–5 days' },
     overview: [
@@ -503,7 +503,7 @@ export const PROCEDURES: Procedure[] = [
       'No active ear infection or skin problem behind the ear',
     ],
     steps: [
-      { t: 'Enquiry and quote', d: 'Tell us what you want to change. We aim to send you an itemised quote within about 48 hours of your enquiry, with a clear list of what is and is not included. The hospital and surgeon are confirmed in writing before you pay for treatment.' },
+      { t: 'Enquiry and quote', d: 'Tell us what you want to change. We aim to send you a package quote within about 48 hours of your enquiry, with a clear list of what is and is not included. The hospital and surgeon are confirmed in writing before you pay for treatment.' },
       { t: 'Remote assessment', d: 'You complete a medical questionnaire and share photographs of both ears. Your surgeon confirms the approach.' },
       { t: 'Surgery in Istanbul', d: 'Surgery is under local anaesthesia with or without sedation, or general anaesthesia, as your surgeon advises, and usually takes one to two hours.' },
       { t: 'Recovery and follow-up', d: 'You wear a head bandage at first, attend post-operative checks and receive English-language operative notes for your UK GP.' },
@@ -517,7 +517,7 @@ export const PROCEDURES: Procedure[] = [
       'Risks of anaesthesia',
     ],
     faqs: [
-      { q: 'How much does ear surgery cost in Istanbul compared with the UK?', a: 'Ear surgery in Istanbul starts from £1,500. One UK private provider lists £2,995–£4,695 (collected October 2026). Your itemised quote states the anaesthesia and what is included.' },
+      { q: 'How much does ear surgery cost in Istanbul compared with the UK?', a: 'Ear surgery in Istanbul starts from £1,500. One UK private provider lists £2,995–£4,695 (collected October 2026). Your package quote states the anaesthesia and what is included.' },
       { q: 'Is it done for children?', a: 'This service mainly coordinates adult treatment. If you are considering it for a child, the surgeon assesses the case individually and a parent or guardian must be involved. Tell us the age when you enquire.' },
       { q: 'Will the scars show?', a: 'The incision is usually behind the ear, where it is hidden. Scars vary between patients and fade over many months.' },
       { q: 'How long is recovery and when can I fly home?', a: 'Most patients stay in Istanbul for 3–5 days, subject to surgeon clearance. You wear a head bandage and later a headband for the period your surgeon specifies, and avoid contact sports and pressure on the ears for several weeks.' },
@@ -533,8 +533,8 @@ export const PROCEDURES: Procedure[] = [
     h1: 'Arm lift in Istanbul.',
     h1em: 'From £2,500.',
     metaTitle: 'Arm Lift (Brachioplasty) in Istanbul | From £2,500 | Ocean Health & Travel',
-    metaDescription: 'Arm lift (brachioplasty) in Istanbul from £2,500 — UK private £4,895–£7,295. Board-certified surgeons at JCI-accredited hospitals. We aim to send an itemised quote within 48 hours.',
-    sub: 'Removal of loose upper-arm skin at JCI-accredited hospitals, with a clear itemised quote.',
+    metaDescription: 'Arm lift (brachioplasty) in Istanbul from £2,500 — UK private £4,895–£7,295. Board-certified surgeons at JCI-accredited hospitals. We aim to send a package quote within 48 hours.',
+    sub: 'Removal of loose upper-arm skin at JCI-accredited hospitals, with a clear package quote.',
     price: { istanbul: 'from £2,500', uk: '£4,895 – £7,295', stay: '5–7 days' },
     overview: [
       'An arm lift (brachioplasty) removes loose skin and some fat from the upper arms, most often after major weight loss or with ageing. The scar runs along the inner or back of the arm, and its length depends on how much skin is removed.',
@@ -548,7 +548,7 @@ export const PROCEDURES: Procedure[] = [
       'Non-smokers, or patients prepared to stop well before and after surgery as advised',
     ],
     steps: [
-      { t: 'Enquiry and quote', d: 'Tell us what you want to change. We aim to send you an itemised quote within about 48 hours of your enquiry, with a clear list of what is and is not included. The hospital and surgeon are confirmed in writing before you pay for treatment.' },
+      { t: 'Enquiry and quote', d: 'Tell us what you want to change. We aim to send you a package quote within about 48 hours of your enquiry, with a clear list of what is and is not included. The hospital and surgeon are confirmed in writing before you pay for treatment.' },
       { t: 'Remote assessment', d: 'You complete a medical questionnaire and share photographs. Your surgeon recommends a lift, liposuction or both.' },
       { t: 'Surgery in Istanbul', d: 'Surgery is under general anaesthesia. You wear compression sleeves afterwards.' },
       { t: 'Recovery and follow-up', d: 'You recover in Istanbul, attend post-operative checks and receive English-language operative notes and a discharge summary, sent to your UK GP on request.' },
@@ -563,7 +563,7 @@ export const PROCEDURES: Procedure[] = [
       'Risks of general anaesthesia and of blood clots, including after flying',
     ],
     faqs: [
-      { q: 'How much does an arm lift cost in Istanbul compared with the UK?', a: 'An arm lift in Istanbul starts from £2,500. One UK private provider lists £4,895 for one arm and £7,295 for both (collected October 2026). Your itemised quote states whether it covers one or both arms.' },
+      { q: 'How much does an arm lift cost in Istanbul compared with the UK?', a: 'An arm lift in Istanbul starts from £2,500. One UK private provider lists £4,895 for one arm and £7,295 for both (collected October 2026). Your package quote states whether it covers one or both arms.' },
       { q: 'Will I have a visible scar?', a: 'Yes. An arm lift leaves a permanent scar along the inner or back of the arm. It fades with time but varies between patients. Your surgeon will show you where it will lie.' },
       { q: 'Do I need a lift, or is liposuction enough?', a: 'If your skin is firm and the problem is mostly fat, liposuction may be enough. If the skin hangs loose, a lift is usually needed. Your remote assessment covers this.' },
       { q: 'How long is recovery and when can I fly home?', a: 'Most patients stay in Istanbul for 5–7 days, subject to surgeon clearance. You wear compression sleeves for several weeks and avoid heavy lifting and strenuous arm movements as advised. Moving regularly on the flight reduces clot risk.' },
@@ -579,7 +579,7 @@ export const PROCEDURES: Procedure[] = [
     h1: 'Thigh lift in Istanbul.',
     h1em: 'From £3,000.',
     metaTitle: 'Thigh Lift in Istanbul | From £3,000 | Ocean Health & Travel',
-    metaDescription: 'Thigh lift in Istanbul from £3,000. Board-certified surgeons at JCI-accredited hospitals, hotel, transfers and interpreter included, and we aim to send an itemised quote within 48 hours.',
+    metaDescription: 'Thigh lift in Istanbul from £3,000. Board-certified surgeons at JCI-accredited hospitals, hotel, transfers and interpreter included, and we aim to send a package quote within 48 hours.',
     sub: 'Removal of loose thigh skin at JCI-accredited hospitals, often combined with liposuction.',
     price: { istanbul: 'from £3,000', uk: 'No published guide price', stay: '5–7 days' },
     overview: [
@@ -594,7 +594,7 @@ export const PROCEDURES: Procedure[] = [
       'Non-smokers, or patients prepared to stop well before and after surgery as advised',
     ],
     steps: [
-      { t: 'Enquiry and quote', d: 'Tell us what you want to change. We aim to send you an itemised quote within about 48 hours of your enquiry, with a clear list of what is and is not included. The hospital and surgeon are confirmed in writing before you pay for treatment.' },
+      { t: 'Enquiry and quote', d: 'Tell us what you want to change. We aim to send you a package quote within about 48 hours of your enquiry, with a clear list of what is and is not included. The hospital and surgeon are confirmed in writing before you pay for treatment.' },
       { t: 'Remote assessment', d: 'You complete a medical questionnaire and share photographs. Your surgeon recommends the type of lift and whether to add liposuction.' },
       { t: 'Surgery in Istanbul', d: 'Surgery is under general anaesthesia. You wear a compression garment afterwards.' },
       { t: 'Recovery and follow-up', d: 'You recover in Istanbul, attend post-operative checks and receive English-language operative notes and a discharge summary, sent to your UK GP on request.' },
@@ -609,7 +609,7 @@ export const PROCEDURES: Procedure[] = [
       'Risks of general anaesthesia, and a higher risk of blood clots, including after flying',
     ],
     faqs: [
-      { q: 'How much does a thigh lift cost in Istanbul?', a: 'A thigh lift in Istanbul starts from £3,000. We have not found a reliable published UK price, so we do not show a UK comparison. Your itemised quote states the type of lift, whether liposuction is included and what else is covered.' },
+      { q: 'How much does a thigh lift cost in Istanbul?', a: 'A thigh lift in Istanbul starts from £3,000. We have not found a reliable published UK price, so we do not show a UK comparison. Your package quote states the type of lift, whether liposuction is included and what else is covered.' },
       { q: 'Will I have a visible scar?', a: 'Yes. A thigh lift leaves a permanent scar, usually along the groin crease and sometimes down the inner thigh. Your surgeon will show you where it will lie.' },
       { q: 'Is it combined with liposuction?', a: 'Often. Liposuction treats the fat and a lift removes the loose skin. Combining them changes the operation and the price, so your quote lists each separately.' },
       { q: 'How long is recovery and when can I fly home?', a: 'Most patients stay in Istanbul for 5–7 days, subject to surgeon clearance. You wear a compression garment for several weeks and avoid strenuous exercise as advised. Blood-clot prevention matters, including compression stockings and regular movement on the flight.' },
@@ -625,8 +625,8 @@ export const PROCEDURES: Procedure[] = [
     h1: 'Labiaplasty in Istanbul.',
     h1em: 'From £1,800.',
     metaTitle: 'Labiaplasty in Istanbul | From £1,800 | Ocean Health & Travel',
-    metaDescription: 'Labiaplasty in Istanbul from £1,800. Board-certified surgeons at JCI-accredited hospitals. Private enquiries; hotel, transfers and interpreter included; we aim to send an itemised quote within 48 hours.',
-    sub: 'Labia minora reduction or reshaping at JCI-accredited hospitals, handled privately with a clear itemised quote.',
+    metaDescription: 'Labiaplasty in Istanbul from £1,800. Board-certified surgeons at JCI-accredited hospitals. Private enquiries; hotel, transfers and interpreter included; we aim to send a package quote within 48 hours.',
+    sub: 'Labia minora reduction or reshaping at JCI-accredited hospitals, handled privately with a clear package quote.',
     price: { istanbul: 'from £1,800', uk: 'No published guide price', stay: '3–5 days' },
     overview: [
       'Labiaplasty reduces or reshapes the labia minora. Patients choose it for physical discomfort, for example when exercising, wearing close-fitting clothes or during intercourse, or for appearance. Variation in labial size and shape is normal, and surgery is optional.',
@@ -640,7 +640,7 @@ export const PROCEDURES: Procedure[] = [
       'No active infection or skin condition in the area',
     ],
     steps: [
-      { t: 'Enquiry and quote', d: 'Contact us in confidence. We aim to send you an itemised quote within about 48 hours of your enquiry, with a clear list of what is and is not included. The hospital and surgeon are confirmed in writing before you pay for treatment.' },
+      { t: 'Enquiry and quote', d: 'Contact us in confidence. We aim to send you a package quote within about 48 hours of your enquiry, with a clear list of what is and is not included. The hospital and surgeon are confirmed in writing before you pay for treatment.' },
       { t: 'Remote assessment', d: 'You complete a medical questionnaire. Your surgeon may assess with photographs or a video consultation, as they advise, and confirms the plan.' },
       { t: 'Surgery in Istanbul', d: 'Surgery is under local anaesthesia with sedation or general anaesthesia, as your surgeon advises, and usually takes about an hour.' },
       { t: 'Recovery and follow-up', d: 'You recover in Istanbul, attend post-operative checks and receive English-language operative notes for your UK GP.' },
@@ -654,7 +654,7 @@ export const PROCEDURES: Procedure[] = [
       'Risks of anaesthesia',
     ],
     faqs: [
-      { q: 'How much does labiaplasty cost in Istanbul?', a: 'Labiaplasty in Istanbul starts from £1,800. We have not found a reliable published UK price, so we do not show a UK comparison. Your itemised quote states what is included.' },
+      { q: 'How much does labiaplasty cost in Istanbul?', a: 'Labiaplasty in Istanbul starts from £1,800. We have not found a reliable published UK price, so we do not show a UK comparison. Your package quote states what is included.' },
       { q: 'Will my enquiry be kept private?', a: 'Yes. We treat enquiries in confidence and share your details only with the hospital that treats you.' },
       { q: 'How long is recovery and when can I fly home?', a: 'Most patients stay in Istanbul for 3–5 days, subject to surgeon clearance. Swelling and tenderness settle over a few weeks. Your surgeon will advise on activity, exercise, hygiene and when it is safe to resume intercourse.' },
       { q: 'Is it only cosmetic?', a: 'Not always. Some patients have physical discomfort. Others choose it for appearance. Either is a legitimate reason, and your surgeon will discuss yours without judgement.' },
@@ -671,13 +671,13 @@ export const PROCEDURES: Procedure[] = [
     h1: 'Lumbar disc surgery in Istanbul.',
     h1em: 'From £4,000.',
     metaTitle: 'Lumbar Disc Surgery (Microdiscectomy) in Istanbul | From £4,000 | Ocean Health & Travel',
-    metaDescription: 'Lumbar disc herniation surgery in Istanbul from £4,000 — UK private from about £11,000. JCI-accredited hospitals, your MRI reviewed by the treating neurosurgeon. We aim to send an itemised quote within 48 hours.',
+    metaDescription: 'Lumbar disc herniation surgery in Istanbul from £4,000 — UK private from about £11,000. JCI-accredited hospitals, your MRI reviewed by the treating neurosurgeon. We aim to send a package quote within 48 hours.',
     sub: 'Decompression for lumbar disc herniation at JCI-accredited hospitals. Send your MRI and the treating neurosurgeon decides whether surgery is suitable.',
     price: { istanbul: 'from £4,000', uk: 'from ~£11,000', stay: '5–7 days' },
     overview: [
       'A herniated lumbar disc can press on a nerve root and cause sciatica: leg pain, numbness or weakness, often worse than the back pain. Microdiscectomy removes the part of the disc pressing on the nerve through a small incision, usually with an operating microscope. Some surgeons use an endoscopic technique through an even smaller access.',
       'Most disc herniations improve without surgery, so surgery is normally considered when symptoms persist despite non-surgical treatment such as physiotherapy, medication or injections, or when there is progressive weakness. Whether you are a suitable candidate is a clinical decision for the treating neurosurgeon after reviewing your MRI and history.',
-      'No formal referral letter is needed to start. We ask for your MRI and clinical records, pass them to the neurosurgical team and come back with their view and an itemised quote. One UK private hospital publishes about £11,005 for lumbar discectomy, which is the comparison we show.',
+      'No formal referral letter is needed to start. We ask for your MRI and clinical records, pass them to the neurosurgical team and come back with their view and a package quote. One UK private hospital publishes about £11,005 for lumbar discectomy, which is the comparison we show.',
     ],
     suitability: [
       'An MRI-confirmed lumbar disc herniation that matches your leg symptoms',
@@ -687,7 +687,7 @@ export const PROCEDURES: Procedure[] = [
     ],
     steps: [
       { t: 'Send your records', d: 'Share your MRI images and report, clinical letters and medication list. No formal referral letter is needed to start.' },
-      { t: 'Neurosurgeon review', d: 'The treating neurosurgeon reviews your records and decides whether surgery is suitable. We aim to send an itemised quote within about 48 hours of receiving complete records.' },
+      { t: 'Neurosurgeon review', d: 'The treating neurosurgeon reviews your records and decides whether surgery is suitable. We aim to send a package quote within about 48 hours of receiving complete records.' },
       { t: 'Surgery in Istanbul', d: 'Surgery is under general anaesthesia. Many patients are walking the same or next day, and your surgeon sets the plan.' },
       { t: 'Recovery and follow-up', d: 'You recover in Istanbul, attend post-operative checks and receive English-language operative notes and a discharge summary, sent to your UK GP on request.' },
     ],
@@ -700,7 +700,7 @@ export const PROCEDURES: Procedure[] = [
       'Cauda equina syndrome is a surgical emergency. If you develop new numbness between the legs, loss of bladder or bowel control, or rapidly worsening leg weakness, go to the nearest emergency department immediately, in the UK or abroad',
     ],
     faqs: [
-      { q: 'How much does lumbar disc surgery cost in Istanbul compared with the UK?', a: 'Lumbar disc surgery in Istanbul starts from £4,000. One UK private hospital publishes about £11,005 for a lumbar discectomy (collected October 2026). This is a single published source, so use it as a guide. The price depends on the technique and the hospital stay, and your itemised quote states exactly what is included.' },
+      { q: 'How much does lumbar disc surgery cost in Istanbul compared with the UK?', a: 'Lumbar disc surgery in Istanbul starts from £4,000. One UK private hospital publishes about £11,005 for a lumbar discectomy (collected October 2026). This is a single published source, so use it as a guide. The price depends on the technique and the hospital stay, and your package quote states exactly what is included.' },
       { q: 'Do I need a referral?', a: 'No formal referral letter is needed to start. We ask for your MRI and existing clinical records instead. The treating neurosurgeon reviews them and decides whether surgery is suitable. A letter from your GP or specialist is helpful if you have one.' },
       { q: 'Will I definitely need surgery?', a: 'Not necessarily. Many herniated discs improve with non-surgical treatment. Surgery is usually considered when symptoms persist or nerve weakness progresses. The neurosurgeon will give you their view after reviewing your MRI.' },
       { q: 'How long is recovery and when can I fly home?', a: 'Most patients stay in Istanbul for 5–7 days, subject to surgeon clearance. Sitting for long periods is uncomfortable after disc surgery, so ask about flight timing, seat choice and moving regularly during the journey. Your surgeon will advise on activity, lifting and return to work.' },
@@ -717,13 +717,13 @@ export const PROCEDURES: Procedure[] = [
     h1: 'Cervical disc surgery in Istanbul.',
     h1em: 'From £4,750.',
     metaTitle: 'Cervical Disc Surgery (ACDF) in Istanbul | From £4,750 | Ocean Health & Travel',
-    metaDescription: 'Cervical disc surgery (ACDF or disc replacement) in Istanbul from £4,750. JCI-accredited hospitals, your MRI reviewed by the treating neurosurgeon. We aim to send an itemised quote within 48 hours.',
+    metaDescription: 'Cervical disc surgery (ACDF or disc replacement) in Istanbul from £4,750. JCI-accredited hospitals, your MRI reviewed by the treating neurosurgeon. We aim to send a package quote within 48 hours.',
     sub: 'Surgery for cervical disc herniation at JCI-accredited hospitals. Send your MRI and the treating neurosurgeon decides whether surgery is suitable.',
     price: { istanbul: 'from £4,750', uk: 'No published guide price', stay: '5–7 days' },
     overview: [
       'A herniated or degenerated disc in the neck can press on a nerve root, causing arm pain, numbness or weakness, or on the spinal cord itself. Anterior cervical discectomy and fusion (ACDF) removes the disc through a small incision at the front of the neck and joins the vertebrae. In selected patients the surgeon may use a disc replacement instead, which aims to preserve movement.',
       'Whether surgery is needed, and which type, is a clinical decision for the treating neurosurgeon after reviewing your MRI and examination. Many patients with arm pain improve without surgery. Signs of spinal cord compression need prompt specialist assessment.',
-      'No formal referral letter is needed to start. We ask for your MRI and clinical records, pass them to the neurosurgical team and come back with their view and an itemised quote. We have not found a reliable published UK price, so we do not show a UK comparison.',
+      'No formal referral letter is needed to start. We ask for your MRI and clinical records, pass them to the neurosurgical team and come back with their view and a package quote. We have not found a reliable published UK price, so we do not show a UK comparison.',
     ],
     suitability: [
       'An MRI-confirmed cervical disc problem that matches your arm or neck symptoms',
@@ -733,7 +733,7 @@ export const PROCEDURES: Procedure[] = [
     ],
     steps: [
       { t: 'Send your records', d: 'Share your MRI images and report, clinical letters and medication list. No formal referral letter is needed to start.' },
-      { t: 'Neurosurgeon review', d: 'The treating neurosurgeon reviews your records, decides whether surgery is suitable and advises on fusion or disc replacement. We aim to send an itemised quote within about 48 hours of receiving complete records.' },
+      { t: 'Neurosurgeon review', d: 'The treating neurosurgeon reviews your records, decides whether surgery is suitable and advises on fusion or disc replacement. We aim to send a package quote within about 48 hours of receiving complete records.' },
       { t: 'Surgery in Istanbul', d: 'Surgery is under general anaesthesia through a small incision at the front of the neck. You may wear a collar afterwards if your surgeon advises.' },
       { t: 'Recovery and follow-up', d: 'You recover in Istanbul, attend post-operative checks and receive English-language operative notes and a discharge summary, sent to your UK GP on request.' },
     ],
@@ -747,7 +747,7 @@ export const PROCEDURES: Procedure[] = [
       'Risks of general anaesthesia and of blood clots, including after flying',
     ],
     faqs: [
-      { q: 'How much does cervical disc surgery cost in Istanbul?', a: 'Cervical disc surgery in Istanbul starts from £4,750. We have not found a reliable published UK price, so we do not show a UK comparison. The price depends on the technique (fusion or disc replacement), the number of levels and the hospital stay. Your itemised quote states exactly what is included.' },
+      { q: 'How much does cervical disc surgery cost in Istanbul?', a: 'Cervical disc surgery in Istanbul starts from £4,750. We have not found a reliable published UK price, so we do not show a UK comparison. The price depends on the technique (fusion or disc replacement), the number of levels and the hospital stay. Your package quote states exactly what is included.' },
       { q: 'Do I need a referral?', a: 'No formal referral letter is needed to start. We ask for your MRI and existing clinical records instead. The treating neurosurgeon reviews them and decides whether surgery is suitable. A letter from your GP or specialist is helpful if you have one.' },
       { q: 'What is the difference between fusion and disc replacement?', a: 'Fusion joins the two vertebrae after the disc is removed. Disc replacement uses an artificial disc to keep movement at that level. Only some patients are suitable for replacement. The neurosurgeon will advise after reviewing your MRI.' },
       { q: 'How long is recovery and when can I fly home?', a: 'Most patients stay in Istanbul for 5–7 days, subject to surgeon clearance. You may have a sore throat or difficulty swallowing for a few days. Ask about neck support, lifting luggage and moving regularly on the flight.' },
@@ -763,11 +763,11 @@ export const PROCEDURES: Procedure[] = [
     h1: 'Aesthetic medicine in Istanbul.',
     h1em: 'From £180.',
     metaTitle: 'Aesthetic Medicine in Istanbul | Hydrafacial, Mesotherapy, Scarlet X | From £180',
-    metaDescription: 'Non-surgical skin treatments in Istanbul from £180: Hydrafacial, mesotherapy, Scarlet X, PRP and PRF, microneedling and chemical peels, performed by a specialist doctor at a partner clinic. We aim to send an itemised quote within 48 hours.',
-    sub: 'Skin treatments performed by a specialist doctor that fit into a short stay or sit alongside another procedure, with an itemised quote before you travel.',
+    metaDescription: 'Non-surgical skin treatments in Istanbul from £180: Hydrafacial, mesotherapy, Scarlet X, PRP and PRF, microneedling and chemical peels, performed by a specialist doctor at a partner clinic. We aim to send a package quote within 48 hours.',
+    sub: 'Skin treatments performed by a specialist doctor that fit into a short stay or sit alongside another procedure, with a package quote before you travel.',
     price: { istanbul: 'from £180', uk: 'Not compared', stay: 'Depends on treatment' },
     overview: [
-      'Aesthetic medicine covers non-surgical treatments that aim to improve skin quality, texture and tone with little or no time off. Treatments are performed by a specialist doctor at our partner clinic in Istanbul. They can be booked on their own during a short visit or added to another procedure, and your itemised quote states the treatments, the number of sessions and what is included.',
+      'Aesthetic medicine covers non-surgical treatments that aim to improve skin quality, texture and tone with little or no time off. Treatments are performed by a specialist doctor at our partner clinic in Istanbul. They can be booked on their own during a short visit or added to another procedure, and your package quote states the treatments, the number of sessions and what is included.',
       'Hydrafacial is a non-invasive facial that cleanses, exfoliates and extracts impurities with a vacuum-assisted device, then infuses hydrating serums. Most people return to normal activity straight away. Scarlet X uses fractional radiofrequency delivered through microneedles to stimulate the skin, and is used for skin tightening, texture and some scars. It involves a few days of redness and sensitivity.',
       'Mesotherapy uses a series of very small injections or microneedling to place hydrating and nutrient solutions in the skin, usually to improve skin quality. PRP and PRF use a concentrate prepared from your own blood, applied or injected into the skin, and are used for skin rejuvenation and, in some patients, hair. Evidence for results varies between products and people, and your doctor will explain what is realistic.',
       'Microneedling (such as Dermapen) creates controlled micro-injuries to stimulate the skin and is used for texture, fine lines and some scars. Chemical peels remove the surface layers of the skin to improve tone and texture. Redness and sensitivity for a few days are common after the stronger treatments.',
@@ -779,7 +779,7 @@ export const PROCEDURES: Procedure[] = [
       'Please tell the doctor about pregnancy or breastfeeding, a recent course of isotretinoin, a tendency to keloid scarring, blood-clotting conditions or blood-thinning medicines, implanted devices such as a pacemaker, and any skin conditions',
     ],
     steps: [
-      { t: 'Enquiry and quote', d: 'Tell us which treatment interests you and send a photo of the area. We aim to send an itemised quote within about 48 hours of your enquiry.' },
+      { t: 'Enquiry and quote', d: 'Tell us which treatment interests you and send a photo of the area. We aim to send a package quote within about 48 hours of your enquiry.' },
       { t: 'Suitability check', d: 'You complete a short health questionnaire. The treating doctor confirms what is suitable for you before you travel.' },
       { t: 'Treatment in Istanbul', d: 'Treatments are done at the clinic and the time depends on the treatment. Timing can be fitted around another procedure or your travel plans.' },
       { t: 'Aftercare', d: 'You receive written aftercare instructions, including sun protection and what to avoid in the first days.' },
@@ -793,7 +793,7 @@ export const PROCEDURES: Procedure[] = [
       'Results that are modest or uneven, or that fade and may need maintenance sessions',
     ],
     faqs: [
-      { q: 'How much do aesthetic medicine treatments cost in Istanbul?', a: 'Treatments start from £180. The price depends on the treatment, the area and the number of sessions, and your itemised quote states exactly what is included. We do not show a UK comparison for these treatments because prices vary widely between clinics.' },
+      { q: 'How much do aesthetic medicine treatments cost in Istanbul?', a: 'Treatments start from £180. The price depends on the treatment, the area and the number of sessions, and your package quote states exactly what is included. We do not show a UK comparison for these treatments because prices vary widely between clinics.' },
       { q: 'Who performs the treatments?', a: 'A specialist doctor at our partner clinic. Ocean Health & Travel coordinates your visit and does not provide the treatment or medical advice. All clinical decisions rest with the treating doctor.' },
       { q: 'Can I add these to another procedure?', a: 'Often yes, for example alongside a facelift or eyelid surgery. The doctor or surgeon advises on timing, because some skin treatments are best done before or after surgery.' },
       { q: 'Is there downtime?', a: 'It depends on the treatment. Gentler treatments usually have little. Microneedling and stronger peels can leave redness, swelling and sensitivity for a few days. Your doctor will explain what to expect for the treatment you choose.' },

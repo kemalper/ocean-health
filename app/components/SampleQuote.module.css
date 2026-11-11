@@ -9,5 +9,10 @@
 .row dd{margin:0}
 .row .note{grid-column:1;font-size:13px;color:var(--oht-muted)}
 .row .val{grid-column:2;grid-row:1;font-size:15px;font-weight:600;color:var(--oht-muted);white-space:nowrap}
-.fine{border-top:1px solid var(--oht-line);margin-top:.25rem;padding-top:.9rem;display:grid;gap:.4rem;font-size:13px;line-height:1.5;color:var(--oht-muted)}
+.fine{margin-top:0;padding-top:0;display:grid;gap:.4rem;font-size:13px;line-height:1.5;color:var(--oht-muted)}
 .fine strong{color:var(--oht-ink);font-weight:600}
+.change{border-top:1px solid var(--oht-line);padding-top:.9rem;margin-top:.25rem}
+.change .changeTitle{font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--oht-muted);margin:0 0 .45rem}
+.change ul{list-style:none;margin:0 0 .9rem;padding:0;display:grid;gap:.35rem}
+.change li{position:relative;padding-left:16px;font-size:13px;line-height:1.5;color:var(--oht-ink)}
+.change li::before{content:'';position:absolute;left:0;top:.55em;width:6px;height:6px;border-radius:50%;background:var(--oht-cyan)}

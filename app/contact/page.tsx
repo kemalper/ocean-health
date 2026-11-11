@@ -6,7 +6,7 @@ import Footer from '@/app/components/Footer'
 export const metadata: Metadata = {
   alternates: { canonical: '/contact' },
   title: 'Contact Us | Ocean Health & Travel',
-  description: 'Get in touch with Ocean Health & Travel. WhatsApp, email, or send us a message. Free quote within 48 hours.',
+  description: 'Get in touch with Ocean Health & Travel. WhatsApp, email, or send us a message. We aim to send a package quote within 48 hours.',
 }
 
 const WA_URL = 'https://wa.me/447441904858?text=Hello%2C%20I%27d%20like%20to%20enquire%20about%20treatment%20coordination'
@@ -191,7 +191,7 @@ export default function ContactPage() {
 
           <div className="cta-box">
             <h2>Ready to get started?</h2>
-            <p>Send us your treatment and preferred dates. We aim to send a full itemised quote within 48 hours — no obligation.</p>
+            <p>Send us your treatment and preferred dates. We aim to send your package quote within 48 hours — no obligation.</p>
             <div className="cta-btns">
               <a href={WA_URL} target="_blank" rel="noopener noreferrer" className="btn-wa">WhatsApp us now</a>
               <a href="mailto:info@oceanhealthtravel.com" className="btn-email">Send an email</a>

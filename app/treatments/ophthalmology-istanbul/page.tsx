@@ -9,7 +9,7 @@ import Footer from '@/app/components/Footer'
 export const metadata: Metadata = {
   alternates: { canonical: '/treatments/ophthalmology-istanbul' },
   title: 'Eye Surgery in Istanbul | Ocean Health & Travel',
-  description: 'LASIK from £600 per eye, cataract surgery from £800, premium lens replacement from £1,200. Licensed ophthalmology centres in Istanbul. We aim to send an itemised quote within 48 hours.',
+  description: 'LASIK from £600 per eye, cataract surgery from £800, premium lens replacement from £1,200. Licensed ophthalmology centres in Istanbul. We aim to send a package quote within 48 hours.',
 }
 
 const WA_URL = 'https://wa.me/447441904858?text=Hello%2C%20I%27d%20like%20to%20enquire%20about%20eye%20surgery%20in%20Istanbul'
@@ -185,7 +185,7 @@ export default function OphthalmologyPage() {
             Eye Surgery Istanbul
           </div>
           <div className="kicker">Ophthalmology · Istanbul</div>
-          <h1>Eye Surgery<br />in Istanbul.<br /><em>Itemised quotes before you travel.</em></h1>
+          <h1>Eye Surgery<br />in Istanbul.<br /><em>Package quotes before you travel.</em></h1>
           <p className="hero-sub">
             LASIK, cataract, lens replacement, and more. Advanced laser platforms at licensed ophthalmology centres. Dedicated coordination throughout.
           </p>
@@ -208,7 +208,7 @@ export default function OphthalmologyPage() {
             <a href="#procedures" className="btn-ghost">View all procedures ↓</a>
           </div>
           <div className="trust-row">
-            {['Licensed partner clinics','Advanced laser platforms','Fixed, itemised pricing','3–7 day Istanbul stay'].map(t => (
+            {['Licensed partner clinics','Advanced laser platforms','Clear package pricing','3–7 day Istanbul stay'].map(t => (
               <div key={t} className="trust-item"><div className="trust-dot"></div>{t}</div>
             ))}
           </div>
@@ -265,7 +265,7 @@ export default function OphthalmologyPage() {
         <div className="inner">
           <div className="cta-box">
             <h2>Ready to find out what eye surgery costs?</h2>
-            <p>Tell us your prescription or condition. We aim to send a full itemised quote within 48 hours — no obligation.</p>
+            <p>Tell us your prescription or condition. We aim to send a full package quote within 48 hours — no obligation.</p>
             <div className="cta-btns">
               <a href={WA_URL} target="_blank" className="btn-cta-w">Get a free quote</a>
               <a href="mailto:info@oceanhealthtravel.com" className="btn-cta-o">Email us</a>

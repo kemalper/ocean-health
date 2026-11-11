@@ -1,6 +1,6 @@
 export default function YourTimeline({ stay, note }: { stay?: string; note?: string }) {
   const items: [string, string][] = [
-    ['Typically within 48 hours', 'We aim to send an itemised quote, once we have your complete records or photographs.'],
+    ['Typically within 48 hours', 'We aim to send your package quote, once we have your complete records or photographs.'],
     ['Timelines vary by treatment and provider', note ?? 'Your treatment date, subject to the surgeon and hospital availability.'],
     ['Arrival', 'Airport transfer, hotel, and your meeting with the treating team before the procedure.'],
     [stay ?? 'In Istanbul', 'The treatment and post-treatment checks. Your doctor confirms when you are fit to fly.'],

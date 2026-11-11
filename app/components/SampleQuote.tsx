@@ -1,11 +1,16 @@
 import styles from './SampleQuote.module.css'
 
 const LINES: [string, string, string][] = [
-  ['Treatment', 'Price set by the treating provider', '£ —'],
-  ['Hotel', 'For the patient, near your clinic', 'Included'],
-  ['Transfers', 'For the patient: airport, hotel and clinic', 'Included'],
+  ['Treatment, tests and hospital stay', 'Price set by the treating provider', '£ —'],
+  ['Hotel', 'For the patient. Two or three options where available', 'Included'],
+  ['Transfers', 'For the patient: airport, hotel and hospital', 'Included'],
   ['Interpreter', 'At your appointments', 'Included'],
   ['English discharge documents', 'Forwarded to your GP on request', 'On request'],
+]
+
+const CHANGES = [
+  'Extra nights, or arriving earlier or leaving later to fit your flights',
+  'Travelling with a companion: their costs are added to your quote',
 ]
 
 // Illustrative layout only: no real prices are shown.
@@ -13,10 +18,10 @@ export default function SampleQuote() {
   return (
     <section className={styles.card} aria-labelledby="sample-quote-title">
       <div className={styles.top}>
-        <h2 id="sample-quote-title" className={styles.title}>What your itemised quote lists</h2>
+        <h2 id="sample-quote-title" className={styles.title}>What your package quote covers</h2>
         <span className={styles.tag}>Illustrative layout, not a quote</span>
       </div>
-      <p className={styles.sub}>Prepared for you once we have reviewed your records.</p>
+      <p className={styles.sub}>Built around your treatment, dates and travel companions.</p>
       <dl className={styles.list}>
         {LINES.map(([label, note, val]) => (
           <div key={label} className={styles.row}>
@@ -26,9 +31,15 @@ export default function SampleQuote() {
           </div>
         ))}
       </dl>
+      <div className={styles.change}>
+        <p className={styles.changeTitle}>What can change your price</p>
+        <ul>
+          {CHANGES.map(c => <li key={c}>{c}</li>)}
+        </ul>
+      </div>
       <div className={styles.fine}>
         <span><strong>Not included:</strong> flights.</span>
-        <span>Prices are indicative until the treating provider has assessed your case. Hospital and surgeon are confirmed in writing before you pay.</span>
+        <span>A breakdown is available on request. Prices are indicative until the treating provider has assessed your case. Hospital and surgeon are confirmed in writing before you pay.</span>
         <span>No coordination fee is charged to patients.</span>
       </div>
     </section>
