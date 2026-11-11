@@ -316,8 +316,15 @@ export default function DBSPage() {
               </div>
 
               <div className="sidebar-card">
-                <div className="sidebar-title">What&apos;s included</div>
-                {['Airport transfer','Hotel near hospital','Medical interpreter at all appointments','Full clinic liaison','Operative notes forwarded to UK neurologist & GP'].map(item => (
+                <div className="sidebar-title">A typical package</div>
+                {['Typical stay in Istanbul: 2–3 weeks','Airport transfers','Hotel accommodation','Medical interpreter at all appointments','Clinic liaison','Hotel check-out before surgery and check-in after discharge, if you stay overnight in hospital','English discharge documents, including operative notes, sent to your UK GP and neurologist on request'].map(item => (
+                  <div key={item} className="check-item">
+                    <div style={{width:'6px',height:'6px',borderRadius:'50%',background:'#0438A6',flexShrink:0,marginTop:'6px'}}></div>
+                    <span style={{fontSize:'13px',color:'#555'}}>{item}</span>
+                  </div>
+                ))}
+                <div className="sidebar-title" style={{marginTop:'1.25rem',color:'#475569'}}>What can change your price</div>
+                {['Extra nights, or arriving earlier or leaving later to fit your flights','Keeping your hotel room during a hospital stay, if you prefer','A travel companion: their costs are added to your quote','Significant additional tests or treatment, if the information given for your quote proves untrue'].map(item => (
                   <div key={item} className="check-item">
                     <div style={{width:'6px',height:'6px',borderRadius:'50%',background:'#0438A6',flexShrink:0,marginTop:'6px'}}></div>
                     <span style={{fontSize:'13px',color:'#555'}}>{item}</span>

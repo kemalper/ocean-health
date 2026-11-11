@@ -246,6 +246,34 @@ export default function DentalIstanbulPage() {
         </div>
       </section>
 
+      <section className="sec" id="whats-included" style={{paddingTop:0}}>
+        <div className="inner">
+          <div className="proc-grid" style={{gridTemplateColumns:'repeat(auto-fit,minmax(280px,1fr))',marginTop:0}}>
+            <div className="proc-card">
+              <h3 style={{fontFamily:"'DM Serif Display',serif",fontSize:'20px',fontWeight:400,margin:'0 0 .75rem',color:'#1a1a1a'}}>A typical package</h3>
+              <ul style={{listStyle:'disc',paddingLeft:'1.2rem',display:'flex',flexDirection:'column',gap:'.45rem',fontSize:'13.5px',color:'#555',lineHeight:1.65,fontWeight:300}}>
+                <li>Airport transfers in Istanbul</li>
+                <li>Hotel accommodation near the hospital</li>
+                <li>A professional interpreter at your appointments</li>
+                <li>Coordination with the hospital from enquiry to discharge</li>
+                <li>English-language discharge documentation, sent to your GP on request</li>
+              </ul>
+            </div>
+            <div className="proc-card">
+              <h3 style={{fontFamily:"'DM Serif Display',serif",fontSize:'20px',fontWeight:400,margin:'0 0 .75rem',color:'#1a1a1a'}}>What can change your price</h3>
+              <ul style={{listStyle:'disc',paddingLeft:'1.2rem',display:'flex',flexDirection:'column',gap:'.45rem',fontSize:'13.5px',color:'#555',lineHeight:1.65,fontWeight:300}}>
+                <li>Extra nights, or arriving earlier or leaving later to fit your flights</li>
+                <li>A travel companion: their costs are added to your quote</li>
+                <li>Significant additional tests or treatment, if the information given for your quote proves untrue</li>
+              </ul>
+            </div>
+          </div>
+          <p style={{fontSize:'12px',color:'#475569',marginTop:'1rem',lineHeight:1.6}}>
+            Flights are not included. Your package quote states what is included, and a breakdown is available on request.
+          </p>
+        </div>
+      </section>
+
       <section className="sec bg border" id="faq">
         <div className="inner">
           <div className="kicker">Common questions</div>

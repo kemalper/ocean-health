@@ -316,6 +316,36 @@ export default function PlasticSurgeryPage() {
         </div>
       </section>
 
+      <section className="sec" id="whats-included" style={{paddingTop:0}}>
+        <div className="inner">
+          <div className="proc-grid" style={{gridTemplateColumns:'repeat(auto-fit,minmax(280px,1fr))',marginTop:0}}>
+            <div className="proc-card">
+              <h3>A typical package</h3>
+              <ul style={{listStyle:'disc',paddingLeft:'1.2rem',display:'flex',flexDirection:'column',gap:'.45rem',fontSize:'13.5px',color:'#555',lineHeight:1.65,fontWeight:300}}>
+                <li>Airport transfers in Istanbul</li>
+                <li>Hotel accommodation near the hospital</li>
+                <li>A professional interpreter at your appointments</li>
+                <li>Coordination with the hospital from enquiry to discharge</li>
+                <li>English-language discharge documentation, sent to your GP on request</li>
+                <li>Hotel check-out before surgery and check-in after discharge, if you stay overnight in hospital</li>
+              </ul>
+            </div>
+            <div className="proc-card">
+              <h3>What can change your price</h3>
+              <ul style={{listStyle:'disc',paddingLeft:'1.2rem',display:'flex',flexDirection:'column',gap:'.45rem',fontSize:'13.5px',color:'#555',lineHeight:1.65,fontWeight:300}}>
+                <li>Extra nights, or arriving earlier or leaving later to fit your flights</li>
+                <li>Keeping your hotel room during a hospital stay, if you prefer</li>
+                <li>A travel companion: their costs are added to your quote</li>
+                <li>Significant additional tests or treatment, if the information given for your quote proves untrue</li>
+              </ul>
+            </div>
+          </div>
+          <p style={{fontSize:'12px',color:'#475569',marginTop:'1rem',lineHeight:1.6}}>
+            Flights are not included. Your package quote states what is included, and a breakdown is available on request.
+          </p>
+        </div>
+      </section>
+
       <section className="sec bg border" id="faq">
         <div className="inner">
           <div className="kicker">Common questions</div>
@@ -340,7 +370,7 @@ export default function PlasticSurgeryPage() {
             <h2>Ready to find out what your procedure costs?</h2>
             <p>Tell us which procedure you&apos;re interested in and we aim to send a full package quote within 48 hours — no obligation.</p>
             <div className="cta-btns">
-              <a href="/pre-operative-assessment" style={{background:"transparent",color:"rgba(255,255,255,.8)",border:"1px solid rgba(255,255,255,.3)",padding:"14px 28px",borderRadius:"10px",fontSize:"15px",display:"inline-flex",alignItems:"center",gap:"8px",fontFamily:"Inter,sans-serif"}}>Pre-operative assessment →</a>n              <a href={WA_URL} target="_blank" className="btn-cta-w">Get a free quote</a>
+              <a href="/pre-operative-assessment" style={{background:"transparent",color:"rgba(255,255,255,.8)",border:"1px solid rgba(255,255,255,.3)",padding:"14px 28px",borderRadius:"10px",fontSize:"15px",display:"inline-flex",alignItems:"center",gap:"8px",fontFamily:"Inter,sans-serif"}}>Pre-operative assessment →</a>              <a href={WA_URL} target="_blank" className="btn-cta-w">Get a free quote</a>
               <a href="mailto:info@oceanhealthtravel.com" className="btn-cta-o">Email us</a>
             </div>
           </div>
