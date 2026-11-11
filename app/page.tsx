@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Nav from '@/app/components/Nav'
 import HeroProcess from '@/app/components/HeroProcess'
 import SampleQuote from '@/app/components/SampleQuote'
+import PriceFactors from '@/app/components/PriceFactors'
 import { UK_PRICES } from '@/app/lib/ukPrices'
 import Footer from '@/app/components/Footer'
 
@@ -148,9 +149,9 @@ export default function Home() {
         .home .btn-link{color:var(--ink);font-size:15px;font-weight:500;border-bottom:1px solid var(--ink);padding-bottom:2px}
         .btn-link:hover{color:var(--green);border-color:var(--green)}
         .hero{padding:56px 0 64px}
-        .hero-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:4.5rem;align-items:center}
+        .hero-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:4.5rem;align-items:start}
         .hero-grid>*,.how-grid>*{min-width:0}
-        .hero-text{padding-top:0}
+        .hero-text{padding-top:1.25rem}
         .hero h1{text-wrap:balance;font-size:clamp(32px,3.5vw,46px);line-height:1.04;letter-spacing:-.025em;margin-bottom:1.5rem}
         .hero h1 em{font-style:italic;color:var(--green)}
         .hero-sub{font-size:18px;line-height:1.65;color:var(--muted);max-width:530px;margin-bottom:2.25rem}
@@ -350,6 +351,7 @@ export default function Home() {
                 </details>
               </div>
             </div>
+            <PriceFactors />
           </div>
         </div>
       </section>
