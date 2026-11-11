@@ -2,9 +2,9 @@ import styles from './SampleQuote.module.css'
 
 const LINES: [string, string, string][] = [
   ['Treatment', 'Price set by the treating provider', '£ —'],
-  ['Hotel', 'Nights agreed with you', '£ —'],
-  ['Transfers', 'Airport, hotel and clinic', '£ —'],
-  ['Interpreter', 'At your appointments', '£ —'],
+  ['Hotel', 'For the patient, near your clinic', 'Included'],
+  ['Transfers', 'For the patient: airport, hotel and clinic', 'Included'],
+  ['Interpreter', 'At your appointments', 'Included'],
   ['English discharge documents', 'Forwarded to your GP on request', 'On request'],
 ]
 
