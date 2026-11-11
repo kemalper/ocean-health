@@ -50,16 +50,16 @@ export default function RelatedTreatments({ current, related }: { current: strin
   return (
     <section className="rt">
       <style>{`
-        .rt{padding:56px 0;background:var(--band,#F2EEE5)}
+        .rt{padding:56px 0;background:var(--band,#F3F7FE)}
         .rt .rt-in{max-width:1280px;margin:0 auto;padding:0 2.5rem}
-        .rt h2{font-size:24px;font-weight:500;color:var(--ink,#12202B);margin:0 0 1.25rem}
+        .rt h2{font-size:24px;font-weight:500;color:var(--ink,#14213D);margin:0 0 1.25rem}
         .rt .rt-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-        .rt a.rt-card{display:block;background:#fff;border:1px solid var(--line,#E6E0D4);border-radius:14px;padding:20px 22px;text-decoration:none;color:inherit}
-        .rt a.rt-card:hover{border-color:var(--green,#0B6B55)}
-        .rt .rt-t{font-size:16px;font-weight:600;color:var(--ink,#12202B)}
-        .rt .rt-d{font-size:14px;color:var(--muted,#5B6770);margin-top:4px}
+        .rt a.rt-card{display:block;background:#fff;border:1px solid var(--line,#DCE6F5);border-radius:14px;padding:20px 22px;text-decoration:none;color:inherit}
+        .rt a.rt-card:hover{border-color:var(--green,#0559F0)}
+        .rt .rt-t{font-size:16px;font-weight:600;color:var(--ink,#14213D)}
+        .rt .rt-d{font-size:14px;color:var(--muted,#475569);margin-top:4px}
         .rt .rt-more{margin-top:1.25rem;font-size:14px}
-        .rt .rt-more a{color:var(--green,#0B6B55);text-decoration:underline}
+        .rt .rt-more a{color:var(--green,#0559F0);text-decoration:underline}
         @media(max-width:900px){.rt .rt-grid{grid-template-columns:1fr}.rt .rt-in{padding:0 1.25rem}}
       `}</style>
       <div className="rt-in">

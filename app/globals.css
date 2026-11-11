@@ -2,3 +2,17 @@
 html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased}
 body{font-family:'Inter',sans-serif;color:#1a1a1a;background:#fff;overflow-x:hidden}
 a{text-decoration:none;color:inherit}
+
+/* OHT brand tokens (blue palette). Variables only: safe for pages not yet migrated.
+   Cyan (#00BBFF) is ~2.2:1 on white: decoration and large graphics ONLY, never text or white-text backgrounds. */
+:root{
+  --oht-blue:#0559F0;      /* primary: buttons, links, headings accents (AA on white) */
+  --oht-blue-dark:#0438A6; /* hover / pressed */
+  --oht-cyan:#00BBFF;      /* decorative accent only */
+  --oht-navy:#0A2150;      /* headings, dark surfaces */
+  --oht-ink:#14213D;       /* body text */
+  --oht-muted:#475569;     /* secondary text (AA on white and tint) */
+  --oht-line:#DCE6F5;      /* borders */
+  --oht-tint:#F3F7FE;      /* alt section background */
+  --oht-tint-2:#E6EFFE;    /* icon chips */
+}

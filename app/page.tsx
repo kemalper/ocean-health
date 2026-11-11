@@ -4,51 +4,52 @@ import Image from 'next/image'
 import Nav from '@/app/components/Nav'
 import HeroProcess from '@/app/components/HeroProcess'
 import { UK_PRICES } from '@/app/lib/ukPrices'
+import Footer from '@/app/components/Footer'
 
 const WA_URL = 'https://wa.me/447441904858?text=Hello%2C%20I%27d%20like%20to%20get%20a%20free%20quote'
 
 const procedures: Record<string, { headers: string[], rows: string[][] }> = {
   cosmetic: {
-    headers: ['Procedure', 'UK private', 'Istanbul (OHT)', 'Saving'],
+    headers: ['Procedure', 'UK private', 'Istanbul (OHT)'],
     rows: [
-      ['Rhinoplasty', UK_PRICES.rhinoplasty.typical, 'from £3,200', '~45–65%', '/treatments/rhinoplasty-istanbul'],
-      ['Breast augmentation', UK_PRICES.breastAugmentation.typical, 'from £6,000', 'Comparable', '/treatments/breast-augmentation-istanbul'],
-      ['Breast reduction', '£8,000 – £10,000', 'from £6,300', '~20–35%', '/treatments/breast-reduction-istanbul'],
-      ['Liposuction', UK_PRICES.liposuction.range, 'from £2,500', 'Varies', '/treatments/liposuction-istanbul'],
-      ['Mini facelift', UK_PRICES.facelift.range, 'from £5,000', '~15–40%', '/treatments/mini-facelift-istanbul'],
-      ['Tummy tuck', '£7,200 – £10,050', 'from £3,500', '~50–65%', '/treatments/tummy-tuck-istanbul'],
-      ['360° tummy tuck (package)', 'No published guide price', '£7,300 – £8,200', '—', '/treatments/tummy-tuck-istanbul'],
+      ['Rhinoplasty', UK_PRICES.rhinoplasty.typical, 'from £3,200', '/treatments/rhinoplasty-istanbul'],
+      ['Breast augmentation', UK_PRICES.breastAugmentation.typical, 'from £6,000', '/treatments/breast-augmentation-istanbul'],
+      ['Breast reduction', '£8,000 – £10,000', 'from £6,300', '/treatments/breast-reduction-istanbul'],
+      ['Liposuction', UK_PRICES.liposuction.range, 'from £2,500', '/treatments/liposuction-istanbul'],
+      ['Mini facelift', UK_PRICES.facelift.range, 'from £5,000', '/treatments/mini-facelift-istanbul'],
+      ['Tummy tuck', '£7,200 – £10,050', 'from £3,500', '/treatments/tummy-tuck-istanbul'],
+      ['360° tummy tuck (package)', 'No published guide price', '£7,300 – £8,200', '/treatments/tummy-tuck-istanbul'],
     ]
   },
   dental: {
-    headers: ['Procedure', 'UK private', 'Istanbul (OHT)', 'Saving'],
+    headers: ['Procedure', 'UK private', 'Istanbul (OHT)'],
     rows: [
-      ['Dental implant (single)', '£1,500 – £3,500', 'from £350', '~75–90%'],
-      ['Zirconium crown', '£350 – £1,100', 'from £150', '~55–85%'],
-      ['Porcelain veneers (per tooth)', '£450 – £850', 'from £180', '~60–80%'],
-      ['Full-arch restoration (per arch)', '£9,500 – £20,000', 'from £4,500', '~55–75%'],
+      ['Dental implant (single)', '£1,500 – £3,500', 'from £350'],
+      ['Zirconium crown', '£350 – £1,100', 'from £150'],
+      ['Porcelain veneers (per tooth)', '£450 – £850', 'from £180'],
+      ['Full-arch restoration (per arch)', '£9,500 – £20,000', 'from £4,500'],
     ]
   },
   ortho: {
-    headers: ['Procedure', 'UK private', 'Istanbul (OHT)', 'Saving'],
+    headers: ['Procedure', 'UK private', 'Istanbul (OHT)'],
     rows: [
-      ['Knee replacement', '£10,000 – £17,000', 'from £3,500 · 2–3 wks', '~65–80%', '/treatments/knee-replacement-turkey'],
+      ['Knee replacement', '£10,000 – £17,000', 'from £3,500', '/treatments/knee-replacement-turkey'],
     ]
   },
   ophth: {
-    headers: ['Procedure', 'UK private', 'Istanbul (OHT)', 'Saving'],
+    headers: ['Procedure', 'UK private', 'Istanbul (OHT)'],
     rows: [
-      ['LASIK (per eye)', '£995 – £2,395', 'from £600', '~40–75%'],
-      ['Cataract surgery', '£2,000 – £3,500', 'from £800', '~65%'],
-      ['Premium lens replacement', '£3,000 – £5,000', 'from £1,200', '~65%'],
+      ['LASIK (per eye)', '£995 – £2,395', 'from £600'],
+      ['Cataract surgery', '£2,000 – £3,500', 'from £800'],
+      ['Premium lens replacement', '£3,000 – £5,000', 'from £1,200'],
     ]
   },
   neuro: {
-    headers: ['Procedure', 'UK private', 'Istanbul (OHT)', 'Saving'],
+    headers: ['Procedure', 'UK private', 'Istanbul (OHT)'],
     rows: [
-      ['Deep brain stimulation', '£30,000+', 'from $30,000 (~£23,700)', 'from ~20%', '/treatments/deep-brain-stimulation-turkey'],
-      ['Lumbar disc surgery', 'from ~£11,000', 'from £4,000', '~65%', '/treatments/lumbar-disc-istanbul'],
-      ['Cervical disc surgery', 'No published guide price', 'from £4,750', 'Not compared', '/treatments/cervical-disc-istanbul'],
+      ['Deep brain stimulation', '£30,000+', 'from $30,000 (~£23,700)', '/treatments/deep-brain-stimulation-turkey'],
+      ['Lumbar disc surgery', 'from ~£11,000', 'from £4,000', '/treatments/lumbar-disc-istanbul'],
+      ['Cervical disc surgery', 'No published guide price', 'from £4,750', '/treatments/cervical-disc-istanbul'],
     ]
   }
 }
@@ -90,17 +91,17 @@ const ROWS: { name: string; link: string; img: string; summary: string; price: s
 const ICON = { width: 22, height: 22, viewBox: '0 0 24 24', fill: 'none', stroke: 'currentColor', strokeWidth: 1.5, strokeLinecap: 'round', strokeLinejoin: 'round' } as const
 
 const COORD = [
-  { icon: <svg {...ICON}><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>, t: 'Airport transfer', d: 'Pre-confirmed transfers between airport, hotel and hospital.' },
-  { icon: <svg {...ICON}><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg>, t: 'Hotel & accommodation', d: 'Hotels close to your hospital, matched to your recovery needs.' },
-  { icon: <svg {...ICON}><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>, t: 'Interpretation', d: 'A professional interpreter at every appointment.' },
-  { icon: <svg {...ICON}><path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="2"/><path d="M9 12h6M9 16h4"/></svg>, t: 'GP documentation', d: 'Discharge notes in English, forwarded to your GP on request.' },
+  { icon: <svg {...ICON} aria-hidden="true"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>, t: 'Airport transfer', d: 'Pre-confirmed transfers between airport, hotel and hospital.' },
+  { icon: <svg {...ICON} aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg>, t: 'Hotel & accommodation', d: 'Hotels close to your hospital, matched to your recovery needs.' },
+  { icon: <svg {...ICON} aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>, t: 'Interpretation', d: 'A professional interpreter at every appointment.' },
+  { icon: <svg {...ICON} aria-hidden="true"><path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="2"/><path d="M9 12h6M9 16h4"/></svg>, t: 'GP documentation', d: 'Discharge notes in English, forwarded to your GP on request.' },
 ]
 
 const STEPS = [
   { t: 'Enquiry', d: 'Send us your treatment and preferred dates by WhatsApp or email.', when: 'Day 0' },
-  { t: 'Itemised quote', d: 'Hospital, surgeon, hotel and transfers set out line by line.', when: 'Within 48 hours' },
+  { t: 'Itemised quote', d: 'Hospital, surgeon, hotel and transfers set out line by line.', when: 'We aim for 48 hours' },
   { t: 'Booking', d: 'Hospital, hotel and transfers confirmed; pre-operative instructions sent.', when: 'After you accept' },
-  { t: 'Treatment', d: 'An interpreter at every appointment and full liaison with the hospital.', when: 'Usually within 2 weeks of booking' },
+  { t: 'Treatment', d: 'An interpreter at every appointment and full liaison with the hospital.', when: 'Varies by treatment and provider' },
   { t: 'GP documents', d: 'Discharge notes in English forwarded to your GP.', when: 'On request' },
 ]
 
@@ -131,7 +132,7 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(ORG_JSON_LD).replace(/</g, '\\u003c') }}
       />
       <style>{`
-        .home{--bg:#FAF8F4;--band:#F2EEE5;--ink:#12202B;--muted:#5B6770;--line:#E6E0D4;--green:#0B6B55;--green-d:#08503F;--soft:#E3F0EA;background:var(--bg);color:var(--ink);font-family:'Inter',sans-serif;-webkit-font-smoothing:antialiased}
+        .home{--bg:#FFFFFF;--band:#F3F7FE;--ink:#14213D;--muted:#475569;--line:#DCE6F5;--green:#0559F0;--green-d:#0438A6;--soft:#E6EFFE;background:var(--bg);color:var(--ink);font-family:'Inter',sans-serif;-webkit-font-smoothing:antialiased}
         .home *,.home *::before,.home *::after{box-sizing:border-box}
         .home a{text-decoration:none;color:inherit}
         .home .inner{max-width:1280px;margin:0 auto;padding:0 2.5rem}
@@ -186,13 +187,13 @@ export default function Home() {
         @media(min-width:641px){
           .home thead th{background:var(--band)}
           .home td:first-child{font-family:'DM Serif Display',serif;font-size:18px;font-weight:400;letter-spacing:-.01em}
-          .home td:nth-child(3),.home th:nth-child(3){background:rgba(227,240,234,.55)}
+          .home td:nth-child(3),.home th:nth-child(3){background:rgba(230,239,254,.55)}
           .home th:nth-child(3){color:var(--green-d)}
           .home td.td-oht{font-size:16px}
           .home td.td-uk{font-size:14px}
           .home tbody tr{transition:background .15s}
           .home tbody tr:hover td{background:rgba(242,238,229,.55)}
-          .home tbody tr:hover td:nth-child(3){background:rgba(227,240,234,.95)}
+          .home tbody tr:hover td:nth-child(3){background:rgba(230,239,254,.95)}
           .home .row-link{border-bottom-color:transparent}
           .home .row-link::after{content:' →';color:var(--green);opacity:0;transition:opacity .15s}
           .home tr:hover .row-link{border-bottom-color:var(--green);color:var(--green)}
@@ -264,7 +265,7 @@ export default function Home() {
         .footer-legal em{font-style:normal;color:rgba(255,255,255,.4)}
         .fbadges{display:flex;gap:8px;flex-wrap:wrap;margin-top:1rem}
         .fbadge{display:flex;align-items:center;gap:6px;font-size:11px;color:rgba(255,255,255,.65);border:1px solid rgba(255,255,255,.18);border-radius:5px;padding:4px 10px}
-        .fbadge-dot{width:6px;height:6px;border-radius:50%;background:#5CC9A4}
+        .fbadge-dot{width:6px;height:6px;border-radius:50%;background:#8FD8FF}
         @media(max-width:1024px){.coord-grid{grid-template-columns:repeat(2,1fr)}.how-grid{grid-template-columns:1fr;gap:2.5rem}.how-side{position:static}}
         @media(max-width:900px){.hero-text{padding-top:0}.hero h1 br{display:none}.hero-grid{grid-template-columns:1fr;gap:2.5rem}.hero-media{aspect-ratio:1/1}.hero-media img{transform:none!important;object-position:50% 52%!important}.hero-sub{font-size:16.5px}.sec-head{grid-template-columns:1fr;gap:1rem}.feat-grid{grid-template-columns:1fr}.rev-grid{grid-template-columns:1fr}}
         @media(max-width:768px){.sec{padding:4.5rem 0}.row{grid-template-columns:64px 1fr 20px}.row-price{display:none}.step{grid-template-columns:44px 1fr}.step-when{grid-column:2;justify-self:start}.cta-box{padding:3rem 1.5rem}}
@@ -288,8 +289,8 @@ export default function Home() {
               <a href="#compare" className="btn-link">See how prices compare</a>
             </div>
             <ul className="hero-fine">
-              <li>Itemised quote within 48 hours</li>
-              <li>Surgery usually within 2 weeks of confirming</li>
+              <li>We aim to send an itemised quote within 48 hours</li>
+              <li>Timelines vary by treatment and provider</li>
               <li>Surgeon credentials confirmed in writing before you pay</li>
             </ul>
           </div>
@@ -324,7 +325,7 @@ export default function Home() {
               ))}
             </div>
             {activeTab === 'neuro' && (
-              <div className="neuro-warn"><strong>Important:</strong> Neurosurgical procedures need imaging and clinical reports, which the treating neurosurgeon reviews to decide suitability. No formal referral letter is needed to start, and DBS offers a free pre-assessment. Ocean Health &amp; Travel does not provide medical advice. All clinical decisions rest with the treating neurosurgical team. Elective procedures only.</div>
+              <div className="neuro-warn"><strong>Important:</strong> Neurosurgical procedures need imaging and clinical reports, which the treating neurosurgeon reviews to decide suitability. No formal referral letter is needed to start, and DBS offers a free pre-assessment. Ocean Health &amp; Travel does not provide medical advice. All clinical decisions rest with the treating neurosurgical team. Planned (non-emergency) treatment only.</div>
             )}
             <div className="table-wrap">
               <table>
@@ -332,10 +333,9 @@ export default function Home() {
                 <tbody>
                   {procedures[activeTab].rows.map(row => (
                     <tr key={row[0]}>
-                      <td>{row[4] ? <a href={row[4]} className="row-link">{row[0]}</a> : row[0]}</td>
+                      <td>{row[3] ? <a href={row[3]} className="row-link">{row[0]}</a> : row[0]}</td>
                       <td className="td-uk" data-l={procedures[activeTab].headers[1]}>{row[1]}</td>
                       <td className="td-oht" data-l={procedures[activeTab].headers[2]}>{row[2]}</td>
-                      <td data-l={procedures[activeTab].headers[3]}><span className="saving">{row[3]}</span></td>
                     </tr>
                   ))}
                 </tbody>
@@ -344,7 +344,7 @@ export default function Home() {
                 UK figures are indicative ranges from published UK private provider prices. Istanbul figures are starting prices subject to clinical assessment. We are paid by partner hospitals, which may influence which hospitals we work with.
                 <details>
                   <summary>How we calculate these figures</summary>
-                  <p>UK figures are indicative ranges based on published prices from UK private providers; Istanbul figures are starting prices subject to individual clinical assessment. Percentages compare our starting price with the UK range shown; &ldquo;up to&rdquo; figures use the top of that range, and &ldquo;Comparable&rdquo; or &ldquo;Varies&rdquo; means a like-for-like saving cannot be shown.</p>
+                  <p>UK figures are indicative ranges based on published prices from UK private providers; Istanbul figures are starting prices subject to individual clinical assessment. Prices are indicative and should be checked against an itemised quote. Timelines vary by treatment and provider.</p>
                 </details>
               </div>
             </div>
@@ -360,13 +360,13 @@ export default function Home() {
               <div className="eyebrow">Treatments</div>
               <h2>What we coordinate.</h2>
             </div>
-            <p className="sec-sub">Elective treatment across the specialties below. Each page sets out what is typically involved, what the price covers and how a quote works.</p>
+            <p className="sec-sub">Planned (non-emergency) treatment across the specialties below. Each page sets out what is typically involved, what the price covers and how a quote works.</p>
           </div>
 
           <div className="feat-grid">
             {FEATURED.map((s,i) => (
               <a key={s.name} href={s.link} className={`feat reveal d${i+1}`} ref={ref}>
-                <div className="feat-img"><Image src={s.img} alt={s.name} fill sizes="(max-width:900px) 100vw, 560px" style={{objectFit:'cover'}} /></div>
+                <div className="feat-img"><Image src={s.img} alt="" fill sizes="(max-width:900px) 100vw, 560px" style={{objectFit:'cover'}} /></div>
                 <div className="feat-body">
                   <h3>{s.name}{s.tag && <span className="row-tag">{s.tag}</span>}</h3>
                   <div className="feat-items">{s.items}</div>
@@ -379,7 +379,7 @@ export default function Home() {
           <div className="row-list reveal" ref={ref}>
             {ROWS.map(r => (
               <a key={r.name} href={r.link} className="row" {...(r.external ? {target:'_blank', rel:'noopener noreferrer'} : {})}>
-                <div className="row-img"><Image src={r.img} alt={r.name} fill sizes="72px" style={{objectFit:'cover'}} /></div>
+                <div className="row-img"><Image src={r.img} alt="" fill sizes="72px" style={{objectFit:'cover'}} /></div>
                 <div>
                   <div className="row-name">{r.name}{r.tag && <span className="row-tag">{r.tag}</span>}</div>
                   <div className="row-sum">{r.summary}</div>
@@ -415,7 +415,7 @@ export default function Home() {
             ))}
           </div>
           <p className="fine">
-            Ocean Health &amp; Travel is a coordinator, not a medical provider. All clinical decisions rest with your treating provider. Flights not included. No coordination fee is charged to patients. Elective procedures only &mdash; not suitable for emergencies.
+            Ocean Health &amp; Travel is a coordinator, not a medical provider. All clinical decisions rest with your treating provider. Flights not included. No coordination fee is charged to patients. Planned (non-emergency) treatment only &mdash; not suitable for emergencies.
           </p>
         </div>
       </section>
@@ -449,26 +449,20 @@ export default function Home() {
             <h2>Patient reviews</h2>
           </div>
           <div className="rev-grid">
-            <div style={{background:'#fff',border:'1px solid #f0ede8',borderRadius:'16px',padding:'1.75rem'}}>
-              <div style={{display:'flex',gap:'4px',marginBottom:'1rem'}}>
-                {[1,2,3,4,5].map(i => <svg key={i} width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="none"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>)}
-              </div>
-              <div style={{fontFamily:"'Inter',sans-serif",fontSize:'15px',fontStyle:'normal',color:'#1a1a1a',lineHeight:1.7,marginBottom:'1.25rem',fontWeight:400}}>&ldquo;I had a urology treatment arranged by Ocean Health &amp; Travel and I am extremely satisfied with the entire process. From the initial consultation to the procedure and follow-up, everything was well organized and transparent. The doctors and nurses were experienced, attentive, and explained each step clearly. Logistics such as appointments, transportation, and hospital coordination were handled smoothly. I confidently recommend Ocean Health &amp; Travel to anyone seeking high-quality care.&rdquo;</div>
+            <div style={{background:'#fff',border:'1px solid #DCE6F5',borderRadius:'16px',padding:'1.75rem'}}>
+              <div style={{fontFamily:"'Inter',sans-serif",fontSize:'15px',fontStyle:'normal',color:'#1a1a1a',lineHeight:1.7,marginBottom:'1.25rem',fontWeight:400}}>&ldquo;I had a urology treatment arranged by Ocean Health &amp; Travel&hellip; From the initial consultation to the procedure and follow-up, everything was well organized and transparent&hellip; Logistics such as appointments, transportation, and hospital coordination were handled smoothly.&rdquo;</div>
               <div style={{display:'flex',alignItems:'center',gap:'10px'}}>
-                <div style={{width:'36px',height:'36px',borderRadius:'50%',background:'#E1F5EE',display:'flex',alignItems:'center',justifyContent:'center',fontFamily:"'DM Serif Display',serif",fontSize:'13px',color:'#085041',flexShrink:0}}>OG</div>
+                <div style={{width:'36px',height:'36px',borderRadius:'50%',background:'#E6EFFE',display:'flex',alignItems:'center',justifyContent:'center',fontFamily:"'DM Serif Display',serif",fontSize:'13px',color:'#0559F0',flexShrink:0}}>OG</div>
                 <div>
                   <div style={{fontSize:'13px',fontWeight:500}}>Ozan G.</div>
                   <div style={{fontSize:'12px',color:'#888'}}>Urology &middot; Istanbul &middot; Google Review</div>
                 </div>
               </div>
             </div>
-            <div style={{background:'#fff',border:'1px solid #f0ede8',borderRadius:'16px',padding:'1.75rem'}}>
-              <div style={{display:'flex',gap:'4px',marginBottom:'1rem'}}>
-                {[1,2,3,4,5].map(i => <svg key={i} width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="none"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>)}
-              </div>
-              <div style={{fontFamily:"'Inter',sans-serif",fontSize:'15px',fontStyle:'normal',color:'#1a1a1a',lineHeight:1.7,marginBottom:'1.25rem',fontWeight:400}}>&ldquo;I had the best experience with Ocean Health. From the first port of call, consultation, procedure and follow up care was absolutely faultless. I was anxious and worried about having dental treatment abroad but I had absolutely nothing to worry about. Everything was taken care of and to the highest of standards. I have a constant smile on my face thanks to this wonderful company.&rdquo;</div>
+            <div style={{background:'#fff',border:'1px solid #DCE6F5',borderRadius:'16px',padding:'1.75rem'}}>
+              <div style={{fontFamily:"'Inter',sans-serif",fontSize:'15px',fontStyle:'normal',color:'#1a1a1a',lineHeight:1.7,marginBottom:'1.25rem',fontWeight:400}}>&ldquo;I was anxious and worried about having dental treatment abroad&hellip; Everything was taken care of.&rdquo;</div>
               <div style={{display:'flex',alignItems:'center',gap:'10px'}}>
-                <div style={{width:'36px',height:'36px',borderRadius:'50%',background:'#E1F5EE',display:'flex',alignItems:'center',justifyContent:'center',fontFamily:"'DM Serif Display',serif",fontSize:'13px',color:'#085041',flexShrink:0}}>SS</div>
+                <div style={{width:'36px',height:'36px',borderRadius:'50%',background:'#E6EFFE',display:'flex',alignItems:'center',justifyContent:'center',fontFamily:"'DM Serif Display',serif",fontSize:'13px',color:'#0559F0',flexShrink:0}}>SS</div>
                 <div>
                   <div style={{fontSize:'13px',fontWeight:500}}>Savannah S.</div>
                   <div style={{fontSize:'12px',color:'#888'}}>Dental (full crowns) &middot; Google Review</div>
@@ -476,9 +470,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div style={{textAlign:'center',marginTop:'1.5rem'}}>
-            <a href="https://www.google.com/search?q=Ocean+Health+Travel+reviews" target="_blank" rel="noopener noreferrer" style={{fontSize:'13px',color:'#085041',fontWeight:500}}>Read all reviews on Google →</a>
-          </div>
+          <p style={{textAlign:'center',marginTop:'1.5rem',fontSize:'13px',color:'#666'}}>Extracts from Google reviews. Individual experiences vary and are not a prediction of your outcome.</p>
         </div>
       </section>
 
@@ -491,7 +483,7 @@ export default function Home() {
           </div>
           <div className="cta-box reveal" ref={ref}>
             <h2>Tell us what you need</h2>
-            <p>Send us your treatment and preferred dates. You will receive an itemised quote within 48 hours, with no obligation. Elective procedures only.</p>
+            <p>Send us your treatment and preferred dates. You will receive an itemised quote, typically within 48 hours, with no obligation. Planned (non-emergency) treatment only.</p>
             <div className="cta-actions">
               <a href={WA_URL} target="_blank" className="btn-cta-w">Get a free quote</a>
               <a href="mailto:info@oceanhealthtravel.com" className="btn-cta-o">Email us</a>
@@ -501,69 +493,7 @@ export default function Home() {
       </section>
 
       {/* FOOTER */}
-      <footer>
-        <div className="inner">
-          <div className="footer-top">
-            <div className="footer-brand">
-              <div className="footer-brand-name">Ocean Health &amp; Travel</div>
-              <p>UK-registered medical tourism coordinator. Connecting international patients with JCI-accredited Istanbul clinics.</p>
-              <div className="fbadges">
-                {['JCI-accredited hospitals','UK GDPR / ICO','Companies House'].map(b => (
-                  <div key={b} className="fbadge"><div className="fbadge-dot"></div>{b}</div>
-                ))}
-              </div>
-            </div>
-            <div className="footer-links">
-              <div className="footer-col">
-                <h4>Treatments</h4>
-                <a href="/treatments/plastic-surgery-istanbul">Plastic &amp; cosmetic surgery</a>
-                <a href="/treatments/rhinoplasty-istanbul">Rhinoplasty</a>
-                <a href="/treatments/breast-augmentation-istanbul">Breast augmentation</a>
-                <a href="/treatments/liposuction-istanbul">Liposuction</a>
-                <a href="/treatments/tummy-tuck-istanbul">Tummy tuck</a>
-                <a href="/treatments/bbl-istanbul">Brazilian butt lift</a>
-                <a href="/treatments/mini-facelift-istanbul">Mini facelift</a>
-                <a href="/treatments/blepharoplasty-istanbul">Eyelid surgery</a>
-                <a href="/treatments/lumbar-disc-istanbul">Lumbar disc surgery</a>
-                <a href="/treatments/cervical-disc-istanbul">Cervical disc surgery</a>
-                <a href="/treatments/dental-istanbul">Dental</a>
-                <a href="/treatments/dental-implants-turkey">Dental implants</a>
-                <a href="/treatments/ophthalmology-istanbul">Ophthalmology</a>
-                <a href="/treatments/lasik-istanbul">LASIK</a>
-                <a href="/treatments/knee-replacement-turkey">Knee replacement</a>
-                <a href="/treatments/neurosurgery-istanbul">Neurosurgery</a>
-                <a href="/treatments/deep-brain-stimulation-turkey">Deep brain stimulation</a>
-                <a href="/treatments/hair-transplant-istanbul">Hair transplantation</a>
-                <a href="/treatments/urology-istanbul">Urology &amp; men&apos;s health</a>
-              </div>
-              <div className="footer-col">
-                <h4>Company</h4>
-                <a href="/about">About us</a>
-                <a href="#how-it-works">How it works</a>
-                <a href="/faq">FAQ</a>
-                <a href="/patient-charter">Patient charter</a>
-                <a href="/if-something-goes-wrong">If something goes wrong</a>
-                <a href="mailto:info@oceanhealthtravel.com">Contact</a>
-              </div>
-              <div className="footer-col">
-                <h4>Legal</h4>
-                <a href="/privacy-policy">Privacy policy</a>
-                <a href="/complaints-policy">Complaints policy</a>
-                <a href="/cookie-policy">Cookie policy</a>
-                <a href="/brokerage-agreement">Brokerage agreement</a>
-              </div>
-            </div>
-          </div>
-          <div className="footer-legal">
-            © {new Date().getFullYear()} Ocean Health &amp; Travel Ltd · Registered in England &amp; Wales · Company no. 16186647 · ICO registered · UK GDPR compliant<br />
-            London: 17 Green Lanes, N16 9BS ·{' '}
-            <a href="mailto:info@oceanhealthtravel.com">info@oceanhealthtravel.com</a> ·{' '}
-            <a href="tel:+447441904858">+44 7441 904858</a><br />
-            Flights not included · No coordination fee charged to patients · Coordinator, not a medical provider · Elective procedures only<br />
-            <em>Ocean Health &amp; Travel does not provide medical advice. All clinical decisions rest with your treating provider. Patients should seek urgent local medical care if required after returning home. Not suitable for emergencies.</em>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   )
 }

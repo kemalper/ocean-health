@@ -33,8 +33,8 @@ export default function FloatingWhatsApp() {
   return (
     <>
       <style>{`
-        .wa-float{position:fixed;right:18px;bottom:18px;z-index:60;display:inline-flex;align-items:center;gap:8px;background:#0B6B55;color:#fff;border-radius:999px;padding:12px 18px;font:600 14px 'Inter',sans-serif;text-decoration:none;box-shadow:0 8px 24px rgba(11,107,85,.35);transition:opacity .25s,transform .25s,background .2s}
-        .wa-float:hover{background:#08503F}
+        .wa-float{position:fixed;right:18px;bottom:18px;z-index:60;display:inline-flex;align-items:center;gap:8px;background:#0559F0;color:#fff;border-radius:999px;padding:12px 18px;font:600 14px 'Inter',sans-serif;text-decoration:none;box-shadow:0 8px 24px rgba(4,56,166,.35);transition:opacity .25s,transform .25s,background .2s}
+        .wa-float:hover{background:#0438A6}
         .wa-float.off{opacity:0;transform:translateY(12px);pointer-events:none}
         .wa-float svg{width:20px;height:20px;fill:currentColor;flex:none}
         @media(max-width:600px){.wa-float{right:12px;bottom:12px;padding:12px}.wa-float span{display:none}}

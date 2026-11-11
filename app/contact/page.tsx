@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Nav from '@/app/components/Nav'
 import TreatmentTheme from '@/app/components/TreatmentTheme'
+import Footer from '@/app/components/Footer'
 
 export const metadata: Metadata = {
   alternates: { canonical: '/contact' },
@@ -20,45 +21,45 @@ export default function ContactPage() {
         body{font-family:'Inter',sans-serif;color:#1a1a1a;background:#fff}
         a{text-decoration:none;color:inherit}
         .inner{max-width:1160px;margin:0 auto;padding:0 2.5rem}
-.nav-links a:hover{color:#085041}
+.nav-links a:hover{color:#0559F0}
         .btn-
-.btn-nav:hover{background:#085041;color:#fff!important}
-        .hero{background:linear-gradient(135deg,#042e22 0%,#085041 50%,#0d6b55 100%);padding:80px 0 60px;position:relative;overflow:hidden}
-        .hero::before{content:'';position:absolute;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(29,158,117,.2) 0%,transparent 70%);top:-100px;right:-100px;pointer-events:none}
+.btn-nav:hover{background:#0559F0;color:#fff!important}
+        .hero{background:linear-gradient(135deg,#0A2150 0%,#0559F0 50%,#0438A6 100%);padding:80px 0 60px;position:relative;overflow:hidden}
+        .hero::before{content:'';position:absolute;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(5,89,240,.2) 0%,transparent 70%);top:-100px;right:-100px;pointer-events:none}
         .hero-inner{position:relative;z-index:1;max-width:640px}
-        .kicker{font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#6ee7b7;margin-bottom:1rem}
+        .kicker{font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#8FD8FF;margin-bottom:1rem}
         h1{font-family:'DM Serif Display',serif;font-size:clamp(32px,4vw,50px);line-height:1.1;letter-spacing:-.025em;color:#fff;margin-bottom:1rem;font-weight:400}
-        h1 em{font-style:italic;color:#6ee7b7}
+        h1 em{font-style:italic;color:#8FD8FF}
         .hero-sub{font-size:16px;color:rgba(255,255,255,.72);line-height:1.75;font-weight:300}
         .sec{padding:5rem 0}
-        .sec.bg{background:#fafaf9}
+        .sec.bg{background:#F3F7FE}
         h2{font-family:'DM Serif Display',serif;font-size:clamp(22px,2.5vw,32px);font-weight:400;color:#1a1a1a;letter-spacing:-.02em;line-height:1.2;margin-bottom:1rem}
         .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start}
-        .contact-method{background:#fff;border:1px solid #f0ede8;border-radius:16px;padding:1.75rem;margin-bottom:1rem;display:flex;align-items:flex-start;gap:1rem;transition:border-color .2s,transform .2s}
-        .contact-method:hover{border-color:#1D9E75;transform:translateY(-2px)}
+        .contact-method{background:#fff;border:1px solid #DCE6F5;border-radius:16px;padding:1.75rem;margin-bottom:1rem;display:flex;align-items:flex-start;gap:1rem;transition:border-color .2s,transform .2s}
+        .contact-method:hover{border-color:#0559F0;transform:translateY(-2px)}
         .contact-method a{text-decoration:none;color:inherit;display:flex;align-items:flex-start;gap:1rem;width:100%}
         .method-icon{width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0}
-        .method-icon.green{background:#E1F5EE}
+        .method-icon.green{background:#E6EFFE}
         .method-icon.blue{background:#e3f2fd}
-        .method-icon.dark{background:#f5f4f2}
+        .method-icon.dark{background:#F3F7FE}
         .method-t{font-size:15px;font-weight:600;color:#1a1a1a;margin-bottom:4px}
         .method-d{font-size:13px;color:#777;line-height:1.6;font-weight:300}
-        .method-val{font-size:14px;color:#085041;font-weight:500;margin-top:6px}
+        .method-val{font-size:14px;color:#0559F0;font-weight:500;margin-top:6px}
         .office-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:1.5rem}
-        .office-card{background:#fff;border:1px solid #f0ede8;border-radius:14px;padding:1.5rem}
-        .office-tag{font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#1D9E75;margin-bottom:.75rem}
+        .office-card{background:#fff;border:1px solid #DCE6F5;border-radius:14px;padding:1.5rem}
+        .office-tag{font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#0559F0;margin-bottom:.75rem}
         .office-city{font-size:16px;font-weight:500;color:#1a1a1a;margin-bottom:.5rem}
         .office-addr{font-size:13px;color:#777;line-height:1.7;font-weight:300}
-        .hours-box{background:#f0faf5;border:1px solid #c6f0de;border-radius:12px;padding:1.25rem 1.5rem;margin-top:1.5rem}
-        .hours-t{font-size:13px;font-weight:600;color:#085041;margin-bottom:.5rem}
+        .hours-box{background:#F3F7FE;border:1px solid #CFE0FC;border-radius:12px;padding:1.25rem 1.5rem;margin-top:1.5rem}
+        .hours-t{font-size:13px;font-weight:600;color:#0559F0;margin-bottom:.5rem}
         .hours-d{font-size:13px;color:#555;line-height:1.7;font-weight:300}
-        .disclaimer{font-size:12px;color:#bbb;line-height:1.6;margin-top:1.5rem}
-        .cta-box{background:linear-gradient(135deg,#042e22,#085041);border-radius:20px;padding:3rem;text-align:center;margin-top:3rem}
+        .disclaimer{font-size:12px;color:#475569;line-height:1.6;margin-top:1.5rem}
+        .cta-box{background:linear-gradient(135deg,#0A2150,#0559F0);border-radius:20px;padding:3rem;text-align:center;margin-top:3rem}
         .cta-box h2{color:#fff;margin-bottom:.75rem}
         .cta-box p{font-size:15px;color:rgba(255,255,255,.65);font-weight:300;line-height:1.7;margin-bottom:2rem;max-width:480px;margin-left:auto;margin-right:auto}
         .cta-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
-        .btn-wa{background:#1D9E75;color:#fff;border:none;padding:14px 28px;border-radius:10px;font-size:15px;font-weight:600;display:inline-flex;align-items:center;gap:8px;cursor:pointer;font-family:'Inter',sans-serif;transition:all .2s}
-        .btn-wa:hover{background:#085041}
+        .btn-wa{background:#0559F0;color:#fff;border:none;padding:14px 28px;border-radius:10px;font-size:15px;font-weight:600;display:inline-flex;align-items:center;gap:8px;cursor:pointer;font-family:'Inter',sans-serif;transition:all .2s}
+        .btn-wa:hover{background:#0559F0}
         .btn-email{background:transparent;color:rgba(255,255,255,.75);border:1px solid rgba(255,255,255,.3);padding:14px 28px;border-radius:10px;font-size:15px;display:inline-flex;align-items:center;gap:8px;cursor:pointer;font-family:'Inter',sans-serif;transition:all .2s}
         .btn-email:hover{background:rgba(255,255,255,.1);color:#fff}
         footer{background:#111;padding:3rem 0 2rem}
@@ -93,7 +94,7 @@ export default function ContactPage() {
 
               <div className="contact-method">
                 <a href={WA_URL} target="_blank" rel="noopener noreferrer">
-                  <div className="method-icon green"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#085041" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+                  <div className="method-icon green"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0559F0" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
                   <div>
                     <div className="method-t">WhatsApp</div>
                     <div className="method-d">Fastest response. Send your treatment enquiry, photos, or clinical documents directly. By sending medical information, you consent to its processing and transfer to selected healthcare providers in Turkey for quotation and treatment coordination purposes.</div>
@@ -127,9 +128,9 @@ export default function ContactPage() {
               <div className="hours-box">
                 <div className="hours-t">Response times</div>
                 <div className="hours-d">
-                  WhatsApp: within 1 hour (working hours)<br />
+                  WhatsApp: we aim to reply promptly during working hours<br />
                   Email: within 24 hours<br />
-                  Quote turnaround: within 48 hours of receiving clinical information<br />
+                  Quote turnaround: we aim to send your quote within 48 hours of receiving clinical information<br />
                   Working hours: Monday–Saturday, 09:00–18:00 GMT
                 </div>
               </div>
@@ -157,7 +158,7 @@ export default function ContactPage() {
                     No:11/A<br />
                     Fethiye, Muğla, Turkey
                   </div>
-                  <div style={{fontSize:'12.5px',color:'#888',lineHeight:1.6,marginTop:'.6rem'}}>Operations and administration. Patients are treated at partner hospitals in Istanbul.</div>
+                  <div style={{fontSize:'12.5px',color:'#475569',lineHeight:1.6,marginTop:'.6rem'}}>Operations and administration. Patients are treated at partner hospitals in Istanbul.</div>
                 </div>
               </div>
 
@@ -167,12 +168,12 @@ export default function ContactPage() {
                   The more detail you provide, the faster we can get you an accurate quote.
                 </p>
                 {[
-                  {icon:<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#085041" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>,t:'Treatment',d:'Which procedure(s) you are considering'},
-                  {icon:<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#085041" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>,t:'Preferred dates',d:'When you would like to travel to Istanbul'},
-                  {icon:<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#085041" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="2"/></svg>,t:'Medical records',d:'Any relevant clinical documents, X-rays, or referral letters'},
-                  {icon:<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#085041" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>,t:'Budget',d:'Approximate budget helps us recommend the right package'},
+                  {icon:<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0559F0" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>,t:'Treatment',d:'Which procedure(s) you are considering'},
+                  {icon:<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0559F0" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>,t:'Preferred dates',d:'When you would like to travel to Istanbul'},
+                  {icon:<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0559F0" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="2"/></svg>,t:'Medical records',d:'Any relevant clinical documents, X-rays, or referral letters'},
+                  {icon:<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0559F0" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>,t:'Budget',d:'Approximate budget helps us recommend the right package'},
                 ].map(item => (
-                  <div key={item.t} style={{display:'flex',alignItems:'flex-start',gap:'12px',padding:'.75rem 0',borderBottom:'1px solid #f5f4f2'}}>
+                  <div key={item.t} style={{display:'flex',alignItems:'flex-start',gap:'12px',padding:'.75rem 0',borderBottom:'1px solid #F3F7FE'}}>
                     <span style={{fontSize:'18px',flexShrink:0}}>{item.icon}</span>
                     <div>
                       <div style={{fontSize:'14px',fontWeight:500,marginBottom:'2px'}}>{item.t}</div>
@@ -190,7 +191,7 @@ export default function ContactPage() {
 
           <div className="cta-box">
             <h2>Ready to get started?</h2>
-            <p>Send us your treatment and preferred dates. Full itemised quote within 48 hours — no obligation.</p>
+            <p>Send us your treatment and preferred dates. We aim to send a full itemised quote within 48 hours — no obligation.</p>
             <div className="cta-btns">
               <a href={WA_URL} target="_blank" rel="noopener noreferrer" className="btn-wa">WhatsApp us now</a>
               <a href="mailto:info@oceanhealthtravel.com" className="btn-email">Send an email</a>
@@ -199,18 +200,7 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <footer>
-        <div className="inner">
-          <div className="footer-legal">
-            © {new Date().getFullYear()} Ocean Health &amp; Travel Ltd · Registered in England &amp; Wales · Company no. 16186647<br />
-            London: 17 Green Lanes, N16 9BS · Fethiye: Karagözler Mah., Fevzi Çakmak Cad. No:11/A, Muğla ·{' '}
-            <a href="mailto:info@oceanhealthtravel.com" style={{color:'#555'}}>info@oceanhealthtravel.com</a> ·{' '}
-            <a href="tel:+447441904858" style={{color:'#555'}}>+44 7441 904858</a><br />
-            Flights not included · No coordination fee charged to patients · Coordinator, not a medical provider · Elective procedures only<br />
-            <em>Ocean Health &amp; Travel does not provide medical advice. All clinical decisions rest with your treating provider. Not suitable for emergencies.</em>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   )
 }

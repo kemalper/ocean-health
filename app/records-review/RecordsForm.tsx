@@ -275,35 +275,35 @@ const CSS = `
 .rf .f{margin-bottom:1.1rem;border:0;padding:0;min-width:0}
 .rf .grid .f{margin-bottom:0}
 .rf .f.two{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
-.rf label,.rf legend{display:block;font-size:14px;font-weight:600;margin-bottom:.4rem;color:#12202B;padding:0}
+.rf label,.rf legend{display:block;font-size:14px;font-weight:600;margin-bottom:.4rem;color:#14213D;padding:0}
 .rf label span,.rf legend span{color:#b3261e;margin-left:2px}
-.rf input[type=text],.rf input[type=email],.rf input[type=tel],.rf input[type=number],.rf input:not([type]),.rf select,.rf textarea{width:100%;padding:12px 14px;border:1px solid #E6E0D4;border-radius:10px;background:#fff;font:inherit;font-size:16px;color:#12202B}
+.rf input[type=text],.rf input[type=email],.rf input[type=tel],.rf input[type=number],.rf input:not([type]),.rf select,.rf textarea{width:100%;padding:12px 14px;border:1px solid #DCE6F5;border-radius:10px;background:#fff;font:inherit;font-size:16px;color:#14213D}
 .rf textarea{resize:vertical}
-.rf input:focus,.rf select:focus,.rf textarea:focus{outline:2px solid #0B6B55;outline-offset:1px}
+.rf input:focus,.rf select:focus,.rf textarea:focus{outline:2px solid #0559F0;outline-offset:1px}
 .rf .bad input,.rf .bad select,.rf .bad textarea{border-color:#b3261e}
 .rf .bad legend{color:#b3261e}
-.rf small{display:block;font-size:12.5px;color:#5B6770;margin-top:.35rem;font-weight:400}
-.rf small a{color:#0B6B55;border-bottom:1px solid #0B6B55}
+.rf small{display:block;font-size:12.5px;color:#475569;margin-top:.35rem;font-weight:400}
+.rf small a{color:#0559F0;border-bottom:1px solid #0559F0}
 .rf .checks{display:grid;grid-template-columns:1fr 1fr;gap:.5rem 1.5rem}
 .rf .chk{display:flex;gap:.6rem;align-items:center;font-weight:400;font-size:15px;margin:0}
-.rf .chk input{width:18px;height:18px;accent-color:#0B6B55}
-.rf .drop{border:1.5px dashed #0B6B55;border-radius:12px;background:#E3F0EA;padding:1.4rem;text-align:center;cursor:pointer;font-size:15px}
+.rf .chk input{width:18px;height:18px;accent-color:#0559F0}
+.rf .drop{border:1.5px dashed #0559F0;border-radius:12px;background:#E6EFFE;padding:1.4rem;text-align:center;cursor:pointer;font-size:15px}
 .rf .files{list-style:none;margin:.75rem 0 0;padding:0}
-.rf .files li{display:flex;gap:.75rem;align-items:center;padding:.45rem 0;border-bottom:1px solid #E6E0D4;font-size:14px}
+.rf .files li{display:flex;gap:.75rem;align-items:center;padding:.45rem 0;border-bottom:1px solid #DCE6F5;font-size:14px}
 .rf .files li span:first-child{flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.rf .files li span:nth-child(2){color:#5B6770}
-.rf .files button{border:0;background:none;font-size:20px;cursor:pointer;color:#5B6770}
+.rf .files li span:nth-child(2){color:#475569}
+.rf .files button{border:0;background:none;font-size:20px;cursor:pointer;color:#475569}
 .rf .msg{color:#b3261e;font-size:13.5px;margin-top:.5rem}
-.rf .consent{background:#fff;border:1px solid #E6E0D4;border-radius:12px;padding:1rem 1.2rem;margin:1.25rem 0}
+.rf .consent{background:#fff;border:1px solid #DCE6F5;border-radius:12px;padding:1rem 1.2rem;margin:1.25rem 0}
 .rf .consent.bad{border-color:#b3261e}
 .rf .consent label{display:flex;gap:.75rem;align-items:flex-start;font-weight:400;font-size:14px;line-height:1.5;margin:0}
-.rf .consent input{margin-top:3px;width:18px;height:18px;flex:none;accent-color:#0B6B55}
-.rf .consent a{color:#0B6B55;border-bottom:1px solid #0B6B55}
+.rf .consent input{margin-top:3px;width:18px;height:18px;flex:none;accent-color:#0559F0}
+.rf .consent a{color:#0559F0;border-bottom:1px solid #0559F0}
 .rf .err{background:#fdecea;color:#8c1d18;border-radius:10px;padding:.8rem 1rem;margin-bottom:1rem;font-size:14.5px}
-.rf .btn{display:inline-flex;align-items:center;padding:15px 28px;border:0;border-radius:10px;background:#0B6B55;color:#fff;font-weight:600;font-size:15px;cursor:pointer;text-decoration:none}
-.rf .btn:hover{background:#08503F}
+.rf .btn{display:inline-flex;align-items:center;padding:15px 28px;border:0;border-radius:10px;background:#0559F0;color:#fff;font-weight:600;font-size:15px;cursor:pointer;text-decoration:none}
+.rf .btn:hover{background:#0438A6}
 .rf .btn:disabled{opacity:.6;cursor:default}
-.rf .done{background:#fff;border:1px solid #E6E0D4;border-radius:16px;padding:2rem}
+.rf .done{background:#fff;border:1px solid #DCE6F5;border-radius:16px;padding:2rem}
 .rf .done h2{font-family:'DM Serif Display',serif;font-weight:400;font-size:28px;margin:0 0 1rem}
 .rf .done p{margin:0 0 1rem;font-size:16px}
 @media(max-width:700px){.rf .grid,.rf .checks{grid-template-columns:1fr}}

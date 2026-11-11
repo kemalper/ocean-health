@@ -3,6 +3,7 @@ import { DM_Serif_Display, Inter } from "next/font/google";
 import "./globals.css";
 import FloatingWhatsApp from "@/app/components/FloatingWhatsApp";
 import BackToTop from "@/app/components/BackToTop";
+import CookieConsent from "./components/CookieConsent";
 
 const dmSerif = DM_Serif_Display({
   variable: "--font-dm-serif",
@@ -44,16 +45,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en-GB" className={`${dmSerif.variable} ${inter.variable}`}>
-      <head>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-92GMNGS0XF"></script>
-        <script dangerouslySetInnerHTML={{__html: `
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-92GMNGS0XF');
-        `}} />
-      </head>
-      <body>{children}<FloatingWhatsApp /><BackToTop /></body>
+      <body>{children}<FloatingWhatsApp /><BackToTop /><CookieConsent /></body>
     </html>
   );
 }

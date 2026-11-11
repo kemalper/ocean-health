@@ -87,7 +87,7 @@ export default function Page() {
             'Will you receive English-language operative notes and a discharge summary?',
             'What does the hospital\'s complication policy say, and which documents will you sign?',
           ],
-          note: { label: 'Insurance.', text: 'Standard travel insurance often excludes complications of elective surgery. Check your policy wording. Specialist cover exists from FCA-authorised insurers. We do not sell or advise on insurance, but can introduce you to an FCA-authorised provider; we may receive a commission if you take out a policy, and you are free to choose any other.' },
+          note: { label: 'Insurance.', text: 'Standard travel insurance often excludes complications of planned surgery. Check your policy wording. Specialist cover exists from FCA-authorised insurers. We do not sell or advise on insurance, but can introduce you to an FCA-authorised provider; we may receive a commission if you take out a policy, and you are free to choose any other.' },
         },
         {
           title: 'If you are unhappy with our service',

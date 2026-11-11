@@ -4,6 +4,7 @@ import TreatmentTheme from '@/app/components/TreatmentTheme'
 import RelatedTreatments from '@/app/components/RelatedTreatments'
 import YourTimeline from '@/app/components/YourTimeline'
 import UKPatientInfo from '@/app/components/UKPatientInfo'
+import Footer from '@/app/components/Footer'
 
 export const metadata: Metadata = {
   alternates: { canonical: '/treatments/dental-istanbul' },
@@ -19,7 +20,6 @@ const procedures = [
     slug: '/treatments/dental-implants-turkey',
     price: 'from £350',
     uk: '£1,500 – £3,500',
-    saving: '~75–90%',
     desc: 'Single or multiple tooth replacement using titanium implants. CE-marked systems from Straumann, Nobel Biocare, Osstem.',
   },
   {
@@ -27,15 +27,13 @@ const procedures = [
     slug: null,
     price: 'from £150',
     uk: '£350 – £1,100',
-    saving: '~55–85%',
-    desc: 'Metal-free zirconium crowns for natural aesthetics and durability. Suitable for front and back teeth.',
+    desc: 'Metal-free zirconium crowns, suitable for front and back teeth.',
   },
   {
     name: 'Porcelain Veneers',
     slug: null,
     price: 'from £180 per tooth',
     uk: '£450 – £850',
-    saving: '~60–80%',
     desc: 'Thin porcelain shells bonded to the front surface of teeth to improve colour, shape, and size.',
   },
   {
@@ -43,7 +41,6 @@ const procedures = [
     slug: null,
     price: 'from £1,200',
     uk: null,
-    saving: null,
     desc: 'Comprehensive aesthetic treatment combining veneers, crowns, whitening, and contouring for a full smile makeover.',
   },
   {
@@ -51,7 +48,6 @@ const procedures = [
     slug: null,
     price: 'from £4,500',
     uk: '£9,500 – £20,000 per arch',
-    saving: '~55–75%',
     desc: 'Full arch dental implant-supported fixed bridge for patients with significant tooth loss. All-on-4 or All-on-6 configuration.',
   },
   {
@@ -59,7 +55,6 @@ const procedures = [
     slug: null,
     price: 'from £1,500',
     uk: '£2,500 – £7,000',
-    saving: '~40–75%',
     desc: 'Fixed braces or clear aligner treatment for teeth straightening. Duration depends on complexity of case.',
   },
   {
@@ -67,7 +62,6 @@ const procedures = [
     slug: null,
     price: 'from £100',
     uk: '£400 – £950',
-    saving: '~75–90%',
     desc: 'Endodontic treatment to save infected or damaged teeth. Single or multi-visit depending on case complexity.',
   },
   {
@@ -75,8 +69,7 @@ const procedures = [
     slug: null,
     price: 'from £80',
     uk: '£400 – £1,000',
-    saving: '~80–90%',
-    desc: 'Professional in-clinic whitening for immediate results. Often combined with other cosmetic treatments.',
+    desc: 'Professional in-clinic whitening; results vary. Often combined with other cosmetic treatments.',
   },
 ]
 
@@ -113,57 +106,56 @@ export default function DentalIstanbulPage() {
         body{font-family:'Inter',sans-serif;color:#1a1a1a;background:#fff}
         a{text-decoration:none;color:inherit}
         .inner{max-width:1160px;margin:0 auto;padding:0 2.5rem}
-.nav-links a:hover{color:#085041}
+.nav-links a:hover{color:#0559F0}
         .btn-
-.btn-nav:hover{background:#085041;color:#fff!important}
-        .hero{background:linear-gradient(135deg,#0d3e2c 0%,#0d6b55 50%,#1d9e75 100%);padding:100px 0 80px;position:relative;overflow:hidden}
+.btn-nav:hover{background:#0559F0;color:#fff!important}
+        .hero{background:linear-gradient(135deg,#0A2150 0%,#0438A6 50%,#0559F0 100%);padding:100px 0 80px;position:relative;overflow:hidden}
         .hero::before{content:'';position:absolute;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(52,152,219,.2) 0%,transparent 70%);top:-100px;right:-100px;pointer-events:none}
         .hero-inner{position:relative;z-index:1}
         .breadcrumb{font-size:12px;color:rgba(255,255,255,.5);margin-bottom:1.25rem}
         .breadcrumb a{color:rgba(255,255,255,.5)}
         .breadcrumb span{margin:0 6px}
-        .kicker{font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#aef1d8;margin-bottom:1rem}
+        .kicker{font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#8FD8FF;margin-bottom:1rem}
         h1{font-family:'DM Serif Display',serif;font-size:clamp(34px,4.5vw,56px);line-height:1.1;letter-spacing:-.025em;color:#fff;margin-bottom:1rem;font-weight:400;max-width:700px}
-        h1 em{font-style:italic;color:#aef1d8}
+        h1 em{font-style:italic;color:#8FD8FF}
         .hero-sub{font-size:16px;color:rgba(255,255,255,.72);line-height:1.75;margin-bottom:2rem;font-weight:300;max-width:560px}
         .hero-stats{display:flex;gap:2rem;flex-wrap:wrap;margin-bottom:2rem}
-        .hero-stat-n{font-family:'DM Serif Display',serif;font-size:28px;color:#aef1d8;font-weight:400;line-height:1}
+        .hero-stat-n{font-family:'DM Serif Display',serif;font-size:28px;color:#8FD8FF;font-weight:400;line-height:1}
         .hero-stat-l{font-size:12px;color:rgba(255,255,255,.6);margin-top:3px}
         .hero-actions{display:flex;gap:12px;flex-wrap:wrap}
-        .btn-primary{background:#fff;color:#0d3e2c;border:none;padding:14px 26px;border-radius:10px;font-size:15px;font-weight:600;display:inline-flex;align-items:center;gap:8px;transition:transform .2s,box-shadow .2s;cursor:pointer;font-family:'Inter',sans-serif;box-shadow:0 4px 20px rgba(0,0,0,.2)}
+        .btn-primary{background:#fff;color:#0A2150;border:none;padding:14px 26px;border-radius:10px;font-size:15px;font-weight:600;display:inline-flex;align-items:center;gap:8px;transition:transform .2s,box-shadow .2s;cursor:pointer;font-family:'Inter',sans-serif;box-shadow:0 4px 20px rgba(0,0,0,.2)}
         .btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(0,0,0,.3)}
         .btn-ghost{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.35);padding:14px 26px;border-radius:10px;font-size:15px;display:inline-flex;align-items:center;gap:8px;transition:all .2s;cursor:pointer;font-family:'Inter',sans-serif}
         .btn-ghost:hover{background:rgba(255,255,255,.1)}
         .trust-row{display:flex;gap:1.5rem;flex-wrap:wrap;margin-top:1.5rem}
         .trust-item{display:flex;align-items:center;gap:7px;font-size:12.5px;color:rgba(255,255,255,.75)}
-        .trust-dot{width:7px;height:7px;border-radius:50%;background:#aef1d8;flex-shrink:0}
+        .trust-dot{width:7px;height:7px;border-radius:50%;background:#8FD8FF;flex-shrink:0}
         .sec{padding:5rem 0}
-        .sec.bg{background:#fafaf9}
-        .sec.border{border-top:1px solid #f0ede8;border-bottom:1px solid #f0ede8}
+        .sec.bg{background:#F3F7FE}
+        .sec.border{border-top:1px solid #DCE6F5;border-bottom:1px solid #DCE6F5}
         h2{font-family:'DM Serif Display',serif;font-size:clamp(26px,3vw,38px);font-weight:400;color:#1a1a1a;letter-spacing:-.02em;line-height:1.2;margin-bottom:1rem}
         .proc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:2rem}
-        .proc-card{background:#fff;border:1px solid #f0ede8;border-radius:16px;padding:1.5rem;display:flex;flex-direction:column;transition:transform .25s,box-shadow .25s,border-color .25s}
-        .proc-card:hover{transform:translateY(-3px);box-shadow:0 10px 30px rgba(0,0,0,.08);border-color:#bafde4}
-        .proc-card.featured{border-color:#0d6b55;background:#f0fffa}
+        .proc-card{background:#fff;border:1px solid #DCE6F5;border-radius:16px;padding:1.5rem;display:flex;flex-direction:column;transition:transform .25s,box-shadow .25s,border-color .25s}
+        .proc-card:hover{transform:translateY(-3px);box-shadow:0 10px 30px rgba(0,0,0,.08);border-color:#8FD8FF}
+        .proc-card.featured{border-color:#0438A6;background:#E6EFFE}
         .proc-name{font-size:15px;font-weight:600;color:#1a1a1a;margin-bottom:.4rem}
         .proc-desc{font-size:13px;color:#777;line-height:1.65;font-weight:300;margin-bottom:1rem;flex:1}
-        .proc-footer{display:flex;justify-content:space-between;align-items:center;padding-top:.85rem;border-top:1px solid #f5f4f2;margin-top:auto}
-        .proc-price{font-size:14px;font-weight:600;color:#0d6b55}
+        .proc-footer{display:flex;justify-content:space-between;align-items:center;padding-top:.85rem;border-top:1px solid #F3F7FE;margin-top:auto}
+        .proc-price{font-size:14px;font-weight:600;color:#0438A6}
         .proc-uk{font-size:11px;color:#aaa;margin-top:2px}
-        .proc-saving{font-size:11px;background:#dbfef1;color:#0d3e2c;border-radius:20px;padding:3px 10px;font-weight:600}
-        .proc-link{font-size:12px;color:#0d6b55;font-weight:600;margin-top:.75rem;display:inline-flex;align-items:center;gap:4px}
-        .faq-list{display:flex;flex-direction:column;border:1px solid #f0ede8;border-radius:16px;overflow:hidden;margin-top:2.5rem}
-        .faq-item{border-bottom:1px solid #f0ede8}
+        .proc-link{font-size:12px;color:#0438A6;font-weight:600;margin-top:.75rem;display:inline-flex;align-items:center;gap:4px}
+        .faq-list{display:flex;flex-direction:column;border:1px solid #DCE6F5;border-radius:16px;overflow:hidden;margin-top:2.5rem}
+        .faq-item{border-bottom:1px solid #DCE6F5}
         .faq-item:last-child{border-bottom:none}
         .faq-q{width:100%;text-align:left;padding:1.25rem 1.5rem;background:#fff;border:none;cursor:pointer;font-family:'Inter',sans-serif;font-size:15px;font-weight:500;color:#1a1a1a;display:flex;justify-content:space-between;align-items:center;gap:1rem;transition:background .2s}
-        .faq-q:hover{background:#fafaf9}
+        .faq-q:hover{background:#F3F7FE}
         .faq-a{padding:0 1.5rem 1.25rem;font-size:14px;color:#666;line-height:1.75;font-weight:300}
-        .cta-box{background:linear-gradient(135deg,#0d3e2c,#1d9e75);border-radius:20px;padding:3rem;text-align:center}
+        .cta-box{background:linear-gradient(135deg,#0A2150,#0559F0);border-radius:20px;padding:3rem;text-align:center}
         .cta-box h2{color:#fff;margin-bottom:.75rem}
         .cta-box p{font-size:15px;color:rgba(255,255,255,.65);font-weight:300;line-height:1.7;margin-bottom:2rem;max-width:480px;margin-left:auto;margin-right:auto}
         .cta-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
-        .btn-cta-w{background:#fff;color:#0d3e2c;border:none;padding:14px 28px;border-radius:10px;font-size:15px;font-weight:600;display:inline-flex;align-items:center;gap:8px;cursor:pointer;font-family:'Inter',sans-serif;transition:all .2s}
-        .btn-cta-w:hover{background:#dbfef1}
+        .btn-cta-w{background:#fff;color:#0A2150;border:none;padding:14px 28px;border-radius:10px;font-size:15px;font-weight:600;display:inline-flex;align-items:center;gap:8px;cursor:pointer;font-family:'Inter',sans-serif;transition:all .2s}
+        .btn-cta-w:hover{background:#E6EFFE}
         .btn-cta-o{background:transparent;color:rgba(255,255,255,.75);border:1px solid rgba(255,255,255,.3);padding:14px 28px;border-radius:10px;font-size:15px;display:inline-flex;align-items:center;gap:8px;cursor:pointer;font-family:'Inter',sans-serif;transition:all .2s}
         .btn-cta-o:hover{background:rgba(255,255,255,.1);color:#fff}
         footer{background:#111;padding:3rem 0 2rem}
@@ -203,8 +195,8 @@ export default function DentalIstanbulPage() {
               <div className="hero-stat-l">single implant from</div>
             </div>
             <div className="hero-stat">
-              <div className="hero-stat-n">~75–90%</div>
-              <div className="hero-stat-l">lower than UK private</div>
+              <div className="hero-stat-n">£150</div>
+              <div className="hero-stat-l">zirconium crown from</div>
             </div>
             <div className="hero-stat">
               <div className="hero-stat-n">7–10</div>
@@ -240,7 +232,6 @@ export default function DentalIstanbulPage() {
                     <div className="proc-price">{p.price}</div>
                     {p.uk && <div className="proc-uk">UK: {p.uk}</div>}
                   </div>
-                  {p.saving && <span className="proc-saving">{p.saving}</span>}
                 </div>
                 {p.slug
                   ? <a href={p.slug} className="proc-link">Full treatment guide →</a>
@@ -264,7 +255,7 @@ export default function DentalIstanbulPage() {
               <details key={f.q} className="faq-item">
                 <summary className="faq-q">
                   {f.q}
-                  <span style={{fontSize:'18px',color:'#0d6b55',flexShrink:0}}>+</span>
+                  <span style={{fontSize:'18px',color:'#0438A6',flexShrink:0}}>+</span>
                 </summary>
                 <div className="faq-a">{f.a}</div>
               </details>
@@ -277,7 +268,7 @@ export default function DentalIstanbulPage() {
         <div className="inner">
           <div className="cta-box">
             <h2>Ready to find out what your dental treatment costs?</h2>
-            <p>Tell us what you need — implants, crowns, veneers, or a full smile makeover. Full itemised quote within 48 hours.</p>
+            <p>Tell us what you need — implants, crowns, veneers, or a full smile makeover. We aim to send a full itemised quote within 48 hours.</p>
             <div className="cta-btns">
               <a href={WA_URL} target="_blank" className="btn-cta-w">Get a free quote</a>
               <a href="mailto:info@oceanhealthtravel.com" className="btn-cta-o">Email us</a>
@@ -289,18 +280,7 @@ export default function DentalIstanbulPage() {
       <YourTimeline stay="Typically 7–10 days" />
       <UKPatientInfo current="dental-istanbul" />
       <RelatedTreatments current="dental-istanbul" />
-      <footer>
-        <div className="inner">
-          <div className="footer-legal">
-            © {new Date().getFullYear()} Ocean Health &amp; Travel Ltd · Registered in England &amp; Wales · Company no. 16186647<br />
-            London: 17 Green Lanes, N16 9BS ·{' '}
-            <a href="mailto:info@oceanhealthtravel.com" style={{color:'#555'}}>info@oceanhealthtravel.com</a> ·{' '}
-            <a href="tel:+447441904858" style={{color:'#555'}}>+44 7441 904858</a><br />
-            Flights not included · No coordination fee charged to patients · Coordinator, not a dental provider · Elective procedures only<br />
-            <em>Ocean Health &amp; Travel does not provide dental or medical advice. All clinical decisions rest with your treating dentist. Not suitable for emergencies.</em>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   )
 }

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Nav from '@/app/components/Nav'
 import TreatmentTheme from '@/app/components/TreatmentTheme'
+import Footer from '@/app/components/Footer'
 
 export const metadata: Metadata = {
   alternates: { canonical: '/cookie-policy' },
@@ -18,20 +19,20 @@ export default function CookiePolicy() {
         body{font-family:'Inter',sans-serif;color:#1a1a1a;background:#fff}
         a{text-decoration:none;color:inherit}
         .inner{max-width:1160px;margin:0 auto;padding:0 2.5rem}
-.nav-links a:hover{color:#085041}
+.nav-links a:hover{color:#0559F0}
         .btn-
-.btn-nav:hover{background:#085041;color:#fff!important}
-        .hero{background:#fafaf9;border-bottom:1px solid #f0ede8;padding:60px 0 40px}
-        .kicker{font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#1D9E75;margin-bottom:1rem}
+.btn-nav:hover{background:#0559F0;color:#fff!important}
+        .hero{background:#F3F7FE;border-bottom:1px solid #DCE6F5;padding:60px 0 40px}
+        .kicker{font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#0559F0;margin-bottom:1rem}
         h1{font-family:'DM Serif Display',serif;font-size:clamp(28px,3.5vw,42px);line-height:1.15;letter-spacing:-.02em;color:#1a1a1a;margin-bottom:.75rem;font-weight:400}
-        .updated{font-size:12px;color:#bbb;margin-top:.5rem}
+        .updated{font-size:12px;color:#475569;margin-top:.5rem}
         .content{max-width:760px;margin:0 auto;padding:4rem 2.5rem}
         h2{font-family:'DM Serif Display',serif;font-size:22px;font-weight:400;color:#1a1a1a;letter-spacing:-.01em;margin:2.5rem 0 .75rem}
         h2:first-child{margin-top:0}
         p{font-size:15px;color:#444;line-height:1.85;margin-bottom:1.1rem;font-weight:300}
         table{width:100%;border-collapse:collapse;margin:1.5rem 0;font-size:14px}
-        th{text-align:left;padding:.75rem 1rem;background:#fafaf9;border-bottom:1px solid #f0ede8;font-weight:500;font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:#999}
-        td{padding:.75rem 1rem;border-bottom:1px solid #f5f4f2;color:#444;font-weight:300;line-height:1.6}
+        th{text-align:left;padding:.75rem 1rem;background:#F3F7FE;border-bottom:1px solid #DCE6F5;font-weight:500;font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:#999}
+        td{padding:.75rem 1rem;border-bottom:1px solid #F3F7FE;color:#444;font-weight:300;line-height:1.6}
         tr:last-child td{border-bottom:none}
         footer{background:#111;padding:2rem 0}
         .footer-legal{font-size:11.5px;color:#444;line-height:1.8}
@@ -73,25 +74,16 @@ export default function CookiePolicy() {
         <h2>Managing cookies</h2>
         <p>You can control and delete cookies through your browser settings. Disabling essential cookies may affect the functionality of our website. For guidance on managing cookies in your browser:</p>
         <p>
-          <a href="https://support.google.com/chrome/answer/95647" target="_blank" rel="noopener noreferrer" style={{color:'#085041',fontWeight:500}}>Google Chrome</a> ·{' '}
-          <a href="https://support.mozilla.org/en-US/kb/enable-and-disable-cookies-website-preferences" target="_blank" rel="noopener noreferrer" style={{color:'#085041',fontWeight:500}}>Firefox</a> ·{' '}
-          <a href="https://support.apple.com/en-gb/guide/safari/sfri11471/mac" target="_blank" rel="noopener noreferrer" style={{color:'#085041',fontWeight:500}}>Safari</a>
+          <a href="https://support.google.com/chrome/answer/95647" target="_blank" rel="noopener noreferrer" style={{color:'#0559F0',fontWeight:500}}>Google Chrome</a> ·{' '}
+          <a href="https://support.mozilla.org/en-US/kb/enable-and-disable-cookies-website-preferences" target="_blank" rel="noopener noreferrer" style={{color:'#0559F0',fontWeight:500}}>Firefox</a> ·{' '}
+          <a href="https://support.apple.com/en-gb/guide/safari/sfri11471/mac" target="_blank" rel="noopener noreferrer" style={{color:'#0559F0',fontWeight:500}}>Safari</a>
         </p>
 
         <h2>Contact</h2>
         <p>For questions about our use of cookies:<br />Email: info@oceanhealthtravel.com<br />Ocean Health &amp; Travel Ltd, 17 Green Lanes, London, N16 9BS<br />Company no. 16186647</p>
       </div>
 
-      <footer>
-        <div className="inner">
-          <div className="footer-legal">
-            © {new Date().getFullYear()} Ocean Health &amp; Travel Ltd · Company no. 16186647 ·{' '}
-            <a href="/privacy-policy">Privacy policy</a> ·{' '}
-            <a href="/cookie-policy">Cookie policy</a> ·{' '}
-            <a href="/complaints-policy">Complaints policy</a>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   )
 }

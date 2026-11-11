@@ -4,7 +4,7 @@
 export default function TreatmentTheme() {
   return (
     <style>{`
-      .tp{--bg:#FAF8F4;--band:#F2EEE5;--ink:#12202B;--muted:#5B6770;--line:#E6E0D4;--green:#0B6B55;--green-d:#08503F;--soft:#E3F0EA;background:var(--bg);color:var(--ink);min-height:100vh}
+      .tp{--bg:#FFFFFF;--band:#F3F7FE;--ink:#14213D;--muted:#475569;--line:#DCE6F5;--green:#0559F0;--green-d:#0438A6;--soft:#E6EFFE;background:var(--bg);color:var(--ink);min-height:100vh}
       .tp .inner{max-width:1280px!important}
       .tp .hero{background:var(--bg)!important;padding:72px 0 64px!important;border-bottom:1px solid var(--line)}
       .tp .hero::before,.tp .hero::after{display:none!important}
@@ -34,7 +34,7 @@ export default function TreatmentTheme() {
       .tp .sec.bg{background:var(--band)!important}
       .tp .sec.border{border-top:1px solid var(--line)!important;border-bottom:1px solid var(--line)!important}
       .tp .sec-sub{color:var(--muted)!important;font-weight:400!important}
-      .tp .prose p,.tp .prose ul li{color:#33414B!important;font-weight:400!important}
+      .tp .prose p,.tp .prose ul li{color:#334155!important;font-weight:400!important}
       .tp .prose ul li::before{color:var(--green)!important}
       .tp .sidebar-card{background:#fff!important;border:1px solid var(--line)!important;border-radius:16px!important}
       .tp .sidebar-card.dark{background:var(--ink)!important;border-color:transparent!important}

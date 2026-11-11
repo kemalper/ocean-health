@@ -4,6 +4,7 @@ import TreatmentTheme from '@/app/components/TreatmentTheme'
 import RelatedTreatments from '@/app/components/RelatedTreatments'
 import YourTimeline from '@/app/components/YourTimeline'
 import UKPatientInfo from '@/app/components/UKPatientInfo'
+import Footer from '@/app/components/Footer'
 
 export const metadata: Metadata = {
   alternates: { canonical: '/treatments/lasik-istanbul' },
@@ -16,7 +17,7 @@ const WA_URL = 'https://wa.me/447441904858?text=Hello%2C%20I%27d%20like%20to%20e
 const faqs = [
   {
     q: 'How much does LASIK cost in Istanbul?',
-    a: 'LASIK laser eye surgery in Istanbul starts from £600 per eye, compared to £995–£2,395 per eye at UK private clinics — a saving of roughly 40–75%. The exact price depends on your prescription, the laser platform used, and whether additional procedures such as wavefront-guided or topography-guided LASIK are recommended. A full itemised quote is provided within 48 hours of receiving your pre-operative assessment results.'
+    a: 'LASIK laser eye surgery in Istanbul starts from £600 per eye, compared to £995–£2,395 per eye at UK private clinics. The exact price depends on your prescription, the laser platform used, and whether additional procedures such as wavefront-guided or topography-guided LASIK are recommended. We aim to send a full itemised quote within 48 hours of receiving your pre-operative assessment results.'
   },
   {
     q: 'Am I suitable for LASIK?',
@@ -24,11 +25,11 @@ const faqs = [
   },
   {
     q: 'What is the difference between LASIK, LASEK, and SMILE?',
-    a: 'LASIK involves creating a thin corneal flap before laser reshaping — fastest recovery, most common. LASEK (and PRK) remove the surface epithelium without a flap — slower recovery but suitable for thinner corneas. SMILE (Small Incision Lenticule Extraction) is a newer flapless procedure with a small incision — good for dry eye patients. Your ophthalmologist will recommend the most appropriate procedure based on your pre-operative assessment.'
+    a: 'LASIK involves creating a thin corneal flap before laser reshaping — the most common technique. LASEK (and PRK) remove the surface epithelium without a flap — slower recovery but suitable for thinner corneas. SMILE (Small Incision Lenticule Extraction) is a newer flapless procedure with a small incision — your ophthalmologist will advise whether it is appropriate for you. Your ophthalmologist will recommend the most appropriate procedure based on your pre-operative assessment.'
   },
   {
     q: 'How long does LASIK take and what is the recovery?',
-    a: 'The LASIK procedure itself takes approximately 15 minutes per eye. Most patients notice significantly improved vision within 24 hours. You should avoid driving for at least 24–48 hours post-procedure. Most patients are comfortable flying home 2–3 days after surgery, subject to their surgeon\'s clearance. Full visual stabilisation typically occurs within 1–3 months.'
+    a: 'The LASIK procedure itself takes approximately 15 minutes per eye. Your treating provider will advise on driving, flying home and follow-up. All procedures carry risks; these are discussed by the treating provider.'
   },
   {
     q: 'How long do I need to stay in Istanbul?',
@@ -50,23 +51,23 @@ export default function LasikPage() {
         body{font-family:'Inter',sans-serif;color:#1a1a1a;background:#fff}
         a{text-decoration:none;color:inherit}
         .inner{max-width:1160px;margin:0 auto;padding:0 2.5rem}
-.nav-links a:hover{color:#085041}
+.nav-links a:hover{color:#0559F0}
         .btn-
-.btn-nav:hover{background:#085041;color:#fff!important}
-        .hero{background:linear-gradient(135deg,#0a1a13 0%,#0a2e22 50%,#063d2f 100%);padding:100px 0 80px;position:relative;overflow:hidden}
+.btn-nav:hover{background:#0559F0;color:#fff!important}
+        .hero{background:linear-gradient(135deg,#0A2150 0%,#0A2150 50%,#0A2150 100%);padding:100px 0 80px;position:relative;overflow:hidden}
         .hero::before{content:'';position:absolute;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(100,181,246,.15) 0%,transparent 70%);top:-150px;right:-150px;pointer-events:none}
         .hero::after{content:'';position:absolute;width:300px;height:300px;border-radius:50%;background:radial-gradient(circle,rgba(129,212,250,.08) 0%,transparent 70%);bottom:-50px;left:-50px;pointer-events:none}
         .hero-grid{display:grid;grid-template-columns:1.2fr 0.8fr;gap:3rem;align-items:center;position:relative;z-index:1}
         .breadcrumb{font-size:12px;color:rgba(255,255,255,.5);margin-bottom:1.25rem}
         .breadcrumb a{color:rgba(255,255,255,.5)}
         .breadcrumb span{margin:0 6px}
-        .kicker{font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#90f9d2;margin-bottom:1rem}
+        .kicker{font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#8FD8FF;margin-bottom:1rem}
         h1{font-family:'DM Serif Display',serif;font-size:clamp(34px,4vw,54px);line-height:1.1;letter-spacing:-.025em;color:#fff;margin-bottom:1rem;font-weight:400}
-        h1 em{font-style:italic;color:#90f9d2}
+        h1 em{font-style:italic;color:#8FD8FF}
         .hero-sub{font-size:16px;color:rgba(255,255,255,.72);line-height:1.75;margin-bottom:2rem;font-weight:300;max-width:500px}
         .hero-actions{display:flex;gap:12px;flex-wrap:wrap}
-        .btn-primary{background:#90f9d2;color:#0a2e22;border:none;padding:14px 26px;border-radius:10px;font-size:15px;font-weight:600;display:inline-flex;align-items:center;gap:8px;transition:transform .2s,box-shadow .2s;cursor:pointer;font-family:'Inter',sans-serif;box-shadow:0 4px 20px rgba(0,0,0,.2)}
-        .btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(0,0,0,.3);background:#bbfbe4}
+        .btn-primary{background:#8FD8FF;color:#0A2150;border:none;padding:14px 26px;border-radius:10px;font-size:15px;font-weight:600;display:inline-flex;align-items:center;gap:8px;transition:transform .2s,box-shadow .2s;cursor:pointer;font-family:'Inter',sans-serif;box-shadow:0 4px 20px rgba(0,0,0,.2)}
+        .btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(0,0,0,.3);background:#8FD8FF}
         .btn-ghost{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.35);padding:14px 26px;border-radius:10px;font-size:15px;display:inline-flex;align-items:center;gap:8px;transition:all .2s;cursor:pointer;font-family:'Inter',sans-serif}
         .btn-ghost:hover{background:rgba(255,255,255,.1)}
         .hero-card{background:rgba(255,255,255,.08);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.12);border-radius:20px;padding:1.75rem}
@@ -74,13 +75,13 @@ export default function LasikPage() {
         .price-row:last-child{border-bottom:none}
         .price-label{font-size:13px;color:rgba(255,255,255,.55)}
         .price-val{font-family:'DM Serif Display',serif;font-size:22px;color:#fff;font-weight:400}
-        .price-val.accent{color:#90f9d2}
+        .price-val.accent{color:#8FD8FF}
         .trust-row{display:flex;gap:1.5rem;flex-wrap:wrap;margin-top:1.5rem}
         .trust-item{display:flex;align-items:center;gap:7px;font-size:12.5px;color:rgba(255,255,255,.75)}
-        .trust-dot{width:7px;height:7px;border-radius:50%;background:#90f9d2;flex-shrink:0}
+        .trust-dot{width:7px;height:7px;border-radius:50%;background:#8FD8FF;flex-shrink:0}
         .sec{padding:5rem 0}
-        .sec.bg{background:#fafaf9}
-        .sec.border{border-top:1px solid #f0ede8;border-bottom:1px solid #f0ede8}
+        .sec.bg{background:#F3F7FE}
+        .sec.border{border-top:1px solid #DCE6F5;border-bottom:1px solid #DCE6F5}
         h2{font-family:'DM Serif Display',serif;font-size:clamp(26px,3vw,38px);font-weight:400;color:#1a1a1a;letter-spacing:-.02em;line-height:1.2;margin-bottom:1rem}
         h3{font-family:'DM Serif Display',serif;font-size:22px;font-weight:400;color:#1a1a1a;letter-spacing:-.01em;margin-bottom:.75rem}
         .content-grid{display:grid;grid-template-columns:1fr 340px;gap:3rem;align-items:start}
@@ -88,48 +89,47 @@ export default function LasikPage() {
         .prose h3{margin-top:2rem;margin-bottom:.75rem}
         .prose ul{list-style:none;padding:0;margin-bottom:1.25rem}
         .prose ul li{font-size:15px;color:#444;line-height:1.8;padding-left:16px;position:relative;font-weight:300}
-        .prose ul li::before{content:'·';position:absolute;left:0;color:#0d6b55;font-weight:700;font-size:18px}
+        .prose ul li::before{content:'·';position:absolute;left:0;color:#0438A6;font-weight:700;font-size:18px}
         .procedure-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:1.5rem 0}
-        .procedure-card{background:#fafaf9;border:1px solid #f0ede8;border-radius:12px;padding:1.25rem}
-        .procedure-tag{display:inline-block;font-size:10px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;background:#e3fdf3;color:#08533f;border-radius:4px;padding:2px 8px;margin-bottom:.75rem}
+        .procedure-card{background:#F3F7FE;border:1px solid #DCE6F5;border-radius:12px;padding:1.25rem}
+        .procedure-tag{display:inline-block;font-size:10px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;background:#E6EFFE;color:#0438A6;border-radius:4px;padding:2px 8px;margin-bottom:.75rem}
         .procedure-card h4{font-size:14px;font-weight:600;color:#1a1a1a;margin-bottom:.5rem}
         .procedure-card p{font-size:12.5px;color:#666;line-height:1.65;font-weight:300;margin:0}
-        .compare-table{width:100%;border-collapse:collapse;margin:1.5rem 0;border:1px solid #f0ede8;border-radius:12px;overflow:hidden}
-        .compare-table th{font-size:11px;text-transform:uppercase;letter-spacing:.07em;color:#bbb;font-weight:500;padding:.85rem 1rem;text-align:left;background:#fafaf9;border-bottom:1px solid #f0ede8}
-        .compare-table td{padding:.85rem 1rem;border-bottom:1px solid #fafaf9;font-size:14px;color:#1a1a1a}
+        .compare-table{width:100%;border-collapse:collapse;margin:1.5rem 0;border:1px solid #DCE6F5;border-radius:12px;overflow:hidden}
+        .compare-table th{font-size:11px;text-transform:uppercase;letter-spacing:.07em;color:#bbb;font-weight:500;padding:.85rem 1rem;text-align:left;background:#F3F7FE;border-bottom:1px solid #DCE6F5}
+        .compare-table td{padding:.85rem 1rem;border-bottom:1px solid #F3F7FE;font-size:14px;color:#1a1a1a}
         .compare-table tr:last-child td{border-bottom:none}
-        .td-ist{color:#08533f;font-weight:600}
+        .td-ist{color:#0438A6;font-weight:600}
         .td-uk{color:#aaa}
-        .saving{background:#e3fdf3;color:#08533f;font-weight:600;border-radius:20px;padding:3px 10px;font-size:12px;white-space:nowrap;display:inline-block}
-        .disclaimer{background:#e8f8f2;border:1px solid #b3f5dd;border-radius:12px;padding:1.25rem 1.5rem;font-size:13px;color:#08533f;line-height:1.75;margin-top:1.5rem}
+        .disclaimer{background:#E6EFFE;border:1px solid #8FD8FF;border-radius:12px;padding:1.25rem 1.5rem;font-size:13px;color:#0438A6;line-height:1.75;margin-top:1.5rem}
         .sidebar{position:sticky;top:80px}
-        .sidebar-card{background:#fff;border:1px solid #f0ede8;border-radius:16px;padding:1.75rem;margin-bottom:1rem}
-        .sidebar-card.dark{background:linear-gradient(135deg,#0a1a13,#0a2e22);border-color:transparent}
+        .sidebar-card{background:#fff;border:1px solid #DCE6F5;border-radius:16px;padding:1.75rem;margin-bottom:1rem}
+        .sidebar-card.dark{background:linear-gradient(135deg,#0A2150,#0A2150);border-color:transparent}
         .sidebar-title{font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:#bbb;margin-bottom:1.25rem}
         .sidebar-card.dark .sidebar-title{color:rgba(255,255,255,.45)}
-        .sidebar-price-row{display:flex;justify-content:space-between;align-items:baseline;padding:.6rem 0;border-bottom:1px solid #f5f4f2}
+        .sidebar-price-row{display:flex;justify-content:space-between;align-items:baseline;padding:.6rem 0;border-bottom:1px solid #F3F7FE}
         .sidebar-price-row:last-of-type{border-bottom:none}
         .sidebar-price-label{font-size:13px;color:#777}
-        .sidebar-price-val{font-size:15px;font-weight:600;color:#08533f}
+        .sidebar-price-val{font-size:15px;font-weight:600;color:#0438A6}
         .sidebar-price-val.uk{color:#aaa;font-weight:400}
         .btn-full{width:100%;padding:14px;border-radius:10px;font-size:15px;font-weight:600;display:flex;align-items:center;justify-content:center;gap:8px;cursor:pointer;font-family:'Inter',sans-serif;transition:all .2s;margin-top:1rem;border:none}
-        .btn-full.blue{background:#085041;color:#fff}
-        .btn-full.blue:hover{background:#08533f}
+        .btn-full.blue{background:#0559F0;color:#fff}
+        .btn-full.blue:hover{background:#0438A6}
         .btn-full.outline{background:rgba(255,255,255,.08);color:#fff;border:1px solid rgba(255,255,255,.2)}
-        .check-item{display:flex;align-items:flex-start;gap:8px;padding:.5rem 0;border-bottom:1px solid #f5f4f2}
+        .check-item{display:flex;align-items:flex-start;gap:8px;padding:.5rem 0;border-bottom:1px solid #F3F7FE}
         .check-item:last-child{border-bottom:none}
-        .check-dot{width:6px;height:6px;border-radius:50%;background:#085041;flex-shrink:0;margin-top:6px}
+        .check-dot{width:6px;height:6px;border-radius:50%;background:#0559F0;flex-shrink:0;margin-top:6px}
         .process-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:0;position:relative;margin-top:2.5rem}
-        .process-grid::before{content:'';position:absolute;top:22px;left:10%;right:10%;height:1px;background:linear-gradient(90deg,transparent,#bbfbe4 20%,#bbfbe4 80%,transparent)}
+        .process-grid::before{content:'';position:absolute;top:22px;left:10%;right:10%;height:1px;background:linear-gradient(90deg,transparent,#8FD8FF 20%,#8FD8FF 80%,transparent)}
         .proc-step{text-align:center;padding:0 .5rem;position:relative;z-index:1}
-        .proc-circle{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#0a1a13,#085041);display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;font-size:15px;font-weight:600;color:#90f9d2;box-shadow:0 4px 14px rgba(21,101,192,.3)}
+        .proc-circle{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#0A2150,#0559F0);display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;font-size:15px;font-weight:600;color:#8FD8FF;box-shadow:0 4px 14px rgba(21,101,192,.3)}
         .proc-t{font-size:13px;font-weight:600;margin-bottom:.3rem}
         .proc-d{font-size:11px;color:#888;line-height:1.5}
-        .faq-list{display:flex;flex-direction:column;border:1px solid #f0ede8;border-radius:16px;overflow:hidden;margin-top:2.5rem}
-        .faq-item{border-bottom:1px solid #f0ede8}
+        .faq-list{display:flex;flex-direction:column;border:1px solid #DCE6F5;border-radius:16px;overflow:hidden;margin-top:2.5rem}
+        .faq-item{border-bottom:1px solid #DCE6F5}
         .faq-item:last-child{border-bottom:none}
         .faq-q{width:100%;text-align:left;padding:1.25rem 1.5rem;background:#fff;border:none;cursor:pointer;font-family:'Inter',sans-serif;font-size:15px;font-weight:500;color:#1a1a1a;display:flex;justify-content:space-between;align-items:center;gap:1rem;transition:background .2s}
-        .faq-q:hover{background:#fafaf9}
+        .faq-q:hover{background:#F3F7FE}
         .faq-a{padding:0 1.5rem 1.25rem;font-size:14px;color:#666;line-height:1.75;font-weight:300}
         footer{background:#111;padding:3rem 0 2rem}
         .footer-legal{font-size:11.5px;color:#444;line-height:1.8}
@@ -190,12 +190,6 @@ export default function LasikPage() {
               </div>
               <div className="price-row">
                 <div>
-                  <div className="price-label">Typical saving</div>
-                  <div className="price-val accent">60 – 75%</div>
-                </div>
-              </div>
-              <div className="price-row">
-                <div>
                   <div className="price-label">Procedure time</div>
                   <div className="price-val" style={{fontSize:'17px'}}>~15 min per eye</div>
                 </div>
@@ -217,7 +211,7 @@ export default function LasikPage() {
             <div className="prose">
               <h2>LASIK eye surgery in Istanbul — what to expect</h2>
               <p>
-                LASIK (Laser-Assisted In Situ Keratomileusis) is the world&apos;s most commonly performed elective surgical procedure, offering permanent correction of myopia (short-sightedness), hyperopia (long-sightedness), and astigmatism. Istanbul&apos;s ophthalmology centres use modern laser platforms, typically at lower cost than UK private clinics.
+                LASIK (Laser-Assisted In Situ Keratomileusis) is one of the most commonly performed elective procedures. It is laser treatment intended to correct refractive error; suitability and expected results are assessed by the treating ophthalmologist. Istanbul&apos;s ophthalmology centres use modern laser platforms, typically at lower cost than UK private clinics.
               </p>
               <p>
                 Ocean Health &amp; Travel coordinates LASIK and related laser eye procedures at JCI-accredited ophthalmology centres in Istanbul. We are a coordination service — not a medical provider. All clinical decisions, including suitability assessment and procedure selection, rest with your treating ophthalmologist.
@@ -228,17 +222,17 @@ export default function LasikPage() {
                 <div className="procedure-card">
                   <div className="procedure-tag">LASIK</div>
                   <h4>Most common</h4>
-                  <p>Corneal flap created, laser reshapes tissue underneath. Fast recovery — improved vision within 24h. Suitable for most prescriptions.</p>
+                  <p>Corneal flap created, laser reshapes tissue underneath. Recovery times vary; the treating provider will advise. Suitability is assessed by your ophthalmologist.</p>
                 </div>
                 <div className="procedure-card">
                   <div className="procedure-tag">LASEK / PRK</div>
                   <h4>No flap</h4>
-                  <p>Surface epithelium removed, laser applied directly. Slower recovery (3–7 days). Better for thin corneas or active lifestyles.</p>
+                  <p>Surface epithelium removed, laser applied directly. Recovery times vary; the treating provider will advise. May be considered for thinner corneas or active lifestyles.</p>
                 </div>
                 <div className="procedure-card">
                   <div className="procedure-tag">SMILE</div>
                   <h4>Flapless</h4>
-                  <p>Small incision, lenticule extracted. Minimal dry eye risk. Good for high myopia. Newer technique with growing evidence base.</p>
+                  <p>Small incision, lenticule extracted. Newer technique; your ophthalmologist will advise whether it is appropriate for you.</p>
                 </div>
               </div>
               <p>
@@ -248,35 +242,30 @@ export default function LasikPage() {
               <h3>Price comparison — laser eye surgery</h3>
               <table className="compare-table">
                 <thead>
-                  <tr><th>Procedure</th><th>UK private (per eye)</th><th>Istanbul (OHT)</th><th>Saving</th></tr>
+                  <tr><th>Procedure</th><th>UK private (per eye)</th><th>Istanbul (OHT)</th></tr>
                 </thead>
                 <tbody>
                   {[
-                    ['LASIK','£995 – £2,395','from £600','~40–75%'],
-                    ['LASEK / PRK','£995 – £1,800','from £500','~50–70%'],
-                    ['SMILE','£1,500 – £2,950','from £800','~45–70%'],
-                    ['Cataract surgery','£2,000 – £3,500','from £800','~65%'],
-                    ['Premium lens replacement','£3,000 – £5,000','from £1,200','~65%'],
+                    ['LASIK','£995 – £2,395','from £600'],
+                    ['LASEK / PRK','£995 – £1,800','from £500'],
+                    ['SMILE','£1,500 – £2,950','from £800'],
+                    ['Cataract surgery','£2,000 – £3,500','from £800'],
+                    ['Premium lens replacement','£3,000 – £5,000','from £1,200'],
                   ].map(row => (
                     <tr key={row[0]}>
                       <td>{row[0]}</td>
                       <td className="td-uk">{row[1]}</td>
                       <td className="td-ist">{row[2]}</td>
-                      <td><span className="saving">{row[3]}</span></td>
                     </tr>
                   ))}
                 </tbody>
               </table>
               <p style={{fontSize:'12px',color:'#bbb',marginTop:'-.5rem',marginBottom:'1.5rem'}}>Prices per eye. No coordination fee is charged to patients. Flights not included.</p>
 
-              <h3>Recovery timeline</h3>
-              <ul>
-                <li><strong>Day of procedure:</strong> Rest advised, vision may be blurry or hazy</li>
-                <li><strong>24 hours:</strong> Most LASIK patients notice significant improvement</li>
-                <li><strong>48–72 hours:</strong> Comfortable to fly home (subject to surgeon clearance)</li>
-                <li><strong>1 week:</strong> Return to most normal activities</li>
-                <li><strong>1–3 months:</strong> Full visual stabilisation</li>
-              </ul>
+              <h3>Recovery</h3>
+              <p>
+                Recovery times vary; the treating provider will advise on driving, flying home and follow-up. All procedures carry risks; these are discussed by the treating provider.
+              </p>
 
               <h3>Why Istanbul for laser eye surgery?</h3>
               <ul>
@@ -296,7 +285,7 @@ export default function LasikPage() {
               <div className="sidebar-card dark">
                 <div className="sidebar-title">Get a free quote</div>
                 <p style={{fontSize:'14px',color:'rgba(255,255,255,.65)',lineHeight:1.65,marginBottom:'1.25rem',fontWeight:300}}>
-                  Tell us your prescription and we&apos;ll provide a full quote within 48 hours — no obligation.
+                  Tell us your prescription and we aim to send a full quote within 48 hours — no obligation.
                 </p>
                 <a href={WA_URL} target="_blank" className="btn-full blue">WhatsApp us</a>
                 <a href="mailto:info@oceanhealthtravel.com" className="btn-full outline" style={{marginTop:'8px'}}>Email us</a>
@@ -315,10 +304,6 @@ export default function LasikPage() {
                 <div className="sidebar-price-row">
                   <span className="sidebar-price-label">SMILE (Istanbul)</span>
                   <span className="sidebar-price-val">from £800/eye</span>
-                </div>
-                <div className="sidebar-price-row">
-                  <span className="sidebar-price-label">Typical saving</span>
-                  <span className="sidebar-price-val">60 – 75%</span>
                 </div>
                 <div className="sidebar-price-row">
                   <span className="sidebar-price-label">Istanbul stay</span>
@@ -349,7 +334,7 @@ export default function LasikPage() {
           <div className="process-grid">
             {[
               {n:'1',t:'Enquiry',d:'Tell us your prescription and contact us via WhatsApp'},
-              {n:'2',t:'Quote',d:'Full itemised proposal within 48 hours'},
+              {n:'2',t:'Quote',d:'We aim to send a full itemised proposal within 48 hours'},
               {n:'3',t:'Assessment',d:'Pre-operative corneal mapping at partner clinic'},
               {n:'4',t:'Procedure',d:'LASIK, SMILE, or LASEK — interpreter present'},
               {n:'5',t:'Home',d:'Post-op check, documentation provided, fly home'},
@@ -373,7 +358,7 @@ export default function LasikPage() {
               <details key={f.q} className="faq-item">
                 <summary className="faq-q">
                   {f.q}
-                  <span style={{fontSize:'18px',color:'#085041',flexShrink:0}}>+</span>
+                  <span style={{fontSize:'18px',color:'#0559F0',flexShrink:0}}>+</span>
                 </summary>
                 <div className="faq-a">{f.a}</div>
               </details>
@@ -387,13 +372,13 @@ export default function LasikPage() {
           <div className="kicker">Get started</div>
           <h2>Ready to find out if LASIK is right for you?</h2>
           <p style={{fontSize:'16px',color:'#666',lineHeight:1.7,fontWeight:300,maxWidth:'500px',margin:'0 auto 2rem'}}>
-            Tell us your prescription. Full itemised quote within 48 hours — no obligation.
+            Tell us your prescription. We aim to send a full itemised quote within 48 hours — no obligation.
           </p>
           <div style={{display:'flex',gap:'14px',justifyContent:'center',flexWrap:'wrap'}}>
-            <a href={WA_URL} target="_blank" style={{background:'#085041',color:'#fff',border:'none',padding:'15px 30px',borderRadius:'10px',fontSize:'15px',fontWeight:600,display:'inline-flex',alignItems:'center',gap:'9px',cursor:'pointer',fontFamily:'Inter,sans-serif'}}>
+            <a href={WA_URL} target="_blank" style={{background:'#0559F0',color:'#fff',border:'none',padding:'15px 30px',borderRadius:'10px',fontSize:'15px',fontWeight:600,display:'inline-flex',alignItems:'center',gap:'9px',cursor:'pointer',fontFamily:'Inter,sans-serif'}}>
               Get a free quote
             </a>
-            <a href="mailto:info@oceanhealthtravel.com" style={{background:'transparent',color:'#085041',border:'1px solid #085041',padding:'15px 30px',borderRadius:'10px',fontSize:'15px',display:'inline-flex',alignItems:'center',gap:'9px',cursor:'pointer',fontFamily:'Inter,sans-serif'}}>
+            <a href="mailto:info@oceanhealthtravel.com" style={{background:'transparent',color:'#0559F0',border:'1px solid #0559F0',padding:'15px 30px',borderRadius:'10px',fontSize:'15px',display:'inline-flex',alignItems:'center',gap:'9px',cursor:'pointer',fontFamily:'Inter,sans-serif'}}>
               Email us
             </a>
           </div>
@@ -403,18 +388,7 @@ export default function LasikPage() {
       <YourTimeline stay="3–5 days" />
       <UKPatientInfo current="lasik-istanbul" />
       <RelatedTreatments current="lasik-istanbul" />
-      <footer>
-        <div className="inner">
-          <div className="footer-legal">
-            © {new Date().getFullYear()} Ocean Health &amp; Travel Ltd · Registered in England &amp; Wales · Company no. 16186647<br />
-            London: 17 Green Lanes, N16 9BS ·{' '}
-            <a href="mailto:info@oceanhealthtravel.com" style={{color:'#555'}}>info@oceanhealthtravel.com</a> ·{' '}
-            <a href="tel:+447441904858" style={{color:'#555'}}>+44 7441 904858</a><br />
-            Flights not included · No coordination fee charged to patients · Coordinator, not a medical provider · Elective procedures only<br />
-            <em>Ocean Health &amp; Travel does not provide medical advice. All clinical decisions rest with your treating ophthalmologist. Not suitable for emergencies.</em>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   )
 }

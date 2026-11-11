@@ -4,6 +4,7 @@ import TreatmentTheme from '@/app/components/TreatmentTheme'
 import RelatedTreatments from '@/app/components/RelatedTreatments'
 import YourTimeline from '@/app/components/YourTimeline'
 import UKPatientInfo from '@/app/components/UKPatientInfo'
+import Footer from '@/app/components/Footer'
 
 export const metadata: Metadata = {
   alternates: { canonical: '/treatments/knee-replacement-turkey' },
@@ -16,7 +17,7 @@ const WA_URL = 'https://wa.me/447441904858?text=Hello%2C%20I%27d%20like%20to%20e
 const faqs = [
   {
     q: 'How much does knee replacement cost in Turkey?',
-    a: 'Knee replacement surgery in Istanbul starts from £3,500, compared to £10,000–£17,000 at UK private orthopaedic centres. The price includes surgeon fee, anaesthesia, implant, hospital stay, and standard post-operative care. Airport transfer, hotel, and interpreter are included in every package. An itemised quote is provided within 48 hours of receiving your clinical documentation.'
+    a: 'Knee replacement surgery in Istanbul starts from £3,500, compared to £10,000–£17,000 at UK private orthopaedic centres. The price includes surgeon fee, anaesthesia, implant, hospital stay, and standard post-operative care. Airport transfer, hotel, and interpreter are included in every package. We aim to send an itemised quote within 48 hours of receiving your clinical documentation.'
   },
   {
     q: 'How quickly can I have knee replacement surgery?',
@@ -50,22 +51,22 @@ export default function KneeReplacementPage() {
         body{font-family:'Inter',sans-serif;color:#1a1a1a;background:#fff}
         a{text-decoration:none;color:inherit}
         .inner{max-width:1160px;margin:0 auto;padding:0 2.5rem}
-.nav-links a:hover{color:#085041}
+.nav-links a:hover{color:#0559F0}
         .btn-
-.btn-nav:hover{background:#085041;color:#fff!important}
-        .hero{background:linear-gradient(135deg,#0a1a13 0%,#0a2e22 50%,#063d2f 100%);padding:100px 0 80px;position:relative;overflow:hidden}
+.btn-nav:hover{background:#0559F0;color:#fff!important}
+        .hero{background:linear-gradient(135deg,#0A2150 0%,#0A2150 50%,#0A2150 100%);padding:100px 0 80px;position:relative;overflow:hidden}
         .hero::before{content:'';position:absolute;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(253,203,110,.1) 0%,transparent 70%);top:-100px;right:-100px;pointer-events:none}
         .hero-grid{display:grid;grid-template-columns:1.2fr 0.8fr;gap:3rem;align-items:center;position:relative;z-index:1}
         .breadcrumb{font-size:12px;color:rgba(255,255,255,.5);margin-bottom:1.25rem}
         .breadcrumb a{color:rgba(255,255,255,.5)}
         .breadcrumb span{margin:0 6px}
-        .kicker{font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#6ee7b7;margin-bottom:1rem}
+        .kicker{font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#8FD8FF;margin-bottom:1rem}
         h1{font-family:'DM Serif Display',serif;font-size:clamp(34px,4vw,54px);line-height:1.1;letter-spacing:-.025em;color:#fff;margin-bottom:1rem;font-weight:400}
-        h1 em{font-style:italic;color:#6ee7b7}
+        h1 em{font-style:italic;color:#8FD8FF}
         .hero-sub{font-size:16px;color:rgba(255,255,255,.72);line-height:1.75;margin-bottom:2rem;font-weight:300;max-width:500px}
         .nhs-callout{background:rgba(220,38,38,.15);border:1px solid rgba(220,38,38,.3);border-radius:10px;padding:1rem 1.25rem;font-size:13px;color:#fca5a5;line-height:1.65;margin-bottom:2rem}
         .hero-actions{display:flex;gap:12px;flex-wrap:wrap}
-        .btn-primary{background:#085041;color:#fff;border:none;padding:14px 26px;border-radius:10px;font-size:15px;font-weight:600;display:inline-flex;align-items:center;gap:8px;transition:transform .2s,box-shadow .2s;cursor:pointer;font-family:'Inter',sans-serif;box-shadow:0 4px 20px rgba(0,0,0,.2)}
+        .btn-primary{background:#0559F0;color:#fff;border:none;padding:14px 26px;border-radius:10px;font-size:15px;font-weight:600;display:inline-flex;align-items:center;gap:8px;transition:transform .2s,box-shadow .2s;cursor:pointer;font-family:'Inter',sans-serif;box-shadow:0 4px 20px rgba(0,0,0,.2)}
         .btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(0,0,0,.3)}
         .btn-ghost{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.35);padding:14px 26px;border-radius:10px;font-size:15px;display:inline-flex;align-items:center;gap:8px;transition:all .2s;cursor:pointer;font-family:'Inter',sans-serif}
         .btn-ghost:hover{background:rgba(255,255,255,.1)}
@@ -74,13 +75,13 @@ export default function KneeReplacementPage() {
         .price-row:last-child{border-bottom:none}
         .price-label{font-size:13px;color:rgba(255,255,255,.55)}
         .price-val{font-family:'DM Serif Display',serif;font-size:22px;color:#fff;font-weight:400}
-        .price-val.accent{color:#6ee7b7}
+        .price-val.accent{color:#8FD8FF}
         .trust-row{display:flex;gap:1.5rem;flex-wrap:wrap;margin-top:1.5rem}
         .trust-item{display:flex;align-items:center;gap:7px;font-size:12.5px;color:rgba(255,255,255,.75)}
-        .trust-dot{width:7px;height:7px;border-radius:50%;background:#6ee7b7;flex-shrink:0}
+        .trust-dot{width:7px;height:7px;border-radius:50%;background:#8FD8FF;flex-shrink:0}
         .sec{padding:5rem 0}
-        .sec.bg{background:#fafaf9}
-        .sec.border{border-top:1px solid #f0ede8;border-bottom:1px solid #f0ede8}
+        .sec.bg{background:#F3F7FE}
+        .sec.border{border-top:1px solid #DCE6F5;border-bottom:1px solid #DCE6F5}
         h2{font-family:'DM Serif Display',serif;font-size:clamp(26px,3vw,38px);font-weight:400;color:#1a1a1a;letter-spacing:-.02em;line-height:1.2;margin-bottom:1rem}
         h3{font-family:'DM Serif Display',serif;font-size:22px;font-weight:400;color:#1a1a1a;letter-spacing:-.01em;margin-bottom:.75rem}
         .content-grid{display:grid;grid-template-columns:1fr 340px;gap:3rem;align-items:start}
@@ -88,44 +89,43 @@ export default function KneeReplacementPage() {
         .prose h3{margin-top:2rem;margin-bottom:.75rem}
         .prose ul{list-style:none;padding:0;margin-bottom:1.25rem}
         .prose ul li{font-size:15px;color:#444;line-height:1.8;padding-left:16px;position:relative;font-weight:300}
-        .prose ul li::before{content:'·';position:absolute;left:0;color:#1d9e75;font-weight:700;font-size:18px}
-        .compare-box{background:#fafaf9;border:1px solid #f0ede8;border-radius:12px;overflow:hidden;margin:1.5rem 0}
+        .prose ul li::before{content:'·';position:absolute;left:0;color:#0559F0;font-weight:700;font-size:18px}
+        .compare-box{background:#F3F7FE;border:1px solid #DCE6F5;border-radius:12px;overflow:hidden;margin:1.5rem 0}
         .compare-table{width:100%;border-collapse:collapse}
-        .compare-table th{font-size:11px;text-transform:uppercase;letter-spacing:.07em;color:#bbb;font-weight:500;padding:.85rem 1rem;text-align:left;border-bottom:1px solid #f0ede8;background:#fff}
-        .compare-table td{padding:.85rem 1rem;border-bottom:1px solid #fafaf9;font-size:14px;color:#1a1a1a}
+        .compare-table th{font-size:11px;text-transform:uppercase;letter-spacing:.07em;color:#bbb;font-weight:500;padding:.85rem 1rem;text-align:left;border-bottom:1px solid #DCE6F5;background:#fff}
+        .compare-table td{padding:.85rem 1rem;border-bottom:1px solid #F3F7FE;font-size:14px;color:#1a1a1a}
         .compare-table tr:last-child td{border-bottom:none}
         .td-oht{color:#2d3436;font-weight:600}
         .td-nhs{color:#aaa}
-        .saving{background:#c6f0de;color:#085041;font-weight:600;border-radius:20px;padding:3px 10px;font-size:12px;white-space:nowrap;display:inline-block}
         .disclaimer{background:#f8f7f4;border:1px solid #e4e1db;border-radius:12px;padding:1.25rem 1.5rem;font-size:13px;color:#666;line-height:1.75;margin-top:1.5rem}
         .sidebar{position:sticky;top:80px}
-        .sidebar-card{background:#fff;border:1px solid #f0ede8;border-radius:16px;padding:1.75rem;margin-bottom:1rem}
-        .sidebar-card.dark{background:linear-gradient(135deg,#0a1a13,#0a2e22);border-color:transparent}
+        .sidebar-card{background:#fff;border:1px solid #DCE6F5;border-radius:16px;padding:1.75rem;margin-bottom:1rem}
+        .sidebar-card.dark{background:linear-gradient(135deg,#0A2150,#0A2150);border-color:transparent}
         .sidebar-title{font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:#bbb;margin-bottom:1.25rem}
         .sidebar-card.dark .sidebar-title{color:rgba(255,255,255,.45)}
-        .sidebar-price-row{display:flex;justify-content:space-between;align-items:baseline;padding:.6rem 0;border-bottom:1px solid #f5f4f2}
+        .sidebar-price-row{display:flex;justify-content:space-between;align-items:baseline;padding:.6rem 0;border-bottom:1px solid #F3F7FE}
         .sidebar-price-row:last-of-type{border-bottom:none}
         .sidebar-price-label{font-size:13px;color:#777}
         .sidebar-price-val{font-size:15px;font-weight:600;color:#2d3436}
         .sidebar-price-val.uk{color:#aaa;font-weight:400}
         .btn-full{width:100%;padding:14px;border-radius:10px;font-size:15px;font-weight:600;display:flex;align-items:center;justify-content:center;gap:8px;cursor:pointer;font-family:'Inter',sans-serif;transition:all .2s;margin-top:1rem;border:none}
-        .btn-full.amber{background:#085041;color:#fff}
-        .btn-full.amber:hover{background:#0d6b55}
+        .btn-full.amber{background:#0559F0;color:#fff}
+        .btn-full.amber:hover{background:#0438A6}
         .btn-full.outline{background:rgba(255,255,255,.08);color:#fff;border:1px solid rgba(255,255,255,.2)}
-        .check-item{display:flex;align-items:flex-start;gap:8px;padding:.5rem 0;border-bottom:1px solid #f5f4f2}
+        .check-item{display:flex;align-items:flex-start;gap:8px;padding:.5rem 0;border-bottom:1px solid #F3F7FE}
         .check-item:last-child{border-bottom:none}
-        .check-dot{width:6px;height:6px;border-radius:50%;background:#1d9e75;flex-shrink:0;margin-top:6px}
+        .check-dot{width:6px;height:6px;border-radius:50%;background:#0559F0;flex-shrink:0;margin-top:6px}
         .process-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:0;position:relative;margin-top:2.5rem}
-        .process-grid::before{content:'';position:absolute;top:22px;left:10%;right:10%;height:1px;background:linear-gradient(90deg,transparent,#c6f0de 20%,#c6f0de 80%,transparent)}
+        .process-grid::before{content:'';position:absolute;top:22px;left:10%;right:10%;height:1px;background:linear-gradient(90deg,transparent,#CFE0FC 20%,#CFE0FC 80%,transparent)}
         .proc-step{text-align:center;padding:0 .5rem;position:relative;z-index:1}
-        .proc-circle{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#0a2e22,#063d2f);display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;font-size:15px;font-weight:600;color:#6ee7b7;box-shadow:0 4px 14px rgba(0,0,0,.3)}
+        .proc-circle{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#0A2150,#0A2150);display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;font-size:15px;font-weight:600;color:#8FD8FF;box-shadow:0 4px 14px rgba(0,0,0,.3)}
         .proc-t{font-size:13px;font-weight:600;margin-bottom:.3rem}
         .proc-d{font-size:11px;color:#888;line-height:1.5}
-        .faq-list{display:flex;flex-direction:column;border:1px solid #f0ede8;border-radius:16px;overflow:hidden;margin-top:2.5rem}
-        .faq-item{border-bottom:1px solid #f0ede8}
+        .faq-list{display:flex;flex-direction:column;border:1px solid #DCE6F5;border-radius:16px;overflow:hidden;margin-top:2.5rem}
+        .faq-item{border-bottom:1px solid #DCE6F5}
         .faq-item:last-child{border-bottom:none}
         .faq-q{width:100%;text-align:left;padding:1.25rem 1.5rem;background:#fff;border:none;cursor:pointer;font-family:'Inter',sans-serif;font-size:15px;font-weight:500;color:#1a1a1a;display:flex;justify-content:space-between;align-items:center;gap:1rem;transition:background .2s}
-        .faq-q:hover{background:#fafaf9}
+        .faq-q:hover{background:#F3F7FE}
         .faq-a{padding:0 1.5rem 1.25rem;font-size:14px;color:#666;line-height:1.75;font-weight:300}
         footer{background:#111;padding:3rem 0 2rem}
         .footer-legal{font-size:11.5px;color:#444;line-height:1.8}
@@ -189,12 +189,6 @@ export default function KneeReplacementPage() {
               </div>
               <div className="price-row">
                 <div>
-                  <div className="price-label">Typical saving</div>
-                  <div className="price-val accent">~65–80%</div>
-                </div>
-              </div>
-              <div className="price-row">
-                <div>
                   <div className="price-label">Istanbul stay</div>
                   <div className="price-val" style={{fontSize:'17px'}}>10 – 14 days</div>
                 </div>
@@ -210,7 +204,7 @@ export default function KneeReplacementPage() {
             <div className="prose">
               <h2>Knee replacement in Turkey — what to expect</h2>
               <p>
-                Knee replacement (total knee arthroplasty) is one of the most commonly performed orthopaedic procedures worldwide, offering significant pain relief and improved mobility for patients with severe knee arthritis or joint degeneration. Istanbul is an established destination for orthopaedic surgery, with JCI-accredited hospitals and costs typically lower than UK private centres.
+                Knee replacement (total knee arthroplasty) is one of the most commonly performed orthopaedic procedures worldwide, intended to relieve pain and restore function in patients with severe knee arthritis or joint degeneration; outcomes vary. Istanbul is an established destination for orthopaedic surgery, with JCI-accredited hospitals and costs typically lower than UK private centres.
               </p>
               <p>
                 Ocean Health &amp; Travel coordinates knee replacement surgery at JCI-accredited orthopaedic centres in Istanbul. We are a coordination service — not a medical provider. All clinical decisions rest with your treating orthopaedic surgeon.
@@ -267,7 +261,7 @@ export default function KneeReplacementPage() {
               </ul>
 
               <div className="disclaimer">
-                <strong>Medical disclaimer:</strong> Ocean Health &amp; Travel is a medical coordination service, not a medical provider. We do not provide orthopaedic assessments or clinical opinions. All clinical decisions rest with your treating surgeon. This information is for general guidance only. Knee replacement is an elective procedure and is not suitable for emergency situations.
+                <strong>Medical disclaimer:</strong> Ocean Health &amp; Travel is a medical coordination service, not a medical provider. We do not provide orthopaedic assessments or clinical opinions. All clinical decisions rest with your treating surgeon. This information is for general guidance only. We coordinate planned (non-emergency) treatment only.
               </div>
             </div>
 
@@ -275,7 +269,7 @@ export default function KneeReplacementPage() {
               <div className="sidebar-card dark">
                 <div className="sidebar-title">Get a free quote</div>
                 <p style={{fontSize:'14px',color:'rgba(255,255,255,.65)',lineHeight:1.65,marginBottom:'1.25rem',fontWeight:300}}>
-                  Share your X-rays and medical history. Full itemised quote within 48 hours — no obligation.
+                  Share your X-rays and medical history. We aim to send a full itemised quote within 48 hours — no obligation.
                 </p>
                 <a href={WA_URL} target="_blank" className="btn-full amber">WhatsApp us</a>
                 <a href="mailto:info@oceanhealthtravel.com" className="btn-full outline" style={{marginTop:'8px'}}>Email us</a>
@@ -290,10 +284,6 @@ export default function KneeReplacementPage() {
                 <div className="sidebar-price-row">
                   <span className="sidebar-price-label">UK private</span>
                   <span className="sidebar-price-val uk">£10,000 – £17,000</span>
-                </div>
-                <div className="sidebar-price-row">
-                  <span className="sidebar-price-label">Typical saving</span>
-                  <span className="sidebar-price-val">~65–80%</span>
                 </div>
                 <div className="sidebar-price-row">
                   <span className="sidebar-price-label">Surgery date</span>
@@ -324,7 +314,7 @@ export default function KneeReplacementPage() {
           <div className="process-grid">
             {[
               {n:'1',t:'Enquiry',d:'Share X-rays and medical history via WhatsApp or email'},
-              {n:'2',t:'Quote',d:'Itemised proposal within 48 hours'},
+              {n:'2',t:'Quote',d:'We aim to send an itemised proposal within 48 hours'},
               {n:'3',t:'Booking',d:'Hospital, hotel, and transfers confirmed'},
               {n:'4',t:'Surgery',d:'Knee replacement with interpreter present'},
               {n:'5',t:'GP docs',d:'Clinical notes forwarded to your UK GP'},
@@ -348,7 +338,7 @@ export default function KneeReplacementPage() {
               <details key={f.q} className="faq-item">
                 <summary className="faq-q">
                   {f.q}
-                  <span style={{fontSize:'18px',color:'#1d9e75',flexShrink:0}}>+</span>
+                  <span style={{fontSize:'18px',color:'#0559F0',flexShrink:0}}>+</span>
                 </summary>
                 <div className="faq-a">{f.a}</div>
               </details>
@@ -362,10 +352,10 @@ export default function KneeReplacementPage() {
           <div className="kicker">Get started</div>
           <h2>Ready to stop waiting?</h2>
           <p style={{fontSize:'16px',color:'#666',lineHeight:1.7,fontWeight:300,maxWidth:'500px',margin:'0 auto 2rem'}}>
-            Share your X-rays and we&apos;ll have a full itemised quote within 48 hours. Surgery in 2–3 weeks, not 18 months.
+            Share your X-rays and we aim to send a full itemised quote within 48 hours. Waiting times vary.
           </p>
           <div style={{display:'flex',gap:'14px',justifyContent:'center',flexWrap:'wrap'}}>
-            <a href={WA_URL} target="_blank" style={{background:'#2d3436',color:'#6ee7b7',border:'none',padding:'15px 30px',borderRadius:'10px',fontSize:'15px',fontWeight:600,display:'inline-flex',alignItems:'center',gap:'9px',cursor:'pointer',fontFamily:'Inter,sans-serif'}}>
+            <a href={WA_URL} target="_blank" style={{background:'#2d3436',color:'#8FD8FF',border:'none',padding:'15px 30px',borderRadius:'10px',fontSize:'15px',fontWeight:600,display:'inline-flex',alignItems:'center',gap:'9px',cursor:'pointer',fontFamily:'Inter,sans-serif'}}>
               Get a free quote
             </a>
             <a href="mailto:info@oceanhealthtravel.com" style={{background:'transparent',color:'#2d3436',border:'1px solid #2d3436',padding:'15px 30px',borderRadius:'10px',fontSize:'15px',display:'inline-flex',alignItems:'center',gap:'9px',cursor:'pointer',fontFamily:'Inter,sans-serif'}}>
@@ -378,18 +368,7 @@ export default function KneeReplacementPage() {
       <YourTimeline stay="Typically 10–14 days" />
       <UKPatientInfo current="knee-replacement-turkey" />
       <RelatedTreatments current="knee-replacement-turkey" />
-      <footer>
-        <div className="inner">
-          <div className="footer-legal">
-            © {new Date().getFullYear()} Ocean Health &amp; Travel Ltd · Registered in England &amp; Wales · Company no. 16186647<br />
-            London: 17 Green Lanes, N16 9BS ·{' '}
-            <a href="mailto:info@oceanhealthtravel.com" style={{color:'#555'}}>info@oceanhealthtravel.com</a> ·{' '}
-            <a href="tel:+447441904858" style={{color:'#555'}}>+44 7441 904858</a><br />
-            Flights not included · No coordination fee charged to patients · Coordinator, not a medical provider · Elective procedures only<br />
-            <em>Ocean Health &amp; Travel does not provide medical advice. All clinical decisions rest with your treating surgeon. Not suitable for emergencies.</em>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   )
 }

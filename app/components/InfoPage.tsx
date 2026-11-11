@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Nav from '@/app/components/Nav'
+import Footer from './Footer'
 
 export type InfoSection = {
   title: string
@@ -49,7 +50,7 @@ export default function InfoPage(p: InfoPageProps) {
   return (
     <div className="pp">
       <style>{`
-        .pp{--bg:#FAF8F4;--band:#F2EEE5;--ink:#12202B;--muted:#5B6770;--line:#E6E0D4;--green:#0B6B55;--green-d:#08503F;--soft:#E3F0EA;background:var(--bg);color:var(--ink);font-family:'Inter',sans-serif;line-height:1.6}
+        .pp{--bg:#FFFFFF;--band:#F3F7FE;--ink:#14213D;--muted:#475569;--line:#DCE6F5;--green:#0559F0;--green-d:#0438A6;--soft:#E6EFFE;background:var(--bg);color:var(--ink);font-family:'Inter',sans-serif;line-height:1.6}
         .pp *{box-sizing:border-box}
         .pp a{color:inherit;text-decoration:none}
         .pp .in{max-width:1280px;margin:0 auto;padding:0 2.5rem}
@@ -152,17 +153,7 @@ export default function InfoPage(p: InfoPageProps) {
         </div>
       </section>
 
-      <footer>
-        <div className="in">
-          <div className="legal">
-            © {new Date().getFullYear()} Ocean Health &amp; Travel Ltd · Registered in England &amp; Wales · Company no. 16186647<br />
-            London: 17 Green Lanes, N16 9BS ·{' '}
-            <a href="mailto:info@oceanhealthtravel.com">info@oceanhealthtravel.com</a> · <a href="tel:+447441904858">+44 7441 904858</a><br />
-            Flights not included · No coordination fee charged to patients · Coordinator, not a medical provider · Elective procedures only<br />
-            <em>Ocean Health &amp; Travel does not provide medical advice. All clinical decisions rest with your treating provider. Not suitable for emergencies.</em>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   )
 }

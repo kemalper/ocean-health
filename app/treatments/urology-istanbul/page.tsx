@@ -4,6 +4,7 @@ import TreatmentTheme from '@/app/components/TreatmentTheme'
 import RelatedTreatments from '@/app/components/RelatedTreatments'
 import YourTimeline from '@/app/components/YourTimeline'
 import UKPatientInfo from '@/app/components/UKPatientInfo'
+import Footer from '@/app/components/Footer'
 
 export const metadata: Metadata = {
   alternates: { canonical: '/treatments/urology-istanbul' },
@@ -18,49 +19,42 @@ const procedures = [
     name: 'Penile Aesthetics / Penoplasty',
     price: 'Contact us',
     uk: 'Variable',
-    saving: null,
     desc: 'Surgical enhancement of penile length or girth. Techniques include ligament release, fat transfer, or dermal filler augmentation depending on the approach recommended by your surgeon.',
   },
   {
     name: 'Penile Prosthesis / Implant',
     price: 'Contact us',
     uk: 'Variable',
-    saving: null,
-    desc: 'Surgical implantation of an inflatable or semi-rigid penile prosthesis for severe erectile dysfunction not responsive to other treatments. Highly effective with high patient satisfaction rates.',
+    desc: 'Surgical implantation of an inflatable or semi-rigid penile prosthesis for severe erectile dysfunction not responsive to other treatments.',
   },
   {
     name: 'Erectile Dysfunction (ED) Treatment',
     price: 'Contact us',
     uk: 'Variable',
-    saving: null,
     desc: 'Comprehensive evaluation and treatment of erectile dysfunction. Options include ESWT (low-intensity shockwave therapy), P-Shot (PRP injection), SVF stem cell therapy, or surgical implant depending on severity.',
   },
   {
     name: 'P-Shot (Priapus Shot)',
     price: 'Contact us',
     uk: 'Variable',
-    saving: null,
-    desc: 'Platelet-rich plasma (PRP) injection into penile tissue to improve blood flow, sensitivity, and erectile function. Non-surgical, minimal downtime.',
+    desc: 'Platelet-rich plasma (PRP) injection into penile tissue, intended to support blood flow and erectile function; results vary. Non-surgical.',
   },
   {
     name: 'ESWT (Extracorporeal Shockwave Therapy)',
     price: 'Contact us',
     uk: 'Variable',
-    saving: null,
-    desc: 'Low-intensity shockwave therapy to stimulate new blood vessel growth in penile tissue. Non-invasive treatment for vasculogenic erectile dysfunction. Typically 6–12 sessions.',
+    desc: 'Low-intensity shockwave therapy intended to stimulate new blood vessel growth in penile tissue. Non-invasive treatment for vasculogenic erectile dysfunction. Typically 6–12 sessions.',
   },
   {
     name: 'SVF Stem Cell Therapy',
     price: 'Contact us',
     uk: 'Variable',
-    saving: null,
     desc: 'Stromal vascular fraction (SVF) derived from the patient\'s own adipose tissue, used to promote tissue regeneration in urological conditions. An emerging therapy — clinical evidence is developing.',
   },
   {
     name: 'Penile Curvature (Peyronie\'s Disease)',
     price: 'Contact us',
     uk: 'Variable',
-    saving: null,
     desc: 'Surgical or non-surgical treatment of Peyronie\'s disease causing penile curvature. Options include plaque excision with grafting, Nesbit procedure, or collagenase injection depending on severity.',
   },
 ]
@@ -76,7 +70,7 @@ const faqs = [
   },
   {
     q: 'How do I get a quote?',
-    a: 'Contact us via WhatsApp or email with the treatment you are interested in and a brief description of your situation. All enquiries are handled discreetly. We will provide an outline of available options and pricing within 48 hours.',
+    a: 'Contact us via WhatsApp or email with the treatment you are interested in and a brief description of your situation. All enquiries are handled discreetly. We aim to provide an outline of available options and pricing within 48 hours.',
   },
   {
     q: 'How long do I need to stay in Istanbul?',
@@ -84,7 +78,7 @@ const faqs = [
   },
   {
     q: 'Are these treatments available on the NHS?',
-    a: 'Most aesthetic and enhancement procedures are not available on the NHS. Some ED treatments (including penile prosthesis for severe ED) may be available through NHS urology, but waiting times can be lengthy. ESWT and P-Shot are not routinely available on the NHS.',
+    a: 'Most aesthetic and enhancement procedures are not available on the NHS. Some ED treatments (including penile prosthesis for severe ED) may be available through NHS urology, but waiting times vary. ESWT and P-Shot are not routinely available on the NHS.',
   },
   {
     q: 'What coordination services are included?',
@@ -102,53 +96,53 @@ export default function UrologyPage() {
         body{font-family:'Inter',sans-serif;color:#1a1a1a;background:#fff}
         a{text-decoration:none;color:inherit}
         .inner{max-width:1160px;margin:0 auto;padding:0 2.5rem}
-.nav-links a:hover{color:#085041}
+.nav-links a:hover{color:#0559F0}
         .btn-
-.btn-nav:hover{background:#085041;color:#fff!important}
-        .hero{background:linear-gradient(135deg,#1a2a1a 0%,#1f3d2e 50%,#2d5a40 100%);padding:100px 0 80px;position:relative;overflow:hidden}
-        .hero::before{content:'';position:absolute;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(45,90,64,.3) 0%,transparent 70%);top:-100px;right:-100px;pointer-events:none}
+.btn-nav:hover{background:#0559F0;color:#fff!important}
+        .hero{background:linear-gradient(135deg,#0A2150 0%,#0A2150 50%,#0438A6 100%);padding:100px 0 80px;position:relative;overflow:hidden}
+        .hero::before{content:'';position:absolute;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(4,56,166,.3) 0%,transparent 70%);top:-100px;right:-100px;pointer-events:none}
         .hero-inner{position:relative;z-index:1;max-width:700px}
         .breadcrumb{font-size:12px;color:rgba(255,255,255,.5);margin-bottom:1.25rem}
         .breadcrumb a{color:rgba(255,255,255,.5)}
         .breadcrumb span{margin:0 6px}
-        .kicker{font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#86efac;margin-bottom:1rem}
-        .privacy-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(134,239,172,.15);border:1px solid rgba(134,239,172,.3);border-radius:100px;padding:6px 14px;font-size:12px;font-weight:500;color:#86efac;margin-bottom:1.25rem}
+        .kicker{font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#8FD8FF;margin-bottom:1rem}
+        .privacy-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(143,216,255,.15);border:1px solid rgba(143,216,255,.3);border-radius:100px;padding:6px 14px;font-size:12px;font-weight:500;color:#8FD8FF;margin-bottom:1.25rem}
         h1{font-family:'DM Serif Display',serif;font-size:clamp(34px,4.5vw,56px);line-height:1.1;letter-spacing:-.025em;color:#fff;margin-bottom:1rem;font-weight:400}
-        h1 em{font-style:italic;color:#86efac}
+        h1 em{font-style:italic;color:#8FD8FF}
         .hero-sub{font-size:16px;color:rgba(255,255,255,.72);line-height:1.75;margin-bottom:2rem;font-weight:300;max-width:540px}
         .hero-actions{display:flex;gap:12px;flex-wrap:wrap}
-        .btn-primary{background:#fff;color:#1f3d2e;border:none;padding:14px 26px;border-radius:10px;font-size:15px;font-weight:600;display:inline-flex;align-items:center;gap:8px;transition:transform .2s,box-shadow .2s;cursor:pointer;font-family:'Inter',sans-serif;box-shadow:0 4px 20px rgba(0,0,0,.2)}
+        .btn-primary{background:#fff;color:#0A2150;border:none;padding:14px 26px;border-radius:10px;font-size:15px;font-weight:600;display:inline-flex;align-items:center;gap:8px;transition:transform .2s,box-shadow .2s;cursor:pointer;font-family:'Inter',sans-serif;box-shadow:0 4px 20px rgba(0,0,0,.2)}
         .btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(0,0,0,.3)}
         .btn-ghost{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.35);padding:14px 26px;border-radius:10px;font-size:15px;display:inline-flex;align-items:center;gap:8px;transition:all .2s;cursor:pointer;font-family:'Inter',sans-serif}
         .btn-ghost:hover{background:rgba(255,255,255,.1)}
         .trust-row{display:flex;gap:1.5rem;flex-wrap:wrap;margin-top:1.5rem}
         .trust-item{display:flex;align-items:center;gap:7px;font-size:12.5px;color:rgba(255,255,255,.75)}
-        .trust-dot{width:7px;height:7px;border-radius:50%;background:#86efac;flex-shrink:0}
+        .trust-dot{width:7px;height:7px;border-radius:50%;background:#8FD8FF;flex-shrink:0}
         .sec{padding:5rem 0}
-        .sec.bg{background:#fafaf9}
-        .sec.border{border-top:1px solid #f0ede8;border-bottom:1px solid #f0ede8}
+        .sec.bg{background:#F3F7FE}
+        .sec.border{border-top:1px solid #DCE6F5;border-bottom:1px solid #DCE6F5}
         h2{font-family:'DM Serif Display',serif;font-size:clamp(26px,3vw,38px);font-weight:400;color:#1a1a1a;letter-spacing:-.02em;line-height:1.2;margin-bottom:1rem}
         .proc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:2rem}
-        .proc-card{background:#fff;border:1px solid #f0ede8;border-radius:16px;padding:1.5rem;display:flex;flex-direction:column;transition:transform .25s,box-shadow .25s,border-color .25s}
-        .proc-card:hover{transform:translateY(-3px);box-shadow:0 10px 30px rgba(0,0,0,.08);border-color:#bbf7d0}
+        .proc-card{background:#fff;border:1px solid #DCE6F5;border-radius:16px;padding:1.5rem;display:flex;flex-direction:column;transition:transform .25s,box-shadow .25s,border-color .25s}
+        .proc-card:hover{transform:translateY(-3px);box-shadow:0 10px 30px rgba(0,0,0,.08);border-color:#8FD8FF}
         .proc-name{font-size:15px;font-weight:600;color:#1a1a1a;margin-bottom:.4rem}
         .proc-desc{font-size:13px;color:#777;line-height:1.65;font-weight:300;flex:1;margin-bottom:1rem}
-        .proc-price{font-size:13px;font-weight:500;color:#1f3d2e;padding-top:.85rem;border-top:1px solid #f5f4f2;margin-top:auto}
-        .proc-link{font-size:12px;color:#1f3d2e;font-weight:600;margin-top:.75rem;display:inline-flex;align-items:center;gap:4px}
-        .privacy-box{background:#f0faf5;border:1px solid #c6f0de;border-radius:14px;padding:1.5rem;margin-top:2rem}
-        .privacy-box p{font-size:14px;color:#085041;line-height:1.7;margin:0;font-weight:300}
-        .faq-list{display:flex;flex-direction:column;border:1px solid #f0ede8;border-radius:16px;overflow:hidden;margin-top:2.5rem}
-        .faq-item{border-bottom:1px solid #f0ede8}
+        .proc-price{font-size:13px;font-weight:500;color:#0A2150;padding-top:.85rem;border-top:1px solid #F3F7FE;margin-top:auto}
+        .proc-link{font-size:12px;color:#0A2150;font-weight:600;margin-top:.75rem;display:inline-flex;align-items:center;gap:4px}
+        .privacy-box{background:#F3F7FE;border:1px solid #CFE0FC;border-radius:14px;padding:1.5rem;margin-top:2rem}
+        .privacy-box p{font-size:14px;color:#0559F0;line-height:1.7;margin:0;font-weight:300}
+        .faq-list{display:flex;flex-direction:column;border:1px solid #DCE6F5;border-radius:16px;overflow:hidden;margin-top:2.5rem}
+        .faq-item{border-bottom:1px solid #DCE6F5}
         .faq-item:last-child{border-bottom:none}
         .faq-q{width:100%;text-align:left;padding:1.25rem 1.5rem;background:#fff;border:none;cursor:pointer;font-family:'Inter',sans-serif;font-size:15px;font-weight:500;color:#1a1a1a;display:flex;justify-content:space-between;align-items:center;gap:1rem;transition:background .2s}
-        .faq-q:hover{background:#fafaf9}
+        .faq-q:hover{background:#F3F7FE}
         .faq-a{padding:0 1.5rem 1.25rem;font-size:14px;color:#666;line-height:1.75;font-weight:300}
-        .cta-box{background:linear-gradient(135deg,#1a2a1a,#1f3d2e);border-radius:20px;padding:3rem;text-align:center}
+        .cta-box{background:linear-gradient(135deg,#0A2150,#0A2150);border-radius:20px;padding:3rem;text-align:center}
         .cta-box h2{color:#fff;margin-bottom:.75rem}
         .cta-box p{font-size:15px;color:rgba(255,255,255,.65);font-weight:300;line-height:1.7;margin-bottom:2rem;max-width:480px;margin-left:auto;margin-right:auto}
         .cta-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
-        .btn-cta-w{background:#86efac;color:#1a2a1a;border:none;padding:14px 28px;border-radius:10px;font-size:15px;font-weight:600;display:inline-flex;align-items:center;gap:8px;cursor:pointer;font-family:'Inter',sans-serif;transition:all .2s}
-        .btn-cta-w:hover{background:#bbf7d0}
+        .btn-cta-w{background:#8FD8FF;color:#0A2150;border:none;padding:14px 28px;border-radius:10px;font-size:15px;font-weight:600;display:inline-flex;align-items:center;gap:8px;cursor:pointer;font-family:'Inter',sans-serif;transition:all .2s}
+        .btn-cta-w:hover{background:#8FD8FF}
         .btn-cta-o{background:transparent;color:rgba(255,255,255,.75);border:1px solid rgba(255,255,255,.3);padding:14px 28px;border-radius:10px;font-size:15px;display:inline-flex;align-items:center;gap:8px;cursor:pointer;font-family:'Inter',sans-serif;transition:all .2s}
         .btn-cta-o:hover{background:rgba(255,255,255,.1);color:#fff}
         footer{background:#111;padding:3rem 0 2rem}
@@ -232,7 +226,7 @@ export default function UrologyPage() {
               <details key={f.q} className="faq-item">
                 <summary className="faq-q">
                   {f.q}
-                  <span style={{fontSize:'18px',color:'#1f3d2e',flexShrink:0}}>+</span>
+                  <span style={{fontSize:'18px',color:'#0A2150',flexShrink:0}}>+</span>
                 </summary>
                 <div className="faq-a">{f.a}</div>
               </details>
@@ -257,18 +251,7 @@ export default function UrologyPage() {
       <YourTimeline stay="Depends on procedure" />
       <UKPatientInfo current="urology-istanbul" />
       <RelatedTreatments current="urology-istanbul" />
-      <footer>
-        <div className="inner">
-          <div className="footer-legal">
-            © {new Date().getFullYear()} Ocean Health &amp; Travel Ltd · Registered in England &amp; Wales · Company no. 16186647<br />
-            London: 17 Green Lanes, N16 9BS ·{' '}
-            <a href="mailto:info@oceanhealthtravel.com" style={{color:'#555'}}>info@oceanhealthtravel.com</a> ·{' '}
-            <a href="tel:+447441904858" style={{color:'#555'}}>+44 7441 904858</a><br />
-            Flights not included · No coordination fee charged to patients · Coordinator, not a medical provider · Elective procedures only<br />
-            <em>Ocean Health &amp; Travel does not provide medical advice. All clinical decisions rest with your treating urologist. Not suitable for emergencies.</em>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   )
 }

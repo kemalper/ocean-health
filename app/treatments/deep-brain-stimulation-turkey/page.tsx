@@ -4,6 +4,7 @@ import TreatmentTheme from '@/app/components/TreatmentTheme'
 import RelatedTreatments from '@/app/components/RelatedTreatments'
 import YourTimeline from '@/app/components/YourTimeline'
 import UKPatientInfo from '@/app/components/UKPatientInfo'
+import Footer from '@/app/components/Footer'
 
 export const metadata: Metadata = {
   alternates: { canonical: '/treatments/deep-brain-stimulation-turkey' },
@@ -50,23 +51,23 @@ export default function DBSPage() {
         body{font-family:'Inter',sans-serif;color:#1a1a1a;background:#fff}
         a{text-decoration:none;color:inherit}
         .inner{max-width:1160px;margin:0 auto;padding:0 2.5rem}
-.nav-links a:hover{color:#085041}
+.nav-links a:hover{color:#0559F0}
         .btn-
-.btn-nav:hover{background:#085041;color:#fff!important}
-        .hero{background:linear-gradient(135deg,#0a1a13 0%,#0a2e22 50%,#0d3e2c 100%);padding:100px 0 80px;position:relative;overflow:hidden}
+.btn-nav:hover{background:#0559F0;color:#fff!important}
+        .hero{background:linear-gradient(135deg,#0A2150 0%,#0A2150 50%,#0A2150 100%);padding:100px 0 80px;position:relative;overflow:hidden}
         .hero::before{content:'';position:absolute;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(99,102,241,.15) 0%,transparent 70%);top:-100px;right:-100px;pointer-events:none}
         .hero-grid{display:grid;grid-template-columns:1.2fr 0.8fr;gap:3rem;align-items:center;position:relative;z-index:1}
         .breadcrumb{font-size:12px;color:rgba(255,255,255,.5);margin-bottom:1.25rem}
         .breadcrumb a{color:rgba(255,255,255,.5)}
         .breadcrumb span{margin:0 6px}
-        .kicker{font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#a5fcdc;margin-bottom:1rem}
+        .kicker{font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#8FD8FF;margin-bottom:1rem}
         .warning-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(245,158,11,.15);border:1px solid rgba(245,158,11,.3);border-radius:100px;padding:6px 14px;font-size:12px;font-weight:500;color:#fcd34d;margin-bottom:1.25rem}
         h1{font-family:'DM Serif Display',serif;font-size:clamp(34px,4vw,54px);line-height:1.1;letter-spacing:-.025em;color:#fff;margin-bottom:1rem;font-weight:400}
-        h1 em{font-style:italic;color:#a5fcdc}
+        h1 em{font-style:italic;color:#8FD8FF}
         .hero-sub{font-size:16px;color:rgba(255,255,255,.72);line-height:1.75;margin-bottom:1.5rem;font-weight:300;max-width:500px}
         .hero-warn{background:rgba(245,158,11,.1);border:1px solid rgba(245,158,11,.25);border-radius:10px;padding:1rem 1.25rem;font-size:13px;color:#fcd34d;line-height:1.65;margin-bottom:2rem}
         .hero-actions{display:flex;gap:12px;flex-wrap:wrap}
-        .btn-primary{background:#fff;color:#0a1a13;border:none;padding:14px 26px;border-radius:10px;font-size:15px;font-weight:600;display:inline-flex;align-items:center;gap:8px;transition:transform .2s,box-shadow .2s;cursor:pointer;font-family:'Inter',sans-serif;box-shadow:0 4px 20px rgba(0,0,0,.2)}
+        .btn-primary{background:#fff;color:#0A2150;border:none;padding:14px 26px;border-radius:10px;font-size:15px;font-weight:600;display:inline-flex;align-items:center;gap:8px;transition:transform .2s,box-shadow .2s;cursor:pointer;font-family:'Inter',sans-serif;box-shadow:0 4px 20px rgba(0,0,0,.2)}
         .btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(0,0,0,.3)}
         .btn-ghost{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.35);padding:14px 26px;border-radius:10px;font-size:15px;display:inline-flex;align-items:center;gap:8px;transition:all .2s;cursor:pointer;font-family:'Inter',sans-serif}
         .btn-ghost:hover{background:rgba(255,255,255,.1)}
@@ -75,13 +76,13 @@ export default function DBSPage() {
         .price-row:last-child{border-bottom:none}
         .price-label{font-size:13px;color:rgba(255,255,255,.55)}
         .price-val{font-family:'DM Serif Display',serif;font-size:22px;color:#fff;font-weight:400}
-        .price-val.accent{color:#a5fcdc}
+        .price-val.accent{color:#8FD8FF}
         .trust-row{display:flex;gap:1.5rem;flex-wrap:wrap;margin-top:1.5rem}
         .trust-item{display:flex;align-items:center;gap:7px;font-size:12.5px;color:rgba(255,255,255,.7)}
-        .trust-dot{width:7px;height:7px;border-radius:50%;background:#a5fcdc;flex-shrink:0}
+        .trust-dot{width:7px;height:7px;border-radius:50%;background:#8FD8FF;flex-shrink:0}
         .sec{padding:5rem 0}
-        .sec.bg{background:#fafaf9}
-        .sec.border{border-top:1px solid #f0ede8;border-bottom:1px solid #f0ede8}
+        .sec.bg{background:#F3F7FE}
+        .sec.border{border-top:1px solid #DCE6F5;border-bottom:1px solid #DCE6F5}
         h2{font-family:'DM Serif Display',serif;font-size:clamp(26px,3vw,38px);font-weight:400;color:#1a1a1a;letter-spacing:-.02em;line-height:1.2;margin-bottom:1rem}
         h3{font-family:'DM Serif Display',serif;font-size:22px;font-weight:400;color:#1a1a1a;letter-spacing:-.01em;margin-bottom:.75rem}
         .content-grid{display:grid;grid-template-columns:1fr 340px;gap:3rem;align-items:start}
@@ -89,41 +90,41 @@ export default function DBSPage() {
         .prose h3{margin-top:2rem;margin-bottom:.75rem}
         .prose ul{list-style:none;padding:0;margin-bottom:1.25rem}
         .prose ul li{font-size:15px;color:#444;line-height:1.8;padding-left:16px;position:relative;font-weight:300}
-        .prose ul li::before{content:'·';position:absolute;left:0;color:#0d6b55;font-weight:700;font-size:18px}
+        .prose ul li::before{content:'·';position:absolute;left:0;color:#0438A6;font-weight:700;font-size:18px}
         .clinical-warning{background:#fffbeb;border:1px solid #fde68a;border-radius:12px;padding:1.25rem 1.5rem;font-size:13.5px;color:#92400e;line-height:1.75;margin:1.5rem 0}
         .medical-disclaimer{background:#f8f7f4;border:1px solid #e4e1db;border-radius:12px;padding:1.25rem 1.5rem;font-size:13px;color:#666;line-height:1.75;margin-top:1.5rem}
         .sidebar{position:sticky;top:80px}
-        .sidebar-card{background:#fff;border:1px solid #f0ede8;border-radius:16px;padding:1.75rem;margin-bottom:1rem}
-        .sidebar-card.dark{background:linear-gradient(135deg,#0a1a13,#0a2e22);border-color:transparent}
+        .sidebar-card{background:#fff;border:1px solid #DCE6F5;border-radius:16px;padding:1.75rem;margin-bottom:1rem}
+        .sidebar-card.dark{background:linear-gradient(135deg,#0A2150,#0A2150);border-color:transparent}
         .sidebar-card.warn{background:#fffbeb;border:1px solid #fde68a}
         .sidebar-title{font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:#bbb;margin-bottom:1.25rem}
         .sidebar-card.dark .sidebar-title{color:rgba(255,255,255,.45)}
         .sidebar-card.warn .sidebar-title{color:#92400e}
-        .sidebar-price-row{display:flex;justify-content:space-between;align-items:baseline;padding:.6rem 0;border-bottom:1px solid #f5f4f2}
+        .sidebar-price-row{display:flex;justify-content:space-between;align-items:baseline;padding:.6rem 0;border-bottom:1px solid #F3F7FE}
         .sidebar-price-row:last-of-type{border-bottom:none}
         .sidebar-price-label{font-size:13px;color:#777}
-        .sidebar-price-val{font-size:15px;font-weight:600;color:#0a1a13}
+        .sidebar-price-val{font-size:15px;font-weight:600;color:#0A2150}
         .sidebar-price-val.uk{color:#aaa;font-weight:400}
         .btn-full{width:100%;padding:14px;border-radius:10px;font-size:15px;font-weight:600;display:flex;align-items:center;justify-content:center;gap:8px;cursor:pointer;font-family:'Inter',sans-serif;transition:all .2s;margin-top:1rem;border:none}
-        .btn-full.indigo{background:#085041;color:#fff}
-        .btn-full.indigo:hover{background:#063d2f}
+        .btn-full.indigo{background:#0559F0;color:#fff}
+        .btn-full.indigo:hover{background:#0A2150}
         .btn-full.outline{background:rgba(255,255,255,.08);color:#fff;border:1px solid rgba(255,255,255,.2)}
         .btn-full.outline:hover{background:rgba(255,255,255,.15)}
         .checklist{display:flex;flex-direction:column;gap:.5rem}
-        .check-item{display:flex;align-items:flex-start;gap:8px;font-size:13px;color:#555;padding:.5rem 0;border-bottom:1px solid #f5f4f2}
+        .check-item{display:flex;align-items:flex-start;gap:8px;font-size:13px;color:#555;padding:.5rem 0;border-bottom:1px solid #F3F7FE}
         .check-item:last-child{border-bottom:none}
-        .check-dot{width:6px;height:6px;border-radius:50%;background:#0d6b55;flex-shrink:0;margin-top:6px}
+        .check-dot{width:6px;height:6px;border-radius:50%;background:#0438A6;flex-shrink:0;margin-top:6px}
         .process-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:0;position:relative;margin-top:2.5rem}
-        .process-grid::before{content:'';position:absolute;top:22px;left:10%;right:10%;height:1px;background:linear-gradient(90deg,transparent,#c7feea 20%,#c7feea 80%,transparent)}
+        .process-grid::before{content:'';position:absolute;top:22px;left:10%;right:10%;height:1px;background:linear-gradient(90deg,transparent,#8FD8FF 20%,#8FD8FF 80%,transparent)}
         .proc-step{text-align:center;padding:0 .5rem;position:relative;z-index:1}
-        .proc-circle{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#0a1a13,#085041);display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;font-size:15px;font-weight:600;color:#fff;box-shadow:0 4px 14px rgba(79,70,229,.3)}
+        .proc-circle{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#0A2150,#0559F0);display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;font-size:15px;font-weight:600;color:#fff;box-shadow:0 4px 14px rgba(79,70,229,.3)}
         .proc-t{font-size:13px;font-weight:600;margin-bottom:.3rem}
         .proc-d{font-size:11px;color:#888;line-height:1.5}
-        .faq-list{display:flex;flex-direction:column;border:1px solid #f0ede8;border-radius:16px;overflow:hidden;margin-top:2.5rem}
-        .faq-item{border-bottom:1px solid #f0ede8}
+        .faq-list{display:flex;flex-direction:column;border:1px solid #DCE6F5;border-radius:16px;overflow:hidden;margin-top:2.5rem}
+        .faq-item{border-bottom:1px solid #DCE6F5}
         .faq-item:last-child{border-bottom:none}
         .faq-q{width:100%;text-align:left;padding:1.25rem 1.5rem;background:#fff;border:none;cursor:pointer;font-family:'Inter',sans-serif;font-size:15px;font-weight:500;color:#1a1a1a;display:flex;justify-content:space-between;align-items:center;gap:1rem;transition:background .2s}
-        .faq-q:hover{background:#fafaf9}
+        .faq-q:hover{background:#F3F7FE}
         .faq-a{padding:0 1.5rem 1.25rem;font-size:14px;color:#666;line-height:1.75;font-weight:300}
         footer{background:#111;padding:3rem 0 2rem}
         .footer-legal{font-size:11.5px;color:#444;line-height:1.8}
@@ -161,7 +162,7 @@ export default function DBSPage() {
                 JCI-accredited neurosurgical teams in Istanbul. Dedicated coordination including full clinical liaison, medical interpretation, and post-operative documentation.
               </p>
               <div className="hero-warn">
-                <strong>Important:</strong> DBS is a complex elective neurosurgical procedure. Complete the free pre-assessment below to have your case reviewed by our specialist neurosurgical team. Ocean Health &amp; Travel does not provide medical assessments or clinical opinions — all clinical decisions rest with the treating neurosurgical team.
+                <strong>Important:</strong> DBS is a complex neurosurgical procedure; we coordinate planned (non-emergency) treatment only. Complete the free pre-assessment below to have your case reviewed by our specialist neurosurgical team. Ocean Health &amp; Travel does not provide medical assessments or clinical opinions — all clinical decisions rest with the treating neurosurgical team.
               </div>
               <div className="hero-actions">
                 <a href="/treatments/dbs-assessment" className="btn-primary">Start free pre-assessment</a>
@@ -185,12 +186,6 @@ export default function DBSPage() {
                 <div>
                   <div className="price-label">UK private centre</div>
                   <div className="price-val" style={{color:'rgba(255,255,255,.35)',fontSize:'17px'}}>£30,000+</div>
-                </div>
-              </div>
-              <div className="price-row">
-                <div>
-                  <div className="price-label">Typical saving</div>
-                  <div className="price-val accent">from ~20%</div>
                 </div>
               </div>
               <div className="price-row">
@@ -258,7 +253,7 @@ export default function DBSPage() {
 
               <h3>DBS cost in Turkey vs. UK</h3>
               <p>
-                Deep brain stimulation at UK private neurosurgical centres typically starts at around £30,000, depending on the device manufacturer, surgical complexity, and length of inpatient stay. The same procedure at JCI-accredited hospitals in Istanbul starts from £23,700 — a saving of roughly 20% or more depending on the device and case. Device costs (Medtronic, Abbott, Boston Scientific) are a significant component of total cost and vary by patient.
+                Deep brain stimulation at UK private neurosurgical centres typically starts at around £30,000, depending on the device manufacturer, surgical complexity, and length of inpatient stay. The same procedure at JCI-accredited hospitals in Istanbul starts from £23,700 depending on the device and case. Device costs (Medtronic, Abbott, Boston Scientific) are a significant component of total cost and vary by patient.
               </p>
 
               <h3>Documentation that helps (not required to start)</h3>
@@ -279,7 +274,7 @@ export default function DBSPage() {
               <div className="sidebar-card dark">
                 <div className="sidebar-title">Start your pre-assessment</div>
                 <p style={{fontSize:'14px',color:'rgba(255,255,255,.65)',lineHeight:1.65,marginBottom:'1.25rem',fontWeight:300}}>
-                  Free, no referral required upfront. Our neurosurgical team reviews your case and responds within 48 hours.
+                  Free, no referral required upfront. Our neurosurgical team reviews your case and aims to respond within 48 hours.
                 </p>
                 <a href="/treatments/dbs-assessment" className="btn-full indigo">Start free pre-assessment</a>
                 <a href={WA_URL} target="_blank" className="btn-full outline" style={{marginTop:'8px'}}>WhatsApp us instead</a>
@@ -314,10 +309,6 @@ export default function DBSPage() {
                   <span className="sidebar-price-val uk">£30,000+</span>
                 </div>
                 <div className="sidebar-price-row">
-                  <span className="sidebar-price-label">Typical saving</span>
-                  <span className="sidebar-price-val">from ~20%</span>
-                </div>
-                <div className="sidebar-price-row">
                   <span className="sidebar-price-label">Hospital stay</span>
                   <span className="sidebar-price-val">5–10 days</span>
                 </div>
@@ -328,7 +319,7 @@ export default function DBSPage() {
                 <div className="sidebar-title">What&apos;s included</div>
                 {['Airport transfer','Hotel near hospital','Medical interpreter at all appointments','Full clinic liaison','Operative notes forwarded to UK neurologist & GP'].map(item => (
                   <div key={item} className="check-item">
-                    <div style={{width:'6px',height:'6px',borderRadius:'50%',background:'#0d6b55',flexShrink:0,marginTop:'6px'}}></div>
+                    <div style={{width:'6px',height:'6px',borderRadius:'50%',background:'#0438A6',flexShrink:0,marginTop:'6px'}}></div>
                     <span style={{fontSize:'13px',color:'#555'}}>{item}</span>
                   </div>
                 ))}
@@ -372,7 +363,7 @@ export default function DBSPage() {
               <details key={f.q} className="faq-item">
                 <summary className="faq-q">
                   {f.q}
-                  <span style={{fontSize:'18px',color:'#0d6b55',flexShrink:0}}>+</span>
+                  <span style={{fontSize:'18px',color:'#0438A6',flexShrink:0}}>+</span>
                 </summary>
                 <div className="faq-a">{f.a}</div>
               </details>
@@ -387,13 +378,13 @@ export default function DBSPage() {
           <div className="kicker">Get started</div>
           <h2>Ready to get started?</h2>
           <p style={{fontSize:'16px',color:'#666',lineHeight:1.7,fontWeight:300,maxWidth:'520px',margin:'0 auto 2rem'}}>
-            Complete the free pre-assessment — no referral required upfront. Our neurosurgical team will review your case and come back to you within 48 hours.
+            Complete the free pre-assessment — no referral required upfront. Our neurosurgical team aims to review your case and come back to you within 48 hours.
           </p>
           <div style={{display:'flex',gap:'14px',justifyContent:'center',flexWrap:'wrap'}}>
-            <a href="/treatments/dbs-assessment" style={{background:'#085041',color:'#fff',border:'none',padding:'15px 30px',borderRadius:'10px',fontSize:'15px',fontWeight:600,display:'inline-flex',alignItems:'center',gap:'9px',cursor:'pointer',fontFamily:'Inter,sans-serif'}}>
+            <a href="/treatments/dbs-assessment" style={{background:'#0559F0',color:'#fff',border:'none',padding:'15px 30px',borderRadius:'10px',fontSize:'15px',fontWeight:600,display:'inline-flex',alignItems:'center',gap:'9px',cursor:'pointer',fontFamily:'Inter,sans-serif'}}>
               Start free pre-assessment
             </a>
-            <a href={WA_URL} target="_blank" style={{background:'transparent',color:'#085041',border:'1px solid #085041',padding:'15px 30px',borderRadius:'10px',fontSize:'15px',display:'inline-flex',alignItems:'center',gap:'9px',cursor:'pointer',fontFamily:'Inter,sans-serif'}}>
+            <a href={WA_URL} target="_blank" style={{background:'transparent',color:'#0559F0',border:'1px solid #0559F0',padding:'15px 30px',borderRadius:'10px',fontSize:'15px',display:'inline-flex',alignItems:'center',gap:'9px',cursor:'pointer',fontFamily:'Inter,sans-serif'}}>
               WhatsApp us
             </a>
           </div>
@@ -404,18 +395,7 @@ export default function DBSPage() {
       <YourTimeline stay="Typically 2–3 weeks" note="Your treatment date, usually within 2 weeks of confirming once the neurosurgical team has reviewed your records and decided that surgery is suitable." />
       <UKPatientInfo current="deep-brain-stimulation-turkey" />
       <RelatedTreatments current="deep-brain-stimulation-turkey" />
-      <footer>
-        <div className="inner">
-          <div className="footer-legal">
-            © {new Date().getFullYear()} Ocean Health &amp; Travel Ltd · Registered in England &amp; Wales · Company no. 16186647<br />
-            London: 17 Green Lanes, N16 9BS ·{' '}
-            <a href="mailto:info@oceanhealthtravel.com" style={{color:'#555'}}>info@oceanhealthtravel.com</a> ·{' '}
-            <a href="tel:+447441904858" style={{color:'#555'}}>+44 7441 904858</a><br />
-            Flights not included · No coordination fee charged to patients · Coordinator, not a medical provider · Elective procedures only<br />
-            <em>Ocean Health &amp; Travel does not provide medical advice. All clinical decisions rest with your treating provider. Not suitable for emergencies. All DBS cases are reviewed by the specialist neurosurgical team before proceeding.</em>
-          </div>
-        </div>
-      </footer>
+      <Footer note="All DBS cases are reviewed by the specialist neurosurgical team before proceeding." />
     </div>
   )
 }
