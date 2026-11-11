@@ -72,7 +72,8 @@ export default function BrokerageAgreement() {
         <h2>Fees and payment</h2>
         <ul>
           <li>Ocean Health &amp; Travel does not charge a coordination fee to patients. We are paid by our partner hospitals, which may influence which hospitals we work with</li>
-          <li>All costs, including the accommodation and transfers included in your package, are set out in your package quote and agreed before booking</li>
+          <li>All costs included in your package quote, including the accommodation and transfers included in your package, are agreed before booking. Extra nights, a travel companion or changes to your travel dates are priced for you</li>
+          <li>Your package quote is based on the information you give us. If that information proves untrue and significant additional tests or treatment are required as a result, an additional charge may be requested (which may include additional transfers or accommodation), and we will discuss any additional cost with you</li>
           <li>Payment is made directly to the treating hospital, or to the provider it nominates, under that hospital&apos;s own terms. Ocean Health &amp; Travel does not receive, hold or handle patient payments</li>
           <li>Deposits, payment schedules and refund terms are set by the hospital and confirmed in writing in your quote before any payment is made</li>
           <li>Flights are not included in any package</li>
