@@ -4,6 +4,7 @@ import TreatmentTheme from '@/app/components/TreatmentTheme'
 import RelatedTreatments from '@/app/components/RelatedTreatments'
 import YourTimeline from '@/app/components/YourTimeline'
 import UKPatientInfo from '@/app/components/UKPatientInfo'
+import Footer from '@/app/components/Footer'
 
 export const metadata: Metadata = {
   alternates: { canonical: '/treatments/hair-transplant-istanbul' },
@@ -16,7 +17,7 @@ const WA_URL = 'https://wa.me/447441904858?text=Hello%2C%20I%27d%20like%20to%20e
 const faqs = [
   {
     q: 'How much does a hair transplant cost in Istanbul?',
-    a: 'Hair transplant costs in Istanbul vary depending on the technique (FUE or DHI), the number of grafts required, and the clinic. Most patients require between 2,000 and 4,000 grafts. Contact us for a personalised quote based on your specific needs — we provide full itemised pricing within 48 hours.'
+    a: 'Hair transplant costs in Istanbul vary depending on the technique (FUE or DHI), the number of grafts required, and the clinic. Most patients require between 2,000 and 4,000 grafts. Contact us for a personalised quote based on your specific needs — we aim to send full itemised pricing within 48 hours.'
   },
   {
     q: 'What is the difference between FUE and DHI?',
@@ -28,11 +29,11 @@ const faqs = [
   },
   {
     q: 'When will I see results?',
-    a: 'Transplanted hair typically sheds within 2–6 weeks post-procedure (shock loss) — this is normal and expected. New growth begins at 3–4 months, with significant improvement visible at 6–9 months. Full results are typically seen at 12–18 months.'
+    a: 'Transplanted hair typically sheds within 2–6 weeks post-procedure (shock loss) — this is normal and expected. Timelines for new growth and final results vary between patients; your treating provider will advise what to expect.'
   },
   {
     q: 'Is a hair transplant in Istanbul safe?',
-    a: 'Ocean Health & Travel coordinates hair transplant procedures at JCI-accredited clinics with experienced trichological surgeons. We do not provide medical advice — all clinical decisions rest with your treating surgeon. As with any surgical procedure, risks exist and will be discussed during your pre-operative consultation.'
+    a: 'Ocean Health & Travel coordinates hair transplant procedures at JCI-accredited clinics with experienced trichological surgeons. We do not provide medical advice — all clinical decisions rest with your treating surgeon. As with any surgical procedure, risks exist and will be discussed during your pre-operative consultation. All procedures carry risks; these are discussed by the treating provider.'
   },
   {
     q: 'What is included in the coordination package?',
@@ -50,21 +51,21 @@ export default function HairTransplantPage() {
         body{font-family:'Inter',sans-serif;color:#1a1a1a;background:#fff}
         a{text-decoration:none;color:inherit}
         .inner{max-width:1160px;margin:0 auto;padding:0 2.5rem}
-.nav-links a:hover{color:#085041}
+.nav-links a:hover{color:#0559F0}
         .btn-
-.btn-nav:hover{background:#085041;color:#fff!important}
-        .hero{background:linear-gradient(135deg,#0a1a13 0%,#0a2e22 50%,#063d2f 100%);padding:100px 0 80px;position:relative;overflow:hidden}
+.btn-nav:hover{background:#0559F0;color:#fff!important}
+        .hero{background:linear-gradient(135deg,#0A2150 0%,#0A2150 50%,#0A2150 100%);padding:100px 0 80px;position:relative;overflow:hidden}
         .hero::before{content:'';position:absolute;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(139,92,246,.2) 0%,transparent 70%);top:-100px;right:-100px;pointer-events:none}
         .hero-grid{display:grid;grid-template-columns:1.2fr 0.8fr;gap:3rem;align-items:center;position:relative;z-index:1}
         .breadcrumb{font-size:12px;color:rgba(255,255,255,.5);margin-bottom:1.25rem}
         .breadcrumb a{color:rgba(255,255,255,.5)}
         .breadcrumb span{margin:0 6px}
-        .kicker{font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#b5fde3;margin-bottom:1rem}
+        .kicker{font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#8FD8FF;margin-bottom:1rem}
         h1{font-family:'DM Serif Display',serif;font-size:clamp(34px,4vw,54px);line-height:1.1;letter-spacing:-.025em;color:#fff;margin-bottom:1rem;font-weight:400}
-        h1 em{font-style:italic;color:#b5fde3}
+        h1 em{font-style:italic;color:#8FD8FF}
         .hero-sub{font-size:16px;color:rgba(255,255,255,.72);line-height:1.75;margin-bottom:2rem;font-weight:300;max-width:500px}
         .hero-actions{display:flex;gap:12px;flex-wrap:wrap}
-        .btn-primary{background:#fff;color:#0a2e22;border:none;padding:14px 26px;border-radius:10px;font-size:15px;font-weight:600;display:inline-flex;align-items:center;gap:8px;transition:transform .2s,box-shadow .2s;cursor:pointer;font-family:'Inter',sans-serif;box-shadow:0 4px 20px rgba(0,0,0,.2)}
+        .btn-primary{background:#fff;color:#0A2150;border:none;padding:14px 26px;border-radius:10px;font-size:15px;font-weight:600;display:inline-flex;align-items:center;gap:8px;transition:transform .2s,box-shadow .2s;cursor:pointer;font-family:'Inter',sans-serif;box-shadow:0 4px 20px rgba(0,0,0,.2)}
         .btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(0,0,0,.3)}
         .btn-ghost{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.35);padding:14px 26px;border-radius:10px;font-size:15px;display:inline-flex;align-items:center;gap:8px;transition:all .2s;cursor:pointer;font-family:'Inter',sans-serif}
         .btn-ghost:hover{background:rgba(255,255,255,.1)}
@@ -73,13 +74,13 @@ export default function HairTransplantPage() {
         .price-row:last-child{border-bottom:none}
         .price-label{font-size:13px;color:rgba(255,255,255,.55)}
         .price-val{font-family:'DM Serif Display',serif;font-size:20px;color:#fff;font-weight:400}
-        .price-val.accent{color:#b5fde3}
+        .price-val.accent{color:#8FD8FF}
         .trust-row{display:flex;gap:1.5rem;flex-wrap:wrap;margin-top:1.5rem}
         .trust-item{display:flex;align-items:center;gap:7px;font-size:12.5px;color:rgba(255,255,255,.75)}
-        .trust-dot{width:7px;height:7px;border-radius:50%;background:#b5fde3;flex-shrink:0}
+        .trust-dot{width:7px;height:7px;border-radius:50%;background:#8FD8FF;flex-shrink:0}
         .sec{padding:5rem 0}
-        .sec.bg{background:#fafaf9}
-        .sec.border{border-top:1px solid #f0ede8;border-bottom:1px solid #f0ede8}
+        .sec.bg{background:#F3F7FE}
+        .sec.border{border-top:1px solid #DCE6F5;border-bottom:1px solid #DCE6F5}
         h2{font-family:'DM Serif Display',serif;font-size:clamp(26px,3vw,38px);font-weight:400;color:#1a1a1a;letter-spacing:-.02em;line-height:1.2;margin-bottom:1rem}
         h3{font-family:'DM Serif Display',serif;font-size:22px;font-weight:400;color:#1a1a1a;letter-spacing:-.01em;margin-bottom:.75rem}
         .content-grid{display:grid;grid-template-columns:1fr 340px;gap:3rem;align-items:start}
@@ -87,49 +88,49 @@ export default function HairTransplantPage() {
         .prose h3{margin-top:2rem;margin-bottom:.75rem}
         .prose ul{list-style:none;padding:0;margin-bottom:1.25rem}
         .prose ul li{font-size:15px;color:#444;line-height:1.8;padding-left:16px;position:relative;font-weight:300}
-        .prose ul li::before{content:'·';position:absolute;left:0;color:#085041;font-weight:700;font-size:18px}
+        .prose ul li::before{content:'·';position:absolute;left:0;color:#0559F0;font-weight:700;font-size:18px}
         .technique-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1.5rem 0}
-        .technique-card{background:#fafaf9;border:1px solid #f0ede8;border-radius:12px;padding:1.25rem}
+        .technique-card{background:#F3F7FE;border:1px solid #DCE6F5;border-radius:12px;padding:1.25rem}
         .technique-card h4{font-size:15px;font-weight:600;color:#1a1a1a;margin-bottom:.5rem}
         .technique-card p{font-size:13px;color:#666;line-height:1.65;font-weight:300;margin:0}
-        .technique-tag{display:inline-block;font-size:10px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;background:#e9fef6;color:#08533f;border-radius:4px;padding:2px 8px;margin-bottom:.75rem}
+        .technique-tag{display:inline-block;font-size:10px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;background:#E6EFFE;color:#0438A6;border-radius:4px;padding:2px 8px;margin-bottom:.75rem}
         .timeline-list{display:flex;flex-direction:column;gap:0;margin:1.5rem 0}
         .timeline-item{display:flex;gap:1rem;padding-bottom:1.25rem;position:relative}
         .timeline-item:last-child{padding-bottom:0}
         .tl-left{display:flex;flex-direction:column;align-items:center;flex-shrink:0}
-        .tl-dot{width:10px;height:10px;border-radius:50%;background:#085041;flex-shrink:0;margin-top:5px}
-        .tl-line{width:1px;flex:1;background:#e9fef6;margin-top:4px}
+        .tl-dot{width:10px;height:10px;border-radius:50%;background:#0559F0;flex-shrink:0;margin-top:5px}
+        .tl-line{width:1px;flex:1;background:#E6EFFE;margin-top:4px}
         .timeline-item:last-child .tl-line{display:none}
-        .tl-period{font-size:12px;font-weight:600;color:#085041;margin-bottom:2px}
+        .tl-period{font-size:12px;font-weight:600;color:#0559F0;margin-bottom:2px}
         .tl-desc{font-size:14px;color:#444;line-height:1.6;font-weight:300}
-        .disclaimer{background:#f3fffb;border:1px solid #d6feef;border-radius:12px;padding:1.25rem 1.5rem;font-size:13px;color:#063d2f;line-height:1.75;margin-top:1.5rem}
+        .disclaimer{background:#E6EFFE;border:1px solid #E6EFFE;border-radius:12px;padding:1.25rem 1.5rem;font-size:13px;color:#0A2150;line-height:1.75;margin-top:1.5rem}
         .sidebar{position:sticky;top:80px}
-        .sidebar-card{background:#fff;border:1px solid #f0ede8;border-radius:16px;padding:1.75rem;margin-bottom:1rem}
-        .sidebar-card.dark{background:linear-gradient(135deg,#0a1a13,#0a2e22);border-color:transparent}
+        .sidebar-card{background:#fff;border:1px solid #DCE6F5;border-radius:16px;padding:1.75rem;margin-bottom:1rem}
+        .sidebar-card.dark{background:linear-gradient(135deg,#0A2150,#0A2150);border-color:transparent}
         .sidebar-title{font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:#bbb;margin-bottom:1.25rem}
         .sidebar-card.dark .sidebar-title{color:rgba(255,255,255,.45)}
-        .sidebar-price-row{display:flex;justify-content:space-between;align-items:baseline;padding:.6rem 0;border-bottom:1px solid #f5f4f2}
+        .sidebar-price-row{display:flex;justify-content:space-between;align-items:baseline;padding:.6rem 0;border-bottom:1px solid #F3F7FE}
         .sidebar-price-row:last-of-type{border-bottom:none}
         .sidebar-price-label{font-size:13px;color:#777}
-        .sidebar-price-val{font-size:15px;font-weight:600;color:#0a2e22}
+        .sidebar-price-val{font-size:15px;font-weight:600;color:#0A2150}
         .btn-full{width:100%;padding:14px;border-radius:10px;font-size:15px;font-weight:600;display:flex;align-items:center;justify-content:center;gap:8px;cursor:pointer;font-family:'Inter',sans-serif;transition:all .2s;margin-top:1rem;border:none}
-        .btn-full.purple{background:#085041;color:#fff}
-        .btn-full.purple:hover{background:#08533f}
+        .btn-full.purple{background:#0559F0;color:#fff}
+        .btn-full.purple:hover{background:#0438A6}
         .btn-full.outline{background:rgba(255,255,255,.08);color:#fff;border:1px solid rgba(255,255,255,.2)}
-        .check-item{display:flex;align-items:flex-start;gap:8px;padding:.5rem 0;border-bottom:1px solid #f5f4f2}
+        .check-item{display:flex;align-items:flex-start;gap:8px;padding:.5rem 0;border-bottom:1px solid #F3F7FE}
         .check-item:last-child{border-bottom:none}
-        .check-dot{width:6px;height:6px;border-radius:50%;background:#085041;flex-shrink:0;margin-top:6px}
+        .check-dot{width:6px;height:6px;border-radius:50%;background:#0559F0;flex-shrink:0;margin-top:6px}
         .process-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:0;position:relative;margin-top:2.5rem}
-        .process-grid::before{content:'';position:absolute;top:22px;left:10%;right:10%;height:1px;background:linear-gradient(90deg,transparent,#d6feef 20%,#d6feef 80%,transparent)}
+        .process-grid::before{content:'';position:absolute;top:22px;left:10%;right:10%;height:1px;background:linear-gradient(90deg,transparent,#E6EFFE 20%,#E6EFFE 80%,transparent)}
         .proc-step{text-align:center;padding:0 .5rem;position:relative;z-index:1}
-        .proc-circle{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#0a1a13,#085041);display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;font-size:15px;font-weight:600;color:#fff;box-shadow:0 4px 14px rgba(124,58,237,.3)}
+        .proc-circle{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#0A2150,#0559F0);display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;font-size:15px;font-weight:600;color:#fff;box-shadow:0 4px 14px rgba(124,58,237,.3)}
         .proc-t{font-size:13px;font-weight:600;margin-bottom:.3rem}
         .proc-d{font-size:11px;color:#888;line-height:1.5}
-        .faq-list{display:flex;flex-direction:column;border:1px solid #f0ede8;border-radius:16px;overflow:hidden;margin-top:2.5rem}
-        .faq-item{border-bottom:1px solid #f0ede8}
+        .faq-list{display:flex;flex-direction:column;border:1px solid #DCE6F5;border-radius:16px;overflow:hidden;margin-top:2.5rem}
+        .faq-item{border-bottom:1px solid #DCE6F5}
         .faq-item:last-child{border-bottom:none}
         .faq-q{width:100%;text-align:left;padding:1.25rem 1.5rem;background:#fff;border:none;cursor:pointer;font-family:'Inter',sans-serif;font-size:15px;font-weight:500;color:#1a1a1a;display:flex;justify-content:space-between;align-items:center;gap:1rem;transition:background .2s}
-        .faq-q:hover{background:#fafaf9}
+        .faq-q:hover{background:#F3F7FE}
         .faq-a{padding:0 1.5rem 1.25rem;font-size:14px;color:#666;line-height:1.75;font-weight:300}
         footer{background:#111;padding:3rem 0 2rem}
         .footer-legal{font-size:11.5px;color:#444;line-height:1.8}
@@ -202,8 +203,8 @@ export default function HairTransplantPage() {
               </div>
               <div className="price-row">
                 <div>
-                  <div className="price-label">Full results</div>
-                  <div className="price-val accent">12 – 18 months</div>
+                  <div className="price-label">Results timeline</div>
+                  <div className="price-val" style={{fontSize:'17px'}}>Varies by patient</div>
                 </div>
               </div>
             </div>
@@ -255,10 +256,10 @@ export default function HairTransplantPage() {
               <h3>Results timeline</h3>
               <div className="timeline-list">
                 {[
-                  {period:'Weeks 2–6',desc:'Transplanted hair sheds (shock loss) — this is normal and expected'},
+                  {period:'Weeks 2–6',desc:'Transplanted hair commonly sheds (shock loss); your treating provider will advise'},
                   {period:'Months 3–4',desc:'New growth begins from transplanted follicles'},
-                  {period:'Months 6–9',desc:'Significant improvement visible, density increasing'},
-                  {period:'Months 12–18',desc:'Full results achieved as hair matures and thickens'},
+                  {period:'Months 6–9',desc:'Progress varies between patients'},
+                  {period:'Months 12–18',desc:'Results develop over many months and vary between patients'},
                 ].map(t => (
                   <div key={t.period} className="timeline-item">
                     <div className="tl-left">
@@ -277,8 +278,8 @@ export default function HairTransplantPage() {
               <ul>
                 <li>High-volume, experienced surgeons performing thousands of procedures annually</li>
                 <li>JCI-accredited and internationally certified clinics</li>
-                <li>Significantly lower cost than UK and Western Europe</li>
-                <li>3–5 day Istanbul stay — efficient, minimal time away from home</li>
+                <li>Itemised quotes provided before you travel</li>
+                <li>Typical Istanbul stay of 3–5 days</li>
                 <li>English-speaking coordinators and interpreters throughout</li>
               </ul>
 
@@ -291,7 +292,7 @@ export default function HairTransplantPage() {
               <div className="sidebar-card dark">
                 <div className="sidebar-title">Get a free quote</div>
                 <p style={{fontSize:'14px',color:'rgba(255,255,255,.65)',lineHeight:1.65,marginBottom:'1.25rem',fontWeight:300}}>
-                  Tell us about your hair loss pattern and goals. Full itemised quote within 48 hours.
+                  Tell us about your hair loss pattern and goals. We aim to send a full itemised quote within 48 hours.
                 </p>
                 <a href={WA_URL} target="_blank" className="btn-full purple">WhatsApp us</a>
                 <a href="mailto:info@oceanhealthtravel.com" className="btn-full outline" style={{marginTop:'8px'}}>Email us</a>
@@ -316,8 +317,8 @@ export default function HairTransplantPage() {
                   <span className="sidebar-price-val">3–5 days</span>
                 </div>
                 <div className="sidebar-price-row">
-                  <span className="sidebar-price-label">Full results</span>
-                  <span className="sidebar-price-val">12–18 months</span>
+                  <span className="sidebar-price-label">Results timeline</span>
+                  <span className="sidebar-price-val">Varies by patient</span>
                 </div>
                 <p style={{fontSize:'11px',color:'#bbb',marginTop:'1rem',lineHeight:1.6}}>Pricing on request. No coordination fee is charged to patients. Flights not included.</p>
               </div>
@@ -344,7 +345,7 @@ export default function HairTransplantPage() {
           <div className="process-grid">
             {[
               {n:'1',t:'Enquiry',d:'Tell us about your hair loss and goals'},
-              {n:'2',t:'Quote',d:'Itemised proposal within 48 hours'},
+              {n:'2',t:'Quote',d:'We aim to send an itemised proposal within 48 hours'},
               {n:'3',t:'Booking',d:'Clinic, hotel, and transfers confirmed'},
               {n:'4',t:'Procedure',d:'FUE or DHI with interpreter present'},
               {n:'5',t:'Aftercare',d:'Post-procedure docs provided in English'},
@@ -368,7 +369,7 @@ export default function HairTransplantPage() {
               <details key={f.q} className="faq-item">
                 <summary className="faq-q">
                   {f.q}
-                  <span style={{fontSize:'18px',color:'#085041',flexShrink:0}}>+</span>
+                  <span style={{fontSize:'18px',color:'#0559F0',flexShrink:0}}>+</span>
                 </summary>
                 <div className="faq-a">{f.a}</div>
               </details>
@@ -382,13 +383,13 @@ export default function HairTransplantPage() {
           <div className="kicker">Get started</div>
           <h2>Ready to find out more?</h2>
           <p style={{fontSize:'16px',color:'#666',lineHeight:1.7,fontWeight:300,maxWidth:'500px',margin:'0 auto 2rem'}}>
-            Tell us about your hair loss pattern and goals. Full itemised quote within 48 hours — no obligation.
+            Tell us about your hair loss pattern and goals. We aim to send a full itemised quote within 48 hours — no obligation.
           </p>
           <div style={{display:'flex',gap:'14px',justifyContent:'center',flexWrap:'wrap'}}>
-            <a href={WA_URL} target="_blank" style={{background:'#085041',color:'#fff',border:'none',padding:'15px 30px',borderRadius:'10px',fontSize:'15px',fontWeight:600,display:'inline-flex',alignItems:'center',gap:'9px',cursor:'pointer',fontFamily:'Inter,sans-serif'}}>
+            <a href={WA_URL} target="_blank" style={{background:'#0559F0',color:'#fff',border:'none',padding:'15px 30px',borderRadius:'10px',fontSize:'15px',fontWeight:600,display:'inline-flex',alignItems:'center',gap:'9px',cursor:'pointer',fontFamily:'Inter,sans-serif'}}>
               Get a free quote
             </a>
-            <a href="mailto:info@oceanhealthtravel.com" style={{background:'transparent',color:'#085041',border:'1px solid #085041',padding:'15px 30px',borderRadius:'10px',fontSize:'15px',display:'inline-flex',alignItems:'center',gap:'9px',cursor:'pointer',fontFamily:'Inter,sans-serif'}}>
+            <a href="mailto:info@oceanhealthtravel.com" style={{background:'transparent',color:'#0559F0',border:'1px solid #0559F0',padding:'15px 30px',borderRadius:'10px',fontSize:'15px',display:'inline-flex',alignItems:'center',gap:'9px',cursor:'pointer',fontFamily:'Inter,sans-serif'}}>
               Email us
             </a>
           </div>
@@ -398,18 +399,7 @@ export default function HairTransplantPage() {
       <YourTimeline stay="3–5 days" />
       <UKPatientInfo current="hair-transplant-istanbul" />
       <RelatedTreatments current="hair-transplant-istanbul" />
-      <footer>
-        <div className="inner">
-          <div className="footer-legal">
-            © {new Date().getFullYear()} Ocean Health &amp; Travel Ltd · Registered in England &amp; Wales · Company no. 16186647<br />
-            London: 17 Green Lanes, N16 9BS ·{' '}
-            <a href="mailto:info@oceanhealthtravel.com" style={{color:'#555'}}>info@oceanhealthtravel.com</a> ·{' '}
-            <a href="tel:+447441904858" style={{color:'#555'}}>+44 7441 904858</a><br />
-            Flights not included · No coordination fee charged to patients · Coordinator, not a medical provider · Elective procedures only<br />
-            <em>Ocean Health &amp; Travel does not provide medical advice. All clinical decisions rest with your treating surgeon. Not suitable for emergencies.</em>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   )
 }

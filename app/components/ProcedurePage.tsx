@@ -4,6 +4,7 @@ import Nav from '@/app/components/Nav'
 import UKPatientInfo from '@/app/components/UKPatientInfo'
 import RelatedTreatments from '@/app/components/RelatedTreatments'
 import { PLASTIC, type Procedure } from '@/app/lib/procedures'
+import Footer from './Footer'
 
 const INCLUDED = [
   'Airport transfers in Istanbul',
@@ -44,7 +45,7 @@ export default function ProcedurePage({ p }: { p: Procedure }) {
   return (
     <div className="pp">
       <style>{`
-        .pp{--bg:#FAF8F4;--band:#F2EEE5;--ink:#12202B;--muted:#5B6770;--line:#E6E0D4;--green:#0B6B55;--green-d:#08503F;--soft:#E3F0EA;background:var(--bg);color:var(--ink);font-family:'Inter',sans-serif;line-height:1.6}
+        .pp{--bg:#FFFFFF;--band:#F3F7FE;--ink:#14213D;--muted:#475569;--line:#DCE6F5;--green:#0559F0;--green-d:#0438A6;--soft:#E6EFFE;background:var(--bg);color:var(--ink);font-family:'Inter',sans-serif;line-height:1.6}
         .pp *{box-sizing:border-box}
         .pp a{color:inherit;text-decoration:none}
         .pp .in{max-width:1280px;margin:0 auto;padding:0 2.5rem}
@@ -134,8 +135,7 @@ export default function ProcedurePage({ p }: { p: Procedure }) {
               <div className="card-t">Price comparison</div>
               <div className="row"><span>Istanbul (OHT)</span><b className="g">{p.price.istanbul}</b></div>
               <div className="row"><span>UK private (typical)</span><b>{p.price.uk}</b></div>
-              <div className="row"><span>Compared with UK</span><b>{p.price.saving}</b></div>
-              <div className="row"><span>Surgery date</span><b>Usually within 2 weeks of confirming</b></div>
+              <div className="row"><span>Surgery date</span><b>Subject to availability</b></div>
               <div className="row"><span>Stay in Istanbul</span><b>{p.price.stay}</b></div>
               <div className="fine">Prices indicative. No coordination fee is charged to patients. Flights not included. UK figures are published guide prices, October 2026.</div>
             </div>
@@ -174,8 +174,8 @@ export default function ProcedurePage({ p }: { p: Procedure }) {
           </div>
           <h3 style={{ marginTop: '2.25rem' }}>Your timeline</h3>
           <ol className="tl">
-            <li><b>Within 48 hours</b><span>Itemised quote, once we have your complete records or photographs.</span></li>
-            <li><b>Usually within 2 weeks of confirming</b><span>Your surgery date, subject to the surgeon and hospital availability.</span></li>
+            <li><b>Typically within 48 hours</b><span>We aim to send an itemised quote once we have your complete records or photographs.</span></li>
+            <li><b>Surgery date</b><span>Agreed with you once your records are reviewed, subject to the surgeon and hospital availability.</span></li>
             <li><b>Arrival</b><span>Airport transfer, hotel, and your meeting with the surgeon before the procedure.</span></li>
             <li><b>{p.price.stay === 'Depends on treatment' ? 'In Istanbul' : p.price.stay}</b><span>The procedure and post-operative checks. The surgeon confirms when you are fit to fly.</span></li>
             <li><b>At home</b><span>Follow your surgeon&apos;s guidance on activity, work and exercise. English-language documents go to your GP on request.</span></li>
@@ -212,7 +212,7 @@ export default function ProcedurePage({ p }: { p: Procedure }) {
         <div className="in">
           <div className="cta">
             <h2>Ready to find out what {p.name.toLowerCase()} costs for you?</h2>
-            <p>Tell us what you are considering. Itemised quote within 48 hours. Hospital and surgeon confirmed in writing before you pay.</p>
+            <p>Tell us what you are considering. We aim to send an itemised quote within about 48 hours. Hospital and surgeon confirmed in writing before you pay.</p>
             <a href={wa} target="_blank" rel="noopener noreferrer" className="btn">Get a free quote</a>
             <p style={{ marginTop: '1.25rem', marginBottom: 0, color: 'rgba(255,255,255,.7)', fontSize: 14 }}>
               Prefer to send photos or records? <Link href={`/records-review?procedure=${p.slug}`} style={{ color: '#fff', borderBottom: '1px solid rgba(255,255,255,.6)' }}>Send your details for review</Link>
@@ -224,17 +224,7 @@ export default function ProcedurePage({ p }: { p: Procedure }) {
       <UKPatientInfo current={p.slug} flying={p.flying} />
       <RelatedTreatments current={p.slug} related={p.related} />
 
-      <footer>
-        <div className="in">
-          <div className="legal">
-            © {new Date().getFullYear()} Ocean Health &amp; Travel Ltd · Registered in England &amp; Wales · Company no. 16186647<br />
-            London: 17 Green Lanes, N16 9BS ·{' '}
-            <a href="mailto:info@oceanhealthtravel.com">info@oceanhealthtravel.com</a> · <a href="tel:+447441904858">+44 7441 904858</a><br />
-            Flights not included · No coordination fee charged to patients · Coordinator, not a medical provider · Elective procedures only<br />
-            <em>Ocean Health &amp; Travel does not provide medical advice. All clinical decisions rest with your treating provider. Not suitable for emergencies.</em>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   )
 }

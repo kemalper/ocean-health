@@ -20,8 +20,8 @@ export default function BackToTop() {
   return (
     <>
       <style>{`
-        .btt{position:fixed;right:18px;bottom:76px;z-index:59;width:44px;height:44px;border-radius:50%;border:1px solid #E6E0D4;background:#fff;color:#0B6B55;display:inline-flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 6px 18px rgba(18,32,43,.12);transition:opacity .25s,transform .25s,background .2s}
-        .btt:hover{background:#E3F0EA}
+        .btt{position:fixed;right:18px;bottom:76px;z-index:59;width:44px;height:44px;border-radius:50%;border:1px solid #DCE6F5;background:#fff;color:#0559F0;display:inline-flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 6px 18px rgba(18,32,43,.12);transition:opacity .25s,transform .25s,background .2s}
+        .btt:hover{background:#E6EFFE}
         .btt.off{opacity:0;transform:translateY(12px);pointer-events:none}
         .btt svg{width:20px;height:20px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
         @media(max-width:600px){.btt{right:12px;bottom:70px}}

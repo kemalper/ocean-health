@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Nav from '@/app/components/Nav'
 import TreatmentTheme from '@/app/components/TreatmentTheme'
+import Footer from '@/app/components/Footer'
 
 export const metadata: Metadata = {
   alternates: { canonical: '/faq' },
@@ -16,11 +17,11 @@ const faqSections = [
     faqs: [
       {
         q: 'How do I get a quote?',
-        a: 'Contact us via WhatsApp (+44 7441 904858) or email (info@oceanhealthtravel.com) with your treatment, preferred dates, and any relevant medical information. We provide a full itemised quote within 48 hours — no obligation.',
+        a: 'Contact us via WhatsApp (+44 7441 904858) or email (info@oceanhealthtravel.com) with your treatment, preferred dates, and any relevant medical information. We aim to provide a full itemised quote within 48 hours of receiving your clinical information — no obligation.',
       },
       {
         q: 'How quickly can I have surgery?',
-        a: 'Once you have confirmed your booking, surgery can usually be scheduled within 2 weeks, subject to the surgeon and hospital availability. From first contact, most patients have surgery within 2–3 weeks, which covers the quote (within 48 hours of complete records), booking and travel arrangements. Some complex procedures (e.g. neurosurgery) may require additional pre-operative assessment time, because the neurosurgeon first reviews your imaging and records.',
+        a: 'Once you have confirmed your booking, surgery can usually be scheduled within 2 weeks, subject to the surgeon and hospital availability. From first contact, most patients have surgery within 2–3 weeks, which covers the quote (we aim to provide this within 48 hours of complete records), booking and travel arrangements. Some complex procedures (e.g. neurosurgery) may require additional pre-operative assessment time, because the neurosurgeon first reviews your imaging and records.',
       },
       {
         q: 'Do I need a referral from my GP?',
@@ -37,7 +38,7 @@ const faqSections = [
     faqs: [
       {
         q: 'How much cheaper is treatment in Istanbul than the UK?',
-        a: 'Differences vary by procedure and by the UK provider you compare with, so we list every cost in your quote and you can compare like for like. Indicative starting prices: dental implants from £350 each, rhinoplasty from £3,200, knee replacement from £3,500, LASIK from £600 per eye, deep brain stimulation from £23,700. All prices are indicative — exact quotes depend on your specific case.',
+        a: 'Prices vary by procedure and by provider. Indicative "from" prices, alongside typical UK private ranges, are shown on our homepage. They are confirmed by the treating provider after clinical assessment, and your itemised quote depends on your specific case.',
       },
       {
         q: 'What is included in the price?',
@@ -45,7 +46,7 @@ const faqSections = [
       },
       {
         q: 'Are there any hidden charges?',
-        a: 'No. Our quotes are itemised and fixed before you travel. We do not add charges on arrival. Ocean Health &amp; Travel coordinates your care at no direct cost to you — our commercial arrangements are with partner hospitals, not with patients.',
+        a: 'No. Our quotes are itemised and fixed before you travel. We do not add charges on arrival. Ocean Health & Travel coordinates your care at no direct cost to you — our commercial arrangements are with partner hospitals, not with patients.',
       },
       {
         q: 'How do I pay?',
@@ -62,7 +63,7 @@ const faqSections = [
     faqs: [
       {
         q: 'Is medical treatment in Istanbul safe?',
-        a: 'Ocean Health & Travel coordinates exclusively with JCI-accredited hospitals in Istanbul. JCI (Joint Commission International) is an internationally recognised hospital accreditation standard covering patient safety, quality systems, and clinical governance. All partner facilities meet these international standards.',
+        a: 'Ocean Health & Travel coordinates exclusively with JCI-accredited hospitals in Istanbul. JCI (Joint Commission International) is an internationally recognised hospital accreditation standard covering patient safety, quality systems, and clinical governance. All partner facilities meet these international standards. All procedures carry risks; these are discussed by the treating provider.',
       },
       {
         q: 'Which hospitals do you work with?',
@@ -153,40 +154,40 @@ export default function FAQPage() {
         body{font-family:'Inter',sans-serif;color:#1a1a1a;background:#fff}
         a{text-decoration:none;color:inherit}
         .inner{max-width:1160px;margin:0 auto;padding:0 2.5rem}
-.nav-links a:hover{color:#085041}
+.nav-links a:hover{color:#0559F0}
         .btn-
-.btn-nav:hover{background:#085041;color:#fff!important}
-        .hero{background:linear-gradient(135deg,#042e22 0%,#085041 50%,#0d6b55 100%);padding:80px 0 60px;position:relative;overflow:hidden}
-        .hero::before{content:'';position:absolute;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(29,158,117,.2) 0%,transparent 70%);top:-100px;right:-100px;pointer-events:none}
+.btn-nav:hover{background:#0559F0;color:#fff!important}
+        .hero{background:linear-gradient(135deg,#0A2150 0%,#0559F0 50%,#0438A6 100%);padding:80px 0 60px;position:relative;overflow:hidden}
+        .hero::before{content:'';position:absolute;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(5,89,240,.2) 0%,transparent 70%);top:-100px;right:-100px;pointer-events:none}
         .hero-inner{position:relative;z-index:1;max-width:640px}
-        .kicker{font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#6ee7b7;margin-bottom:1rem}
+        .kicker{font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#8FD8FF;margin-bottom:1rem}
         h1{font-family:'DM Serif Display',serif;font-size:clamp(32px,4vw,50px);line-height:1.1;letter-spacing:-.025em;color:#fff;margin-bottom:1rem;font-weight:400}
-        h1 em{font-style:italic;color:#6ee7b7}
+        h1 em{font-style:italic;color:#8FD8FF}
         .hero-sub{font-size:16px;color:rgba(255,255,255,.72);line-height:1.75;font-weight:300}
         .sec{padding:5rem 0}
         .faq-layout{display:grid;grid-template-columns:240px 1fr;gap:4rem;align-items:start}
         .faq-
-.faq-nav-title{font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#bbb;margin-bottom:1rem}
-        .faq-nav-link{display:block;font-size:13px;color:#666;padding:.5rem 0;border-left:2px solid #f0ede8;padding-left:.75rem;margin-bottom:.25rem;transition:all .2s;cursor:pointer}
-        .faq-nav-link:hover{color:#085041;border-left-color:#085041}
+.faq-nav-title{font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#475569;margin-bottom:1rem}
+        .faq-nav-link{display:block;font-size:13px;color:#666;padding:.5rem 0;border-left:2px solid #DCE6F5;padding-left:.75rem;margin-bottom:.25rem;transition:all .2s;cursor:pointer}
+        .faq-nav-link:hover{color:#0559F0;border-left-color:#0559F0}
         .faq-section{margin-bottom:3.5rem}
         .faq-section:last-child{margin-bottom:0}
-        .section-title{font-family:'DM Serif Display',serif;font-size:22px;font-weight:400;color:#1a1a1a;letter-spacing:-.01em;margin-bottom:1.25rem;padding-bottom:.75rem;border-bottom:1px solid #f0ede8}
-        .faq-list{display:flex;flex-direction:column;border:1px solid #f0ede8;border-radius:16px;overflow:hidden}
-        .faq-item{border-bottom:1px solid #f0ede8}
+        .section-title{font-family:'DM Serif Display',serif;font-size:22px;font-weight:400;color:#1a1a1a;letter-spacing:-.01em;margin-bottom:1.25rem;padding-bottom:.75rem;border-bottom:1px solid #DCE6F5}
+        .faq-list{display:flex;flex-direction:column;border:1px solid #DCE6F5;border-radius:16px;overflow:hidden}
+        .faq-item{border-bottom:1px solid #DCE6F5}
         .faq-item:last-child{border-bottom:none}
         .faq-q{width:100%;text-align:left;padding:1.1rem 1.5rem;background:#fff;border:none;cursor:pointer;font-family:'Inter',sans-serif;font-size:14px;font-weight:500;color:#1a1a1a;display:flex;justify-content:space-between;align-items:center;gap:1rem;transition:background .2s;line-height:1.5}
-        .faq-q:hover{background:#fafaf9}
+        .faq-q:hover{background:#F3F7FE}
         .faq-a{padding:0 1.5rem 1.1rem;font-size:13.5px;color:#666;line-height:1.75;font-weight:300}
-        .faq-plus{font-size:18px;color:#1D9E75;flex-shrink:0}
-        .cta-strip{background:#f0faf5;border:1px solid #c6f0de;border-radius:16px;padding:2rem;text-align:center;margin-top:3rem}
-        .cta-strip h3{font-family:'DM Serif Display',serif;font-size:22px;font-weight:400;color:#085041;margin-bottom:.5rem}
+        .faq-plus{font-size:18px;color:#0559F0;flex-shrink:0}
+        .cta-strip{background:#F3F7FE;border:1px solid #CFE0FC;border-radius:16px;padding:2rem;text-align:center;margin-top:3rem}
+        .cta-strip h3{font-family:'DM Serif Display',serif;font-size:22px;font-weight:400;color:#0559F0;margin-bottom:.5rem}
         .cta-strip p{font-size:14px;color:#555;font-weight:300;line-height:1.65;margin-bottom:1.25rem}
         .cta-btns{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
-        .btn-wa{background:#085041;color:#fff;border:none;padding:12px 24px;border-radius:9px;font-size:14px;font-weight:500;display:inline-flex;align-items:center;gap:8px;cursor:pointer;font-family:'Inter',sans-serif;transition:all .2s}
-        .btn-wa:hover{background:#042e22}
-        .btn-email{background:transparent;color:#085041;border:1px solid #085041;padding:12px 24px;border-radius:9px;font-size:14px;display:inline-flex;align-items:center;gap:8px;cursor:pointer;font-family:'Inter',sans-serif;transition:all .2s}
-        .btn-email:hover{background:#085041;color:#fff}
+        .btn-wa{background:#0559F0;color:#fff;border:none;padding:12px 24px;border-radius:9px;font-size:14px;font-weight:500;display:inline-flex;align-items:center;gap:8px;cursor:pointer;font-family:'Inter',sans-serif;transition:all .2s}
+        .btn-wa:hover{background:#0A2150}
+        .btn-email{background:transparent;color:#0559F0;border:1px solid #0559F0;padding:12px 24px;border-radius:9px;font-size:14px;display:inline-flex;align-items:center;gap:8px;cursor:pointer;font-family:'Inter',sans-serif;transition:all .2s}
+        .btn-email:hover{background:#0559F0;color:#fff}
         footer{background:#111;padding:3rem 0 2rem}
         .footer-legal{font-size:11.5px;color:#444;line-height:1.8}
         .footer-legal em{color:#333;font-style:normal;font-size:11px}
@@ -261,18 +262,7 @@ export default function FAQPage() {
         </div>
       </section>
 
-      <footer>
-        <div className="inner">
-          <div className="footer-legal">
-            © {new Date().getFullYear()} Ocean Health &amp; Travel Ltd · Registered in England &amp; Wales · Company no. 16186647<br />
-            London: 17 Green Lanes, N16 9BS ·{' '}
-            <a href="mailto:info@oceanhealthtravel.com" style={{color:'#555'}}>info@oceanhealthtravel.com</a> ·{' '}
-            <a href="tel:+447441904858" style={{color:'#555'}}>+44 7441 904858</a><br />
-            Flights not included · No coordination fee charged to patients · Coordinator, not a medical provider · Elective procedures only<br />
-            <em>Ocean Health &amp; Travel does not provide medical advice. All clinical decisions rest with your treating provider. Not suitable for emergencies.</em>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   )
 }

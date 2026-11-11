@@ -2,6 +2,7 @@ import Image from 'next/image'
 import type { Metadata } from 'next'
 import Nav from '@/app/components/Nav'
 import TreatmentTheme from '@/app/components/TreatmentTheme'
+import Footer from '@/app/components/Footer'
 
 export const metadata: Metadata = {
   alternates: { canonical: '/about' },
@@ -21,48 +22,48 @@ export default function AboutPage() {
         body{font-family:'Inter',sans-serif;color:#1a1a1a;background:#fff}
         a{text-decoration:none;color:inherit}
         .inner{max-width:1160px;margin:0 auto;padding:0 2.5rem}
-.nav-links a:hover{color:#085041}
+.nav-links a:hover{color:#0559F0}
         .btn-
-.btn-nav:hover{background:#085041;color:#fff!important}
-        .hero{background:linear-gradient(135deg,#042e22 0%,#085041 50%,#0d6b55 100%);padding:100px 0 80px;position:relative;overflow:hidden}
-        .hero::before{content:'';position:absolute;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(29,158,117,.2) 0%,transparent 70%);top:-100px;right:-100px;pointer-events:none}
+.btn-nav:hover{background:#0559F0;color:#fff!important}
+        .hero{background:linear-gradient(135deg,#0A2150 0%,#0559F0 50%,#0438A6 100%);padding:100px 0 80px;position:relative;overflow:hidden}
+        .hero::before{content:'';position:absolute;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(5,89,240,.2) 0%,transparent 70%);top:-100px;right:-100px;pointer-events:none}
         .hero-inner{position:relative;z-index:1;max-width:760px}
-        .kicker{font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#6ee7b7;margin-bottom:1rem}
+        .kicker{font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#8FD8FF;margin-bottom:1rem}
         h1{font-family:'DM Serif Display',serif;font-size:clamp(36px,4.5vw,58px);line-height:1.1;letter-spacing:-.025em;color:#fff;margin-bottom:1rem;font-weight:400}
-        h1 em{font-style:italic;color:#6ee7b7}
+        h1 em{font-style:italic;color:#8FD8FF}
         .hero-sub{font-size:17px;color:rgba(255,255,255,.72);line-height:1.75;font-weight:300;max-width:580px}
         .sec{padding:5rem 0}
-        .sec.bg{background:#fafaf9}
-        .sec.border{border-top:1px solid #f0ede8;border-bottom:1px solid #f0ede8}
+        .sec.bg{background:#F3F7FE}
+        .sec.border{border-top:1px solid #DCE6F5;border-bottom:1px solid #DCE6F5}
         h2{font-family:'DM Serif Display',serif;font-size:clamp(26px,3vw,38px);font-weight:400;color:#1a1a1a;letter-spacing:-.02em;line-height:1.2;margin-bottom:1rem}
         h3{font-family:'DM Serif Display',serif;font-size:20px;font-weight:400;color:#1a1a1a;letter-spacing:-.01em;margin-bottom:.75rem}
         .prose p{font-size:15px;color:#444;line-height:1.85;margin-bottom:1.25rem;font-weight:300}
         .prose h3{margin-top:2.5rem;margin-bottom:.75rem}
-        .about-photo{position:relative;margin:0;border-radius:14px;overflow:hidden;aspect-ratio:4/3;background:#F2EEE5}
+        .about-photo{position:relative;margin:0;border-radius:14px;overflow:hidden;aspect-ratio:4/3;background:#F3F7FE}
         .about-photo figcaption{position:absolute;left:12px;bottom:10px;font-size:11px;letter-spacing:.04em;color:#fff;background:rgba(18,32,43,.55);padding:3px 9px;border-radius:99px}
         .two-col{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start}
         .stat-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:2rem}
-        .stat-card{background:#fff;border:1px solid #f0ede8;border-radius:16px;padding:1.5rem}
-        .stat-n{font-family:'DM Serif Display',serif;font-size:36px;color:#085041;font-weight:400;line-height:1;margin-bottom:5px}
+        .stat-card{background:#fff;border:1px solid #DCE6F5;border-radius:16px;padding:1.5rem}
+        .stat-n{font-family:'DM Serif Display',serif;font-size:36px;color:#0559F0;font-weight:400;line-height:1;margin-bottom:5px}
         .stat-l{font-size:13px;color:#777;font-weight:300}
         .value-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;margin-top:2rem}
-        .value-card{background:#fff;border:1px solid #f0ede8;border-radius:14px;padding:1.25rem}
-        .value-icon{width:40px;height:40px;background:#f0faf5;border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:.75rem;color:#085041}
+        .value-card{background:#fff;border:1px solid #DCE6F5;border-radius:14px;padding:1.25rem}
+        .value-icon{width:40px;height:40px;background:#F3F7FE;border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:.75rem;color:#0559F0}
         .value-t{font-size:14px;font-weight:600;margin-bottom:.4rem}
         .value-d{font-size:13px;color:#777;line-height:1.65;font-weight:300}
         .credential-list{display:flex;flex-direction:column;gap:.75rem;margin-top:1.5rem}
-        .cred-item{display:flex;align-items:flex-start;gap:12px;background:#fff;border:1px solid #f0ede8;border-radius:12px;padding:1rem 1.25rem}
-        .cred-dot{width:8px;height:8px;border-radius:50%;background:#1D9E75;flex-shrink:0;margin-top:5px}
+        .cred-item{display:flex;align-items:flex-start;gap:12px;background:#fff;border:1px solid #DCE6F5;border-radius:12px;padding:1rem 1.25rem}
+        .cred-dot{width:8px;height:8px;border-radius:50%;background:#0559F0;flex-shrink:0;margin-top:5px}
         .cred-t{font-size:14px;font-weight:500;color:#1a1a1a;margin-bottom:2px}
-        .cred-d{font-size:12px;color:#888;font-weight:300}
-        .disclaimer-box{background:#f0faf5;border:1px solid #c6f0de;border-radius:14px;padding:1.5rem;margin-top:2rem}
-        .disclaimer-box p{font-size:13px;color:#085041;line-height:1.75;margin:0;font-weight:300}
-        .cta-box{background:linear-gradient(135deg,#042e22,#085041);border-radius:20px;padding:3rem;text-align:center}
+        .cred-d{font-size:12px;color:#475569;font-weight:300}
+        .disclaimer-box{background:#F3F7FE;border:1px solid #CFE0FC;border-radius:14px;padding:1.5rem;margin-top:2rem}
+        .disclaimer-box p{font-size:13px;color:#0559F0;line-height:1.75;margin:0;font-weight:300}
+        .cta-box{background:linear-gradient(135deg,#0A2150,#0559F0);border-radius:20px;padding:3rem;text-align:center}
         .cta-box h2{color:#fff;margin-bottom:.75rem}
         .cta-box p{font-size:15px;color:rgba(255,255,255,.65);font-weight:300;line-height:1.7;margin-bottom:2rem;max-width:480px;margin-left:auto;margin-right:auto}
         .cta-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
-        .btn-cta-w{background:#fff;color:#085041;border:none;padding:14px 28px;border-radius:10px;font-size:15px;font-weight:600;display:inline-flex;align-items:center;gap:8px;cursor:pointer;font-family:'Inter',sans-serif;transition:all .2s}
-        .btn-cta-w:hover{background:#E1F5EE}
+        .btn-cta-w{background:#fff;color:#0559F0;border:none;padding:14px 28px;border-radius:10px;font-size:15px;font-weight:600;display:inline-flex;align-items:center;gap:8px;cursor:pointer;font-family:'Inter',sans-serif;transition:all .2s}
+        .btn-cta-w:hover{background:#E6EFFE}
         .btn-cta-o{background:transparent;color:rgba(255,255,255,.75);border:1px solid rgba(255,255,255,.3);padding:14px 28px;border-radius:10px;font-size:15px;display:inline-flex;align-items:center;gap:8px;cursor:pointer;font-family:'Inter',sans-serif;transition:all .2s}
         .btn-cta-o:hover{background:rgba(255,255,255,.1);color:#fff}
         footer{background:#111;padding:3rem 0 2rem}
@@ -119,10 +120,10 @@ export default function AboutPage() {
                 Ocean Health &amp; Travel Ltd is a UK-registered medical tourism coordinator (Companies House no. 16186647). In Turkey, our operations are carried out through our licensed Turkish travel agency, Ocean Turizm Seyahat Acentası, which holds TÜRSAB authorisation. We connect international patients — primarily from the United Kingdom and Europe — with distinguished hospitals and specialist physicians in Istanbul.
               </p>
               <p>
-                We are a coordination service, not a medical provider. We do not employ surgeons or operate clinical facilities. Our role is to make the process of accessing high-quality elective medical care in Istanbul straightforward, transparent, and safe — handling every logistical step so that patients can focus on their treatment and recovery.
+                We are a coordination service, not a medical provider. We do not employ surgeons or operate clinical facilities. Our role is to make the process of accessing high-quality planned medical care in Istanbul straightforward, transparent, and safe — handling every logistical step so that patients can focus on their treatment and recovery.
               </p>
               <p>
-                What distinguishes us is a single accountable coordinator. Your case is handled end to end by one coordinator, ensuring documentation is collated completely, relevant information is communicated clearly to the treating team, and hospital liaison is precise.
+                What distinguishes us is a single accountable coordinator. Your case is handled end to end by one coordinator, ensuring documentation is collated completely, relevant information is communicated clearly to the treating team, and hospital liaison is precise. Our coordination lead is medically qualified. Clinical documentation is reviewed for accuracy, medical information is passed clearly to the treating team, and hospital liaison is followed up promptly. All clinical assessment and treatment decisions are made by the treating provider.
               </p>
             </div>
           </div>
@@ -135,10 +136,10 @@ export default function AboutPage() {
             <div className="prose">
               <h2>Our mission</h2>
               <p>
-                Our mission is to make high-quality elective healthcare accessible to everyone — not just those who can afford UK private rates or who are willing to wait for NHS treatment.
+                Our mission is to make high-quality planned healthcare accessible to everyone — not just those who can afford UK private rates or who are willing to wait for NHS treatment.
               </p>
               <p>
-                Turkey has invested significantly in its healthcare infrastructure. Lower operating costs in Turkey are the main reason prices are lower than at UK private clinics. We do not claim that care is identical: the hospital and surgeon are confirmed in writing before you pay for treatment, and we encourage you to check their accreditation and credentials before you commit.
+                Many Istanbul hospitals are internationally accredited and use modern surgical, implant and laser systems. Operating costs in Turkey differ from the UK, which is one reason prices differ. Clinical standards and suitability are for the treating provider to assess and explain to you. The hospital and surgeon are confirmed in writing before you pay for treatment, and we encourage you to check their accreditation and credentials before you commit.
               </p>
               <p>
                 Our role is to bridge the gap — ensuring that patients arrive in Istanbul with the right documentation, meet the right surgeon, and return home with complete clinical records. We handle everything in between.
@@ -197,7 +198,7 @@ export default function AboutPage() {
 
           <div className="disclaimer-box">
             <p>
-              <strong>Medical disclaimer:</strong> Ocean Health &amp; Travel is a medical tourism coordination service and does not replace independent medical advice. We do not provide clinical assessments, diagnoses, or treatment recommendations. All clinical decisions rest with the treating physician at our partner hospital. This service covers elective procedures only and is not suitable for emergency medical situations. The treating provider remains responsible for its clinical treatment and agreed post-operative follow-up. Patients should seek urgent local medical care if required after returning home.
+              <strong>Medical disclaimer:</strong> Ocean Health &amp; Travel is a medical tourism coordination service and does not replace independent medical advice. We do not provide clinical assessments, diagnoses, or treatment recommendations. All clinical decisions rest with the treating physician at our partner hospital. This service covers planned (non-emergency) treatment only and is not suitable for emergency medical situations. The treating provider remains responsible for its clinical treatment and agreed post-operative follow-up. Patients should seek urgent local medical care if required after returning home.
             </p>
           </div>
         </div>
@@ -207,8 +208,8 @@ export default function AboutPage() {
         <div className="inner">
           <h2>Our offices</h2>
           <div style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:'1.5rem',marginTop:'1.5rem'}}>
-            <div style={{background:'#fff',border:'1px solid #f0ede8',borderRadius:'16px',padding:'1.5rem'}}>
-              <div style={{fontSize:'12px',fontWeight:600,letterSpacing:'.08em',textTransform:'uppercase',color:'#1D9E75',marginBottom:'.75rem'}}>UK office</div>
+            <div style={{background:'#fff',border:'1px solid #DCE6F5',borderRadius:'16px',padding:'1.5rem'}}>
+              <div style={{fontSize:'12px',fontWeight:600,letterSpacing:'.08em',textTransform:'uppercase',color:'#0559F0',marginBottom:'.75rem'}}>UK office</div>
               <div style={{fontSize:'15px',fontWeight:500,marginBottom:'.5rem'}}>London</div>
               <div style={{fontSize:'14px',color:'#666',lineHeight:1.7,fontWeight:300}}>
                 17 Green Lanes<br />
@@ -216,12 +217,12 @@ export default function AboutPage() {
                 N16 9BS<br />
                 United Kingdom
               </div>
-              <a href="tel:+447441904858" style={{display:'inline-flex',alignItems:'center',gap:'6px',fontSize:'13px',color:'#085041',fontWeight:500,marginTop:'1rem'}}>
+              <a href="tel:+447441904858" style={{display:'inline-flex',alignItems:'center',gap:'6px',fontSize:'13px',color:'#0559F0',fontWeight:500,marginTop:'1rem'}}>
                 +44 7441 904858
               </a>
             </div>
-            <div style={{background:'#fff',border:'1px solid #f0ede8',borderRadius:'16px',padding:'1.5rem'}}>
-              <div style={{fontSize:'12px',fontWeight:600,letterSpacing:'.08em',textTransform:'uppercase',color:'#1D9E75',marginBottom:'.75rem'}}>Turkey operations office</div>
+            <div style={{background:'#fff',border:'1px solid #DCE6F5',borderRadius:'16px',padding:'1.5rem'}}>
+              <div style={{fontSize:'12px',fontWeight:600,letterSpacing:'.08em',textTransform:'uppercase',color:'#0559F0',marginBottom:'.75rem'}}>Turkey operations office</div>
               <div style={{fontSize:'15px',fontWeight:500,marginBottom:'.5rem'}}>Fethiye, Muğla</div>
               <div style={{fontSize:'14px',color:'#666',lineHeight:1.7,fontWeight:300}}>
                 Karagözler Mah.<br />
@@ -229,8 +230,8 @@ export default function AboutPage() {
                 Fethiye, Muğla<br />
                 Turkey
               </div>
-              <div style={{fontSize:'12.5px',color:'#888',lineHeight:1.6,marginTop:'.75rem'}}>Operations and administration. Patients are treated at partner hospitals in Istanbul.</div>
-              <a href="mailto:info@oceanhealthtravel.com" style={{display:'inline-flex',alignItems:'center',gap:'6px',fontSize:'13px',color:'#085041',fontWeight:500,marginTop:'1rem'}}>
+              <div style={{fontSize:'12.5px',color:'#475569',lineHeight:1.6,marginTop:'.75rem'}}>Operations and administration. Patients are treated at partner hospitals in Istanbul.</div>
+              <a href="mailto:info@oceanhealthtravel.com" style={{display:'inline-flex',alignItems:'center',gap:'6px',fontSize:'13px',color:'#0559F0',fontWeight:500,marginTop:'1rem'}}>
                 info@oceanhealthtravel.com
               </a>
             </div>
@@ -251,18 +252,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <footer>
-        <div className="inner">
-          <div className="footer-legal">
-            © {new Date().getFullYear()} Ocean Health &amp; Travel Ltd · Registered in England &amp; Wales · Company no. 16186647<br />
-            London: 17 Green Lanes, N16 9BS · Fethiye: Karagözler Mah., Fevzi Çakmak Cad. No:11/A, Muğla ·{' '}
-            <a href="mailto:info@oceanhealthtravel.com" style={{color:'#555'}}>info@oceanhealthtravel.com</a> ·{' '}
-            <a href="tel:+447441904858" style={{color:'#555'}}>+44 7441 904858</a><br />
-            Flights not included · No coordination fee charged to patients · Coordinator, not a medical provider · Elective procedures only<br />
-            <em>Ocean Health &amp; Travel does not provide medical advice. All clinical decisions rest with your treating provider. Not suitable for emergencies.</em>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   )
 }

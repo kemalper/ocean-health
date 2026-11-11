@@ -7,7 +7,7 @@ const FLYING: Record<string, string> = {
   'lasik-istanbul': 'Most patients are comfortable flying home 2–3 days after surgery, subject to surgeon clearance.',
   'dental-istanbul': 'In most cases you can fly immediately after treatment. Your dentist will confirm after more complex procedures.',
   'dental-implants-turkey': 'In most cases you can fly immediately after treatment. Your dentist will confirm after more complex procedures.',
-  'deep-brain-stimulation-turkey': 'Most patients remain in Istanbul for 2–3 weeks before flying home, subject to surgical team clearance.',
+  'deep-brain-stimulation-turkey': 'Length of stay varies by patient and provider. Your surgical team confirms when it is safe to fly home.',
 }
 const FLYING_DEFAULT = 'Timing depends on the procedure and your recovery. Your surgical team confirms when it is safe to fly before you book your return.'
 
@@ -16,15 +16,15 @@ export default function UKPatientInfo({ current, flying: flyingText }: { current
   return (
     <section className="ukp">
       <style>{`
-        .ukp{padding:64px 0;background:var(--bg,#FAF8F4)}
+        .ukp{padding:64px 0;background:var(--bg,#FFFFFF)}
         .ukp .ukp-in{max-width:1280px;margin:0 auto;padding:0 2.5rem}
-        .ukp h2{font-size:26px;font-weight:500;color:var(--ink,#12202B);margin:0 0 .5rem}
-        .ukp .ukp-sub{font-size:15px;color:var(--muted,#5B6770);margin:0 0 1.5rem;max-width:640px}
+        .ukp h2{font-size:26px;font-weight:500;color:var(--ink,#14213D);margin:0 0 .5rem}
+        .ukp .ukp-sub{font-size:15px;color:var(--muted,#475569);margin:0 0 1.5rem;max-width:640px}
         .ukp .ukp-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
-        .ukp .ukp-card{background:#fff;border:1px solid var(--line,#E6E0D4);border-radius:14px;padding:22px 24px}
-        .ukp h3{font-size:16px;font-weight:600;color:var(--ink,#12202B);margin:0 0 8px}
-        .ukp p{font-size:14.5px;line-height:1.7;color:var(--muted,#5B6770);margin:0}
-        .ukp a{color:var(--green,#0B6B55);text-decoration:underline}
+        .ukp .ukp-card{background:#fff;border:1px solid var(--line,#DCE6F5);border-radius:14px;padding:22px 24px}
+        .ukp h3{font-size:16px;font-weight:600;color:var(--ink,#14213D);margin:0 0 8px}
+        .ukp p{font-size:14.5px;line-height:1.7;color:var(--muted,#475569);margin:0}
+        .ukp a{color:var(--green,#0559F0);text-decoration:underline}
         @media(max-width:900px){.ukp .ukp-grid{grid-template-columns:1fr}.ukp .ukp-in{padding:0 1.25rem}}
       `}</style>
       <div className="ukp-in">

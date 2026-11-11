@@ -4,6 +4,7 @@ import TreatmentTheme from '@/app/components/TreatmentTheme'
 import RelatedTreatments from '@/app/components/RelatedTreatments'
 import YourTimeline from '@/app/components/YourTimeline'
 import UKPatientInfo from '@/app/components/UKPatientInfo'
+import Footer from '@/app/components/Footer'
 
 export const metadata: Metadata = {
   alternates: { canonical: '/treatments/dental-implants-turkey' },
@@ -16,7 +17,7 @@ const WA_URL = 'https://wa.me/447441904858?text=Hello%2C%20I%27d%20like%20to%20e
 const faqs = [
   {
     q: 'How much do dental implants cost in Turkey?',
-    a: 'Single dental implants in Istanbul start from £350, compared to £1,500–£3,500 at UK private dental clinics — a saving of approximately 75–90%. Full-arch restorations (All-on-4 or All-on-6) start from £4,500. Exact pricing depends on the number of implants, bone grafting requirements, and the type of restoration chosen.'
+    a: 'Single dental implants in Istanbul start from £350, compared to £1,500–£3,500 at UK private dental clinics. Full-arch restorations (All-on-4 or All-on-6) start from £4,500. Exact pricing depends on the number of implants, bone grafting requirements, and the type of restoration chosen.'
   },
   {
     q: 'How long does the dental implant process take?',
@@ -24,7 +25,7 @@ const faqs = [
   },
   {
     q: 'Is it safe to get dental implants in Turkey?',
-    a: 'Ocean Health & Travel coordinates dental implant procedures exclusively at JCI-accredited clinics and internationally certified dental centres in Istanbul. All partner clinics use CE-marked implant systems from established manufacturers (Straumann, Nobel Biocare, Osstem). We do not provide dental advice — all clinical decisions rest with your treating dentist.'
+    a: 'Ocean Health & Travel coordinates dental implant procedures exclusively at JCI-accredited clinics and internationally certified dental centres in Istanbul. All partner clinics use CE-marked implant systems from established manufacturers (Straumann, Nobel Biocare, Osstem). We do not provide dental advice — all clinical decisions rest with your treating dentist. All procedures carry risks; these are discussed by the treating provider.'
   },
   {
     q: 'Which implant brands are used?',
@@ -50,21 +51,21 @@ export default function DentalImplantsPage() {
         body{font-family:'Inter',sans-serif;color:#1a1a1a;background:#fff}
         a{text-decoration:none;color:inherit}
         .inner{max-width:1160px;margin:0 auto;padding:0 2.5rem}
-.nav-links a:hover{color:#085041}
+.nav-links a:hover{color:#0559F0}
         .btn-
-.btn-nav:hover{background:#085041;color:#fff!important}
-        .hero{background:linear-gradient(135deg,#0d3e2c 0%,#0d6b55 50%,#1d9e75 100%);padding:100px 0 80px;position:relative;overflow:hidden}
+.btn-nav:hover{background:#0559F0;color:#fff!important}
+        .hero{background:linear-gradient(135deg,#0A2150 0%,#0438A6 50%,#0559F0 100%);padding:100px 0 80px;position:relative;overflow:hidden}
         .hero::before{content:'';position:absolute;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(52,152,219,.2) 0%,transparent 70%);top:-100px;right:-100px;pointer-events:none}
         .hero-grid{display:grid;grid-template-columns:1.2fr 0.8fr;gap:3rem;align-items:center;position:relative;z-index:1}
         .breadcrumb{font-size:12px;color:rgba(255,255,255,.5);margin-bottom:1.25rem}
         .breadcrumb a{color:rgba(255,255,255,.5)}
         .breadcrumb span{margin:0 6px}
-        .kicker{font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#7fd3b4;margin-bottom:1rem}
+        .kicker{font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#8FD8FF;margin-bottom:1rem}
         h1{font-family:'DM Serif Display',serif;font-size:clamp(34px,4vw,54px);line-height:1.1;letter-spacing:-.025em;color:#fff;margin-bottom:1rem;font-weight:400}
-        h1 em{font-style:italic;color:#aef1d8}
+        h1 em{font-style:italic;color:#8FD8FF}
         .hero-sub{font-size:16px;color:rgba(255,255,255,.72);line-height:1.75;margin-bottom:2rem;font-weight:300;max-width:500px}
         .hero-actions{display:flex;gap:12px;flex-wrap:wrap}
-        .btn-primary{background:#fff;color:#0d3e2c;border:none;padding:14px 26px;border-radius:10px;font-size:15px;font-weight:600;display:inline-flex;align-items:center;gap:8px;transition:transform .2s,box-shadow .2s;cursor:pointer;font-family:'Inter',sans-serif;box-shadow:0 4px 20px rgba(0,0,0,.2)}
+        .btn-primary{background:#fff;color:#0A2150;border:none;padding:14px 26px;border-radius:10px;font-size:15px;font-weight:600;display:inline-flex;align-items:center;gap:8px;transition:transform .2s,box-shadow .2s;cursor:pointer;font-family:'Inter',sans-serif;box-shadow:0 4px 20px rgba(0,0,0,.2)}
         .btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(0,0,0,.3)}
         .btn-ghost{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.35);padding:14px 26px;border-radius:10px;font-size:15px;display:inline-flex;align-items:center;gap:8px;transition:all .2s;cursor:pointer;font-family:'Inter',sans-serif}
         .btn-ghost:hover{background:rgba(255,255,255,.1)}
@@ -73,13 +74,13 @@ export default function DentalImplantsPage() {
         .price-row:last-child{border-bottom:none}
         .price-label{font-size:13px;color:rgba(255,255,255,.55)}
         .price-val{font-family:'DM Serif Display',serif;font-size:22px;color:#fff;font-weight:400}
-        .price-val.accent{color:#aef1d8}
+        .price-val.accent{color:#8FD8FF}
         .trust-row{display:flex;gap:1.5rem;flex-wrap:wrap;margin-top:1.5rem}
         .trust-item{display:flex;align-items:center;gap:7px;font-size:12.5px;color:rgba(255,255,255,.75)}
-        .trust-dot{width:7px;height:7px;border-radius:50%;background:#aef1d8;flex-shrink:0}
+        .trust-dot{width:7px;height:7px;border-radius:50%;background:#8FD8FF;flex-shrink:0}
         .sec{padding:5rem 0}
-        .sec.bg{background:#fafaf9}
-        .sec.border{border-top:1px solid #f0ede8;border-bottom:1px solid #f0ede8}
+        .sec.bg{background:#F3F7FE}
+        .sec.border{border-top:1px solid #DCE6F5;border-bottom:1px solid #DCE6F5}
         h2{font-family:'DM Serif Display',serif;font-size:clamp(26px,3vw,38px);font-weight:400;color:#1a1a1a;letter-spacing:-.02em;line-height:1.2;margin-bottom:1rem}
         h3{font-family:'DM Serif Display',serif;font-size:22px;font-weight:400;color:#1a1a1a;letter-spacing:-.01em;margin-bottom:.75rem}
         .content-grid{display:grid;grid-template-columns:1fr 340px;gap:3rem;align-items:start}
@@ -87,43 +88,42 @@ export default function DentalImplantsPage() {
         .prose h3{margin-top:2rem;margin-bottom:.75rem}
         .prose ul{list-style:none;padding:0;margin-bottom:1.25rem}
         .prose ul li{font-size:15px;color:#444;line-height:1.8;padding-left:16px;position:relative;font-weight:300}
-        .prose ul li::before{content:'·';position:absolute;left:0;color:#0d6b55;font-weight:700;font-size:18px}
-        .treatment-table{width:100%;border-collapse:collapse;margin:1.5rem 0;border:1px solid #f0ede8;border-radius:12px;overflow:hidden}
-        .treatment-table th{font-size:11px;text-transform:uppercase;letter-spacing:.07em;color:#bbb;font-weight:500;padding:.85rem 1rem;text-align:left;background:#fafaf9;border-bottom:1px solid #f0ede8}
-        .treatment-table td{padding:.85rem 1rem;border-bottom:1px solid #fafaf9;font-size:14px;color:#1a1a1a}
+        .prose ul li::before{content:'·';position:absolute;left:0;color:#0438A6;font-weight:700;font-size:18px}
+        .treatment-table{width:100%;border-collapse:collapse;margin:1.5rem 0;border:1px solid #DCE6F5;border-radius:12px;overflow:hidden}
+        .treatment-table th{font-size:11px;text-transform:uppercase;letter-spacing:.07em;color:#bbb;font-weight:500;padding:.85rem 1rem;text-align:left;background:#F3F7FE;border-bottom:1px solid #DCE6F5}
+        .treatment-table td{padding:.85rem 1rem;border-bottom:1px solid #F3F7FE;font-size:14px;color:#1a1a1a}
         .treatment-table tr:last-child td{border-bottom:none}
-        .td-ist{color:#0d6b55;font-weight:600}
+        .td-ist{color:#0438A6;font-weight:600}
         .td-uk{color:#aaa}
-        .saving{background:#dbfef1;color:#0d3e2c;font-weight:600;border-radius:20px;padding:3px 10px;font-size:12px;white-space:nowrap;display:inline-block}
-        .disclaimer{background:#f0fffa;border:1px solid #bafde4;border-radius:12px;padding:1.25rem 1.5rem;font-size:13px;color:#0c6e4a;line-height:1.75;margin-top:1.5rem}
+        .disclaimer{background:#E6EFFE;border:1px solid #8FD8FF;border-radius:12px;padding:1.25rem 1.5rem;font-size:13px;color:#0438A6;line-height:1.75;margin-top:1.5rem}
         .sidebar{position:sticky;top:80px}
-        .sidebar-card{background:#fff;border:1px solid #f0ede8;border-radius:16px;padding:1.75rem;margin-bottom:1rem}
-        .sidebar-card.dark{background:linear-gradient(135deg,#0d3e2c,#1d9e75);border-color:transparent}
+        .sidebar-card{background:#fff;border:1px solid #DCE6F5;border-radius:16px;padding:1.75rem;margin-bottom:1rem}
+        .sidebar-card.dark{background:linear-gradient(135deg,#0A2150,#0559F0);border-color:transparent}
         .sidebar-title{font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:#bbb;margin-bottom:1.25rem}
         .sidebar-card.dark .sidebar-title{color:rgba(255,255,255,.45)}
-        .sidebar-price-row{display:flex;justify-content:space-between;align-items:baseline;padding:.6rem 0;border-bottom:1px solid #f5f4f2}
+        .sidebar-price-row{display:flex;justify-content:space-between;align-items:baseline;padding:.6rem 0;border-bottom:1px solid #F3F7FE}
         .sidebar-price-row:last-of-type{border-bottom:none}
         .sidebar-price-label{font-size:13px;color:#777}
-        .sidebar-price-val{font-size:15px;font-weight:600;color:#0d3e2c}
+        .sidebar-price-val{font-size:15px;font-weight:600;color:#0A2150}
         .sidebar-price-val.uk{color:#aaa;font-weight:400}
         .btn-full{width:100%;padding:14px;border-radius:10px;font-size:15px;font-weight:600;display:flex;align-items:center;justify-content:center;gap:8px;cursor:pointer;font-family:'Inter',sans-serif;transition:all .2s;margin-top:1rem;border:none}
-        .btn-full.blue{background:#0d6b55;color:#fff}
-        .btn-full.blue:hover{background:#0d3e2c}
+        .btn-full.blue{background:#0438A6;color:#fff}
+        .btn-full.blue:hover{background:#0A2150}
         .btn-full.outline{background:rgba(255,255,255,.08);color:#fff;border:1px solid rgba(255,255,255,.2)}
-        .check-item{display:flex;align-items:flex-start;gap:8px;font-size:13px;color:#555;padding:.5rem 0;border-bottom:1px solid #f5f4f2}
+        .check-item{display:flex;align-items:flex-start;gap:8px;font-size:13px;color:#555;padding:.5rem 0;border-bottom:1px solid #F3F7FE}
         .check-item:last-child{border-bottom:none}
-        .check-dot{width:6px;height:6px;border-radius:50%;background:#0d6b55;flex-shrink:0;margin-top:6px}
+        .check-dot{width:6px;height:6px;border-radius:50%;background:#0438A6;flex-shrink:0;margin-top:6px}
         .process-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:0;position:relative;margin-top:2.5rem}
-        .process-grid::before{content:'';position:absolute;top:22px;left:10%;right:10%;height:1px;background:linear-gradient(90deg,transparent,#bafde4 20%,#bafde4 80%,transparent)}
+        .process-grid::before{content:'';position:absolute;top:22px;left:10%;right:10%;height:1px;background:linear-gradient(90deg,transparent,#8FD8FF 20%,#8FD8FF 80%,transparent)}
         .proc-step{text-align:center;padding:0 .5rem;position:relative;z-index:1}
-        .proc-circle{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#0d3e2c,#0d6b55);display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;font-size:15px;font-weight:600;color:#fff;box-shadow:0 4px 14px rgba(26,82,118,.3)}
+        .proc-circle{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#0A2150,#0438A6);display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;font-size:15px;font-weight:600;color:#fff;box-shadow:0 4px 14px rgba(26,82,118,.3)}
         .proc-t{font-size:13px;font-weight:600;margin-bottom:.3rem}
         .proc-d{font-size:11px;color:#888;line-height:1.5}
-        .faq-list{display:flex;flex-direction:column;border:1px solid #f0ede8;border-radius:16px;overflow:hidden;margin-top:2.5rem}
-        .faq-item{border-bottom:1px solid #f0ede8}
+        .faq-list{display:flex;flex-direction:column;border:1px solid #DCE6F5;border-radius:16px;overflow:hidden;margin-top:2.5rem}
+        .faq-item{border-bottom:1px solid #DCE6F5}
         .faq-item:last-child{border-bottom:none}
         .faq-q{width:100%;text-align:left;padding:1.25rem 1.5rem;background:#fff;border:none;cursor:pointer;font-family:'Inter',sans-serif;font-size:15px;font-weight:500;color:#1a1a1a;display:flex;justify-content:space-between;align-items:center;gap:1rem;transition:background .2s}
-        .faq-q:hover{background:#fafaf9}
+        .faq-q:hover{background:#F3F7FE}
         .faq-a{padding:0 1.5rem 1.25rem;font-size:14px;color:#666;line-height:1.75;font-weight:300}
         footer{background:#111;padding:3rem 0 2rem}
         .footer-legal{font-size:11.5px;color:#444;line-height:1.8}
@@ -192,12 +192,6 @@ export default function DentalImplantsPage() {
               </div>
               <div className="price-row">
                 <div>
-                  <div className="price-label">Typical saving</div>
-                  <div className="price-val accent">~75–90%</div>
-                </div>
-              </div>
-              <div className="price-row">
-                <div>
                   <div className="price-label">Treatment timeline</div>
                   <div className="price-val" style={{fontSize:'17px'}}>7 – 10 days</div>
                 </div>
@@ -223,20 +217,19 @@ export default function DentalImplantsPage() {
               <h3>Dental implant price comparison</h3>
               <table className="treatment-table">
                 <thead>
-                  <tr><th>Treatment</th><th>UK private</th><th>Istanbul (OHT)</th><th>Saving</th></tr>
+                  <tr><th>Treatment</th><th>UK private</th><th>Istanbul (OHT)</th></tr>
                 </thead>
                 <tbody>
                   {[
-                    ['Single dental implant','£1,500 – £3,500','from £350','~75–90%'],
-                    ['Zirconium crown','£350 – £1,100','from £150','~55–85%'],
-                    ['Porcelain veneer (per tooth)','£450 – £850','from £180','~60–80%'],
-                    ['Full arch (All-on-4), per arch','£9,500 – £20,000','from £4,500','~55–75%'],
+                    ['Single dental implant','£1,500 – £3,500','from £350'],
+                    ['Zirconium crown','£350 – £1,100','from £150'],
+                    ['Porcelain veneer (per tooth)','£450 – £850','from £180'],
+                    ['Full arch (All-on-4), per arch','£9,500 – £20,000','from £4,500'],
                   ].map(row => (
                     <tr key={row[0]}>
                       <td>{row[0]}</td>
                       <td className="td-uk">{row[1]}</td>
                       <td className="td-ist">{row[2]}</td>
-                      <td><span className="saving">{row[3]}</span></td>
                     </tr>
                   ))}
                 </tbody>
@@ -266,7 +259,7 @@ export default function DentalImplantsPage() {
 
               <h3>Why Istanbul for dental implants?</h3>
               <ul>
-                <li>Typically lower cost vs. UK private dental clinics</li>
+                <li>Indicative prices from £350 per implant</li>
                 <li>High-volume, experienced prosthodontists and oral surgeons</li>
                 <li>CE-marked implant systems from internationally recognised manufacturers</li>
                 <li>JCI-accredited and internationally certified dental facilities</li>
@@ -283,7 +276,7 @@ export default function DentalImplantsPage() {
               <div className="sidebar-card dark">
                 <div className="sidebar-title">Get a free quote</div>
                 <p style={{fontSize:'14px',color:'rgba(255,255,255,.65)',lineHeight:1.65,marginBottom:'1.25rem',fontWeight:300}}>
-                  Tell us how many implants you need and any existing dental records. Full itemised quote within 48 hours.
+                  Tell us how many implants you need and any existing dental records. We aim to send a full itemised quote within 48 hours.
                 </p>
                 <a href={WA_URL} target="_blank" className="btn-full blue">WhatsApp us</a>
                 <a href="mailto:info@oceanhealthtravel.com" className="btn-full outline" style={{marginTop:'8px'}}>Email us</a>
@@ -302,10 +295,6 @@ export default function DentalImplantsPage() {
                 <div className="sidebar-price-row">
                   <span className="sidebar-price-label">Full arch All-on-4</span>
                   <span className="sidebar-price-val">from £4,500</span>
-                </div>
-                <div className="sidebar-price-row">
-                  <span className="sidebar-price-label">Typical saving</span>
-                  <span className="sidebar-price-val">~75–90%</span>
                 </div>
                 <div className="sidebar-price-row">
                   <span className="sidebar-price-label">Timeline</span>
@@ -337,7 +326,7 @@ export default function DentalImplantsPage() {
           <div className="process-grid">
             {[
               {n:'1',t:'Enquiry',d:'Tell us how many implants you need and share any X-rays'},
-              {n:'2',t:'Quote',d:'Full itemised proposal within 48 hours'},
+              {n:'2',t:'Quote',d:'We aim to send a full itemised proposal within 48 hours'},
               {n:'3',t:'Booking',d:'Clinic, hotel, and transfers confirmed'},
               {n:'4',t:'Treatment',d:'Implant placement with interpreter present'},
               {n:'5',t:'Records',d:'Dental documentation provided in English'},
@@ -362,7 +351,7 @@ export default function DentalImplantsPage() {
               <details key={f.q} className="faq-item">
                 <summary className="faq-q">
                   {f.q}
-                  <span style={{fontSize:'18px',color:'#0d6b55',flexShrink:0}}>+</span>
+                  <span style={{fontSize:'18px',color:'#0438A6',flexShrink:0}}>+</span>
                 </summary>
                 <div className="faq-a">{f.a}</div>
               </details>
@@ -377,13 +366,13 @@ export default function DentalImplantsPage() {
           <div className="kicker">Get started</div>
           <h2>Ready to find out what dental implants cost?</h2>
           <p style={{fontSize:'16px',color:'#666',lineHeight:1.7,fontWeight:300,maxWidth:'500px',margin:'0 auto 2rem'}}>
-            Tell us how many implants you need. Full itemised quote within 48 hours — no obligation.
+            Tell us how many implants you need. We aim to send a full itemised quote within 48 hours — no obligation.
           </p>
           <div style={{display:'flex',gap:'14px',justifyContent:'center',flexWrap:'wrap'}}>
-            <a href={WA_URL} target="_blank" style={{background:'#0d6b55',color:'#fff',border:'none',padding:'15px 30px',borderRadius:'10px',fontSize:'15px',fontWeight:600,display:'inline-flex',alignItems:'center',gap:'9px',cursor:'pointer',fontFamily:'Inter,sans-serif'}}>
+            <a href={WA_URL} target="_blank" style={{background:'#0438A6',color:'#fff',border:'none',padding:'15px 30px',borderRadius:'10px',fontSize:'15px',fontWeight:600,display:'inline-flex',alignItems:'center',gap:'9px',cursor:'pointer',fontFamily:'Inter,sans-serif'}}>
               Get a free quote
             </a>
-            <a href="mailto:info@oceanhealthtravel.com" style={{background:'transparent',color:'#0d6b55',border:'1px solid #0d6b55',padding:'15px 30px',borderRadius:'10px',fontSize:'15px',display:'inline-flex',alignItems:'center',gap:'9px',cursor:'pointer',fontFamily:'Inter,sans-serif'}}>
+            <a href="mailto:info@oceanhealthtravel.com" style={{background:'transparent',color:'#0438A6',border:'1px solid #0438A6',padding:'15px 30px',borderRadius:'10px',fontSize:'15px',display:'inline-flex',alignItems:'center',gap:'9px',cursor:'pointer',fontFamily:'Inter,sans-serif'}}>
               Email us
             </a>
           </div>
@@ -394,18 +383,7 @@ export default function DentalImplantsPage() {
       <YourTimeline stay="Typically 7–10 days" />
       <UKPatientInfo current="dental-implants-turkey" />
       <RelatedTreatments current="dental-implants-turkey" />
-      <footer>
-        <div className="inner">
-          <div className="footer-legal">
-            © {new Date().getFullYear()} Ocean Health &amp; Travel Ltd · Registered in England &amp; Wales · Company no. 16186647<br />
-            London: 17 Green Lanes, N16 9BS ·{' '}
-            <a href="mailto:info@oceanhealthtravel.com" style={{color:'#555'}}>info@oceanhealthtravel.com</a> ·{' '}
-            <a href="tel:+447441904858" style={{color:'#555'}}>+44 7441 904858</a><br />
-            Flights not included · No coordination fee charged to patients · Coordinator, not a dental provider · Elective procedures only<br />
-            <em>Ocean Health &amp; Travel does not provide dental or medical advice. All clinical decisions rest with your treating dentist. Not suitable for emergencies.</em>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   )
 }
