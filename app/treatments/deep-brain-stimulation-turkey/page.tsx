@@ -392,7 +392,7 @@ export default function DBSPage() {
       </section>
 
       {/* FOOTER */}
-      <YourTimeline stay="Typically 2–3 weeks" note="Your treatment date, usually within 2 weeks of confirming once the neurosurgical team has reviewed your records and decided that surgery is suitable." />
+      <YourTimeline stay="Typically 2–3 weeks" note="Your treatment date, agreed once the neurosurgical team has reviewed your records and decided that surgery is suitable." />
       <UKPatientInfo current="deep-brain-stimulation-turkey" />
       <RelatedTreatments current="deep-brain-stimulation-turkey" />
       <Footer note="All DBS cases are reviewed by the specialist neurosurgical team before proceeding." />

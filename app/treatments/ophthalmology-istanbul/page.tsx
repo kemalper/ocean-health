@@ -9,7 +9,7 @@ import Footer from '@/app/components/Footer'
 export const metadata: Metadata = {
   alternates: { canonical: '/treatments/ophthalmology-istanbul' },
   title: 'Eye Surgery in Istanbul | Ocean Health & Travel',
-  description: 'LASIK from £600 per eye, cataract surgery from £800, premium lens replacement from £1,200. Licensed ophthalmology centres in Istanbul. Free quote in 48 hours.',
+  description: 'LASIK from £600 per eye, cataract surgery from £800, premium lens replacement from £1,200. Licensed ophthalmology centres in Istanbul. We aim to send an itemised quote within 48 hours.',
 }
 
 const WA_URL = 'https://wa.me/447441904858?text=Hello%2C%20I%27d%20like%20to%20enquire%20about%20eye%20surgery%20in%20Istanbul'

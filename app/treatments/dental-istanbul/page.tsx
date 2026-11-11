@@ -9,7 +9,7 @@ import Footer from '@/app/components/Footer'
 export const metadata: Metadata = {
   alternates: { canonical: '/treatments/dental-istanbul' },
   title: 'Dental Treatment in Istanbul | Ocean Health & Travel',
-  description: 'Dental implants from £350, zirconium crowns from £150, veneers from £180, smile design from £1,200. Licensed dental clinics in Istanbul. Free quote in 48 hours.',
+  description: 'Dental implants from £350, zirconium crowns from £150, veneers from £180, smile design from £1,200. Licensed dental clinics in Istanbul. We aim to send an itemised quote within 48 hours.',
 }
 
 const WA_URL = 'https://wa.me/447441904858?text=Hello%2C%20I%27d%20like%20to%20enquire%20about%20dental%20treatment%20in%20Istanbul'

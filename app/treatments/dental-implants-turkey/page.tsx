@@ -9,7 +9,7 @@ import Footer from '@/app/components/Footer'
 export const metadata: Metadata = {
   alternates: { canonical: '/treatments/dental-implants-turkey' },
   title: 'Dental Implants in Turkey | From £350 | Ocean Health & Travel',
-  description: 'Dental implants in Istanbul from £350 per implant — vs. £1,500–£3,500 at UK private clinics. Licensed dental clinics, dedicated coordination, 2–3 week timeline. Free quote in 48 hours.',
+  description: 'Dental implants in Istanbul from £350 per implant — vs. £1,500–£3,500 at UK private clinics. Licensed dental clinics, dedicated coordination. We aim to send an itemised quote within 48 hours.',
 }
 
 const WA_URL = 'https://wa.me/447441904858?text=Hello%2C%20I%27d%20like%20to%20enquire%20about%20dental%20implants%20in%20Turkey'

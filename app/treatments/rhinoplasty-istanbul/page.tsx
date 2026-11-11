@@ -10,7 +10,7 @@ import Footer from '@/app/components/Footer'
 export const metadata: Metadata = {
   alternates: { canonical: '/treatments/rhinoplasty-istanbul' },
   title: 'Rhinoplasty in Istanbul | From £3,200 | Ocean Health & Travel',
-  description: `Rhinoplasty (nose surgery) in Istanbul from £3,200 — vs. typically ${UK_PRICES.rhinoplasty.compact} at UK private clinics. JCI-accredited surgeons, dedicated coordination, 2–3 week timeline. Free quote in 48 hours.`,
+  description: `Rhinoplasty (nose surgery) in Istanbul from £3,200 — vs. typically ${UK_PRICES.rhinoplasty.compact} at UK private clinics. JCI-accredited surgeons, dedicated coordination. We aim to send an itemised quote within 48 hours.`,
 }
 
 const WA_URL = 'https://wa.me/447441904858?text=Hello%2C%20I%27d%20like%20to%20enquire%20about%20rhinoplasty%20in%20Istanbul'
@@ -22,7 +22,7 @@ const faqs = [
   },
   {
     q: 'How long does rhinoplasty take to arrange through Ocean Health & Travel?',
-    a: 'We aim to send a full itemised quote within 48 hours of first contact. Once you confirm your booking, surgery can usually be scheduled within 2 weeks, subject to the surgeon and hospital availability.'
+    a: 'We aim to send a full itemised quote within 48 hours of first contact. Surgery dates depend on the surgeon and hospital availability.'
   },
   {
     q: 'Which hospitals perform rhinoplasty in Istanbul?',
@@ -164,7 +164,7 @@ export default function RhinoplastyPage() {
               <div className="kicker">Plastic surgery · Istanbul</div>
               <h1>Rhinoplasty in Istanbul.<br /><em>From £3,200.</em></h1>
               <p className="hero-sub">
-                Board-certified surgeons. JCI-accredited hospitals. Dedicated coordination from first enquiry through discharge and GP documentation. Surgery in 2–3 weeks.
+                Board-certified surgeons. JCI-accredited hospitals. Dedicated coordination from first enquiry through discharge and GP documentation. Timelines vary by provider.
               </p>
               <div className="hero-actions">
                 <a href={WA_URL} target="_blank" className="btn-primary">Get a free quote</a>
@@ -246,7 +246,7 @@ export default function RhinoplastyPage() {
               <ul>
                 <li>JCI-accredited partner hospitals</li>
                 <li>Typically lower cost than UK private clinics</li>
-                <li>2–3 week timeline from first enquiry to surgery</li>
+                <li>Timelines vary by treatment and provider</li>
                 <li>English-speaking coordinators and interpreters throughout</li>
               </ul>
 
@@ -277,7 +277,7 @@ export default function RhinoplastyPage() {
                 </div>
                 <div className="sidebar-price-row">
                   <span className="sidebar-price-label">Timeline</span>
-                  <span className="sidebar-price-val">2–3 weeks</span>
+                  <span className="sidebar-price-val">Varies by provider</span>
                 </div>
                 <p style={{fontSize:'11px',color:'#bbb',marginTop:'1rem',lineHeight:1.6}}>Prices indicative. No coordination fee is charged to patients. Flights not included.</p>
               </div>
@@ -301,7 +301,7 @@ export default function RhinoplastyPage() {
       <section className="sec bg border" id="process">
         <div className="inner">
           <div className="kicker">The process</div>
-          <h2>From enquiry to surgery in 2–3 weeks</h2>
+          <h2>From enquiry to surgery</h2>
           <div className="process-grid">
             {[
               {n:'1',t:'Enquiry',d:'WhatsApp or email us your goals and preferred dates'},

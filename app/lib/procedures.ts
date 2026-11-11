@@ -40,7 +40,7 @@ export const PROCEDURES: Procedure[] = [
     h1: 'Breast augmentation in Istanbul.',
     h1em: 'From £6,000.',
     metaTitle: 'Breast Augmentation in Istanbul | From £6,000 | Ocean Health & Travel',
-    metaDescription: `Breast augmentation in Istanbul from £6,000 — UK private typically ${UK_PRICES.breastAugmentation.compact}. Board-certified surgeons at JCI-accredited hospitals, itemised quote within 48 hours, hotel, transfers and interpreter included.`,
+    metaDescription: `Breast augmentation in Istanbul from £6,000 — UK private typically ${UK_PRICES.breastAugmentation.compact}. Board-certified surgeons at JCI-accredited hospitals, hotel, transfers and interpreter included, and we aim to send an itemised quote within 48 hours.`,
     sub: 'Implant-based breast enlargement at JCI-accredited hospitals, coordinated from first enquiry to discharge notes for your GP.',
     price: {
       istanbul: 'from £6,000',
@@ -110,7 +110,7 @@ export const PROCEDURES: Procedure[] = [
     h1: 'Liposuction in Istanbul.',
     h1em: 'From £2,500.',
     metaTitle: 'Liposuction in Istanbul | From £2,500 | Ocean Health & Travel',
-    metaDescription: `Liposuction in Istanbul from £2,500 — UK private typically ${UK_PRICES.liposuction.compact}, depending on areas treated. Board-certified surgeons at JCI-accredited hospitals, itemised quote within 48 hours.`,
+    metaDescription: `Liposuction in Istanbul from £2,500 — UK private typically ${UK_PRICES.liposuction.compact}, depending on areas treated. Board-certified surgeons at JCI-accredited hospitals. We aim to send an itemised quote within 48 hours.`,
     sub: 'Targeted fat removal at JCI-accredited hospitals, with an itemised quote that shows exactly which areas are treated.',
     price: { istanbul: 'from £2,500', uk: UK_PRICES.liposuction.range, stay: '5–7 days' },
     overview: [
@@ -158,7 +158,7 @@ export const PROCEDURES: Procedure[] = [
     h1: 'Tummy tuck in Istanbul.',
     h1em: 'From £3,500.',
     metaTitle: 'Tummy Tuck (Abdominoplasty) in Istanbul | From £3,500 | Ocean Health & Travel',
-    metaDescription: 'Tummy tuck in Istanbul from £3,500 — UK private £7,200–£10,050 for mini to extended abdominoplasty. Board-certified surgeons at JCI-accredited hospitals, itemised quote within 48 hours.',
+    metaDescription: 'Tummy tuck in Istanbul from £3,500 — UK private £7,200–£10,050 for mini to extended abdominoplasty. Board-certified surgeons at JCI-accredited hospitals. We aim to send an itemised quote within 48 hours.',
     sub: 'Abdominoplasty at JCI-accredited hospitals, with the type of tummy tuck and the price of each stage set out in your quote.',
     price: { istanbul: 'from £3,500', uk: '£7,200 – £10,050', stay: '7–10 days' },
     overview: [
@@ -208,7 +208,7 @@ export const PROCEDURES: Procedure[] = [
     h1: 'Brazilian butt lift in Istanbul.',
     h1em: 'From £4,000.',
     metaTitle: 'Brazilian Butt Lift (BBL) in Istanbul | From £4,000 | Ocean Health & Travel',
-    metaDescription: 'Brazilian butt lift in Istanbul from £4,000 — UK private from £11,995. Safety-first guidance, board-certified surgeons at JCI-accredited hospitals, itemised quote within 48 hours.',
+    metaDescription: 'Brazilian butt lift in Istanbul from £4,000 — UK private from £11,995. Safety-first guidance, board-certified surgeons at JCI-accredited hospitals. We aim to send an itemised quote within 48 hours.',
     sub: 'Fat transfer to the buttocks at JCI-accredited hospitals. This procedure carries higher risk than most cosmetic surgery, so we set out what to ask before you book.',
     price: { istanbul: 'from £4,000', uk: 'from £11,995', stay: '7–10 days' },
     overview: [
@@ -256,7 +256,7 @@ export const PROCEDURES: Procedure[] = [
     h1: 'Mini facelift in Istanbul.',
     h1em: 'From £5,000.',
     metaTitle: 'Mini Facelift in Istanbul | From £5,000 | Ocean Health & Travel',
-    metaDescription: `Mini facelift in Istanbul from £5,000 — UK private typically ${UK_PRICES.facelift.compact}. Board-certified surgeons at JCI-accredited hospitals, itemised quote within 48 hours.`,
+    metaDescription: `Mini facelift in Istanbul from £5,000 — UK private typically ${UK_PRICES.facelift.compact}. Board-certified surgeons at JCI-accredited hospitals. We aim to send an itemised quote within 48 hours.`,
     sub: 'Lower-face and jowl rejuvenation at JCI-accredited hospitals. A full facelift or a face and neck lift is quoted individually.',
     price: { istanbul: 'from £5,000', uk: UK_PRICES.facelift.range, stay: '7–10 days' },
     overview: [
@@ -303,7 +303,7 @@ export const PROCEDURES: Procedure[] = [
     h1: 'Eyelid surgery in Istanbul.',
     h1em: 'From £1,800.',
     metaTitle: 'Eyelid Surgery (Blepharoplasty) in Istanbul | From £1,800 | Ocean Health & Travel',
-    metaDescription: 'Eyelid surgery (blepharoplasty) in Istanbul from £1,800 — UK private from £4,995 for upper lids. Board-certified surgeons at JCI-accredited hospitals, itemised quote within 48 hours.',
+    metaDescription: 'Eyelid surgery (blepharoplasty) in Istanbul from £1,800 — UK private from £4,995 for upper lids. Board-certified surgeons at JCI-accredited hospitals. We aim to send an itemised quote within 48 hours.',
     sub: 'Upper and lower eyelid correction at JCI-accredited hospitals, with a short stay and an itemised quote.',
     price: { istanbul: 'from £1,800', uk: 'from £4,995 (upper lids)', stay: '3–5 days' },
     overview: [
@@ -350,7 +350,7 @@ export const PROCEDURES: Procedure[] = [
     h1: 'Breast reduction in Istanbul.',
     h1em: 'From £6,300.',
     metaTitle: 'Breast Reduction in Istanbul | From £6,300 | Ocean Health & Travel',
-    metaDescription: 'Breast reduction in Istanbul from £6,300 — UK private £8,000–£10,000. Board-certified surgeons at JCI-accredited hospitals, itemised quote within 48 hours.',
+    metaDescription: 'Breast reduction in Istanbul from £6,300 — UK private £8,000–£10,000. Board-certified surgeons at JCI-accredited hospitals. We aim to send an itemised quote within 48 hours.',
     sub: 'Breast reduction at JCI-accredited hospitals, with the technique and what is included set out in your itemised quote.',
     price: { istanbul: 'from £6,300', uk: '£8,000 – £10,000', stay: '5–7 days' },
     overview: [
@@ -396,7 +396,7 @@ export const PROCEDURES: Procedure[] = [
     h1: 'Breast lift in Istanbul.',
     h1em: 'From £5,000.',
     metaTitle: 'Breast Lift (Mastopexy) in Istanbul | From £5,000 | Ocean Health & Travel',
-    metaDescription: 'Breast lift (mastopexy) in Istanbul from £5,000 — UK private from £8,600. Board-certified surgeons at JCI-accredited hospitals, itemised quote within 48 hours.',
+    metaDescription: 'Breast lift (mastopexy) in Istanbul from £5,000 — UK private from £8,600. Board-certified surgeons at JCI-accredited hospitals. We aim to send an itemised quote within 48 hours.',
     sub: 'Breast lift at JCI-accredited hospitals, alone or combined with implants, with a clear itemised quote.',
     price: { istanbul: 'from £5,000', uk: 'from £8,600', stay: '5–7 days' },
     overview: [
@@ -442,7 +442,7 @@ export const PROCEDURES: Procedure[] = [
     h1: 'Brow lift in Istanbul.',
     h1em: 'From £2,500.',
     metaTitle: 'Brow Lift in Istanbul | From £2,500 | Ocean Health & Travel',
-    metaDescription: 'Brow lift in Istanbul from £2,500 — UK private £5,495–£7,395. Board-certified surgeons at JCI-accredited hospitals, itemised quote within 48 hours.',
+    metaDescription: 'Brow lift in Istanbul from £2,500 — UK private £5,495–£7,395. Board-certified surgeons at JCI-accredited hospitals. We aim to send an itemised quote within 48 hours.',
     sub: 'Forehead and brow lifting at JCI-accredited hospitals, alone or alongside eyelid surgery.',
     price: { istanbul: 'from £2,500', uk: '£5,495 – £7,395', stay: '5–7 days' },
     overview: [
@@ -488,7 +488,7 @@ export const PROCEDURES: Procedure[] = [
     h1: 'Ear surgery in Istanbul.',
     h1em: 'From £1,500.',
     metaTitle: 'Ear Surgery (Otoplasty) in Istanbul | From £1,500 | Ocean Health & Travel',
-    metaDescription: 'Ear surgery (otoplasty) in Istanbul from £1,500 — UK private £2,995–£4,695. Board-certified surgeons at JCI-accredited hospitals, itemised quote within 48 hours.',
+    metaDescription: 'Ear surgery (otoplasty) in Istanbul from £1,500 — UK private £2,995–£4,695. Board-certified surgeons at JCI-accredited hospitals. We aim to send an itemised quote within 48 hours.',
     sub: 'Correction of prominent or asymmetrical ears at JCI-accredited hospitals, with a short stay.',
     price: { istanbul: 'from £1,500', uk: '£2,995 – £4,695', stay: '3–5 days' },
     overview: [
@@ -533,7 +533,7 @@ export const PROCEDURES: Procedure[] = [
     h1: 'Arm lift in Istanbul.',
     h1em: 'From £2,500.',
     metaTitle: 'Arm Lift (Brachioplasty) in Istanbul | From £2,500 | Ocean Health & Travel',
-    metaDescription: 'Arm lift (brachioplasty) in Istanbul from £2,500 — UK private £4,895–£7,295. Board-certified surgeons at JCI-accredited hospitals, itemised quote within 48 hours.',
+    metaDescription: 'Arm lift (brachioplasty) in Istanbul from £2,500 — UK private £4,895–£7,295. Board-certified surgeons at JCI-accredited hospitals. We aim to send an itemised quote within 48 hours.',
     sub: 'Removal of loose upper-arm skin at JCI-accredited hospitals, with a clear itemised quote.',
     price: { istanbul: 'from £2,500', uk: '£4,895 – £7,295', stay: '5–7 days' },
     overview: [
@@ -579,7 +579,7 @@ export const PROCEDURES: Procedure[] = [
     h1: 'Thigh lift in Istanbul.',
     h1em: 'From £3,000.',
     metaTitle: 'Thigh Lift in Istanbul | From £3,000 | Ocean Health & Travel',
-    metaDescription: 'Thigh lift in Istanbul from £3,000. Board-certified surgeons at JCI-accredited hospitals, itemised quote within 48 hours, hotel, transfers and interpreter included.',
+    metaDescription: 'Thigh lift in Istanbul from £3,000. Board-certified surgeons at JCI-accredited hospitals, hotel, transfers and interpreter included, and we aim to send an itemised quote within 48 hours.',
     sub: 'Removal of loose thigh skin at JCI-accredited hospitals, often combined with liposuction.',
     price: { istanbul: 'from £3,000', uk: 'No published guide price', stay: '5–7 days' },
     overview: [
@@ -625,7 +625,7 @@ export const PROCEDURES: Procedure[] = [
     h1: 'Labiaplasty in Istanbul.',
     h1em: 'From £1,800.',
     metaTitle: 'Labiaplasty in Istanbul | From £1,800 | Ocean Health & Travel',
-    metaDescription: 'Labiaplasty in Istanbul from £1,800. Board-certified surgeons at JCI-accredited hospitals, private and itemised quote within 48 hours, hotel, transfers and interpreter included.',
+    metaDescription: 'Labiaplasty in Istanbul from £1,800. Board-certified surgeons at JCI-accredited hospitals. Private enquiries; hotel, transfers and interpreter included; we aim to send an itemised quote within 48 hours.',
     sub: 'Labia minora reduction or reshaping at JCI-accredited hospitals, handled privately with a clear itemised quote.',
     price: { istanbul: 'from £1,800', uk: 'No published guide price', stay: '3–5 days' },
     overview: [
@@ -671,7 +671,7 @@ export const PROCEDURES: Procedure[] = [
     h1: 'Lumbar disc surgery in Istanbul.',
     h1em: 'From £4,000.',
     metaTitle: 'Lumbar Disc Surgery (Microdiscectomy) in Istanbul | From £4,000 | Ocean Health & Travel',
-    metaDescription: 'Lumbar disc herniation surgery in Istanbul from £4,000 — UK private from about £11,000. JCI-accredited hospitals, your MRI reviewed by the treating neurosurgeon, itemised quote within 48 hours.',
+    metaDescription: 'Lumbar disc herniation surgery in Istanbul from £4,000 — UK private from about £11,000. JCI-accredited hospitals, your MRI reviewed by the treating neurosurgeon. We aim to send an itemised quote within 48 hours.',
     sub: 'Decompression for lumbar disc herniation at JCI-accredited hospitals. Send your MRI and the treating neurosurgeon decides whether surgery is suitable.',
     price: { istanbul: 'from £4,000', uk: 'from ~£11,000', stay: '5–7 days' },
     overview: [
@@ -717,7 +717,7 @@ export const PROCEDURES: Procedure[] = [
     h1: 'Cervical disc surgery in Istanbul.',
     h1em: 'From £4,750.',
     metaTitle: 'Cervical Disc Surgery (ACDF) in Istanbul | From £4,750 | Ocean Health & Travel',
-    metaDescription: 'Cervical disc surgery (ACDF or disc replacement) in Istanbul from £4,750. JCI-accredited hospitals, your MRI reviewed by the treating neurosurgeon, itemised quote within 48 hours.',
+    metaDescription: 'Cervical disc surgery (ACDF or disc replacement) in Istanbul from £4,750. JCI-accredited hospitals, your MRI reviewed by the treating neurosurgeon. We aim to send an itemised quote within 48 hours.',
     sub: 'Surgery for cervical disc herniation at JCI-accredited hospitals. Send your MRI and the treating neurosurgeon decides whether surgery is suitable.',
     price: { istanbul: 'from £4,750', uk: 'No published guide price', stay: '5–7 days' },
     overview: [
@@ -763,7 +763,7 @@ export const PROCEDURES: Procedure[] = [
     h1: 'Aesthetic medicine in Istanbul.',
     h1em: 'From £180.',
     metaTitle: 'Aesthetic Medicine in Istanbul | Hydrafacial, Mesotherapy, Scarlet X | From £180',
-    metaDescription: 'Non-surgical skin treatments in Istanbul from £180: Hydrafacial, mesotherapy, Scarlet X, PRP and PRF, microneedling and chemical peels, performed by a specialist doctor at a partner clinic. Itemised quote within 48 hours.',
+    metaDescription: 'Non-surgical skin treatments in Istanbul from £180: Hydrafacial, mesotherapy, Scarlet X, PRP and PRF, microneedling and chemical peels, performed by a specialist doctor at a partner clinic. We aim to send an itemised quote within 48 hours.',
     sub: 'Skin treatments performed by a specialist doctor that fit into a short stay or sit alongside another procedure, with an itemised quote before you travel.',
     price: { istanbul: 'from £180', uk: 'Not compared', stay: 'Depends on treatment' },
     overview: [
