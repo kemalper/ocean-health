@@ -63,15 +63,15 @@ const faqSections = [
     faqs: [
       {
         q: 'Is medical treatment in Istanbul safe?',
-        a: 'Ocean Health & Travel coordinates exclusively with JCI-accredited hospitals in Istanbul. JCI (Joint Commission International) is an internationally recognised hospital accreditation standard covering patient safety, quality systems, and clinical governance. All partner facilities meet these international standards. All procedures carry risks; these are discussed by the treating provider.',
+        a: 'Treatment is delivered by licensed partner hospitals and providers in Istanbul. Some partner hospitals are JCI-accredited (Joint Commission International), for example for orthopaedic, neurosurgical and plastic-surgery procedures; accreditation depends on the treatment, and your coordinator will confirm which applies to yours. All procedures carry risks; these are discussed by the treating provider.',
       },
       {
         q: 'Which hospitals do you work with?',
-        a: 'We work with JCI-accredited hospitals in Istanbul. The hospital and surgeon are confirmed in writing before you pay for treatment, and you can then verify accreditation on the JCI website. Our partner hospitals are selected based on clinical standards and JCI accreditation. Our commercial arrangements with hospitals do not affect the independence of clinical decisions.',
+        a: 'We work with licensed partner hospitals and providers in Istanbul. The hospital and surgeon are confirmed in writing before you pay for treatment, and you can then verify their licence and any accreditation that applies to your treatment. Our commercial arrangements with hospitals do not affect the independence of clinical decisions.',
       },
       {
         q: 'Are the surgeons qualified?',
-        a: 'All surgeons at our partner hospitals are board-certified in their specialty and trained at internationally recognised institutions. Surgeon credentials are provided in your treatment proposal. Ocean Health & Travel does not employ surgeons — all clinical decisions rest with the treating physician.',
+        a: 'Cosmetic and plastic-surgery procedures are performed by board-certified plastic surgeons. For other specialties, your coordinator confirms the treating provider\'s credentials in writing before you pay.',
       },
       {
         q: 'What if something goes wrong?',
@@ -100,7 +100,7 @@ const faqSections = [
       },
       {
         q: 'Is Ocean Health & Travel a medical provider?',
-        a: 'No. We are a medical tourism coordination service. We do not employ surgeons, operate clinical facilities, or provide medical advice. All clinical decisions rest with the treating physician at our JCI-accredited partner hospitals.',
+        a: 'No. We are a medical tourism coordination service. We do not employ surgeons, operate clinical facilities, or provide medical advice. All clinical decisions rest with the treating physician at our licensed partner hospitals.',
       },
     ],
   },

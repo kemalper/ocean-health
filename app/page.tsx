@@ -61,7 +61,7 @@ const ORG_JSON_LD = {
   legalName: 'Ocean Health & Travel Ltd',
   url: 'https://www.oceanhealthtravel.com',
   logo: 'https://www.oceanhealthtravel.com/logo.png',
-  description: 'UK-registered medical tourism coordinator connecting international patients with JCI-accredited Istanbul clinics. A coordinator, not a medical provider.',
+  description: 'UK-registered medical tourism coordinator connecting international patients with licensed partner providers in Istanbul. A coordinator, not a medical provider.',
   email: 'info@oceanhealthtravel.com',
   telephone: '+44 7441 904858',
   address: {
@@ -157,7 +157,7 @@ export default function Home() {
         .hero-fine{list-style:none;margin:1.5rem 0 0;padding:0;display:grid;gap:.5rem;font-size:14.5px;line-height:1.45;color:var(--muted)}
         .hero-fine li{position:relative;padding-left:26px}
         .hero-fine li::before{content:'';position:absolute;left:2px;top:.3em;width:12px;height:7px;border-left:2px solid var(--green);border-bottom:2px solid var(--green);transform:rotate(-45deg)}
-        .hero-note{position:absolute;left:16px;right:16px;bottom:16px;background:rgba(250,248,244,.95);backdrop-filter:blur(8px);border-radius:14px;padding:14px 18px;font-size:13px;line-height:1.55;color:var(--ink)}
+        .hero-note{position:absolute;left:16px;right:16px;bottom:16px;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-radius:14px;padding:14px 18px;font-size:13px;line-height:1.55;color:var(--ink)}
         .hero-note b{display:block;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--green);margin-bottom:3px}
         .trust{border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
         .home .inner.trust-inner{display:grid;grid-template-columns:repeat(4,1fr);gap:1.25rem 2rem;padding-top:1.6rem;padding-bottom:1.6rem}
@@ -181,7 +181,7 @@ export default function Home() {
         .table-wrap{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden}
         .home table{width:100%;border-collapse:collapse}
         .home th{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:600;padding:1rem 1.4rem;text-align:left;border-bottom:1px solid var(--line)}
-        .home td{padding:1.05rem 1.4rem;border-bottom:1px solid #F1EDE4;font-size:14.5px}
+        .home td{padding:1.05rem 1.4rem;border-bottom:1px solid #F3F7FE;font-size:14.5px}
         .home tr:last-child td{border-bottom:none}
         .home td:first-child{font-weight:500}
         @media(min-width:641px){
@@ -192,7 +192,7 @@ export default function Home() {
           .home td.td-oht{font-size:16px}
           .home td.td-uk{font-size:14px}
           .home tbody tr{transition:background .15s}
-          .home tbody tr:hover td{background:rgba(242,238,229,.55)}
+          .home tbody tr:hover td{background:rgba(243,247,254,.8)}
           .home tbody tr:hover td:nth-child(3){background:rgba(230,239,254,.95)}
           .home .row-link{border-bottom-color:transparent}
           .home .row-link::after{content:' →';color:var(--green);opacity:0;transition:opacity .15s}
@@ -269,7 +269,7 @@ export default function Home() {
         @media(max-width:1024px){.coord-grid{grid-template-columns:repeat(2,1fr)}.how-grid{grid-template-columns:1fr;gap:2.5rem}.how-side{position:static}}
         @media(max-width:900px){.hero-text{padding-top:0}.hero h1 br{display:none}.hero-grid{grid-template-columns:1fr;gap:2.5rem}.hero-media{aspect-ratio:1/1}.hero-media img{transform:none!important;object-position:50% 52%!important}.hero-sub{font-size:16.5px}.sec-head{grid-template-columns:1fr;gap:1rem}.feat-grid{grid-template-columns:1fr}.rev-grid{grid-template-columns:1fr}}
         @media(max-width:768px){.sec{padding:4.5rem 0}.row{grid-template-columns:64px 1fr 20px}.row-price{display:none}.step{grid-template-columns:44px 1fr}.step-when{grid-column:2;justify-self:start}.cta-box{padding:3rem 1.5rem}}
-        @media(max-width:640px){.home thead{display:none}.home table{min-width:0}.home tr{display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;padding:1rem 1.1rem;border-bottom:1px solid #F1EDE4}.home tr:last-child{border-bottom:none}.home td{padding:0;border:0}.home td:first-child{grid-column:1/-1;font-family:'DM Serif Display',serif;font-size:18px;font-weight:400}.home td[data-l]::before{content:attr(data-l);display:block;font-size:10.5px;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);margin-bottom:2px}}
+        @media(max-width:640px){.home thead{display:none}.home table{min-width:0}.home tr{display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;padding:1rem 1.1rem;border-bottom:1px solid #F3F7FE}.home tr:last-child{border-bottom:none}.home td{padding:0;border:0}.home td:first-child{grid-column:1/-1;font-family:'DM Serif Display',serif;font-size:18px;font-weight:400}.home td[data-l]::before{content:attr(data-l);display:block;font-size:10.5px;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);margin-bottom:2px}}
         @media(max-width:480px){.home .inner{padding:0 1.25rem}.coord-grid{grid-template-columns:1fr}.hero{padding-top:36px}}
       `}</style>
 
@@ -282,7 +282,7 @@ export default function Home() {
             <div className="eyebrow">UK-registered coordinator · Istanbul</div>
             <h1>Private treatment in Istanbul, <em>arranged by one coordinator.</em></h1>
             <p className="hero-sub">
-              Itemised quotes, hotel, transfers and an interpreter at JCI‑accredited hospitals, with one coordinator from enquiry to discharge.
+              Itemised quotes, hotel, transfers and an interpreter at licensed partner hospitals, with one coordinator from enquiry to discharge.
             </p>
             <div className="hero-actions">
               <a href={WA_URL} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Get a free quote</a>
@@ -301,7 +301,7 @@ export default function Home() {
       {/* TRUST BAR */}
       <div className="trust">
         <div className="inner trust-inner">
-          {[['UK-registered','Company no. 16186647'],['ICO registered','UK GDPR'],['JCI-accredited','Partner hospitals'],['No coordination fee','Paid by the hospital, not you']].map(([t, d]) => (
+          {[['UK-registered','Company no. 16186647'],['ICO registered','UK GDPR'],['Licensed partners','Treatment delivered by licensed providers'],['No coordination fee','Paid by the hospital, not you']].map(([t, d]) => (
             <div key={t} className="ti"><b>{t}</b><span>{d}</span></div>
           ))}
         </div>

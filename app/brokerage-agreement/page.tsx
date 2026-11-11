@@ -57,7 +57,7 @@ export default function BrokerageAgreement() {
         </div>
 
         <h2>Who we are</h2>
-        <p>Ocean Health &amp; Travel Ltd (&quot;the Coordinator&quot;) is a medical tourism coordination company registered in England &amp; Wales (Company no. 16186647). We act as an intermediary between patients and JCI-accredited medical facilities in Istanbul, Turkey.</p>
+        <p>Ocean Health &amp; Travel Ltd (&quot;the Coordinator&quot;) is a medical tourism coordination company registered in England &amp; Wales (Company no. 16186647). We act as an intermediary between patients and licensed partner medical providers in Istanbul, Turkey.</p>
 
         <h2>Nature of our service</h2>
         <p>We are a coordinator, not a medical provider. Our services include:</p>

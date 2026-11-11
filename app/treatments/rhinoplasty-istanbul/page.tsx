@@ -26,11 +26,11 @@ const faqs = [
   },
   {
     q: 'Which hospitals perform rhinoplasty in Istanbul?',
-    a: 'We work exclusively with JCI (Joint Commission International) accredited hospitals in Istanbul. The hospital and surgeon are confirmed in writing before you pay for treatment, and you can then verify the hospital accreditation on the JCI website.'
+    a: 'Rhinoplasty is performed at JCI (Joint Commission International) accredited partner hospitals in Istanbul. The hospital and surgeon are confirmed in writing before you pay for treatment, and you can then verify the hospital accreditation on the JCI website.'
   },
   {
     q: 'Is rhinoplasty in Turkey safe?',
-    a: 'Ocean Health & Travel coordinates exclusively with JCI-accredited hospitals and board-certified plastic surgeons. We do not provide medical advice — all clinical decisions rest with your treating surgeon. As with any surgical procedure, risks exist and will be discussed during your pre-operative consultation. All procedures carry risks; these are discussed by the treating provider.'
+    a: 'Ocean Health & Travel coordinates procedures performed at JCI-accredited partner hospitals by board-certified plastic surgeons. We do not provide medical advice — all clinical decisions rest with your treating surgeon. As with any surgical procedure, risks exist and will be discussed during your pre-operative consultation. All procedures carry risks; these are discussed by the treating provider.'
   },
   {
     q: 'What is included in the coordination package?',
@@ -212,7 +212,7 @@ export default function RhinoplastyPage() {
                 Rhinoplasty, commonly known as a nose job, is one of the most commonly performed plastic surgery procedures worldwide. Istanbul is an established destination for rhinoplasty, with internationally accredited hospitals and lower costs than UK private clinics.
               </p>
               <p>
-                Ocean Health &amp; Travel coordinates rhinoplasty procedures at JCI-accredited hospitals in Istanbul. We are a medical coordination service — not a medical provider. All clinical decisions rest with your treating surgeon and the hospital team.
+                Ocean Health &amp; Travel coordinates rhinoplasty procedures performed at JCI-accredited partner hospitals in Istanbul. We are a medical coordination service — not a medical provider. All clinical decisions rest with your treating surgeon and the hospital team.
               </p>
 
               <h3>What does rhinoplasty involve?</h3>

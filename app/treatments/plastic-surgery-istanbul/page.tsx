@@ -153,7 +153,7 @@ const faqs = [
   },
   {
     q: 'Is plastic surgery in Turkey safe?',
-    a: 'Ocean Health & Travel coordinates procedures exclusively at JCI-accredited hospitals and clinics with board-certified plastic surgeons. We do not provide medical advice — all clinical decisions rest with your treating surgeon. As with any surgical procedure, risks exist and will be discussed fully during your pre-operative consultation. All procedures carry risks; these are discussed by the treating provider.'
+    a: 'Ocean Health & Travel coordinates procedures performed at JCI-accredited partner hospitals with board-certified plastic surgeons. We do not provide medical advice — all clinical decisions rest with your treating surgeon. As with any surgical procedure, risks exist and will be discussed fully during your pre-operative consultation. All procedures carry risks; these are discussed by the treating provider.'
   },
   {
     q: 'What documentation do I need?',

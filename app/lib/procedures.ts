@@ -15,6 +15,7 @@ export const NEURO: Category = { label: 'Neurosurgery', href: '/treatments/neuro
 export type Procedure = {
   slug: string
   category?: Category
+  jci?: boolean
   name: string
   h1: string
   h1em: string
@@ -34,6 +35,7 @@ export type Procedure = {
 export const PROCEDURES: Procedure[] = [
   {
     slug: 'breast-augmentation-istanbul',
+    jci: true,
     name: 'Breast augmentation',
     h1: 'Breast augmentation in Istanbul.',
     h1em: 'From £6,000.',
@@ -103,6 +105,7 @@ export const PROCEDURES: Procedure[] = [
   },
   {
     slug: 'liposuction-istanbul',
+    jci: true,
     name: 'Liposuction',
     h1: 'Liposuction in Istanbul.',
     h1em: 'From £2,500.',
@@ -150,6 +153,7 @@ export const PROCEDURES: Procedure[] = [
   },
   {
     slug: 'tummy-tuck-istanbul',
+    jci: true,
     name: 'Tummy tuck',
     h1: 'Tummy tuck in Istanbul.',
     h1em: 'From £3,500.',
@@ -199,6 +203,7 @@ export const PROCEDURES: Procedure[] = [
   },
   {
     slug: 'bbl-istanbul',
+    jci: true,
     name: 'Brazilian butt lift',
     h1: 'Brazilian butt lift in Istanbul.',
     h1em: 'From £4,000.',
@@ -246,6 +251,7 @@ export const PROCEDURES: Procedure[] = [
   },
   {
     slug: 'mini-facelift-istanbul',
+    jci: true,
     name: 'Mini facelift',
     h1: 'Mini facelift in Istanbul.',
     h1em: 'From £5,000.',
@@ -292,6 +298,7 @@ export const PROCEDURES: Procedure[] = [
   },
   {
     slug: 'blepharoplasty-istanbul',
+    jci: true,
     name: 'Eyelid surgery',
     h1: 'Eyelid surgery in Istanbul.',
     h1em: 'From £1,800.',
@@ -338,6 +345,7 @@ export const PROCEDURES: Procedure[] = [
   },
   {
     slug: 'breast-reduction-istanbul',
+    jci: true,
     name: 'Breast reduction',
     h1: 'Breast reduction in Istanbul.',
     h1em: 'From £6,300.',
@@ -383,6 +391,7 @@ export const PROCEDURES: Procedure[] = [
   },
   {
     slug: 'mastopexy-istanbul',
+    jci: true,
     name: 'Breast lift',
     h1: 'Breast lift in Istanbul.',
     h1em: 'From £5,000.',
@@ -428,6 +437,7 @@ export const PROCEDURES: Procedure[] = [
   },
   {
     slug: 'brow-lift-istanbul',
+    jci: true,
     name: 'Brow lift',
     h1: 'Brow lift in Istanbul.',
     h1em: 'From £2,500.',
@@ -473,6 +483,7 @@ export const PROCEDURES: Procedure[] = [
   },
   {
     slug: 'otoplasty-istanbul',
+    jci: true,
     name: 'Ear surgery',
     h1: 'Ear surgery in Istanbul.',
     h1em: 'From £1,500.',
@@ -517,6 +528,7 @@ export const PROCEDURES: Procedure[] = [
   },
   {
     slug: 'arm-lift-istanbul',
+    jci: true,
     name: 'Arm lift',
     h1: 'Arm lift in Istanbul.',
     h1em: 'From £2,500.',
@@ -562,6 +574,7 @@ export const PROCEDURES: Procedure[] = [
   },
   {
     slug: 'thigh-lift-istanbul',
+    jci: true,
     name: 'Thigh lift',
     h1: 'Thigh lift in Istanbul.',
     h1em: 'From £3,000.',
@@ -607,6 +620,7 @@ export const PROCEDURES: Procedure[] = [
   },
   {
     slug: 'labioplasty-istanbul',
+    jci: true,
     name: 'Labiaplasty',
     h1: 'Labiaplasty in Istanbul.',
     h1em: 'From £1,800.',
@@ -651,6 +665,7 @@ export const PROCEDURES: Procedure[] = [
   },
   {
     slug: 'lumbar-disc-istanbul',
+    jci: true,
     category: NEURO,
     name: 'Lumbar disc surgery',
     h1: 'Lumbar disc surgery in Istanbul.',
@@ -696,6 +711,7 @@ export const PROCEDURES: Procedure[] = [
   },
   {
     slug: 'cervical-disc-istanbul',
+    jci: true,
     category: NEURO,
     name: 'Cervical disc surgery',
     h1: 'Cervical disc surgery in Istanbul.',

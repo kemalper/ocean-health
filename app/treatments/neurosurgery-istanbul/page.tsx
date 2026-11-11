@@ -100,7 +100,7 @@ const faqs = [
   },
   {
     q: 'Is neurosurgery in Istanbul safe?',
-    a: 'Ocean Health & Travel coordinates neurosurgical procedures at JCI-accredited hospitals with internationally trained neurosurgical teams. We do not provide medical advice — all clinical decisions rest with your treating neurosurgical team. As with any neurosurgical procedure, risks are significant and will be discussed in full during pre-operative consultation.'
+    a: 'Ocean Health & Travel coordinates neurosurgical procedures performed at JCI-accredited partner hospitals with internationally trained neurosurgical teams. We do not provide medical advice — all clinical decisions rest with your treating neurosurgical team. As with any neurosurgical procedure, risks are significant and will be discussed in full during pre-operative consultation.'
   },
 ]
 

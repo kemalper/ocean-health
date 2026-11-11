@@ -97,7 +97,7 @@ export default function KneeReplacementPage() {
         .compare-table tr:last-child td{border-bottom:none}
         .td-oht{color:#2d3436;font-weight:600}
         .td-nhs{color:#aaa}
-        .disclaimer{background:#f8f7f4;border:1px solid #e4e1db;border-radius:12px;padding:1.25rem 1.5rem;font-size:13px;color:#666;line-height:1.75;margin-top:1.5rem}
+        .disclaimer{background:#f8f7f4;border:1px solid #DCE6F5;border-radius:12px;padding:1.25rem 1.5rem;font-size:13px;color:#666;line-height:1.75;margin-top:1.5rem}
         .sidebar{position:sticky;top:80px}
         .sidebar-card{background:#fff;border:1px solid #DCE6F5;border-radius:16px;padding:1.75rem;margin-bottom:1rem}
         .sidebar-card.dark{background:linear-gradient(135deg,#0A2150,#0A2150);border-color:transparent}
@@ -207,7 +207,7 @@ export default function KneeReplacementPage() {
                 Knee replacement (total knee arthroplasty) is one of the most commonly performed orthopaedic procedures worldwide, intended to relieve pain and restore function in patients with severe knee arthritis or joint degeneration; outcomes vary. Istanbul is an established destination for orthopaedic surgery, with JCI-accredited hospitals and costs typically lower than UK private centres.
               </p>
               <p>
-                Ocean Health &amp; Travel coordinates knee replacement surgery at JCI-accredited orthopaedic centres in Istanbul. We are a coordination service — not a medical provider. All clinical decisions rest with your treating orthopaedic surgeon.
+                Ocean Health &amp; Travel coordinates knee replacement surgery performed at JCI-accredited partner hospitals in Istanbul. We are a coordination service — not a medical provider. All clinical decisions rest with your treating orthopaedic surgeon.
               </p>
 
               <h3>UK private vs. Istanbul</h3>

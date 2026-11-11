@@ -7,7 +7,7 @@ import Footer from '@/app/components/Footer'
 export const metadata: Metadata = {
   alternates: { canonical: '/about' },
   title: 'About Us | Ocean Health & Travel — UK-Registered Medical Coordinator',
-  description: 'Ocean Health & Travel is a UK-registered medical tourism coordinator connecting international patients with JCI-accredited Istanbul clinics. 15 years of experience in health tourism.',
+  description: 'Ocean Health & Travel is a UK-registered medical tourism coordinator connecting international patients with licensed partner providers in Istanbul. 15 years of experience in health tourism.',
 }
 
 const WA_URL = 'https://wa.me/447441904858?text=Hello%2C%20I%27d%20like%20to%20find%20out%20more%20about%20Ocean%20Health%20%26%20Travel'
@@ -81,7 +81,7 @@ export default function AboutPage() {
             <div className="kicker">About Ocean Health &amp; Travel</div>
             <h1>Medical coordination<br />you can <em>trust.</em></h1>
             <p className="hero-sub">
-              We connect international patients with JCI-accredited hospitals and specialist physicians in Istanbul — combining 15 years of health tourism experience with dedicated, UK-registered coordination.
+              We connect international patients with licensed partner hospitals and specialist physicians in Istanbul — combining 15 years of health tourism experience with dedicated, UK-registered coordination.
             </p>
           </div>
         </div>
@@ -97,8 +97,8 @@ export default function AboutPage() {
                   <div className="stat-l">Years of health tourism experience</div>
                 </div>
                 <div className="stat-card">
-                  <div className="stat-n">JCI</div>
-                  <div className="stat-l">Accredited partner hospitals only</div>
+                  <div className="stat-n">Licensed</div>
+                  <div className="stat-l">Partner providers only</div>
                 </div>
                 <div className="stat-card">
                   <div className="stat-n">48h</div>
@@ -147,7 +147,7 @@ export default function AboutPage() {
 
               <h3>What we are not</h3>
               <p>
-                We are not a medical provider. We do not provide medical advice, clinical assessments, or surgical opinions. All clinical decisions rest with the treating physician and hospital team at our JCI-accredited partner facilities. We are transparent about this distinction and ensure it is reflected in all patient communications and legal documentation.
+                We are not a medical provider. We do not provide medical advice, clinical assessments, or surgical opinions. All clinical decisions rest with the treating physician and hospital team at our licensed partner facilities. We are transparent about this distinction and ensure it is reflected in all patient communications and legal documentation.
               </p>
             </div>
             <div>
@@ -184,7 +184,7 @@ export default function AboutPage() {
               {t:'No coordination fee charged to patients',d:'We are paid by our partner hospitals, not by patients. This may influence which hospitals we work with. The hospital and surgeon are confirmed in writing before you pay for treatment. Our arrangements do not affect the clinical independence of the treating institution.'},
               {t:'TÜRSAB authorisation',d:'Authorised to conduct International Health Tourism Intermediary Services under Turkish law. TÜRSAB member.'},
               {t:'USHAS — International Health Tourism Authorisation Certificate',d:'Authorised under the Bye-Law on International Health Tourism and Tourist Health, pursuant to Decree Law No. 663. Certificate no. AK-1451, issued 12 August 2025.'},
-              {t:'JCI-accredited partner hospitals only',d:'We coordinate exclusively with Joint Commission International accredited hospitals in Istanbul.'},
+              {t:'Licensed partner providers only',d:'Treatment is delivered by licensed partner hospitals and providers in Istanbul. Some partner hospitals are JCI-accredited, for example for orthopaedic, neurosurgical and plastic-surgery procedures; accreditation depends on the treatment, and your coordinator will confirm which applies to yours.'},
             ].map(c => (
               <div key={c.t} className="cred-item">
                 <div className="cred-dot"></div>

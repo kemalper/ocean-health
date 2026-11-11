@@ -9,7 +9,7 @@ import Footer from '@/app/components/Footer'
 export const metadata: Metadata = {
   alternates: { canonical: '/treatments/dental-implants-turkey' },
   title: 'Dental Implants in Turkey | From £350 | Ocean Health & Travel',
-  description: 'Dental implants in Istanbul from £350 per implant — vs. £1,500–£3,500 at UK private clinics. JCI-accredited dental clinics, dedicated coordination, 2–3 week timeline. Free quote in 48 hours.',
+  description: 'Dental implants in Istanbul from £350 per implant — vs. £1,500–£3,500 at UK private clinics. Licensed dental clinics, dedicated coordination, 2–3 week timeline. Free quote in 48 hours.',
 }
 
 const WA_URL = 'https://wa.me/447441904858?text=Hello%2C%20I%27d%20like%20to%20enquire%20about%20dental%20implants%20in%20Turkey'
@@ -25,7 +25,7 @@ const faqs = [
   },
   {
     q: 'Is it safe to get dental implants in Turkey?',
-    a: 'Ocean Health & Travel coordinates dental implant procedures exclusively at JCI-accredited clinics and internationally certified dental centres in Istanbul. All partner clinics use CE-marked implant systems from established manufacturers (Straumann, Nobel Biocare, Osstem). We do not provide dental advice — all clinical decisions rest with your treating dentist. All procedures carry risks; these are discussed by the treating provider.'
+    a: 'Ocean Health & Travel coordinates dental implant procedures exclusively at licensed dental clinics in Istanbul. All partner clinics use CE-marked implant systems from established manufacturers (Straumann, Nobel Biocare, Osstem). We do not provide dental advice — all clinical decisions rest with your treating dentist. All procedures carry risks; these are discussed by the treating provider.'
   },
   {
     q: 'Which implant brands are used?',
@@ -158,14 +158,14 @@ export default function DentalImplantsPage() {
               <div className="kicker">Dental · Istanbul</div>
               <h1>Dental Implants<br />in Turkey.<br /><em>From £350.</em></h1>
               <p className="hero-sub">
-                CE-marked implant systems. JCI-accredited dental clinics. Dedicated coordination from first enquiry through treatment and discharge documentation.
+                CE-marked implant systems. Licensed dental clinics. Dedicated coordination from first enquiry through treatment and discharge documentation.
               </p>
               <div className="hero-actions">
                 <a href={WA_URL} target="_blank" className="btn-primary">Get a free quote</a>
                 <a href="#faq" className="btn-ghost">Read FAQs ↓</a>
               </div>
               <div className="trust-row">
-                {['JCI-accredited clinics','CE-marked implant systems','Fixed, itemised pricing','GP documentation included'].map(t => (
+                {['Licensed partner clinics','CE-marked implant systems','Fixed, itemised pricing','GP documentation included'].map(t => (
                   <div key={t} className="trust-item"><div className="trust-dot"></div>{t}</div>
                 ))}
               </div>
@@ -211,7 +211,7 @@ export default function DentalImplantsPage() {
                 Dental implants are titanium posts surgically placed into the jawbone to act as artificial tooth roots, onto which crowns, bridges, or dentures are attached. Istanbul is an established destination for dental implant treatment, with modern facilities and costs typically lower than UK private dental clinics.
               </p>
               <p>
-                Ocean Health &amp; Travel coordinates dental implant treatment at JCI-accredited and internationally certified dental clinics in Istanbul. We are a coordination service — not a dental provider. All clinical decisions rest with your treating dentist.
+                Ocean Health &amp; Travel coordinates dental implant treatment at licensed dental clinics in Istanbul. We are a coordination service — not a dental provider. All clinical decisions rest with your treating dentist.
               </p>
 
               <h3>Dental implant price comparison</h3>
@@ -262,7 +262,7 @@ export default function DentalImplantsPage() {
                 <li>Indicative prices from £350 per implant</li>
                 <li>High-volume, experienced prosthodontists and oral surgeons</li>
                 <li>CE-marked implant systems from internationally recognised manufacturers</li>
-                <li>JCI-accredited and internationally certified dental facilities</li>
+                <li>Licensed dental facilities</li>
                 <li>7–10 day treatment timeline in Istanbul</li>
                 <li>English-speaking coordinators and interpreters throughout</li>
               </ul>

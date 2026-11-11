@@ -9,7 +9,7 @@ import Footer from '@/app/components/Footer'
 export const metadata: Metadata = {
   alternates: { canonical: '/treatments/dental-istanbul' },
   title: 'Dental Treatment in Istanbul | Ocean Health & Travel',
-  description: 'Dental implants from £350, zirconium crowns from £150, veneers from £180, smile design from £1,200. JCI-accredited dental clinics in Istanbul. Free quote in 48 hours.',
+  description: 'Dental implants from £350, zirconium crowns from £150, veneers from £180, smile design from £1,200. Licensed dental clinics in Istanbul. Free quote in 48 hours.',
 }
 
 const WA_URL = 'https://wa.me/447441904858?text=Hello%2C%20I%27d%20like%20to%20enquire%20about%20dental%20treatment%20in%20Istanbul'
@@ -187,7 +187,7 @@ export default function DentalIstanbulPage() {
           <div className="kicker">Dental treatment · Istanbul</div>
           <h1>Dental Treatment<br />in Istanbul.<br /><em>Itemised quotes before you travel.</em></h1>
           <p className="hero-sub">
-            CE-marked implants, zirconium crowns, veneers, smile design and more. JCI-accredited dental clinics. Dedicated coordination from first enquiry through treatment.
+            CE-marked implants, zirconium crowns, veneers, smile design and more. Licensed dental clinics. Dedicated coordination from first enquiry through treatment.
           </p>
           <div className="hero-stats">
             <div className="hero-stat">
@@ -208,7 +208,7 @@ export default function DentalIstanbulPage() {
             <a href="#procedures" className="btn-ghost">View all treatments ↓</a>
           </div>
           <div className="trust-row">
-            {['JCI-accredited clinics','CE-marked implant systems','Fixed, itemised pricing','7–10 day treatment timeline'].map(t => (
+            {['Licensed partner clinics','CE-marked implant systems','Fixed, itemised pricing','7–10 day treatment timeline'].map(t => (
               <div key={t} className="trust-item"><div className="trust-dot"></div>{t}</div>
             ))}
           </div>
