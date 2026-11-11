@@ -14,7 +14,7 @@ const faqs = [
   },
   {
     q: 'Do you charge patients a fee?',
-    a: 'No coordination fee is charged to patients. We are paid by the hospital you are treated at, which may influence which hospitals we work with. Your itemised quote shows what you pay and what it includes.',
+    a: 'No coordination fee is charged to patients. We are paid by the hospital you are treated at, which may influence which hospitals we work with. Your package quote states what you pay and what it includes.',
   },
   {
     q: 'When will I know who my surgeon is?',
@@ -33,13 +33,13 @@ export default function Page() {
       sub="A plain statement of our role: what we do, what we do not do, how we are paid and what we confirm before you pay for treatment."
       faqs={faqs}
       ctaTitle="Ready to start?"
-      ctaText="Tell us what you are considering. You receive an itemised quote once we have the information we need."
+      ctaText="Tell us what you are considering. You receive a package quote once we have the information we need."
       waText="Hello, I'd like to ask about treatment coordination"
       sections={[
         {
           title: 'What we do',
           bullets: [
-            'Give you an itemised quote, which we aim to send within 48 hours of receiving the information we need.',
+            'Give you a package quote, which we aim to send within 48 hours of receiving the information we need.',
             'Arrange treatment with licensed partner hospitals and providers in Istanbul.',
             'Coordinate airport transfers, hotel accommodation near the hospital and an interpreter at your appointments.',
             'Give you one coordinator from enquiry to discharge.',
@@ -61,7 +61,7 @@ export default function Page() {
         {
           title: 'How we are paid',
           paras: [
-            'No coordination fee is charged to patients. We are paid by the hospital you are treated at, and this may influence which hospitals we work with. Your itemised quote shows what you pay and what it includes.',
+            'No coordination fee is charged to patients. We are paid by the hospital you are treated at, and this may influence which hospitals we work with. Your package quote states what you pay and what it includes.',
           ],
         },
         {

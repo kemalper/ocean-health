@@ -10,7 +10,9 @@ const LINES: [string, string, string][] = [
 
 const CHANGES = [
   'Extra nights, or arriving earlier or leaving later to fit your flights',
+  'Keeping your hotel room during a hospital stay, if you prefer',
   'Travelling with a companion: their costs are added to your quote',
+  'Additional tests or treatment, if the hospital\'s assessment requires them',
 ]
 
 // Illustrative layout only: no real prices are shown.
