@@ -46,7 +46,7 @@ const faqSections = [
       },
       {
         q: 'Are there any hidden charges?',
-        a: 'Your package quote states what is included, so you know what to expect before you book. It is adjusted if you add extra nights or change your flight timing, and a travel companion\'s costs are quoted separately; these are agreed with you before you book. Occasionally the hospital\'s own assessment requires additional tests or treatment, for example a repeat test after a medication adjustment, and the hospital may charge for them; we tell you about any additional cost. A breakdown is available on request. Ocean Health & Travel coordinates your care at no direct cost to you — our commercial arrangements are with partner hospitals, not with patients.',
+        a: 'Your package quote is based on the information you give us about your health, dates and companions, and it states what is included. Everything in the package is provided at the quoted price. It is adjusted if you add extra nights or change your flight timing, and a travel companion\'s costs are quoted separately; these are agreed with you before you book. Small additional checks that arise after you arrive are usually covered within the package. If the information given for your quote turns out to be inaccurate or incomplete and significant additional tests or treatment are needed, an additional charge may apply (extra transfers or nights can follow); we discuss any additional cost with you. A breakdown is available on request. Ocean Health & Travel coordinates your care at no direct cost to you — our commercial arrangements are with partner hospitals, not with patients.',
       },
       {
         q: 'What happens to my hotel if I stay overnight in hospital?',

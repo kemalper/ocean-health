@@ -12,7 +12,7 @@ const CHANGES = [
   'Extra nights, or arriving earlier or leaving later to fit your flights',
   'Keeping your hotel room during a hospital stay, if you prefer',
   'Travelling with a companion: their costs are added to your quote',
-  'Additional tests or treatment, if the hospital\'s assessment requires them',
+  'Significant additional tests or treatment, if the information given for your quote proves inaccurate or incomplete',
 ]
 
 // Illustrative layout only: no real prices are shown.
@@ -23,7 +23,7 @@ export default function SampleQuote() {
         <h2 id="sample-quote-title" className={styles.title}>What your package quote covers</h2>
         <span className={styles.tag}>Illustrative layout, not a quote</span>
       </div>
-      <p className={styles.sub}>Built around your treatment, dates and travel companions.</p>
+      <p className={styles.sub}>Based on the information you give us about your treatment, dates and travel companions.</p>
       <dl className={styles.list}>
         {LINES.map(([label, note, val]) => (
           <div key={label} className={styles.row}>
@@ -41,7 +41,7 @@ export default function SampleQuote() {
       </div>
       <div className={styles.fine}>
         <span><strong>Not included:</strong> flights.</span>
-        <span>A breakdown is available on request. Prices are indicative until the treating provider has assessed your case. Hospital and surgeon are confirmed in writing before you pay.</span>
+        <span>A breakdown is available on request. Your quote is based on the information you give us and is confirmed once the treating provider has reviewed it. Hospital and surgeon are confirmed in writing before you pay.</span>
         <span>No coordination fee is charged to patients.</span>
       </div>
     </section>
