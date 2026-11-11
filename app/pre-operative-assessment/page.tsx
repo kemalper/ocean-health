@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Link from 'next/link'
 import Nav from '@/app/components/Nav'
 import TreatmentTheme from '@/app/components/TreatmentTheme'
 import Footer from '@/app/components/Footer'
@@ -136,9 +137,9 @@ export default function PreOpAssessmentPage() {
                   SurgiCheck is a perioperative risk governance platform developed by a physician. It provides structured pre-operative screening, Montgomery-aligned informed consent, and post-operative follow-up in a single auditable platform.
                 </p>
                 <p style={{fontSize:'14px',color:'#666',lineHeight:1.75,fontWeight:300,marginBottom:'1.5rem'}}>
-                  The assessment is free for Ocean Health &amp; Travel patients. Your results are shared with our coordination team and, with your consent, forwarded to your treating surgeon in Istanbul.
+                  The assessment is free for aesthetic (plastic) surgery patients of Ocean Health &amp; Travel. Considering deep brain stimulation? Please use the <Link href="/treatments/dbs-assessment" style={{color:'#0559F0',fontWeight:600}}>free DBS pre-assessment</Link> instead. Your results are shared with our coordination team and, with your consent, forwarded to your treating surgeon in Istanbul.
                 </p>
-                <a href="https://surgicheck.net/patient.html?lang=en" target="_blank" rel="noopener noreferrer" style={{display:'inline-flex',alignItems:'center',gap:'8px',background:'#0559F0',color:'#fff',padding:'13px 24px',borderRadius:'10px',fontSize:'14px',fontWeight:600,fontFamily:'Inter,sans-serif',transition:'all .2s'}}>
+                <a href={'https://www.surgicheck.net/patient?lang=en&clinic=oht&src=ocean'} target="_blank" rel="noopener noreferrer" style={{display:'inline-flex',alignItems:'center',gap:'8px',background:'#0559F0',color:'#fff',padding:'13px 24px',borderRadius:'10px',fontSize:'14px',fontWeight:600,fontFamily:'Inter,sans-serif',transition:'all .2s'}}>
                   Start assessment &rarr;
                 </a>
                 <div className="disclaimer">
@@ -164,8 +165,8 @@ export default function PreOpAssessmentPage() {
         <div className="inner">
           <div className="cta-card">
             <h2>Ready to start your assessment?</h2>
-            <p>Free for all Ocean Health &amp; Travel patients. Takes under 3 minutes. Results reviewed by our coordination team before your consultation.</p>
-            <a href="https://surgicheck.net/patient.html?lang=en" target="_blank" rel="noopener noreferrer" className="btn-start">
+            <p>Free for aesthetic (plastic) surgery patients of Ocean Health &amp; Travel. Takes under 3 minutes. Results reviewed by our coordination team before your consultation.</p>
+            <a href={'https://www.surgicheck.net/patient?lang=en&clinic=oht&src=ocean'} target="_blank" rel="noopener noreferrer" className="btn-start">
               Start pre-operative assessment &rarr;
             </a>
           </div>
