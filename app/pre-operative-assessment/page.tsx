@@ -71,6 +71,9 @@ export default function PreOpAssessmentPage() {
             <p className="hero-sub">
               Ocean Health &amp; Travel has partnered with SurgiCheck to offer structured pre-operative risk screening for patients planning plastic surgery in Istanbul. Complete your assessment before your consultation — at no charge.
             </p>
+            <div style={{background:'rgba(10,33,80,.5)',border:'1px solid rgba(255,255,255,.3)',borderRadius:'12px',padding:'1rem 1.25rem',color:'#fff',fontSize:'15px',lineHeight:1.65,maxWidth:'560px',marginBottom:'1.75rem'}}>
+              <strong>Who is this for?</strong> This pre-operative assessment is for aesthetic (plastic) surgery patients. Considering deep brain stimulation? Please use the <Link href="/treatments/dbs-assessment" style={{color:'#fff',textDecoration:'underline',fontWeight:600}}>free DBS pre-assessment</Link>. For any other treatment, <Link href="/contact" style={{color:'#fff',textDecoration:'underline',fontWeight:600}}>contact us</Link> and we will advise how to start.
+            </div>
             <div className="trust-row">
               {['Montgomery-aligned','GDPR compliant','No login required','Results in under 3 minutes'].map(t => (
                 <div key={t} className="trust-item"><div className="trust-dot"></div>{t}</div>
