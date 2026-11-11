@@ -19,7 +19,7 @@ const CHANGES = [
   'Extra nights, or arriving earlier or leaving later to fit your flights',
   'Keeping your hotel room during a hospital stay, if you prefer',
   'A travel companion: their costs are added to your quote',
-  'Significant additional tests or treatment, if the information given for your quote proves inaccurate or incomplete',
+  'Significant additional tests or treatment, if the information given for your quote proves untrue',
 ]
 
 export default function ProcedurePage({ p }: { p: Procedure }) {
