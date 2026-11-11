@@ -293,8 +293,15 @@ export default function KneeReplacementPage() {
               </div>
 
               <div className="sidebar-card">
-                <div className="sidebar-title">What&apos;s included</div>
-                {['Airport transfer','Hotel near hospital','Interpreter at all appointments','In-hospital physiotherapy','GP documentation on request'].map(item => (
+                <div className="sidebar-title">A typical package</div>
+                {['Typical stay in Istanbul: 10–14 days','Airport transfers','Hotel accommodation','Interpreter at all appointments','Clinic liaison','In-hospital physiotherapy','Hotel check-out before surgery and check-in after discharge, if you stay overnight in hospital','English discharge documents sent to your GP on request'].map(item => (
+                  <div key={item} className="check-item">
+                    <div className="check-dot"></div>
+                    <span style={{fontSize:'13px',color:'#555'}}>{item}</span>
+                  </div>
+                ))}
+                <div className="sidebar-title" style={{marginTop:'1.25rem',color:'#475569'}}>What can change your price</div>
+                {['Extra nights, or arriving earlier or leaving later to fit your flights','Keeping your hotel room during a hospital stay, if you prefer','A travel companion: their costs are added to your quote','Significant additional tests or treatment, if the information given for your quote proves untrue'].map(item => (
                   <div key={item} className="check-item">
                     <div className="check-dot"></div>
                     <span style={{fontSize:'13px',color:'#555'}}>{item}</span>

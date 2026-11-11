@@ -304,8 +304,15 @@ export default function DentalImplantsPage() {
               </div>
 
               <div className="sidebar-card">
-                <div className="sidebar-title">What&apos;s included</div>
-                {['Airport transfer','Hotel near clinic','Interpreter at all appointments','Clinic liaison','Dental records in English on request'].map(item => (
+                <div className="sidebar-title">A typical package</div>
+                {['Typical stay in Istanbul: 7–10 days','Airport transfers','Hotel accommodation','Interpreter at all appointments','Clinic liaison','English discharge documents sent to your GP on request'].map(item => (
+                  <div key={item} className="check-item">
+                    <div className="check-dot"></div>
+                    <span style={{fontSize:'13px',color:'#555'}}>{item}</span>
+                  </div>
+                ))}
+                <div className="sidebar-title" style={{marginTop:'1.25rem',color:'#475569'}}>What can change your price</div>
+                {['Extra nights, or arriving earlier or leaving later to fit your flights','A travel companion: their costs are added to your quote','Significant additional tests or treatment, if the information given for your quote proves untrue'].map(item => (
                   <div key={item} className="check-item">
                     <div className="check-dot"></div>
                     <span style={{fontSize:'13px',color:'#555'}}>{item}</span>

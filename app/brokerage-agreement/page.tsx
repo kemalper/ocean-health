@@ -92,7 +92,7 @@ export default function BrokerageAgreement() {
         <ul>
           <li>Clinical outcomes, surgical complications, or medical negligence — these are the responsibility of the treating provider</li>
           <li>Force majeure events including flight cancellations, natural disasters, or political events</li>
-          <li>Losses arising from inaccurate information provided by the patient</li>
+          <li>Losses arising from untrue information provided by the patient</li>
         </ul>
 
         <h2>Governing law</h2>
