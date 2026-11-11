@@ -108,7 +108,7 @@ export default function ContactPage() {
                   <div className="method-icon blue"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1565c0" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg></div>
                   <div>
                     <div className="method-t">Email</div>
-                    <div className="method-d">For formal enquiries, clinical documents, and referral letters. We respond within 24 hours.</div>
+                    <div className="method-d">For formal enquiries, clinical documents, and referral letters. We aim to respond within 24 hours.</div>
                     <div className="method-val">info@oceanhealthtravel.com</div>
                   </div>
                 </a>
@@ -129,7 +129,7 @@ export default function ContactPage() {
                 <div className="hours-t">Response times</div>
                 <div className="hours-d">
                   WhatsApp: we aim to reply promptly during working hours<br />
-                  Email: within 24 hours<br />
+                  Email: we aim to respond within 24 hours<br />
                   Quote turnaround: we aim to send your quote within 48 hours of receiving clinical information<br />
                   Working hours: Monday–Saturday, 09:00–18:00 GMT
                 </div>
