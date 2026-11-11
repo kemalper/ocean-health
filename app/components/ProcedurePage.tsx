@@ -154,7 +154,7 @@ export default function ProcedurePage({ p }: { p: Procedure }) {
           <div className="card">
             <div className="card-t">Included in every package</div>
             <ul>{INCLUDED.map(t => <li key={t}>{t}</li>)}</ul>
-            <div className="fine">Flights are not included. The surgeon and hospital fees are listed in your itemised quote.</div>
+            <div className="fine">Flights are not included. The surgeon and hospital fees are listed in your itemised quote. {p.jci ? 'Treatment is performed at JCI-accredited partner hospitals.' : 'Treatment is delivered by licensed partner providers.'}</div>
           </div>
         </div>
       </section>

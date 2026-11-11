@@ -48,12 +48,18 @@ export default function Nav({ transparent = false }: { transparent?: boolean }) 
     <>
       <style>{`
         .nav{position:${transparent ? 'fixed' : 'sticky'};top:0;left:0;right:0;z-index:500;transition:background .3s,box-shadow .3s}
-        .nav.scrolled{background:rgba(250,248,244,.98);backdrop-filter:blur(12px);box-shadow:0 1px 0 #DCE6F5}
+        .nav.scrolled{background:rgba(255,255,255,.98);backdrop-filter:blur(12px);box-shadow:0 1px 0 #DCE6F5}
         .nav:not(.scrolled){background:transparent}
         .nav-inner{max-width:1280px;margin:0 auto;padding:0 2.5rem;height:84px;display:flex;align-items:center;justify-content:space-between}
         .nav-logo{display:flex;align-items:center}
-        .nav-logo img{height:64px!important;width:auto}
-        @media(max-width:900px){.nav-inner{height:66px}.nav-logo img{height:44px!important}}
+        .nav-logo{padding:8px 0}
+        .nav-logo img{height:60px!important;width:auto}
+        .topbar{background:#0A2150;color:#fff;font-size:13px}
+        .topbar-in{max-width:1280px;margin:0 auto;padding:0 2.5rem;min-height:36px;display:flex;align-items:center;justify-content:flex-end;gap:1.75rem;flex-wrap:wrap}
+        .topbar a{color:#fff;text-decoration:none;display:inline-flex;align-items:center;gap:7px;padding:8px 0}
+        .topbar a:hover{text-decoration:underline}
+        .topbar a:focus-visible{outline:2px solid #fff;outline-offset:2px}
+        @media(max-width:900px){.nav-inner{height:70px}.nav-logo{padding:6px 0}.nav-logo img{height:52px!important}.topbar-in{padding:0 1.25rem;justify-content:space-between;gap:.5rem 1rem}}
         .nav-links{display:flex;gap:2.25rem;list-style:none;align-items:center}
         .nav-links a{font-size:14px;transition:color .2s;text-decoration:none}
         .nav.scrolled .nav-links a{color:#334155}
@@ -92,7 +98,7 @@ export default function Nav({ transparent = false }: { transparent?: boolean }) 
         .hamburger span{display:block;width:22px;height:2px;border-radius:2px;transition:all .3s}
         .nav.scrolled .hamburger span{background:#1a1a1a}
         .nav:not(.scrolled) .hamburger span{background:#fff}
-        .mobile-menu{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(250,248,244,.99);backdrop-filter:blur(20px);z-index:999;flex-direction:column;align-items:center;justify-content:flex-start;gap:1.25rem;overflow-y:auto;padding:5rem 1.5rem 2.5rem}
+        .mobile-menu{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(255,255,255,.99);backdrop-filter:blur(20px);z-index:999;flex-direction:column;align-items:center;justify-content:flex-start;gap:1.25rem;overflow-y:auto;padding:5rem 1.5rem 2.5rem}
         .mobile-menu.open{display:flex}
         .mobile-menu a{font-family:'DM Serif Display',serif;font-size:28px;color:#1a1a1a;text-decoration:none;font-weight:400;letter-spacing:-.02em;transition:color .2s}
         .mobile-menu a:hover{color:#0559F0}
@@ -105,6 +111,18 @@ export default function Nav({ transparent = false }: { transparent?: boolean }) 
         }
       `}</style>
 
+      <div className="topbar">
+        <div className="topbar-in">
+          <a href="tel:+447441904858" aria-label="Call Ocean Health & Travel on +44 7441 904858">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+            +44 7441 904858
+          </a>
+          <a href="mailto:info@oceanhealthtravel.com" aria-label="Email info@oceanhealthtravel.com">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+            info@oceanhealthtravel.com
+          </a>
+        </div>
+      </div>
       <nav className={`nav${scrolled ? ' scrolled' : ''}`} onMouseLeave={() => setMega(false)}>
         <div className="nav-inner">
           <a href="/" className="nav-logo">
@@ -154,6 +172,8 @@ export default function Nav({ transparent = false }: { transparent?: boolean }) 
         <a href="/contact" onClick={() => setOpen(false)}>Contact</a>
         <a href="/pre-operative-assessment" onClick={() => setOpen(false)}>Pre-assessment</a>
         <a href={WA_URL} target="_blank" rel="noopener noreferrer" className="mobile-btn" onClick={() => setOpen(false)}>Free quote</a>
+        <a href="tel:+447441904858" style={{fontFamily:"'Inter',sans-serif",fontSize:'17px',color:'#0559F0',fontWeight:600}}>Call +44 7441 904858</a>
+        <a href="mailto:info@oceanhealthtravel.com" style={{fontFamily:"'Inter',sans-serif",fontSize:'15px',color:'#475569'}}>info@oceanhealthtravel.com</a>
       </div>
     </>
   )

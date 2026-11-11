@@ -9,7 +9,7 @@ import Footer from '@/app/components/Footer'
 export const metadata: Metadata = {
   alternates: { canonical: '/treatments/ophthalmology-istanbul' },
   title: 'Eye Surgery in Istanbul | Ocean Health & Travel',
-  description: 'LASIK from £600 per eye, cataract surgery from £800, premium lens replacement from £1,200. JCI-accredited ophthalmology centres in Istanbul. Free quote in 48 hours.',
+  description: 'LASIK from £600 per eye, cataract surgery from £800, premium lens replacement from £1,200. Licensed ophthalmology centres in Istanbul. Free quote in 48 hours.',
 }
 
 const WA_URL = 'https://wa.me/447441904858?text=Hello%2C%20I%27d%20like%20to%20enquire%20about%20eye%20surgery%20in%20Istanbul'
@@ -187,7 +187,7 @@ export default function OphthalmologyPage() {
           <div className="kicker">Ophthalmology · Istanbul</div>
           <h1>Eye Surgery<br />in Istanbul.<br /><em>Itemised quotes before you travel.</em></h1>
           <p className="hero-sub">
-            LASIK, cataract, lens replacement, and more. Advanced laser platforms at JCI-accredited ophthalmology centres. Dedicated coordination throughout.
+            LASIK, cataract, lens replacement, and more. Advanced laser platforms at licensed ophthalmology centres. Dedicated coordination throughout.
           </p>
           <div className="hero-stats">
             <div className="hero-stat">
@@ -208,7 +208,7 @@ export default function OphthalmologyPage() {
             <a href="#procedures" className="btn-ghost">View all procedures ↓</a>
           </div>
           <div className="trust-row">
-            {['JCI-accredited clinics','Advanced laser platforms','Fixed, itemised pricing','3–7 day Istanbul stay'].map(t => (
+            {['Licensed partner clinics','Advanced laser platforms','Fixed, itemised pricing','3–7 day Istanbul stay'].map(t => (
               <div key={t} className="trust-item"><div className="trust-dot"></div>{t}</div>
             ))}
           </div>

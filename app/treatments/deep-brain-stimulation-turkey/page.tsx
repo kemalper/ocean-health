@@ -92,7 +92,7 @@ export default function DBSPage() {
         .prose ul li{font-size:15px;color:#444;line-height:1.8;padding-left:16px;position:relative;font-weight:300}
         .prose ul li::before{content:'·';position:absolute;left:0;color:#0438A6;font-weight:700;font-size:18px}
         .clinical-warning{background:#fffbeb;border:1px solid #fde68a;border-radius:12px;padding:1.25rem 1.5rem;font-size:13.5px;color:#92400e;line-height:1.75;margin:1.5rem 0}
-        .medical-disclaimer{background:#f8f7f4;border:1px solid #e4e1db;border-radius:12px;padding:1.25rem 1.5rem;font-size:13px;color:#666;line-height:1.75;margin-top:1.5rem}
+        .medical-disclaimer{background:#f8f7f4;border:1px solid #DCE6F5;border-radius:12px;padding:1.25rem 1.5rem;font-size:13px;color:#666;line-height:1.75;margin-top:1.5rem}
         .sidebar{position:sticky;top:80px}
         .sidebar-card{background:#fff;border:1px solid #DCE6F5;border-radius:16px;padding:1.75rem;margin-bottom:1rem}
         .sidebar-card.dark{background:linear-gradient(135deg,#0A2150,#0A2150);border-color:transparent}
@@ -215,7 +215,7 @@ export default function DBSPage() {
                 Deep brain stimulation (DBS) is an established neurosurgical procedure in which electrodes are implanted into specific areas of the brain to modulate abnormal neural activity. It is most commonly used for Parkinson&apos;s disease, essential tremor, and dystonia, and is typically considered when symptoms are no longer adequately controlled by medication.
               </p>
               <p>
-                Ocean Health &amp; Travel coordinates DBS procedures at JCI-accredited hospitals in Istanbul with experienced neurosurgical teams. We are a medical coordination service — not a medical provider. All clinical decisions, including patient selection, surgical planning, and post-operative management, rest with your treating neurosurgical team.
+                Ocean Health &amp; Travel coordinates DBS procedures performed at JCI-accredited partner hospitals in Istanbul with experienced neurosurgical teams. We are a medical coordination service — not a medical provider. All clinical decisions, including patient selection, surgical planning, and post-operative management, rest with your treating neurosurgical team.
               </p>
 
               <div className="clinical-warning">

@@ -136,7 +136,7 @@ const CSS = `
 .hp-top b{color:#0559F0;font-weight:700}
 .hp-pause{border:1px solid #DCE6F5;background:#fff;border-radius:99px;width:30px;height:30px;cursor:pointer;color:#14213D;font-size:11px;line-height:1;padding:0}
 .hp-pause:hover{border-color:#0559F0;color:#0559F0}
-.hp-stage{position:relative;flex:1;min-height:0;margin:8px 20px 0;background:linear-gradient(180deg,#F7F4EC,#F3F7FE);border-radius:10px;overflow:hidden}
+.hp-stage{position:relative;flex:1;min-height:0;margin:8px 20px 0;background:linear-gradient(180deg,#F3F7FE,#F3F7FE);border-radius:10px;overflow:hidden}
 .hp .scene{position:absolute;inset:0;opacity:0;transition:opacity .45s;display:flex;align-items:center;justify-content:center;pointer-events:none}
 .hp .scene.on{opacity:1}
 .hp .scene svg{width:100%;height:100%}

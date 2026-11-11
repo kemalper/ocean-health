@@ -9,7 +9,7 @@ import Footer from '@/app/components/Footer'
 export const metadata: Metadata = {
   alternates: { canonical: '/treatments/lasik-istanbul' },
   title: 'LASIK Eye Surgery in Istanbul | From £600 per eye | Ocean Health & Travel',
-  description: 'LASIK laser eye surgery in Istanbul from £600 per eye — vs. £995–£2,395 per eye at UK private clinics. JCI-accredited ophthalmology centres, dedicated coordination. Free quote in 48 hours.',
+  description: 'LASIK laser eye surgery in Istanbul from £600 per eye — vs. £995–£2,395 per eye at UK private clinics. Licensed ophthalmology centres, dedicated coordination. Free quote in 48 hours.',
 }
 
 const WA_URL = 'https://wa.me/447441904858?text=Hello%2C%20I%27d%20like%20to%20enquire%20about%20LASIK%20eye%20surgery%20in%20Istanbul'
@@ -162,14 +162,14 @@ export default function LasikPage() {
               <div className="kicker">Ophthalmology · Istanbul</div>
               <h1>LASIK Eye Surgery<br />in Istanbul.<br /><em>From £600 per eye.</em></h1>
               <p className="hero-sub">
-                Advanced laser platforms. JCI-accredited ophthalmology centres. Dedicated coordination from pre-operative assessment through procedure and post-operative documentation.
+                Advanced laser platforms. Licensed ophthalmology centres. Dedicated coordination from pre-operative assessment through procedure and post-operative documentation.
               </p>
               <div className="hero-actions">
                 <a href={WA_URL} target="_blank" className="btn-primary">Get a free quote</a>
                 <a href="#procedures" className="btn-ghost">LASIK vs SMILE ↓</a>
               </div>
               <div className="trust-row">
-                {['JCI-accredited clinics','Advanced laser platforms','3–5 day Istanbul stay','Itemised quote before travel'].map(t => (
+                {['Licensed partner clinics','Advanced laser platforms','3–5 day Istanbul stay','Itemised quote before travel'].map(t => (
                   <div key={t} className="trust-item"><div className="trust-dot"></div>{t}</div>
                 ))}
               </div>
@@ -214,7 +214,7 @@ export default function LasikPage() {
                 LASIK (Laser-Assisted In Situ Keratomileusis) is one of the most commonly performed elective procedures. It is laser treatment intended to correct refractive error; suitability and expected results are assessed by the treating ophthalmologist. Istanbul&apos;s ophthalmology centres use modern laser platforms, typically at lower cost than UK private clinics.
               </p>
               <p>
-                Ocean Health &amp; Travel coordinates LASIK and related laser eye procedures at JCI-accredited ophthalmology centres in Istanbul. We are a coordination service — not a medical provider. All clinical decisions, including suitability assessment and procedure selection, rest with your treating ophthalmologist.
+                Ocean Health &amp; Travel coordinates LASIK and related laser eye procedures at licensed ophthalmology centres in Istanbul. We are a coordination service — not a medical provider. All clinical decisions, including suitability assessment and procedure selection, rest with your treating ophthalmologist.
               </p>
 
               <h3 id="procedures">LASIK, LASEK, and SMILE — which procedure?</h3>
@@ -272,7 +272,7 @@ export default function LasikPage() {
                 <li>Typically lower cost than UK private clinics</li>
                 <li>Same advanced laser platforms (Zeiss, Alcon, Schwind) as UK centres</li>
                 <li>High-volume, experienced ophthalmological teams</li>
-                <li>JCI-accredited facilities</li>
+                <li>Licensed partner facilities</li>
                 <li>3–5 day Istanbul stay — one of the most time-efficient procedures we coordinate</li>
               </ul>
 

@@ -9,7 +9,7 @@ import Footer from '@/app/components/Footer'
 export const metadata: Metadata = {
   alternates: { canonical: '/treatments/hair-transplant-istanbul' },
   title: 'Hair Transplant in Istanbul | Ocean Health & Travel',
-  description: 'Hair transplant in Istanbul — FUE and DHI techniques at JCI-accredited clinics. Dedicated coordination, fixed pricing, 2–3 day procedure. Free quote in 48 hours.',
+  description: 'Hair transplant in Istanbul — FUE and DHI techniques at licensed partner clinics. Dedicated coordination, fixed pricing, 2–3 day procedure. Free quote in 48 hours.',
 }
 
 const WA_URL = 'https://wa.me/447441904858?text=Hello%2C%20I%27d%20like%20to%20enquire%20about%20hair%20transplant%20in%20Istanbul'
@@ -33,7 +33,7 @@ const faqs = [
   },
   {
     q: 'Is a hair transplant in Istanbul safe?',
-    a: 'Ocean Health & Travel coordinates hair transplant procedures at JCI-accredited clinics with experienced trichological surgeons. We do not provide medical advice — all clinical decisions rest with your treating surgeon. As with any surgical procedure, risks exist and will be discussed during your pre-operative consultation. All procedures carry risks; these are discussed by the treating provider.'
+    a: 'Ocean Health & Travel coordinates hair transplant procedures at licensed partner clinics with experienced trichological surgeons. We do not provide medical advice — all clinical decisions rest with your treating surgeon. As with any surgical procedure, risks exist and will be discussed during your pre-operative consultation. All procedures carry risks; these are discussed by the treating provider.'
   },
   {
     q: 'What is included in the coordination package?',
@@ -163,14 +163,14 @@ export default function HairTransplantPage() {
               <div className="kicker">Hair restoration · Istanbul</div>
               <h1>Hair Transplant<br />in Istanbul.<br /><em>FUE &amp; DHI.</em></h1>
               <p className="hero-sub">
-                Experienced trichological surgeons. JCI-accredited clinics. Dedicated coordination from first enquiry through procedure and post-operative documentation.
+                Experienced trichological surgeons. Licensed partner clinics. Dedicated coordination from first enquiry through procedure and post-operative documentation.
               </p>
               <div className="hero-actions">
                 <a href={WA_URL} target="_blank" className="btn-primary">Get a free quote</a>
                 <a href="#techniques" className="btn-ghost">FUE vs DHI ↓</a>
               </div>
               <div className="trust-row">
-                {['JCI-accredited clinics','FUE & DHI techniques','Fixed, itemised pricing','3–5 day Istanbul stay'].map(t => (
+                {['Licensed partner clinics','FUE & DHI techniques','Fixed, itemised pricing','3–5 day Istanbul stay'].map(t => (
                   <div key={t} className="trust-item"><div className="trust-dot"></div>{t}</div>
                 ))}
               </div>
@@ -218,7 +218,7 @@ export default function HairTransplantPage() {
             <div className="prose">
               <h2>Hair transplant in Istanbul — what to expect</h2>
               <p>
-                Istanbul is an established destination for hair transplant surgery, with modern facilities and a streamlined patient experience. Ocean Health &amp; Travel coordinates hair transplant procedures at JCI-accredited clinics with experienced trichological surgical teams.
+                Istanbul is an established destination for hair transplant surgery, with modern facilities and a streamlined patient experience. Ocean Health &amp; Travel coordinates hair transplant procedures at licensed partner clinics with experienced trichological surgical teams.
               </p>
               <p>
                 We are a coordination service — not a medical provider. All clinical decisions, including technique selection, graft count, and post-operative management, rest with your treating surgeon.
@@ -277,7 +277,7 @@ export default function HairTransplantPage() {
               <h3>Why Istanbul for hair transplants?</h3>
               <ul>
                 <li>High-volume, experienced surgeons performing thousands of procedures annually</li>
-                <li>JCI-accredited and internationally certified clinics</li>
+                <li>Licensed partner clinics</li>
                 <li>Itemised quotes provided before you travel</li>
                 <li>Typical Istanbul stay of 3–5 days</li>
                 <li>English-speaking coordinators and interpreters throughout</li>

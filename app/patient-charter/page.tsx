@@ -40,7 +40,7 @@ export default function Page() {
           title: 'What we do',
           bullets: [
             'Give you an itemised quote, which we aim to send within 48 hours of receiving the information we need.',
-            'Arrange treatment at JCI-accredited hospitals in Istanbul.',
+            'Arrange treatment with licensed partner hospitals and providers in Istanbul.',
             'Coordinate airport transfers, hotel accommodation near the hospital and an interpreter at your appointments.',
             'Give you one coordinator from enquiry to discharge.',
             'Send English-language discharge documentation to your UK GP on request.',
