@@ -65,7 +65,7 @@ export default function ComplaintsPolicy() {
         <ul>
           <li>The quality or accuracy of our coordination services</li>
           <li>Communication failures or delays on our part</li>
-          <li>Inaccuracies in your itemised quote or billing</li>
+          <li>Inaccuracies in your package quote or billing</li>
           <li>Failure to arrange agreed services (transfer, hotel, interpretation)</li>
           <li>Handling of your personal data</li>
           <li>Any other aspect of our coordination service</li>

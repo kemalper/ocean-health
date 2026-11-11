@@ -10,8 +10,16 @@ const INCLUDED = [
   'Airport transfers in Istanbul',
   'Hotel accommodation near the hospital',
   'A professional interpreter at your appointments',
+  'Hotel check-out before surgery and check-in after discharge, if you stay overnight in hospital',
   'Coordination with the hospital from enquiry to discharge',
   'English-language discharge documentation, sent to your GP on request',
+]
+
+const CHANGES = [
+  'Extra nights, or arriving earlier or leaving later to fit your flights',
+  'Keeping your hotel room during a hospital stay, if you prefer',
+  'A travel companion: their costs are added to your quote',
+  'Additional tests or treatment, if the hospital\'s assessment requires them',
 ]
 
 export default function ProcedurePage({ p }: { p: Procedure }) {
@@ -152,8 +160,13 @@ export default function ProcedurePage({ p }: { p: Procedure }) {
             <ul>{p.suitability.map(t => <li key={t}>{t}</li>)}</ul>
           </div>
           <div className="card">
-            <div className="card-t">Included in every package</div>
-            <ul>{INCLUDED.map(t => <li key={t}>{t}</li>)}</ul>
+            <div className="card-t">A typical package</div>
+            <ul>
+              {p.price.stay !== 'Depends on treatment' && <li>Typical stay in Istanbul: {p.price.stay}</li>}
+              {INCLUDED.map(t => <li key={t}>{t}</li>)}
+            </ul>
+            <div className="card-t" style={{ marginTop: '1.25rem' }}>What can change your price</div>
+            <ul>{CHANGES.map(t => <li key={t}>{t}</li>)}</ul>
             <div className="fine">Flights are not included. Your package quote states what is included, and a breakdown is available on request. {p.jci ? 'Treatment is performed at JCI-accredited partner hospitals.' : 'Treatment is delivered by licensed partner providers.'}</div>
           </div>
         </div>
