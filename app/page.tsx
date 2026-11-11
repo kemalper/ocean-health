@@ -5,6 +5,7 @@ import Nav from '@/app/components/Nav'
 import HeroProcess from '@/app/components/HeroProcess'
 import SampleQuote from '@/app/components/SampleQuote'
 import PriceFactors from '@/app/components/PriceFactors'
+import HomeFaq from '@/app/components/HomeFaq'
 import { UK_PRICES } from '@/app/lib/ukPrices'
 import Footer from '@/app/components/Footer'
 
@@ -364,7 +365,7 @@ export default function Home() {
               <div className="eyebrow">Treatments</div>
               <h2>What we coordinate.</h2>
             </div>
-            <p className="sec-sub">Planned (non-emergency) treatment across the specialties below. Each page sets out what is typically involved, what the price covers and how a quote works.</p>
+            <p className="sec-sub">Each page for the specialties below sets out what is typically involved, what the price covers and how a quote works.</p>
           </div>
 
           <div className="feat-grid">
@@ -419,7 +420,7 @@ export default function Home() {
             ))}
           </div>
           <p className="fine">
-            Ocean Health &amp; Travel is a coordinator, not a medical provider. All clinical decisions rest with your treating provider. Flights not included. No coordination fee is charged to patients. Planned (non-emergency) treatment only &mdash; not suitable for emergencies.
+            All clinical decisions rest with your treating provider. Flights are not included.
           </p>
         </div>
       </section>
@@ -478,18 +479,27 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="sec">
+      <section className="sec" id="questions">
         <div className="inner">
-          <div style={{textAlign:'center',marginBottom:'1.5rem'}} className="reveal" ref={ref}>
-            <a href={WA_URL} target="_blank" className="wa-pill">
-              Message us on WhatsApp
-            </a>
+          <div className="sec-head reveal" ref={ref}>
+            <div>
+              <div className="eyebrow">Questions</div>
+              <h2>What people ask first.</h2>
+            </div>
+            <p className="sec-sub">Straight answers, with more on our FAQ, patient charter and aftercare pages.</p>
           </div>
+          <HomeFaq />
+        </div>
+      </section>
+
+      <section className="sec" style={{paddingTop:0}}>
+        <div className="inner">
           <div className="cta-box reveal" ref={ref}>
             <h2>Tell us what you need</h2>
-            <p>Send us your treatment and preferred dates. We aim to send your package quote within 48 hours, with no obligation. Planned (non-emergency) treatment only.</p>
+            <p>Send us your treatment and preferred dates. We aim to send your package quote within 48 hours, with no obligation.</p>
             <div className="cta-actions">
-              <a href={WA_URL} target="_blank" className="btn-cta-w">Get a free quote</a>
+              <a href={WA_URL} target="_blank" rel="noopener noreferrer" className="btn-cta-w">Message us on WhatsApp</a>
+              <a href="tel:+447441904858" className="btn-cta-o">Call +44 7441 904858</a>
               <a href="mailto:info@oceanhealthtravel.com" className="btn-cta-o">Email us</a>
             </div>
           </div>
