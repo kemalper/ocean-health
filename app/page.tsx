@@ -175,6 +175,7 @@ export default function Home() {
         .home .sec-head h2{margin-bottom:0}
         .home .kicker{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--green);font-weight:600;margin-bottom:1.1rem}
         .sec.band{background:var(--band)}
+        .sec.band + .sec.band{padding-top:0}
         .sec-head{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:end;margin-bottom:2.75rem}
         .sec-head h2{font-size:clamp(30px,3.6vw,46px);line-height:1.1;letter-spacing:-.02em}
         .sec-sub{font-size:16px;line-height:1.7;color:var(--muted)}
