@@ -9,7 +9,7 @@ import HomeFaq from '@/app/components/HomeFaq'
 import { UK_PRICES } from '@/app/lib/ukPrices'
 import Footer from '@/app/components/Footer'
 
-const WA_URL = 'https://wa.me/447441904858?text=Hello%2C%20I%27d%20like%20to%20get%20a%20free%20quote'
+const WA_URL = 'https://wa.me/447441904858?text=Hello%2C%20I%27d%20like%20to%20request%20a%20package%20quote'
 
 const procedures: Record<string, { headers: string[], rows: string[][] }> = {
   cosmetic: {
@@ -293,7 +293,7 @@ export default function Home() {
               One clear package price: your treatment, stay, transfers and an interpreter at licensed partner hospitals, tailored to your dates and travel companions.
             </p>
             <div className="hero-actions">
-              <a href={WA_URL} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Get a free quote</a>
+              <a href={WA_URL} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Request your package quote</a>
               <a href="#compare" className="btn-link">See how prices compare</a>
             </div>
             <ul className="hero-fine">

@@ -135,7 +135,7 @@ export default function ProcedurePage({ p }: { p: Procedure }) {
               <h1>{p.h1} <em>{p.h1em}</em></h1>
               <p className="sub">{p.sub}</p>
               <div className="actions">
-                <a href={wa} target="_blank" rel="noopener noreferrer" className="btn">Get a free quote</a>
+                <a href={wa} target="_blank" rel="noopener noreferrer" className="btn">Request your package quote</a>
                 <a href="#faq" className="link">Read FAQs ↓</a>
               </div>
             </div>
@@ -226,7 +226,7 @@ export default function ProcedurePage({ p }: { p: Procedure }) {
           <div className="cta">
             <h2>Ready to find out what {p.name.toLowerCase()} costs for you?</h2>
             <p>Tell us what you are considering. We aim to send your package quote within about 48 hours. Hospital and surgeon confirmed in writing before you pay.</p>
-            <a href={wa} target="_blank" rel="noopener noreferrer" className="btn">Get a free quote</a>
+            <a href={wa} target="_blank" rel="noopener noreferrer" className="btn">Request your package quote</a>
             <p style={{ marginTop: '1.25rem', marginBottom: 0, color: 'rgba(255,255,255,.7)', fontSize: 14 }}>
               Prefer to send photos or records? <Link href={`/records-review?procedure=${p.slug}`} style={{ color: '#fff', borderBottom: '1px solid rgba(255,255,255,.6)' }}>Send your details for review</Link>
             </p>

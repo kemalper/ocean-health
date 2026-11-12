@@ -24,7 +24,7 @@ const GROUPS: Group[] = [
   ] },
 ]
 
-const WA_URL = 'https://wa.me/447441904858?text=Hello%2C%20I%27d%20like%20to%20get%20a%20free%20quote'
+const WA_URL = 'https://wa.me/447441904858?text=Hello%2C%20I%27d%20like%20to%20request%20a%20package%20quote'
 
 export default function Nav({ transparent = false }: { transparent?: boolean }) {
   const [scrolled, setScrolled] = useState(false)
@@ -135,7 +135,7 @@ export default function Nav({ transparent = false }: { transparent?: boolean }) 
             <li><a href="/faq">FAQ</a></li>
             <li><a href="/contact">Contact</a></li>
             <li><a href="/pre-operative-assessment">Pre-assessment</a></li>
-            <li><a href={WA_URL} target="_blank" rel="noopener noreferrer" className="btn-nav">Free quote</a></li>
+            <li><a href={WA_URL} target="_blank" rel="noopener noreferrer" className="btn-nav">Request a quote</a></li>
           </ul>
           <button className="hamburger" onClick={() => setOpen(true)} aria-label="Open menu">
             <span/><span/><span/>
@@ -171,7 +171,7 @@ export default function Nav({ transparent = false }: { transparent?: boolean }) 
         <a href="/faq" onClick={() => setOpen(false)}>FAQ</a>
         <a href="/contact" onClick={() => setOpen(false)}>Contact</a>
         <a href="/pre-operative-assessment" onClick={() => setOpen(false)}>Pre-assessment</a>
-        <a href={WA_URL} target="_blank" rel="noopener noreferrer" className="mobile-btn" onClick={() => setOpen(false)}>Free quote</a>
+        <a href={WA_URL} target="_blank" rel="noopener noreferrer" className="mobile-btn" onClick={() => setOpen(false)}>Request a quote</a>
         <a href="tel:+447441904858" style={{fontFamily:"'Inter',sans-serif",fontSize:'17px',color:'#0559F0',fontWeight:600}}>Call +44 7441 904858</a>
         <a href="mailto:info@oceanhealthtravel.com" style={{fontFamily:"'Inter',sans-serif",fontSize:'15px',color:'#475569'}}>info@oceanhealthtravel.com</a>
       </div>
