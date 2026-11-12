@@ -6,6 +6,7 @@ import HeroProcess from '@/app/components/HeroProcess'
 import SampleQuote from '@/app/components/SampleQuote'
 import PriceFactors from '@/app/components/PriceFactors'
 import HomeFaq from '@/app/components/HomeFaq'
+import CityBand from '@/app/components/CityBand'
 import { UK_PRICES } from '@/app/lib/ukPrices'
 import Footer from '@/app/components/Footer'
 
@@ -232,7 +233,10 @@ export default function Home() {
         .row-arrow{color:var(--muted)}
         .also{font-size:14px;color:var(--muted);margin-top:1.5rem;line-height:1.7}
         .also a{color:var(--green-d);font-weight:500;border-bottom:1px solid currentColor}
-        .coord-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2rem}
+        .coord-layout{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:3rem;align-items:center}
+        .coord-photo{min-width:0}
+        .coord-photo img{width:100%;height:auto;border-radius:16px;display:block;border:1px solid var(--line)}
+        .coord-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:2rem 1.75rem}
         .coord-icon{width:48px;height:48px;border-radius:12px;background:#fff;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;color:var(--green);margin-bottom:1.1rem}
         .coord-t{font-family:'DM Serif Display',serif;font-size:20px;margin-bottom:.5rem}
         .coord-d{font-size:14px;color:var(--muted);line-height:1.65}
@@ -271,7 +275,7 @@ export default function Home() {
         .fbadges{display:flex;gap:8px;flex-wrap:wrap;margin-top:1rem}
         .fbadge{display:flex;align-items:center;gap:6px;font-size:11px;color:rgba(255,255,255,.65);border:1px solid rgba(255,255,255,.18);border-radius:5px;padding:4px 10px}
         .fbadge-dot{width:6px;height:6px;border-radius:50%;background:#8FD8FF}
-        @media(max-width:1024px){.coord-grid{grid-template-columns:repeat(2,1fr)}.how-grid{grid-template-columns:minmax(0,1fr);gap:2.5rem}.how-side{position:static}}
+        @media(max-width:1024px){.coord-layout{grid-template-columns:minmax(0,1fr);gap:2rem}.coord-grid{grid-template-columns:repeat(2,1fr)}.how-grid{grid-template-columns:minmax(0,1fr);gap:2.5rem}.how-side{position:static}}
         @media(max-width:900px){.hero-text{padding-top:0}.hero h1 br{display:none}.hero-grid{grid-template-columns:minmax(0,1fr);gap:2.5rem}.hero-media{aspect-ratio:1/1}.hero-media img{transform:none!important;object-position:50% 52%!important}.hero-sub{font-size:16.5px}.sec-head{grid-template-columns:1fr;gap:1rem}.feat-grid{grid-template-columns:1fr}.rev-grid{grid-template-columns:1fr}}
         @media(max-width:768px){.sec{padding:4.5rem 0}.row{grid-template-columns:64px 1fr 20px}.row-price{display:none}.step{grid-template-columns:44px 1fr}.step-when{grid-column:2;justify-self:start}.cta-box{padding:3rem 1.5rem}}
         @media(max-width:640px){.home thead{display:none}.home table{min-width:0}.home tr{display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;padding:1rem 1.1rem;border-bottom:1px solid #F3F7FE}.home tr:last-child{border-bottom:none}.home td{padding:0;border:0}.home td:first-child{grid-column:1/-1;font-family:'DM Serif Display',serif;font-size:18px;font-weight:400}.home td[data-l]::before{content:attr(data-l);display:block;font-size:10.5px;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);margin-bottom:2px}}
@@ -310,6 +314,11 @@ export default function Home() {
             <div key={t} className="ti"><b>{t}</b><span>{d}</span></div>
           ))}
         </div>
+      </div>
+
+      {/* ISTANBUL */}
+      <div className="inner" style={{paddingTop:'2.5rem'}}>
+        <CityBand />
       </div>
 
       {/* PRICE COMPARISON */}
@@ -411,14 +420,19 @@ export default function Home() {
             </div>
             <p className="sec-sub">We are a coordinator, not a medical provider. Every package includes the following logistics.</p>
           </div>
-          <div className="coord-grid">
-            {COORD.map((c,i) => (
-              <div key={c.t} className={`reveal d${i+1}`} ref={ref}>
-                <div className="coord-icon">{c.icon}</div>
-                <div className="coord-t">{c.t}</div>
-                <div className="coord-d">{c.d}</div>
-              </div>
-            ))}
+          <div className="coord-layout">
+            <div className="coord-photo reveal" ref={ref}>
+              <Image src="/photos/coordination.webp" alt="Illustrative image: a coordinator welcoming a patient at a hospital reception" width={1536} height={1024} sizes="(max-width:1024px) 100vw, 42vw" />
+            </div>
+            <div className="coord-grid">
+              {COORD.map((c,i) => (
+                <div key={c.t} className={`reveal d${i+1}`} ref={ref}>
+                  <div className="coord-icon">{c.icon}</div>
+                  <div className="coord-t">{c.t}</div>
+                  <div className="coord-d">{c.d}</div>
+                </div>
+              ))}
+            </div>
           </div>
           <p className="fine">
             All clinical decisions rest with your treating provider. Flights are not included.

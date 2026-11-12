@@ -1,0 +1,4 @@
+.band{position:relative;width:100%;aspect-ratio:21/7;border-radius:20px;overflow:hidden;border:1px solid var(--oht-line);background:var(--oht-tint-2)}
+.band::after{content:'';position:absolute;inset:auto 0 0 0;height:5px;background:linear-gradient(90deg,var(--oht-blue),var(--oht-cyan))}
+.img{object-fit:cover;object-position:50% 60%}
+@media(max-width:768px){.band{aspect-ratio:16/9;border-radius:14px}}
