@@ -6,7 +6,6 @@ import HeroProcess from '@/app/components/HeroProcess'
 import SampleQuote from '@/app/components/SampleQuote'
 import PriceFactors from '@/app/components/PriceFactors'
 import HomeFaq from '@/app/components/HomeFaq'
-import CityBand from '@/app/components/CityBand'
 import { UK_PRICES } from '@/app/lib/ukPrices'
 import Footer from '@/app/components/Footer'
 
@@ -314,11 +313,6 @@ export default function Home() {
             <div key={t} className="ti"><b>{t}</b><span>{d}</span></div>
           ))}
         </div>
-      </div>
-
-      {/* ISTANBUL */}
-      <div className="inner" style={{paddingTop:'2.5rem'}}>
-        <CityBand />
       </div>
 
       {/* PRICE COMPARISON */}
