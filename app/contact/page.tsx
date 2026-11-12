@@ -53,7 +53,7 @@ export default function ContactPage() {
         .hours-box{background:#F3F7FE;border:1px solid #CFE0FC;border-radius:12px;padding:1.25rem 1.5rem;margin-top:1.5rem}
         .hours-t{font-size:13px;font-weight:600;color:#0559F0;margin-bottom:.5rem}
         .hours-d{font-size:13px;color:#555;line-height:1.7;font-weight:300}
-        .disclaimer{font-size:12px;color:#475569;line-height:1.6;margin-top:1.5rem}
+        .disclaimer{font-size:12px;color:#475569;line-height:1.6;margin-top:1.5rem;padding:1.25rem 1.5rem}
         .cta-box{background:linear-gradient(135deg,#0A2150,#0559F0);border-radius:20px;padding:3rem;text-align:center;margin-top:3rem}
         .cta-box h2{color:#fff;margin-bottom:.75rem}
         .cta-box p{font-size:15px;color:rgba(255,255,255,.65);font-weight:300;line-height:1.7;margin-bottom:2rem;max-width:480px;margin-left:auto;margin-right:auto}
