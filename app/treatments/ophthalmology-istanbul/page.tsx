@@ -204,7 +204,7 @@ export default function OphthalmologyPage() {
             </div>
           </div>
           <div className="hero-actions">
-            <a href={WA_URL} target="_blank" className="btn-primary">Get a free quote</a>
+            <a href={WA_URL} target="_blank" className="btn-primary">Request your package quote</a>
             <a href="#procedures" className="btn-ghost">View all procedures ↓</a>
           </div>
           <div className="trust-row">
@@ -295,7 +295,7 @@ export default function OphthalmologyPage() {
             <h2>Ready to find out what eye surgery costs?</h2>
             <p>Tell us your prescription or condition. We aim to send a full package quote within 48 hours — no obligation.</p>
             <div className="cta-btns">
-              <a href={WA_URL} target="_blank" className="btn-cta-w">Get a free quote</a>
+              <a href={WA_URL} target="_blank" className="btn-cta-w">Request your package quote</a>
               <a href="mailto:info@oceanhealthtravel.com" className="btn-cta-o">Email us</a>
             </div>
           </div>

@@ -273,7 +273,7 @@ export default function PlasticSurgeryPage() {
             </div>
           </div>
           <div className="hero-actions">
-            <a href={WA_URL} target="_blank" className="btn-primary">Get a free quote</a>
+            <a href={WA_URL} target="_blank" className="btn-primary">Request your package quote</a>
             <a href="#procedures" className="btn-ghost">View all procedures ↓</a>
           </div>
           <div className="trust-row">
@@ -370,7 +370,7 @@ export default function PlasticSurgeryPage() {
             <h2>Ready to find out what your procedure costs?</h2>
             <p>Tell us which procedure you&apos;re interested in and we aim to send a full package quote within 48 hours — no obligation.</p>
             <div className="cta-btns">
-              <a href="/pre-operative-assessment" style={{background:"transparent",color:"rgba(255,255,255,.8)",border:"1px solid rgba(255,255,255,.3)",padding:"14px 28px",borderRadius:"10px",fontSize:"15px",display:"inline-flex",alignItems:"center",gap:"8px",fontFamily:"Inter,sans-serif"}}>Pre-operative assessment →</a>              <a href={WA_URL} target="_blank" className="btn-cta-w">Get a free quote</a>
+              <a href="/pre-operative-assessment" style={{background:"transparent",color:"rgba(255,255,255,.8)",border:"1px solid rgba(255,255,255,.3)",padding:"14px 28px",borderRadius:"10px",fontSize:"15px",display:"inline-flex",alignItems:"center",gap:"8px",fontFamily:"Inter,sans-serif"}}>Pre-operative assessment →</a>              <a href={WA_URL} target="_blank" className="btn-cta-w">Request your package quote</a>
               <a href="mailto:info@oceanhealthtravel.com" className="btn-cta-o">Email us</a>
             </div>
           </div>

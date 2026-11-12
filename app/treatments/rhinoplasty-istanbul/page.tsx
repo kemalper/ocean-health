@@ -167,7 +167,7 @@ export default function RhinoplastyPage() {
                 Board-certified surgeons. JCI-accredited hospitals. Dedicated coordination from first enquiry through discharge and GP documentation. Timelines vary by provider.
               </p>
               <div className="hero-actions">
-                <a href={WA_URL} target="_blank" className="btn-primary">Get a free quote</a>
+                <a href={WA_URL} target="_blank" className="btn-primary">Request your package quote</a>
                 <a href="#faq" className="btn-ghost">Read FAQs ↓</a>
               </div>
               <div className="trust-row">
@@ -257,7 +257,7 @@ export default function RhinoplastyPage() {
 
             <div className="sidebar">
               <div className="sidebar-card dark">
-                <div className="sidebar-title">Get a free quote</div>
+                <div className="sidebar-title">Request your package quote</div>
                 <p style={{fontSize:'14px',color:'rgba(255,255,255,.65)',lineHeight:1.65,marginBottom:'1.25rem',fontWeight:300}}>
                   Tell us about your goals. We aim to send a full package quote within 48 hours — no obligation.
                 </p>
@@ -356,7 +356,7 @@ export default function RhinoplastyPage() {
           </p>
           <div style={{display:'flex',gap:'14px',justifyContent:'center',flexWrap:'wrap'}}>
             <a href={WA_URL} target="_blank" style={{background:'#0559F0',color:'#fff',border:'none',padding:'15px 30px',borderRadius:'10px',fontSize:'15px',fontWeight:600,display:'inline-flex',alignItems:'center',gap:'9px',cursor:'pointer',fontFamily:'Inter,sans-serif'}}>
-              Get a free quote
+              Request your package quote
             </a>
             <a href="mailto:info@oceanhealthtravel.com" style={{background:'transparent',color:'#0559F0',border:'1px solid #0559F0',padding:'15px 30px',borderRadius:'10px',fontSize:'15px',display:'inline-flex',alignItems:'center',gap:'9px',cursor:'pointer',fontFamily:'Inter,sans-serif'}}>
               Email us

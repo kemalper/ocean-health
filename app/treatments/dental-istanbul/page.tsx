@@ -204,7 +204,7 @@ export default function DentalIstanbulPage() {
             </div>
           </div>
           <div className="hero-actions">
-            <a href={WA_URL} target="_blank" className="btn-primary">Get a free quote</a>
+            <a href={WA_URL} target="_blank" className="btn-primary">Request your package quote</a>
             <a href="#procedures" className="btn-ghost">View all treatments ↓</a>
           </div>
           <div className="trust-row">
@@ -298,7 +298,7 @@ export default function DentalIstanbulPage() {
             <h2>Ready to find out what your dental treatment costs?</h2>
             <p>Tell us what you need — implants, crowns, veneers, or a full smile makeover. We aim to send a full package quote within 48 hours.</p>
             <div className="cta-btns">
-              <a href={WA_URL} target="_blank" className="btn-cta-w">Get a free quote</a>
+              <a href={WA_URL} target="_blank" className="btn-cta-w">Request your package quote</a>
               <a href="mailto:info@oceanhealthtravel.com" className="btn-cta-o">Email us</a>
             </div>
           </div>
